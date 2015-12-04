@@ -1,0 +1,46 @@
+{{! Users that are not activated }}
+{{#activationCode}}
+Bonjour,<br/>
+<br/>
+Ceci est un mail généré automatiquement qui contient vos informations de première connexion à l’ENT Léo.<br/>
+<br/>
+La première connexion à Léo s’effectue en passant par le site compagnon du projet <a href="http://leo.picardie.fr">http://leo.picardie.fr</a> ou par l’adresse directe <a href="https://ent.picardie.fr">https://ent.picardie.fr</a><br/>
+<br/>
+Une première étape indispensable vous permettra de personnaliser vos informations de connexion.<br/>
+<br/>
+Munissez vous de votre adresse e-mail personnelle et des informations ci-dessous :<br/>
+<br/>
+Identifiant : {{login}}<br/>
+Code d’activation : {{activationCode}}<br/>
+<br/>
+Pour sécuriser vos accès, il vous sera demandé de choisir un nouveau de mot de passe, d’indiquer votre adresse e-mail personnelle et, si vous le souhaitez, de saisir un numéro de téléphone portable pour récupération du mot de passe en cas d’oubli.<br/>
+<br/>
+Votre nouveau de passe doit contenir 8 caractères minimum, avec lettres et chiffres obligatoires. Il est recommandé de mélanger chiffres, lettres, majuscules, minuscules et caractères spéciaux.<br/>
+<br/>
+Bonne navigation sur Léo !<br/>
+<br/>
+Leo, l’ENT des lycées de Picardie<br/>
+{{/activationCode}}
+{{! Users that are activated }}
+{{^activationCode}}
+Bonjour,<br/>
+<br/>
+Ceci est un mail généré automatiquement qui contient vos informations de connexion à l’ENT Léo.<br/>
+<br/>
+Vous possédez déjà un compte sur l’ENT (environnement numérique de travail) LEO.<br/>
+Votre identifiant de connexion est rappelé ci-contre : <i>{{login}}</i><br/>
+<br/>
+Si vous ne vous souvenez pas de votre mot de passe, vous pouvez en définir un nouveau en suivant les instructions ci-dessous :<br/>
+<br/>
+Rendez-vous à l’adresse <a href="https://ent.picardie.fr">https://ent.picardie.fr</a> et cliquez sur « Besoin d’aide ? ».<br/>
+<br/>
+Cliquez ensuite sur « Vous avez perdu votre mot de passe », saisissez votre identifiant puis cliquez sur « Envoyer ».<br/>
+Un mail sera envoyé à l’adresse que vous avez saisi lors de l’activation de votre compte.<br/>
+<br/>
+Cliquez ensuite sur le lien hypertexte dans le mail reçu pour définir votre nouveau mot de passe.
+Votre nouveau de passe doit contenir 8 caractères minimum, avec lettres et chiffres obligatoires. Il est recommandé de mélanger chiffres, lettres, majuscules, minuscules et caractères spéciaux.<br/>
+<br/>
+Bonne navigation sur Léo !<br/>
+<br/>
+Leo, l’ENT des lycées de Picardie<br/>
+{{/activationCode}}

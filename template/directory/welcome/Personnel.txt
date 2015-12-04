@@ -1,0 +1,35 @@
+<p>
+Chers utilisateurs de LEO,
+</p>
+<p>
+Bienvenue dans LEO 2, la nouvelle version de votre ENT !<br />
+Entièrement repensé à partir de vos remarques et suggestions, LEO s’est réinventé !
+</p>
+<p>
+L’ergonomie et la navigation ont été revues pour permettre une utilisation plus simple et intuitive.
+</p>
+<p>
+Les contenus que vous aviez créés dans LEO (blogs, wikis, documents, actualités…) sont toujours disponibles dans LEO 2. Vous retrouvez vos messages au format PDF dans l’application Documents.
+</p>
+<p>
+Vous pouvez dès maintenant partager les contenus que vous souhaitez rendre accessibles à d’autres utilisateurs, et créer vos communautés pour la nouvelle année scolaire.
+</p>
+<p>
+Dans LEO 2, vous retrouvez des services liés à la communication (actualités, messagerie), à la gestion de l’établissement (réservation de ressources), au suivi de la scolarité (accès aux notes et aux absences) et à l’animation de projets collaboratifs (communautés, partage de documents, forum…).
+</p>
+<p>
+Pour faire plus ample connaissance avec LEO 2, nous vous invitons à consulter les <a href="http://leo.picardie.fr/category/ressources/video-scena/">vidéos</a> qui vous guideront dans votre prise en main des différentes applications. Un service d’aide en ligne, accessible grâce au bouton (?) dans la barre de navigation de l’ENT, est également disponible.
+</p>
+<p>
+Enfin, le référent ENT de votre établissement est à votre disposition pour vous accompagner dans votre découverte de LEO 2.
+</p>
+<p>
+Nous vous souhaitons une bonne navigation dans LEO 2 !
+</p>
+<p>
+Cordialement,
+</p>
+<p>
+L’équipe projet LEO
+</p>
+

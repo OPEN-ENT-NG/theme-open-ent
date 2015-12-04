@@ -1,0 +1,106 @@
+@import "../lib/entcore-css-lib/app";
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,300,700,400);
+
+@primary-dark: #209dcc;
+@primary: #4bafd5;
+@primary-light: #7ad9ff;
+
+//Accent
+@accent: #FF8500;
+@dark-accent: #B25D00;
+
+@green: #46bfaf;
+@yellow: #ecbe30;
+@orange: #FF8500;
+@purple: #763294;
+@cyan: #4cb0d6;
+@pink: #b930a2;
+@red: #e13a3a;
+@grey: #555;
+
+@text-light: #555;
+@background: #f9f9f9;
+
+@black: #222;
+@shadow: rgba(0, 0, 0, 0.26);
+@shadow-light: rgba(0, 0, 0, 0.1);
+
+@header-height: 64px;
+
+@font-face {
+	font-family: "OpenDyslexic";
+	src: url(../font/OpenDyslexic3-Regular.ttf);
+}
+
+.material-card(@shadow-size: 2px, @blur-size: 3px){
+	box-shadow: 0  @shadow-size  @blur-size @shadow;
+	border-radius: 2px;
+}
+
+title{
+	display: block;
+}
+
+html, body{
+	background: #F9F9F9;
+	font-family: OpenDyslexic;
+}
+
+body {
+	overflow-x: hidden;
+	section.main{
+		background: transparent;
+	}
+	.material{
+		section.main{
+			position: relative;
+			top: @header-height + 40px;
+			box-sizing: border-box;
+			padding: 8px 35px;
+			padding-bottom: 60px;
+		}
+	}
+
+	font-size: 11px;
+	line-height: 19px;
+}
+
+button, input[type=button], a.button, input[type=submit], input[type=search], .drop-down-button label, .drop-down-button.hidden label {
+	font-family: OpenDyslexic;
+}
+
+@import "../css/modules";
+@import "../css/icons";
+@import "../css/mobile";
+
+h1{
+	font-size: 24px;
+}
+
+h2{
+	font-size: 18px;
+}
+
+input[type=text], input[type=password], input[type=password], input[type=search], input[type="tel"], input[type="email"]{
+	height: 35px;
+}
+
+input[type=text], textarea, select{
+	font-family: OpenDyslexic;
+}
+
+nav.vertical.stamps article h3, nav.vertical.half-stamps article h3{
+	font-size: 13px;
+}
+
+i side-panel{
+  font-family: OpenDyslexic;
+}
+
+.vertical-spacing-twice label span {
+  line-height: 18px;
+}
+.form-section select{
+  padding: 0;
+  height: 30px;
+}

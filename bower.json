@@ -1,0 +1,23 @@
+{
+  "name": "leo",
+  "homepage": "https://github.com/OPEN-ENT-NG/theme-leo",
+  "authors": [
+    "Camille Wintz <camille.wintz@web-education.net>",
+    "Lauren Ceccotti <lauren.ceccotti@web-education.net>",
+    "Julien Elbaz <julien.elbaz@web-education.net>"
+  ],
+  "description": "Leo theme for Open ENT NG",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "entcore-css-lib": "*"
+  }
+}

@@ -1,0 +1,126 @@
+@media screen and (max-width: 700px){
+
+	body.point-out{
+		cursor: pointer!important;
+	}
+	
+	body{
+		nav.vertical[side-nav]{
+			ul{
+				border-left: none !important;
+				li{
+					a.selected{
+						background: rgba(255,255,255, 0.2)
+					}
+					a{
+						color: #fff;
+					}
+				}
+			}
+			a.classic-link{
+				background: #fff;
+				&:hover{
+					color: @primary;
+				}
+			}
+			background-color: @primary;
+			border-left: 10px solid @accent;
+			padding-left: 0;
+		}
+		.mobile-nav-opener{
+			font-family: fontello;
+			background: none;
+			&::before{
+				content: '\e84f';
+				font-size: 28px;
+				color: @accent;
+				position: absolute;
+				top: 11px;
+				left: 10px;
+			}
+		}
+	}
+	h1{
+		font-size: 18px;
+		margin-bottom: 9px;
+		line-height: 30px;
+	}
+	.panel{
+		background: @primary;
+		input-password{
+			button{
+				float: left;
+				padding: 5px;
+				&::before{
+					position: relative;
+					line-height: 23px;
+					font-size: 16px;
+					left: 0;
+				}
+			}
+		}
+	}
+	.navbar{
+		height: 50px;
+	}
+	nav.vertical[side-nav]{
+		top: 60px;
+	}
+	nav.horizontal{
+		right: 0;
+		height: 50px;
+		#my-photo{
+			width: 25px;
+			margin-top: 7px;
+		}
+		> a, > popover a{
+			font-size: 14px;
+			margin-left: 0;
+			height: 50px;
+			line-height: 50px;
+		}
+		i.disconnect{
+			width: 22px !important;
+			margin-right: 0;
+			margin-left: 0;
+		}
+		> a i::before, popover > a i::before{
+			font-size: 25px;
+		}
+	}
+	body{
+		font-size: 14px;
+		.material section.main{
+			padding: 8px 15px;
+			padding-bottom: 100px;
+			top: 52px;
+		}
+	}
+	.toggle-panel{
+		right: -15px;
+		top: 52px;
+	}
+	.notification article .notification-date{
+		right: 0;
+	}
+	body{
+	.mobile-nav-opener{
+			background-image: none;
+			font-family: fontello;
+			padding: 15px;
+			&::before{
+				color: @accent;
+				content: '\e84f';
+				font-size: 28px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1200px){
+	.login{
+		h1{
+			display: none;
+		}
+	}
+}
