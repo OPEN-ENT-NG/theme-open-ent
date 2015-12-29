@@ -3359,31 +3359,89 @@ image-select.droptarget{
 	opacity: 1;
 }
 
-carousel nav ul li::after{
-	color: @primary;
-}
 
-carousel nav ul li.current::after{
-	color: @accent;
+carousel{
+	.carousel{
+		margin-top: 15px;
+	}
+	.images .image{
+		-webkit-transform:translateZ(0);
+	    -webkit-transform-style: preserve-3d;
+	    -webkit-backface-visibility: hidden;
+	}
+	nav {
+		width: 95%;
+		margin: auto;
+		ul {
+			li {
+				margin: 8px;
+			}
+			li::after {
+				display: block;
+				content: " ";
+				background: @primary;
+				width: 15px;
+				height: 15px;
+				border-radius: 50%;
+				.run-transition(background);
+			}
+			li.current::after {
+				background: @accent;
+			}
+			li:hover::after {
+				background: @accent;
+			}
+		}
+	}
 }
 
 carousel.slide{
+// ARROW GENERAL
+	//arrow bg
+	.image.previous::before, .image.next::before{
+		height: 40px;
+		width: 40px;
+		top: 50px;
+		border-radius: 50%;
+		//background: @lightest-grey;
+	}
+	//arrow shape & color
+	.image.previous::after, .image.next::after{
+		top: 60px;
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+	}
+//LEFT
 	.image.previous{
+		//arrows bg
+		&::before{
+			left: -12px;
+		}
+		//arrow shape & color
 		&::after{
-			border-right: 35px solid @primary;
+			border-right: 15px solid @primary;
+			left: -3px;
 		}
 	}
+//RIGHT
 	.image.next{
+		//arrow bg
+		&::before{
+			right: -12px;
+		}
+		//arrow shape & color
 		&::after{
-			border-left: 35px solid @primary;
+			border-left: 15px solid @primary;
+		    right: -3px;
 		}
 	}
 }
-carousel .images .image{
-	-webkit-transform:translateZ(0);
-    -webkit-transform-style: preserve-3d;
-    -webkit-backface-visibility: hidden;
-}
+
+
+
+/////////
+
+
 
 ul.colored{
 	padding-right: 15px;

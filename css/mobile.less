@@ -1,9 +1,40 @@
+
+@media screen and (max-width: 959px) {
+
+	//workspace carousel
+	.rigid-grid .margin-four carousel.slide{
+		.image.previous, .image.next{
+			width: 0;
+			height: 0;
+			padding: 0;
+			border: none;
+		}
+		.image.next{
+			margin-left: 100%;
+		}
+		.image.current{
+			width: 80%;
+			margin-left: 10%;
+		}
+		//arrow bg
+		.image.previous::before, .image.next::before{
+		  top: -20px;
+		}
+		//arrow shape & color
+		.image.previous::after, .image.next::after{
+		  top: -10px;
+		}
+	}
+
+}
+
+
 @media screen and (max-width: 700px){
 
 	body.point-out{
 		cursor: pointer!important;
 	}
-	
+
 	body{
 		nav.vertical[side-nav]{
 			ul{
