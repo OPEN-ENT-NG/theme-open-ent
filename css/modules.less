@@ -3923,17 +3923,17 @@ h1 i:before, h1 i:after, h1 i{
   display: none!important;
 }
 
-editor{
+body editor{
 	.selected-value:hover{
 		border-color: @accent;
 	}
-	.option:hover{
+	&.edit editor-toolbar .option:hover, &.both editor-toolbar .option:hover{
 		border-bottom: 3px solid @accent;
 	}
-	editor-toolbar{
+	&.edit editor-toolbar, &.both editor-toolbar{
 		.option.table{
 			.draw-table{
-				.cell.match{
+				.one.cell.match{
 					background: @accent;
 				}
 			}
