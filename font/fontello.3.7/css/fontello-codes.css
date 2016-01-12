@@ -188,3 +188,10 @@
 .picture-1icon-:before { content: '\e8ba'; } /* '' */
 .infoicon-:before { content: '\e8bb'; } /* '' */
 .listicon-:before { content: '\e8bc'; } /* '' */
+.forwardicon-:before { content: '\e8bd'; } /* '' */
+.replyicon-:before { content: '\e8be'; } /* '' */
+.unlinkicon-:before { content: '\e8bf'; } /* '' */
+.smileicon-:before { content: '\e8c0'; } /* '' */
+.docicon-:before { content: '\e8c1'; } /* '' */
+.quoteicon-:before { content: '\e8c2'; } /* '' */
+.codeicon-:before { content: '\e8c3'; } /* '' */

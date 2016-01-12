@@ -4,7 +4,7 @@
 /* font family with # version */
 @font-face {
   font-family: 'fontello';
-  src: url('../font/fontello.3.6.7/font/fontello.woff');
+  src: url('../font/fontello.3.7/font/fontello.woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -1726,4 +1726,171 @@ i.system-avatar {
     background-image: url(../img/illustrations/system-avatar.svg);
     background-position: center;
     background-size: 100%;
+}
+
+
+//editor icons
+
+.editor-icon(){
+    .fonticon;
+    display: block;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+}
+
+body editor{
+	> popover{
+		> [popover-opener]{
+            &.tools{
+                .fonticon;
+                &::before{
+                    content: '\e8c3'
+                }
+            }
+		}
+	}
+	&.edit editor-toolbar, &.both editor-toolbar, &.html editor-toolbar{
+		.option.undo > i{
+			.editor-icon;
+            &::before{
+                content: '\e8be';
+            }
+		}
+		.option.redo > i{
+			.editor-icon;
+            &::before{
+                content: '\e8bd';
+            }
+		}
+		.option.bold > i{
+			.editor-icon;
+            &::before{
+                content: '\e8b9';
+            }
+		}
+		.option.italic > i{
+			.editor-icon;
+            &::before{
+                content: '\e8b4';
+            }
+		}
+		.option.underline > i{
+			.editor-icon;
+            &::before{
+                content: '\e8b1';
+            }
+		}
+		.option.justify-left > i{
+			.editor-icon;
+            &::before{
+                content: '\e8b8';
+            }
+		}
+		.option.justify-right > i{
+			.editor-icon;
+            &::before{
+                content: '\e8b6';
+            }
+		}
+		.option.justify-center > i{
+			.editor-icon;
+            &::before{
+                content: '\e8b7';
+            }
+		}
+		.option.justify-full > i{
+			.editor-icon;
+            &::before{
+                content: '\e8b5';
+            }
+		}
+		.option.subscript > i{
+			.editor-icon;
+            &::before{
+                content: '\e8b0';
+            }
+		}
+		.option.superscript > i{
+			.editor-icon;
+            &::before{
+                content: '\e8af';
+            }
+		}
+		.option.quote > i{
+			.editor-icon;
+            &::before{
+                content: '\e8c2';
+            }
+		}
+		.option.ulist i{
+			.editor-icon;
+            &::before{
+                content: '\e8ad';
+            }
+		}
+		.option.olist > i{
+			.editor-icon;
+            &::before{
+                content: '\e8ae';
+            }
+		}
+		.option.image> i{
+			.editor-icon;
+            &::before{
+                content: '\e84a';
+            }
+		} 
+		.option.sound > i{
+			.editor-icon;
+            &::before{
+                content: '\e839';
+            }
+		}
+		.option.table{
+            popover{
+                > i{
+				    .editor-icon;
+                    top: -6px;
+                    &::before{
+                        content: '\e8b3';
+                    }
+			    }
+            }
+		}
+		.option.linker{
+			> i{
+				.editor-icon;
+                &::before{
+                    content: '\e84d';
+                }
+			}
+		}
+		.option.smileys{
+			> i {
+				.editor-icon;
+                &::before{
+                    content: '\e8c0';
+                }
+			}
+		}
+		.option.unlink > i{
+			.editor-icon;
+            &::before{
+                content: '\e8bf';
+            }
+		}
+		.option.embed > i{
+			.editor-icon;
+            &::before{
+                content: '\e872';
+            }
+		}
+		.option.audio > i{
+			.editor-icon;
+            &::before{
+                content: '\e839';
+            }
+		}
+	}
 }

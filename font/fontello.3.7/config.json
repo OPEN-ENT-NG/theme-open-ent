@@ -897,6 +897,12 @@
       "src": "fontawesome"
     },
     {
+      "uid": "1dcd2b2148b7f086a4eb47f6a746bdee",
+      "css": "unlink",
+      "code": 59583,
+      "src": "fontawesome"
+    },
+    {
       "uid": "e15f0d620a7897e2035c18c80142f6d9",
       "css": "connecteurgenerique1",
       "code": 59562,
@@ -930,6 +936,24 @@
       "uid": "9a76bc135eac17d2c8b8ad4a5774fc87",
       "css": "download",
       "code": 59502,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "c6be5a58ee4e63a5ec399c2b0d15cf2c",
+      "css": "reply",
+      "code": 59582,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "3d39c828009c04ddb6764c0b04cd2439",
+      "css": "forward",
+      "code": 59581,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "7034e4d22866af82bef811f52fb1ba46",
+      "css": "code",
+      "code": 59587,
       "src": "fontawesome"
     },
     {
@@ -1263,6 +1287,12 @@
       "src": "fontawesome"
     },
     {
+      "uid": "d862a10e1448589215be19702f98f2c1",
+      "css": "smile",
+      "code": 59584,
+      "src": "fontawesome"
+    },
+    {
       "uid": "20fc52f9a88bb7bda023ef209acac095",
       "css": "graduation-cap",
       "code": 59394,
@@ -1320,6 +1350,12 @@
       "uid": "44b9e75612c5fad5505edd70d071651f",
       "css": "attach",
       "code": 59397,
+      "src": "entypo"
+    },
+    {
+      "uid": "c3e5dafba1739ef33cc574c7484febf7",
+      "css": "quote",
+      "code": 59586,
       "src": "entypo"
     },
     {
@@ -1422,6 +1458,12 @@
       "uid": "f156d14a32cd7d5bc5a5f70382ab04ec",
       "css": "upload",
       "code": 59470,
+      "src": "typicons"
+    },
+    {
+      "uid": "85ef733b1e280809e8443f5f0167b5c2",
+      "css": "doc",
+      "code": 59585,
       "src": "typicons"
     },
     {
