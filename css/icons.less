@@ -1021,12 +1021,44 @@ i.send-mail{
   .run-transition(background);
 }
 i.send-mail::before{
-  content: '\e84e';
+  content: '\e804';
   color: @white;
 }
-i.send-mail:hover{
-  color: @accent;
+.domino{
+    i.send-mail::before{
+      color: @primary;
+    }
 }
+i.send-mail:hover{
+    &::before{
+        color: @accent;
+    }
+}
+nav.stamps.vertical{
+    article.clip.fluid{
+        .bottom-locked{
+            right: 0;
+        }
+        i.send-mail::before{
+            color: @primary;
+            font-size: 22px;
+        }
+
+        i.send-mail:hover{
+            &::before{
+                color: @accent;
+            }
+        }
+    }
+    article.clip.fluid.selected{
+        i.send-mail:hover{
+            &::before{
+                color: @white;
+            }
+        }
+    }
+}
+
 
 i.show-icons{
 	.fonticon;
@@ -1840,7 +1872,7 @@ body editor{
             &::before{
                 content: '\e84a';
             }
-		} 
+		}
 		.option.sound > i{
 			.editor-icon;
             &::before{
