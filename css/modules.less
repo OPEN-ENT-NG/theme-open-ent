@@ -3373,6 +3373,32 @@ image-select.droptarget{
 
 
 carousel{
+    &.squares{
+		nav ul li::after {
+            border-radius: 0;
+            content: " ";
+        }
+    }
+    &.triangles{
+		nav ul li::after {
+            border-radius: 0;
+            content: " ";
+            background: transparent;
+            border-top: 10px solid transparent;
+	        border-bottom: 10px solid transparent;
+	        border-left: 10px solid @primary;
+            height: 0;
+            width: 0;
+        }
+        li.current::after {
+			background: transparent;
+            border-left-color: @accent;
+		}
+		li:hover::after {
+			background: transparent;
+            border-left-color: @accent;
+		}
+    }
 	.carousel{
 		margin-top: 15px;
 	}
