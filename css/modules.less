@@ -2097,6 +2097,10 @@ section.lightbox-window{
 	.lightbox-backdrop;
 }
 
+.media section.lightbox{
+	cursor: default;
+}
+
 .lightbox form{
 	.fill-bar{
 		margin-top: 12px;
@@ -2180,9 +2184,13 @@ select{
 		border: 1px solid @accent;
 	}
 
+	li:hover{
+		background: @accent;
+		color: @white;
+	}
 	li.selected{
 		background: @accent;
-		color: #fff;
+		color: @white;
 	}
 }
 
