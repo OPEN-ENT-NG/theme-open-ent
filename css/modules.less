@@ -1220,12 +1220,13 @@ nav.vertical, .app-menu{
 			a{
 				.run-transition(background);
 				margin-left: 0;
-				text-indent: 25px;
+				padding-left: 25px;
+				padding-right: 45px;
 				i.arrow{
 					position: absolute;
 					height: 20px;
 					display: block;
-					float: left;
+					left: 2px;
 					color: #fff;
 				}
 				i.arrow::before{
@@ -1241,8 +1242,17 @@ nav.vertical, .app-menu{
 				}
 				i{
 					margin-left: 5px;
-					text-indent: 10px;
+					text-indent: 8px;
 				}
+				i.close, i.edit{
+					position: absolute;
+					right: 5px;
+					top: 1px;
+				}
+				i.edit{
+					right: 30px;
+				}
+
 			}
 			a.selected{
 				color: @accent;
