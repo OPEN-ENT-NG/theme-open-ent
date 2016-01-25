@@ -614,8 +614,8 @@ ul.icons-tabs{
 	}
 }
 
-a.button[disabled], button[disabled], input[type=button][disabled], input[type=submit][disabled],
-a.button[disabled]:hover, button[disabled]:hover, input[type=button][disabled]:hover, input[type=submit][disabled]:hover{
+a.button[disabled=disabled], button[disabled=disabled], input[type=button][disabled=disabled], input[type=submit][disabled=disabled],
+a.button[disabled=disabled]:hover, button[disabled=disabled]:hover, input[type=button][disabled=disabled]:hover, input[type=submit][disabled=disabled]:hover{
 	color: #AAA;
 	background: #666;
 	//border: none;
@@ -1890,14 +1890,14 @@ filters{
 		background: @accent;
 		color: #fff;
 	}
-	button[disabled], button.disabled{
+	button[disabled=disabled], button.disabled{
 		color: #888;
 	}
 	button:hover, .button:hover{
 		color: @accent;
 		background: white;
 	}
-	button[disabled]:hover, button.disabled:hover{
+	button[disabled=disabled]:hover, button.disabled:hover{
 		cursor: default;
 		background: none;
 		coor: #888;
@@ -3274,7 +3274,7 @@ nav.illustrated-links{
 	}
 }
 
-input[type=text][disabled] {
+input[type=text][disabled=disabled] {
 	background: #ddd;
 	color: #999;
 	padding: 5px;
@@ -4192,4 +4192,9 @@ section.lightbox > .background + div.content > .twelve.cell {
     	width: auto;
 		margin-bottom: 20px;
 	}
+}
+
+//fix ipad buttons styles
+input[type="submit"], input[type="button"]{
+	-webkit-appearance: none;
 }
