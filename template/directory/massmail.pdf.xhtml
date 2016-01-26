@@ -95,7 +95,7 @@
 			{{/child}}
 			{{^child}}
 				{{#isInClass}}
-					<span class="content">en classe{{^classname}}(s){{/classname}} de{{#classname}} {{classname}}{{/classname}}{{#classes}} {{.}}{{/classes}}.</span>
+					<span class="content">en classe(s) de{{^classes}} {{classname}}{{/classes}}{{#classes}} {{.}}{{/classes}}.</span>
 				{{/isInClass}}
 			{{/child}}
 		</div>
@@ -173,7 +173,7 @@
 			{{/child}}
 			{{^child}}
 				{{#isInClass}}
-					<span class="content">en classe{{^classname}}(s){{/classname}} de{{#classname}} {{classname}}{{/classname}}{{#classes}} {{.}}{{/classes}}.</span>
+					<span class="content">en classe{{^classes}}{{#classname}} {{classname}}{{/classname}}{{/classes}}{{#classes}} {{.}}{{/classes}}.</span>
 				{{/isInClass}}
 			{{/child}}
 		</div>
