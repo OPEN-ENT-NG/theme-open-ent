@@ -32,6 +32,23 @@
 		}
 	}
 
+	.main-col .checkbox-filters{
+		float: none;
+		height: auto;
+	}
+	div.checkbox-filters{
+		display: block;
+
+		ul{
+			padding: 0;
+		}
+	}
+	//label "filtrer"
+	div.checkbox-filters div.cell:not(.checkbox-filters){
+	  float: none;
+	  padding-bottom: 10px;
+	}
+
 }
 
 
@@ -125,6 +142,16 @@
 			font-size: 25px;
 		}
 	}
+	nav.vertical.half-stamps{
+		article{
+			width: 90%;
+			margin: 10px auto;
+		}
+		article.selected{
+			background: @primary-light;
+		}
+	}
+
 	body{
 		font-size: 14px;
 		.material section.main{
