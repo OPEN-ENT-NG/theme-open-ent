@@ -4056,9 +4056,17 @@ body editor{
 			border: 1px dotted #ddd;
 		}
 	}
+    
 	.drawing-zone{
 		padding: 10px;
 	}
+    
+    &.edit, &.both, &.html{
+        editor-toolbar .option.table popover > i{
+            height: 24px;
+            top: 0;
+        }
+    }
 }
 
 [contenteditable], [bind-html]{
