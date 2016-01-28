@@ -1,11 +1,15 @@
-@media screen and (max-width: 1200px){
+
+@wide-screen: 1200px;
+@small-screen: 959px;
+
+@media screen and (max-width: @wide-screen){
 	.login{
 		h1{
 			display: none;
 		}
 	}
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: @small-screen) {
 
 	//workspace carousel
 	.rigid-grid .margin-four carousel.slide{
@@ -52,7 +56,7 @@
 }
 
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: @tablette){
 
 	body.point-out{
 		cursor: pointer!important;
@@ -188,7 +192,7 @@
 		}
 	}
 }
-@media screen and (max-width: 550px){
+@media screen and (max-width: @fat-mobile){
 	body{
 		.notification{
 			.content {

@@ -508,22 +508,25 @@ nav.vertical.stamps, nav.vertical.half-stamps{
 	}
 }
 nav.vertical.half-stamps{
-  article{
-	margin-bottom: 10px;
+	article{
+		margin-bottom: 10px;
 
-	h3{
-	  color: #AAA;
+		h3{
+		  color: #AAA;
+		}
 	}
-  }
+	article.selected{
+		background: @primary;
 
-  article.selected{
-	background: @primary;
-
-	h3{
-	  color: @white;
+		h3{
+		  color: @white;
+		}
 	}
-  }
-
+	input[type=checkbox] {
+	    margin-top: 27px;
+	    position: absolute;
+	    right: 0px;
+	}
 }
 .side-col nav.vertical.half-stamps article:hover{
   box-shadow: 0 4px 6px fade(black, 40%);
@@ -2819,6 +2822,54 @@ article.preview.expanded{
 article.preview.important{
 	.material-card(3px, 20px);
 	border: none;
+}
+
+.previews article.preview{
+	//date
+	em.metadata {
+		position: absolute;
+	    top: 75px;
+	    left: -10px;
+		line-height: 15px;
+		z-index: 3;
+	}
+	//img
+	.one.horizontal-spacing{
+		padding: 0;
+	    margin: 0;
+	    position: absolute;
+	    width: 85px;
+	    height: auto;
+	    top: -15px;
+	    left: -15px;
+
+		label{
+			position: absolute;
+			left: 115px;
+    		top: 40px;
+		}
+	}
+	.margin-three {
+	    margin-left: 150px;
+		h2{
+			margin-bottom: 5px;
+			max-height: 30px;
+			overflow: hidden;
+		}
+		.margin-three {
+			margin: 0 30px 0 5px;
+		}
+		//preview part
+		.margin-three > div:first-child .twelve.cell{
+			max-height: 45px;
+			overflow: hidden;
+			margin-bottom: 10px;
+			p{
+				margin: 0;
+			}
+		}
+	}
+
 }
 
 .theme-preview{
