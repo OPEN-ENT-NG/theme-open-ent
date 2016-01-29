@@ -514,6 +514,14 @@ nav.vertical.half-stamps{
 		h3{
 		  color: #AAA;
 		}
+		input[type=text] {
+			margin-left: 30px;
+			color: @grey;
+			.run-transition(all);
+		}
+		input[type=text]:hover {
+			color: @black;
+		}
 	}
 	article.selected{
 		background: @primary;
@@ -525,7 +533,8 @@ nav.vertical.half-stamps{
 	input[type=checkbox] {
 	    margin-top: 27px;
 	    position: absolute;
-	    right: 0px;
+	    left: 160px;
+		cursor: pointer;
 	}
 }
 .side-col nav.vertical.half-stamps article:hover{
@@ -2825,6 +2834,13 @@ article.preview.important{
 }
 
 .previews article.preview{
+
+	label{
+		position: absolute;
+		z-index: 2;
+		left: 5px;
+		top: 35px;
+	}
 	//date
 	em.metadata {
 		position: absolute;
@@ -2832,6 +2848,7 @@ article.preview.important{
 	    left: -10px;
 		line-height: 15px;
 		z-index: 3;
+		width: 120px;
 	}
 	//img
 	.one.horizontal-spacing{
@@ -2841,19 +2858,14 @@ article.preview.important{
 	    width: 85px;
 	    height: auto;
 	    top: -15px;
-	    left: -15px;
-
-		label{
-			position: absolute;
-			left: 115px;
-    		top: 40px;
-		}
+	    left: 15px;
 	}
 	.margin-three {
-	    margin-left: 150px;
+		margin-left: 110px;
 		h2{
 			margin-bottom: 5px;
 			max-height: 30px;
+			padding-right: 20px;
 			overflow: hidden;
 		}
 		.margin-three {
