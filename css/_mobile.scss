@@ -1,15 +1,15 @@
 
-@wide-screen: 1200px;
-@small-screen: 959px;
+$wide-screen: 1200px;
+$small-screen: 959px;
 
-@media screen and (max-width: @wide-screen){
+@media screen and (max-width: $wide-screen){
 	.login{
 		h1{
 			display: none;
 		}
 	}
 }
-@media screen and (max-width: @small-screen) {
+@media screen and (max-width: $small-screen) {
 
 	//workspace carousel
 	.rigid-grid .margin-four carousel.slide{
@@ -56,7 +56,7 @@
 }
 
 
-@media screen and (max-width: @tablette){
+@media screen and (max-width: $tablette){
 
 	body.point-out{
 		cursor: pointer!important;
@@ -78,11 +78,11 @@
 			a.classic-link{
 				background: #fff;
 				&:hover{
-					color: @primary;
+					color: $primary;
 				}
 			}
-			background-color: @primary;
-			border-left: 10px solid @accent;
+			background-color: $primary;
+			border-left: 10px solid $accent;
 			padding-left: 0;
 		}
 		.mobile-nav-opener{
@@ -91,7 +91,7 @@
 			&::before{
 				content: '\e84f';
 				font-size: 28px;
-				color: @accent;
+				color: $accent;
 				position: absolute;
 				top: 11px;
 				left: 10px;
@@ -105,7 +105,7 @@
 	}
 	.panel{
 		box-sizing: border-box;
-		background: @primary;
+		background: $primary;
 		input-password{
 			button{
 				padding: 5px 0;
@@ -156,7 +156,7 @@
     		float: none!important;
 		}
 		article.selected{
-			background: @primary-light;
+			background: $primary-light;
 		}
 		input[type=checkbox] {
 			position: absolute;
@@ -197,7 +197,7 @@
 			font-family: fontello;
 			padding: 15px;
 			&::before{
-				color: @accent;
+				color: $accent;
 				content: '\e84f';
 				font-size: 28px;
 			}
@@ -212,7 +212,7 @@
 		}
 	}
 }
-@media screen and (max-width: @fat-mobile){
+@media screen and (max-width: $fat-mobile){
 	body{
 		.notification{
 			.content {

@@ -1,38 +1,38 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:500,300,700,400);
 
-@primary-dark: #209dcc;
-@primary: #4bafd5;
-@primary-light: #7ad9ff;
+$primary-dark: #209dcc;
+$primary: #4bafd5;
+$primary-light: #7ad9ff;
 
 //Accent
-@accent: #FF8500;
-@dark-accent: #B25D00;
+$accent: #FF8500;
+$dark-accent: #B25D00;
 
-@green: #46bfaf;
-@yellow: #ecbe30;
-@orange: #FF8500;
-@purple: #763294;
-@cyan: #4cb0d6;
-@pink: #b930a2;
-@red: #e13a3a;
-@grey: #555;
+$green: #46bfaf;
+$yellow: #ecbe30;
+$orange: #FF8500;
+$purple: #763294;
+$cyan: #4cb0d6;
+$pink: #b930a2;
+$red: #e13a3a;
+$grey: #555;
 
-@text-light: #555;
-@background: #f9f9f9;
+$text-light: #555;
+$background: #f9f9f9;
 
-@black: #222;
-@shadow: rgba(0, 0, 0, 0.26);
-@shadow-light: rgba(0, 0, 0, 0.1);
+$black: #222;
+$shadow: rgba(0, 0, 0, 0.26);
+$shadow-light: rgba(0, 0, 0, 0.1);
 
-@header-height: 64px;
+$header-height: 64px;
 
 @font-face {
 	font-family: "OpenDyslexic";
 	src: url(../font/OpenDyslexic3-Regular.ttf);
 }
 
-.material-card(@shadow-size: 2px, @blur-size: 3px){
-	box-shadow: 0  @shadow-size  @blur-size @shadow;
+@mixin material-card($shadow-size: 2px, $blur-size: 3px) {
+	box-shadow: 0  $shadow-size  $blur-size $shadow;
 	border-radius: 2px;
 }
 
@@ -53,7 +53,7 @@ body {
 	.material{
 		section.main{
 			position: relative;
-			top: @header-height + 40px;
+			top: $header-height + 40px;
 			box-sizing: border-box;
 			padding: 8px 35px;
 			padding-bottom: 60px;
@@ -107,7 +107,7 @@ i side-panel{
 	top: 3px;
 }
 
-@media screen and (max-width: @fat-mobile){
+@media screen and (max-width: $fat-mobile){
 
 	h1.application-title{
 		font-size: 14px;

@@ -1,1 +1,3 @@
 ﻿*.css
+lib
+.DS_Store

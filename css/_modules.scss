@@ -1,6 +1,6 @@
 
 a{
-	color: @primary;
+	color: $primary;
 	text-decoration: none;
 }
 
@@ -27,9 +27,9 @@ article.icons-view{
 
 h1, h2, h3, h4, h5{
 	a{
-		color: @primary;
+		color: $primary;
 	}
-	color: @primary;
+	color: $primary;
 	font-weight: 400;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -71,7 +71,7 @@ strong{
 	}
 	li::before{
 		content: "\2666";
-		color: @accent;
+		color: $accent;
 		padding-right: 6px;
 	}
 }
@@ -115,15 +115,15 @@ table, ul.list-view{
 	font-size: 14px;
 	background: #fff;
 	li.head{
-		background: @primary;
+		background: $primary;
 		color: #fff;
 		&:hover{
-			background: @primary;
+			background: $primary;
 		}
 	}
 	thead{
 		tr{
-			background: @primary;
+			background: $primary;
 			color: #fff;
 			border: none;
 		}
@@ -134,9 +134,9 @@ table, ul.list-view{
 	}
 	li{
 		padding: 10px;
-		.run-transition(background);
+		@include run-transition(background);
 		&.checked{
-			background-color: @primary-light;
+			background-color: $primary-light;
 			color: #fff;
 			a{
 				color: #fff
@@ -149,9 +149,9 @@ table, ul.list-view{
 	}
 	tbody{
 		tr{
-			.run-transition(background);
+			@include run-transition(background);
 			&.checked{
-				background-color: @primary-light;
+				background-color: $primary-light;
 				color: #fff;
 				a{
 					color: #fff
@@ -181,14 +181,14 @@ table, ul.list-view{
 }
 
 button, input[type=button], a.button, input[type=submit], .drop-down-button label, .drop-down-button.hidden label{
-	background: @accent;
+	background: $accent;
 	padding: 8px 18px 10px;
 	color: #fff;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 14px;
 	border-radius: 2px;
-	.run-transition(all);
+	@include run-transition(all);
 	font-weight: 500;
 	line-height: 20px;
 	border: none;
@@ -204,7 +204,7 @@ button, input[type=button], a.button, input[type=submit], .drop-down-button labe
 		position: absolute;
 		top: 0%;
 		left: -50%;
-		.run-transition(all);
+		@include run-transition(all);
 		border-radius: 100%;
 		padding: 0;
 	}
@@ -255,7 +255,7 @@ button:active, input[type=button]:active, a.button:active, input[type=submit]:ac
 
 
 input[type=text], input[type=password], input[type=search], input[type=tel], input[type=email]{
-	color: @text-light;
+	color: $text-light;
 	background: transparent;
 	height: 25px;
 	line-height: 25px;
@@ -266,7 +266,7 @@ input[type=text], input[type=password], input[type=search], input[type=tel], inp
 
 .logo{
   background: url(../img/illustrations/logo.png) center no-repeat;
-  height: @header-height;
+  height: $header-height;
   width: 236px;
   margin: 0;
   background-size: contain;
@@ -282,7 +282,7 @@ grid-cell h2 > i:before{
 /* nav horiz menu icons style */
 
 nav.horizontal{
-  height: @header-height;
+  height: $header-height;
   bottom: 0px;
   right: 10px;
 
@@ -291,8 +291,8 @@ nav.horizontal{
   }
 
   > a, popover > a{
-	height: @header-height;
-	line-height: @header-height;
+	height: $header-height;
+	line-height: $header-height;
 	font-weight: 300;
 	font-size: 1.3em;
 	margin: auto 8px;
@@ -318,7 +318,7 @@ nav.horizontal{
 	}
   }
   > a:hover{
-	border-bottom: 3px solid @accent;
+	border-bottom: 3px solid $accent;
   }
 
   #my-photo{
@@ -346,28 +346,28 @@ nav.horizontal{
 	}
 
 	header{
-		color: @text-light;
+		color: $text-light;
 		font-size: 14px;
 		font-weight: bold;
 		text-transform: uppercase;
 		background: transparent;
         margin-right: 10px;
-        .run-transition(border-bottom);
+        @include run-transition(border-bottom);
 
         &:hover{
-            border-bottom: 2px solid lighten(@primary, 20%);
+            border-bottom: 2px solid lighten($primary, 20%);
         }
 	}
 	header.selected{
 		border: none;
-		border-bottom: 2px solid @primary;
-		color: @primary;
+		border-bottom: 2px solid $primary;
+		color: $primary;
 	}
 }
 
 .lightbox-window, .lightbox .content{
 	padding: 10px;
-	box-shadow: 2px 2px 24px @shadow;
+	box-shadow: 2px 2px 24px $shadow;
 	background: #f9f9f9;
 
 	nav.vertical {
@@ -410,7 +410,7 @@ nav.horizontal{
 
 
 header.main{
-	height: @header-height;
+	height: $header-height;
 	background: transparent;
 	position: fixed;
 	top: 0;
@@ -432,7 +432,7 @@ header.main{
 }
 
 .mood-widget{
-	border: 1px solid @primary-light;
+	border: 1px solid $primary-light;
 	background: #eee;
 	padding-top: 0;
 	.icons-select{
@@ -445,7 +445,7 @@ header.main{
 	h1{
 		text-align: center;
 	}
-	border: 1px solid @primary-light;
+	border: 1px solid $primary-light;
 	.content{
 		border: none;
 	}
@@ -459,10 +459,10 @@ nav.vertical.stamps, nav.vertical.half-stamps{
 	overflow: hidden;
 
 	article{
-		.material-card(2px, 3px);
+		@include material-card(2px, 3px);
 		background: white;
 		line-height: 20px;
-		.run-transition(all);
+		@include run-transition(all);
 		font-size: 12px;
 
 		h3{
@@ -474,10 +474,10 @@ nav.vertical.stamps, nav.vertical.half-stamps{
 			margin: 0;
 		}
 		a{
-			color: @primary;
+			color: $primary;
 			margin: 0;
 			&:hover{
-				color: @accent;
+				color: $accent;
 			}
 		}
 	}
@@ -487,7 +487,7 @@ nav.vertical.stamps, nav.vertical.half-stamps{
 		}
 	}
 	article.selected{
-		background: @accent;
+		background: $accent;
 		color: #fff;
 		i.send-mail{
 			margin: 7px;
@@ -498,12 +498,12 @@ nav.vertical.stamps, nav.vertical.half-stamps{
 		a{
 			color: #fff;
 			&:hover{
-				color: @primary;
+				color: $primary;
 			}
 		}
 
 	  	input[type=text]{
-		  	color: @white;
+		  	color: $white;
 		}
 	}
 }
@@ -516,18 +516,18 @@ nav.vertical.half-stamps{
 		}
 		input[type=text] {
 			margin-left: 30px;
-			color: @grey;
-			.run-transition(all);
+			color: $grey;
+			@include run-transition(all);
 		}
 		input[type=text]:hover {
-			color: @black;
+			color: $black;
 		}
 	}
 	article.selected{
-		background: @primary;
+		background: $primary;
 
 		h3{
-		  color: @white;
+		  color: $white;
 		}
 	}
 	input[type=checkbox] {
@@ -553,14 +553,14 @@ nav.vertical.half-stamps{
 		margin: 1px;
 
 		.domino{
-			.material-card(2px, 3px);
+			@include material-card(2px, 3px);
 			border-radius: 3px;
 			border: 0;
 			overflow: hidden;
 
 			.bottom{
 				background: white;
-				color: @primary;
+				color: $primary;
 				div.content{
 					padding: 8px;
 				}
@@ -573,7 +573,7 @@ nav.vertical.half-stamps{
 }
 
 .green{
-	background: @green;
+	background: $green;
 }
 
 .grey{
@@ -581,22 +581,22 @@ nav.vertical.half-stamps{
 }
 
 .yellow{
-	background: @yellow;
+	background: $yellow;
 }
 .orange{
-	background: @orange;
+	background: $orange;
 }
 .purple{
-	background: @purple;
+	background: $purple;
 }
 .cyan{
-	background: @cyan;
+	background: $cyan;
 }
 .pink{
-	background: @pink;
+	background: $pink;
 }
 .grey{
-	background: @primary;
+	background: $primary;
 }
 
 ul.thought-out-actions{
@@ -607,10 +607,10 @@ ul.thought-out-actions{
 		margin-bottom: 1px;
 		list-style-type: none;
 		padding: 8px;
-		.run-transition(background);
+		@include run-transition(background);
 	}
 	li:hover{
-		background: @primary;
+		background: $primary;
 		h2{
 			color: #fff;
 		}
@@ -620,12 +620,12 @@ ul.thought-out-actions{
 ul.icons-tabs{
 	right: 1px;
 	li{
-		.material-card();
+		@include material-card();
 		border-radius: 25px;
 		border: none;
-		background: @accent;
+		background: $accent;
 		i{
-			.invert-colors();
+			@include invert-colors();
 		}
 	}
 }
@@ -640,12 +640,12 @@ a.button[disabled=disabled]:hover, button[disabled=disabled]:hover, input[type=b
 }
 
 .contextual-editor{
-	.border-box;
+	box-sizing: border-box;
 }
 
 .drawing-zone{
 	article.media{
-		border: 1px dashed @primary;
+		border: 1px dashed $primary;
 		img{
 			display: block;
 		}
@@ -662,10 +662,10 @@ a.button[disabled=disabled]:hover, button[disabled=disabled]:hover, input[type=b
 }
 
 .navbar{
-	background: @primary-dark;
+	background: $primary-dark;
 	width: 100%;
-	height: @header-height;
-	box-shadow: 0 2px 5px @shadow;
+	height: $header-height;
+	box-shadow: 0 2px 5px $shadow;
 
 	.welcome-message{
 		display: none;
@@ -681,7 +681,7 @@ a.button[disabled=disabled]:hover, button[disabled=disabled]:hover, input[type=b
 }
 
 .tag{
-	color: @accent;
+	color: $accent;
 	padding-left: 10px;
 }
 
@@ -699,7 +699,7 @@ a.button[disabled=disabled]:hover, button[disabled=disabled]:hover, input[type=b
 		&:hover{
 			background: transparent !important;
 			a{
-				color: @yellow;
+				color: $yellow;
 			}
 		}
 		padding: 0;
@@ -707,7 +707,7 @@ a.button[disabled=disabled]:hover, button[disabled=disabled]:hover, input[type=b
 		width: 120px;
 		&:hover{
 			i::before, a{
-				color: @accent !important;
+				color: $accent !important;
 			}
 		}
 		.container{
@@ -718,7 +718,7 @@ a.button[disabled=disabled]:hover, button[disabled=disabled]:hover, input[type=b
             line-height: 75px;
             text-align: center;
             i::before{
-            	.run-transition(color);
+            	@include run-transition(color);
             	font-weight: normal;
             }
 
@@ -729,7 +729,7 @@ a.button[disabled=disabled]:hover, button[disabled=disabled]:hover, input[type=b
 		}
 		legend{
 			padding: 0 !important;
-			.border-box;
+			box-sizing: border-box;
 			margin-left: 1px;
 			width: 120px;
 			background: none !important;
@@ -765,10 +765,10 @@ a.button[disabled=disabled]:hover, button[disabled=disabled]:hover, input[type=b
 	}
 
 	.current{
-		.border-radius(3px);
+		@include border-radius(3px);
 		padding-left: 0;
 		font-size: 18px;
-		.run-transition(padding-left);
+		@include run-transition(padding-left);
 		i{
 			float: left;
 			margin-right: 8px;
@@ -776,22 +776,22 @@ a.button[disabled=disabled]:hover, button[disabled=disabled]:hover, input[type=b
 	}
 
 	.current.editing{
-		/*background: @primary;
+		/*background: $primary;
 		color: #fff;*/
 		padding-left: 68px;
 
-      background-color: @white;
-      color: @primary;
-      box-shadow: 0 1px 3px @shadow;
+      background-color: $white;
+      color: $primary;
+      box-shadow: 0 1px 3px $shadow;
 	}
 
 	.options-list{
-		/*background: @primary;
+		/*background: $primary;
 		color: #fff;*/
-        background: @white;
+        background: $white;
 		color: #000;
 		font-size: 14px;
-		.border-radius-bottom(3px);
+		@include border-radius-bottom(3px);
 		box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
 		top: 60px;
 	}
@@ -808,20 +808,20 @@ textarea.inline-editing{
 }
 
 textarea.inline-editing:focus{
-	border-bottom: 2px solid @accent;
+	border-bottom: 2px solid $accent;
 	outline: none;
 }
 
 .label-badge{
-	background: @primary-dark;
-	.material-card();
-	.run-transition(background);
+	background: $primary-dark;
+	@include material-card();
+	@include run-transition(background);
 	border-radius: 2px;
 	color: #fff;
 	padding: 4px;
 	margin: 2px;
 	i.close{
-		.invert-colors();
+		@include invert-colors();
 		width: 10px;
 		height: 10px;
 		margin: 5px;
@@ -831,23 +831,23 @@ textarea.inline-editing:focus{
 
 .badge{
 	line-height: 16px;
-	background: @accent;
+	background: $accent;
 	color: #fff;
 }
 
 .label-badge:hover{
-	background: @primary;
+	background: $primary;
 }
 
 //weird chrome hack for background color in prefilled inputs
 input:-webkit-autofill {
 	-webkit-box-shadow: 0 0 0px 1000px white inset;
-	-webkit-text-fill-color: @text-light !important;
+	-webkit-text-fill-color: $text-light !important;
 }
 
 div.background-material{
 	position: absolute;
-	background: linear-gradient(to bottom, @primary 0%, @primary 200px, @primary 200px, white 200px, white 100%);
+	background: linear-gradient(to bottom, $primary 0%, $primary 200px, $primary 200px, white 200px, white 100%);
 }
 
 .aligned{
@@ -855,36 +855,40 @@ div.background-material{
 	vertical-align: middle;
 }
 
-.flat-button, button.flat-button,
-input[type=submit].flat-button, input[type=button].cancel, button.cancel,
-.drop-down-button label, .drop-down-button.hidden label{
-	border: none;
+@mixin flat-button{
+    border: none;
 	box-shadow: none;
-	color: @accent;
+	color: $accent;
 	background: #f0f0f0;
 
 	&:hover{
-		background: @accent;
+		background: $accent;
 		color: #fff;
 	}
 }
 
+.flat-button, button.flat-button,
+input[type=submit].flat-button, input[type=button].cancel, button.cancel,
+.drop-down-button label, .drop-down-button.hidden label{
+	@include flat-button;
+}
+
 input[type=button].pick-file{
-	.flat-button;
+	@include flat-button;
 }
 
 input[type=text], input[type=password], input[type=search], input[type=tel], input[type=email]{
-	color: @text-light;
+	color: $text-light;
 	background: transparent;
 	border-bottom: 1px solid #ddd;
-	.run-transition(border-bottom);
+	@include run-transition(border-bottom);
 }
 input[type=text]:focus, input[type=password]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=email]:focus{
-	border-bottom: 2px solid @accent;
+	border-bottom: 2px solid $accent;
 	outline: 0;
 }
 input.ng-invalid.ng-dirty {
-    border-bottom: 2px solid @red;
+    border-bottom: 2px solid $red;
 }
 
 input-password{
@@ -896,7 +900,7 @@ input-password{
         float: none;
 
         &.ng-invalid.ng-dirty {
-            border-bottom: 2px solid @red;
+            border-bottom: 2px solid $red;
         }
     }
     button{
@@ -904,7 +908,7 @@ input-password{
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         &.pushed{
-            background-color: @dark-accent;
+            background-color: $dark-accent;
             box-shadow: none;
         }
     }
@@ -950,18 +954,18 @@ input-password{
         transition: all 0.25s ease-in-out;
 
         &.weak{
-            background-color: @red;
+            background-color: $red;
         }
         &.normal{
-            background-color: @orange;
+            background-color: $orange;
         }
         &.strong{
-            background-color: @green;
+            background-color: $green;
         }
     }
 }
 .input-errors{
-    color: @red;
+    color: $red;
     font-size: 12px;
     display: block;
     label{
@@ -1012,7 +1016,7 @@ input-password{
 		border-radius: 3px;
 		padding: 30px;
 		box-sizing: border-box;
-		.material-card(5px, 18px);
+		@include material-card(5px, 18px);
 	}
 
     .content{
@@ -1023,12 +1027,12 @@ input-password{
 		border-radius: 3px;
 		padding: 30px;
 		box-sizing: border-box;
-        .material-card(5px, 18px);
+        @include material-card(5px, 18px);
     }
 
 	&.browser-container{
 		> h1 {
-			color: @primary-dark;
+			color: $primary-dark;
 		}
 	}
 
@@ -1044,7 +1048,7 @@ input-password{
 		border-radius: 2px;
 
 		h1{
-			color: @primary-dark;
+			color: $primary-dark;
 		}
 
 		.update{
@@ -1073,7 +1077,7 @@ input-password{
 	}
 
 	input.ng-invalid.ng-dirty{
-		border-bottom: 2px solid @red;
+		border-bottom: 2px solid $red;
 	}
 	input[type=checkbox].ng-invalid.ng-dirty {
   		box-shadow: 0px 0px 10px #e13a3a;
@@ -1081,7 +1085,7 @@ input-password{
 
 	.button-bar{
 		margin-top: 30px;
-		border-top: 1px solid @shadow;
+		border-top: 1px solid $shadow;
 		padding-top: 20px;
 
 		> *{
@@ -1172,7 +1176,7 @@ input-password{
 .tooltip{
 	pointer-events: none;
 	.content{
-		background: @accent;
+		background: $accent;
 		color: #fff;
 		box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 		border-radius: 2px;
@@ -1185,7 +1189,7 @@ input-password{
 
 .loading-panel{
 	background: #fff;
-	border: 1px solid @accent;
+	border: 1px solid $accent;
 	img{
 		display: none;
 	}
@@ -1206,13 +1210,13 @@ input-password{
 }
 
 button:hover, input[type=button]:hover, a.button:hover, input[type=submit]:hover{
-	background-color: @dark-accent;
+	background-color: $dark-accent;
 	box-shadow: none;
-	color: @white;
+	color: $white;
 }
 
 button.cancel:hover, input[type=button].cancel:hover, a.button.cancel:hover, input[type=submit].cancel:hover{
-	background: @accent;
+	background: $accent;
 }
 
 nav.vertical, .app-menu{
@@ -1221,11 +1225,11 @@ nav.vertical, .app-menu{
 	h2{
 		font-size: 16px;
 		font-weight: bold;
-		color: @primary;
+		color: $primary;
 	}
 
 	> ul, > div > ul{
-		border-left: 5px solid @accent;
+		border-left: 5px solid $accent;
 	}
 	ul{
 		margin: 0;
@@ -1239,9 +1243,9 @@ nav.vertical, .app-menu{
 		li{
 			font-size: 16px;
 			padding-left: 20px;
-			.border-box;
+			box-sizing: border-box;
 			a{
-				.run-transition(background);
+				@include run-transition(background);
 				margin-left: 0;
 				padding-left: 25px;
 				padding-right: 45px;
@@ -1260,7 +1264,7 @@ nav.vertical, .app-menu{
 					border-left: 8px solid;
 					height: 0;
 					width: 0;
-					color: @accent;
+					color: $accent;
 					width: 0;
 				}
 				i{
@@ -1278,7 +1282,7 @@ nav.vertical, .app-menu{
 
 			}
 			a.selected{
-				color: @accent;
+				color: $accent;
 				background: none;
 			}
 			a.opened{
@@ -1304,12 +1308,12 @@ nav.vertical, .app-menu{
 		background: #f0f0f0;
 		width: 100%;
 		text-align: center;
-		.border-box;
-		.run-transition(background);
+		box-sizing: border-box;
+		@include run-transition(background);
 		border-radius: 2px;
 	}
 	a.classic-link:hover{
-		background: @primary;
+		background: $primary;
 		color: white;
 	}
 }
@@ -1325,7 +1329,7 @@ media-library{
 }
 
 article{
-	.material-card();
+	@include material-card();
 	article{
 		box-shadow: none;
 	}
@@ -1336,7 +1340,7 @@ article.list-view{
 }
 
 .notification {
-	.material-card();
+	@include material-card();
 	padding: 7px;
 	margin-bottom: 25px;
 	background: #fff;
@@ -1375,7 +1379,7 @@ article.list-view{
 }
 
 .toggle-panel{
-	background: @primary;
+	background: $primary;
 	color: rgba(255, 255, 255, 0.5);
 	right: 58px;
 	em{
@@ -1400,7 +1404,7 @@ article.list-view{
 	.widgets-picker > .row{
 		.inactive{
 			i{
-				.material-card();
+				@include material-card();
 				background: #aaa !important;
 			}
 		}
@@ -1421,31 +1425,31 @@ article.list-view{
 			border-radius: 10px;
 		}
 		.cell:nth-child(6n){
-			i{ background: @green; }
+			i{ background: $green; }
 		}
 		.cell:nth-child(6n + 1){
-			i{ background: @cyan; }
+			i{ background: $cyan; }
 		}
 		.cell:nth-child(6n + 2){
-			i{ background: @purple; }
+			i{ background: $purple; }
 		}
 		.cell:nth-child(6n + 3){
-			i{ background: @pink; }
+			i{ background: $pink; }
 		}
 		.cell:nth-child(6n + 4){
-			i{ background: @red; }
+			i{ background: $red; }
 		}
 		.cell:nth-child(6n + 5){
-			i{ background: @yellow; }
+			i{ background: $yellow; }
 		}
 	}
 	i{
 		display: inline-block;
 		width: 55px;
 		height: 55px;
-		.run-transition(all);
+		@include run-transition(all);
 	}
-	.material-card();
+	@include material-card();
 }
 
 .widgets{
@@ -1466,11 +1470,11 @@ article.list-view{
 	width: 100% !important;
 }
 .widget-container{
-	.material-card();
+	@include material-card();
 	background-color: white;
 	margin-bottom: 30px;
 	width: 98%;
-	.run-transition(all);
+	@include run-transition(all);
 	h1:first-child{
 		text-align: center;
 		padding-top: 15px;
@@ -1488,7 +1492,7 @@ article.list-view{
 	height: 180px;
 	.current-month-header{
 		padding-top: 5px;
-		color: @primary;
+		color: $primary;
 		top: 0;
 	}
 	.content{
@@ -1507,12 +1511,12 @@ article.list-view{
 		}
 		.day.today{
 			color: #fff;
-			background: @accent;
+			background: $accent;
 			border-radius: 10px;
 			padding-right: 2px;
 		}
 		h2{
-			color: @primary;
+			color: $primary;
 		}
 	}
 	.current-day{
@@ -1547,7 +1551,7 @@ article.list-view{
 }
 
 textarea{
-	.border-box;
+	box-sizing: border-box;
 	border:  1px solid #ddd;
 	padding: 10px;
 	font-size: 14px;
@@ -1557,7 +1561,7 @@ textarea{
 
 textarea:focus{
 	outline: none;
-	border: 2px solid @accent;
+	border: 2px solid $accent;
 }
 
 .last-infos-widget{
@@ -1567,7 +1571,7 @@ textarea:focus{
     	float: left;
     	margin-left: 15px;
 		&:hover{
-    		color: @accent;
+    		color: $accent;
     	}
 	}
 }
@@ -1575,9 +1579,9 @@ textarea:focus{
 .last-mails-widget, .pages-widget {
 	background: #fff;
 	margin-bottom: 12px;
-	border: 1px solid @primary-light;
+	border: 1px solid $primary-light;
 	width: 254px;
-	.border-box;
+	box-sizing: border-box;
 	h1 {
 		text-align: center;
 	}
@@ -1587,7 +1591,7 @@ textarea:focus{
 		li {
 			list-style-type: none;
 			padding-left: 7px;
-			border-left: 5px solid @accent;
+			border-left: 5px solid $accent;
 			line-height: 22px;
 			a {
 				font-size: 14px;
@@ -1603,10 +1607,10 @@ textarea:focus{
 	padding: 5px;
 
 	a{
-		color: @primary;
+		color: $primary;
 		font-weight: bold;
 		&:hover{
-			color: @accent;
+			color: $accent;
 		}
 	}
 	.fluxes{
@@ -1621,12 +1625,12 @@ textarea:focus{
 			padding-bottom: 5px;
 			padding-top: 5px;
 			> p{
-				color: @primary;
+				color: $primary;
 			}
 		}
 	}
 	.message{
-		color: @text-light;
+		color: $text-light;
 		padding: 15px 8px;
 	}
 	.channel{
@@ -1635,17 +1639,17 @@ textarea:focus{
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
-		background-color: @primary;
+		background-color: $primary;
 	}
 	.channel:hover{
-		background: @accent;
+		background: $accent;
 	}
 	.rss-article{
-		border-bottom: 1px solid @accent;
+		border-bottom: 1px solid $accent;
 		font-size: 13px;
 		padding: 5px;
 		a{
-			color: @text-light;
+			color: $text-light;
 			font-weight: normal;
 		}
 	}
@@ -1653,7 +1657,7 @@ textarea:focus{
 		border-bottom: 0px;
 	}
 	.selected-item{
-		background: @accent;
+		background: $accent;
 		color: #fff;
 		padding: 10px;
 		p{
@@ -1670,7 +1674,7 @@ textarea:focus{
 
         h1{
             padding: 10px;
-            color: @accent;
+            color: $accent;
         }
     }
 }
@@ -1692,7 +1696,7 @@ textarea:focus{
     }
 
     > i.fonticon{
-        color: @primary;
+        color: $primary;
     }
 
     .top-right-magnet{
@@ -1702,13 +1706,13 @@ textarea:focus{
     }
 
     div.text-band{
-        background-color: @primary-light;
-        border-bottom: 2px solid @black;
-        border-top: 2px solid @black;
+        background-color: $primary-light;
+        border-bottom: 2px solid $black;
+        border-top: 2px solid $black;
         padding: 5px 0px;
 
         .highlighted{
-            background-color: @accent;
+            background-color: $accent;
             font-weight: bold;
             border-radius: 5px;
             padding: 5px;
@@ -1736,7 +1740,7 @@ textarea:focus{
 
         h1{
             padding: 10px;
-            color: @accent;
+            color: $accent;
         }
     }
 }
@@ -1750,7 +1754,7 @@ textarea:focus{
 
         h1{
             padding: 10px;
-            color: @accent;
+            color: $accent;
         }
     }
 
@@ -1766,14 +1770,14 @@ textarea:focus{
     div.content{
         padding: 0px 5%;
         h2{
-            color: @accent;
+            color: $accent;
             font-size: 22px;
             font-weight: bold;
         }
 
         .input-label{
             label{
-                color: @accent;
+                color: $accent;
                 font-size: 18px;
                 font-weight: bold;
             }
@@ -1797,9 +1801,9 @@ textarea:focus{
 		vertical-align: top;
 		transition: background .25s ease;
 		&.selected{
-			background-color: @primary-light;
+			background-color: $primary-light;
 			legend{
-				background: @accent;
+				background: $accent;
 			}
 		}
 		.img.container{
@@ -1873,10 +1877,10 @@ filters{
 		font-weight: bold;
 		line-height: 30px;
 		font-size: 16px;
-		color: @primary;
+		color: $primary;
 	}
 	padding-bottom: 20px;
-	.row;
+	@include row;
 	display: block;
 	p:first-child{
 		i{
@@ -1893,10 +1897,10 @@ filters{
 	width: 100%;
 	left: 0;
 	margin-left: 0;
-	background: @accent;
+	background: $accent;
 	height: 58px;
 	button, .button{
-		.flat-button;
+		@include flat-button;
 		background: transparent;
 		color: white;
 		padding: 9px;
@@ -1905,14 +1909,14 @@ filters{
 		margin: 0;
 	}
 	input[type=button].pick-file{
-		background: @accent;
+		background: $accent;
 		color: #fff;
 	}
 	button[disabled=disabled], button.disabled{
 		color: #888;
 	}
 	button:hover, .button:hover{
-		color: @accent;
+		color: $accent;
 		background: white;
 	}
 	button[disabled=disabled]:hover, button.disabled:hover{
@@ -1921,7 +1925,7 @@ filters{
 		coor: #888;
 	}
 	behaviour{
-		.cell;
+		@include cell;
 	}
 	.contextual-link{
 		a{
@@ -1935,7 +1939,7 @@ filters{
 }
 
 a:hover{
-	color: @accent;
+	color: $accent;
 }
 
 .line{
@@ -1943,19 +1947,19 @@ a:hover{
 }
 
 [stick-top-top]{
-	.run-transition(top);
+	@include run-transition(top);
 }
 
 .floating-navigation{
 	li{
-		.material-card();
+		@include material-card();
 		border-top: 0;
 		margin-bottom: 5px;
 		background: #fff;
 		border-radius: 1px;
 	}
 	li:hover{
-		background: @accent;
+		background: $accent;
 		box-shadow: none;
 		a{
 			color: #fff;
@@ -1963,49 +1967,53 @@ a:hover{
 	}
 }
 
-.message{
-	color: @text-light;
+@mixin message{
+    color: $text-light;
 	text-align: left;
-	.border-radius(0px);
+	@include border-radius(0px);
 	background: #f0f0f0;
-	border-left: 10px solid @primary;
+	border-left: 10px solid $primary;
+}
+
+.message{
+	@include message;
 }
 
 .warning{
-	.message;
+	@include message;
 	background: #f0f0f0;
-	border-left: 10px solid @pink;
+	border-left: 10px solid $pink;
 }
 
 
 .info{
-	.message;
-	//border-left: 10px solid @accent;
+	@include message;
+	//border-left: 10px solid $accent;
 }
 
 
 .success{
-	.message;
-	//border-left: 10px solid @green;
+	@include message;
+	//border-left: 10px solid $green;
 }
 
 [data-drop-down]{
-	.material-card(3px, 5px);
+	@include material-card(3px, 5px);
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
 	font-size: 12px;
 	ul{
 		background: white;
 		border: 1px;
-		color: @text-light;
+		color: $text-light;
 		font-size: 1.2em;
 		padding: 1px;
 		li{
 			text-align: left;
 		}
 		li:hover{
-			background: @primary;
-			color: @accent;
+			background: $primary;
+			color: $accent;
 		}
 	}
 }
@@ -2016,7 +2024,7 @@ a:hover{
 }
 
 article.selected{
-	background: @primary;
+	background: $primary;
 	color: #fff;
 	a{
 		color: #fff;
@@ -2028,7 +2036,7 @@ article.selected{
 	border: 1px solid #ddd;
 }
 [contenteditable]:focus{
-	border: 2px solid @accent;
+	border: 2px solid $accent;
 }
 
 [contenteditable], [bind-html]{
@@ -2071,27 +2079,27 @@ article.selected{
 		line-height: 30px;
 		thead{
 			tr{
-				background: @primary;
+				background: $primary;
 				th{
 					color: white;
 				}
 				th:hover{
-					background: @accent !important;
+					background: $accent !important;
 				}
 			}
 		}
 		tr{
 			background: #fff;
-			border-bottom: 1px solid @shadow-light;
+			border-bottom: 1px solid $shadow-light;
 			td, td:first-child, th{
 				width: 25px;
 				font-size: 12px
 			}
 			.active{
-				background: @accent;
+				background: $accent;
 			}
 			td:hover{
-				background: @primary-light !important;
+				background: $primary-light !important;
 			}
 		}
 	}
@@ -2117,11 +2125,11 @@ section.lightbox-window{
 }
 
 .lightbox-view{
-	.lightbox-window;
+	@include lightbox-window;
 }
 
 .lightbox-background{
-	.lightbox-backdrop;
+	@include lightbox-backdrop;
 }
 
 .media section.lightbox{
@@ -2161,14 +2169,14 @@ section.lightbox{
 .accordions{
 	.accordion{
 		h2{
-			background: @primary;
+			background: $primary;
 			border: none;
 			font-size: 20px;
 			color: #fff;
 			margin: 3px;
 		}
 		h2:hover{
-			background: @primary-dark;
+			background: $primary-dark;
 		}
 		&:last-child{
 			h2{
@@ -2178,12 +2186,12 @@ section.lightbox{
 
 		.toggle{
 			border: 0;
-			background: @background;
+			background: $background;
 			.content{
 				color: #666;
 				h3{
 					font-weight: normal;
-					color: @accent;
+					color: $accent;
 					font-size: 16px;
 				}
 				select, input[type=text], textarea{
@@ -2196,7 +2204,7 @@ section.lightbox{
 	.accordion.opened{
 		h2{
 			color: #fff;
-			background: @accent;
+			background: $accent;
 			border: none;
 		}
 		.toggle{
@@ -2220,16 +2228,16 @@ select{
 
 .selectable-list{
 	li{
-		border: 1px solid @accent;
+		border: 1px solid $accent;
 	}
 
 	li:hover{
-		background: @accent;
-		color: @white;
+		background: $accent;
+		color: $white;
 	}
 	li.selected{
-		background: @accent;
-		color: @white;
+		background: $accent;
+		color: $white;
 	}
 }
 
@@ -2237,8 +2245,8 @@ select{
 	ul{
 		li{
 			color: #fff;
-			background: @primary;
-			border-color: @accent;
+			background: $primary;
+			border-color: $accent;
 			border-right: none;
 		}
 		li:first-child{
@@ -2248,12 +2256,12 @@ select{
 			border-bottom-left-radius: 5px
 		}
 		li.selected:first-child{
-			border-top: 1px solid @accent;
+			border-top: 1px solid $accent;
 		}
 		li.selected{
-			color: @black;
+			color: $black;
 			background: #FCFCFC;
-			border-color: @accent;
+			border-color: $accent;
 			border-right: none;
 			border-top: none;
 			border-bottom: none;
@@ -2262,20 +2270,20 @@ select{
 }
 
 .side-tabs-content{
-	.border-radius(0);
-	border-color: @accent;
+	@include border-radius(0);
+	border-color: $accent;
 }
 
 .humane-original-success{
-	background: @green;
+	background: $green;
 }
 
 .progress-bar{
 	.filled{
-		background: @primary;
+		background: $primary;
 	}
 	.filled.small{
-		color: @accent;
+		color: $accent;
 	}
 }
 
@@ -2370,11 +2378,11 @@ select{
 		min-height: 30px;
 		line-height: 30px;
 		list-style-type: none;
-		color: @primary;
+		color: $primary;
 		cursor: pointer !important;
 	}
 	> li:hover{
-		color: @accent;
+		color: $accent;
 	}
 
 	i.text{
@@ -2396,7 +2404,7 @@ select{
 		background-position: 4px !important;
 		padding-left: 29px;
 		font-family: Arial;
-		color: @primary;
+		color: $primary;
 		text-transform: none;
 		background-size: 19px;
 		background-color: transparent;
@@ -2407,7 +2415,7 @@ select{
 		box-shadow: none;
 	}
 	 > li > div > input[type=button]:hover{
-		color: @accent;
+		color: $accent;
 		background-color: transparent;
 		background-size: 19px;
 	}
@@ -2415,18 +2423,18 @@ select{
 
 .square-menu{
 	button{
-		background: @primary;
+		background: $primary;
 		border-radius: 0;
 		color: #fff;
 	}
 	button:hover{
-		background: @primary;
+		background: $primary;
 	}
 
 }
 
 .grid-media{
-	outline: 1px solid @primary;
+	outline: 1px solid $primary;
 	image-select > div::before{
 		left: 0;
 	}
@@ -2440,11 +2448,11 @@ select{
 
 .editor.drawing-grid{
 	.grid-add-row{
-		background: @primary;
+		background: $primary;
 		border-radius: 0;
 	}
 	.grid-add-row:hover{
-		background: @primary;
+		background: $primary;
 	}
 }
 
@@ -2452,69 +2460,69 @@ select{
 	right: 42px;
 
 	button.pink{
-		background: @pink;
+		background: $pink;
 	}
 	button.purple{
-		background: @purple;
+		background: $purple;
 	}
 	button.orange{
-		background: @orange;
+		background: $orange;
 	}
 	button.white{
 		background: #fff;
-		border: 1px solid @primary-light;
+		border: 1px solid $primary-light;
 	}
 	button.green{
-		background: @green;
+		background: $green;
 	}
 	button.blue{
-		background: @accent;
+		background: $accent;
 	}
 	button.black{
-		background: @primary;
+		background: $primary;
 	}
 }
 
 .media-container.pink{
-	background: @pink;
-	.run-transition(background);
+	background: $pink;
+	@include run-transition(background);
 }
 .media-container.purple{
-	background: @purple;
-	.run-transition(background);
+	background: $purple;
+	@include run-transition(background);
 }
 .media-container.orange{
-	background: @orange;
-	.run-transition(background);
+	background: $orange;
+	@include run-transition(background);
 }
 .media-container.white{
 	background: #fff;
 	color: #000;
-	.run-transition(background);
+	@include run-transition(background);
 }
 .media-container.green{
-	background: @green;
-	.run-transition(background);
+	background: $green;
+	@include run-transition(background);
 }
 .media-container.blue{
-	background: @accent;
-	.run-transition(background);
+	background: $accent;
+	@include run-transition(background);
 	color: #fff;
 	h1,h2,h3{
 		color: #fff;
 	}
 }
 .media-container.black{
-	background: @primary;
+	background: $primary;
 	color: #fff;
-	.run-transition(background);
+	@include run-transition(background);
 	h1,h2,h3{
 		color: #fff;
 	}
 }
 
 .schedule{
-	width: calc(~"100% - 130px");
+	width: calc("100% - 130px");
 	height: auto;
 	margin-left: 130px;
 	padding-right: 0px;
@@ -2523,7 +2531,7 @@ select{
 	}
 	legend.timeslots{
 		width: 130px;
-		background: @primary-light;
+		background: $primary-light;
 		color: #fff;
 		position: absolute;
 		left: -130px;
@@ -2542,7 +2550,7 @@ select{
 			legend{
 				width: 100%;
 				text-align: center;
-				background: @primary-light;
+				background: $primary-light;
 				color: #fff;
 			}
 			.timeslots{
@@ -2552,7 +2560,7 @@ select{
 					border-bottom: 1px solid #eee;
 					border-right: 1px solid #eee;
 					width: 100%;
-					.border-box;
+					box-sizing: border-box;
 				}
 			}
 
@@ -2563,7 +2571,7 @@ select{
 		.schedule-item{
 			border: 1px solid transparent;
 			border-radius: 5px;
-			.border-box;
+			box-sizing: border-box;
 			z-index: 500;
 
 			.schedule-item-content{
@@ -2613,19 +2621,19 @@ select{
 			}
 		}
 		.schedule-item.one{
-			.one;
+			@include grid-cell-width(1);
 		}
 		.schedule-item.two{
-			.two;
+			@include grid-cell-width(2);
 		}
 		.schedule-item.three{
-			.three;
+			@include grid-cell-width(3);
 		}
 		.schedule-item.four{
-			.four;
+			@include grid-cell-width(4);
 		}
 		.schedule-item.six{
-			.six;
+			@include grid-cell-width(6);
 		}
 	}
 }
@@ -2636,24 +2644,24 @@ select{
 		margin: 0;
 	}
 	.autocomplete > em{
-		border-bottom: 1px solid @shadow-light;
+		border-bottom: 1px solid $shadow-light;
 		background: white;
-		color: @text-light;
-		.run-transition(background);
+		color: $text-light;
+		@include run-transition(background);
 	}
 	.autocomplete > em:hover{
 		color: #fff;
-		background: @accent;
+		background: $accent;
 	}
 	input[type=text]{
 		width: 100%;
 		margin-left: 0;
 	}
     .display-more-bar{
-        width: calc(~'100% -20px');
+        width: calc('100% -20px');
         display: block;
         font-size: 15px;
-	    border-bottom: 2px solid @accent;
+	    border-bottom: 2px solid $accent;
 	    padding: 2px 10px;
     }
 }
@@ -2665,9 +2673,9 @@ select{
 			background: #aaa;
 			height: 40px !important;
 			width: 40px !important;
-			.run-transition(all);
+			@include run-transition(all);
 			vertical-align: top;
-			.material-card();
+			@include material-card();
 		}
 		i:hover{
 			opacity: 1;
@@ -2683,22 +2691,22 @@ select{
 					box-shadow: 0 2px 3px rgba(0,0,0,0.26) inset;
 				}
 				&:nth-child(6n){
-					i{ background: @green; }
+					i{ background: $green; }
 				}
 				&:nth-child(6n + 1){
-					i{ background: @cyan; }
+					i{ background: $cyan; }
 				}
 				&:nth-child(6n + 2){
-					i{ background: @purple; }
+					i{ background: $purple; }
 				}
 				&:nth-child(6n + 3){
-					i{ background: @pink; }
+					i{ background: $pink; }
 				}
 				&:nth-child(6n + 4){
-					i{ background: @red; }
+					i{ background: $red; }
 				}
 				&:nth-child(6n + 5){
-					i{ background: @yellow; }
+					i{ background: $yellow; }
 				}
 			}
 			label{
@@ -2728,10 +2736,10 @@ select{
 
 	}
 	p:first-child:hover {
-		background: @primary;
+		background: $primary;
 	}
 	.wrapper {
-		background: @primary;
+		background: $primary;
 		box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.6);
 		width: 100%;
 		ul {
@@ -2824,13 +2832,13 @@ article.preview{
 }
 
 article.preview.expanded{
-	.material-card();
+	@include material-card();
 	background: #fff;
 	border: none;
 }
 
 article.preview.important{
-	.material-card(3px, 20px);
+	@include material-card(3px, 20px);
 	border: none;
 }
 
@@ -2896,11 +2904,11 @@ article.preview.important{
 }
 
 .theme-preview.magenta{
-	background: @pink;
+	background: $pink;
 }
 
 .theme-preview.default{
-	background: @accent;
+	background: $accent;
 }
 
 .drop-down-button{
@@ -2908,7 +2916,7 @@ article.preview.important{
 	z-index: 650;
 	white-space: nowrap;
 	label, label:hover{
-		color: @accent;
+		color: $accent;
 		background: #eee;
 	}
 
@@ -2920,14 +2928,14 @@ article.preview.important{
 			top: 38px;
 			left: 1px;
 			box-sizing: border-box;
-			.material-card();
+			@include material-card();
 			border: 0;
 			li{
 				list-style-type: none;
-				.border-box;
+				box-sizing: border-box;
 				padding: 5px;
 				padding-left: 10px;
-				.run-transition(background);
+				@include run-transition(background);
 				font-weight: 500;
 				text-align: left;
 				a{
@@ -2938,7 +2946,7 @@ article.preview.important{
 				}
 			}
 			li:hover{
-				background: @accent;
+				background: $accent;
 				color: #fff;
 			}
 		}
@@ -2950,7 +2958,7 @@ article.preview.important{
 		display: none;
 	}
 	label:hover{
-		background: @primary-dark;
+		background: $primary-dark;
 		border: none;
 	}
 }
@@ -2970,13 +2978,13 @@ hr.solid{
 			text-align: center;
 
 			font-size: 35px;
-			background: @primary;
+			background: $primary;
 			color: #fff;
 			margin-bottom: 1px;
-			.run-transition(background);
+			@include run-transition(background);
 		}
 		h2:hover{
-			background: @accent;
+			background: $accent;
 		}
 		h2.disabled{
 			background: #666;
@@ -2989,11 +2997,11 @@ hr.solid{
 h1.letter-picker{
 	height: 50px;
 	width: 50px;
-	background: @primary;
+	background: $primary;
 	color: #fff;
 	line-height: 50px;
 	text-align: center;
-	.run-transition(background);
+	@include run-transition(background);
 	margin-left: auto;
 	margin-right: auto;
 	clear: both;
@@ -3006,7 +3014,7 @@ h1.letter-picker:first-child{
 }
 
 h1.letter-picker:hover{
-	background: @accent;
+	background: $accent;
 }
 
 hr.separator{
@@ -3057,7 +3065,7 @@ ul.toc{
 
 .lightbox-view .tabs.linker .illustrated-list, .lightbox .tabs.linker .illustrated-list{
 	li{
-		.material-card(1px, 3px);
+		@include material-card(1px, 3px);
 		margin-bottom: 4px;
 		height: 42px;
 	}
@@ -3065,7 +3073,7 @@ ul.toc{
 		display: block;
 	}
 	li.selected{
-		background: @primary;
+		background: $primary;
 		a{
 			color: #fff;
 		}
@@ -3089,15 +3097,15 @@ nav.illustrated-links{
 		padding: 0;
 
 		li{
-			.material-card(3px, 4px);
+			@include material-card(3px, 4px);
 			list-style-type: none;
 			display: table;
 			margin-bottom: 12px;
-			border-right: 8px solid @primary;
+			border-right: 8px solid $primary;
 			transition: border-color 0.25s ease-in-out;
 
 			&.selected{
-				border-color: @accent;
+				border-color: $accent;
 			}
 
 			.illustration{
@@ -3173,10 +3181,10 @@ nav.illustrated-links{
 				transition: background 0.25s ease-in-out;
 
 				&:hover{
-					background: @primary-light;
+					background: $primary-light;
 				}
 				&.selected{
-					background: @primary;
+					background: $primary;
 				}
 
 				> *{
@@ -3240,8 +3248,8 @@ nav.illustrated-links{
 						min-width: 50px;
 						height: 30px;
 						line-height: 30px;
-						max-width: calc(~'100% - 35px');
-						background: @background;
+						max-width: calc('100% - 35px');
+						background: $background;
 
 					}
 					&::after{
@@ -3253,7 +3261,7 @@ nav.illustrated-links{
 						top: 23px;
 						left: 16px;
 						position: absolute;
-						background: @background;
+						background: $background;
 						transform: rotate(-45deg);
                         -webkit-transform: rotate(-45deg);
 					}
@@ -3284,7 +3292,7 @@ nav.illustrated-links{
 		opacity: 1
 	}
 	.grid-media{
-		outline: 1px solid @primary;
+		outline: 1px solid $primary;
 		pointer-events: all;
 	}
 	.square-menu button, .grid-add-row{
@@ -3300,7 +3308,7 @@ nav.illustrated-links{
 		opacity: 0.3
 	}
 	.grid-media{
-		outline: 1px solid @primary;
+		outline: 1px solid $primary;
 		pointer-events: none;
 	}
 	.square-menu button, .grid-add-row{
@@ -3314,7 +3322,7 @@ nav.illustrated-links{
 			opacity: 1
 		}
 		.grid-media{
-			outline: 1px solid @primary;
+			outline: 1px solid $primary;
 			pointer-events: all;
 		}
 		.square-menu button, .grid-add-row{
@@ -3325,7 +3333,7 @@ nav.illustrated-links{
 
 .page-markers{
 	.marker{
-		border-color: transparent transparent @primary transparent;
+		border-color: transparent transparent $primary transparent;
 		color: white;
 
 		a{
@@ -3334,13 +3342,13 @@ nav.illustrated-links{
 	}
 	.marker:nth-child(2){
 		color: white;
-		border-color: transparent transparent @primary transparent;
+		border-color: transparent transparent $primary transparent;
 		a{
 			color: white;
 		}
 	}
 	.content:hover{
-		color: @accent;
+		color: $accent;
 	}
 }
 
@@ -3385,7 +3393,7 @@ input[type=text][disabled=disabled] {
 }
 
 .patchwork{
-	color: @text-light;
+	color: $text-light;
 
 	.navigation {
 		.items {
@@ -3394,13 +3402,13 @@ input[type=text][disabled=disabled] {
 			}
 
 			.row {
-				.material-card();
+				@include material-card();
 				border:none;
 				margin-bottom: 15px;
 				background: #fff;
 
 				&.selected{
-					background: @accent;
+					background: $accent;
 					h1{
 						color: #fff;
 						line-height: 25px;
@@ -3417,16 +3425,16 @@ input[type=text][disabled=disabled] {
 
 				.buttons{
 					bottom: 0px;
-					.run-transition(bottom);
+					@include run-transition(bottom);
 					width: 100%;
 					left: 0;
 					z-index: 19;
-					background: @accent;
+					background: $accent;
 					padding: 12px;
 					display: block;
 					position: fixed;
 					button{
-						.flat-button;
+						@include flat-button;
 						background: transparent;
 						color: white;
 						padding: 9px;
@@ -3436,7 +3444,7 @@ input[type=text][disabled=disabled] {
 					}
 					button:hover{
 						background: #fff;
-						color: @accent;
+						color: $accent;
 					}
 				}
 				.buttons.hidden{
@@ -3452,7 +3460,7 @@ input[type=text][disabled=disabled] {
 }
 
 .droptarget{
-	border-color: @accent;
+	border-color: $accent;
 }
 
 .droptarget.block-editor{
@@ -3488,7 +3496,7 @@ image-select.droptarget{
 }
 
 .humane.humane-original-error{
-	color: @red
+	color: $red
 }
 
 .humane.humane-animate,
@@ -3511,17 +3519,17 @@ carousel{
             background: transparent;
             border-top: 10px solid transparent;
 	        border-bottom: 10px solid transparent;
-	        border-left: 10px solid @primary;
+	        border-left: 10px solid $primary;
             height: 0;
             width: 0;
         }
         li.current::after {
 			background: transparent;
-            border-left-color: @accent;
+            border-left-color: $accent;
 		}
 		li:hover::after {
 			background: transparent;
-            border-left-color: @accent;
+            border-left-color: $accent;
 		}
     }
 	.carousel{
@@ -3542,17 +3550,17 @@ carousel{
 			li::after {
 				display: block;
 				content: " ";
-				background: @primary;
+				background: $primary;
 				width: 15px;
 				height: 15px;
 				border-radius: 50%;
-				.run-transition(background);
+				@include run-transition(background);
 			}
 			li.current::after {
-				background: @accent;
+				background: $accent;
 			}
 			li:hover::after {
-				background: @accent;
+				background: $accent;
 			}
 		}
 	}
@@ -3566,7 +3574,7 @@ carousel.slide{
 		width: 40px;
 		top: 50px;
 		border-radius: 50%;
-		//background: @lightest-grey;
+		//background: $lightest-grey;
 	}
 	//arrow shape & color
 	.image.previous::after, .image.next::after{
@@ -3582,7 +3590,7 @@ carousel.slide{
 		}
 		//arrow shape & color
 		&::after{
-			border-right: 15px solid @primary;
+			border-right: 15px solid $primary;
 			left: -3px;
 		}
 	}
@@ -3594,7 +3602,7 @@ carousel.slide{
 		}
 		//arrow shape & color
 		&::after{
-			border-left: 15px solid @primary;
+			border-left: 15px solid $primary;
 		    right: -3px;
 		}
 	}
@@ -3623,49 +3631,49 @@ ul.colored{
 	ul.cyan{
 		li{
 			a.selected{
-				background: @cyan;
+				background: $cyan;
 			}
 		}
 	}
 	ul.green{
 		li{
 			a.selected{
-				background: @green;
+				background: $green;
 			}
 		}
 	}
 	ul.yellow{
 		li.selected{
 			a{
-				background: @yellow;
+				background: $yellow;
 			}
 		}
 	}
 	ul.purple{
 		li{
 			a.selected{
-				background: @purple;
+				background: $purple;
 			}
 		}
 	}
 	ul.pink{
 		li{
 			a.selected{
-				background: @pink;
+				background: $pink;
 			}
 		}
 	}
 	ul.orange{
 		li{
 			a.selected{
-				background: @orange;
+				background: $orange;
 			}
 		}
 	}
 	ul.grey{
 		li{
 			a.selected{
-				background: @grey;
+				background: $grey;
 			}
 		}
 	}
@@ -3697,7 +3705,7 @@ ul.colored li {
 			color: #888;
 		}
 		li.active{
-			background: @accent;
+			background: $accent;
 			color: #fff;
 		}
 	}
@@ -3712,12 +3720,12 @@ ul.colored li {
 		border: 1px solid #ddd;
 		vertical-align: top;
 		.diff{
-			background: fade(@accent, 20%);
+			background: fade($accent, 20%);
 		}
 	}
 	> tbody > tr > td:first-child{
 		.added{
-			background: fade(@red, 20%);
+			background: fade($red, 20%);
 		}
 		.removed{
 			visibility: hidden;
@@ -3725,7 +3733,7 @@ ul.colored li {
 	}
 	> tbody > tr > td:last-child{
 		.added{
-			background: fade(@green, 20%);
+			background: fade($green, 20%);
 		}
 		.removed{
 			visibility: hidden;
@@ -3735,10 +3743,10 @@ ul.colored li {
 
 slider, slider.drawing-zone{
 	.cursor{
-		border-top-color: @accent;
+		border-top-color: $accent;
 	}
 	.filled{
-		background: @primary;
+		background: $primary;
 	}
 	.bar{
 		position: absolute;
@@ -3748,7 +3756,7 @@ slider, slider.drawing-zone{
 
 recorder{
 	.status{
-		color: @accent;
+		color: $accent;
 	}
 	.metadata{
 		.status{
@@ -3759,18 +3767,18 @@ recorder{
 		padding-left: 0;
 	}
 	.elapsed-time{
-		color: @primary;
+		color: $primary;
 	}
 }
 
 .embedded-viewer{
-	background: @primary;
+	background: $primary;
 	color: #fff;
 	input[type=text]{
 		color: #fff;
 	}
 	i{
-		.invert-colors();
+		@include invert-colors();
 	}
 }
 file-viewer .file .default-viewer button {
@@ -3786,7 +3794,7 @@ file-viewer .file .default-viewer button {
 em.skin-default{
 	font-family: Roboto;
 	font-size: 20px;
-	background: @primary-dark;
+	background: $primary-dark;
 	height: 81px;
 	line-height: 67px;
 	padding: 5px;
@@ -3796,7 +3804,7 @@ em.skin-default{
 em.skin-dyslexic{
 	font-family: OpenDyslexic;
 	font-size: 16px;
-	background: @primary-dark;
+	background: $primary-dark;
 	height: 81px;
 	line-height: 67px;
 	padding: 5px;
@@ -3806,10 +3814,10 @@ em.skin-dyslexic{
 popover{
 	popover-content{
 		background: #fff;
-		.material-card(1px, 20px);
+		@include material-card(1px, 20px);
 		.more{
 			background: #eee;
-			.run-transition(background);
+			@include run-transition(background);
 			a{
 				color: #666;
 				font-size: 16px;
@@ -3821,7 +3829,7 @@ popover{
 				}
 			}
 			&:hover{
-				background: @accent;
+				background: $accent;
 				a{
 					color: #fff;
 				}
@@ -3834,7 +3842,7 @@ nav.horizontal{
 	.bookmarked-app:hover{
 		background: transparent !important;
 		i::before{
-			color: @accent;
+			color: $accent;
 		}
 	}
 	.my-apps{
@@ -3897,7 +3905,7 @@ label{
 		display: inline-block;
 		vertical-align: top;
 		margin-right: 5px;
-		.run-transition(all);
+		@include run-transition(all);
 		box-sizing: border-box;
 	}
 
@@ -3905,7 +3913,7 @@ label{
 		content: " ";
 		transform: rotate(40deg);
         -webkit-transform: rotate(40deg);
-		border-color: @green;
+		border-color: $green;
 		height: 25px;
 		width: 20px;
 		margin-top: -11px;
@@ -3922,7 +3930,7 @@ image-select{
 
 image-select > div::before{
 	content: "Cliquez pour choisir une image ou glissez-déposez un fichier depuis votre poste de travail";
-	background: @accent;
+	background: $accent;
 	width: 100%;
 	height: 100%;
 	display: block;
@@ -3934,7 +3942,7 @@ image-select > div::before{
 	padding: 10px;
 	font-size: 16px;
 	color: #fff;
-	.run-transition(all);
+	@include run-transition(all);
 	box-sizing: border-box;
 	opacity: 0;
 }
@@ -3945,7 +3953,7 @@ image-select > div:hover::before{
 }
 
 i.important{
-	color: @accent;
+	color: $accent;
 }
 
 
@@ -3965,13 +3973,13 @@ i side-panel{
 side-panel{
 	&.hidden{
 		.opener{
-			.material-card();
+			@include material-card();
 			border-radius: 25px;
-			background: @accent;
+			background: $accent;
 		}
 	}
 	.toggle{
-		.material-card(5px, 25px);
+		@include material-card(5px, 25px);
 		background: #fff;
 		.content{
 			float: left;
@@ -3979,7 +3987,7 @@ side-panel{
 	}
 	.opener{
 		color: #fff;
-		background: @dark-accent;
+		background: $dark-accent;
 		box-shadow: 0 2px 3px rgba(0,0,0,0.2) inset;
 		border-radius: 25px;
 	}
@@ -3987,17 +3995,17 @@ side-panel{
 
 plus{
 	.opener.plus{
-		.material-card();
+		@include material-card();
 		border-radius: 25px;
 	}
 	.opener{
 		color: #fff;
-		background: @accent;
+		background: $accent;
 		border-radius: 25px;
-		.run-transition(all);
+		@include run-transition(all);
 	}
 	.opener.minus{
-		background: @dark-accent;
+		background: $dark-accent;
 		box-shadow: 0 2px 3px rgba(0,0,0,0.2) inset;
 	}
 }
@@ -4011,7 +4019,7 @@ plus{
 		float: right;
 		margin-right: 15px;
 		&:hover{
-			color: @accent;
+			color: $accent;
 		}
 	}
 	.bookmark-add-button::before{
@@ -4023,14 +4031,14 @@ plus{
 		float: left;
 		margin-left: 15px;
 		&:hover{
-			color: @accent;
+			color: $accent;
 		}
 	}
 }
 
 .card{
 	background: #fff;
-	.material-card();
+	@include material-card();
 	font-size: 14px;
 	h3{
 		font-size: 18px;
@@ -4090,7 +4098,7 @@ nav.vertical{
 
 select-list{
 	.options{
-		.material-card();
+		@include material-card();
 	}
 }
 
@@ -4101,16 +4109,16 @@ h1 i:before, h1 i:after, h1 i{
 
 body editor{
 	.selected-value:hover{
-		border-color: @accent;
+		border-color: $accent;
 	}
 	&.edit editor-toolbar .option:hover, &.both editor-toolbar .option:hover{
-		border-bottom: 3px solid @accent;
+		border-bottom: 3px solid $accent;
 	}
 	&.edit editor-toolbar, &.both editor-toolbar{
 		.option.table{
 			.draw-table{
 				.one.cell.match{
-					background: @accent;
+					background: $accent;
 				}
 			}
 		}
@@ -4119,7 +4127,7 @@ body editor{
 		box-shadow: none;
 	}
 	contextual-menu{
-		.material-card();
+		@include material-card();
 	}
 
 	[contenteditable]{
@@ -4154,7 +4162,7 @@ body editor{
 contextual-menu{
 	ul{
 		li:hover{
-			background: @accent;
+			background: $accent;
 			color: #fff;
 		}
 	}
@@ -4186,7 +4194,7 @@ contextual-menu{
 	border-radius: 0;
 	padding: 0;
 	img{
-	  background-color: @primary;
+	  background-color: $primary;
 	}
 	.bottom {
 	  margin: 0;
@@ -4213,12 +4221,12 @@ alphabetical{
 
   h1.letter-picker + hr.line {
 	padding: 0;
-	border-bottom: 1px solid @primary;
+	border-bottom: 1px solid $primary;
 	margin-bottom: 15px;
   }
 
   .domino{
-   .run-transition(box-shadow);
+   @include run-transition(box-shadow);
 
     .bottom{
       background: transparent;
@@ -4229,14 +4237,14 @@ alphabetical{
       position: absolute;
       height: 100%;
       h4{
-        .run-transition;
-		color: @primary;
+        @include run-transition;
+		color: $primary;
 		line-height: 20px;
 		padding: 5px 15px;
 	  }
     }
     .bottom a:hover h4{
-      color: @accent;
+      color: $accent;
     }
   }
 
