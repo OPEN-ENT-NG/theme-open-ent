@@ -18,5 +18,4 @@
     "tests"
   ],
     "entcore-css-lib": "git://github.com/entcore/css-lib.git#dev"
-  }
 }
