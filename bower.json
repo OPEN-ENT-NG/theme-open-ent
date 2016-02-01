@@ -17,7 +17,6 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "entcore-css-lib": "1.0.0"
+    "entcore-css-lib": "git://github.com/entcore/css-lib.git#dev"
   }
 }
