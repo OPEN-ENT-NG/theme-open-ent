@@ -147,15 +147,21 @@
 		}
 	}
 	nav.vertical.half-stamps{
+		& > div{
+			width: 520px;
+    		margin: 10px auto;
+		}
 		article{
-			width: 90%;
-			margin: 10px auto;
+			width: auto;
+    		float: none!important;
 		}
 		article.selected{
 			background: @primary-light;
 		}
 		input[type=checkbox] {
-			margin-top: 38px;
+			position: absolute;
+			left: 70px;
+			z-index: 2;
 		}
 	}
 	.previews{
@@ -251,6 +257,16 @@
 			}
 
 		}
+
+		nav.vertical.half-stamps{
+			& > div{
+				width: 300px;
+			}
+			input[type=checkbox] {
+				left: 75px;
+			}
+		}
+
 	}
 
 }
