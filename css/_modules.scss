@@ -1311,6 +1311,7 @@ nav.vertical, .app-menu{
 		box-sizing: border-box;
 		@include run-transition(background);
 		border-radius: 2px;
+		cursor: pointer;
 	}
 	a.classic-link:hover{
 		background: $primary;
@@ -2026,6 +2027,12 @@ a:hover{
 .comment{
 	border: 1px solid #eee;
 	background: #fff;
+}
+.hash-magnet{
+	.comment{
+		padding: 7px 10px;
+		margin-top: 0px;
+	}
 }
 
 article.selected{
@@ -4097,10 +4104,8 @@ nav.vertical{
 
 
 .cards-list .card .illustration input[type=checkbox]{
-  top: auto;
-  left: auto;
-  right: 5px;
-  bottom: 5px;
+  left: 5px;
+  top: 5px;
 }
 
 select-list{

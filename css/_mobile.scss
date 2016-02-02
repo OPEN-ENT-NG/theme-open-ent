@@ -64,6 +64,9 @@ $small-screen: 959px;
 
 	body{
 		nav.vertical[side-nav]{
+			background-color: $primary;
+			border-left: 10px solid $accent;
+			padding-left: 0;
 			ul{
 				border-left: none !important;
 				li{
@@ -78,12 +81,10 @@ $small-screen: 959px;
 			a.classic-link{
 				background: #fff;
 				&:hover{
-					color: $primary;
+					color: $accent;
 				}
 			}
-			background-color: $primary;
-			border-left: 10px solid $accent;
-			padding-left: 0;
+
 		}
 		.mobile-nav-opener{
 			font-family: fontello;
@@ -208,7 +209,18 @@ $small-screen: 959px;
 		form{
 			.bottom-locked input{
 				margin-bottom: 10px;
+				font-size: 13px;
 			}
+		}
+	}
+	.twelve-mobile input[type=search]{
+		margin-top: 15px;
+	}
+
+	article form .rigid-grid > .margin-two{
+		margin-left: 25%;
+		.bottom-locked > .right-magnet {
+		    margin-bottom: 10px;
 		}
 	}
 }
@@ -268,5 +280,12 @@ $small-screen: 959px;
 		}
 
 	}
+
+}
+@media screen and (max-width: $small-mobile){
+	body{
+
+	}
+
 
 }
