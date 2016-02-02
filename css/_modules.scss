@@ -1317,6 +1317,11 @@ nav.vertical, .app-menu{
 		color: white;
 	}
 }
+nav.vertical.half-stamps.mobile-navigation.slide{
+	& > div{
+		width: auto;
+	}
+}
 media-library{
 	nav.vertical ul li a{
 		text-indent: 0;
@@ -2854,7 +2859,6 @@ article.preview.important{
 	}
 }
 .previews article.preview{
-
 	label{
 		position: absolute;
 		z-index: 2;
@@ -2869,6 +2873,9 @@ article.preview.important{
 	    width: 85px;
 	    height: auto;
 	    top: -15px;
+	    left: 5px;
+	}
+	.one.horizontal-spacing.allowcheck{
 	    left: 15px;
 	}
 	.margin-three {
@@ -4135,11 +4142,11 @@ body editor{
 			border: 1px dotted #ddd;
 		}
 	}
-    
+
 	.drawing-zone{
 		padding: 10px;
 	}
-    
+
     &.edit, &.both, &.html{
         editor-toolbar .option.table popover > i{
             height: 24px;
