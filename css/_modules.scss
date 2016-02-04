@@ -2534,7 +2534,7 @@ select{
 }
 
 .schedule{
-	width: calc("100% - 130px");
+	width: calc(100% - 130px);
 	height: auto;
 	margin-left: 130px;
 	padding-right: 0px;
@@ -2557,7 +2557,7 @@ select{
 		width: 100%;
 		.day{
 			float: left;
-			width: 100% / 7;
+			width: percentage(1 / 7);
 			position: relative;
 			legend{
 				width: 100%;
@@ -2670,7 +2670,7 @@ select{
 		margin-left: 0;
 	}
     .display-more-bar{
-        width: calc('100% -20px');
+        width: calc(100% - 20px);
         display: block;
         font-size: 15px;
 	    border-bottom: 2px solid $accent;
@@ -3262,7 +3262,7 @@ nav.illustrated-links{
 						min-width: 50px;
 						height: 30px;
 						line-height: 30px;
-						max-width: calc('100% - 35px');
+						max-width: calc(100% - 35px);
 						background: $background;
 
 					}
