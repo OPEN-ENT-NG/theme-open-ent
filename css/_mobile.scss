@@ -63,6 +63,13 @@ $small-screen: 959px;
 	}
 
 	body{
+
+		.application-title{
+			i.blog, i.wiki{
+				display: inline-block!important;
+			}
+		} 
+
 		nav.vertical[side-nav]{
 			background-color: $primary;
 			border-left: 10px solid $accent;

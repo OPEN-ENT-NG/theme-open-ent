@@ -3972,8 +3972,9 @@ i.important{
 
 
 //  icons for side-panel opener tool
+//  delete if out from h1
 
-i.blog, i.wiki{
+i.wiki{
 	display: inline-block!important;
 }
 
@@ -3985,6 +3986,8 @@ i side-panel{
 }
 
 side-panel{
+	top: 10px;
+
 	&.hidden{
 		.opener{
 			@include material-card();
@@ -4006,6 +4009,7 @@ side-panel{
 		border-radius: 25px;
 	}
 }
+
 
 plus{
 	.opener.plus{
