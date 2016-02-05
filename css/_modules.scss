@@ -216,6 +216,7 @@ form{
 	}
 }
 
+
 @-webkit-keyframes ripple {
 	100% {
 		opacity: 0;
@@ -2032,6 +2033,16 @@ a:hover{
 	.comment{
 		padding: 7px 10px;
 		margin-top: 0px;
+	}
+	article form{
+		textarea + button{
+			margin-bottom: 30px;
+		}
+	}
+}
+.hash-magnet article{
+	h2 + div + div{
+		margin-top: 20px;
 	}
 }
 
@@ -4086,7 +4097,9 @@ plus{
 	float: left;
   }
 }
-
+.side-col + .main-col + .main-col > div{
+	margin-top: 10px;
+}
 
 
 nav.vertical{
@@ -4098,10 +4111,10 @@ nav.vertical{
   }
 
   .illustration input[type=checkbox]{
-    top: auto;
-    left: auto;
-    right: 50px;
-    bottom: 5px;
+    top: 5px;
+    left: 50px;
+	bottom: auto;
+	right: auto;
   }
 }
 

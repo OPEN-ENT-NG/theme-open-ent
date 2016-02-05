@@ -68,7 +68,7 @@ $small-screen: 959px;
 			i.blog, i.wiki{
 				display: inline-block!important;
 			}
-		} 
+		}
 
 		nav.vertical[side-nav]{
 			background-color: $primary;
@@ -110,6 +110,28 @@ $small-screen: 959px;
 		font-size: 18px;
 		margin-bottom: 9px;
 		line-height: 30px;
+	}
+	h1.application-title{
+		color: transparent;
+		span{
+			color: $white;
+		}
+		span + span{
+			display: block;
+			background: $primary;
+			width: 100%;
+			margin: auto;
+			position: fixed;
+			left: 0;
+			text-align: center;
+			font-size: 17px;
+			height: 35px;
+			line-height: 35px;
+			cursor: default;
+		}
+	}
+	section.subtitle-push{
+		margin-top: 40px;
 	}
 	.panel{
 		box-sizing: border-box;
@@ -226,13 +248,62 @@ $small-screen: 959px;
 
 	article form .rigid-grid > .margin-two{
 		margin-left: 25%;
+		input[type=text]{
+			font-size: 13px;
+		}
 		.bottom-locked > .right-magnet {
 		    margin-bottom: 10px;
+		}
+	}
+
+	.rigid-grid{
+		.side-col{
+			nav.vertical{
+				.illustration{
+					img{
+						margin: 0;
+					}
+					input[type=checkbox]{
+						left: 5px;
+				    }
+				}
+			}
+
+		}
+
+		.side-col + .main-col{
+			overflow: hidden;
+			text-align: center;
+
+			container{
+				float: none;
+				text-align: left;
+
+				& > div > .checkbox-filters{
+					padding: 0px 20px 5px;
+				}
+			}
+
+		}
+		.side-col + .main-col + .main-col > div{
+			margin-top: 20px;
 		}
 	}
 }
 @media screen and (max-width: $fat-mobile){
 	body{
+
+		h1.application-title{
+			span + span{
+				font-size: 15px;
+				height: 25px;
+				line-height: 25px;
+			}
+		}
+		section.subtitle-push{
+			margin-top: 30px;
+		}
+
 		.notification{
 			.content {
 				margin: 20px 10px 5px;
@@ -291,7 +362,11 @@ $small-screen: 959px;
 }
 @media screen and (max-width: $small-mobile){
 	body{
-
+		.side-col + .main-col{
+			clear: both;
+			overflow: auto;
+			float: none;
+		}
 	}
 
 
