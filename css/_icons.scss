@@ -4,7 +4,7 @@
 /* font family with # version */
 @font-face {
   font-family: 'fontello';
-  src: url('../font/fontello.3.7/font/fontello.woff');
+  src: url('../font/fontello.3.8/font/fontello.woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -1922,6 +1922,7 @@ body editor{
                     top: -6px;
                     &::before{
                         content: '\e8b3';
+                        color: black;
                     }
 			    }
             }
@@ -1961,4 +1962,51 @@ body editor{
             }
 		}
 	}
+}
+
+@media screen and (max-width: $tablette){
+    body editor{
+        editor-toolbar{
+            select-list .selected-value{
+                width: 44px;
+                &::after{
+                    height: 44px;
+                    width: 30px;
+                    top: 0;
+                    left: 0;
+                    border: none;
+                }
+            }
+
+            .option.font{
+                select-list .selected-value{
+                    @include editor-icon();
+                    &::after{
+                        content: '\e8c4';
+                        color: black;
+                    }
+                }
+            }
+
+            .option.font-size{
+                select-list .selected-value{
+                    @include editor-icon();
+                    &::after{
+                        content: '\e8c7';
+                        color: black;
+                    }
+                }
+            }
+
+            .option.format{
+                select-list .selected-value{
+                    @include editor-icon();
+                    &::after{
+                        content: '\e8c8';
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
 }
