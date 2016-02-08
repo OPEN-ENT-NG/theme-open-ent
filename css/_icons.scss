@@ -1978,6 +1978,17 @@ body editor{
                 }
             }
 
+            .option.table{
+            popover{
+                > i{
+                    &::before{
+                        left: 7px;
+                        position: absolute;
+                    }
+			    }
+            }
+		}
+
             .option.font{
                 select-list .selected-value{
                     @include editor-icon();
