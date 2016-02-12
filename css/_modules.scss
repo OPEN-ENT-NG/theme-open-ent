@@ -540,7 +540,7 @@ nav.vertical.half-stamps{
 	}
 }
 .side-col nav.vertical.half-stamps article:hover{
-  box-shadow: 0 4px 6px fade(black, 40%);
+  box-shadow: 0 4px 6px rgba(black, 0.4);
 }
 
 .row.rigid-grid > .centered{
@@ -3745,12 +3745,12 @@ ul.colored li {
 		border: 1px solid #ddd;
 		vertical-align: top;
 		.diff{
-			background: fade($accent, 20%);
+			background: rgba($accent, 0.2);
 		}
 	}
 	> tbody > tr > td:first-child{
 		.added{
-			background: fade($red, 20%);
+			background: rgba($red, 0.2);
 		}
 		.removed{
 			visibility: hidden;
@@ -3758,7 +3758,7 @@ ul.colored li {
 	}
 	> tbody > tr > td:last-child{
 		.added{
-			background: fade($green, 20%);
+			background: rgba($green, 0.2);
 		}
 		.removed{
 			visibility: hidden;
@@ -4331,4 +4331,13 @@ section.lightbox > .background + div.content > .twelve.cell {
 //fix ipad buttons styles
 input[type="submit"], input[type="button"]{
 	-webkit-appearance: none;
+}
+
+
+.microbox-wrapper{
+	background: rgba($white, 0.6);
+}
+.microbox-content{
+	background: $white;
+	box-shadow: 0 0 3px 2px rgba(black, 0.2);
 }

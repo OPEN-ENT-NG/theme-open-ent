@@ -4,9 +4,6 @@ $primary-dark: #209dcc;
 $primary: #4bafd5;
 $primary-light: #7ad9ff;
 
-//Accent
-$accent: #ff8500;
-$dark-accent: #B25D00;
 
 $green: #46bfaf;
 $yellow: #ecbe30;
@@ -18,6 +15,10 @@ $red: #e13a3a;
 $grey: #555;
 $light-grey: #F0F0F0;
 $white: #FFFFFF;
+
+//Accent
+$accent: $orange;
+$dark-accent: #B25D00;
 
 $text-light: #555;
 $background: #f9f9f9;

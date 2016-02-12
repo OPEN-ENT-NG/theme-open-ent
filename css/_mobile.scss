@@ -273,20 +273,39 @@ $small-screen: 959px;
 
 		.side-col + .main-col{
 			overflow: hidden;
-			text-align: center;
-
-			container{
-				float: none;
-				text-align: left;
-
-				& > div > .checkbox-filters{
-					padding: 0px 20px 5px;
+			.cell button.microbox{
+				float: right;
+			}
+			.cell{
+				margin: 10px 0;
+				a.button, button{
+					float: none;
+					display: inline-block;
 				}
 			}
-
+			//comments on actu
+			.cell.right-magnet{
+				margin: 0 0 10px;
+				//create blog button
+				a.button{
+					float: right;
+				}
+			}
 		}
 		.side-col + .main-col + .main-col > div{
-			margin-top: 20px;
+			//postslist
+		}
+	}
+	.microbox-content container{
+		float: none;
+		text-align: left;
+
+		.checkbox-filters{
+			height: auto;
+			ul li{
+				display: block;
+				padding: 20px;
+			}
 		}
 	}
 }
@@ -331,18 +350,15 @@ $small-screen: 959px;
 					font-size: 14px;
 					line-height: 17px;
 					max-height: 35px;
-					span{
-						display: block;
-					}
 				}
 				.margin-three {
 					margin: 0 5px 0 5px;
 					line-height: 17px;
 					font-size: 13px
 				}
-				//preview part
+				//preview part actu
 				.margin-three > div:first-child .twelve.cell{
-					max-height: 50px;
+					max-height: 35px;
 				}
 			}
 
@@ -356,16 +372,17 @@ $small-screen: 959px;
 				left: 75px;
 			}
 		}
+		h2 span.warning-text{
+			display: block;
+		}
 
 	}
 
 }
 @media screen and (max-width: $small-mobile){
 	body{
-		.side-col + .main-col{
-			clear: both;
-			overflow: auto;
-			float: none;
+		.rigid-grid > .side-col.three{
+			width: 55%;
 		}
 	}
 
