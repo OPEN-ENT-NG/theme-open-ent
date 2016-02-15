@@ -35,7 +35,7 @@
 	<section class="row">
 		<nav class="horizontal">
 			<a href="/timeline/timeline"><i class="home"></i></a>
-			<a href="/community" ng-if="me.hasWorkflow('net.atos.entng.community.controllers.CommunityController|view')"><i class="community"></i></a>
+			<a class="zero-mobile" href="/community" ng-if="me.hasWorkflow('net.atos.entng.community.controllers.CommunityController|view')"><i class="community"></i></a>
 			<popover>
 				<a href="/welcome" popover-opener ng-click="openApps($event)"><i class="apps"></i></a>
 				<popover-content>
@@ -63,8 +63,7 @@
 			<a class="zero-mobile">
 				<help></help>
 			</a>
-
-			<a href="/userbook/mon-compte" class="zero-mobile"><img data-ng-src="[[avatar ? avatar+'?thumbnail=48x48' : '']]" id="my-photo" /></a>
+			<a href="/userbook/mon-compte"><img data-ng-src="[[avatar ? avatar+'?thumbnail=48x48' : '']]" id="my-photo" /></a>
 			<a logout><i class="disconnect"></i></a>
 		</nav>
 	</section>
