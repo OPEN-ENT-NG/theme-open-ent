@@ -8,6 +8,17 @@ $small-screen: 959px;
 			display: none;
 		}
 	}
+
+	//actu createinfo
+	container article form{
+		& > .three.cell{
+			width: 100%;
+			& + .nine.cell{
+				width: 100%;
+			}
+		}
+	}
+	
 }
 @media screen and (max-width: $small-screen) {
 
@@ -52,6 +63,7 @@ $small-screen: 959px;
 	  float: none;
 	  padding-bottom: 10px;
 	}
+
 
 }
 
@@ -454,7 +466,7 @@ $small-screen: 959px;
 					padding-top: 15px;
 				}
 				.nine.cell{
-					width: calc(100% - 30px);
+					width: calc(100% - 40px);
 					font-weight: normal;
 					font-style: normal;
 					font-size: 12px;

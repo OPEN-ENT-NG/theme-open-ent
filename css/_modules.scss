@@ -2872,6 +2872,19 @@ select{
 	}
 }
 
+
+//actu createinfo
+container article form{
+	& > .three.cell{
+		margin-bottom: 20px;
+		line-height: 35px;
+		input[type=checkbox] + i18n::before {
+			vertical-align: sub;
+		}
+	}
+}
+
+
 article.preview{
 	box-shadow: none;
 	background: transparent;
