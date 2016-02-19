@@ -4,36 +4,6 @@ a{
 	text-decoration: none;
 }
 
-
-.account .mood icons-select{
-	margin-top: 6px;
-}
-//devise
-.account .mood + div{
-	margin-bottom: 15px;
-	overflow: hidden;
-	box-sizing: border-box;
-}
-
-.account .mood icons-select{
-	.option{
-		display: inline-block;
-		vertical-align: top;
-		width: 100px;
-		float: none;
-		padding: 12px 0
-	}
-}
-
-.user-book{
-	input[type=button], button{
-		display: none;
-	}
-	.one.cell i{
-		line-height: 38px;
-	}
-}
-
 article{
 	background: #fdfdfd;
 	border: none;
@@ -2155,6 +2125,38 @@ article.selected{
 		}
 	}
 }
+
+
+
+.account .mood icons-select{
+	margin-top: 6px;
+}
+//devise
+.account .mood + div{
+	margin-bottom: 15px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+.account .mood icons-select{
+	.option{
+		display: inline-block;
+		vertical-align: top;
+		width: 100px;
+		float: none;
+		padding: 12px 0
+	}
+}
+
+.user-book{
+	input[type=button], button{
+		display: none;
+	}
+	.one.cell i{
+		line-height: 38px;
+	}
+}
+
 
 section.lightbox-window{
 	form#upload-form{
