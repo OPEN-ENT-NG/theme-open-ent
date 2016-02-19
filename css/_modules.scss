@@ -239,7 +239,11 @@ form{
 		padding: 0px 18px;
 	}
 }
-
+.lightbox form#changePassword{
+	label{
+		display: block;
+	}
+}
 
 @-webkit-keyframes ripple {
 	100% {
@@ -918,7 +922,7 @@ input.ng-invalid.ng-dirty {
 
 input-password{
     input[type=password], input[type=text]{
-        width: 90%;
+		width: calc(100% - 50px);
         margin: 0px;
         height: 32px;
         display: inline-block;
@@ -1121,7 +1125,7 @@ input-password{
 
     input-password{
         input[type=password], input[type=text]{
-            width: 90%;
+			width: calc(100% - 50px);
             margin: 0px;
             height: 32px;
             display: inline-block;
