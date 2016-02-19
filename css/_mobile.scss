@@ -69,11 +69,14 @@ $small-screen: 959px;
 				display: inline-block!important;
 			}
 		}
-
+		nav.vertical[side-nav].slide{
+			padding-bottom: 70px;
+		}
 		nav.vertical[side-nav]{
 			background-color: $primary;
 			border-left: 10px solid $accent;
 			padding-left: 0;
+			padding-bottom: 70px;
 			ul{
 				border-left: none !important;
 				li{
@@ -268,7 +271,6 @@ $small-screen: 959px;
 				    }
 				}
 			}
-
 		}
 
 		.side-col + .main-col{
@@ -296,6 +298,52 @@ $small-screen: 959px;
 			//postslist
 		}
 	}
+
+
+	.account{
+		.avatar{
+			position: absolute;
+			top: 15px;
+			left: 15px;
+			z-index: 2;
+			width: 90px;
+			height: 90px;
+			padding: 0;
+			border-radius: 50%;
+			overflow: hidden;
+
+			image-select > div::before{
+				@include fonticon;
+				//content: '\E84A';
+				content: '\E83F';
+				font-size: 40px;
+				line-height: 62px;
+			}
+		}
+		.avatar + .user-infos article{
+			h2{
+				margin: 25px 0 45px 100px;
+			}
+		}
+
+		.mood icons-select{
+			.options-list.icons-view{
+				width: auto;
+			}
+			.options-list.icons-view.toggle-visible{
+				box-shadow: 0px 3px 2px 1px #E1E1E1;
+			}
+
+		}
+		.icons-select .options-list.toggle-visible{
+			height: auto;
+		}
+
+	}
+
+
+
+
 	.microbox-content container{
 		float: none;
 		text-align: left;
@@ -377,6 +425,51 @@ $small-screen: 959px;
 		}
 
 	}
+	.account{
+		.user-infos{
+			form .row{
+				.four.cell{
+					width: 100%;
+					font-weight: bold;
+				    padding-top: 15px;
+				}
+				.seven.cell{
+					width: calc(100% - 30px);
+					font-weight: normal;
+					font-style: normal;
+				    font-size: 12px;
+					color: $grey;
+				}
+				i::before{
+					font-size: 18px;
+				}
+			}
+		}
+		.user-book{
+			article .row{
+				.two.cell{
+					width: 100%;
+					font-weight: bold;
+					padding: 0;
+					padding-top: 15px;
+				}
+				.nine.cell{
+					width: calc(100% - 30px);
+					font-weight: normal;
+					font-style: normal;
+					font-size: 12px;
+					color: $grey;
+				}
+				.one.cell{
+					float: right;
+					i::before{
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
+
 
 }
 @media screen and (max-width: $small-mobile){
