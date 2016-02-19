@@ -18,7 +18,7 @@ $small-screen: 959px;
 			}
 		}
 	}
-	
+
 }
 @media screen and (max-width: $small-screen) {
 
@@ -311,6 +311,23 @@ $small-screen: 959px;
 		}
 	}
 
+	image-select > div::before{
+		@include fonticon;
+		//content: '\E84A';
+		content: '\E83F';
+		font-size: 40px;
+		line-height: 62px;
+	}
+	nav.vertical.half-stamps{
+		image-select > div::before{
+			line-height: 47px;
+		}
+	}
+	article form{
+		image-select > div::before{
+			line-height: 128px;
+		}
+	}
 
 	.account{
 		.avatar{
@@ -324,13 +341,6 @@ $small-screen: 959px;
 			border-radius: 50%;
 			overflow: hidden;
 
-			image-select > div::before{
-				@include fonticon;
-				//content: '\E84A';
-				content: '\E83F';
-				font-size: 40px;
-				line-height: 62px;
-			}
 		}
 		.avatar + .user-infos article{
 			h2{
