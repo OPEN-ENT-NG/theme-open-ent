@@ -21,7 +21,10 @@ $small-screen: 959px;
 
 }
 @media screen and (max-width: $small-screen) {
-
+    // drop transitions for better perfs
+    button, input[type=button], a.button, input[type=submit], .drop-down-button label, .drop-down-button.hidden label{
+        transition: none;
+    }
 	//workspace carousel
 	.rigid-grid .margin-four carousel.slide{
 		.image.previous, .image.next{
