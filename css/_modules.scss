@@ -97,6 +97,9 @@ h4{
 			  background: #efefef;
               font-weight: bold;
 		}
+		tr.new-element.checked{
+			  background: $primary-light;
+		}
 	}
 }
 
@@ -144,7 +147,7 @@ table, ul.list-view{
 	tbody{
 		tr{
 			@include run-transition(background);
-			&.checked{
+			&.checked, &.checked:hover{
 				background-color: $primary-light;
 				color: #fff;
 				a{

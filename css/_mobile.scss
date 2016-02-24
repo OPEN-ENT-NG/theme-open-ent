@@ -92,6 +92,10 @@ $small-screen: 959px;
 			border-left: 10px solid $accent;
 			padding-left: 0;
 			padding-bottom: 70px;
+			h2{
+				color: $white;
+				font-size: 18px;
+			}
 			ul{
 				border-left: none !important;
 				li{
@@ -100,6 +104,12 @@ $small-screen: 959px;
 					}
 					a{
 						color: #fff;
+						padding-right: 20px;
+					    padding-top: 8px;
+					    padding-bottom: 8px;
+						i.close, i.edit{
+							display: none;
+						}
 					}
 				}
 			}
@@ -366,8 +376,75 @@ $small-screen: 959px;
 
 	}
 
+	article.list-view.mailbox{
+		thead{
+			display: none;
+		}
+		table, tbody, tr, td{
+			display: block;
+		}
+		tbody{
+			tr:first-of-type{
+				border-top: 1px solid $shadow-light;
+			}
+			tr{
+				position: relative;
+				overflow: hidden;
+				min-height: 70px;
+			}
 
+			td{
+				width: auto;
+				max-width: none;
+			}
+			td.icon{
+				position: absolute;
+				padding: 22px 0;
+				height: 100%!important;
+				width: 45px!important;
+				text-align: center;
+			}
+			td.icon.sysmail{
+				top: 0;
+				right: -10px;
+			}
+			td.user{
+				margin-left: 45px;
+				padding-top: 15px;
+				padding-bottom: 0;
+				max-width: calc(70% - 45px);
+			}
+			td.content{
+				margin-left: 45px;
+				padding: 5px 15px 10px 12px;
+				font-size: 12px;
+				max-width: calc(80% - 45px);
+			}
+			td.attach{
+				position: absolute;
+				right: 8px;
+				bottom: 7px;
+				padding: 0;
+				i.attachment{
+					width: 12px;
+					height: 12px;
+				}
+			}
+			td.date{
+				position: absolute;
+				right: 0;
+				top: 2px;
+				padding: 0;
+				padding-right: 5px;
+				font-size: 11px;
+			}
+		}
 
+	}
+
+	article.solid form .right-magnet{
+		margin: 10px
+	}
 
 	.microbox-content container{
 		float: none;
@@ -381,6 +458,16 @@ $small-screen: 959px;
 			}
 		}
 	}
+
+	body nav.vertical[side-nav] .lightbox{
+		 ul li a{
+			color: $primary;
+		}
+		 ul li a.selected{
+			color: $accent;
+		}
+	}
+
 }
 @media screen and (max-width: $fat-mobile){
 	body{
@@ -501,6 +588,13 @@ $small-screen: 959px;
 	body{
 		.rigid-grid > .side-col.three{
 			width: 55%;
+		}
+		article.list-view.mailbox{
+			tbody{
+				td.date{
+					font-size: 10px;
+				}
+			}
 		}
 	}
 
