@@ -124,15 +124,22 @@ $small-screen: 959px;
 		.mobile-nav-opener{
 			font-family: fontello;
 			background: none;
+			background-image: none;
+			padding: 15px;
+
 			&::before{
 				content: '\e84f';
-				font-size: 28px;
-				color: $accent;
+				font-size: 21px;
+				color: $white;
 				position: absolute;
-				top: 11px;
+				top: 13px;
 				left: 10px;
 			}
+			&::before:hover{
+				color: $accent;
+			}
 		}
+
 	}
 	h1{
 		font-size: 18px;
@@ -249,18 +256,7 @@ $small-screen: 959px;
 		right: 10px;
 		top: 8px;
 	}
-	body{
-		.mobile-nav-opener{
-			background-image: none;
-			font-family: fontello;
-			padding: 15px;
-			&::before{
-				color: $accent;
-				content: '\e84f';
-				font-size: 28px;
-			}
-		}
-	}
+
 	h2 + article.rigid-grid .three-mobile + .margin-two{
 		margin-left: 25%;
 		form{
@@ -376,6 +372,7 @@ $small-screen: 959px;
 
 	}
 
+//mailbox
 	article.list-view.mailbox{
 		thead{
 			display: none;
@@ -441,9 +438,26 @@ $small-screen: 959px;
 		}
 
 	}
-
+	//write mail
 	article.solid form .right-magnet{
 		margin: 10px
+	}
+
+	section.main-col{
+		nav.contextual-buttons{
+			float: right;
+			width: auto;
+			.action-buttons{
+			}
+		}
+	}
+	h3.whereami{
+		display: block;
+		float: left;
+	    margin-top: 5px;
+	    margin-bottom: 0;
+	    font-size: 15px;
+	    font-weight: bold;
 	}
 
 	.microbox-content container{
@@ -459,6 +473,7 @@ $small-screen: 959px;
 		}
 	}
 
+	//for lightbox medialib in side nav
 	body nav.vertical[side-nav] .lightbox{
 		 ul li a{
 			color: $primary;
@@ -468,7 +483,9 @@ $small-screen: 959px;
 		}
 	}
 
+// end tablettes
 }
+
 @media screen and (max-width: $fat-mobile){
 	body{
 
@@ -580,7 +597,7 @@ $small-screen: 959px;
 				}
 			}
 		}
-	}
+	}// end account
 
 
 }

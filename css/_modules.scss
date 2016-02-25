@@ -4147,7 +4147,23 @@ plus{
 	margin-top: 10px;
 }
 
+//mailbox subject
+section.main-col{
+	article.vertical-spacing{
+		strong.medium-text{
+			display: block;
+			padding: 15px 0;
+			line-height: 15px;
+		}
+		.escape_cke{
+			color: $black;
+		}
+	}
 
+}
+h3.whereami{
+	display: none;
+}
 nav.vertical{
 
   .cell .illustration img{
