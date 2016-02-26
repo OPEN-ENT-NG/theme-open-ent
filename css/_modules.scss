@@ -3341,6 +3341,9 @@ nav.illustrated-links{
 		}
 	}
 }
+button.right-magnet + nav.illustrated-links{
+	clear: both;
+}
 
 .caption{
 	line-height: 10px;
