@@ -20,14 +20,16 @@ article.icons-view{
 }
 
 h1, h2, h3, h4, h5{
-	a{
-		color: $primary;
-	}
 	color: $primary;
 	font-weight: 400;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	line-height: 30px;
+	
+	a{
+		color: $primary;
+	}
+
 	strong.subtitle{
 		color: #666;
 		font-size: 14px;

@@ -93,7 +93,7 @@ $small-screen: 959px;
 					h4.fixed-large{
 						width: auto;
 						margin: 0;
-						margin-right: 40px;
+						padding-right: 40px;
 						padding-left: 15px;
 						height: 36px;
 						font-size: 16px;
@@ -945,6 +945,28 @@ $small-screen: 959px;
 				}//li
 			}//ul
 		}//nav
+
+		.table-mobile{
+			ul{
+				background: $white;
+				box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+			}
+			li{
+				border-top: 1px solid #eee;
+			}
+			.drop-line{
+				background-color: #F0F0F0;
+				&:before{
+					color: $accent;
+				}
+			}
+			.drop-line:hover{
+				background: $accent;
+				&:before{
+					color: $white;
+				}
+			}
+		}
 	}//end forum
 
 
