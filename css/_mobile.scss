@@ -34,12 +34,12 @@ $small-screen: 959px;
 		    vertical-align: middle;
 		    border-bottom: none; //eee
 		}
+
 		nav.illustrated-links ul li{
 			display: block;
 			overflow: hidden;
 			padding: 0;
 			background: $white;
-			//border: 1px solid purple;
 
 			.tiny-illustration{
 				display: block;
@@ -53,6 +53,10 @@ $small-screen: 959px;
 
 				resource-right{
 					float: left;
+					min-width: 10px;
+					display: block!important;
+					border: 1px solid transparent;
+					//to keep gap if no checkbox
 				}
 				h1{
 					padding-top: 1px;
@@ -61,7 +65,8 @@ $small-screen: 959px;
 					//width: auto;
 					overflow: hidden;
 				    text-overflow: ellipsis;
-				    white-space: nowrap;				}
+				    white-space: nowrap;
+				}
 			}
 		}
 
@@ -847,6 +852,100 @@ $small-screen: 959px;
 			}
 		}
 	}// end account
+
+	//forum
+	body{
+		nav.illustrated-links ul li{
+			// .tiny-illustration + .content{
+			// 	padding-left: 5px;
+			//
+			// 	h1{
+			// 		padding-top: 5px;
+			// 	}
+			// }
+		}
+
+		nav.illustrated-links{
+			ul.secondary-list{
+			//	border: 1px solid lime;
+				padding-left: 15px;
+				li{
+					//checkbox
+					// resource-right.fixed-tiny{
+					// }
+					// //title
+					// h4.fixed-large{
+					// 	width: auto;
+					// 	margin: 0;
+					// 	margin-right: 40px;
+					// 	padding-left: 15px;
+					// 	height: 36px;
+					// 	font-size: 16px;
+					// 	border-top: 1px solid #eee;
+					// }
+					// //num posts
+					// em.fixed-regular{
+					// 	position: absolute;
+					// 	right: 7px;
+					// 	top: 7px;
+					// 	width: 25px;
+					// 	height: 25px;
+					// 	line-height: 26px;
+					// 	text-align: center;
+					// 	font-style: normal;
+					// 	font-size: 12px!important;
+					// 	border-radius: 50%;
+					// 	border: 1px solid #bbb;
+					// 	background-color: $white;
+					// 	padding: 0;
+					// 	i18n{
+					// 		display: none;
+					// 	}
+					// }
+					// //when
+					// div.fixed-regular{
+					// 	position: absolute;
+					// 	width: auto;
+					// 	padding: 0;
+					// 	height: auto;
+					// 	bottom: 0;
+					// 	right: 20px;
+					// 	z-index: 1;
+					// 	em{
+					// 		font-size: 11px;
+					// 	}
+					// 	span{
+					// 		display: none;
+					// 	}
+					// }
+					// //pic
+					// div.fixed-small{
+					// 	float: left;
+					// 	padding: 6px;
+					// 	height: auto;
+					// 	padding-left: 13px;
+					// 	img{
+					// 		border-radius: 50%;
+					// 		height: 55px;
+					// 		width: 55px;
+					// 	}
+					// }
+					// //last post
+					// .bubble-container{
+					// 	height: auto;
+					// 	padding: 15px 0px 25px;
+					// 	&::after{
+					// 		top: 26px;
+					// 	}
+					// 	.bubble-small{
+					// 		max-width: calc(100% - 60px);
+					// 		margin-left: 20px;
+					// 	}
+					// }
+				}//li
+			}//ul
+		}//nav
+	}//end forum
 
 
 }
