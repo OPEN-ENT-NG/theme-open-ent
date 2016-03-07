@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5{
 	margin-top: 10px;
 	margin-bottom: 10px;
 	line-height: 30px;
-	
+
 	a{
 		color: $primary;
 	}
@@ -51,6 +51,11 @@ h1:first-child{
 h2{
 	font-size: 20px;
 }
+app-title + h2{
+	font-size: 26px;
+	clear: both;
+}
+
 
 h3{
 	font-size: 1.4em;
@@ -265,7 +270,7 @@ input[type=text], input[type=password], input[type=search], input[type=tel], inp
 	line-height: 25px;
 	padding-left: 5px;
 	font-size: 14px;
-	margin-bottom: 7px;
+	margin-bottom: 15px;
 }
 
 .logo{
@@ -2706,6 +2711,11 @@ select{
 		background: white;
 		color: $text-light;
 		@include run-transition(background);
+
+		em.low-importance{
+			height: auto;
+    		padding-top: 5px;
+		}
 	}
 	.autocomplete > em:hover{
 		color: #fff;
@@ -2722,6 +2732,12 @@ select{
 	    border-bottom: 2px solid $accent;
 	    padding: 2px 10px;
     }
+	.found-users-list{
+		margin-bottom: 15px;
+		a{
+			margin-top: 10px;
+		}
+	}
 }
 
 .drop-down-filters, .filters {

@@ -23,7 +23,6 @@ $small-screen: 959px;
 	body{
 		//reset rules
 		nav.illustrated-links ul ul.secondary-list li > *{
-			//display: table-cell;
 			display: block;
 			overflow: hidden;
 
@@ -62,7 +61,6 @@ $small-screen: 959px;
 					padding-top: 1px;
 					font-size: 18px;
 					width: calc(100% - 95px);
-					//width: auto;
 					overflow: hidden;
 				    text-overflow: ellipsis;
 				    white-space: nowrap;
@@ -296,35 +294,40 @@ $small-screen: 959px;
 		span{
 			color: $white;
 		}
-		span + span{
-			display: block;
-			background: $primary;
-			width: 100%;
-			margin: auto;
-			position: fixed;
-			left: 0;
-			text-align: center;
-			font-size: 17px;
-			height: 35px;
-			line-height: 35px;
-			cursor: default;
-		}
 	}
-	.subtitle{
+	[subtitle]{
 		display: block;
 		background: $primary;
 		width: 100%;
 		margin: auto;
+		padding: 0 20px;
 		position: fixed;
-		top: 50px;
 		left: 0;
 		text-align: center;
 		font-size: 17px;
-		min-height: 35px;
+		height: 35px;
 		line-height: 35px;
 		cursor: default;
+		overflow: hidden;
 		color: $white;
 	}
+	h2[subtitle]{
+		text-align: left;
+	}
+	.subtitle-item{
+		color: $white;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	    max-width: 40%;
+	    display: inline-block;
+		vertical-align: middle;
+		text-align: left;
+	}
+	.subtitle-item:first-child {
+	    text-align: right;
+	}
+
 	section.subtitle-push{
 		margin-top: 40px;
 	}
@@ -636,83 +639,32 @@ $small-screen: 959px;
 		nav.illustrated-links{
 			ul.secondary-list{
 				padding-left: 62px;
-				li{
-					//checkbox
-					// resource-right.fixed-tiny{
-					// }
-					// //title
-					// h4.fixed-large{
-					// 	width: auto;
-					// 	margin: 0;
-					// 	margin-right: 40px;
-					// 	padding-left: 15px;
-					// 	height: 36px;
-					// 	font-size: 16px;
-					// 	border-top: 1px solid #eee;
-					// }
-					// //num posts
-					// em.fixed-regular{
-					// 	position: absolute;
-					// 	right: 7px;
-					// 	top: 7px;
-					// 	width: 25px;
-					// 	height: 25px;
-					// 	line-height: 26px;
-					// 	text-align: center;
-					// 	font-style: normal;
-					// 	font-size: 12px!important;
-					// 	border-radius: 50%;
-					// 	border: 1px solid #bbb;
-					// 	background-color: $white;
-					// 	padding: 0;
-					// 	i18n{
-					// 		display: none;
-					// 	}
-					// }
-					// //when
-					// div.fixed-regular{
-					// 	position: absolute;
-					// 	width: auto;
-					// 	padding: 0;
-					// 	height: auto;
-					// 	bottom: 0;
-					// 	right: 20px;
-					// 	z-index: 1;
-					// 	em{
-					// 		font-size: 11px;
-					// 	}
-					// 	span{
-					// 		display: none;
-					// 	}
-					// }
-					// //pic
-					// div.fixed-small{
-					// 	float: left;
-					// 	padding: 6px;
-					// 	height: auto;
-					// 	padding-left: 13px;
-					// 	img{
-					// 		border-radius: 50%;
-					// 		height: 55px;
-					// 		width: 55px;
-					// 	}
-					// }
-					// //last post
-					// .bubble-container{
-					// 	height: auto;
-					// 	padding: 15px 0px 25px;
-					// 	&::after{
-					// 		top: 26px;
-					// 	}
-					// 	.bubble-small{
-					// 		max-width: calc(100% - 60px);
-					// 		margin-left: 20px;
-					// 	}
-					// }
-				}//li
-			}//ul
-		}//nav
-	}//end forum
+			}
+		}
+
+		.whose-bubble{
+			text-align: left!important;
+			margin-bottom: 10px;
+			.image{
+				margin: 0;
+				padding: 0;
+				img{
+					position: absolute;
+					left: 0;
+					bottom: -60px;
+					width: 50px;
+					height: 50px;
+				}
+			}
+		}
+		.whose-bubble + article.bubble{
+			margin-left: 60px;
+		}
+		.bubble-container.alternate-container + resource-right{
+			margin-top: 30px;
+    		display: block;
+		}
+	}
 
 	.microbox-content container{
 		float: none;
@@ -856,95 +808,13 @@ $small-screen: 959px;
 	//forum
 	body{
 		nav.illustrated-links ul li{
-			// .tiny-illustration + .content{
-			// 	padding-left: 5px;
-			//
-			// 	h1{
-			// 		padding-top: 5px;
-			// 	}
-			// }
 		}
 
 		nav.illustrated-links{
 			ul.secondary-list{
-			//	border: 1px solid lime;
 				padding-left: 15px;
-				li{
-					//checkbox
-					// resource-right.fixed-tiny{
-					// }
-					// //title
-					// h4.fixed-large{
-					// 	width: auto;
-					// 	margin: 0;
-					// 	margin-right: 40px;
-					// 	padding-left: 15px;
-					// 	height: 36px;
-					// 	font-size: 16px;
-					// 	border-top: 1px solid #eee;
-					// }
-					// //num posts
-					// em.fixed-regular{
-					// 	position: absolute;
-					// 	right: 7px;
-					// 	top: 7px;
-					// 	width: 25px;
-					// 	height: 25px;
-					// 	line-height: 26px;
-					// 	text-align: center;
-					// 	font-style: normal;
-					// 	font-size: 12px!important;
-					// 	border-radius: 50%;
-					// 	border: 1px solid #bbb;
-					// 	background-color: $white;
-					// 	padding: 0;
-					// 	i18n{
-					// 		display: none;
-					// 	}
-					// }
-					// //when
-					// div.fixed-regular{
-					// 	position: absolute;
-					// 	width: auto;
-					// 	padding: 0;
-					// 	height: auto;
-					// 	bottom: 0;
-					// 	right: 20px;
-					// 	z-index: 1;
-					// 	em{
-					// 		font-size: 11px;
-					// 	}
-					// 	span{
-					// 		display: none;
-					// 	}
-					// }
-					// //pic
-					// div.fixed-small{
-					// 	float: left;
-					// 	padding: 6px;
-					// 	height: auto;
-					// 	padding-left: 13px;
-					// 	img{
-					// 		border-radius: 50%;
-					// 		height: 55px;
-					// 		width: 55px;
-					// 	}
-					// }
-					// //last post
-					// .bubble-container{
-					// 	height: auto;
-					// 	padding: 15px 0px 25px;
-					// 	&::after{
-					// 		top: 26px;
-					// 	}
-					// 	.bubble-small{
-					// 		max-width: calc(100% - 60px);
-					// 		margin-left: 20px;
-					// 	}
-					// }
-				}//li
-			}//ul
-		}//nav
+			}
+		}
 
 		.table-mobile{
 			ul{
@@ -981,6 +851,14 @@ $small-screen: 959px;
 			tbody{
 				td.date{
 					font-size: 10px;
+				}
+			}
+		}
+		.share{
+			.autocomplete > em{
+				em.low-importance{
+					display: block;
+		    		float: none;
 				}
 			}
 		}
