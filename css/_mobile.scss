@@ -862,7 +862,19 @@ $small-screen: 959px;
 				}
 			}
 		}
-	}
+
+		.mood icons-select{
+			.current.editing{
+				span{
+					padding-top: 5px;
+				}
+				i::before{
+					font-size: 30px;
+					line-height: 38px;
+				}
+			}
+		}
+	}//body
 
 
 }
