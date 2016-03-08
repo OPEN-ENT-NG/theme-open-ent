@@ -501,6 +501,22 @@ $small-screen: 959px;
 		}
 	}
 
+	//home filters
+	.widgets-friend h1.application-title + div{
+		margin-top: 15px;
+		filters{
+			width: calc(100% - 80px);
+			margin-top: 5px;
+			i{
+				margin-bottom: 5px;
+			}
+		}
+	}
+	ul.icons-tabs{
+		top: 40px;
+	}
+
+
 	.account{
 		.avatar{
 			position: absolute;
