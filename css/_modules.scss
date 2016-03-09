@@ -711,15 +711,15 @@ a.button[disabled=disabled]:hover, button[disabled=disabled]:hover, input[type=b
 
 .icons-view.apps{
 	.element{
+		padding: 0;
+		height: 120px;
+		width: 120px;
 		&:hover{
 			background: transparent !important;
 			a{
 				color: $yellow;
 			}
 		}
-		padding: 0;
-		height: 120px;
-		width: 120px;
 		&:hover{
 			i::before, a{
 				color: $accent !important;
