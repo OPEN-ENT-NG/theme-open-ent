@@ -2970,6 +2970,10 @@ article.preview.important{
 		left: 5px;
 		top: 35px;
 	}
+	// !! edition mode labels
+	label.twelve{
+		position: relative;
+	}
 	//img
 	.one.horizontal-spacing{
 		padding: 0;
@@ -3005,6 +3009,14 @@ article.preview.important{
 		}
 	}
 
+}
+//prevent bug next article date
+.previews{
+	container[template=infoEdit]{
+		article{
+			float: none;
+		}
+	}
 }
 
 .theme-preview{

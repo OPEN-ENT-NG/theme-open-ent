@@ -9,12 +9,28 @@ $small-screen: 959px;
 		}
 	}
 
-	//actu createinfo
+	//actu createinfo & editinfo
 	container article form{
 		& > .three.cell{
 			width: 100%;
+
 			& + .nine.cell{
 				width: 100%;
+			}
+		}
+	}
+	.previews container[template=infoEdit] article.preview{
+		& > .three.cell{
+			width: 100%;
+			line-height: 35px;
+			input[type=checkbox] + i18n::before {
+			    vertical-align: sub;
+			}
+
+			& + .nine.cell{
+				width: 100%;
+				margin-top: 55px;
+
 			}
 		}
 	}
