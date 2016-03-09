@@ -808,6 +808,9 @@ $small-screen: 959px;
 		}
 		.icons-view.apps{
 			text-align: center;
+			.element{
+				margin: auto 4%;
+			}
 		}
 
 		nav.vertical.half-stamps{
@@ -910,6 +913,13 @@ $small-screen: 959px;
 		.rigid-grid > .side-col.three{
 			width: 55%;
 		}
+
+		.icons-view.apps{
+			.element{
+				margin: auto 5px;
+			}
+		}
+
 		article.list-view.mailbox{
 			tbody{
 				td.date{
