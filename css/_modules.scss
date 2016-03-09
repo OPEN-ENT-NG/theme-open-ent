@@ -735,6 +735,7 @@ a.button[disabled=disabled]:hover, button[disabled=disabled]:hover, input[type=b
             i::before{
             	@include run-transition(color);
             	font-weight: normal;
+				vertical-align: top;
             }
 
 		  	img{
