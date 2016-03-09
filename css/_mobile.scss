@@ -23,6 +23,10 @@ $small-screen: 959px;
 		& > .three.cell{
 			width: 100%;
 			line-height: 35px;
+			select{
+				margin: 0;
+			}
+
 			input[type=checkbox] + i18n::before {
 			    vertical-align: sub;
 			}
@@ -719,7 +723,14 @@ $small-screen: 959px;
 		 ul li a.selected{
 			color: $accent;
 		}
+		h2{
+			color: $primary;
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
 	}
+
+
 
 // end tablettes
 }

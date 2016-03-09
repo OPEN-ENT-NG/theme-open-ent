@@ -379,6 +379,12 @@ nav.horizontal{
 	box-shadow: 2px 2px 24px $shadow;
 	background: #f9f9f9;
 
+	h2{
+		font-size: 20px;
+	    font-weight: normal;
+		margin-bottom: 10px;
+	}
+
 	nav.vertical {
 		margin-right: 0px;
 		li {
