@@ -303,7 +303,8 @@ nav.horizontal{
 	height: $header-height;
 	line-height: $header-height;
 	font-weight: 300;
-	font-size: 1.3em;
+	//font-size: 1.3em;
+	font-size: 30px;
 	margin: auto 8px;
 	box-sizing: border-box;
 	display: block;
@@ -320,14 +321,32 @@ nav.horizontal{
 	i:before{
 	  color: white;
 	  font-size: 30px;
+	  display: block;
 	}
 	i.home{
 	  width: auto;
-	  display: inline;
+	  display: block;
 	}
   }
   > a:hover{
 	border-bottom: 3px solid $accent;
+  }
+
+  i.mail span{
+    background-color: $accent;
+    display: block;
+    color: #fff;
+    height: 15px;
+    width: 15px;
+    line-height: 16px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 7px;
+    padding: 1px;
+    position: relative;
+    left: 20px;
+    top: -30px;
+	font-weight: bold;
   }
 
   #my-photo{

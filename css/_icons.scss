@@ -816,21 +816,6 @@ i.conversation-large, i.type.messagerie, i.mail{
   @include fonticon;
 }
 
-i.mail span{
-  background-color: $accent;
-  display: block;
-  color: #fff;
-  height: 15px;
-  width: 15px;
-  line-height: 15px;
-  font-size: 12px;
-  text-align: center;
-  border-radius: 7px;
-  padding: 1px;
-  position: relative;
-  left: 20px;
-  top: -30px;
-}
 i.conversation-large::before, i.type.messagerie::before, i.mail::before{
   content: "\e804";
   color: $yellow;

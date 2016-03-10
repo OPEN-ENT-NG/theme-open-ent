@@ -242,11 +242,6 @@ $small-screen: 959px;
 
 	body{
 
-		.application-title{
-			i.blog, i.wiki{
-				display: inline-block!important;
-			}
-		}
 		nav.vertical[side-nav].slide{
 			padding-bottom: 70px;
 		}
@@ -304,6 +299,11 @@ $small-screen: 959px;
 		}
 
 	}
+	.application-title{
+		i.blog, i.wiki{
+			display: inline-block!important;
+		}
+	}
 	h1{
 		font-size: 18px;
 		margin-bottom: 9px;
@@ -311,6 +311,7 @@ $small-screen: 959px;
 	}
 	h1.application-title{
 		color: transparent;
+		font-size: 16px;
 		span{
 			color: $white;
 		}
@@ -381,9 +382,14 @@ $small-screen: 959px;
 		}
 		> a, > popover a{
 			font-size: 14px;
-			margin-left: 0;
+			margin-left: 2px;
 			height: 50px;
 			line-height: 50px;
+		}
+		i.mail span.new-mails{
+		    font-size: 10px;
+		    top: -43px;
+		    left: 15px;
 		}
 		i.disconnect{
 			width: 22px !important;
@@ -522,7 +528,7 @@ $small-screen: 959px;
 	}
 
 	//home filters
-	.widgets-friend h1.application-title + div{
+	.widgets-friend app-title + div{
 		margin-top: 15px;
 		filters{
 			width: calc(100% - 80px);
