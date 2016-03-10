@@ -344,6 +344,10 @@ $small-screen: 959px;
 	.panel{
 		box-sizing: border-box;
 		background: $primary;
+		h1{
+			margin: 20px auto;
+			font-size: 26px;
+		}
 		input-password{
 			button{
 				padding: 5px 0;

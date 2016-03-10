@@ -1036,11 +1036,18 @@ input-password{
 
 	h1{
 		color: #fff;
-		width: 600px;
+		width: 100%;
 		position: relative;
 		margin: 40px auto;
-		font-size: 56px;
+		font-size: 40px;
 		line-height: 1em;
+		text-align: center;
+	}
+
+	label{
+		display: block;
+		width: auto;
+		margin-bottom: 5px;
 	}
 
 	form:not(.nostyle){
