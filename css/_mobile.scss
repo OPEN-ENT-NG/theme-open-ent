@@ -838,23 +838,33 @@ $small-screen: 959px;
 	}
 	.account{
 		.user-infos{
+
+			.four.cell{
+				width: 100%;
+				font-weight: bold;
+			    padding-top: 15px;
+			}
+			.seven.cell{
+				width: calc(100% - 30px);
+				font-weight: normal;
+				font-style: normal;
+			    font-size: 12px;
+				color: $grey;
+			}
+			//mode view
+			em.eight{
+				width: calc(100% - 30px);
+				font-weight: normal;
+				font-style: normal;
+				font-size: 12px;
+				color: $grey;
+			}
 			form .row{
-				.four.cell{
-					width: 100%;
-					font-weight: bold;
-				    padding-top: 15px;
-				}
-				.seven.cell{
-					width: calc(100% - 30px);
-					font-weight: normal;
-					font-style: normal;
-				    font-size: 12px;
-					color: $grey;
-				}
 				i::before{
 					font-size: 18px;
 				}
 			}
+
 		}
 		.user-book{
 			article .row{
@@ -876,6 +886,23 @@ $small-screen: 959px;
 					i::before{
 						font-size: 18px;
 					}
+				}
+			}
+		}
+		//mode view > hobbies
+		h1.horizontal-spacing + article{
+			.medium-text.line{
+				.two{
+					width: 100%;
+					font-weight: bold;
+				    padding-top: 15px;
+				}
+				.ten{
+					width: calc(100% - 30px);
+					font-weight: normal;
+					font-style: normal;
+					font-size: 12px;
+					color: $grey;
 				}
 			}
 		}
