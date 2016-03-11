@@ -913,6 +913,14 @@ $small-screen: 959px;
 }
 @media screen and (max-width: $small-mobile){
 	body{
+
+		popover popover-content.right {
+		    left: -190px;
+		}
+		popover popover-content.right::before{
+			left: 80%;
+		}
+
 		.rigid-grid > .side-col.three{
 			width: 55%;
 		}
