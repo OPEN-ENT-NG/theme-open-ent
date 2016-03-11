@@ -733,6 +733,13 @@ $small-screen: 959px;
 		}
 	}
 
+	body{
+		.lightbox-window .tabs, .lightbox .content .tabs{
+			header{
+				background: #F0F0F0;
+			}
+		}
+	}
 
 
 // end tablettes
