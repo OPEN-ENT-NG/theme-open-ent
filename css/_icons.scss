@@ -4,7 +4,7 @@
 /* font family with # version */
 @font-face {
   font-family: 'fontello';
-  src: url('../font/fontello.3.8/font/fontello.woff');
+  src: url('../font/fontello.3.9/font/fontello.woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -46,6 +46,17 @@
     }
 }
 
+
+i.bell{
+  @include fonticon;
+  text-align: center;
+  color: $white;
+}
+i.bell:before{
+  content: '\E8C9';
+  font-size: 20px;
+  font-weight: bold;
+}
 
 i.history{
   @include fonticon;

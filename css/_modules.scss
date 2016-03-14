@@ -1521,6 +1521,29 @@ article.list-view{
 		@include run-transition(all);
 	}
 	@include material-card();
+
+	.my-notifications{
+		p{
+			color: $white;
+		    font-size: 13px;
+		    margin-left: 6px;
+		}
+		button{
+			float: none;
+			margin: 25px auto 20px;
+			span{
+				float: none;
+			}
+		}
+		i.bell{
+			height: auto;
+			width: auto;
+			line-height: initial;
+			vertical-align: top;
+			margin-right: 10px;
+		}
+	}
+
 }
 
 .widgets{
