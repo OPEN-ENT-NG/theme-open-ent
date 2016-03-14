@@ -1,15 +1,4 @@
-[class$="icon-"], [class*="icon- "] {
-  font-family: 'fontello';
-  font-style: normal;
-  font-weight: normal;
- 
-  /* fix buttons height */
-  line-height: 1em;
- 
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-}
- 
+
 .slideshareicon- { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;'); }
 .marqueeicon- { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe801;&nbsp;'); }
 .graduation-capicon- { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe802;&nbsp;'); }
@@ -211,3 +200,4 @@
 .pilcrowicon- { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8c6;&nbsp;'); }
 .fontsizeicon- { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8c7;&nbsp;'); }
 .headericon- { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8c8;&nbsp;'); }
+.bellicon- { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8c9;&nbsp;'); }

@@ -1675,6 +1675,12 @@
       "css": "chat-1",
       "code": 59415,
       "src": "websymbols"
+    },
+    {
+      "uid": "cd21cbfb28ad4d903cede582157f65dc",
+      "css": "bell",
+      "code": 59593,
+      "src": "fontawesome"
     }
   ]
 }
