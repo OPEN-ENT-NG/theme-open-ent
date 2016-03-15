@@ -2009,6 +2009,10 @@ filters{
 	margin-left: 0;
 	background: $accent;
 	height: 58px;
+	
+	.toggle{
+		overflow: hidden;
+	}
 	button, .button{
 		@include flat-button;
 		background: transparent;
