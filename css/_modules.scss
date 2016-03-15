@@ -1977,10 +1977,14 @@ textarea:focus{
 }
 
 em.metadata{
-	font-size: 12px;
+	font-size: 11px;
 }
 
 filters{
+	padding-bottom: 20px;
+	@include row;
+	display: block;
+
 	h4{
 		margin: 0;
 		font-weight: bold;
@@ -1988,9 +1992,6 @@ filters{
 		font-size: 16px;
 		color: $primary;
 	}
-	padding-bottom: 20px;
-	@include row;
-	display: block;
 	p:first-child{
 		i{
 			background-size: 100% auto;
@@ -3031,11 +3032,14 @@ article.preview.important{
 	//date
 	em.metadata {
 		position: absolute;
-		top: 175px;
+		top: 170px;
 		left: 10px;
 		line-height: 15px;
 		z-index: 3;
-		width: 120px;
+		width: 118px;
+		max-height: 45px;
+		word-wrap: break-word;
+		overflow: hidden;
 	}
 }
 .previews article.preview{

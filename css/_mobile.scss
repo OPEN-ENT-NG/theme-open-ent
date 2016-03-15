@@ -784,8 +784,10 @@ $small-screen: 959px;
 		.previews .preview-wrapper{
 			//date
 			em.metadata {
-				top: 160px;
+				top: 155px;
 				font-size: 10px;
+				width: 100px;
+				max-height: 60px;
 			}
 		}
 
