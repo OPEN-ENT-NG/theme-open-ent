@@ -1542,6 +1542,21 @@ article.list-view{
 			vertical-align: top;
 			margin-right: 10px;
 		}
+
+		//reset lightbox
+		lightbox{
+			h2, a{
+				color: $primary;
+			}
+			h2 + div.row{
+				text-align: right;
+			}
+		}
+
+
+		a{
+			margin-left: 15px;
+		}
 	}
 
 }
