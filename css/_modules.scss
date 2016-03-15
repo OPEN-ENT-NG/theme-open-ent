@@ -2009,7 +2009,7 @@ filters{
 	margin-left: 0;
 	background: $accent;
 	height: 58px;
-	
+
 	.toggle{
 		overflow: hidden;
 	}
@@ -4190,6 +4190,7 @@ i side-panel{
 
 side-panel{
 	top: 10px;
+	left: 0;
 
 	&.hidden{
 		.opener{
