@@ -230,7 +230,6 @@ $small-screen: 959px;
 	}
 
 	body{
-
 		nav.vertical[side-nav].slide{
 			padding-bottom: 70px;
 		}
@@ -545,7 +544,6 @@ $small-screen: 959px;
 			position: absolute;
 			top: 15px;
 			left: 15px;
-			z-index: 2;
 			width: 90px;
 			height: 90px;
 			padding: 0;
@@ -553,10 +551,11 @@ $small-screen: 959px;
 			overflow: hidden;
 
 		}
-		.avatar + .user-infos article{
-			h2{
-				margin: 25px 0 45px 100px;
-			}
+		.avatar + h2{
+			margin: 25px 0 45px 100px;
+		}
+		.sheet h2{
+			margin: 25px 0 0 100px;
 		}
 
 		.mood icons-select{
@@ -839,8 +838,7 @@ $small-screen: 959px;
 
 	}
 	.account{
-		.user-infos{
-
+		.user-infos .sheet{
 			.four.cell{
 				width: 100%;
 				font-weight: bold;

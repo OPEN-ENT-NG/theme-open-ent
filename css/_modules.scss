@@ -2237,6 +2237,23 @@ article.selected{
 	}
 }
 
+.user-infos{
+	.avatar{
+		margin-right: 15px;
+	}
+	.sheet{
+		overflow: hidden;
+	}
+}
+.user-book{
+	input[type=button], button{
+		display: none;
+	}
+	.one.cell i{
+		line-height: 38px;
+	}
+}
+
 
 
 .account .mood icons-select{
@@ -2256,15 +2273,6 @@ article.selected{
 		width: 100px;
 		float: none;
 		padding: 12px 0
-	}
-}
-
-.user-book{
-	input[type=button], button{
-		display: none;
-	}
-	.one.cell i{
-		line-height: 38px;
 	}
 }
 
