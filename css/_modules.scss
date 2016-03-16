@@ -2717,7 +2717,7 @@ select{
 		width: 100%;
 		.day{
 			float: left;
-			width: percentage(1 / 7);
+			width: calc(100% / 7);
 			position: relative;
 			legend{
 				width: 100%;
