@@ -28,10 +28,16 @@
 }
 .list-view, .share{
     tbody{
-        tr:hover{
+        tr{
             td.drop-line:before{
                 @include fonticon;
                 content: '\e866';
+                color: $medium-grey;
+            }
+        }
+        tr:hover{
+            td.drop-line:before{
+                color: $black;
             }
         }
         tr{
