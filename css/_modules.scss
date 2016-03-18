@@ -3028,7 +3028,15 @@ container article form{
 		}
 	}
 }
-
+//actu comment link - kill overflow date
+.previews container .preview-wrapper{
+	article.preview{
+		.rigid-grid.row + .cell.right-magnet{
+			margin-top: 30px;
+			margin-bottom: 10px;
+		}
+	}
+}
 
 article.preview{
 	box-shadow: none;
