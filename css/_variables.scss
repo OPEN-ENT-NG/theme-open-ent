@@ -1,0 +1,37 @@
+
+$primary-dark: #209dcc;
+$primary: #4bafd5;
+$primary-light: #7ad9ff;
+
+$green: #46bfaf;
+$yellow: #ecbe30;
+$orange: #FF8500;
+$dark-orange: #B25D00;
+$purple: #763294;
+$cyan: $primary;
+$pink: #b930a2;
+$red: #e13a3a;
+$white: #FFFFFF;
+$lightest-grey: #f9f9f9;
+$light-grey: #F0F0F0;
+$medium-grey: #CCCCCC;
+$grey: #555;
+$black: #222;
+
+$shadow: rgba(0, 0, 0, 0.26);
+$shadow-light: rgba(0, 0, 0, 0.1);
+
+//Accent
+$accent: $orange;
+$dark-accent: $dark-orange;
+
+$text-light: $grey;
+$background: $lightest-grey;
+
+
+$header-height: 64px;
+
+@mixin material-card($shadow-size: 1px, $blur-size: 3px) {
+	box-shadow: 0  $shadow-size  $blur-size $shadow;
+	border-radius: 2px;
+}

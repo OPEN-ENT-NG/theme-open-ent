@@ -1,67 +1,19 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:500,300,700,400);
-
-$primary-dark: #209dcc;
-$primary: #4bafd5;
-$primary-light: #7ad9ff;
-
-//Accent
-$accent: #FF8500;
-$dark-accent: #B25D00;
-
-$green: #46bfaf;
-$yellow: #ecbe30;
-$orange: #FF8500;
-$purple: #763294;
-$cyan: #4cb0d6;
-$pink: #b930a2;
-$red: #e13a3a;
-$grey: #555;
-
-$text-light: #555;
-$background: #f9f9f9;
-
-$black: #222;
-$shadow: rgba(0, 0, 0, 0.26);
-$shadow-light: rgba(0, 0, 0, 0.1);
-
-$header-height: 64px;
-
-@font-face {
-	font-family: "OpenDyslexic";
-	src: url(../font/OpenDyslexic3-Regular.ttf);
-}
-
-@mixin material-card($shadow-size: 2px, $blur-size: 3px) {
-	box-shadow: 0  $shadow-size  $blur-size $shadow;
-	border-radius: 2px;
-}
-
-title{
-	display: block;
-}
+@import "../default/skin";
+//import default styles
 
 html, body{
-	background: #F9F9F9;
 	font-family: OpenDyslexic;
 }
 
 body {
-	overflow-x: hidden;
-	section.main{
-		background: transparent;
-	}
-	.material{
-		section.main{
-			position: relative;
-			top: $header-height + 40px;
-			box-sizing: border-box;
-			padding: 8px 35px;
-			padding-bottom: 60px;
-		}
-	}
-
 	font-size: 11px;
 	line-height: 19px;
+
+	.material{
+		section.main{
+			top: $header-height + 40px;
+		}
+	}
 }
 
 button, input[type=button], a.button, input[type=submit], input[type=search], .drop-down-button label, .drop-down-button.hidden label {
