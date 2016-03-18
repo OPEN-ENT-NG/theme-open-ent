@@ -3020,6 +3020,13 @@ container article form{
 			line-height: 20px;
 		}
 	}
+	.nine.cell{
+		.row:last-of-type{
+			button{
+				margin-bottom: 10px;
+			}
+		}
+	}
 }
 
 
