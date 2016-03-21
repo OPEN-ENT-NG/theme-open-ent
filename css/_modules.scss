@@ -396,9 +396,9 @@ nav.horizontal{
 .lightbox-window, .lightbox .content{
 	padding: 10px;
 	box-shadow: 2px 2px 24px $shadow;
-	background: #f9f9f9;
+	background: $lightest-grey;
 
-	h2{
+	h2, h2:first-child{
 		font-size: 20px;
 	    font-weight: normal;
 		margin-bottom: 10px;
