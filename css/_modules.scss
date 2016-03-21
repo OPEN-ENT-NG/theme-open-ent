@@ -199,6 +199,7 @@ button, input[type=button], a.button, input[type=submit], .drop-down-button labe
 	box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
 	margin-right: 2px;
 	margin-left: 2px;
+	margin-bottom: 10px;
 	overflow: hidden;
 	&::before{
 		content: " ";
@@ -213,6 +214,7 @@ button, input[type=button], a.button, input[type=submit], .drop-down-button labe
 		padding: 0;
 	}
 }
+
 
 form{
 	.search input[type=submit]{
@@ -3018,13 +3020,6 @@ container article form{
 			margin-top: 8px;
 			margin-bottom: 8px;
 			line-height: 20px;
-		}
-	}
-	.nine.cell{
-		.row:last-of-type{
-			button{
-				margin-bottom: 10px;
-			}
 		}
 	}
 }
