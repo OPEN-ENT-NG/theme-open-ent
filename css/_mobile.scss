@@ -479,17 +479,15 @@ $small-screen: 959px;
 			}
 		}
 
+		//actu maincol
 		.side-col + .main-col{
 			overflow: hidden;
 			.cell button.microbox{
 				float: right;
 			}
+			//space around microbox
 			.cell{
 				margin: 10px 0;
-				a.button, button{
-					float: none;
-					display: inline-block;
-				}
 			}
 			//comments on actu
 			.cell.right-magnet{
