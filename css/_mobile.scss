@@ -3,12 +3,6 @@ $wide-screen: 1200px;
 $small-screen: 959px;
 
 @media screen and (max-width: $wide-screen){
-	.login{
-		h1{
-			display: none;
-		}
-	}
-
 	//actu createinfo
 	container article form{
 		& > .three.cell{
@@ -347,9 +341,18 @@ $small-screen: 959px;
 	section.subtitle-push{
 		margin-top: 40px;
 	}
-	.panel{
+
+	.login.panel{
 		box-sizing: border-box;
-		background: $primary;
+		h1{
+			display: none;
+		}
+		h1 + form{
+			margin-top: 70px;
+		}
+
+	}
+	.panel{
 		h1{
 			margin: 20px auto;
 			font-size: 26px;
