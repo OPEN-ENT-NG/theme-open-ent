@@ -546,7 +546,6 @@ nav.vertical.stamps, nav.vertical.half-stamps{
 nav.vertical.half-stamps{
 	article{
 		margin-bottom: 10px;
-		margin-left: 50px;
 		h3{
 		  color: #AAA;
 		}
@@ -574,6 +573,13 @@ nav.vertical.half-stamps{
 		cursor: pointer;
 	}
 }
+//only manage threads
+.centered nav.vertical.half-stamps{
+	article{
+		margin-left: 50px;
+	}
+}
+
 .side-col nav.vertical.half-stamps article:hover{
   box-shadow: 0 4px 6px rgba(black, 0.4);
 }
