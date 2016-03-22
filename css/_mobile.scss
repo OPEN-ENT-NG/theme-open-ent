@@ -219,7 +219,14 @@ $small-screen: 959px;
 	  padding-bottom: 10px;
 	}
 
-
+	nav.vertical.half-stamps{
+		article{
+			margin-left: 30px;
+		}
+		input[type=checkbox] {
+			left: 110px;
+		}
+	}
 }
 
 
@@ -400,17 +407,20 @@ $small-screen: 959px;
 		& > div{
 			width: 520px;
     		margin: 10px auto;
+			float: none;
 		}
 		article{
 			width: auto;
     		float: none!important;
+			margin-left: auto;
+			margin-right: auto;
 		}
 		article.selected{
 			background: $primary-light;
 		}
 		input[type=checkbox] {
 			position: absolute;
-			left: 70px;
+			left: 78px;
 			z-index: 2;
 		}
 	}
