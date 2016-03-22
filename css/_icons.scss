@@ -1922,6 +1922,19 @@ body editor{
                 content: '\e839';
             }
 		}
+        .option.color > i{
+			@include editor-icon;
+            &::before{
+                content: '\e8c4';
+            }
+		}
+        .option.background-color > i{
+			@include editor-icon;
+            &::before{
+                content: '\e8c4';
+            }
+            color: #fff;
+		}
 	}
 }
 
