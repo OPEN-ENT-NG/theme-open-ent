@@ -14,12 +14,18 @@ $red: #e13a3a;
 $white: #FFFFFF;
 $lightest-grey: #f9f9f9;
 $light-grey: #F0F0F0;
-$medium-grey: #CCCCCC;
+$middle-grey: #DDD;
+$medium-grey: #CCC;
+$solid-grey: #AAA;
+$disable-grey: #888;
 $grey: #555;
 $black: #222;
 
-$shadow: rgba(0, 0, 0, 0.26);
 $shadow-light: rgba(0, 0, 0, 0.1);
+$shadow: rgba(0, 0, 0, 0.26);
+$shadow-dark: rgba(0, 0, 0, 0.4);
+$shadow-darker: rgba(0, 0, 0, 0.6);
+
 
 //Accent
 $accent: $orange;

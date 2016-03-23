@@ -5,7 +5,7 @@ a{
 }
 
 article{
-	background: #fdfdfd;
+	background: $white;
 	border: none;
 	margin-bottom: 15px;
 	padding: 15px;
@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5{
 	}
 
 	strong.subtitle{
-		color: #666;
+		color: $grey;
 		font-size: 14px;
 		display: block;
 		margin-top: -5px;
@@ -62,13 +62,13 @@ h3{
 }
 
 strong{
-	color: #666;
+	color: $grey;
 }
 
 .list{
 	li{
 		list-style-type: none;
-		color: #666;
+		color: $grey;
 	}
 	li::before{
 		content: "\2666";
@@ -79,7 +79,7 @@ strong{
 
 h4{
   font-size: 18px;
-  color: #444;
+  color: $grey;
   font-weight: bold;
 }
 
@@ -101,7 +101,7 @@ h4{
 			}
 		}
 		tr.new-element{
-			  background: #efefef;
+			  background: $light-grey;
               font-weight: bold;
 		}
 		tr.new-element.checked{
@@ -117,10 +117,10 @@ ul.list-view{
 table, ul.list-view{
 	line-height: 20px;
 	font-size: 14px;
-	background: #fff;
+	background: $white;
 	li.head{
 		background: $primary;
-		color: #fff;
+		color: $white;
 		&:hover{
 			background: $primary;
 		}
@@ -128,7 +128,7 @@ table, ul.list-view{
 	thead{
 		tr{
 			background: $primary;
-			color: #fff;
+			color: $white;
 			border: none;
 		}
 		th{
@@ -141,14 +141,14 @@ table, ul.list-view{
 		@include run-transition(background);
 		&.checked{
 			background-color: $primary-light;
-			color: #fff;
+			color: $white;
 			a{
-				color: #fff
+				color: $white;
 			}
 		}
 
 		&:hover{
-			background: #eee;
+			background: $light-grey;
 		}
 	}
 	tbody{
@@ -156,13 +156,13 @@ table, ul.list-view{
 			@include run-transition(background);
 			&.checked, &.checked:hover{
 				background-color: $primary-light;
-				color: #fff;
+				color: $white;
 				a{
-					color: #fff
+					color: $white
 				}
 			}
 			&:hover{
-				background: #eee;
+				background: $light-grey;
 			}
 			td{
 				padding: 10px;
@@ -187,7 +187,7 @@ table, ul.list-view{
 button, input[type=button], a.button, input[type=submit], .drop-down-button label, .drop-down-button.hidden label{
 	background: $accent;
 	padding: 8px 18px 10px;
-	color: #fff;
+	color: $white;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 14px;
@@ -196,7 +196,7 @@ button, input[type=button], a.button, input[type=submit], .drop-down-button labe
 	font-weight: 500;
 	line-height: 20px;
 	border: none;
-	box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+	box-shadow: 0px 1px 1px $shadow-dark;
 	margin-right: 2px;
 	margin-left: 2px;
 	margin-bottom: 10px;
@@ -252,7 +252,7 @@ form{
 button:active, input[type=button]:active, a.button:active, input[type=submit]:active, button:focus, input[type=button]:focus, a.button:focus, input[type=submit]:focus{
 	&::before{
 		content: " ";
-		background: #fff;
+		background: $white;
 		-webkit-animation:ripple 0.65s linear;
 		-moz-animation:ripple 0.65s linear;
 		-ms-animation:ripple 0.65s linear;
@@ -311,7 +311,7 @@ nav.horizontal{
 	box-sizing: border-box;
 	display: block;
 	float: left;
-	color: #fff;
+	color: $white;
 	vertical-align: middle;
 
 	i{
@@ -321,7 +321,7 @@ nav.horizontal{
 	}
 
 	i:before{
-	  color: white;
+	  color: $white;
 	  font-size: 30px;
 	  display: block;
 	}
@@ -337,7 +337,7 @@ nav.horizontal{
   i.mail span{
     background-color: $accent;
     display: block;
-    color: #fff;
+    color: $white;
     height: 15px;
     width: 15px;
     line-height: 16px;
@@ -420,8 +420,8 @@ nav.horizontal{
 		section{
 			padding: 15px 20px;
 			border: none;
-			border-top: 1px solid #ddd;
-			background: #fff;
+			border-top: 1px solid $middle-grey;
+			background: $white;
 		}
 		header.selected{
 			background: transparent;
@@ -436,7 +436,7 @@ nav.horizontal{
 		width: 195px !important;
 		padding: 4px;
 		box-sizing: border-box;
-		border: 1px solid #ddd;
+		border: 1px solid $middle-grey;
 	}
 }
 
@@ -469,7 +469,7 @@ header.main{
 
 .mood-widget{
 	border: 1px solid $primary-light;
-	background: #eee;
+	background: $light-grey;
 	padding-top: 0;
 	.icons-select{
 		margin-top: 0;
@@ -477,11 +477,12 @@ header.main{
 }
 
 .birthday{
-	background: #fff;
+	background: $white;
+	border: 1px solid $primary-light;
+
 	h1{
 		text-align: center;
 	}
-	border: 1px solid $primary-light;
 	.content{
 		border: none;
 	}
@@ -504,7 +505,7 @@ nav.vertical.stamps, nav.vertical.half-stamps{
 		h3{
 			font-size: 15px;
 			border: 0;
-			color: black;
+			color: $black;
 			line-height: 20px;
 			font-style: normal;
 			margin: 0;
@@ -524,15 +525,15 @@ nav.vertical.stamps, nav.vertical.half-stamps{
 	}
 	article.selected{
 		background: $accent;
-		color: #fff;
+		color: $white;
 		i.send-mail{
 			margin: 7px;
 		}
 		h3{
-			color: #fff;
+			color: $white;
 		}
 		a{
-			color: #fff;
+			color: $white;
 			&:hover{
 				color: $primary;
 			}
@@ -547,7 +548,7 @@ nav.vertical.half-stamps{
 	article{
 		margin-bottom: 10px;
 		h3{
-		  color: #AAA;
+		  color: $solid-grey;
 		}
 		input[type=text] {
 			margin-left: 30px;
@@ -581,7 +582,7 @@ nav.vertical.half-stamps{
 }
 
 .side-col nav.vertical.half-stamps article:hover{
-  box-shadow: 0 4px 6px rgba(black, 0.4);
+  box-shadow: 0 4px 6px rgba($black, 0.4);
 }
 
 .row.rigid-grid > .centered{
@@ -619,7 +620,7 @@ nav.vertical.half-stamps{
 }
 
 .grey{
-	background: #555;
+	background: $grey;
 }
 
 .yellow{
@@ -645,7 +646,7 @@ ul.thought-out-actions{
 	padding: 0;
 	margin: 0;
 	li{
-		background: #f0f0f0;
+		background: $light-grey;
 		margin-bottom: 1px;
 		list-style-type: none;
 		padding: 8px;
@@ -654,7 +655,7 @@ ul.thought-out-actions{
 	li:hover{
 		background: $primary;
 		h2{
-			color: #fff;
+			color: $white;
 		}
 	}
 }
@@ -674,8 +675,8 @@ ul.icons-tabs{
 
 a.button[disabled=disabled], button[disabled=disabled], input[type=button][disabled=disabled], input[type=submit][disabled=disabled],
 a.button[disabled=disabled]:hover, button[disabled=disabled]:hover, input[type=button][disabled=disabled]:hover, input[type=submit][disabled=disabled]:hover{
-	color: #AAA;
-	background: #666;
+	color: $solid-grey;
+	background: $grey;
 	//border: none;
 	//box-shadow: none;
 	cursor: default;
@@ -713,7 +714,7 @@ a.button[disabled=disabled]:hover, button[disabled=disabled]:hover, input[type=b
 		display: none;
 	}
 	.account a{
-		color: #fff;
+		color: $white;
 		display: block;
 		margin-left: 10px;
 		margin-top: 10px;
@@ -783,7 +784,7 @@ a.button[disabled=disabled]:hover, button[disabled=disabled]:hover, input[type=b
 				padding: 5px;
                 line-height: 22px;
                 box-sizing: border-box;
-                color: #333;
+                color: $black;
                 font-weight: normal;
 			}
 		}
@@ -820,7 +821,7 @@ a.button[disabled=disabled]:hover, button[disabled=disabled]:hover, input[type=b
 
 	.current.editing{
 		/*background: $primary;
-		color: #fff;*/
+		color: $white;*/
 		padding-left: 68px;
 
       background-color: $white;
@@ -830,12 +831,12 @@ a.button[disabled=disabled]:hover, button[disabled=disabled]:hover, input[type=b
 
 	.options-list{
 		/*background: $primary;
-		color: #fff;*/
+		color: $white;*/
         background: $white;
-		color: #000;
+		color: $black;
 		font-size: 14px;
 		@include border-radius-bottom(3px);
-		box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+		box-shadow: 3px 3px 5px $shadow-dark;
 		top: 60px;
 	}
 
@@ -846,7 +847,7 @@ a.button[disabled=disabled]:hover, button[disabled=disabled]:hover, input[type=b
 
 textarea.inline-editing{
 	background: transparent;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid $middle-grey;
 	padding: 2px;
 }
 
@@ -860,7 +861,7 @@ textarea.inline-editing:focus{
 	@include material-card();
 	@include run-transition(background);
 	border-radius: 2px;
-	color: #fff;
+	color: $white;
 	padding: 4px;
 	margin: 2px;
 	i.close{
@@ -875,7 +876,7 @@ textarea.inline-editing:focus{
 .badge{
 	line-height: 16px;
 	background: $accent;
-	color: #fff;
+	color: $white;
 }
 
 .label-badge:hover{
@@ -902,11 +903,11 @@ div.background-material{
     border: none;
 	box-shadow: none;
 	color: $accent;
-	background: #f0f0f0;
+	background: $light-grey;
 
 	&:hover{
 		background: $accent;
-		color: #fff;
+		color: $white;
 	}
 }
 
@@ -923,7 +924,7 @@ input[type=button].pick-file{
 input[type=text], input[type=password], input[type=search], input[type=tel], input[type=email]{
 	color: $text-light;
 	background: transparent;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid $middle-grey;
 	@include run-transition(border-bottom);
 }
 input[type=text]:focus, input[type=password]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=email]:focus{
@@ -979,7 +980,7 @@ input-password{
 		font-size: 27px;
 		text-align: center;
 		text-indent: 40px;
-		color: #fff;
+		color: $white;
 		background: transparent !important;
 		position: relative;
 	}
@@ -988,7 +989,7 @@ input-password{
 .fill-bar {
     width: 100%;
     height: 15px;
-    box-shadow: 0px 0px 3px #444;
+    box-shadow: 0px 0px 3px $grey;
     border-radius: 10px;
     overflow: hidden;
 
@@ -1043,7 +1044,7 @@ input-password{
 	}
 
 	h1{
-		color: #fff;
+		color: $white;
 		width: 100%;
 		position: relative;
 		margin: 40px auto;
@@ -1062,7 +1063,7 @@ input-password{
 		margin-left: auto;
 		margin-right: auto;
 		max-width: 600px;
-		background: #fff;
+		background: $white;
 		border-radius: 3px;
 		padding: 30px;
 		box-sizing: border-box;
@@ -1073,7 +1074,7 @@ input-password{
         margin-left: auto;
 		margin-right: auto;
 		width: 800px;
-		background: #fff;
+		background: $white;
 		border-radius: 3px;
 		padding: 30px;
 		box-sizing: border-box;
@@ -1090,11 +1091,11 @@ input-password{
 		margin-left: auto;
   		margin-right: auto;
 		width: 600px;
-		background: #fff;
+		background: $white;
 		border-radius: 3px;
 		padding: 10px 30px;
 		box-sizing: border-box;
-		box-shadow: 0 5px 18px rgba(0, 0, 0, 0.26);
+		box-shadow: 0 5px 18px $shadow;
 		border-radius: 2px;
 
 		h1{
@@ -1130,7 +1131,7 @@ input-password{
 		border-bottom: 2px solid $red;
 	}
 	input[type=checkbox].ng-invalid.ng-dirty {
-  		box-shadow: 0px 0px 10px #e13a3a;
+  		box-shadow: 0px 0px 10px $red;
 	}
 
 	.button-bar{
@@ -1225,26 +1226,27 @@ input-password{
 
 .tooltip{
 	pointer-events: none;
+	z-index:10000;
+
 	.content{
 		background: $accent;
-		color: #fff;
-		box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+		color: $white;
+		box-shadow: 0 1px 2px $shadow;
 		border-radius: 2px;
 	}
 	.arrow{
 		display:none;
 	}
-	z-index:10000;
 }
 
 .loading-panel{
-	background: #fff;
+	background: $white;
 	border: 1px solid $accent;
 	img{
 		display: none;
 	}
 	h1{
-		color: #008cba;
+		color: darken($primary-dark, 4%);
 		text-align: center;
 		line-height: 100%;
 		font-size: 2em;
@@ -1304,7 +1306,7 @@ nav.vertical, .app-menu{
 					height: 20px;
 					display: block;
 					left: 2px;
-					color: #fff;
+					color: $white;
 				}
 				i.arrow::before{
 					display: block;
@@ -1355,7 +1357,7 @@ nav.vertical, .app-menu{
 		display: block;
 		margin-top: 15px;
 		padding: 5px 0;
-		background: #f0f0f0;
+		background: $light-grey;
 		width: 100%;
 		text-align: center;
 		box-sizing: border-box;
@@ -1422,7 +1424,7 @@ article.list-view{
 	@include material-card();
 	padding: 7px;
 	margin-bottom: 25px;
-	background: #fff;
+	background: $white;
 	article {
 		background: transparent;
 		margin: 0px;
@@ -1433,7 +1435,7 @@ article.list-view{
 			right: 69px;
 			em{
 				font-style: normal;
-				color: #777;
+				color: $grey;
 			}
 		}
 		.avatar{
@@ -1446,7 +1448,7 @@ article.list-view{
 				height: 75px;
 				display: block;
 				border-radius: 50%;
-				border: 1px solid #eee;
+				border: 1px solid $light-grey;
 			}
 		}
 	}
@@ -1459,20 +1461,20 @@ article.list-view{
 
 .toggle-panel{
 	background: $primary;
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba($white, 0.5);
 	right: 58px;
 	em{
-		color: #fff;
+		color: $white;
 		font-size: 12px;
 	}
 	h1, h2, h3{
-		color: #fff;
+		color: $white;
 	}
 	h1{
 		display: none;
 	}
 	a{
-		color: #fff;
+		color: $white;
 	}
 	ul{
 		li{
@@ -1484,7 +1486,7 @@ article.list-view{
 		.inactive{
 			i{
 				@include material-card();
-				background: #aaa !important;
+				background: $solid-grey !important;
 			}
 		}
         .locked{
@@ -1500,7 +1502,7 @@ article.list-view{
 			height: 90px;
 		}
 		i{
-			box-shadow: 0 2px 3px rgba(0,0,0,0.26) inset;
+			box-shadow: 0 2px 3px $shadow inset;
 			border-radius: 10px;
 		}
 		.cell:nth-child(6n){
@@ -1588,7 +1590,7 @@ article.list-view{
 }
 .widget-container{
 	@include material-card();
-	background-color: white;
+	background-color: $white;
 	margin-bottom: 30px;
 	width: 98%;
 	@include run-transition(all);
@@ -1600,8 +1602,8 @@ article.list-view{
 		margin-bottom: 5px;
 	}
 	&:hover{
-		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.26) inset;
-		background: #fdfdfd;
+		box-shadow: 0 1px 3px $shadow inset;
+		background: $white;
 	}
 }
 
@@ -1624,10 +1626,10 @@ article.list-view{
 			padding-left: 2px;
 		}
 		.previous-month, .next-month{
-			color: #fff;
+			color: $white;
 		}
 		.day.today{
-			color: #fff;
+			color: $white;
 			background: $accent;
 			border-radius: 10px;
 			padding-right: 2px;
@@ -1669,7 +1671,7 @@ article.list-view{
 
 textarea{
 	box-sizing: border-box;
-	border:  1px solid #ddd;
+	border:  1px solid $middle-grey;
 	padding: 10px;
 	font-size: 14px;
 	margin-top: 7px;
@@ -1694,7 +1696,7 @@ textarea:focus{
 }
 
 .last-mails-widget, .pages-widget {
-	background: #fff;
+	background: $white;
 	margin-bottom: 12px;
 	border: 1px solid $primary-light;
 	width: 254px;
@@ -1733,7 +1735,7 @@ textarea:focus{
 	.fluxes{
 		padding: 8px;
 		.rss-flux{
-			border-bottom: 1px solid #fff;
+			border-bottom: 1px solid $white;
 		}
 		.rss-flux:last-child{
 			border-bottom: 0px;
@@ -1775,13 +1777,13 @@ textarea:focus{
 	}
 	.selected-item{
 		background: $accent;
-		color: #fff;
+		color: $white;
 		padding: 10px;
 		p{
 			margin: 0;
 		}
 		a{
-			color: #fff;
+			color: $white;
 			font-weight: bold;
 		}
 	}
@@ -1933,10 +1935,10 @@ textarea:focus{
 			line-height: 20px !important;
 			position: absolute !important;
 			bottom: 0 !important;
-			background: rgba(0,0,0,0.5) !important;
-			color: #fff;
+			background: $shadow-dark !important;
+			color: $white;
 			a{
-				color: #fff;
+				color: $white;
 				font-size: 15px;
 				margin: 0;
 				line-height: 17px;
@@ -1944,7 +1946,7 @@ textarea:focus{
 			strong{
 				font-style: normal;
 				font-size: 10px;
-                color: #fff;
+                color: $white;
 			}
 		}
 		a, a.container{
@@ -1967,15 +1969,15 @@ textarea:focus{
 			transition: all 0.25s ease-in-out;
 			filter: invert(80%);
 			-webkit-filter: invert(0.8);
-			background-color: white;
+			background-color: $white;
 
 			&:hover{
-				background-color: rgba(255, 255, 255, 0.5);
+				background-color: rgba($white, 0.5);
 				width: 23px;
 				height: 23px;
 				background-size: 17px;
 				background-position: center;
-				box-shadow: 0px 0px 2px black;
+				box-shadow: 0px 0px 2px $black;
 				border-radius: 12px;
 				filter: none;
 				-webkit-filter: none;
@@ -2024,7 +2026,7 @@ filters{
 	button, .button{
 		@include flat-button;
 		background: transparent;
-		color: white;
+		color: $white;
 		padding: 9px;
 		font-size: 1em;
 		font-weight: normal;
@@ -2034,10 +2036,10 @@ filters{
 	}
 	input[type=button].pick-file{
 		background: $accent;
-		color: #fff;
+		color: $white;
 	}
 	button[disabled=disabled], button.disabled{
-		color: #888;
+		color: $disable-grey;
 	}
 	button:hover, .button:hover{
 		color: $accent;
@@ -2046,14 +2048,14 @@ filters{
 	button[disabled=disabled]:hover, button.disabled:hover{
 		cursor: default;
 		background: none;
-		coor: #888;
+		color: $disable-grey;
 	}
 	behaviour{
 		@include cell;
 	}
 	.contextual-link{
 		a{
-			color: #fff;
+			color: $white;
 		}
 	}
 
@@ -2079,14 +2081,14 @@ a:hover{
 		@include material-card();
 		border-top: 0;
 		margin-bottom: 5px;
-		background: #fff;
+		background: $white;
 		border-radius: 1px;
 	}
 	li:hover{
 		background: $accent;
 		box-shadow: none;
 		a{
-			color: #fff;
+			color: $white;
 		}
 	}
 }
@@ -2095,7 +2097,7 @@ a:hover{
     color: $text-light;
 	text-align: left;
 	@include border-radius(0px);
-	background: #f0f0f0;
+	background: $light-grey;
 	border-left: 10px solid $primary;
 }
 
@@ -2105,7 +2107,7 @@ a:hover{
 
 .warning{
 	@include message;
-	background: #f0f0f0;
+	background: $light-grey;
 	border-left: 10px solid $pink;
 }
 
@@ -2143,8 +2145,8 @@ a:hover{
 }
 
 .comment{
-	border: 1px solid #eee;
-	background: #fff;
+	border: 1px solid $light-grey;
+	background: $white;
 }
 .hash-magnet{
 	.comment{
@@ -2165,15 +2167,15 @@ a:hover{
 
 article.selected{
 	background: $primary;
-	color: #fff;
+	color: $white;
 	a{
-		color: #fff;
+		color: $white;
 	}
 }
 
 [contenteditable]{
-	background: #FFF;
-	border: 1px solid #ddd;
+	background: $white;
+	border: 1px solid $middle-grey;
 }
 [contenteditable]:focus{
 	border: 2px solid $accent;
@@ -2206,10 +2208,10 @@ article.selected{
 .grid-exemple.row .article, .grid-exemple.row .absolute{
 	font-size: 14px;
 	padding: 10px;
-	color: #888;
-	border: #eee solid 5px;
+	color: $disable-grey;
+	border: $light-grey solid 5px;
 	border-radius: 5px;
-	background: #fff;
+	background: $white;
 	text-align: left;
 }
 
@@ -2229,7 +2231,7 @@ article.selected{
 			}
 		}
 		tr{
-			background: #fff;
+			background: $white;
 			border-bottom: 1px solid $shadow-light;
 			td, td:first-child, th{
 				width: 25px;
@@ -2352,7 +2354,7 @@ section.lightbox{
 			background: $primary;
 			border: none;
 			font-size: 20px;
-			color: #fff;
+			color: $white;
 			margin: 3px;
 		}
 		h2:hover{
@@ -2368,14 +2370,14 @@ section.lightbox{
 			border: 0;
 			background: $background;
 			.content{
-				color: #666;
+				color: $grey;
 				h3{
 					font-weight: normal;
 					color: $accent;
 					font-size: 16px;
 				}
 				select, input[type=text], textarea{
-					background: #fff;
+					background: $white;
 				}
 			}
 		}
@@ -2383,7 +2385,7 @@ section.lightbox{
 
 	.accordion.opened{
 		h2{
-			color: #fff;
+			color: $white;
 			background: $accent;
 			border: none;
 		}
@@ -2392,17 +2394,17 @@ section.lightbox{
 			border-top: 0;
 			padding: 10px;
 			overflow: auto;
-			background: #fff;
+			background: $white;
 			border: none;
 		}
 	}
 }
 
 select{
-	background: #eee;
+	background: $light-grey;
 	border: none;
 	height: 25px;
-	color: #444;
+	color: $grey;
 	margin-bottom: 7px;
 }
 
@@ -2424,7 +2426,7 @@ select{
 .side-tabs{
 	ul{
 		li{
-			color: #fff;
+			color: $white;
 			background: $primary;
 			border-color: $accent;
 			border-right: none;
@@ -2440,7 +2442,7 @@ select{
 		}
 		li.selected{
 			color: $black;
-			background: #FCFCFC;
+			background: $white;
 			border-color: $accent;
 			border-right: none;
 			border-top: none;
@@ -2488,18 +2490,18 @@ select{
 	}
 
 	.illustrated-text{
+		border-top: 1px solid $middle-grey;
+		border-radius: 15px;
+		box-shadow: 0 0 2px;
+
 		.upper-title{
 			margin-bottom: 5px;
 		}
 
-		border-top: 1px solid #ddd;
-		border-radius: 15px;
-		box-shadow: 0 0 2px;
-
 		.cke_editable{
 			border: none;
 			min-height: 110px;
-			border: 1px dashed #ddd;
+			border: 1px dashed $middle-grey;
 			margin-bottom: 10px;
 
 			&:focus{
@@ -2539,14 +2541,14 @@ select{
 		overflow: hidden;
 	}
 	.bubble::after{
-		border-left: 1px solid #ddd;
-		border-top: 1px solid #ddd;
+		border-left: 1px solid $middle-grey;
+		border-top: 1px solid $middle-grey;
 		content: "";
 		position: absolute;
 		width: 15px;
 		height: 15px;
 		top: 60px;
-		background: white;
+		background: $white;
 		left: -8px;
 		transform: rotate(-45deg);
         -webkit-transform: rotate(-45deg);
@@ -2605,7 +2607,7 @@ select{
 	button{
 		background: $primary;
 		border-radius: 0;
-		color: #fff;
+		color: $white;
 	}
 	button:hover{
 		background: $primary;
@@ -2649,7 +2651,7 @@ select{
 		background: $orange;
 	}
 	button.white{
-		background: #fff;
+		background: $white;
 		border: 1px solid $primary-light;
 	}
 	button.green{
@@ -2676,8 +2678,8 @@ select{
 	@include run-transition(background);
 }
 .media-container.white{
-	background: #fff;
-	color: #000;
+	background: $white;
+	color: $black;
 	@include run-transition(background);
 }
 .media-container.green{
@@ -2687,17 +2689,17 @@ select{
 .media-container.blue{
 	background: $accent;
 	@include run-transition(background);
-	color: #fff;
+	color: $white;
 	h1,h2,h3{
-		color: #fff;
+		color: $white;
 	}
 }
 .media-container.black{
 	background: $primary;
-	color: #fff;
+	color: $white;
 	@include run-transition(background);
 	h1,h2,h3{
-		color: #fff;
+		color: $white;
 	}
 }
 
@@ -2712,7 +2714,7 @@ select{
 	legend.timeslots{
 		width: 130px;
 		background: $primary-light;
-		color: #fff;
+		color: $white;
 		position: absolute;
 		left: -130px;
 	}
@@ -2731,14 +2733,14 @@ select{
 				width: 100%;
 				text-align: center;
 				background: $primary-light;
-				color: #fff;
+				color: $white;
 			}
 			.timeslots{
 				height: auto;
 				.timeslot{
-					background: #fdfdfd;
-					border-bottom: 1px solid #eee;
-					border-right: 1px solid #eee;
+					background: $white;
+					border-bottom: 1px solid $light-grey;
+					border-right: 1px solid $light-grey;
 					width: 100%;
 					box-sizing: border-box;
 				}
@@ -2763,7 +2765,7 @@ select{
 				font-size: 12px;
 				text-align: left;
 				padding: 5px;
-				color: #fff;
+				color: $white;
 
 				line-height: 17px;
 
@@ -2825,7 +2827,7 @@ select{
 	}
 	.autocomplete > em{
 		border-bottom: 1px solid $shadow-light;
-		background: white;
+		background: $white;
 		color: $text-light;
 		@include run-transition(background);
 
@@ -2835,7 +2837,7 @@ select{
 		}
 	}
 	.autocomplete > em:hover{
-		color: #fff;
+		color: $white;
 		background: $accent;
 	}
 	input[type=text]{
@@ -2861,7 +2863,7 @@ select{
 	p:first-child, .filters-icons {
 		i{
 			opacity: 1;
-			background: #aaa;
+			background: $solid-grey;
 			height: 40px !important;
 			width: 40px !important;
 			@include run-transition(all);
@@ -2879,7 +2881,7 @@ select{
 			}
 			&.selected{
 				i{
-					box-shadow: 0 2px 3px rgba(0,0,0,0.26) inset;
+					box-shadow: 0 2px 3px $shadow inset;
 				}
 				&:nth-child(6n){
 					i{ background: $green; }
@@ -2904,7 +2906,7 @@ select{
 				position: relative;
 				span{
 					position: absolute;
-					color: #fff;
+					color: $white;
 					visibility: hidden;
 					left: 6px;
                     top: 4px;
@@ -2920,7 +2922,7 @@ select{
                       font-size: 25px;
 				}
 				i::before{
-					color: #fff !important;
+					color: $white !important;
 				}
 			}
 		}
@@ -2931,11 +2933,11 @@ select{
 	}
 	.wrapper {
 		background: $primary;
-		box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.6);
+		box-shadow: 0px 3px 15px $shadow-darker;
 		width: 100%;
 		ul {
 			li {
-				color: #fff;
+				color: $white;
 				i{
 					border-radius: 50px;
 				}
@@ -3029,7 +3031,7 @@ container article form{
 		}
 	}
 }
-//actu teaser comment link 
+//actu teaser comment link
 .previews container .preview-wrapper{
 	article.preview{
 		.rigid-grid.row + .cell.right-magnet{
@@ -3054,12 +3056,12 @@ container article form{
 article.preview{
 	box-shadow: none;
 	background: transparent;
-	border: 1px solid #eee;
+	border: 1px solid $light-grey;
 }
 
 article.preview.expanded{
 	@include material-card();
-	background: #fff;
+	background: $white;
 	border: none;
 }
 
@@ -3167,12 +3169,12 @@ article.preview.important{
 	white-space: nowrap;
 	label, label:hover{
 		color: $accent;
-		background: #eee;
+		background: $light-grey;
 	}
 
 	.options{
 		ul{
-			background: #fff;
+			background: $white;
 			position: absolute;
 			width: 100%;
 			top: 38px;
@@ -3189,15 +3191,15 @@ article.preview.important{
 				font-weight: 500;
 				text-align: left;
 				a{
-					color: #000;
+					color: $black;
 				}
 				&:hover{
-					a{ color: #fff; }
+					a{ color: $white; }
 				}
 			}
 			li:hover{
 				background: $accent;
-				color: #fff;
+				color: $white;
 			}
 		}
 	}
@@ -3229,7 +3231,7 @@ hr.solid{
 
 			font-size: 35px;
 			background: $primary;
-			color: #fff;
+			color: $white;
 			margin-bottom: 1px;
 			@include run-transition(background);
 		}
@@ -3237,8 +3239,8 @@ hr.solid{
 			background: $accent;
 		}
 		h2.disabled{
-			background: #666;
-			color: #999;
+			background: $grey;
+			color: $disable-grey;
 			cursor: default;
 		}
 	}
@@ -3248,7 +3250,7 @@ h1.letter-picker{
 	height: 50px;
 	width: 50px;
 	background: $primary;
-	color: #fff;
+	color: $white;
 	line-height: 50px;
 	text-align: center;
 	@include run-transition(background);
@@ -3268,12 +3270,12 @@ h1.letter-picker:hover{
 }
 
 hr.separator{
-    border-top: 1px solid lighten(black, 20%);
+    border-top: 1px solid lighten($black, 20%);
     margin-left: auto;
     margin-right: auto;
     width: 95%;
     padding: 0px;
-    box-shadow: 0px 0px 1px black;
+    box-shadow: 0px 0px 1px $black;
 }
 
 hr.line{
@@ -3325,7 +3327,7 @@ ul.toc{
 	li.selected{
 		background: $primary;
 		a{
-			color: #fff;
+			color: $white;
 		}
 	}
 	.name{
@@ -3388,7 +3390,7 @@ nav.illustrated-links{
 				display: table-cell;
 				vertical-align: top;
 				width: 100%;
-				background: white;
+				background: $white;
 				h1{
 					margin: 0px;
 					font-size: 22px;
@@ -3398,12 +3400,12 @@ nav.illustrated-links{
 					font-weight: normal;
 				}
 				p{
-					color: #666;
+					color: $grey;
 					font-size: 12px;
 					margin: 0;
 				}
 				em{
-					color: #aaa;
+					color: $solid-grey;
 				}
 				i.public::before{
 					display: inline-block;
@@ -3445,7 +3447,7 @@ nav.illustrated-links{
 					white-space: nowrap;
 					display: table-cell;
 					vertical-align: middle;
-					border-bottom: 1px solid #eee;
+					border-bottom: 1px solid $light-grey;
 				}
 
 				.fixed-tiny{
@@ -3489,7 +3491,7 @@ nav.illustrated-links{
 					}
 
 					.bubble-small{
-						border: 1px solid #bbb;
+						border: 1px solid $medium-grey;
 						border-radius: 15px;
 						//box-shadow: 0 0 2px;
 						padding: 0px 10px;
@@ -3503,8 +3505,8 @@ nav.illustrated-links{
 
 					}
 					&::after{
-						border-left: 1px solid #bbb;
-						border-top: 1px solid #bbb;
+						border-left: 1px solid $medium-grey;
+						border-top: 1px solid $medium-grey;
 						content: "";
 						width: 9px;
 						height: 9px;
@@ -3606,8 +3608,8 @@ button.right-magnet + nav.illustrated-links{
 }
 
 input[type=text][disabled=disabled] {
-	background: #ddd;
-	color: #999;
+	background: $middle-grey;
+	color: $disable-grey;
 	padding: 5px;
 	font-size: 14px;
 	line-height: 20px;
@@ -3617,7 +3619,7 @@ input[type=text][disabled=disabled] {
 
 .long-badge {
 	border-radius: 10px;
-	background: #ccc;
+	background: $medium-grey;
 	font-weight: bold;
 	font-size: 12px;
 	padding: 1px 4px;
@@ -3625,7 +3627,7 @@ input[type=text][disabled=disabled] {
 	height: 15px;
 	text-align: center;
 	line-height: 19px;
-	color: #000;
+	color: $black;
 	margin-top: 2px;
 }
 
@@ -3633,7 +3635,7 @@ input[type=text][disabled=disabled] {
 	.patchwork{
 		.row{
 			h1{
-				color: #fff;
+				color: $white;
 			}
 		}
 		.navigation{
@@ -3658,12 +3660,12 @@ input[type=text][disabled=disabled] {
 				@include material-card();
 				border:none;
 				margin-bottom: 15px;
-				background: #fff;
+				background: $white;
 
 				&.selected{
 					background: $accent;
 					h1{
-						color: #fff;
+						color: $white;
 						line-height: 25px;
 					}
 				}
@@ -3689,14 +3691,14 @@ input[type=text][disabled=disabled] {
 					button{
 						@include flat-button;
 						background: transparent;
-						color: white;
+						color: $white;
 						padding: 9px;
 						font-size: 1em;
 						font-weight: normal;
 						margin: 0;
 					}
 					button:hover{
-						background: #fff;
+						background: $white;
 						color: $accent;
 					}
 				}
@@ -3717,35 +3719,35 @@ input[type=text][disabled=disabled] {
 }
 
 .droptarget.block-editor{
-	background-color: #eee;
-	border: 3px dashed #ddd;
+	background-color: $light-grey;
+	border: 3px dashed $middle-grey;
 }
 
 image-select.droptarget{
 	> div{
-		background-color: #eee;
-        	border: 3px dashed #ccc;
+		background-color: $light-grey;
+        	border: 3px dashed $medium-grey;
 	}
 }
 
 .cke_chrome.cke_float{
 	.cke_inner{
 		border: none;
-		background: #f0f0f0;
+		background: $light-grey;
 	}
 }
 
 .humane{
 	border-radius: 2px;
-	box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 3px $shadow;
 	font-size: 22px;
 	padding: 20px;
 	pointer-events: none;
 }
 
 .humane.humane-original-info, .humane.humane-original-success, .humane.humane-original-error{
-	background: #323232;
-	color: #fff;
+	background: $black;
+	color: $white;
 }
 
 .humane.humane-original-error{
@@ -3871,13 +3873,13 @@ ul.colored{
 	padding-right: 15px;
 	box-sizing: border-box;
 	> li > a{
-		color: #fff;
+		color: $white;
 	}
 	ul{
 		background: transparent;
 		li{
 			a.selected{
-				color: #fff;
+				color: $white;
 			}
 		}
 	}
@@ -3950,27 +3952,27 @@ ul.colored li {
 
 
 .wizard{
-	background: #fff;
-	border: 1px solid #ddd;
+	background: $white;
+	border: 1px solid $middle-grey;
 	.steps{
-		background: #eee;
+		background: $light-grey;
 		li{
-			color: #888;
+			color: $disable-grey;
 		}
 		li.active{
 			background: $accent;
-			color: #fff;
+			color: $white;
 		}
 	}
 	[contenteditable]{
-		border: 1px solid #ccc;
+		border: 1px solid $medium-grey;
 	}
 }
 
 .compare{
 	margin-top: 20px;
 	> tbody > tr > td, > thead > tr > td{
-		border: 1px solid #ddd;
+		border: 1px solid $middle-grey;
 		vertical-align: top;
 		.diff{
 			background: rgba($accent, 0.2);
@@ -4013,7 +4015,7 @@ recorder{
 	}
 	.metadata{
 		.status{
-            color: #444;
+            color: $grey;
         }
 	}
 	input[type=text]{
@@ -4026,9 +4028,9 @@ recorder{
 
 .embedded-viewer{
 	background: $primary;
-	color: #fff;
+	color: $white;
 	input[type=text]{
-		color: #fff;
+		color: $white;
 	}
 	i{
 		@include invert-colors();
@@ -4066,13 +4068,13 @@ em.skin-dyslexic{
 
 popover{
 	popover-content{
-		background: #fff;
+		background: $white;
 		@include material-card(1px, 20px);
 		.more{
-			background: #eee;
+			background: $light-grey;
 			@include run-transition(background);
 			a{
-				color: #666;
+				color: $grey;
 				font-size: 16px;
 				height: 40px;
 				line-height: 40px;
@@ -4084,7 +4086,7 @@ popover{
 			&:hover{
 				background: $accent;
 				a{
-					color: #fff;
+					color: $white;
 				}
 			}
 		}
@@ -4152,7 +4154,7 @@ label{
 
 	input[type=checkbox] + span::before,  input[type=checkbox] + i18n::before {
 		content: " ";
-		border: 2px solid #666;
+		border: 2px solid $grey;
 		width: 20px;
 		height: 20px;
 		display: inline-block;
@@ -4173,7 +4175,7 @@ label{
 	}
 
 	input[type=checkbox]:disabled + span::before{
-		border-color: #ddd !important;
+		border-color: $middle-grey !important;
 	}
 }
 
@@ -4194,7 +4196,7 @@ image-select > div::before{
 	text-align: center;
 	padding: 10px;
 	font-size: 16px;
-	color: #fff;
+	color: $white;
 	@include run-transition(all);
 	box-sizing: border-box;
 	opacity: 0;
@@ -4237,15 +4239,15 @@ side-panel{
 	}
 	.toggle{
 		@include material-card(5px, 25px);
-		background: #fff;
+		background: $white;
 		.content{
 			float: left;
 		}
 	}
 	.opener{
-		color: #fff;
+		color: $white;
 		background: $dark-accent;
-		box-shadow: 0 2px 3px rgba(0,0,0,0.2) inset;
+		box-shadow: 0 2px 3px $shadow inset;
 		border-radius: 25px;
 	}
 }
@@ -4257,14 +4259,14 @@ plus{
 		border-radius: 25px;
 	}
 	.opener{
-		color: #fff;
+		color: $white;
 		background: $accent;
 		border-radius: 25px;
 		@include run-transition(all);
 	}
 	.opener.minus{
 		background: $dark-accent;
-		box-shadow: 0 2px 3px rgba(0,0,0,0.2) inset;
+		box-shadow: 0 2px 3px $shadow inset;
 	}
 }
 
@@ -4295,7 +4297,7 @@ plus{
 }
 
 .card{
-	background: #fff;
+	background: $white;
 	@include material-card();
 	font-size: 14px;
 	h3{
@@ -4406,7 +4408,7 @@ body editor{
 
 	[contenteditable]{
 		article{
-			border: 1px dotted #ddd;
+			border: 1px dotted $middle-grey;
 		}
 	}
 
@@ -4425,7 +4427,7 @@ body editor{
 [contenteditable], [bind-html]{
 	table{
 		td{
-			border: 1px solid #eee;
+			border: 1px solid $light-grey;
 		}
 		tr:hover{
 			background: none;
@@ -4437,7 +4439,7 @@ contextual-menu{
 	ul{
 		li:hover{
 			background: $accent;
-			color: #fff;
+			color: $white;
 		}
 	}
 }
@@ -4479,7 +4481,7 @@ contextual-menu{
 
   }
   .domino:hover{
-	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 2px 6px $shadow-darker;
   }
 }
 
@@ -4584,5 +4586,5 @@ input[type="submit"], input[type="button"]{
 }
 .microbox-content{
 	background: $white;
-	box-shadow: 0 0 3px 2px rgba(black, 0.2);
+	box-shadow: 0 0 3px 2px rgba($black, 0.2);
 }
