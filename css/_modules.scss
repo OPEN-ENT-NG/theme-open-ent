@@ -3029,12 +3029,24 @@ container article form{
 		}
 	}
 }
-//actu comment link - kill overflow date
+//actu teaser comment link 
 .previews container .preview-wrapper{
 	article.preview{
 		.rigid-grid.row + .cell.right-magnet{
+			margin-bottom: 0;
+			position: absolute;
+			bottom: 5px;
+			right: 10px;
+		}
+	}
+}
+//actu expanded comment position
+.previews container .preview-wrapper{
+	article.preview.expanded{
+		.rigid-grid.row + .cell.right-magnet{
 			margin-top: 30px;
 			margin-bottom: 10px;
+			position: relative;
 		}
 	}
 }
