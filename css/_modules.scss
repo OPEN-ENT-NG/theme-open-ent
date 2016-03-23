@@ -2665,28 +2665,28 @@ select{
 	}
 }
 
-.media-container.pink{
+.media-container.pink [contenteditable], .media-container.pink .text-wrapper > [bind-html]{
 	background: $pink;
 	@include run-transition(background);
 }
-.media-container.purple{
+.media-container.purple [contenteditable], .media-container.purple .text-wrapper > [bind-html]{
 	background: $purple;
 	@include run-transition(background);
 }
-.media-container.orange{
+.media-container.orange [contenteditable], .media-container.orange .text-wrapper > [bind-html]{
 	background: $orange;
 	@include run-transition(background);
 }
-.media-container.white{
+.media-container.white [contenteditable], .media-container.white .text-wrapper > [bind-html]{
 	background: $white;
 	color: $black;
 	@include run-transition(background);
 }
-.media-container.green{
+.media-container.green [contenteditable], .media-container.green .text-wrapper > [bind-html]{
 	background: $green;
 	@include run-transition(background);
 }
-.media-container.blue{
+.media-container.blue [contenteditable], .media-container.blue .text-wrapper > [bind-html]{
 	background: $accent;
 	@include run-transition(background);
 	color: $white;
@@ -2694,7 +2694,7 @@ select{
 		color: $white;
 	}
 }
-.media-container.black{
+.media-container.black [contenteditable], .media-container.black .text-wrapper > [bind-html]{
 	background: $primary;
 	color: $white;
 	@include run-transition(background);
