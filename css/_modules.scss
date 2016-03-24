@@ -2979,6 +2979,18 @@ select{
 		}
 	}
 }
+//rbs
+.line.filters{
+	.filters-icons{
+		margin-top: 7px;
+
+		ul li{
+			vertical-align: top;
+		    display: inline-block;
+		}
+	}
+}
+
 
 .week-switcher .date-picker-icon i.calendar:before{
   font-size: 45px;
