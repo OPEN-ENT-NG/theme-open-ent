@@ -2990,7 +2990,19 @@ select{
 		}
 	}
 }
+//timeline filters
+.widgets-friend .line.filters{
+	.filters-icons{
+		ul li{
+			display: inline;
+		}
 
+		i{
+			margin-bottom: 5px;
+    		margin-right: 3px;
+		}
+	}
+}
 
 .week-switcher .date-picker-icon i.calendar:before{
   font-size: 45px;
