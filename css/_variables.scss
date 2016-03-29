@@ -1,16 +1,16 @@
+//$primary-dark: #209dcc !default;
+//$dark-orange: #B25D00 !default;
+//$primary-light: #7ad9ff !default;
 
-$primary-dark: #209dcc !default;
-$primary: #4bafd5 !default;
-$primary-light: #7ad9ff !default;
+// links = primary
 
+$cyan: #4bafd5 !default;
 $green: #46bfaf !default;
 $yellow: #ecbe30 !default;
 $orange: #FF8500 !default;
-$dark-orange: #B25D00 !default;
-$purple: #763294 !default;
-$cyan: $primary !default;
-$pink: #b930a2 !default;
 $red: #e13a3a !default;
+$pink: #b930a2 !default;
+$purple: #763294 !default;
 $white: #FFFFFF !default;
 $lightest-grey: #f9f9f9 !default;
 $light-grey: #F0F0F0 !default;
@@ -26,13 +26,18 @@ $shadow: rgba(0, 0, 0, 0.26) !default;
 $shadow-dark: rgba(0, 0, 0, 0.4) !default;
 $shadow-darker: rgba(0, 0, 0, 0.6) !default;
 
+$text-light: $grey !default;
+$background: $lightest-grey !default;
+
+///////
+
+$primary: $cyan !default;
+$primary-dark: saturate(darken($primary, 9%), 3%);
+$primary-light: saturate(lighten($primary, 17%), 85%);
 
 //Accent
 $accent: $orange !default;
-$dark-accent: $dark-orange !default;
-
-$text-light: $grey !default;
-$background: $lightest-grey !default;
+$dark-accent: darken($accent, 15%);
 
 
 $header-height: 64px !default;
