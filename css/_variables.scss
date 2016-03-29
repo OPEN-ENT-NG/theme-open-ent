@@ -1,41 +1,41 @@
 
-$primary-dark: #209dcc;
-$primary: #4bafd5;
-$primary-light: #7ad9ff;
+$primary-dark: #209dcc !default;
+$primary: #4bafd5 !default;
+$primary-light: #7ad9ff !default;
 
-$green: #46bfaf;
-$yellow: #ecbe30;
-$orange: #FF8500;
-$dark-orange: #B25D00;
-$purple: #763294;
-$cyan: $primary;
-$pink: #b930a2;
-$red: #e13a3a;
-$white: #FFFFFF;
-$lightest-grey: #f9f9f9;
-$light-grey: #F0F0F0;
-$middle-grey: #DDD;
-$medium-grey: #CCC;
-$solid-grey: #AAA;
-$disable-grey: #888;
-$grey: #555;
-$black: #222;
+$green: #46bfaf !default;
+$yellow: #ecbe30 !default;
+$orange: #FF8500 !default;
+$dark-orange: #B25D00 !default;
+$purple: #763294 !default;
+$cyan: $primary !default;
+$pink: #b930a2 !default;
+$red: #e13a3a !default;
+$white: #FFFFFF !default;
+$lightest-grey: #f9f9f9 !default;
+$light-grey: #F0F0F0 !default;
+$middle-grey: #DDD !default;
+$medium-grey: #CCC !default;
+$solid-grey: #AAA !default;
+$disable-grey: #888 !default;
+$grey: #555 !default;
+$black: #222 !default;
 
-$shadow-light: rgba(0, 0, 0, 0.1);
-$shadow: rgba(0, 0, 0, 0.26);
-$shadow-dark: rgba(0, 0, 0, 0.4);
-$shadow-darker: rgba(0, 0, 0, 0.6);
+$shadow-light: rgba(0, 0, 0, 0.1) !default;
+$shadow: rgba(0, 0, 0, 0.26) !default;
+$shadow-dark: rgba(0, 0, 0, 0.4) !default;
+$shadow-darker: rgba(0, 0, 0, 0.6) !default;
 
 
 //Accent
-$accent: $orange;
-$dark-accent: $dark-orange;
+$accent: $orange !default;
+$dark-accent: $dark-orange !default;
 
-$text-light: $grey;
-$background: $lightest-grey;
+$text-light: $grey !default;
+$background: $lightest-grey !default;
 
 
-$header-height: 64px;
+$header-height: 64px !default;
 
 @mixin material-card($shadow-size: 1px, $blur-size: 3px) {
 	box-shadow: 0  $shadow-size  $blur-size $shadow;
