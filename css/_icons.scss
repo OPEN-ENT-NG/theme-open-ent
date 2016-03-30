@@ -933,10 +933,17 @@ i.help-large::before, i.type.help::before, i.help::before{
   content: '\e835';
   cursor: pointer;
 }
-nav.horizontal > a i.help:before{
-    font-size: 34px;
-    line-height: 62px;
+nav.horizontal > a{
+    i.help{
+        display: block;
+    }
+
+    i.help:before{
+        font-size: 34px;
+        line-height: 62px;
+    }
 }
+
 
 
 i.disconnect-large, i.disconnect.cas, i.disconnect{
