@@ -2064,7 +2064,7 @@ filters{
 	}
 }
 
-a:hover{
+a:hover, a:hover > h1, a:hover > h2, a:hover > h3{
 	color: $accent;
 }
 
