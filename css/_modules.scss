@@ -1561,6 +1561,10 @@ article.list-view{
 			h2 + div.row{
 				text-align: right;
 			}
+			i.close-2x{
+				width: auto;
+    			height: auto;
+			}
 		}
 
 
@@ -1570,6 +1574,64 @@ article.list-view{
 	}
 
 }
+
+
+.my-notifications .responsive-table .fixed-head th{
+	width: 20%;
+}
+.fixed-head{
+	border: 1px solid $middle-grey;
+	border-bottom: none;
+	& + .row{
+		max-height: 400px;
+		overflow: auto;
+		border-bottom: 1px solid $middle-grey;
+	}
+}
+
+//for notifications xtrn
+.responsive-table {
+	table{
+		thead{
+			i{
+				display: block;
+				position: absolute;
+				width: 30px;
+				height: 30px;
+				line-height: 30px;
+				left: 0px;
+				top: 50%;
+				margin-top: -15px;
+				&:before{
+					display: block;
+					transform: rotate(90deg);
+					@include run-transition(all);
+				}
+			}
+			td:first-child{
+				padding-left: 40px;
+			}
+
+			tr:hover{
+				background: $primary-dark;
+			}
+		}
+		thead.slided i:before{
+			transform: rotate(180deg);
+		}
+
+		tr{
+            border: 1px solid $middle-grey;
+			border-top: none;
+        }
+	}
+	thead.slided + tbody{
+		//cause display block slide
+		display: table-row-group!important;
+	}
+
+}
+
 
 .widgets{
 	padding: 0;

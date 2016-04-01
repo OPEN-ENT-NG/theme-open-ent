@@ -957,6 +957,31 @@ $small-screen: 959px;
 			margin-bottom: 10px;
 		}
 	}
+
+	//responsive-table
+	.fixed-head{
+		& + .row{
+			max-height: none;
+			border-bottom: none;
+		}
+	}
+	.responsive-table{
+		table {
+			thead td:first-child{
+				padding: 15px 25px;
+			}
+			tr{
+				border: none;
+			}
+			td:first-child {
+				border-bottom: 1px solid $middle-grey;
+			}
+		}
+		thead.slided + tbody{
+			//cause display block slide
+			display: block!important;
+		}
+	}
 }
 @media screen and (max-width: $small-mobile){
 	body{

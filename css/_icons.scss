@@ -64,6 +64,17 @@ i.bell:before{
   font-weight: bold;
 }
 
+i.arrow{
+  @include fonticon;
+  text-align: center;
+  color: $white;
+}
+i.arrow:before{
+  content: '\25B2';
+  font-size: 20px;
+  font-weight: bold;
+}
+
 i.history{
   @include fonticon;
   text-align: center;
