@@ -4096,6 +4096,10 @@ slider, slider.drawing-zone{
 }
 
 recorder{
+	.view{
+		overflow: hidden;
+		height: auto;
+	}
 	.status{
 		color: $accent;
 	}
