@@ -1,0 +1,819 @@
+
+.list-view, .share{
+    tbody{
+        tr{
+            td.drop-line:before{
+                @include fonticon;
+                content: '\e866';
+                color: $medium-grey;
+            }
+        }
+        tr:hover{
+            td.drop-line:before{
+                color: $black;
+            }
+        }
+        tr{
+			i.history{
+				@include fonticon;
+				margin: 0px 3px;
+			}
+		  	i.history:before{
+				content:'\e844';
+			}
+		}
+    }
+}
+
+
+i.bell{
+  @include fonticon;
+  text-align: center;
+  color: $white;
+}
+i.bell:before{
+  content: '\E8C9';
+  font-size: 20px;
+  font-weight: bold;
+}
+
+i.arrow{
+  @include fonticon;
+  text-align: center;
+  color: $white;
+}
+i.arrow:before{
+  content: '\25B2';
+  font-size: 20px;
+  font-weight: bold;
+}
+
+i.history{
+  @include fonticon;
+  text-align: center;
+}
+i.history:before{
+  content: '\e844';
+  font-size: 12px;
+}
+
+
+/* UI & indication type icons */
+
+i.conversation-large, i.type.messagerie, i.mail{
+  @include fonticon;
+}
+
+i.conversation-large::before, i.type.messagerie::before, i.mail::before{
+  content: "\e804";
+  color: $yellow;
+}
+
+
+i.validated-icon-large, i.validated-icon{
+  @include fonticon;
+}
+i.validated-icon-large::before, i.validated-icon::before{
+  content: '\e871';
+  color: $green;
+}
+
+
+i.suspended-icon-large, i.suspended-icon{
+  @include fonticon;
+}
+i.suspended-icon-large::before, i.suspended-icon::before{
+  content: '\e856';
+  color: $orange;
+}
+
+i.refused-icon-large, i.refused-icon{
+  @include fonticon;
+}
+i.refused-icon-large::before, i.refused-icon::before{
+  content: '\e866';
+  color: $red;
+}
+
+i.pending-icon-large, i.pending-icon, table.colored i.pending-icon{
+  @include fonticon;
+}
+i.pending-icon-large::before, i.pending-icon::before, table.colored i.pending-icon::before{
+  content: '\e85c';
+  color: $purple;
+  font-family: "fontello";
+}
+
+
+/* main indication type icons */
+
+i.home-large, i.home.cas, i.home{
+  @include fonticon;
+}
+i.home-large::before, i.type.home::before, i.home::before{
+  content: '\e82b';
+}
+
+i.apps-large, i.apps.cas, i.apps{
+  @include fonticon;
+}
+i.apps-large::before, i.type.apps::before, i.apps::before{
+  content: '\e86c';
+}
+
+i.mail-large, i.mail.cas, i.mail{
+  @include fonticon;
+}
+i.mail-large::before, i.type.mail::before, i.mail::before{
+  content: '\e804';
+}
+
+
+i.mail-in{
+  @include fonticon;
+  text-align: center;
+}
+i.mail-in:before{
+  content: '\e83f';
+  font-size: 12px;
+}
+
+i.mail-out{
+  @include fonticon;
+  text-align: center;
+}
+i.mail-out:before{
+  content: '\e84e';
+  font-size: 12px;
+}
+
+i.mail-new{
+  @include fonticon;
+  text-align: center;
+}
+i.mail-new:before{
+  content: '\e828';
+  font-size: 12px;
+}
+
+
+i.help-large, i.help.cas, i.help{
+  @include fonticon;
+}
+i.help-large::before, i.type.help::before, i.help::before{
+  content: '\e835';
+  cursor: pointer;
+}
+nav.horizontal > a{
+    i.help{
+        display: block;
+    }
+
+    i.help:before{
+        font-size: 34px;
+        line-height: 62px;
+    }
+}
+
+
+
+i.disconnect-large, i.disconnect.cas, i.disconnect{
+  @include fonticon;
+}
+i.disconnect-large::before, i.type.disconnect::before, i.disconnect::before{
+  content: '\e842';
+}
+
+
+
+/* status icons */
+
+i.public{
+  @include fonticon;
+}
+i.public::before{
+	content:'\e863';
+}
+
+i.prive{
+  @include fonticon;
+  cursor: pointer;
+}
+i.prive::before{
+ content:'\e860';
+}
+
+i.mine{
+  @include fonticon;
+  cursor: pointer;
+}
+i.mine::before{
+ content: '\e870';
+}
+
+i.pending-action{
+  @include fonticon;
+  cursor: pointer;
+}
+i.pending-action::before{
+ content: '\e85c';
+}
+
+i.dates{
+  @include fonticon;
+  cursor: pointer;
+}
+i.dates::before{
+  content: '\e834';
+}
+
+/* actions icons */
+
+
+i.send-mail{
+  @include fonticon;
+  margin: 7px;
+  @include run-transition(background);
+}
+i.send-mail::before{
+  content: '\e804';
+  color: $white;
+}
+.domino{
+    i.send-mail::before{
+      color: $primary;
+    }
+}
+i.send-mail:hover{
+    &::before{
+        color: $accent;
+    }
+}
+nav.stamps.vertical{
+    article.clip.fluid{
+        .bottom-locked{
+            right: 0;
+        }
+        i.send-mail::before{
+            color: $primary;
+            font-size: 22px;
+        }
+
+        i.send-mail:hover{
+            &::before{
+                color: $accent;
+            }
+        }
+    }
+    article.clip.fluid.selected{
+        i.send-mail:hover{
+            &::before{
+                color: $white;
+            }
+        }
+    }
+}
+
+
+i.show-icons{
+	@include fonticon;
+	opacity: 0.2;
+    margin: 0 5px;
+}
+i.show-icons:before{
+  content: '\e837';
+  font-size: 28px;
+}
+i.show-icons.selected{
+  opacity: 0.6;
+}
+
+i.show-admin{
+	@include fonticon;
+ 	 text-align: center;
+      opacity: 0.3;
+}
+i.show-admin:before{
+	content: '\e81a';
+ 	 font-size: 28px;
+}
+i.show-admin.selected{
+  opacity: 0.6;
+}
+
+i.show-calendar{
+	@include fonticon;
+	opacity: 0.2;
+	margin-left: 2px;
+	margin-right: 2px;
+	@include right-magnet;
+}
+i.show-calendar:before{
+  content: '\e834';
+  font-size: 28px;
+  padding: 0 10px;
+}
+i.show-calendar.selected{
+	opacity: 0.6;
+}
+
+i.show-details{
+	@include fonticon;
+	opacity: 0.2;
+}
+i.show-details:before{
+  content: '\e86d';
+  font-size: 28px;
+}
+i.show-details.selected{
+  opacity: 0.6;
+}
+
+i.show-list{
+  @include fonticon;
+	opacity: 0.2;
+	text-align: center;
+}
+i.show-list:before{
+  content: '\e8bc';
+  font-size: 28px;
+}
+i.show-list.selected{
+  opacity: 0.6;
+}
+
+i.show-carousel{
+	@include icon(show-carousel, 24px);
+	opacity: 0.2;
+	background-size: 100% 93%;
+	margin-top: -4px;
+}
+i.show-carousel:before{
+  /*attention icone en cours de création*/
+}
+i.show-carousel.selected{
+	opacity: 0.6;
+}
+
+i.close{
+	@include fonticon;
+	text-align: center;
+}
+i.close:before{
+  content: '\e866';
+	font-size: 12px;
+}
+
+
+i.manage{
+	@include fonticon;
+	text-align: center;
+}
+i.manage:before{
+    //content: '\e870'; user
+    content: '\e854';
+	font-size: 14px;
+}
+
+i.edit{
+	@include fonticon;
+	text-align: center;
+}
+i.edit:before{
+    content: '\e858';
+	font-size: 14px;
+}
+
+i.view{
+	@include fonticon;
+	text-align: center;
+}
+i.view:before{
+    content: '\e873';
+	font-size: 14px;
+}
+
+
+i.close-2x{
+  @include fonticon;
+  text-align: center;
+  position: relative!important;
+}
+i.close-2x:before{
+  content: '\e866';
+  font-size: 16px;
+}
+section.lightbox-window .close-lightbox i{
+  background-image: none;
+}
+
+i.tools{
+	@include fonticon;
+  	display: block;
+  	text-indent: 8px;
+}
+i.tools:before{
+  content: '\e855';
+  font-size: 28px;
+  color: #000;
+  //cause invert colors
+}
+
+i.remove-small{
+  @include fonticon;
+  text-align: center;
+}
+i.remove-small:before{
+  content: '\e866';
+  font-size: 12px;
+}
+
+
+
+
+/* types icons */
+
+
+
+i.unknown-large, i.doc-large{
+  @include fonticon;
+  text-align: center;
+}
+i.unknown-large:before, i.doc-large:before{
+  font-size: 50px;
+  display: block;
+  line-height: 67px;
+  content: '\e850';
+}
+i.unknown, i.doc{
+  @include fonticon;
+  text-align: center;
+}
+i.unknown:before, i.doc:before{
+  font-size: 18px;
+  content: '\e850';
+}
+
+i.xls-large{
+  @include fonticon;
+  text-align: center;
+}
+i.xls-large:before{
+  font-size: 50px;
+  display: block;
+  line-height: 67px;
+  content: '\e881';
+}
+i.xls{
+  @include fonticon;
+  text-align: center;
+}
+i.xls:before{
+  font-size: 18px;
+  content: '\e881';
+}
+
+i.ppt-large{
+  @include fonticon;
+  text-align: center;
+}
+i.ppt-large:before{
+  font-size: 50px;
+  display: block;
+  line-height: 67px;
+  content: '\e85f';
+}
+i.ppt{
+  @include fonticon;
+  text-align: center;
+}
+i.ppt:before{
+  font-size: 18px;
+  content: '\e85f';
+}
+
+i.pdf-large{
+  @include fonticon;
+  text-align: center;
+}
+i.pdf-large:before{
+  font-size: 50px;
+  display: block;
+  line-height: 67px;
+  content: '\e857';
+}
+i.pdf{
+  @include fonticon;
+  text-align: center;
+}
+i.pdf:before{
+  font-size: 18px;
+  content: '\e857';
+}
+
+i.video-large{
+  @include fonticon;
+  text-align: center;
+}
+i.video-large:before{
+  font-size: 50px;
+  display: block;
+  line-height: 67px;
+  content: '\e872';
+}
+i.video{
+  @include fonticon;
+  text-align: center;
+}
+i.video:before{
+  font-size: 18px;
+  content: '\e872';
+}
+
+i.word-large{
+  @include fonticon;
+  text-align: center;
+}
+i.word-large:before{
+  font-size: 50px;
+  display: block;
+  line-height: 67px;
+  content: '\e880';
+}
+i.word{
+  @include fonticon;
+  text-align: center;
+}
+i.word:before{
+  font-size: 18px;
+  content: '\e880';
+}
+
+i.folder-large{
+  @include fonticon;
+  text-align: center;
+}
+i.folder-large:before{
+  content: '\e846';
+  font-size: 50px;
+  display: block;
+  line-height: 67px;
+}
+i.folder{
+  @include fonticon;
+  text-align: center;
+}
+i.folder:before{
+  content: '\e846';
+  font-size: 18px;
+}
+
+i.zip{
+  @include fonticon;
+  text-align: center;
+}
+i.zip:before{
+  content: '\e81d';
+  font-size: 25px;
+}
+i.zip-large{
+  @include fonticon;
+  text-align: center;
+}
+i.zip-large:before{
+  content: '\e81d';
+  font-size: 50px;
+  display: block;
+  line-height: 67px;
+}
+
+i.audio{
+  @include fonticon;
+  text-align: center;
+}
+i.audio:before{
+  content: '\e839';
+  font-size: 25px;
+}
+i.audio-large{
+  @include fonticon;
+  text-align: center;
+}
+i.audio-large:before{
+  content: '\e839';
+  font-size: 50px;
+  display: block;
+  line-height: 67px;
+}
+
+i.img{
+  @include fonticon;
+  text-align: center;
+}
+i.img:before{
+  content: '\e84a';
+  font-size: 20px;
+}
+
+///////////////////
+
+i.link{
+    @include fonticon;
+    &:before{
+        content: '\e84d';
+    }
+}
+
+
+.menu-items{
+    i{
+      background: none;
+      @include fonticon;
+      color: black;
+    }
+
+
+	i.image, input[type=button].image, input[type=button].image:hover{
+	  background: none;
+	}
+  	//i.image:before, input[type=button].image:before, input[type=button].image:before:hover{
+	i.image:before, li > div.image:before{
+	  content: '\e84a';
+	  font-family: "fontello";
+	  display: block;
+	  position: absolute;
+	  line-height: 35px;
+	  font-size: 22px;
+	  color: black;
+	  text-align: center;
+	}
+
+	i.sound, input[type=button].sound, input[type=button].sound:hover{
+	  background: none;
+	}
+	i.sound:before, li > div.sound:before{
+	  content: '\e839';
+	  font-family: "fontello";
+	  display: block;
+	  position: absolute;
+	  line-height: 35px;
+	  font-size: 22px;
+	  color: black;
+	  text-align: center;
+	}
+
+	i.video{
+	  font-size: 20px;
+	  background: none;
+	  @include fonticon;
+	  text-align: left;
+	  color: black;
+	}
+  	i.video:before{
+	  content: '\e872';
+	}
+
+	i.grid{
+	  font-size: 23px;
+	  background: none;
+	  @include fonticon;
+	  text-align: left;
+	  color: black;
+	}
+  	i.grid:before {
+	  content: '\e801';
+	}
+
+	i.sniplet{
+	  font-size: 26px;
+	  background: none;
+	  @include fonticon;
+	  text-align: left;
+	  color: black;
+	}
+  	i.sniplet:before {
+	  content: '\e837';
+	}
+
+}
+
+
+
+.color-picker{
+    button.colors-opener {
+        @include fonticon;
+        width: 20px;
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        border: none;
+        position: absolute;
+        right: -20px;
+        top: 1px;
+    }
+    button.colors-opener:before{
+      content: '\e83b';
+      text-indent: 13px;
+      color: black;
+    }
+}
+
+
+
+.schedule .schedule-items .schedule-item-content{
+    i{
+      @include fonticon;
+    }
+}
+
+
+
+.pending-status{
+  @include fonticon;
+}
+.pending-status:before{
+  content: '\e85c';
+  font-size: 16px;
+  position: static!important;
+}
+
+.validated-status{
+  @include fonticon;
+}
+.validated-status:before{
+  content: '\e871';
+}
+
+.refused-status{
+  @include fonticon;
+}
+.refused-status:before{
+  content:  '\e848';
+  font-size: 15px;
+}
+
+.periodic-status{
+  @include fonticon;
+}
+.periodic-status:before{
+  content: '\e844';
+  font-size: 15px;
+}
+
+.suspended-status{
+  @include fonticon;
+}
+.suspended-status:before{
+  content: '\e856';
+  font-size: 15px;
+}
+
+
+.date-picker-icon{
+    a{
+        i.calendar{
+          @include fonticon;
+		  background: none;
+          box-shadow: none;
+          font-size: 20px;
+          opacity: 0.7;
+          @include run-transition(opacity);
+		}
+		i.calendar:before{
+  			content:'\e834';
+		}
+		i.calendar:hover{
+			opacity: 1;
+		}
+    }
+
+}
+
+
+.open-right{
+	@include fonticon;
+}
+.open-right:before{
+  content: '\e823';
+}
+
+input-password{
+    button{
+        @include fonticon;
+    }
+    button::before{
+		content: '\e873' !important;
+    }
+}
+
+// timeline support notif avatar
+i.system-avatar {
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    border: 0;
+    display: block;
+    background-image: url(../img/illustrations/system-avatar.svg);
+    background-position: center;
+    background-size: 100%;
+}
