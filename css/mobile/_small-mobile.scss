@@ -1,0 +1,50 @@
+
+@media screen and (max-width: $small-mobile){
+	body{
+
+		popover popover-content.right {
+		    left: -190px;
+		}
+		popover popover-content.right::before{
+			left: 80%;
+		}
+
+		.rigid-grid > .side-col.three{
+			width: 55%;
+		}
+
+		.icons-view.apps{
+			.element{
+				margin: auto 5px;
+			}
+		}
+
+		article.list-view.mailbox{
+			tbody{
+				td.date{
+					font-size: 10px;
+				}
+			}
+		}
+		.share{
+			.autocomplete > em{
+				em.low-importance{
+					display: block;
+		    		float: none;
+				}
+			}
+		}
+
+		.mood icons-select{
+			.current.editing{
+				span{
+					padding-top: 5px;
+				}
+				i::before{
+					font-size: 30px;
+					line-height: 38px;
+				}
+			}
+		}
+	}//body
+}

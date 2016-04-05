@@ -1,0 +1,527 @@
+
+@media screen and (max-width: $tablette){
+
+	body.point-out{
+		cursor: pointer!important;
+	}
+
+	body{
+		nav.vertical[side-nav].slide{
+			padding-bottom: 70px;
+		}
+		nav.vertical[side-nav]{
+			background-color: $primary;
+			border-left: 10px solid $accent;
+			padding-left: 0;
+			padding-bottom: 70px;
+			h2{
+				color: $white;
+				font-size: 18px;
+			}
+			ul{
+				border-left: none !important;
+				li{
+					a.selected{
+						background: $shadow;
+					}
+					a{
+						color: $white;
+						padding-right: 20px;
+					    padding-top: 8px;
+					    padding-bottom: 8px;
+						i.close, i.edit{
+							display: none;
+						}
+					}
+				}
+			}
+			a.classic-link{
+				background: $white;
+				&:hover{
+					color: $accent;
+				}
+			}
+
+		}
+		.mobile-nav-opener{
+			font-family: fontello;
+			background: none;
+			background-image: none;
+			padding: 15px;
+
+			&::before{
+				content: '\e84f';
+				font-size: 21px;
+				color: $white;
+				position: absolute;
+				top: 13px;
+				left: 10px;
+			}
+			&::before:hover{
+				color: $accent;
+			}
+		}
+
+	}
+	.application-title{
+		i.blog, i.wiki{
+			display: inline-block!important;
+		}
+	}
+	h1{
+		font-size: 18px;
+		margin-bottom: 9px;
+		line-height: 30px;
+	}
+	h1.application-title{
+		color: transparent;
+		font-size: 16px;
+		span{
+			color: $white;
+		}
+	}
+	[subtitle]{
+		display: block;
+		background: $primary;
+		width: 100%;
+		margin: auto;
+		padding: 0 20px;
+		position: fixed;
+		left: 0;
+		text-align: center;
+		font-size: 17px;
+		height: 35px;
+		line-height: 35px;
+		cursor: default;
+		overflow: hidden;
+		color: $white;
+	}
+	h2[subtitle]{
+		text-align: left;
+	}
+	.subtitle-item{
+		color: $white;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	    max-width: 40%;
+	    display: inline-block;
+		vertical-align: middle;
+		text-align: left;
+	}
+	.subtitle-item:first-child {
+	    text-align: right;
+	}
+
+	section.subtitle-push{
+		margin-top: 40px;
+	}
+
+	.login.panel{
+		box-sizing: border-box;
+		h1{
+			display: none;
+		}
+		h1 + form{
+			margin-top: 70px;
+		}
+
+	}
+	.panel{
+		h1{
+			margin: 20px auto;
+			font-size: 26px;
+		}
+		input-password{
+			button{
+				padding: 5px 0;
+				&::before{
+					position: relative;
+					line-height: 23px;
+					font-size: 16px;
+					left: 0;
+				}
+			}
+		}
+	}
+	.navbar{
+		height: 50px;
+	}
+	nav.vertical[side-nav]{
+		top: 60px;
+	}
+	nav.horizontal{
+		right: 0;
+		height: 50px;
+		#my-photo{
+			width: 25px;
+			margin-top: 7px;
+		}
+		> a, > popover a{
+			font-size: 14px;
+			margin-left: 2px;
+			height: 50px;
+			line-height: 50px;
+		}
+		> popover a{
+			display: block;
+		}
+
+		i.mail span.new-mails{
+		    font-size: 10px;
+		    top: -43px;
+		    left: 15px;
+		}
+		i.disconnect{
+			width: 22px !important;
+			margin-right: 0;
+			margin-left: 0;
+		}
+		> a i::before, popover > a i::before{
+			font-size: 25px;
+		}
+	}
+	nav.vertical.half-stamps{
+		& > div{
+			width: 520px;
+    		margin: 10px auto;
+			float: none;
+		}
+		article{
+			width: auto;
+    		float: none!important;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		article.selected{
+			background: $primary-light;
+		}
+		input[type=checkbox] {
+			position: absolute;
+			left: 78px;
+			z-index: 2;
+		}
+	}
+	.previews{
+		width: 95%;
+		margin: auto;
+	}
+	body{
+		font-size: 14px;
+		.material section.main{
+			padding: 8px 15px;
+			padding-bottom: 100px;
+			top: 52px;
+		}
+	}
+	.forgot.panel{
+		h1{
+			width: 100%;
+			text-align: center;
+			font-size: 40px;
+		}
+	}
+	.toggle-panel{
+		right: -15px;
+		top: 52px;
+	}
+	.notification article .notification-date{
+		right: 10px;
+		top: 8px;
+	}
+
+	h2 + article.rigid-grid .three-mobile + .margin-two{
+		margin-left: 25%;
+		form{
+			.bottom-locked input{
+				margin-bottom: 10px;
+				font-size: 13px;
+			}
+		}
+	}
+	.twelve-mobile input[type=search]{
+		margin-top: 15px;
+	}
+
+	article form .rigid-grid > .margin-two{
+		margin-left: 25%;
+		input[type=text]{
+			font-size: 13px;
+		}
+		.bottom-locked > .right-magnet {
+		    margin-bottom: 10px;
+		}
+	}
+
+	.rigid-grid{
+		.side-col{
+			nav.vertical{
+				.illustration{
+					img{
+						margin: 0;
+					}
+					input[type=checkbox]{
+						left: 5px;
+				    }
+				}
+			}
+		}
+
+		//actu maincol
+		.side-col + .main-col{
+			overflow: hidden;
+			.cell button.microbox{
+				float: right;
+			}
+			//space around microbox
+			.cell{
+				margin: 10px 0;
+			}
+			//comments on actu
+			.cell.right-magnet{
+				margin: 0 0 10px;
+				//create blog button
+				a.button{
+					float: right;
+				}
+			}
+		}
+		.side-col + .main-col + .main-col > div{
+			//postslist
+		}
+	}
+
+	image-select > div::before{
+		@include fonticon;
+		//content: '\E84A';
+		content: '\E83F';
+		font-size: 40px;
+		line-height: 62px;
+        display: none;
+	}
+	nav.vertical.half-stamps{
+		image-select > div::before{
+			line-height: 47px;
+		}
+	}
+	article form{
+		image-select > div::before{
+			line-height: 128px;
+		}
+	}
+
+	//home filters
+	.widgets-friend app-title + div{
+		margin-top: 15px;
+		filters{
+			width: calc(100% - 80px);
+			margin-top: 5px;
+		}
+	}
+	ul.icons-tabs{
+		top: 40px;
+	}
+
+
+	.account{
+		.avatar{
+			position: absolute;
+			top: 15px;
+			left: 15px;
+			width: 90px;
+			height: 90px;
+			padding: 0;
+			border-radius: 50%;
+			overflow: hidden;
+
+		}
+		.avatar + h2{
+			margin: 25px 0 45px 100px;
+		}
+		.sheet h2{
+			margin: 25px 0 0 100px;
+		}
+
+		.mood icons-select{
+			.options-list.icons-view{
+				width: auto;
+			}
+			.options-list.icons-view.toggle-visible{
+				box-shadow: 0px 3px 2px 1px $middle-grey;
+			}
+
+		}
+		.icons-select .options-list.toggle-visible{
+			height: auto;
+		}
+
+	}
+
+//mailbox
+	article.list-view.mailbox{
+		thead{
+			display: none;
+		}
+		table, tbody, tr, td{
+			display: block;
+		}
+		tbody{
+			tr:first-of-type{
+				border-top: 1px solid $shadow-light;
+			}
+			tr{
+				position: relative;
+				overflow: hidden;
+				min-height: 70px;
+			}
+
+			td{
+				width: auto;
+				max-width: none;
+			}
+			td.icon{
+				position: absolute;
+				padding: 22px 0;
+				height: 100%!important;
+				width: 45px!important;
+				text-align: center;
+			}
+			td.icon.sysmail{
+				top: 0;
+				right: -10px;
+			}
+			td.user{
+				margin-left: 45px;
+				padding-top: 15px;
+				padding-bottom: 0;
+				max-width: calc(70% - 45px);
+			}
+			td.content{
+				margin-left: 45px;
+				padding: 5px 15px 10px 12px;
+				font-size: 12px;
+				max-width: calc(80% - 45px);
+			}
+			td.attach{
+				position: absolute;
+				right: 8px;
+				bottom: 7px;
+				padding: 0;
+				i.attachment{
+					width: 12px;
+					height: 12px;
+				}
+			}
+			td.date{
+				position: absolute;
+				right: 0;
+				top: 2px;
+				padding: 0;
+				padding-right: 5px;
+				font-size: 11px;
+			}
+		}
+
+	}
+	//write mail
+	article.solid form .right-magnet{
+		margin: 10px
+	}
+
+	section.main-col{
+		nav.contextual-buttons{
+			float: right;
+			width: auto;
+			.action-buttons{
+			}
+		}
+	}
+	h3.whereami{
+		display: block;
+		float: left;
+	    margin-top: 5px;
+	    margin-bottom: 0;
+	    font-size: 15px;
+	    font-weight: bold;
+	}
+
+
+	//forum
+	body{
+		nav.illustrated-links ul li{
+			.tiny-illustration + .content{
+				padding-left: 5px;
+
+				h1{
+					padding-top: 5px;
+				}
+			}
+		}
+
+		nav.illustrated-links{
+			ul.secondary-list{
+				padding-left: 62px;
+			}
+		}
+
+		.whose-bubble{
+			text-align: left!important;
+			margin-bottom: 10px;
+			.image{
+				margin: 0;
+				padding: 0;
+				img{
+					position: absolute;
+					left: 0;
+					bottom: -60px;
+					width: 50px;
+					height: 50px;
+				}
+			}
+		}
+		.whose-bubble + article.bubble{
+			margin-left: 60px;
+		}
+		.bubble-container.alternate-container + resource-right{
+			margin-top: 30px;
+    		display: block;
+		}
+	}
+
+	.microbox-content container{
+		float: none;
+		text-align: left;
+
+		.checkbox-filters{
+			height: auto;
+			ul li{
+				display: block;
+				padding: 20px;
+			}
+		}
+	}
+
+	//for lightbox medialib in side nav
+	body nav.vertical[side-nav] .lightbox{
+		 ul li a{
+			color: $primary;
+		}
+		 ul li a.selected{
+			color: $accent;
+		}
+		h2{
+			color: $primary;
+		}
+	}
+
+	body{
+		.lightbox-window .tabs, .lightbox .content .tabs{
+			header{
+				background: $light-grey;
+			}
+		}
+	}
+
+
+// end tablettes
+}

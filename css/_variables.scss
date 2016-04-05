@@ -42,6 +42,10 @@ $dark-accent: darken($accent, 15%);
 
 $header-height: 64px !default;
 
+//specific breakpoints
+$wide-screen: 1200px;
+$small-screen: 959px;
+
 @mixin material-card($shadow-size: 1px, $blur-size: 3px) {
 	box-shadow: 0  $shadow-size  $blur-size $shadow;
 	border-radius: 2px;

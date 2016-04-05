@@ -1,0 +1,276 @@
+
+@media screen and (max-width: $fat-mobile){
+	body{
+
+		h1.application-title{
+			span + span{
+				font-size: 15px;
+				height: 25px;
+				line-height: 25px;
+			}
+		}
+		section.subtitle-push{
+			margin-top: 30px;
+		}
+
+		.notification{
+			min-height: 95px;
+			.avatar{
+				width: 50px;
+				height: 50px;
+				margin-left: 0;
+    			margin-top: 5px;
+				margin-right: 12px;
+				i.system-avatar, img{
+					width: 50px;
+					height: 50px;
+				}
+			}
+			.content {
+				margin: 7px 10px 5px;
+			}
+			.notification-date em{
+				font-size: 10px!important;
+				line-height: 7px;
+			}
+		}
+
+		.previews .preview-wrapper{
+			//date
+			em.metadata {
+				top: 155px;
+				font-size: 10px;
+				width: 100px;
+				max-height: 60px;
+			}
+		}
+
+		.previews article.preview{
+			label {
+			    top: 27px;
+			}
+			//img
+			.one.horizontal-spacing{
+			    width: 70px;
+			}
+			.margin-three {
+			    margin-left: 95px;
+				h2{
+					font-size: 14px;
+					line-height: 17px;
+					max-height: 35px;
+				}
+				.margin-three {
+					margin: 0 5px 0 5px;
+					line-height: 17px;
+					font-size: 13px
+				}
+				//preview part actu
+				.margin-three > div:first-child .twelve.cell{
+					max-height: 35px;
+				}
+			}
+
+		}
+		.icons-view.apps{
+			text-align: center;
+			.element{
+				margin: auto 4%;
+			}
+		}
+
+		nav.vertical.half-stamps{
+			& > div{
+				width: 300px;
+			}
+			input[type=checkbox] {
+				left: 75px;
+			}
+		}
+		h2 span.warning-text{
+			display: block;
+		}
+
+	}
+	.account{
+		.user-infos .sheet{
+			.four.cell{
+				width: 100%;
+				font-weight: bold;
+			    padding-top: 15px;
+			}
+			.seven.cell{
+				width: calc(100% - 30px);
+				font-weight: normal;
+				font-style: normal;
+			    font-size: 12px;
+				color: $grey;
+			}
+			//mode view
+			em.eight{
+				width: calc(100% - 30px);
+				font-weight: normal;
+				font-style: normal;
+				font-size: 12px;
+				color: $grey;
+			}
+			form .row{
+				i::before{
+					font-size: 18px;
+				}
+			}
+
+		}
+		.user-book{
+			article .row{
+				.two.cell{
+					width: 100%;
+					font-weight: bold;
+					padding: 0;
+					padding-top: 15px;
+				}
+				.nine.cell{
+					width: calc(100% - 40px);
+					font-weight: normal;
+					font-style: normal;
+					font-size: 12px;
+					color: $grey;
+				}
+				.one.cell{
+					float: right;
+					i::before{
+						font-size: 18px;
+					}
+				}
+			}
+		}
+		//mode view > hobbies
+		h1.horizontal-spacing + article{
+			.medium-text.line{
+				.two{
+					width: 100%;
+					font-weight: bold;
+				    padding-top: 15px;
+				}
+				.ten{
+					width: calc(100% - 30px);
+					font-weight: normal;
+					font-style: normal;
+					font-size: 12px;
+					color: $grey;
+				}
+			}
+		}
+	}// end account
+
+	//forum
+	body{
+		nav.illustrated-links ul li{
+		}
+
+		nav.illustrated-links{
+			ul.secondary-list{
+				padding-left: 15px;
+			}
+		}
+
+	}//end forum
+
+
+	//responsive-table
+	.fixed-head{
+		& + .row{
+			max-height: none;
+			border-bottom: none;
+		}
+	}
+	.responsive-table{
+		table {
+			thead td:first-child{
+				padding: 15px 25px;
+			}
+			tr{
+				border: none;
+			}
+			td:first-child {
+				border-bottom: 1px solid $middle-grey;
+			}
+		}
+		thead.slided + tbody{
+			//cause display block slide
+			display: block!important;
+		}
+
+
+	}
+
+
+	//specific share table
+	.share .responsive-table{
+		table{
+			thead{
+				display: none;
+			}
+			tr{
+				position: relative;
+				margin: 20px;
+				box-shadow: 0px 1px 1px $shadow-dark;
+				border-top: 1px solid $light-grey;
+			}
+			td{
+				width: inherit;
+				padding: 10px 20px;
+				.drop-line{
+					display: none;
+				}
+
+			}
+			td:first-child{
+				max-width: none;
+				box-sizing: border-box;
+				font-size: 18px;
+				padding: 20px;
+				font-weight: bold;
+				text-transform: none;
+				&:before{
+					display: none;
+				}
+			}
+			td:last-child{
+				display: none;
+			}
+			//datalabel
+			td:before{
+				text-transform: none;
+				padding-bottom: 15px;
+			}
+			tr td.drop-line{
+				position: absolute;
+				width: 30px;
+				height: 30px;
+				padding: 0;
+				border-radius: 50%;
+				line-height: 30px;
+				top: -10px;
+				right: -10px;
+				cursor: pointer;
+				background-color: $light-grey;
+				box-shadow: 0px 0px 1px $shadow;
+				display: block;
+				@include run-transition(all);
+
+				&:before{
+					color: $accent;
+				}
+			}
+			tr td.drop-line:hover{
+				background: $accent;
+				&:before{
+					color: $white;
+				}
+			}
+		}
+	}
+
+
+}
