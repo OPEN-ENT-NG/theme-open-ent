@@ -928,35 +928,6 @@ $small-screen: 959px;
 
 	}//end forum
 
-	//share table
-	.table-mobile{
-		ul{
-			background: $white;
-			box-shadow: 0px 1px 1px $shadow-dark;
-		}
-		li{
-			border-top: 1px solid $light-grey;
-		}
-		.drop-line{
-			background-color: $light-grey;
-			box-shadow: 0px 0px 1px $shadow;
-			&:before{
-				color: $accent;
-			}
-		}
-		.drop-line:hover{
-			background: $accent;
-			&:before{
-				color: $white;
-			}
-		}
-	} //end share table
-	.sharing-option{
-		label{
-			display: block;
-			margin-bottom: 10px;
-		}
-	}
 
 	//responsive-table
 	.fixed-head{
@@ -981,7 +952,79 @@ $small-screen: 959px;
 			//cause display block slide
 			display: block!important;
 		}
+
+
 	}
+
+
+	//specific share table
+	.share .responsive-table{
+		table{
+			thead{
+				display: none;
+			}
+			tr{
+				position: relative;
+				margin: 20px;
+				box-shadow: 0px 1px 1px $shadow-dark;
+				border-top: 1px solid $light-grey;
+			}
+			td{
+				width: inherit;
+				padding: 10px 20px;
+				.drop-line{
+					display: none;
+				}
+
+			}
+			td:first-child{
+				max-width: none;
+				box-sizing: border-box;
+				font-size: 18px;
+				padding: 20px;
+				font-weight: bold;
+				text-transform: none;
+				&:before{
+					display: none;
+				}
+			}
+			td:last-child{
+				display: none;
+			}
+			//datalabel
+			td:before{
+				text-transform: none;
+				padding-bottom: 15px;
+			}
+			tr td.drop-line{
+				position: absolute;
+				width: 30px;
+				height: 30px;
+				padding: 0;
+				border-radius: 50%;
+				line-height: 30px;
+				top: -10px;
+				right: -10px;
+				cursor: pointer;
+				background-color: $light-grey;
+				box-shadow: 0px 0px 1px $shadow;
+				display: block;
+				@include run-transition(all);
+
+				&:before{
+					color: $accent;
+				}
+			}
+			tr td.drop-line:hover{
+				background: $accent;
+				&:before{
+					color: $white;
+				}
+			}
+		}
+	}
+
+
 }
 @media screen and (max-width: $small-mobile){
 	body{

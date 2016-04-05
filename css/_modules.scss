@@ -1631,7 +1631,19 @@ article.list-view{
 	}
 
 }
-
+//specific share table
+.share .responsive-table{
+	table{
+		tbody td{
+			.drop-line{
+				display: none;
+			}
+		}
+		td{
+			width: inherit;
+		}
+	}
+}
 
 .widgets{
 	padding: 0;

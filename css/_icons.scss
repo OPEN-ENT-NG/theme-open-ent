@@ -20,12 +20,6 @@
     @include fonticon;
 }
 
-.table-mobile{
-    .drop-line:before{
-        @include fonticon;
-        content: '\e866';
-    }
-}
 .list-view, .share{
     tbody{
         tr{
