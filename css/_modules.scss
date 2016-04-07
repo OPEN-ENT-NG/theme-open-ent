@@ -51,6 +51,10 @@ h1:first-child{
 h2{
 	font-size: 20px;
 }
+app-title{
+	display: block;
+	float: left;
+}
 app-title + h2{
 	font-size: 26px;
 	clear: both;
@@ -1532,65 +1536,66 @@ article.list-view{
 	}
 	@include material-card();
 
-	.my-notifications{
-		p{
-			color: $white;
-		    font-size: 13px;
-		    margin-left: 6px;
-		}
-		button{
+}
+
+.cell.my-notifications{
+	float: right;
+
+	p{
+		color: $white;
+		font-size: 13px;
+		margin-left: 6px;
+	}
+	a.button{
+		float: none;
+		margin: 0 5px;
+		padding-left: 48px;
+		span{
 			float: none;
-			margin: 25px auto 20px;
-			span{
-				float: none;
-			}
-		}
-		i.bell{
-			height: auto;
-			width: auto;
-			line-height: initial;
-			vertical-align: top;
-			margin-right: 10px;
-		}
-
-		//reset lightbox
-		lightbox{
-			h2, a{
-				color: $primary;
-			}
-			h2 + div.row{
-				text-align: right;
-			}
-			i.close-2x{
-				width: auto;
-    			height: auto;
-			}
-		}
-
-
-		a{
-			margin-left: 15px;
 		}
 	}
-
+	a.button.disabled{
+		max-width: 360px;
+	}
+	i.bell{
+		height: 20px;
+		width: 50px;
+		line-height: initial;
+		vertical-align: top;
+		margin-right: 10px;
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		margin-top: -10px;
+		left: 0;
+	}
 }
+.row.my-notifications{
+
+	a{
+		margin-left: 15px;
+	}
+}
+
 
 
 .my-notifications .responsive-table .fixed-head th{
 	width: 20%;
 }
-.fixed-head{
-	border: 1px solid $middle-grey;
-	border-bottom: none;
-	& + .row{
-		max-height: 400px;
-		overflow: auto;
-		border-bottom: 1px solid $middle-grey;
-	}
-}
+
 
 //for notifications xtrn
 .responsive-table {
+	
+	.fixed-head{
+		border: 1px solid $middle-grey;
+		& + .row{
+			max-height: 400px;
+			overflow: auto;
+			border-bottom: 1px solid $middle-grey;
+		}
+	}
+
 	table{
 		thead{
 			i{
