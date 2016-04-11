@@ -242,3 +242,14 @@ body editor{
         }
     }
 }
+
+.download-attachments{
+    .download{
+        @include fonticon;
+        font-size: 20px;
+        vertical-align: top;
+    }
+    .download::before{
+        content: '\e86e';
+    }
+}
