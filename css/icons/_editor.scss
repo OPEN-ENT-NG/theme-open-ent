@@ -111,6 +111,12 @@ body editor{
                 content: '\e84a';
             }
 		}
+        .option.attachment> i{
+			@include editor-icon;
+            &::before{
+                content: '\e805';
+            }
+		}
 		.option.sound > i{
 			@include editor-icon;
             &::before{
