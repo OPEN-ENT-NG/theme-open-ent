@@ -4378,6 +4378,8 @@ plus{
 }
 
 .bookmark-widget{
+	padding: 5px;
+	
 	h1::before{
 	}
 	.bookmark-add-button{
@@ -4401,6 +4403,9 @@ plus{
 			color: $accent;
 		}
 	}
+	.message{
+		color: $text-light;
+		padding: 15px 8px;
 }
 
 .card{
