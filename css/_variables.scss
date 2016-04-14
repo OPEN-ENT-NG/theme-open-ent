@@ -34,6 +34,7 @@ $background: $lightest-grey !default;
 $primary: $cyan !default;
 $primary-dark: saturate(darken($primary, 9%), 3%);
 $primary-light: saturate(lighten($primary, 17%), 85%);
+$primary-lighter: desaturate(lighten($primary-light, 15%), 10%);
 
 //Accent
 $accent: $orange !default;

@@ -1579,14 +1579,11 @@ article.list-view{
 
 
 
-.my-notifications .responsive-table .fixed-head th{
-	width: 20%;
-}
 
 
-//for notifications xtrn
+// global  / notifications xtrn
 .responsive-table {
-	
+
 	.fixed-head{
 		border: 1px solid $middle-grey;
 		& + .row{
@@ -1609,16 +1606,22 @@ article.list-view{
 				margin-top: -15px;
 				&:before{
 					display: block;
+					font-size: 15px;
 					transform: rotate(90deg);
 					@include run-transition(all);
+					color: $black;
 				}
 			}
 			td:first-child{
 				padding-left: 40px;
 			}
-
+			tr{
+				background: $primary-lighter;
+				font-weight: bold;
+				color: $black;
+			}
 			tr:hover{
-				background: $primary-dark;
+				background: darken($primary-lighter, 10%);
 			}
 		}
 		thead.slided i:before{
@@ -1634,7 +1637,22 @@ article.list-view{
 		//cause display block slide
 		display: table-row-group!important;
 	}
+	input[type="radio"]{
+		cursor: pointer;
+	}
+}
+//specific notfs extern
 
+.my-notifications{
+	span.disable{
+		font-style: italic;
+    	font-size: 15px;
+	}
+	.responsive-table{
+		.fixed-head th{
+			width: 20%;
+		}
+	}
 }
 //specific share table
 .share .responsive-table{
