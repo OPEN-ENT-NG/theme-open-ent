@@ -4536,6 +4536,12 @@ body editor{
             top: 0;
         }
     }
+
+    editor-toolbar.sticky{
+        margin-top: 64px !important;
+        border-bottom: 1px solid #ddd;
+        transition: margin-top 200ms ease;
+    }
 }
 
 [contenteditable], [bind-html]{
