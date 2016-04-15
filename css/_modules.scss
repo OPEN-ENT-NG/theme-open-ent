@@ -4398,7 +4398,7 @@ plus{
 .bookmark-widget{
 	padding: 5px;
 	width: auto !important;
-	
+
 	h1::before{
 	}
 	.bookmark-add-button{
@@ -4480,6 +4480,10 @@ section.main-col{
 }
 h3.whereami{
 	display: none;
+}
+
+app-title + nav.vertical{
+	clear: both;
 }
 nav.vertical{
 
