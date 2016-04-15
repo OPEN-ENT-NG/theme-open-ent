@@ -4344,8 +4344,10 @@ i.wiki{
 	display: inline-block!important;
 }
 
-//
-
+// prevent overflow on snipplets title 
+side-panel + h2{
+	margin-left: 45px;
+}
 
 i side-panel{
   font-family: Roboto;
