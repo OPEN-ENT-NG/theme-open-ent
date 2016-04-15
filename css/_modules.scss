@@ -1390,6 +1390,9 @@ media-library{
 			font-size: 20px;
     		font-weight: normal;
 		}
+		header + section.medium-text{
+			text-align: left;
+		}
 		slider{
 			padding: 0;
 		}
@@ -4344,7 +4347,7 @@ i.wiki{
 	display: inline-block!important;
 }
 
-// prevent overflow on snipplets title 
+// prevent overflow on snipplets title and others stuff (pad)
 side-panel + h2{
 	margin-left: 45px;
 }
@@ -4480,7 +4483,7 @@ section.main-col{
 	}
 
 }
-h3.whereami{
+.whereami{
 	display: none;
 }
 
