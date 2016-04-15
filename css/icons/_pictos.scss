@@ -325,6 +325,14 @@ i.show-details:before{
   content: '\e86d';
   font-size: 28px;
 }
+//annuaire
+.upper-title + .right-magnet i.show-icons{
+    margin-right: 10px;
+    &:before{
+        font-size: 43px;
+    }
+}
+
 i.show-details.selected{
   opacity: 0.6;
 }
