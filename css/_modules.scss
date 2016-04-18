@@ -1647,9 +1647,10 @@ article.list-view{
 //specific notfs extern
 
 .my-notifications{
-	span.disable{
-		font-style: italic;
-    	font-size: 15px;
+
+	input[type="email"]{
+		margin-left: 5px;
+		width: 30%;
 	}
 	.responsive-table{
 		.fixed-head th{
