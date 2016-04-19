@@ -903,18 +903,6 @@ div.background-material{
 	vertical-align: middle;
 }
 
-@mixin flat-button{
-    border: none;
-	box-shadow: none;
-	color: $accent;
-	background: $light-grey;
-
-	&:hover{
-		background: $accent;
-		color: $white;
-	}
-}
-
 .flat-button, button.flat-button,
 input[type=submit].flat-button, input[type=button].cancel, button.cancel,
 .drop-down-button label, .drop-down-button.hidden label{
@@ -2192,14 +2180,6 @@ a:hover, a:hover > h1, a:hover > h2, a:hover > h3{
 			color: $white;
 		}
 	}
-}
-
-@mixin message{
-    color: $text-light;
-	text-align: left;
-	@include border-radius(0px);
-	background: $light-grey;
-	border-left: 10px solid $primary;
 }
 
 .message{

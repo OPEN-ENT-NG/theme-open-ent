@@ -53,6 +53,28 @@ $small-screen: 959px;
 }
 
 
+@mixin message{
+    color: $text-light;
+	text-align: left;
+	@include border-radius(0px);
+	background: $light-grey;
+	border-left: 10px solid $primary;
+	margin: 5px 0 15px;
+}
+
+
+@mixin flat-button{
+    border: none;
+	box-shadow: none;
+	color: $accent;
+	background: $light-grey;
+
+	&:hover{
+		background: $accent;
+		color: $white;
+	}
+}
+
 /* font family with # version */
 @font-face {
   font-family: 'fontello';
