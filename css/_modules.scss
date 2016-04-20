@@ -3085,43 +3085,40 @@ select{
 	}
 }
 
-.week-switcher .date-picker-icon i.calendar:before{
-  font-size: 45px;
-}
+
 
 .filters .filters-icons li.selected:nth-child(6n + 4) .date-picker-icon i.calendar{
   background: none;
   box-shadow: none;
 }
 
-.date-picker-icon{
-  position: relative;
-  left: 28px;
+calendar .week-switcher{
+	font-size: 12px;
 
-	 a{
-       position: relative;
-       text-align: right;
-	 }
+	.date-picker-icon{
+		margin-left: 40px;
+		margin-top: 10px;
+		left: auto;
 
+		i.calendar{
+			display: inline-block;
+		    width: 50px;
+		    height: 40px;
+		    text-align: center;
+		    vertical-align: middle;
+		}
+	}
 }
+
+.week-switcher .date-picker-icon i.calendar:before{
+ 	font-size: 45px;
+}
+
 .date-picker-icon + .cell{
   margin-left: 30px;
 }
 
-.week-switcher{
-	position: absolute;
-	z-index: 30;
-	left: 45px;
-	font-size: 12px;
 
-	.date-picker-icon{
-      margin-right: 8px;
-
-      i.calendar:before{
-        font-size: 45px;
-      }
-	}
-}
 
 
 //actu createinfo
