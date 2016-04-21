@@ -178,12 +178,7 @@
 
 
 	//responsive-table
-	.responsive-table .fixed-head{
-		& + .row{
-			max-height: none;
-			border-bottom: none;
-		}
-	}
+
 	.responsive-table{
 		table {
 			thead td:first-child{

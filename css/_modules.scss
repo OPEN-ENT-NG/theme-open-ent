@@ -1574,12 +1574,10 @@ article.list-view{
 
 // global  / notifications xtrn
 .responsive-table {
-
+	//futur stick to top
 	.fixed-head{
 		border: 1px solid $middle-grey;
 		& + .row{
-			max-height: 400px;
-			overflow: auto;
 			border-bottom: 1px solid $middle-grey;
 		}
 	}
@@ -1641,8 +1639,12 @@ article.list-view{
 		width: 30%;
 	}
 	.responsive-table{
-		.fixed-head th{
-			width: 20%;
+		.fixed-head{
+			z-index: 99;
+			background: $white;
+			th{
+				width: 20%;
+			}
 		}
 	}
 }
