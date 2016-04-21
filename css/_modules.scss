@@ -1604,14 +1604,6 @@ article.list-view{
 			td:first-child{
 				padding-left: 40px;
 			}
-			tr{
-				background: $primary-lighter;
-				font-weight: bold;
-				color: $black;
-			}
-			tr:hover{
-				background: darken($primary-lighter, 10%);
-			}
 		}
 		thead.slided i:before{
 			transform: rotate(180deg);
@@ -1644,6 +1636,16 @@ article.list-view{
 			background: $white;
 			th{
 				width: 20%;
+			}
+		}
+		table thead{
+			tr{
+				background: $primary-lighter;
+				font-weight: bold;
+				color: $black;
+			}
+			tr:hover{
+				background: darken($primary-lighter, 10%);
 			}
 		}
 	}
