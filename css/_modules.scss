@@ -1577,8 +1577,14 @@ article.list-view{
 	//futur stick to top
 	.fixed-head{
 		border: 1px solid $middle-grey;
+		border-collapse: initial;
 		& + .row{
 			border-bottom: 1px solid $middle-grey;
+		}
+	}
+	.fixed-head.scrolling{
+		tr:first-child{
+			height: 60px;
 		}
 	}
 
