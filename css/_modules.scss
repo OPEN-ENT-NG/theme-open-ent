@@ -1582,11 +1582,11 @@ article.list-view{
 			border-bottom: 1px solid $middle-grey;
 		}
 	}
-	.fixed-head.scrolling{
-		tr:first-child{
-			height: 60px;
-		}
-	}
+	// .fixed-head.scrolling{
+	// 	tr:first-child{
+	// 		height: 60px;
+	// 	}
+	// }
 
 	table{
 		thead{
@@ -1638,7 +1638,7 @@ article.list-view{
 	}
 	.responsive-table{
 		.fixed-head{
-			z-index: 99;
+		//	z-index: 99;
 			background: $white;
 			th{
 				width: 20%;
