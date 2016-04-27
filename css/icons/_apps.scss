@@ -11,7 +11,11 @@ i.sharebigfiles-large::before{
   font-size: 85px;
   line-height: 35px;
 }
-
+i.type.sharebigfiles::before{
+    font-size: 30px;
+    line-height: 22px;
+    vertical-align: top;
+}
 i.agenda-large, i.type.agenda, i.agenda{
   @include fonticon;
 }
