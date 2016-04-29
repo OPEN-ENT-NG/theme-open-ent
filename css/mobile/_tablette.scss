@@ -311,7 +311,8 @@
 	}
 
 	//home filters
-	.widgets-friend app-title + div{
+
+	.widgets-friend app-title ~ .twelve.cell {
 		margin-top: 15px;
 		filters{
 			width: calc(100% - 80px);
@@ -436,7 +437,6 @@
 			}
 		}
 	}
-
 
 	//forum
 	body{
