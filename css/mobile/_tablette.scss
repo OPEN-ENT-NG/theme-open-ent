@@ -479,6 +479,14 @@
     		display: block;
 		}
 	}
+	
+	.microbox-wrapper{
+		background: rgba($white, 0.6);
+	}
+	.microbox-content{
+		background: $white;
+		box-shadow: 0 0 3px 2px rgba($black, 0.2);
+	}
 
 	.microbox-content container{
 		float: none;
