@@ -80,41 +80,9 @@
 			color: $white;
 		}
 	}
-	[subtitle]{
-		display: block;
-		background: $primary;
-		width: 100%;
-		margin: auto;
-		padding: 0 20px;
-		position: fixed;
-		left: 0;
-		text-align: center;
-		font-size: 17px;
-		height: 35px;
-		line-height: 35px;
-		cursor: default;
-		overflow: hidden;
-		color: $white;
-	}
-	h2[subtitle]{
-		text-align: left;
-	}
-	.subtitle-item{
-		color: $white;
-	    overflow: hidden;
-	    text-overflow: ellipsis;
-	    white-space: nowrap;
-	    max-width: 40%;
-	    display: inline-block;
-		vertical-align: middle;
-		text-align: left;
-	}
-	.subtitle-item:first-child {
-	    text-align: right;
-	}
 
-	section.subtitle-push{
-		margin-top: 40px;
+	[subtitle]{
+		background: $primary;
 	}
 
 	.login.panel{
@@ -479,7 +447,7 @@
     		display: block;
 		}
 	}
-	
+
 	.microbox-wrapper{
 		background: rgba($white, 0.6);
 	}
