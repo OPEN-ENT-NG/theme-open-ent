@@ -328,75 +328,15 @@
 
 //mailbox
 	article.list-view.mailbox{
-		thead{
-			display: none;
-		}
-		table, tbody, tr, td{
-			display: block;
-		}
+
 		tbody{
 			tr:first-of-type{
 				border-top: 1px solid $shadow-light;
-			}
-			tr{
-				position: relative;
-				overflow: hidden;
-				min-height: 70px;
-			}
-
-			td{
-				width: auto;
-				max-width: none;
-			}
-			td.icon{
-				position: absolute;
-				padding: 22px 0;
-				height: 100%!important;
-				width: 45px!important;
-				text-align: center;
-			}
-			td.icon.sysmail{
-				top: 0;
-				right: -10px;
-			}
-			td.user{
-				margin-left: 45px;
-				padding-top: 15px;
-				padding-bottom: 0;
-				max-width: calc(70% - 45px);
-			}
-			td.content{
-				margin-left: 45px;
-				padding: 5px 15px 10px 12px;
-				font-size: 12px;
-				max-width: calc(80% - 45px);
-			}
-			td.attach{
-				position: absolute;
-				right: 8px;
-				bottom: 7px;
-				padding: 0;
-				i.attachment{
-					width: 12px;
-					height: 12px;
-				}
-			}
-			td.date{
-				position: absolute;
-				right: 0;
-				top: 2px;
-				padding: 0;
-				padding-right: 5px;
-				font-size: 11px;
 			}
 		}
 
 	}
 	//write mail
-	article.solid form .right-magnet{
-		margin: 10px
-	}
-
 	section.main-col{
 		nav.contextual-buttons{
 			float: right;
