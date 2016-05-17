@@ -1701,6 +1701,30 @@
       "search": [
         "bigfiles"
       ]
+    },
+    {
+      "uid": "fdfbd1fcbd4cb229716a810801a5f207",
+      "css": "angle-double-right",
+      "code": 59596,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "745f12abe1472d14f8f658de7e5aba66",
+      "css": "angle-double-left",
+      "code": 59597,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "e2d87e7631c608efe71762a9f4c95e75",
+      "css": "check-2",
+      "code": 59598,
+      "src": "elusive"
+    },
+    {
+      "uid": "3ab2abf6f936d3e53ee8c184cedaed82",
+      "css": "trash",
+      "code": 59599,
+      "src": "elusive"
     }
   ]
 }
