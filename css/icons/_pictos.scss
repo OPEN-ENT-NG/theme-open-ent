@@ -825,3 +825,70 @@ i.system-avatar {
     background-position: center;
     background-size: 100%;
 }
+
+
+//exerciser
+
+.eye{
+  @include fonticon;
+}
+.eye{
+  content: '\e873';
+  font-size: 15px;
+}
+.down-open{
+  @include fonticon;
+}
+.down-open:before{
+  content: '\e841';
+  font-size: 15px;
+}
+.up-open{
+  @include fonticon;
+}
+.up-open:before{
+  content: '\e840';
+  font-size: 15px;
+}
+.angle-double-right{
+  @include fonticon;
+}
+.angle-double-right:before{
+  content: '\e8cc';
+  font-size: 15px;
+}
+.angle-double-left{
+  @include fonticon;
+}
+.angle-double-left:before{
+  content: '\e8cd';
+  font-size: 15px;
+}
+.doc-text{
+  @include fonticon;
+}
+.doc-text:before{
+  content: '\e850';
+  font-size: 15px;
+}
+.check{
+  @include fonticon;
+}
+.check:before{
+  content: '\e83e';
+  font-size: 15px;
+}
+.info-pic{
+  @include fonticon;
+}
+.info-pic:before{
+  content: '\e8bb';
+  font-size: 15px;
+}
+.trash{
+  @include fonticon;
+}
+.trash:before{
+  content: '\e8cf';
+  font-size: 15px;
+}
