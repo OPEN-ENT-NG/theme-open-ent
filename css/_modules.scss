@@ -1613,6 +1613,10 @@ article.list-view{
 			transform: rotate(180deg);
 		}
 
+		tr{
+            border: 1px solid $middle-grey;
+			border-top: none;
+        }
 	}
 }
 //specific notfs extern
