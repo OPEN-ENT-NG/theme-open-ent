@@ -1574,11 +1574,10 @@ article.list-view{
 // global  / notifications xtrn
 .responsive-table {
 	//futur stick to top
+	border: 1px solid $middle-grey;
 	.fixed-head{
-		border: 1px solid $middle-grey;
-		border-collapse: initial;
 		& + .row{
-			border-bottom: 1px solid $middle-grey;
+			//border-bottom: 1px solid $middle-grey;
 		}
 	}
 	// .fixed-head.scrolling{
@@ -1614,10 +1613,6 @@ article.list-view{
 			transform: rotate(180deg);
 		}
 
-		tr{
-            border: 1px solid $middle-grey;
-			border-top: none;
-        }
 	}
 }
 //specific notfs extern
@@ -1631,16 +1626,10 @@ article.list-view{
 	.responsive-table{
 		.fixed-head{
 		//	z-index: 99;
-			background: $white;
-			th{
-				width: 20%;
-			}
 		}
 		table thead{
 			tr{
 				background: $primary-lighter;
-				font-weight: bold;
-				color: $black;
 			}
 			tr:hover{
 				background: darken($primary-lighter, 10%);

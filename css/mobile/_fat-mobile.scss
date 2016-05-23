@@ -129,13 +129,8 @@
 	//responsive-table
 
 	.responsive-table{
+		border: none;
 		table {
-			thead td:first-child{
-				padding: 15px 25px;
-			}
-			tr{
-				border: none;
-			}
 			td:first-child {
 				border-bottom: 1px solid $middle-grey;
 			}
