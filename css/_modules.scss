@@ -1619,13 +1619,6 @@ article.list-view{
 			border-top: none;
         }
 	}
-	thead.slided + tbody{
-		//cause display block slide
-		display: table-row-group!important;
-	}
-	input[type="radio"]{
-		cursor: pointer;
-	}
 }
 //specific notfs extern
 
