@@ -127,37 +127,39 @@
 
 
 	//responsive-table
+	body{
 
-	.responsive-table{
-		border: none;
-		table {
-			td:first-child {
-				border-bottom: 1px solid $middle-grey;
-			}
-		}
-
-	}
-
-
-	//specific share table
-	.share .responsive-table{
-		table{
-			tr{
-				box-shadow: 0px 1px 1px $shadow-dark;
-				border-top: 1px solid $light-grey;
-			}
-
-			tr td.drop-line{
-				background-color: $light-grey;
-				box-shadow: 0px 0px 1px $shadow;
-				&:before{
-					color: $accent;
+		.responsive-table{
+			border: none;
+			table {
+				td:first-child {
+					border-bottom: 1px solid $middle-grey;
 				}
 			}
-			tr td.drop-line:hover{
-				background: $accent;
-				&:before{
-					color: $white;
+
+		}
+
+
+		//specific share table
+		.share .responsive-table{
+			table{
+				tr{
+					box-shadow: 0px 1px 1px $shadow-dark;
+					border-top: 1px solid $light-grey;
+				}
+
+				tr td.drop-line{
+					background-color: $light-grey;
+					box-shadow: 0px 0px 1px $shadow;
+					&:before{
+						color: $accent;
+					}
+				}
+				tr td.drop-line:hover{
+					background: $accent;
+					&:before{
+						color: $white;
+					}
 				}
 			}
 		}
