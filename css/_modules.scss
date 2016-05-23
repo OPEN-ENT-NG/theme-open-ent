@@ -4733,7 +4733,7 @@ input[type="submit"], input[type="button"]{
 	p{
 		font-size: 14px;
 		b{
-			font-size: 16px
+			font-size: 16px;
 		}
 		a{
 			color: $white;
@@ -4741,5 +4741,11 @@ input[type="submit"], input[type="button"]{
 				color: $middle-grey;
 			}
 		}
+	}
+}
+.announce.opinion{
+	background: #2DD234;
+	b{
+		padding-right: 10px;
 	}
 }
