@@ -106,6 +106,12 @@ i.pending-icon-large::before, i.pending-icon::before, table.colored i.pending-ic
 
 
 /* main indication type icons */
+i.searchengine-large, i.searchengine.cas, i.searchengine{
+  @include fonticon;
+}
+i.searchengine-large::before, i.type.searchengine::before, i.searchengine::before{
+  content: '\e8d0';
+}
 
 i.home-large, i.home.cas, i.home{
   @include fonticon;
