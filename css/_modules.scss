@@ -349,6 +349,8 @@ nav.horizontal{
   .searchPortal input{
     color: $white;
     margin-top: 15px;
+    display: block;
+    float: left;
   }
   i.mail span{
     background-color: $accent;
