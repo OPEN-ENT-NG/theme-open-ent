@@ -838,7 +838,7 @@ i.system-avatar {
 .eye{
   @include fonticon;
 }
-.eye{
+.eye:before{
   content: '\e873';
   font-size: 15px;
 }
