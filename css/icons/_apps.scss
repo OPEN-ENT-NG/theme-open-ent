@@ -701,6 +701,9 @@ i.note-large::before, i.type.note::before, i.note::before{
 i.calendar-large, i.type.calendar, i.calendar{
   @include fonticon;
 }
+i.type.calendar{
+  height: 40px;
+}
 i.calendar-large::before, i.type.calendar::before, i.calendar::before{
   content: '\e834';
   color: $yellow;

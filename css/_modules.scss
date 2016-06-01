@@ -305,7 +305,7 @@ nav.horizontal{
 	float: left;
   }
 
-	.searchPortal{
+  .searchPortal{
 	height: $header-height;
 	line-height: $header-height;
 	float: left;
@@ -2954,7 +2954,6 @@ select{
 		i{
 			opacity: 1;
 			background: $solid-grey;
-			height: 40px !important;
 			width: 40px !important;
 			@include run-transition(all);
 			vertical-align: top;
@@ -3040,7 +3039,6 @@ select{
 	.filters-icons{
 		margin-top: 0;
 		ul{
-			height: 40px;
 			padding: 0;
 			li{
 				padding: 0;

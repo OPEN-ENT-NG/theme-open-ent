@@ -36,8 +36,8 @@
 		<nav class="horizontal">
 			<a href="/timeline/timeline"><i class="home"></i></a>
 			<span class="searchPortal" ng-controller="SearchPortal">
-			    <input type="text" name="mysearch" ng-model="mysearch" ng-keyup="launchSearch($event);" />
-			    <a class="zero-mobile" ng-click="launchSearch('link');"><i class="searchengine"></i></a>
+			    <input class="zero-mobile" type="text" name="mysearch" ng-model="mysearch" ng-keyup="launchSearch($event);" />
+			    <a ng-click="launchSearch('link');"><i class="searchengine"></i></a>
 			 </span>
 			<a class="zero-mobile" href="/community" ng-if="me.hasWorkflow('net.atos.entng.community.controllers.CommunityController|view')"><i class="community"></i></a>
 			<popover>
