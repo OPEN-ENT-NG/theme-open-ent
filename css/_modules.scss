@@ -343,15 +343,21 @@ nav.horizontal{
   > a:hover, .searchPortal > a:hover{
     border-bottom: 3px solid $accent;
   }
-  .searchPortal > a{
-    float: right;
-  }
   .searchPortal input{
     color: $white;
-    margin-top: 15px;
-    display: block;
-    float: left;
+    margin-top: 14px;
+    margin-left: 40px;
+    display: none;
+    position: absolute;
+    background: $primary-dark;
+    height: 2.2em;
+    width: 9.5em;
   }
+
+  span.searchPortal:hover input,span.searchPortal:hover a{
+    display: block;
+  }
+
   i.mail span{
     background-color: $accent;
     display: block;
