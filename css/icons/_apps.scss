@@ -702,7 +702,7 @@ i.calendar-large, i.type.calendar, i.calendar{
   @include fonticon;
 }
 i.type.calendar{
-  height: 40px;
+  height: 38px;
 }
 i.calendar-large::before, i.type.calendar::before, i.calendar::before{
   content: '\e834';
