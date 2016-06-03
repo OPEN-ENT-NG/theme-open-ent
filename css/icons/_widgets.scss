@@ -8,29 +8,33 @@
   line-height: 55px;
 }
 
-i.record-me-icon:before{
+i.my-apps-icon::before{
+  content: '\e86c';
+}
+
+i.record-me-icon::before{
 	content: '\e864';
 }
-i.notes-icon:before{
+i.notes-icon::before{
 	content: '\e806';
 }
-i.calendar-widget-icon:before{
+i.calendar-widget-icon::before{
 	content: '\e834';
 }
-i.last-infos-widget-icon:before{
+i.last-infos-widget-icon::before{
 	content: '\e85b';
 }
-i.rss-widget-icon:before{
+i.rss-widget-icon::before{
 	content: '\e861';
 }
-i.bookmark-widget-icon:before{
+i.bookmark-widget-icon::before{
 	content: '\e80c';
 }
-i.maxicours-widget-icon:before{
+i.maxicours-widget-icon::before{
     content: '\e818';
 	/*content: '\e825';*/
 }
-i.cursus-widget-icon:before{
+i.cursus-widget-icon::before{
     content: '\e889';
 }
 

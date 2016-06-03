@@ -4168,72 +4168,77 @@ popover{
 	popover-content{
 		background: $white;
 		@include material-card(1px, 20px);
-		.more{
-			background: $light-grey;
-			@include run-transition(background);
-			a{
-				color: $grey;
-				font-size: 16px;
-				height: 40px;
-				line-height: 40px;
-				width: 100%;
-				&:hover{
-					border: none;
-				}
-			}
-			&:hover{
-				background: $accent;
-				a{
-					color: $white;
-				}
-			}
+	}
+}
+
+.more{
+    text-align: center;
+	background: $light-grey;
+	@include run-transition(background);
+	a{
+		color: $grey;
+		font-size: 16px;
+		height: 40px;
+		line-height: 40px;
+		width: 100%;
+		&:hover{
+			border: none;
+		}
+	}
+	&:hover{
+		background: $accent;
+		a{
+			color: $white;
 		}
 	}
 }
 
-nav.horizontal{
-	.bookmarked-app:hover{
-		background: transparent !important;
-		i::before{
-			color: $accent;
-		}
-	}
-	.my-apps{
-		width: 216px;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 5px;
-		margin-bottom: 5px;
-		min-height: 40px;
-	}
-	.bookmarked-app {
-		margin: 1px;
-		width: 70px;
-		height: 70px;
-		text-align: center;
-		line-height: 15px;
+.my-apps, nav.horizontal .my-apps{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	min-height: 40px;
+}
 
-		padding: 3px;
-		box-sizing: border-box;
-		float: left;
-		a{
-			width: 100%;
-			i{
-				display: block;
-				font-size: 50px;
-				height: 55px !important;
-				line-height: 55px;
-                width: 100%;
-			}
-			img{
-                max-width: 100%;
-                max-height: 55px;
-                padding: 0;
-            }
+nav.horizontal .my-apps{
+    width: 216px;
+}
+
+.bookmarked-app {
+	margin: 1px;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	line-height: 15px;
+
+	padding: 3px;
+	box-sizing: border-box;
+	float: left;
+	a{
+		width: 100%;
+		i{
+			display: block;
+			font-size: 50px;
+			height: 55px !important;
+			line-height: 55px;
+            width: 100%;
 		}
-		a:hover{
-			border-bottom: none !important;
-		}
+		img{
+            max-width: 100%;
+            max-height: 55px;
+            padding: 0;
+        }
+	}
+	a:hover{
+		border-bottom: none !important;
+	}
+}
+
+.bookmarked-app:hover{
+	background: transparent !important;
+	i::before{
+		color: $accent;
 	}
 	.searchButton{
 		float: right;
