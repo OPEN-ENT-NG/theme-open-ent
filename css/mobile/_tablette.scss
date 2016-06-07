@@ -125,7 +125,7 @@
 			width: 25px;
 			margin-top: 4px;
 		}
-		> a, > popover a, .searchPortal > a{
+		> a, > popover a{
 			font-size: 14px;
 			margin-left: 2px;
 			height: 50px;
@@ -133,6 +133,9 @@
 		}
 		> popover a{
 			display: block;
+		}
+		.searchPortal a{
+			display: inline;
 		}
 
 		i.mail span.new-mails{
@@ -145,7 +148,7 @@
 			margin-right: 0;
 			margin-left: 0;
 		}
-		> a i::before, popover > a i::before,.searchPortal > a i::before{
+		> a i::before, popover > a i::before{
 			font-size: 25px;
 		}
 	}

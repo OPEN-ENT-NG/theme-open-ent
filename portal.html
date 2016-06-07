@@ -60,10 +60,17 @@
 			<a href="/conversation/conversation" ng-if="me.hasWorkflow('org.entcore.conversation.controllers.ConversationController|view')">
 				<i class="mail"><span class="new-mails" ng-if="nbNewMessages">[[nbNewMessages]]</span></i>
 			</a>
-			<span class="searchPortal" ng-controller="SearchPortal">
-			    <input class="zero-mobile" type="text" name="mysearch" ng-model="mysearch" ng-keyup="launchSearch($event);" />
-			    <a ng-click="launchSearch('link');"><i class="searchengine"></i></a>
-			 </span>
+			<popover>
+				<a href="/searchengine" popover-opener ng-click="openApps($event)"><i class="searchengine"></i></a>
+				<popover-content class="searchPortal" ng-controller="SearchPortal">
+					<div class="content">
+						<div class="my-apps row">
+							<input type="text" name="mysearch" ng-model="mysearch" ng-keyup="launchSearch($event);" />
+							<a ng-click="launchSearch('link');"><i class="searchengine"></i></a>
+						</div>
+					</div>
+				</popover-content>
+			</popover>
 			<a class="zero-mobile">
 				<help></help>
 			</a>
