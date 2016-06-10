@@ -4240,6 +4240,16 @@ nav.horizontal{
 			border-bottom: none !important;
 		}
 	}
+	.searchButton{
+		float: right;
+		padding: 0 5px 0 5px;
+	}
+	.searchInput{
+		width: 11em;
+	}
+	.searchContent{
+		padding-top : 6px;
+	}
 }
 
 label{
