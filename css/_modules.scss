@@ -600,14 +600,13 @@ nav.vertical.half-stamps{
 	.item{
 		width: 14%;
 		border: 0;
-		padding: 6px;
+		padding: 14px;
 		margin: 1px;
 
 		.domino{
 			@include material-card(2px, 3px);
 			border-radius: 3px;
 			border: 0;
-			overflow: hidden;
 
 			.bottom{
 				background: white;
@@ -1990,6 +1989,9 @@ textarea:focus{
     }
 }
 
+
+
+
 .icons-view{
 	strong{
 		font-style: italic;
@@ -1997,48 +1999,74 @@ textarea:focus{
 		font-size: 14px;
 	}
 	.element{
-		width: 117px;
-		height: 117px;
+		padding: 12px 12px 0 0;
+		margin: 5px;
+		width: auto;
+		height: auto;
 		overflow: hidden!important;
 		vertical-align: top;
-		transition: background .25s ease;
-		&.selected{
-			background-color: $primary-light;
-			legend{
-				background: $accent;
-			}
-		}
 		.img.container{
 			padding: 0;
 			border: none;
 		}
+		i.inline.shared{
+			width: 15px;
+			height: 15px;
+			top: 20px;
+			left: 5px;
+			right: auto;
+			bottom: auto;
+			background-size: 100%;
+		}
 		legend{
+			width: calc(100% - 22px);
 			text-align: center;
 			padding-top: 5px !important;
 			line-height: 20px !important;
 			position: absolute !important;
 			bottom: 0 !important;
-			background: $shadow-dark !important;
+			background: $shadow-dark;
 			color: $white;
+			@include run-transition(all);
 			a{
 				color: $white;
 				font-size: 15px;
 				margin: 0;
 				line-height: 17px;
 			}
+			a:first-child{
+				span.badge{
+					font-size: 11px;
+					line-height: 13px;
+					position: relative;
+					background: $cyan;
+					width: 16px;
+					height: 12px;
+					border-bottom-right-radius: 0;
+					box-shadow: 0px 0px 0px 1px $light-grey;
+				    margin-left: 1px;
+				}
+				span{
+					line-height: 2px;
+				}
+			}
 			strong{
 				font-style: normal;
 				font-size: 10px;
-                color: $white;
+				color: $white;
 			}
 		}
 		a, a.container{
 			padding: 0;
+			@include run-transition(all);
 			i{
 				width: 117px;
 				height: 117px;
 			  	display: inline-block;
 			}
+		}
+		a.container{
+			border: 1px solid $light-grey;
 		}
 		i.history{
 			position: absolute;
@@ -2068,6 +2096,23 @@ textarea:focus{
 		}
 	}
 }
+.icons-view .element.selected{
+	a.container{
+		background-color: $primary-light;
+		border: 1px solid $primary-light;
+	}
+	legend{
+		background: rgba(darken($primary-dark, 15%), 0.7);
+	}
+}
+
+
+.selected .check-tool{
+	background: $primary-dark;
+}
+
+/////
+
 
 em.metadata{
 	font-size: 11px;

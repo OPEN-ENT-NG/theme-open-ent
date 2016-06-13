@@ -454,9 +454,9 @@ i.unknown-large, i.doc-large{
   text-align: center;
 }
 i.unknown-large:before, i.doc-large:before{
-  font-size: 50px;
+  font-size: 43px;
   display: block;
-  line-height: 67px;
+  line-height: 78px;
   content: '\e850';
 }
 i.unknown, i.doc{
@@ -473,9 +473,9 @@ i.xls-large{
   text-align: center;
 }
 i.xls-large:before{
-  font-size: 50px;
+  font-size: 43px;
   display: block;
-  line-height: 67px;
+  line-height: 78px;
   content: '\e881';
 }
 i.xls{
@@ -492,9 +492,9 @@ i.ppt-large{
   text-align: center;
 }
 i.ppt-large:before{
-  font-size: 50px;
+  font-size: 43px;
   display: block;
-  line-height: 67px;
+  line-height: 78px;
   content: '\e85f';
 }
 i.ppt{
@@ -511,9 +511,9 @@ i.pdf-large{
   text-align: center;
 }
 i.pdf-large:before{
-  font-size: 50px;
+  font-size: 43px;
   display: block;
-  line-height: 67px;
+  line-height: 78px;
   content: '\e857';
 }
 i.pdf{
@@ -530,9 +530,9 @@ i.video-large{
   text-align: center;
 }
 i.video-large:before{
-  font-size: 50px;
+  font-size: 43px;
   display: block;
-  line-height: 67px;
+  line-height: 78px;
   content: '\e872';
 }
 i.video{
@@ -549,9 +549,9 @@ i.word-large{
   text-align: center;
 }
 i.word-large:before{
-  font-size: 50px;
+  font-size: 43px;
   display: block;
-  line-height: 67px;
+  line-height: 78px;
   content: '\e880';
 }
 i.word{
@@ -569,9 +569,9 @@ i.folder-large{
 }
 i.folder-large:before{
   content: '\e846';
-  font-size: 50px;
+  font-size: 43px;
   display: block;
-  line-height: 67px;
+  line-height: 78px;
 }
 i.folder{
   @include fonticon;
@@ -596,9 +596,9 @@ i.zip-large{
 }
 i.zip-large:before{
   content: '\e81d';
-  font-size: 50px;
+  font-size: 43px;
   display: block;
-  line-height: 67px;
+  line-height: 78px;
 }
 
 i.audio{
@@ -615,9 +615,9 @@ i.audio-large{
 }
 i.audio-large:before{
   content: '\e839';
-  font-size: 50px;
+  font-size: 43px;
   display: block;
-  line-height: 67px;
+  line-height: 78px;
 }
 
 i.img{
