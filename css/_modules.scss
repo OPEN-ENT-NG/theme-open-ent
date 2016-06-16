@@ -4313,6 +4313,7 @@ image-select > div::before{
 	@include run-transition(all);
 	box-sizing: border-box;
 	opacity: 0;
+	overflow: hidden;
 }
 
 image-select > div:hover::before{
