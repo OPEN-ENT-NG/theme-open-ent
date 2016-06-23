@@ -2100,6 +2100,9 @@ textarea:focus{
 	a.container{
 		background-color: $primary-light;
 		border: 1px solid $primary-light;
+		img{
+			opacity: 0.4;
+		}
 	}
 	legend{
 		background: rgba(darken($primary-dark, 15%), 0.7);
@@ -2107,7 +2110,7 @@ textarea:focus{
 }
 
 
-.selected .check-tool{
+.selected .check-tool i{
 	background: $primary-dark;
 }
 
@@ -4477,6 +4480,13 @@ plus{
 	  height: 22px;
 	  display: inline-block;
 	  overflow: hidden;
+	}
+	.reduce-block-eight{
+		margin: 13px auto 0;
+		padding: 0;
+		em{
+			color: $grey;
+		}
 	}
 }
 
