@@ -2109,11 +2109,20 @@ textarea:focus{
 	}
 }
 
-
+.check-tool{
+	i{
+	}
+}
 .selected .check-tool i{
 	background: $primary-dark;
 }
 
+.side-col .illustration{
+	.check-tool{
+		top: -3px;
+	    right: 42px;
+	}
+}
 /////
 
 
