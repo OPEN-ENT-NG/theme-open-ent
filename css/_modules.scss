@@ -4736,6 +4736,9 @@ help{
 			color: black;
 		}
 	}
+	section.lightbox{
+		z-index: 10002;
+	}
 }
 
 //changePassword lightbox
