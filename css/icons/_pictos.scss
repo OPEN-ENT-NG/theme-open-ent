@@ -332,7 +332,7 @@ i.show-details:before{
   font-size: 28px;
 }
 //annuaire
-.upper-title + .right-magnet i.show-icons{
+.account i.show-details + i.show-icons{
     margin-right: 10px;
     &:before{
         font-size: 43px;
