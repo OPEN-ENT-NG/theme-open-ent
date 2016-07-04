@@ -1,0 +1,34 @@
+<section class="main">
+	<div class="panel">
+		<h1 translate content="auth.forgot.header"></h1>
+		<p class="warning" ng-if="error" translate content="[[error]]"></p>
+
+		<div class="content">
+			<h4><i18n>auth.forgot.text</i18n></h4>
+
+			<h2 ng-click="showWhat = showWhat === 'forgotPassword' ? null : 'forgotPassword'"><a><i18n>auth.lost.password</i18n></a></h2>
+			<div ng-if="showWhat === 'forgotPassword'" ng-init="user.mail = ''">
+				<p><i18n>auth.lost.password.text</i18n></p>
+				<div class="row">
+					<form class="nostyle rowstyle" method="post" name="forgotPasswordForm" ng-submit="forgotPassword(user.login, 'mail')">
+						<input type="text" translate attr="placeholder" placeholder="auth.email" name="login" ng-model="user.login" required/>
+						<input type="submit" translate attr="value" value="auth.forgot.send" ng-disabled="forgotPasswordForm.$invalid"/>
+					</form>
+				</div>
+			</div>
+
+			<h2 ng-click="showWhat = showWhat === 'forgotId' ? null : 'forgotId'"><a><i18n>auth.lost.id</i18n></a></h2>
+			<div ng-if="showWhat === 'forgotId'" ng-init="user.login = ''">
+				<i18n>auth.lost.id.text</i18n>
+				<form class="nostyle rowstyle" method="post" name="forgotIdForm" ng-submit="forgotId(user.mail, 'mail')">
+					<input type="email" translate attr="placeholder" placeholder="auth.mail" name="mail" ng-model="user.mail" required/>
+					<input type="submit" translate attr="value" value="auth.forgot.send" ng-disabled="forgotIdForm.$invalid"/>
+				</form>
+			</div>
+
+			<form class="row centered-text nostyle button-bar" method="get" action="/auth/login">
+				<button class="right-magnet" translate content="auth.back.to.login"></button>
+			</form>
+		</div>
+	</div>
+</section>
