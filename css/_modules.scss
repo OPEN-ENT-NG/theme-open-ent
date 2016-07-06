@@ -1616,11 +1616,6 @@ article.list-view{
 		thead.slided i:before{
 			transform: rotate(180deg);
 		}
-
-		tr{
-            border: 1px solid $middle-grey;
-			border-top: none;
-        }
 	}
 }
 //specific notfs extern
@@ -4708,33 +4703,4 @@ section.lightbox > .background + div.content > .twelve.cell {
 //fix ipad buttons styles
 input[type="submit"], input[type="button"]{
 	-webkit-appearance: none;
-}
-
-
-.announce{
-	overflow: hidden;
-	width: 100%;
-	margin-bottom: 30px;
-	background: $accent;
-	color: $white;
-	padding: 0 16px;
-	box-sizing: border-box;
-	p{
-		font-size: 14px;
-		b{
-			font-size: 16px;
-		}
-		a{
-			color: $white;
-			& :hover{
-				color: $middle-grey;
-			}
-		}
-	}
-}
-.announce.opinion{
-	background: #2DD234;
-	b{
-		padding-right: 10px;
-	}
 }
