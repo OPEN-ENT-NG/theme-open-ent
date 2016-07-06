@@ -898,3 +898,17 @@ i.system-avatar {
   content: '\e8cf';
   font-size: 15px;
 }
+
+i.add-icon{
+  @include fonticon;
+  color: #FF8500;
+}
+i.add-icon:before{
+  content: '\e8A1';
+  font-size: 25px;
+}
+i.add-icon:hover{
+  color: #b35d00;
+}
+
+
