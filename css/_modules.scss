@@ -745,7 +745,9 @@ a.button[disabled=disabled]:hover, button[disabled=disabled]:hover, input[type=b
 	}
 }
 
-
+.dragging a{
+	pointer-events: none;
+}
 .icons-view.apps{
 	.element{
 		padding: 0;
@@ -2226,7 +2228,12 @@ a:hover, a:hover > h1, a:hover > h2, a:hover > h3{
 	@include run-transition(top);
 }
 
-.floating-navigation{
+nav.vertical.floating.hash-magnet{
+	//margin-top: 100px;
+}
+
+nav.floating{
+	//padding-top: 70px;
 	li{
 		@include material-card();
 		border-top: 0;
