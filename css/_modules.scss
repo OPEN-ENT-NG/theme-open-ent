@@ -679,8 +679,14 @@ ul.icons-tabs{
 		i{
 			@include invert-colors();
 		}
+		//fix ie
+		i.tools:before{
+			@include invert-colors(100%);
+			color: $white!important;
+		}
 	}
 }
+
 
 a.button[disabled=disabled], button[disabled=disabled], input[type=button][disabled=disabled], input[type=submit][disabled=disabled],
 a.button[disabled=disabled]:hover, button[disabled=disabled]:hover, input[type=button][disabled=disabled]:hover, input[type=submit][disabled=disabled]:hover{
