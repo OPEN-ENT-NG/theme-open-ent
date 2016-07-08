@@ -1893,6 +1893,7 @@ textarea:focus {
     }
 }
 .icons-view {
+
     strong {
         font-style: italic;
         font-weight: normal;
@@ -1954,6 +1955,10 @@ textarea:focus {
                 font-style: normal;
                 font-size: 10px;
                 color: $white;
+                @include run-transition(color);
+            }
+            a.author{
+                display: inline;
             }
         }
         a,
