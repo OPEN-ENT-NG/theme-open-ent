@@ -224,6 +224,7 @@
 		}
 	}
 
+
 	.rigid-grid{
 		.side-col{
 			nav.vertical{
@@ -238,15 +239,28 @@
 			}
 		}
 
+		.main-col, .option-row{
+			padding-left: 0;
+		}
+
+		.option-row{
+			float: right;
+			//remove material card fx
+			& > div{
+				box-shadow: none;
+				background: transparent;
+			}
+		}
+		h2.float-title{
+			//attention si visible on desktop
+			display: none;
+		}
+
 		//actu maincol
-		.side-col + .main-col{
+		.main-col{
 			overflow: hidden;
 			.cell button.microbox{
 				float: right;
-			}
-			//space around microbox
-			.cell{
-				margin: 10px 0;
 			}
 			//comments on actu
 			.cell.right-magnet{
@@ -257,9 +271,7 @@
 				}
 			}
 		}
-		.side-col + .main-col + .main-col > div{
-			//postslist
-		}
+
 	}
 
 	image-select > div::before{
@@ -297,7 +309,7 @@
 	.bookmarked-apps{
 		display: none;
 	}
-	
+
 	.account{
 		.avatar + h2{
 			margin: 25px 0 45px 100px;
@@ -396,9 +408,7 @@
 		text-align: left;
 
 		.checkbox-filters{
-			height: auto;
 			ul li{
-				display: block;
 				padding: 20px;
 			}
 		}

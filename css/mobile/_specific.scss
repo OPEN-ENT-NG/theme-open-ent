@@ -193,23 +193,6 @@
 		}
 	}
 
-	.main-col .checkbox-filters{
-		float: none;
-		height: auto;
-	}
-	div.checkbox-filters{
-		display: block;
-
-		ul{
-			padding: 0;
-		}
-	}
-	//label "filtrer"
-	div.checkbox-filters div.cell:not(.checkbox-filters){
-	  float: none;
-	  padding-bottom: 10px;
-	}
-
 	.centered nav.vertical.half-stamps{
 		article{
 			margin-left: 30px;
