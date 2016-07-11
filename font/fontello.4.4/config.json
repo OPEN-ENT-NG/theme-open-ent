@@ -1731,6 +1731,24 @@
       "css": "search",
       "code": 59600,
       "src": "mfglabs"
+    },
+    {
+      "uid": "9c1376672bb4f1ed616fdd78a23667e9",
+      "css": "comment-empty",
+      "code": 61669,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "85528017f1e6053b2253785c31047f44",
+      "css": "comment",
+      "code": 59602,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "e82cedfa1d5f15b00c5a81c9bd731ea2",
+      "css": "info-circled-1",
+      "code": 59603,
+      "src": "fontawesome"
     }
   ]
 }
