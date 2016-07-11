@@ -4589,3 +4589,10 @@ input[type="submit"],
 input[type="button"] {
     -webkit-appearance: none;
 }
+
+.tuto{
+    b:first-child{
+        color: $primary;
+        font-size: 14px;
+    }
+}
