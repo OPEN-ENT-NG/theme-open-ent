@@ -332,10 +332,19 @@ i.show-details:before{
   font-size: 28px;
 }
 //annuaire
-.account i.show-details + i.show-icons{
-    margin-right: 10px;
-    &:before{
-        font-size: 43px;
+
+.account{
+    i.show-details, i.show-icons{
+        width: 35px;
+        height: 35px;
+        line-height: 36px;
+        margin: 0;
+    }
+    i.show-details + i.show-icons{
+        margin-right: 10px;
+        &:before{
+            font-size: 43px;
+        }
     }
 }
 
@@ -910,5 +919,3 @@ i.add-icon:before{
 i.add-icon:hover{
   color: #b35d00;
 }
-
-
