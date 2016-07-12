@@ -4209,6 +4209,12 @@ side-panel {
         left: -15px;
         @include material-card(5px, 25px);
         background: $white;
+
+        nav.vertical h2{
+            margin: 0 0 20px 30px;
+            font-size: 18px;
+            line-height: 25px;
+        }
         .content {
             float: left;
         }
