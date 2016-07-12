@@ -2104,17 +2104,51 @@ a:hover > h3 {
 [stick-top-top] {
     @include run-transition(top);
 }
-nav.vertical.floating.hash-magnet {
-    //margin-top: 100px;
+
+h2.float-title{
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
 }
-nav.floating {
-    //padding-top: 70px;
+.side-col.cell nav.vertical.floating.hash-magnet {
+    padding-top: 40px;
+    margin-bottom: 40px;
+    padding-right: 0;
+    background: $white;
+}
+nav.vertical.floating {
+    .arrow{
+        width: 26px;
+        margin-left: -13px;
+        left: 50%;
+        &::after{
+            color: $white;
+            background: $accent;
+            @include run-transition(background);
+        }
+        &:hover::after{
+            background: $dark-accent;
+        }
+    }
+    .content{
+        margin: 0 10px;
+        background: $lightest-grey;
+        border: 1px solid $middle-grey;
+    }
+    ul{
+        border-left: none;
+    }
     li {
         @include material-card();
         border-top: 0;
         margin-bottom: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
         background: $white;
         border-radius: 1px;
+        width: auto!important;
+        @include run-transition(all);
     }
     li:hover {
         background: $accent;
@@ -2124,6 +2158,7 @@ nav.floating {
         }
     }
 }
+
 .message {
     @include message;
 }
@@ -4310,10 +4345,6 @@ plus {
 				padding: 1px;
 			}
 		}
-		// h2.float-title{
-		// 	display: none;
-		// }
-
     }
 }
 .option-row{
