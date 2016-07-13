@@ -1108,6 +1108,9 @@ input-password {
             overflow: hidden;
             width: 90%;
             margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
         }
         .welcome-text{
             display: block;
@@ -1143,6 +1146,7 @@ input-password {
         }
         .welcome-text, .welcome-text + form{
             margin: 15px;
+            min-width: 400px;
         }
         input#email {
             width: 100%;
