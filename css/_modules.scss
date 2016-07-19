@@ -1107,6 +1107,7 @@ input-password {
         .panels-container{
             overflow: hidden;
             width: 90%;
+            min-height: 500px;
             margin: auto;
             display: flex;
             justify-content: center;
@@ -1144,7 +1145,7 @@ input-password {
             width: auto;
             overflow: hidden;
         }
-        .welcome-text, .welcome-text + form{
+        .welcome-text, form{
             margin: 15px;
             min-width: 400px;
         }
