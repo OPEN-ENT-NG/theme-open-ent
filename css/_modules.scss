@@ -4107,6 +4107,37 @@ nav.horizontal .my-apps {
 nav.horizontal .my-apps {
     width: 216px;
 }
+.search-text{
+    background: transparent !important;
+    i::before {
+        color: $accent;
+    }
+    .searchButton {
+        float: left;
+        padding: 0;
+        margin-top: 12px;
+        height: 29px;
+        box-shadow: none;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        line-height: 27px;
+        width: 30px;
+        text-align: center;
+        span{
+            float: none;
+        }
+    }
+    .searchInput {
+        border: 1px solid #eee;
+        margin: 12px;
+        float: left;
+        margin-right: -2px;
+        width: 188px;
+    }
+    .searchContent {
+        padding-top: 6px;
+    }
+}
 .bookmarked-app {
     margin: 1px;
     width: 70px;
@@ -4133,22 +4164,6 @@ nav.horizontal .my-apps {
     }
     a:hover {
         border-bottom: none !important;
-    }
-}
-.bookmarked-app:hover {
-    background: transparent !important;
-    i::before {
-        color: $accent;
-    }
-    .searchButton {
-        float: right;
-        padding: 0 5px;
-    }
-    .searchInput {
-        width: 11em;
-    }
-    .searchContent {
-        padding-top: 6px;
     }
 }
 label {
