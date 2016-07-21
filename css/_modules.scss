@@ -163,30 +163,34 @@ ul.list-view {
         }
     }
 }
-@-webkit-keyframes ripple {
-    100% {
-        opacity: 0;
-        -webkit-transform: scale(2.5);
-    }
-}
-@-moz-keyframes ripple {
-    100% {
-        opacity: 0;
-        -moz-transform: scale(2.5);
-    }
-}
-@-o-keyframes ripple {
-    100% {
-        opacity: 0;
-        -o-transform: scale(2.5);
-    }
-}
-@keyframes ripple {
-    100% {
-        opacity: 0;
-        transform: scale(2.5);
-    }
-}
+
+
+// @-webkit-keyframes ripple {
+//     100% {
+//         opacity: 0;
+//         -webkit-transform: scale(2.5);
+//     }
+// }
+// @-moz-keyframes ripple {
+//     100% {
+//         opacity: 0;
+//         -moz-transform: scale(2.5);
+//     }
+// }
+// @-o-keyframes ripple {
+//     100% {
+//         opacity: 0;
+//         -o-transform: scale(2.5);
+//     }
+// }
+// @keyframes ripple {
+//     100% {
+//         opacity: 0;
+//         transform: scale(2.5);
+//     }
+// }
+
+
 button,
 input[type=button],
 a.button,
@@ -233,6 +237,13 @@ form {
         display: block;
     }
 }
+
+
+.shockwave{
+    //background: $primary;
+}
+
+//buttons click
 @-webkit-keyframes ripple {
     100% {
         opacity: 0;
@@ -254,6 +265,8 @@ form {
         padding-bottom: 200%;
     }
 }
+
+
 button:active,
 input[type=button]:active,
 a.button:active,
@@ -1150,6 +1163,7 @@ input-password {
             min-width: 40%;
             min-height: 345px;
         }
+
         input#email {
             width: 100%;
             height: 32px;
@@ -1959,14 +1973,15 @@ textarea:focus {
         i.inline.shared {
             width: 15px;
             height: 15px;
-            top: 20px;
+            top: 5px;
             left: 5px;
             right: auto;
             bottom: auto;
             background-size: 100%;
         }
         legend {
-            width: calc(100% - 22px);
+            width: 100%;
+            height: auto;
             text-align: center;
             padding-top: 5px !important;
             line-height: 20px !important;
@@ -1974,6 +1989,7 @@ textarea:focus {
             bottom: 0 !important;
             background: $shadow-dark;
             color: $white;
+            box-sizing: border-box;
             @include run-transition(all);
             a {
                 color: $white;
@@ -1992,6 +2008,7 @@ textarea:focus {
                     border-bottom-right-radius: 0;
                     box-shadow: 0 0 0 1px $light-grey;
                     margin-left: 1px;
+                    z-index: 1;
                 }
                 span {
                     line-height: 2px;
@@ -4272,6 +4289,9 @@ side-panel {
         background: $white;
 
         nav.vertical h2{
+            margin-top: 0;
+            margin-left: 30px;
+            margin-bottom: 20px;
             margin: 0 0 20px 30px;
             font-size: 18px;
             line-height: 25px;
