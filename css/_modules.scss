@@ -544,6 +544,7 @@ nav.vertical.half-stamps {
 }
 nav.vertical.half-stamps {
     article {
+        margin: 10px auto;
         margin-bottom: 10px;
         h3 {
             color: $solid-grey;
@@ -559,7 +560,6 @@ nav.vertical.half-stamps {
     }
     article.selected {
         background: $primary;
-		margin: 10px auto;
         h3 {
             color: $white;
         }
@@ -567,7 +567,7 @@ nav.vertical.half-stamps {
     input[type=checkbox] {
         margin-top: 0;
         position: absolute;
-        top: 27px;
+        top: 35px;
         left: 127px;
         cursor: pointer;
     }
