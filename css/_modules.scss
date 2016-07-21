@@ -1954,14 +1954,17 @@ textarea:focus {
 }
 .icons-view {
 
+    & .mini-block-container{
+        padding: 0;
+    }
     strong {
         font-style: italic;
         font-weight: normal;
         font-size: 14px;
     }
     .element {
-        padding: 12px 12px 0 0;
-        margin: 5px;
+        padding: 0;
+        margin: 8px;
         width: auto;
         height: auto;
         overflow: hidden!important;
