@@ -1148,10 +1148,11 @@ input-password {
             p{
                 font-size: 13px;
             }
-
-            a{
-                font-weight: bold;
-                display: inline;
+        }
+        form{
+            a {
+                margin-top: 10px;
+                font-size: 22px;
             }
         }
         .welcome-text + form{
@@ -1173,10 +1174,7 @@ input-password {
         input[type=checkbox]#rememberMe {
             width: 11px;
         }
-        a {
-            margin-top: 10px;
-            font-size: 22px;
-        }
+        
     }
     form.nostyle {
         input {
