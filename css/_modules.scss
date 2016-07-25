@@ -1116,7 +1116,12 @@ input-password {
         display: inline-block;
         float: none;
     }
-    &.login {
+    &.activation{
+        form{
+            margin: auto !important;
+        }
+    }
+    &.login, &.activation {
         .panels-container{
             overflow: hidden;
             width: 90%;
