@@ -41,6 +41,12 @@ $accent: $orange !default;
 $dark-accent: darken($accent, 15%);
 
 
+//EXERCISER SPECIFIC
+
+// $stroke-color: $black;
+$fill-color: $white !default;
+$stroke-color: $primary !default;
+
 $header-height: 64px !default;
 
 //specific breakpoints
