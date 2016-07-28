@@ -716,6 +716,13 @@ i.forum-large::before, i.type.forum::before, i.forum::before{
   content: '\e81e';
   color: $cyan;
 }
+i.Exercizer-large, i.Exercizer.cas, i.Exercizer{
+  @include fonticon;
+}
+i.Exercizer-large::before, i.type.Exercizer::before, i.Exercizer::before{
+  content: '\e833';
+  color: $purple;
+}
 
 i.poll-large, i.poll.cas, i.poll{
   @include fonticon;
