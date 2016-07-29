@@ -60,7 +60,7 @@
 			<a href="/conversation/conversation" ng-if="me.hasWorkflow('org.entcore.conversation.controllers.ConversationController|view')">
 				<i class="mail"><span class="new-mails" ng-if="nbNewMessages">[[nbNewMessages]]</span></i>
 			</a>
-			<popover>
+			<popover class="searchengine">
 				<a href="/searchengine" popover-opener ng-click="openApps($event)"><i class="searchengine"></i></a>
 				<popover-content class="searchPortal" ng-controller="SearchPortal">
 					<div class="content searchContent">
