@@ -2698,7 +2698,7 @@ select {
     }
 }
 .grid-media {
-    outline: 1px solid $primary;
+    border: 1px solid $primary;
     image-select > div::before {
         left: 0;
     }
@@ -3605,7 +3605,7 @@ button.right-magnet + nav.illustrated-links {
         opacity: 1;
     }
     .grid-media {
-        outline: 1px solid $primary;
+        border: 1px solid $primary;
         pointer-events: all;
     }
     .square-menu button,
@@ -3623,7 +3623,7 @@ button.right-magnet + nav.illustrated-links {
         opacity: 0.3;
     }
     .grid-media {
-        outline: 1px solid $primary;
+        border: 1px solid $primary;
         pointer-events: none;
     }
     .square-menu button,
@@ -3640,7 +3640,7 @@ button.right-magnet + nav.illustrated-links {
             opacity: 1;
         }
         .grid-media {
-            outline: 1px solid $primary;
+            border: 1px solid $primary;
             pointer-events: all;
         }
         .square-menu button,
