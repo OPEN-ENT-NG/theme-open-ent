@@ -941,3 +941,67 @@ i.add-icon:before{
 i.add-icon:hover{
   color: #b35d00;
 }
+
+
+
+//support messages
+
+i.redminemsg::before {
+    content: "\E8D2";
+    font-family:"fontello";
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    background-image:none;
+    color: $pink;
+    font-size: 55px;
+    line-height: 55px;
+    text-align: center;
+}
+
+i.redmineinfo::before {
+    content: "\E8D3";
+    font-family:"fontello";
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    background-image:none;
+    color: $pink;
+    font-size: 55px;
+    line-height: 55px;
+    text-align: center;
+}
+
+i.ticketmsg::before {
+    content: "\F0E5";
+    font-family:"fontello";
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    background-image:none;
+    color: $primary-dark;
+    font-size: 55px;
+    line-height: 55px;
+    text-align: center;
+}
+
+i.ticketnew::before {
+    content: "\E8D3";
+    font-family:"fontello";
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    background-image:none;
+    color: $green;
+    font-size: 55px;
+    line-height: 55px;
+    text-align: center;
+}
+
+i.ticketinfo::before {
+    content: "\E8D3";
+    font-family:"fontello";
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    background-image:none;
+    color: $primary-dark;
+    font-size: 55px;
+    line-height: 55px;
+    text-align: center;
+}
