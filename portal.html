@@ -42,7 +42,7 @@
 					<div class="content">
 						<div class="my-apps row">
 							<div ng-if="me.bookmarkedApps.length === 0">
-								Cliquez sur "plus" pour sélectionner vos applications favorites.
+								<i18n>navbar.myapps.more</i18n>
 							</div>
 							<div class="bookmarked-app" ng-repeat="app in me.bookmarkedApps">
 								<a href="[[app.address]]" target="[[app.target]]">
