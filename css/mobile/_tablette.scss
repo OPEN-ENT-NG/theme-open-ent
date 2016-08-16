@@ -251,21 +251,12 @@
 			}
 		}
 
-		.main-col, .option-row{
-			padding-left: 0;
-		}
-
 		.option-row{
-			float: right;
 			//remove material card fx
 			& > div{
 				box-shadow: none;
 				background: transparent;
 			}
-		}
-		h2.float-title{
-			//attention si visible on desktop
-			display: none;
 		}
 
 		//actu maincol
