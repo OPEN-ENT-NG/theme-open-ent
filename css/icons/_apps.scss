@@ -40,10 +40,12 @@ i.esidoc-large::before, i.type.esidoc::before, i.esidoc::before{
   color: $purple;
 }
 
-i.cahier-textes-large, i.type.cahier-textes, i.cahier-textes{
+i.cahier-textes-large, i.type.cahier-textes, i.cahier-textes,
+i.cahier-de-texte-large, i.type.cahier-de-texte, i.cahier-de-texte{
   @include fonticon;
 }
-i.cahier-textes-large::before, i.type.cahier-textes::before, i.cahier-textes::before{
+i.cahier-textes-large::before, i.type.cahier-textes::before, i.cahier-textes::before,
+i.cahier-de-texte-large::before, i.type.cahier-de-texte::before, i.cahier-de-texte::before{
   content: "\e86f";
   color: $green;
 }
@@ -732,13 +734,16 @@ i.poll-large::before, i.type.poll::before, i.poll::before{
   color: $cyan;
 }
 
-i.statistics-large, i.statistics.cas, i.statistics{
+i.statistics-large, i.statistics.cas, i.statistics, i.statistics::before,
+i.stats-large, i.type.stats, i.stats::before{
   @include fonticon;
 }
-i.statistics-large::before, i.type.statistics::before, i.statistics::before{
+i.statistics-large::before, i.type.statistics::before, i.statistics::before,
+i.stats-large::before, i.type.stats::before, i.stats::before{
   content: '\e810';
   color: $purple;
 }
+
 
 i.conversation-large, i.type.messagerie, i.mail{
   @include fonticon;
@@ -747,4 +752,29 @@ i.conversation-large, i.type.messagerie, i.mail{
 i.conversation-large::before, i.type.messagerie::before, i.mail::before{
   content: "\e804";
   color: $yellow;
+}
+
+i.scrap-book-large, i.type.scrap-book, i.scrap-book{
+  @include fonticon;
+}
+
+i.scrap-book-large::before, i.type.scrap-book::before, i.scrap-book::before{
+  content: "\e8cb";
+  color: $green;
+}
+
+
+//// 1D APPS background
+
+i.stats-large::after, i.cahier-de-texte-large::after, i.scrap-book-large::after{
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    background-image: url(../img/icons/firstdeg.svg);
+    background-position: center;
+    background-size: 22px!important;
+    background-repeat: no-repeat;
 }
