@@ -37,6 +37,8 @@ i.bell:before{
   font-weight: bold;
 }
 
+
+
 i.arrow{
   @include fonticon;
   text-align: center;
@@ -193,6 +195,13 @@ i.disconnect-large::before, i.type.disconnect::before, i.disconnect::before{
 
 
 /* status icons */
+
+i.globe{
+  @include fonticon;
+}
+i.globe::before{
+	content:'\E8D1';
+}
 
 i.public{
   @include fonticon;
