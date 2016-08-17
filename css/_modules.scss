@@ -2111,11 +2111,7 @@ filters {
     margin-bottom: 10px;
 }
 .toggle-buttons {
-    width: 100%;
-    left: 0;
-    margin-left: 0;
     background: $accent;
-    height: 58px;
     .toggle {
         overflow: hidden;
     }
@@ -2124,11 +2120,12 @@ filters {
         @include flat-button;
         background: transparent;
         color: $white;
-        padding: 9px;
+        padding: 10px;
         font-size: 1em;
         font-weight: normal;
         text-align: center;
         margin: 0 5px 0 0;
+        border: 1px solid transparent;
     }
     input[type=button].pick-file {
         background: $accent;
@@ -2155,6 +2152,8 @@ filters {
     .contextual-link {
         a {
             color: $white;
+            font-size: 13px;
+            line-height: normal;
         }
     }
     .toggle button + resource-right.cell.right-magnet {
