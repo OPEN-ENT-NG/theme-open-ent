@@ -1,0 +1,46 @@
+.exercizer{
+    .base-image{
+        width: 760px;
+        height: 600px;
+        margin: auto;
+        background: #efefef;
+        border-radius: 5px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        vertical-align: middle;
+        flex-direction: column;
+        > img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    text-zone{
+        background: rgba(255,255,255,0.6);
+        padding: 8px;
+        color: #666;
+        border: 1px solid #fff;
+        box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
+        box-sizing: border-box;
+        width: 150px;
+        display: block;
+        > i{
+            margin-right: 5px;
+            display: inline-block;
+            height: 29px;
+            vertical-align: middle;
+        }
+        > input{
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0;
+            display: block;
+        }
+    }
+
+    nav{
+        padding-right: 35px;
+    }
+}
