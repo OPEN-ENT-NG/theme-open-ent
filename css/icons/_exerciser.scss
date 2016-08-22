@@ -175,4 +175,31 @@ div{
         }
     }
 
+    #zonetxtselect{
+        .st0{
+            fill:none;
+            stroke:$stroke-color;
+            stroke-width:8;
+            stroke-miterlimit:10;
+        }
+    	.st1{
+            fill:none;
+            stroke:$stroke-color;
+            stroke-width:8;
+            stroke-miterlimit:10;
+            stroke-dasharray:8.4011,8.4011;
+        }
+    	.st2{
+            fill:none;
+            stroke:$stroke-color;
+            stroke-width:8;
+            stroke-miterlimit:10;
+            stroke-dasharray:7.6495,7.6495;
+        }
+    	.st3{
+            fill:none;
+            stroke:$stroke-color;
+            stroke-width:12;
+            stroke-miterlimit:10;
+        }
 }
