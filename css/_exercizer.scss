@@ -1,4 +1,63 @@
 .exercizer{
+    [drag-item]{
+        cursor: move;
+    }
+    image-zone{
+        width: 100px;
+        height: 100px;
+        float: left;
+        position: relative;
+        float: left;
+        position: relative;
+        background: rgba(255, 255, 255, 0.8);
+        margin: 8px;
+        border-radius: 3px;
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+        overflow: hidden;
+        &.error::after{
+            content: " ";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: rgba(236, 0, 0, 0.4);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &.success::after{
+            content: " ";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: rgba(32, 204, 36, 0.4);
+        }
+        i.close{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+        }
+        .actions{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            font-size: 14px;
+            padding-left: 5px;
+            background: rgba(0,0,0,0.5);
+            height: 35px;
+            line-height: 35px;
+            color: #fff;
+            i{
+                padding-right: 3px;
+                margin-top: 1px;
+            }
+            &:hover{
+
+            }
+        }
+    }
     .base-image{
         width: 760px;
         height: 600px;
@@ -30,11 +89,6 @@
     }
 
     .options{
-        .option{
-            width: 120px;
-            height: 120px;
-            float: left;
-        }
         ul{
             padding: 0;
             list-style-type: none;
