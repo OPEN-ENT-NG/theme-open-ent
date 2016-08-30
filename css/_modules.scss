@@ -451,13 +451,30 @@ nav.horizontal {
 .nomargin {
     margin: 0 !important;
 }
+
+.lightbox-opened{
+    header.main{
+        &::after{
+            content: " ";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0,0,0,0.6);
+            z-index: 10002;
+        }
+    }
+}
+
 header.main {
     height: $header-height;
     background: transparent;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10000;
+    z-index: 100000;
     width: 100%;
 }
 .container {
@@ -695,6 +712,7 @@ input[type=submit][disabled=disabled]:hover {
     width: 30px;
     vertical-align: middle;
 }
+
 .navbar {
     background: $primary-dark;
     width: 100%;
