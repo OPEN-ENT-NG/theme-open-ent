@@ -1,7 +1,58 @@
-.exercizer{
+body.exercizer.dragging{
+    [drop-item].drag-over{
+        background: $accent;
+        color: #fff;
+    }
+}
+
+body.exercizer{
+    editor.edit, editor.both, editor.html{
+        editor-toolbar{
+            border-left: 52px #eee solid;
+            .option.filltext{
+                position: absolute;
+                left: -52px;
+                box-sizing: border-box;
+                top: 0;
+                height: 100%;
+                width: 52px;
+                & > i{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    width: 100%;
+                    &::before{
+                        font-size: 28px;
+                        @include fonticon;
+                        content: "\e858";
+                        color: $accent;
+                    }
+                }
+            }
+        }
+        fill-zone{
+            cursor: pointer;
+            &::after{
+                content: " ";
+                display: block;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            text-zone{
+                pointer-events: none;
+                user-select: none;
+            }
+        }
+    }
+
     [drag-item]{
         cursor: move;
     }
+
     image-zone{
         width: 100px;
         height: 100px;
@@ -13,6 +64,7 @@
         margin: 8px;
         border-radius: 3px;
         box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+        z-index: 20;
         img{
             border-radius: 3px;
         }
@@ -32,6 +84,9 @@
             width: 100%;
             height: 100%;
             background: rgba(32, 204, 36, 0.4);
+            position: absolute;
+            top: 0;
+            left: 0;
         }
         i.close{
             position: absolute;
@@ -98,6 +153,8 @@
     }
 
     .options{
+        min-height: 150px;
+        margin-bottom: 20px;
         ul{
             padding: 0;
             list-style-type: none;
@@ -105,22 +162,14 @@
             justify-content: center;
             display: flex;
             li{
-                background: #fff;
-                margin: 5px;
-                box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
-                padding: 8px;
-                color: #666;
-                cursor: pointer;
-                width: 200px;
-                &.selected{
-                    background: $primary;
-                }
+                z-index: 20;
             }
         }
         
         background: #eee;
         padding: 8px;
         border-radius: 3px;
+        transition: background 250ms ease;
     }
 
     .add-option{
@@ -140,52 +189,79 @@
         }
     }
 
-    text-zone{
-        background: rgba(255,255,255,0.6);
-        padding: 8px;
-        color: #666;
-        border: 1px solid #fff;
-        box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
-        box-sizing: border-box;
-        width: 150px;
-        display: block;
-        height: 30px;
+    fill-zone{
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        position: relative;
+    }
 
-        .drop-zone{
+    text-zone{
+        background: #fff;
+        margin: 5px;
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+        padding: 5px;
+        color: #666;
+        cursor: pointer;
+        width: 150px;
+        display: inline-block;
+        position: relative;
+        padding-left: 12px;
+        box-sizing: border-box;
+        height: 33px;
+        line-height: 23px;
+
+        &.selected{
+            background: $primary;
+            color: #fff;
+        }
+
+        input[type=text], select{
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            padding: 15px;
+            display: block;
+            border-bottom: none;
+        }
+        input[type=text]{
+            box-sizing: border-box;    
+        }
+        input[type=text]:focus{
+            border-bottom: 1px solid $accent;
+        }
+        [drop-item]{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
             box-sizing: border-box;
-            line-height: 30px;
+            line-height: 33px;
             text-align: center;
+            background: transparent;
+            transition: background 250ms ease;
         }
 
         &.error{
             background: rgba(236, 0, 0, 0.33);
-            border: rgba(236, 0, 0, 0.38) 1px solid;
             color: #e8e8e8;
         }
 
         &.success{
             background: rgba(32, 204, 36, 0.29);
-            border: 1px solid rgba(32, 204, 36, 0.48);
             color: #fff;
         }
 
         > i{
             margin-right: 5px;
-            display: inline-block;
-            height: 29px;
-            vertical-align: middle;
-        }
-        > input{
-            width: 100%;
-            box-sizing: border-box;
-            margin: 0;
             display: block;
+            height: 23px;
+            vertical-align: middle;
+            line-height: 23px;
+            position: absolute;
+            right: 0;
         }
     }
 
