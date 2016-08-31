@@ -6,45 +6,47 @@ body.exercizer.dragging{
 }
 
 body.exercizer{
-    editor.edit, editor.both, editor.html{
-        editor-toolbar{
-            border-left: 52px #eee solid;
-            .option.filltext{
-                position: absolute;
-                left: -52px;
-                box-sizing: border-box;
-                top: 0;
-                height: 100%;
-                width: 52px;
-                & > i{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+    edit-fill-text{
+        editor.edit, editor.both, editor.html{
+            editor-toolbar{
+                border-left: 52px #eee solid;
+                .option.filltext{
+                    position: absolute;
+                    left: -52px;
+                    box-sizing: border-box;
+                    top: 0;
                     height: 100%;
-                    width: 100%;
-                    &::before{
-                        font-size: 28px;
-                        @include fonticon;
-                        content: "\e858";
-                        color: $accent;
+                    width: 52px;
+                    & > i{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+                        width: 100%;
+                        &::before{
+                            font-size: 28px;
+                            @include fonticon;
+                            content: "\e858";
+                            color: $accent;
+                        }
                     }
                 }
             }
-        }
-        fill-zone{
-            cursor: pointer;
-            &::after{
-                content: " ";
-                display: block;
-                height: 100%;
-                width: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-            text-zone{
-                pointer-events: none;
-                user-select: none;
+            fill-zone{
+                cursor: pointer;
+                &::after{
+                    content: " ";
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                text-zone{
+                    pointer-events: none;
+                    user-select: none;
+                }
             }
         }
     }
@@ -202,7 +204,6 @@ body.exercizer{
         box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
         padding: 5px;
         color: #666;
-        cursor: pointer;
         width: 150px;
         display: inline-block;
         position: relative;
@@ -258,10 +259,45 @@ body.exercizer{
             margin-right: 5px;
             display: block;
             height: 23px;
-            vertical-align: middle;
             line-height: 23px;
             position: absolute;
             right: 0;
+            transition: color 250ms ease;
+            &:hover{
+                color: $accent;
+            }
+        }
+    }
+
+    .order-index{
+        height: 40px;
+        width: 40px;
+        margin-right: 25px;
+        border-radius: 20px;
+        background: $primary;
+        color: #fff;
+        float: left;
+        text-align: center;
+        line-height: 40px;
+        transition: background 250ms ease;
+    }
+
+    perform-order .answer{
+        line-height: 40px;
+        height: 40px;
+    }
+
+    edit-order input[type=text]{
+        margin-bottom: 0;
+        margin-top: 6px;
+    }
+
+    perform-order, edit-order{
+        ul.thought-out-actions > li:hover{
+            color: #fff;
+            .order-index{
+                background-color: $accent;
+            }
         }
     }
 
