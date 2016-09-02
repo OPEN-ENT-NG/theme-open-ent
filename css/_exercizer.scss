@@ -267,6 +267,9 @@ body.exercizer{
             &:hover{
                 color: $accent;
             }
+            &.edit{
+                margin-right: 20px;
+            }
         }
     }
 
