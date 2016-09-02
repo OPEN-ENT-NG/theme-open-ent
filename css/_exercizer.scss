@@ -69,6 +69,7 @@ body.exercizer{
         z-index: 20;
         img{
             border-radius: 3px;
+            pointer-events: none;
         }
         &.error::after{
             content: " ";
@@ -298,6 +299,19 @@ body.exercizer{
             .order-index{
                 background-color: $accent;
             }
+        }
+    }
+
+    perform-qcm{
+        .checkbox{
+            margin-top: 6px;
+            margin-right: 25px;
+        }
+        input[type=text]{
+            border: none;
+            margin-bottom: 0;
+            height: 30px;
+            line-height: 30px;
         }
     }
 
