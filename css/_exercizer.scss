@@ -71,6 +71,15 @@ body.exercizer{
             border-radius: 3px;
             pointer-events: none;
         }
+        button.add-answer{
+            box-shadow: none;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: 0;
+        }
         &.error::after{
             content: " ";
             display: block;
