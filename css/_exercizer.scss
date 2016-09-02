@@ -120,6 +120,7 @@ body.exercizer{
             color: #fff;
             border-bottom-left-radius: 3px;
             border-bottom-right-radius: 3px;
+            box-sizing: border-box;
             i{
                 padding-right: 3px;
                 margin-top: 1px;
@@ -221,6 +222,14 @@ body.exercizer{
         box-sizing: border-box;
         height: 33px;
         line-height: 23px;
+
+        span{
+            overflow: hidden;
+            display: block;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            padding-right: 31px;
+        }
 
         &.selected{
             background: $primary;
