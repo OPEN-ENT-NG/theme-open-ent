@@ -271,11 +271,13 @@ body.exercizer{
         &.error{
             background: rgba(236, 0, 0, 0.33);
             color: #e8e8e8;
+            border-left: 0;
         }
 
         &.success{
             background: rgba(32, 204, 36, 0.29);
             color: #fff;
+            border-left: 0;
         }
 
         > i{
