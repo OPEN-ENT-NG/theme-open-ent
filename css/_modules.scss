@@ -1248,7 +1248,6 @@ input-password {
 }
 .tooltip {
     pointer-events: none;
-    z-index: 10000;
     .content {
         background: $accent;
         color: $white;
