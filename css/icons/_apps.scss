@@ -507,12 +507,13 @@ i.collaborativeeditor-large::before, i.type.collaborativeeditor::before, i.colla
   color: $cyan;
 }
 
-i.exerciseur-large, i.type.exerciseur, i.exerciseur{
+
+i.exercizer-large, i.exercizer.cas, i.exercizer{
   @include fonticon;
 }
-i.exerciseur-large::before, i.type.exerciseur::before, i.exerciseur::before{
-  content: "\e833";
-  color: $red;
+i.exercizer-large::before, i.type.exercizer::before, i.exercizer::before{
+  content: '\e833';
+  color: $purple;
 }
 
 /* ico image not font */
@@ -699,13 +700,6 @@ i.forum-large, i.forum.cas, i.forum{
 i.forum-large::before, i.type.forum::before, i.forum::before{
   content: '\e81e';
   color: $cyan;
-}
-i.Exercizer-large, i.Exercizer.cas, i.Exercizer{
-  @include fonticon;
-}
-i.Exercizer-large::before, i.type.Exercizer::before, i.Exercizer::before{
-  content: '\e833';
-  color: $purple;
 }
 
 i.poll-large, i.poll.cas, i.poll{
