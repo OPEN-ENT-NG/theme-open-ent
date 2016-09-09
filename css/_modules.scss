@@ -1093,7 +1093,7 @@ input-password {
     }
     button.flat-button,
     input[type=submit].flat-button {
-        background: white;
+        background: $white;
     }
     &.activation {
         input[type="email"],
@@ -1110,7 +1110,6 @@ input-password {
     }
     .button-bar {
         margin-top: 30px;
-        border-top: 1px solid $shadow;
         padding-top: 20px;
         > * {
             display: inline-block;
@@ -1200,8 +1199,8 @@ input-password {
 
     }
     form.nostyle {
+        overflow: hidden;
         input {
-            float: none;
             width: auto;
         }
     }
