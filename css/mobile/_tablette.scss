@@ -286,24 +286,6 @@
 
 	}
 
-	image-select > div::before{
-		@include fonticon;
-		//content: '\E84A';
-		content: '\E83F';
-		font-size: 40px;
-		line-height: 62px;
-        display: none;
-	}
-	nav.vertical.half-stamps{
-		image-select > div::before{
-			line-height: 47px;
-		}
-	}
-	article form{
-		image-select > div::before{
-			line-height: 128px;
-		}
-	}
 
 	//home filters
 
