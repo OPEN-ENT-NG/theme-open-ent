@@ -228,8 +228,14 @@ input[type=submit],
 }
 
 form {
-    .search input[type=submit] {
-        padding: 0 18px;
+    .search{
+        input[type=submit] {
+            padding: 0 18px;
+        }
+        select{
+            margin: 0 3%;
+            box-sizing: border-box;
+        }
     }
 }
 .lightbox form#changePassword {
@@ -593,11 +599,14 @@ nav.vertical.half-stamps {
         border: 0;
         padding: 14px;
         margin: 1px;
+        display: inline-block;
+        float: none;
         .domino {
             @include material-card(2px, 3px);
             border-radius: 3px;
             border: 0;
             .bottom {
+                text-align: left;
                 background: white;
                 color: $primary;
                 div.content {
@@ -611,7 +620,35 @@ nav.vertical.half-stamps {
     }
 }
 
-
+.dominos.centered-text{
+    .item{
+        max-width: 200px;
+        min-width: 140px;
+        .domino{
+            .top{
+                & + span{
+                    color: $white;
+                }
+            }
+            .bottom{
+                margin-top: 0;
+            }
+        }
+    }
+    .mood{
+        top: 5px;
+        i.liquid{
+            font-size: 20px;
+            line-height: normal;
+            &::before{
+                @include text-border ;
+            }
+        }
+    }
+    .bottom-locked{
+        right: 0;
+    }
+}
 
 .green {
     background: $green;
@@ -2081,24 +2118,38 @@ article.selected {
         line-height: 38px;
     }
 }
-.account .mood icons-select {
-    margin-top: 6px;
-}
-//devise
-.account .mood + div {
-    margin-bottom: 15px;
-    overflow: hidden;
-    box-sizing: border-box;
-}
-.account .mood icons-select {
-    .option {
-        display: inline-block;
-        vertical-align: top;
-        width: 100px;
-        float: none;
-        padding: 12px 0;
+
+.account{
+
+    .mood{
+        icons-select {
+            margin-top: 6px;
+        }
+        //devise
+        & + div{
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        icons-select {
+            .option {
+                display: inline-block;
+                vertical-align: top;
+                width: 100px;
+                float: none;
+                padding: 12px 0;
+            }
+        }
+    }
+    article > h1{
+        font-size: 1.7em;
+        margin-bottom: 10px;
     }
 }
+
+
+
+
 section.lightbox-window {
     form#upload-form {
         h3 {
