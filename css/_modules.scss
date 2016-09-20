@@ -622,8 +622,10 @@ nav.vertical.half-stamps {
 
 .dominos.centered-text{
     .item{
-        max-width: 200px;
-        min-width: 140px;
+        padding: 0px;
+        margin: 8px;
+        max-width: 140px;
+        min-width: 100px;
         .domino{
             .top{
                 & + span{
@@ -2146,8 +2148,6 @@ article.selected {
         margin-bottom: 10px;
     }
 }
-
-
 
 
 section.lightbox-window {

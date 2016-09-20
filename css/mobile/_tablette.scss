@@ -314,6 +314,16 @@
 			height: auto;
 		}
 
+		i.show-details::before{
+			content: '\e811';
+		}
+
+
+	}
+	.side-panel-right{
+	    position: absolute;
+	    top: 0;
+	    background: $background;
 	}
 
 //mailbox
