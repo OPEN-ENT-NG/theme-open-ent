@@ -4243,32 +4243,20 @@ label {
         border-color: $middle-grey !important;
     }
 }
-image-select {
+image-select{
     overflow: hidden;
+    & > div > img{
+        box-sizing: border-box;
+        border: 2px dashed $medium-grey;
+        @include run-transition(all);
+    }
+
 }
-image-select > div::before {
-    content: "Cliquez pour choisir une image ou glissez-déposez un fichier depuis votre poste de travail";
-    background: $accent;
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: -100%;
-    pointer-events: none;
-    text-align: center;
-    padding: 10px;
-    font-size: 16px;
-    color: $white;
-    @include run-transition(all);
-    box-sizing: border-box;
-    opacity: 0;
-    overflow: hidden;
+image-select:hover > div > img{
+    border: 2px dashed $accent;
 }
-image-select > div:hover::before {
-    left: 0;
-    opacity: 1;
-}
+
+
 i.important {
     color: $accent;
 }
