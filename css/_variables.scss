@@ -89,16 +89,17 @@ $small-screen: 959px;
 	}
 }
 
-/* font family with # version */
+/* font family */
 @font-face {
-  font-family: 'fontello';
-  src: url('../font/fontello.4.5/font/fontello.woff');
+  font-family: 'ong-icons';
+  src: url('../font/ong-icons/fonts/ong-icons.woff');
+  //src: url('https://github.com/OPEN-ENT-NG/font-icons-ong/blob/master/fonts/ong-icons.woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @mixin fonticon{
-    font-family: "fontello";
+    font-family: "ong-icons";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-image: none;
@@ -106,4 +107,7 @@ $small-screen: 959px;
 
 .fonticon{
     @include fonticon;
+}
+i{
+	@include fonticon;
 }
