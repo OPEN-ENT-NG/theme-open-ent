@@ -1,0 +1,330 @@
+
+.widget {
+    width: 100% !important;
+}
+.widget-container {
+    @include material-card();
+    background-color: $white;
+    margin-bottom: 30px;
+    width: 98%;
+    @include run-transition(all);
+    h1:first-child {
+        text-align: center;
+        padding-top: 15px;
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    &:hover {
+        box-shadow: 0 1px 3px $shadow inset;
+        background: $white;
+    }
+}
+
+
+
+.mood-widget {
+    border: 1px solid $primary-light;
+    background: $light-grey;
+    padding-top: 0;
+    .icons-select {
+        margin-top: 0;
+    }
+}
+.birthday {
+    background: $white;
+    border: 1px solid $primary-light;
+    h1 {
+        text-align: center;
+    }
+    .content {
+        border: none;
+    }
+}
+
+.calendar.widget {
+    height: 180px;
+    .current-month-header {
+        padding-top: 5px;
+        color: $primary;
+        top: 0;
+    }
+    .content {
+        border: none;
+        height: 124px;
+        box-sizing: content-box;
+        margin-top: 45px;
+        .day {
+            font-size: 10px;
+            height: 21px;
+            line-height: 19px;
+            padding-left: 2px;
+        }
+        .previous-month,
+        .next-month {
+            color: $white;
+        }
+        .day.today {
+            color: $white;
+            background: $accent;
+            border-radius: 10px;
+            padding-right: 2px;
+        }
+        h2 {
+            color: $primary;
+        }
+    }
+    .current-day {
+        h1 {
+            font-size: 14px;
+            text-align: center;
+            font-weight: normal;
+            margin-bottom: -10px;
+            margin-top: 5px;
+        }
+        h2 {
+            font-size: 40px;
+            margin: 5px 0 0;
+            text-align: center;
+            font-weight: normal;
+        }
+        h3 {
+            font-weight: 100;
+            font-size: 14px;
+            text-align: center;
+            margin-top: -10px;
+            padding-top: 6px;
+        }
+    }
+}
+.notes-widget {
+    padding: 0 10px;
+}
+
+.last-infos-widget {
+    .last-infos-config-button {
+        display: block;
+        font-size: 30px;
+        float: left;
+        margin-left: 15px;
+        &:hover {
+            color: $accent;
+        }
+    }
+}
+.last-mails-widget,
+.pages-widget {
+    background: $white;
+    margin-bottom: 12px;
+    border: 1px solid $primary-light;
+    width: 254px;
+    box-sizing: border-box;
+    h1 {
+        text-align: center;
+    }
+    ul {
+        margin-bottom: 0;
+        padding-left: 0;
+        li {
+            list-style-type: none;
+            padding-left: 7px;
+            border-left: 5px solid $accent;
+            line-height: 22px;
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+}
+.rss-widget.widget {
+    font-weight: normal;
+    width: auto !important;
+    padding: 5px;
+    a {
+        color: $primary;
+        font-weight: bold;
+        &:hover {
+            color: $accent;
+        }
+    }
+    .fluxes {
+        padding: 8px;
+        .rss-flux {
+            border-bottom: 1px solid $white;
+        }
+        .rss-flux:last-child {
+            border-bottom: 0;
+        }
+        .rss-flux,
+        .rss-flux:last-child {
+            padding-bottom: 5px;
+            padding-top: 5px;
+            > p {
+                color: $primary;
+            }
+        }
+    }
+    .message {
+        color: $text-light;
+        padding: 15px 8px;
+    }
+    .channel {
+        margin: 10px auto;
+        display: block;
+        background-color: $primary;
+    }
+    .channel:hover {
+        background: $accent;
+    }
+    .rss-article {
+        border-bottom: 1px solid $accent;
+        font-size: 13px;
+        padding: 5px;
+        a {
+            color: $text-light;
+            font-weight: normal;
+        }
+    }
+    .rss-article:last-child {
+        border-bottom: 0;
+    }
+    .selected-item {
+        background: $accent;
+        color: $white;
+        padding: 10px;
+        p {
+            margin: 0;
+        }
+        a {
+            color: $white;
+            font-weight: bold;
+        }
+    }
+    .loading-panel {
+        border: none;
+        h1 {
+            padding: 10px;
+            color: $accent;
+        }
+    }
+}
+
+/*ico ok*/
+.maxicours-widget {
+    h1:first-child {
+        margin-bottom: 15px;
+    }
+    button {
+        float: none;
+        display: inline;
+    }
+    i.fonticon {
+        font-size: 50px;
+    }
+    > i.fonticon {
+        color: $primary;
+    }
+    .top-right-magnet {
+        position: absolute;
+        right: 5px;
+        top: 25px;
+    }
+    div.text-band {
+        background-color: $primary-light;
+        border-bottom: 2px solid $black;
+        border-top: 2px solid $black;
+        padding: 5px 0;
+        .highlighted {
+            background-color: $accent;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 5px;
+        }
+    }
+    div.activity {
+        box-shadow: 0 0 2px;
+        margin-bottom: 5px;
+        padding: 5px 10px;
+        > * {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        img.picto {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+    }
+    .loading-panel {
+        border: none;
+        h1 {
+            padding: 10px;
+            color: $accent;
+        }
+    }
+}
+.cursus-widget {
+    padding-bottom: 15px;
+    font-size: 14px;
+    .loading-panel {
+        border: none;
+        h1 {
+            padding: 10px;
+            color: $accent;
+        }
+    }
+    table thead th {
+        text-align: center;
+    }
+    button {
+        float: none;
+        display: inline;
+    }
+    div.content {
+        padding: 0 5%;
+        h2 {
+            color: $accent;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .input-label {
+            label {
+                color: $accent;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            input {}
+        }
+    }
+}
+
+.bookmark-widget {
+    padding: 5px;
+    width: auto !important;
+    h1::before {}
+    .bookmark-add-button {
+        display: block;
+        font-size: 40px;
+        float: right;
+        margin-right: 15px;
+        &:hover {
+            color: $accent;
+        }
+    }
+    .bookmark-add-button::before {
+        content: "+";
+    }
+    .bookmark-config-button {
+        display: block;
+        font-size: 30px;
+        float: left;
+        margin-left: 15px;
+        &:hover {
+            color: $accent;
+        }
+    }
+    .message {
+        color: $text-light;
+        padding: 15px 8px;
+    }
+}
