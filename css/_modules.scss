@@ -642,6 +642,12 @@ nav.vertical.half-stamps {
 .pink {
     background: $pink;
 }
+.red {
+    background: $red;
+}
+.blue {
+    background: $dark-blue;
+}
 .grey {
     background: $primary;
 }
@@ -4714,4 +4720,11 @@ input[type="button"] {
         color: $primary;
         font-size: 14px;
     }
+}
+
+div.flashmsg {
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 5px #444;
+    color: #fff;
 }
