@@ -328,3 +328,108 @@
         padding: 15px 8px;
     }
 }
+
+.logbook-widget{
+
+    .logbook-content{
+        padding: 15px 25px 25px;
+    }
+    .logbook-sections{
+        @include shade-colors($primary-darkest, 8);
+        box-shadow: 0px 1px 1px 0 $shadow;
+        cursor: default;
+    }
+
+    //mode compact
+    .ticket-card{
+        background: $background;
+        border: 1px solid $light-grey;
+        border-bottom: none;
+        &:last-child{
+            border-bottom: 1px solid $light-grey;
+        }
+        figure {
+            box-shadow: 0px 0px 0px $shadow;
+            i{
+                &:before{
+                    color: $white;
+                }
+            }
+        }
+        section{
+            h5{
+                span{
+                    color: $black;
+                }
+            }
+            p, em{
+                color: $text-light;
+            }
+        }
+
+        &:hover{
+            background: $primary-lighter;
+            figure{
+                box-shadow: 3px 3px 0px $shadow;
+            }
+            section + i{
+                color: $primary;
+            }
+        }
+    }
+    .ticket-card.empty{
+        pointer-events: none;
+    }
+    //mode full
+    section.lightbox{
+        h2{
+            margin: 20px;
+        }
+        article{
+            margin: 30px 20px 40px;
+            & > div{
+                margin: 0 20px 20px;
+                padding: 0 20px 10px;
+                border-bottom: 1px solid $middle-grey;
+            }
+
+            p{
+                // border-bottom: 1px solid $middle-grey;
+                // padding: 15px 10px 5px;
+                margin: 20px 0 0 -10px;
+
+                span{
+                    padding-right: 10px;
+                    font-weight: bold;
+                }
+            }
+
+
+            h4{
+                margin: 10px 0 5px;
+                color: $primary;
+                font-size: 16px;
+                font-weight: normal;
+            }
+            section{
+                margin: 5px 0 5px 10px;
+                font-size: 14px;
+                b{
+                    line-height: 15px;
+                    line-height: 30px;
+                }
+            }
+        }
+
+    }
+
+
+}
+
+
+
+.widget-container{
+    section.lightbox{
+        cursor: default;
+    }
+}
