@@ -744,7 +744,7 @@ i.cahier-de-texte-large::before, i.type.cahier-de-texte::before, i.cahier-de-tex
 i.type.homeworks{
   @include fonticon;
 }
-i.type.homeworks::before{
+i.type.homeworks::before, i.homeworks::before, {
   content: '\e86f';
 }
 

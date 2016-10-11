@@ -679,6 +679,32 @@ i.link{
 }
 
 
+////////logbook///////////
+
+i.timer-off{
+    &:before{
+        content: '\e426';
+    }
+}
+i.trending-up{
+    &:before{
+        content: '\e8e5';
+    }
+}
+i.grades{
+    &:before{
+        content: '\e614';
+    }
+}
+i.nobody{
+    &:before{
+        content: '\e901';
+    }
+}
+i.dotsx3:before{
+    content:"...";
+}
+
 .menu-items{
     i{
       background: none;
