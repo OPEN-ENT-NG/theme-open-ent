@@ -282,15 +282,14 @@
 
 	.widgets-friend app-title ~ .twelve.cell {
 		margin-top: 15px;
-		filters{
-			width: calc(100% - 80px);
-			margin-top: 5px;
-		}
 	}
 	ul.icons-tabs{
-		top: 40px;
+		top: 10px;
 	}
-
+	.microbox-material .filters-icons li{
+		margin: 2px;
+	}
+	
 	.bookmarked-apps{
 		display: none;
 	}
