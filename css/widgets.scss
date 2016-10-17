@@ -329,11 +329,63 @@
     }
 }
 
+
 .logbook-widget{
-    ul, li{
-        margin: 0;
-        padding: 0;
-        list-style: none;
+
+    .logbook-children{
+        padding: 0 15px;
+        ul{
+            height: 90px;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        .avatar{
+            display: inline-block;
+            overflow: hidden;
+            margin: 8px 5px 0;
+            font-size: 12px;
+            padding: 0;
+            list-style: none;
+            figure{
+                width: 55px;
+                height: 55px;
+                margin: 0 auto;
+                padding: 0;
+                background: $darkest-grey;
+                border-radius: 50%;
+                opacity: 0.6;
+                @include run-transition(all)
+
+                i{
+                    display: block;
+                    width: 55px;
+                    height: 55px;
+                    line-height: normal;
+                    text-align: center;
+                    &:before{
+                        color: $white;
+                        font-size: 21px;
+                        vertical-align: middle;
+                    }
+                }
+                & + div{
+                    text-align: center;
+                    color: $grey;
+                    @include run-transition(all)
+                }
+            }
+        }
+        .avatar.selected, .avatar:hover{
+            figure{
+                opacity: 1;
+                & + div{
+                    color: $black;
+                }
+            }
+        }
     }
 
     .logbook-content{
@@ -344,54 +396,6 @@
         box-shadow: 0px 1px 1px 0 $shadow;
         cursor: default;
     }
-
-    ul{
-        overflow: hidden;
-    }
-    .avatar{
-        float: left;
-        overflow: hidden;
-        padding: 5px;
-        font-size: 12px;
-
-        figure{
-            margin: 0;
-            padding: 0;
-            float: left;
-            background: $darkest-grey;
-            border-radius: 50%;
-            opacity: 0.6;
-            @include run-transition(all)
-
-            i{
-                display: block;
-                width: 55px;
-                height: 55px;
-                line-height: normal;
-                text-align: center;
-                &:before{
-                    color: $white;
-                    font-size: 21px;
-                    vertical-align: middle;
-                }
-            }
-            & + div{
-                text-align: center;
-                color: $grey;
-                @include run-transition(all)
-            }
-        }
-    }
-    .avatar.selected, .avatar:hover{
-        figure{
-            opacity: 1;
-            & + div{
-                color: $black;
-            }
-        }
-    }
-
-
 
     //mode compact
     .ticket-card{
