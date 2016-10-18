@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'ong-icons';
   src:
-    url('fonts/ong-icons.ttf?lkkyqg') format('truetype'),
-    url('fonts/ong-icons.woff?lkkyqg') format('woff'),
-    url('fonts/ong-icons.svg?lkkyqg#ong-icons') format('svg');
+    url('fonts/ong-icons.ttf?5rnfw1') format('truetype'),
+    url('fonts/ong-icons.woff?5rnfw1') format('woff'),
+    url('fonts/ong-icons.svg?5rnfw1#ong-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -31,6 +31,9 @@ i {
 }
 .trending-up:before {
   content: "\e8e5";
+}
+.logbook:before {
+  content: "\e902";
 }
 .nobody:before {
   content: "\e901";
