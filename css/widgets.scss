@@ -356,7 +356,7 @@
                 padding: 0;
                 background: $darkest-grey;
                 border-radius: 50%;
-                opacity: 0.6;
+                opacity: 0.3;
                 @include run-transition(all)
 
                 i{
@@ -373,7 +373,7 @@
                 }
                 & + div{
                     text-align: center;
-                    color: $grey;
+                    color: $disable-grey;
                     @include run-transition(all)
                 }
             }
@@ -429,9 +429,9 @@
             figure{
                 box-shadow: 3px 3px 0px $shadow;
             }
-            section + i{
-                color: $primary;
-            }
+        }
+        section + i:hover{
+            color: $primary;
         }
     }
     .ticket-card.empty{
