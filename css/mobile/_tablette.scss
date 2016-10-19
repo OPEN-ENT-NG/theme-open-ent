@@ -439,5 +439,13 @@
         margin-right: 60px;
     }
 
+	.notification div.notification-actions {
+        display: block !important;
+        width: 30px;
+    }
+    .notification div.notification-date {
+        margin-right: 30px;
+    }
+
 // end tablettes
 }
