@@ -4,6 +4,7 @@
 
 // links = primary
 
+
 $cyan: #4bafd5 !default;
 $green: #46bfaf !default;
 $yellow: #ecbe30 !default;
@@ -11,7 +12,6 @@ $orange: #FF8500 !default;
 $red: #e13a3a !default;
 $pink: #b930a2 !default;
 $purple: #763294 !default;
-$dark-blue: #163440 !default;
 $white: #FFFFFF !default;
 $lightest-grey: #f9f9f9 !default;
 $light-grey: #F0F0F0 !default;
@@ -33,6 +33,7 @@ $background: $lightest-grey !default;
 ///////
 
 $primary: $cyan !default;
+$primary-darkest: saturate(darken($primary, 40%), 10%);
 $primary-dark: saturate(darken($primary, 9%), 3%);
 $primary-light: saturate(lighten($primary, 17%), 85%);
 $primary-lighter: desaturate(lighten($primary-light, 15%), 10%);
@@ -41,6 +42,12 @@ $primary-lighter: desaturate(lighten($primary-light, 15%), 10%);
 $accent: $orange !default;
 $dark-accent: darken($accent, 15%);
 
+//FLASHMSG
+
+$flash-red: $red;
+$flash-orange: $accent;
+$flash-green: $green;
+$flash-blue: $primary-darkest;
 
 //EXERCISER SPECIFIC
 
