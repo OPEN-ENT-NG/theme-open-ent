@@ -4555,7 +4555,8 @@ h1 i:after,
 h1 i {
     display: none!important;
 }
-body editor {
+
+@media screen and(min-width: $tablette){
     .selected-value:hover {
         border-color: $accent;
     }
@@ -4563,6 +4564,10 @@ body editor {
     &.both editor-toolbar .option:hover {
         border-bottom: 3px solid $accent;
     }
+}
+
+body editor {
+    
     &.edit editor-toolbar,
     &.both editor-toolbar {
         .option.table {
