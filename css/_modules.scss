@@ -4063,7 +4063,7 @@ side-panel {
         color: $accent;
         &:after {
             content: "\e866";
-            font-family: "fontello";
+            @include fonticon;
             font-size: 15px;
             display: block;
             margin-top: 2px;
@@ -4250,7 +4250,7 @@ h1 i {
 }
 
 body editor {
-    
+
     &.edit editor-toolbar,
     &.both editor-toolbar {
         .option.table {

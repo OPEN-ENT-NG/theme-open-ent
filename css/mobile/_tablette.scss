@@ -44,9 +44,8 @@
 
 		}
 		.mobile-nav-opener{
-			font-family: fontello;
+			@include fonticon;
 			background: none;
-			background-image: none;
 			padding: 15px;
 
 			&::before{
@@ -289,7 +288,7 @@
 	.microbox-material .filters-icons li{
 		margin: 2px;
 	}
-	
+
 	.bookmarked-apps{
 		display: none;
 	}
