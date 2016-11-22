@@ -968,14 +968,14 @@ i.system-avatar {
 
 i.add-icon{
   @include fonticon;
-  color: #FF8500;
+  color: $accent;
 }
 i.add-icon:before{
   content: '\e8A1';
   font-size: 25px;
 }
 i.add-icon:hover{
-  color: #b35d00;
+  color: $dark-accent;
 }
 
 
