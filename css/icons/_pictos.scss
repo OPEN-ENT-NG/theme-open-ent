@@ -103,7 +103,6 @@ i.pending-icon-large, i.pending-icon, table.colored i.pending-icon{
 i.pending-icon-large::before, i.pending-icon::before, table.colored i.pending-icon::before{
   content: '\e85c';
   color: $purple;
-  font-family: "fontello";
 }
 
 
@@ -721,7 +720,7 @@ i.dotsx3:before{
   	//i.image:before, input[type=button].image:before, input[type=button].image:before:hover{
 	i.image:before, li > div.image:before{
 	  content: '\e84a';
-	  font-family: "fontello";
+	  @include fonticon;
 	  display: block;
 	  position: absolute;
 	  line-height: 35px;
@@ -735,7 +734,7 @@ i.dotsx3:before{
 	}
 	i.sound:before, li > div.sound:before{
 	  content: '\e839';
-	  font-family: "fontello";
+	  @include fonticon;
 	  display: block;
 	  position: absolute;
 	  line-height: 35px;
@@ -985,10 +984,6 @@ i.add-icon:hover{
 
 i.redminemsg::before {
     content: "\E8D2";
-    font-family:"fontello";
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    background-image:none;
     color: $pink;
     font-size: 55px;
     line-height: 55px;
@@ -997,10 +992,6 @@ i.redminemsg::before {
 
 i.redmineinfo::before {
     content: "\E8D3";
-    font-family:"fontello";
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    background-image:none;
     color: $pink;
     font-size: 55px;
     line-height: 55px;
@@ -1009,10 +1000,6 @@ i.redmineinfo::before {
 
 i.ticketmsg::before {
     content: "\F0E5";
-    font-family:"fontello";
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    background-image:none;
     color: $primary-dark;
     font-size: 55px;
     line-height: 55px;
@@ -1021,10 +1008,6 @@ i.ticketmsg::before {
 
 i.ticketnew::before {
     content: "\E8D3";
-    font-family:"fontello";
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    background-image:none;
     color: $green;
     font-size: 55px;
     line-height: 55px;
@@ -1033,10 +1016,6 @@ i.ticketnew::before {
 
 i.ticketinfo::before {
     content: "\E8D3";
-    font-family:"fontello";
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    background-image:none;
     color: $primary-dark;
     font-size: 55px;
     line-height: 55px;
