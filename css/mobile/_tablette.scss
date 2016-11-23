@@ -203,10 +203,7 @@
 		    margin-top: 35px;
 		}
 	}
-	.toggle-panel{
-		right: -15px;
-		top: 52px;
-	}
+
 	.notification article .notification-date{
 		right: 10px;
 		top: 8px;
@@ -282,8 +279,17 @@
 	.widgets-friend app-title ~ .twelve.cell {
 		margin-top: 15px;
 	}
+
+	.toggle-panel{
+		right: -15px;
+		top: 0;
+	}
+	.toggle-panel.hide+ul.icons-tabs {
+		right: -15px;
+	}
 	ul.icons-tabs{
-		top: 10px;
+		top: 0;
+	    right: 285px;
 	}
 	.microbox-material .filters-icons li{
 		margin: 2px;

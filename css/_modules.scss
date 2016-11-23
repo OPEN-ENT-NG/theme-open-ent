@@ -697,23 +697,8 @@ ul.thought-out-actions {
         }
     }
 }
-ul.icons-tabs {
-    right: 1px;
-    li {
-        @include material-card();
-        border-radius: 25px;
-        border: none;
-        background: $accent;
-        i {
-            @include invert-colors();
-        }
-        //fix ie
-        i.tools:before {
-            @include invert-colors(100%);
-            color: $white!important;
-        }
-    }
-}
+
+
 a.button[disabled=disabled],
 button[disabled=disabled],
 input[type=button][disabled=disabled],
@@ -1463,7 +1448,9 @@ article.list-view {
 .toggle-panel {
     background: $primary;
     color: rgba($white, 0.5);
-    right: 58px;
+    right: -35px;
+    @include material-card();
+    border-top-left-radius: 0;
     em {
         color: $white;
         font-size: 12px;
@@ -1544,8 +1531,33 @@ article.list-view {
         height: 55px;
         @include run-transition(all);
     }
-    @include material-card();
 }
+
+.toggle-panel.hide + ul.icons-tabs {
+    right: -35px;
+}
+ul.icons-tabs {
+    top: 2px;
+    right: 265px;
+    @include run-transition(all);
+    li {
+        @include material-card();
+        border-radius: 50% 0 0 50%;
+        border: none;
+        background: $accent;
+        i {
+            @include invert-colors();
+        }
+        //fix ie
+        i.tools:before {
+            @include invert-colors(100%);
+            color: $white!important;
+        }
+    }
+}
+
+
+
 .cell.my-notifications {
     p {
         color: $white;

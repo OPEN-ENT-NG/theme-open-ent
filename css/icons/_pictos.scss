@@ -479,11 +479,12 @@ section.lightbox-window .close-lightbox i{
 i.tools{
 	@include fonticon;
   	display: block;
-  	text-indent: 8px;
+    text-align: center;
+    text-indent: 2px;
 }
 i.tools:before{
   content: '\e855';
-  font-size: 28px;
+  font-size: 23px;
   color: #000;
   //cause invert colors
 }
