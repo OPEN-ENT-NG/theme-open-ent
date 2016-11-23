@@ -4,7 +4,7 @@ i.sharebigfiles-large, i.type.sharebigfiles, i.sharebigfiles{
     @include fonticon;
 }
 i.sharebigfiles-large::before, i.type.sharebigfiles::before, i.sharebigfiles::before{
-  content: "\e8d4";
+  content: "\e8cb";
   color: $purple;
 }
 
@@ -754,7 +754,16 @@ i.scrapbook-large, i.type.scrapbook, i.scrapbook{
 }
 i.scrap-book-large::before, i.type.scrap-book::before, i.scrap-book::before,
 i.scrapbook-large::before, i.type.scrapbook::before, i.scrapbook::before{
-  content: "\e8cb";
+  content: "\e8d4";
+  color: $green;
+}
+
+i.scrap-book-large, i.type.scrap-book, i.scrap-book{
+  @include fonticon;
+}
+
+i.scrap-book-large::before, i.type.scrap-book::before, i.scrap-book::before{
+  content: "\e8d4";
   color: $green;
 }
 
@@ -776,14 +785,6 @@ i.stats-large::after, i.cahier-de-texte-large::after, i.scrap-book-large::after{
     background-repeat: no-repeat;
 }
 
-i.scrap-book-large, i.type.scrap-book, i.scrap-book{
-  @include fonticon;
-}
-
-i.scrap-book-large::before, i.type.scrap-book::before, i.scrap-book::before{
-  content: "\e8cb";
-  color: $green;
-}
 
 
 //// 1D APPS background
