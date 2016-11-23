@@ -1,4 +1,16 @@
 
+// !!!!  PAS de COLOR "$ORANGE" ni "$ACCENT" sur les icones D'APPS  !!!!!!
+// Reservé au HOVER !!!
+// COLORS AVAILABLE :
+
+// $cyan: #4bafd5;
+// $green: #46bfaf;
+// $yellow: #ecbe30;
+// $red: #e13a3a;
+// $pink: #b930a2;
+// $purple: #763294;
+// $indigo: #1a22a2;
+
 /* custom apps icons */
 i.sharebigfiles-large, i.type.sharebigfiles, i.sharebigfiles{
     @include fonticon;
@@ -53,7 +65,7 @@ i.maxicours-large, i.type.maxicours, i.maxicours{
 }
 i.maxicours-large::before, i.type.maxicours::before, i.maxicours::before{
   content: '\e818';
-  color: $orange;
+  color: $pink;
 }
 
 i.scolarite-large, i.type.scolarite, i.scolarite{
@@ -239,7 +251,7 @@ i.unstagepourtous-large, i.type.unstagepourtous, i.unstagepourtous{
 }
 i.unstagepourtous-large::before, i.type.unstagepourtous::before, i.unstagepourtous::before{
   content: '\e88e';
-  color: $orange;
+  color: $pink;
 }
 
 i.bcdi-large, i.type.bcdi, i.bcdi{
@@ -328,7 +340,7 @@ i.sacoche-large, i.type.sacoche, i.sacoche{
 }
 i.sacoche-large::before, i.type.sacoche::before, i.sacoche::before{
   content: '\e899';
-  color: $orange;
+  color: $indigo;
 }
 
 i.planetemetierspicardie-large, i.type.planetemetierspicardie, i.planetemetierspicardie{
@@ -451,7 +463,7 @@ i.picardieregion-large, i.type.picardieregion, i.picardieregion{
 }
 i.picardieregion-large::before, i.type.picardieregion::before, i.picardieregion::before{
   content: '\e8a8';
-  color: $orange;
+  color: $green;
 }
 
 i.lemonde-large, i.type.lemonde, i.lemonde{
@@ -576,7 +588,7 @@ i.archive-large, i.type.archives, i.archive, i.archives{
 }
 i.archive-large::before, i.type.archives::before, i.archives::before, i.type.archive::before, i.archive::before{
   content: "\e81d";
-  color: $orange;
+  color: $yellow;
 }
 
 
@@ -593,7 +605,7 @@ i.blog-large, i.type.blog, i.blog{
 }
 i.blog-large::before, i.type.blog::before, i.blog::before{
   content: "\e809";
-  color: $orange;
+  color: $indigo;
 }
 
 i.mindmap-large, i.type.mindmap, i.mindmap{
@@ -625,7 +637,7 @@ i.my-network-large, i.my-network{
 }
 i.my-network-large::before, i.my-network::before{
   content: '\e82e';
-  color: $orange;
+  color: $indigo;
 }
 
 i.collaborative-wall-large, i.type.collaborativewall, i.collaborative-wall{
@@ -657,7 +669,7 @@ i.rbs-large, i.type.rbs, i.rbs{
 }
 i.rbs-large::before, i.type.rbs::before, i.rbs::before{
   content: '\e80e';
-  color: $orange;
+  color: $pink;
 }
 
 i.timelinegenerator-large, i.type.timelinegenerator, i.timelinegenerator{
