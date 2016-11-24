@@ -49,6 +49,14 @@ i.arrow:before{
   font-size: 20px;
   font-weight: bold;
 }
+i.left-open{
+  @include fonticon;
+  text-align: center;
+}
+i.left-open:before{
+  content: '\e87b';
+  font-size: 16px;
+}
 
 i.history{
   @include fonticon;
@@ -917,7 +925,16 @@ i.system-avatar {
 }
 
 
-//exerciser
+
+
+i.warning:before, i.report:before{
+  content: '\e903';
+  font-size: 18px;
+}
+i.eye-slash:before, i.discard:before{
+  content: '\e904';
+  font-size: 18px;
+}
 
 .eye{
   @include fonticon;

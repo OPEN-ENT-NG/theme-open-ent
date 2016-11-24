@@ -33,3 +33,19 @@
 .chip.selected:hover{
     box-shadow: 2px 2px 1px 0px  $shadow-darker;;
 }
+
+@media screen and (max-width: $fat-mobile){
+    body{
+        .chip{
+            margin: 10px 5px;
+            display: block;
+            line-height: 28px;
+            padding: 0 20px;
+            @include run-transition(all);
+            i{
+                margin-right: 10px;
+                font-size: 14px;
+            }
+        }
+    }
+}
