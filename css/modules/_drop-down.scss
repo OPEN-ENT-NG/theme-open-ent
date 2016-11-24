@@ -1,0 +1,21 @@
+.drop-down-block{
+    margin-left: 5px;
+
+    .drop-down-label{
+        border-bottom: 1px solid $grey;
+        margin-bottom: 15px;
+        label{
+            color: $grey;
+        }
+        i{
+            color: $accent;
+            &:before{
+                font-size: 16px;
+            }
+        }
+    }
+    .drop-down-content{
+        margin: 15px 5px;
+
+    }
+}

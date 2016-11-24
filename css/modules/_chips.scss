@@ -1,0 +1,35 @@
+.chip{
+    background: $solid-grey;
+    box-shadow: 2px 2px 4px 0px $shadow-dark inset;
+
+    margin: 2px 5px;
+    border-radius: 25px;
+    line-height: 25px;
+    display: inline-block;
+    padding: 0 15px;
+    cursor: pointer;
+    @include run-transition(all);
+    i{
+        margin-left: -5px;
+        margin-right: 3px;
+        font-size: 14px;
+        &::before{
+            color: $white!important;
+        }
+
+    }
+    span{
+        font-size: 11px;
+        color: $white;
+    }
+}
+.chip.selected{
+    box-shadow: 2px 2px 1px 0px  $shadow;
+}
+
+.chip:hover{
+    box-shadow: 2px 2px 4px 0px $shadow-darker inset;
+}
+.chip.selected:hover{
+    box-shadow: 2px 2px 1px 0px  $shadow-darker;;
+}

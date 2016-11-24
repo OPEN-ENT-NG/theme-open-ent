@@ -1,10 +1,16 @@
 @import "../css/variables";
 @import "../../entcore-css-lib/css-lib";
 @import "skin";
+
 @import "../css/modules";
-@import "../css/widgets";
-@import "../css/schedule";
-@import "../css/exercizer";
+
+@import "../css/modules/notifications";
+@import "../css/modules/chips";
+@import "../css/modules/drop-down";
+@import "../css/modules/widgets";
+@import "../css/modules/schedule";
+@import "../css/modules/exercizer";
+
 @import "../css/icons";
 @import "../css/mobile";
 @import "../css/specifics";

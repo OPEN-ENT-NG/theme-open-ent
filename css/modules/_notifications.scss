@@ -1,0 +1,130 @@
+.notification {
+    @include material-card();
+    padding: 7px;
+    margin-bottom: 25px;
+    background: $white;
+    article {
+        background: transparent;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        height: auto;
+        .notification-date {
+            right: 35px;
+            top: 8px;
+            em {
+                font-style: normal;
+                color: $grey;
+            }
+        }
+        >.row{
+            display: flex;
+            &:after{
+                width: auto;
+            }
+        }
+        .avatar {
+            align-self: center;
+            width: auto;
+            height: auto;
+            margin: 15px 20px -15px 10px;
+            img {
+                height: 75px;
+                width: 75px;
+                max-width: none;
+                display: block;
+                border-radius: 50%;
+                border: 1px solid $light-grey;
+            }
+        }
+    }
+    .content {
+        padding: 0;
+        padding-right: 30px;
+        margin: 20px 0;
+    }
+
+    i.sticker.app{
+        position: relative;
+        top: -25px;
+        left: 50px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 12px;
+        box-shadow: 1px 1px 0px 0px $shadow-darker;
+        &::before{
+            color: $white!important;
+        }
+    }
+}
+
+.notification div.notification-actions {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: white;
+    transition: width 0.3s;
+}
+
+.notification div.notification-actions:not(.opened) {
+    display: none;
+}
+
+.notification:hover div.notification-actions {
+    display: block;
+    width: 30px;
+}
+
+.notification div.notification-actions>.opener {
+    position: relative;
+    height: 100%;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    display: table;
+    text-align: center;
+    width: 30px;
+    float: left;
+    transition: all 0.25s;
+    color: gray;
+}
+
+.notification div.notification-actions>.opener:hover {
+    background-color: $accent;
+    color: white;
+}
+
+.notification div.notification-actions>.opener>.symbol {
+    font-size: 13px;
+    display: table-cell;
+    vertical-align: middle;
+    transition: transform 0.3s;
+}
+
+.notification div.notification-actions>.actions {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 50px);
+}
+
+.notification div.notification-actions>.actions>.action {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.notification div.notification-actions.opened>.opener>.symbol {
+    transform: rotate(180deg);
+}
+
+.notification div.notification-actions.opened {
+    width: 75%;
+}
