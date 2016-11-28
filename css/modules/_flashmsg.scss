@@ -1,0 +1,20 @@
+﻿.flashmsg{
+    &.red{
+        background: $flash-red;
+    }
+    &.orange{
+        background: $flash-orange;
+    }
+    &.green{
+        background: $flash-green
+    }
+    &.blue{
+        background: $flash-blue;
+    }
+}
+div.flashmsg {
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 5px #444;
+    color: #fff;
+}

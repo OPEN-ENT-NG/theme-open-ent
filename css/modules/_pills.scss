@@ -1,0 +1,7 @@
+﻿.pills{
+    li{
+        &.selected{
+            background: $primary;
+        }
+    }
+}
