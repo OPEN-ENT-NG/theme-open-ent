@@ -1,0 +1,53 @@
+﻿.icons-view.apps {
+    .element {
+        padding: 0;
+        height: 120px;
+        width: 120px;
+        &:hover {
+            background: transparent !important;
+            a {
+                color: $yellow;
+            }
+        }
+        &:hover {
+            i::before,
+            a {
+                color: $accent !important;
+            }
+        }
+        .container {
+            width: 120px;
+            height: 120px;
+            padding: 0;
+            font-size: 75px;
+            line-height: 75px;
+            text-align: center;
+            i::before {
+                @include run-transition(color);
+                font-weight: normal;
+                vertical-align: top;
+            }
+            img {
+                max-width: 70%;
+                max-height: 70%;
+            }
+        }
+        legend {
+            padding: 0 !important;
+            box-sizing: border-box;
+            margin-left: 1px;
+            width: 120px;
+            background: none !important;
+            a {
+                max-width: 120px;
+                vertical-align: middle;
+                text-align: center;
+                padding: 5px;
+                line-height: 22px;
+                box-sizing: border-box;
+                color: $black;
+                font-weight: normal;
+            }
+        }
+    }
+}
