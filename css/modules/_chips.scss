@@ -27,24 +27,48 @@
     box-shadow: 2px 2px 1px 0px  $shadow;
 }
 
-.chip:hover{
+.chip:hover, .chip:active{
     box-shadow: 2px 2px 4px 0px $shadow-darker inset;
 }
 .chip.selected:hover{
-    box-shadow: 2px 2px 1px 0px  $shadow-darker;;
+    box-shadow: 2px 2px 1px 0px  $shadow-darker;
 }
 
-@media screen and (max-width: $fat-mobile){
+.chip.multiselect{
+    background: $accent;
+    text-transform: uppercase;
+    margin-right: 12px;
+    font-weight: bold;
+    word-spacing: 5px;
+    box-shadow: 2px 2px 1px 0px  $shadow;
+    &:active{
+        box-shadow: 2px 2px 4px 0px $shadow-darker inset;
+    }
+}
+
+@media screen and (max-width: $small-mobile){
     body{
         .chip{
-            margin: 10px 5px;
+            margin: 10px auto;
             display: block;
+            width: 75%;
+            max-width: 200px;
             line-height: 28px;
             padding: 0 20px;
             @include run-transition(all);
             i{
                 margin-right: 10px;
                 font-size: 14px;
+            }
+        }
+        .chip.multiselect{
+            margin-right: 5px;
+            display: inline-block;
+            width: auto;
+            &:after{
+                content:" ";
+                display: block;
+                width: 100%;
             }
         }
     }
