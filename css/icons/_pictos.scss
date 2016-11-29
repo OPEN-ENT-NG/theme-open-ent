@@ -30,13 +30,28 @@ i.bell{
   @include fonticon;
   text-align: center;
   color: $white;
-}
-i.bell:before{
-  content: '\E8C9';
   font-size: 20px;
   font-weight: bold;
 }
-
+i.bell:before{
+  content: '\E8C9';
+}
+i.person{
+  @include fonticon;
+  text-align: center;
+  font-size: 16px;
+}
+i.person:before{
+  content: '\e905';
+}
+i.sad-face{
+  @include fonticon;
+  text-align: center;
+  font-size: 16px;
+}
+i.sad-face:before{
+  content: '\e906';
+}
 
 
 i.arrow{
@@ -61,10 +76,10 @@ i.left-open:before{
 i.history{
   @include fonticon;
   text-align: center;
+  font-size: 12px;
 }
 i.history:before{
   content: '\e844';
-  font-size: 12px;
 }
 
 

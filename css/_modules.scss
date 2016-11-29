@@ -387,29 +387,8 @@ nav.horizontal {
     line-height: 40px;
 }
 /* end icones */
-.tabs {
-    text-align: center;
-    >* {
-        text-align: initial;
-    }
-    header {
-        color: $text-light;
-        font-size: 14px;
-        font-weight: bold;
-        text-transform: uppercase;
-        background: transparent;
-        margin-right: 10px;
-        @include run-transition(border-bottom);
-        &:hover {
-            border-bottom: 2px solid lighten($primary, 20%);
-        }
-    }
-    header.selected {
-        border: none;
-        border-bottom: 2px solid $primary;
-        color: $primary;
-    }
-}
+
+
 .lightbox-window,
 .lightbox .content {
     padding: 10px;
@@ -4400,6 +4379,12 @@ input[type="button"] {
     b:first-child{
         color: $primary;
         font-size: 14px;
+    }
+    i{
+        color: $primary;
+        margin-left: 5px;
+        margin-right: 10px;
+        font-weight: normal;
     }
 }
 

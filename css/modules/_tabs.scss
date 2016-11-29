@@ -1,0 +1,81 @@
+.tabs {
+    text-align: center;
+    >* {
+        text-align: initial;
+    }
+    header {
+        color: $text-light;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        background: transparent;
+        margin-right: 10px;
+        @include run-transition(border-bottom);
+        &:hover {
+            border-bottom: 2px solid lighten($primary, 20%);
+        }
+    }
+    header.selected {
+        border: none;
+        border-bottom: 2px solid $primary;
+        color: $primary;
+    }
+}
+
+.tabs.heading-tabs {
+    display: flex;
+    justify-content: flex-start;
+    background: $white;
+    margin-bottom: 30px!important;
+    overflow-x: scroll;
+    @include material-card;
+    >* {
+        text-align: initial;
+    }
+    header {
+        width: 100%;
+        min-width: 170px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        padding: 10px 5px;
+        border-bottom: 2px solid $white;
+        a{
+            vertical-align: middle;
+            i{
+                font-size: 15px;
+                margin-right: 5px;
+                color: $primary;
+                @include run-transition(all);
+            }
+            &:hover i{
+                color: $accent;
+            }
+        }
+    }
+    header.selected{
+        background: $white;
+        border-bottom: 2px solid $accent;
+        a, a i{
+            color: $accent;
+        }
+    }
+}
+@media screen and (max-width: $tablette){
+    .tabs.heading-tabs {
+        header{
+            font-size: 12px;
+        }
+    }
+}
+@media screen and (max-width: $fat-mobile){
+    .tabs.heading-tabs {
+        header{
+            &.selected{
+                order: -1;
+            }
+        }
+    }
+}

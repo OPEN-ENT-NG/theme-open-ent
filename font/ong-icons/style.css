@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'ong-icons';
   src:
-    url('fonts/ong-icons.ttf?4a8rfz') format('truetype'),
-    url('fonts/ong-icons.woff?4a8rfz') format('woff'),
-    url('fonts/ong-icons.svg?4a8rfz#ong-icons') format('svg');
+    url('fonts/ong-icons.ttf?phy37b') format('truetype'),
+    url('fonts/ong-icons.woff?phy37b') format('woff'),
+    url('fonts/ong-icons.svg?phy37b#ong-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,6 +23,21 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.sad:before {
+  content: "\e906";
+}
+.emoticon:before {
+  content: "\e906";
+}
+.smiley:before {
+  content: "\e906";
+}
+.face:before {
+  content: "\e906";
+}
+.person:before {
+  content: "\e905";
+}
 .warning:before {
   content: "\e903";
 }
