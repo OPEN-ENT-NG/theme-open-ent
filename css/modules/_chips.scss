@@ -1,5 +1,5 @@
 .chip{
-    background: $solid-grey;
+    background: $medium-grey;
     box-shadow: 2px 2px 4px 0px $shadow-dark inset;
     @include run-transition(all);
     i{
@@ -13,6 +13,7 @@
 }
 .chip.selected{
     box-shadow: 2px 2px 1px 0px  $shadow;
+    background: $primary;
 }
 
 .chip:hover, .chip:active{

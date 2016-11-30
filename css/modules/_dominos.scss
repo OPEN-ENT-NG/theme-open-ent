@@ -16,6 +16,15 @@
                 color: $primary;
                 div.content {
                     padding: 8px;
+                    i.shared{
+                        right: 8px;
+                        top: 8px;
+                    }
+                    .icons{
+                        position: absolute;
+                        bottom: 8px;
+                        right: 8px;
+                    }
                 }
                 i.send-mail:hover {
                     margin: 7px;

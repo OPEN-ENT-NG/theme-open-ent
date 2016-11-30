@@ -1323,25 +1323,6 @@ textarea:focus {
     }
 }
 
-explorer{
-    .container{
-        transition: background 250ms ease;
-    }
-}
-
-explorer.selected{
-    .container{
-        background-color: $primary-light;
-        border: 1px solid $primary-light;
-        img {
-            opacity: 0.4;
-        }
-        h3, span{
-            color: #fff;
-        }
-    }
-}
-
 .selected .check-tool i {
     background: $primary-dark;
 }
@@ -1910,22 +1891,7 @@ select {
         background-size: 19px;
     }
 }
-.square-menu {
-    button {
-        background: $primary;
-        border-radius: 0;
-        color: $white;
-    }
-    button:hover {
-        background: $primary;
-    }
-}
-.grid-media {
-    border: 1px solid $primary;
-    image-select > div::before {
-        left: 0;
-    }
-}
+
 .drawing-grid {
     strong {
         color: inherit;
