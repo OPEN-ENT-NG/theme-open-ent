@@ -152,10 +152,11 @@ i.support-large::before, i.type.support::before, i.support::before{
   color: $green;
 }
 
-i.userbook-large, i.type.userbook, i.userbook{
+i.userbook-large, i.type.userbook, i.userbook, i.directory-large, i.type.directory, i.directory{
   @include fonticon;
 }
-i.userbook-large::before, i.type.userbook::before, i.userbook::before{
+i.userbook-large::before, i.type.userbook::before, i.userbook::before, 
+i.directory-large::before, i.type.directory::before, i.directory::before{
   content: '\e811';
   color: $green;
 }
