@@ -1,7 +1,8 @@
 .chip{
     background: $solid-grey;
     box-shadow: 2px 2px 4px 0px $shadow-dark inset;
-
+    width: auto;
+    height: auto;
     margin: 2px 5px;
     border-radius: 25px;
     line-height: 25px;
