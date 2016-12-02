@@ -21,8 +21,9 @@ button, input[type=button], a.button, input[type=submit], input[type=search], .d
 }
 
 @import "../css/modules";
-@import "../css/icons";
-@import "../css/mobile";
+@import "../css/modules/modules";
+@import "../css/icons/icons";
+@import "../css/mobile/mobile";
 
 h1{
 	font-size: 24px;
