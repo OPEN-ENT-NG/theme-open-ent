@@ -4375,19 +4375,6 @@ input[type="button"] {
     -webkit-appearance: none;
 }
 
-.tuto{
-    b:first-child{
-        color: $primary;
-        font-size: 14px;
-    }
-    i{
-        color: $primary;
-        margin-left: 5px;
-        margin-right: 10px;
-        font-weight: normal;
-    }
-}
-
 a[disabled] {
     pointer-events: none;
     color: gray;

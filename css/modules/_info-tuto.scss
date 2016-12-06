@@ -1,0 +1,17 @@
+.tuto{
+    opacity: 0;
+    @include run-transition(all);
+    animation: fade-in 350ms forwards;
+    animation-delay: 500ms;
+
+    b:first-child{
+        color: $primary;
+        font-size: 14px;
+    }
+    i{
+        color: $primary;
+        margin-left: 5px;
+        margin-right: 10px;
+        font-weight: normal;
+    }
+}
