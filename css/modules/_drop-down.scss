@@ -1,5 +1,4 @@
 .drop-down-block{
-    margin-left: 5px;
     margin-bottom: 30px;
 
     i.arrow{
@@ -10,14 +9,24 @@
     }
     .drop-down-label, .drop-up-label{
         border-bottom: 1px solid $disable-grey;
+        @include run-transition(all);
         margin-bottom: 25px;
         overflow: hidden;
         & > label{
             color: $grey;
-            font-size: 14px;
+            font-weight: bold;
             margin-right: 5px;
             cursor: pointer;
+            @include run-transition(all);
+
+            &:hover{
+                color: $black;
+            }
         }
+        &:hover {
+            border-bottom: 1px solid $accent;
+        }
+
     }
     .drop-down-label{
         i.arrow{
