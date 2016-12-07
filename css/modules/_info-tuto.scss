@@ -2,7 +2,7 @@
     opacity: 0;
     @include run-transition(all);
     animation: fade-in 350ms forwards;
-    animation-delay: 500ms;
+    animation-delay: 850ms;
 
     b:first-child{
         color: $primary;
