@@ -33,15 +33,23 @@
         text-align: initial;
     }
     header {
-        width: 100%;
+        //width: 100%; tabs centered in whole space
+        width: auto;
         min-width: 170px;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin: 0;
-        padding: 10px 5px;
+        margin: 0 4px;
+        padding: 10px 15px;
         border-bottom: 2px solid $white;
+        @include run-transition(all);
+        &:hover{
+            border-bottom: 2px solid $accent;
+            a, a i{
+                color: $accent;
+            }
+        }
         a{
             vertical-align: middle;
             i{
@@ -49,9 +57,6 @@
                 margin-right: 5px;
                 color: $primary;
                 @include run-transition(all);
-            }
-            &:hover i{
-                color: $accent;
             }
         }
     }
