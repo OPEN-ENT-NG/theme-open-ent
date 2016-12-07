@@ -35,6 +35,7 @@ $primary-lighter: desaturate(lighten($primary-light, 15%), 10%);
 //Accent
 $accent: $orange !default;
 $dark-accent: darken($accent, 15%);
+$warning-color: $red;
 
 //FLASHMSG
 
