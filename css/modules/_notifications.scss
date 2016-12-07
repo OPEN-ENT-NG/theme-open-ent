@@ -1,4 +1,6 @@
 .notification {
+    width: auto;
+    height: auto;
     @include material-card();
     padding: 7px;
     margin-bottom: 25px;
