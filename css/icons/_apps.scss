@@ -684,7 +684,8 @@ i.timeline-large, i.timeline.cas, i.timeline{
   @include fonticon;
 }
 i.timeline-large::before, i.type.timeline::before, i.timeline::before{
-  content: '\e819';
+  content: '\e82b';
+  // home icon
 }
 
 i.note-large, i.type.note, i.note{
