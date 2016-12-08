@@ -515,64 +515,7 @@ nav.vertical.half-stamps {
 .row.rigid-grid > .centered {
     max-width: 800px;
 }
-.dominos {
-    .item {
-        width: 14%;
-        border: 0;
-        padding: 14px;
-        margin: 1px;
-        display: inline-block;
-        float: none;
-        .domino {
-            @include material-card(2px, 3px);
-            border-radius: 3px;
-            border: 0;
-            .bottom {
-                text-align: left;
-                background: white;
-                color: $primary;
-                div.content {
-                    padding: 8px;
-                }
-                i.send-mail:hover {
-                    margin: 7px;
-                }
-            }
-        }
-    }
-}
 
-.dominos.centered-text{
-    .item{
-        padding: 0px;
-        margin: 8px;
-        max-width: 140px;
-        min-width: 100px;
-        .domino{
-            .top{
-                & + span{
-                    color: $white;
-                }
-            }
-            .bottom{
-                margin-top: 0;
-            }
-        }
-    }
-    .mood{
-        top: 5px;
-        i.liquid{
-            font-size: 20px;
-            line-height: normal;
-            &::before{
-                @include text-border ;
-            }
-        }
-    }
-    .bottom-locked{
-        right: 0;
-    }
-}
 
 .green {
     background: $green;
@@ -2607,21 +2550,6 @@ ul.toc {
     }
 }
 
-.dominos.fallen {
-    .item {
-        font-size: 12px;
-        line-height: 21px;
-        min-width: 295px;
-        width: 25%;
-        strong {
-            font-size: 16px;
-        }
-    }
-    .two-lines {
-        max-height: 42px;
-        overflow: hidden;
-    }
-}
 
 .text-container {
     padding: 48px 0 0;
@@ -3531,26 +3459,6 @@ contextual-menu {
     border: none;
     input[type=text] {
         margin: 30px auto;
-    }
-}
-.dominos alphabetical .item {
-    max-width: 230px;
-    width: 20%;
-    .domino {
-        border-radius: 0;
-        padding: 0;
-        img {
-            background-color: $primary;
-        }
-        .bottom {
-            margin: 0;
-            div.content {
-                padding: 0;
-            }
-        }
-    }
-    .domino:hover {
-        box-shadow: 0 2px 6px $shadow-darker;
     }
 }
 
