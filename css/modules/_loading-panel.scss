@@ -1,0 +1,28 @@
+.loading-panel {
+    background: $white;
+    border: 1px solid $accent;
+    img {
+        display: none;
+    }
+    h1 {
+        color: darken($primary-dark, 4%);
+        text-align: center;
+        line-height: 100%;
+        font-size: 2em;
+        border-bottom: 1px solid;
+        height: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        padding-top: 20px;
+        -webkit-animation: blink 3s linear infinite;
+        -moz-animation: blink 3s linear infinite;
+        animation: blink 3s linear infinite;
+    }
+}
+.tabs .loading-panel {
+    border: none;
+    padding: 25px 30px;
+    h1 {
+        padding: 10px;
+    }
+}

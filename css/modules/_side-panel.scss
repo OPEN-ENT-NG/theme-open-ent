@@ -1,0 +1,71 @@
+// prevent overflow on snipplets title and others stuff (pad)
+side-panel + h2 {
+    margin-left: 45px;
+}
+i side-panel {
+    font-family: Roboto;
+}
+side-panel {
+    top: 10px;
+    left: 0;
+    &.hidden {
+        .opener {
+            transform: none;
+            -webkit-transform: none;
+            &:after {
+                content: "";
+                @include triangle-right(15px);
+            }
+        }
+        .opener:hover {
+            &:after {
+                content: "";
+                @include triangle-right(15px, $dark-accent);
+            }
+        }
+    }
+    .toggle {
+        top: -15px;
+        left: -15px;
+        @include material-card(5px, 25px);
+        background: $white;
+
+        nav.vertical h2{
+            margin-top: 0;
+            margin-left: 30px;
+            margin-bottom: 20px;
+            margin: 0 0 20px 30px;
+            font-size: 18px;
+            line-height: 25px;
+        }
+        .content {
+            float: left;
+        }
+    }
+    .opener {
+        position: relative;
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        @include run-transition(none);
+        transform: none;
+        -webkit-transform: none;
+        z-index: 1;
+        line-height: normal;
+        margin-top: 0;
+        color: $accent;
+        &:after {
+            content: "\e866";
+            @include fonticon;
+            font-size: 15px;
+            display: block;
+            margin-top: 2px;
+        }
+    }
+    .opener:hover {
+        color: $dark-accent;
+    }
+}
+side-panel + app-title {
+    margin-left: 25px;
+}

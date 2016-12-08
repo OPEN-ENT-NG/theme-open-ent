@@ -1,0 +1,91 @@
+.toggle-panel {
+    background: $primary;
+    color: rgba($white, 0.5);
+    right: -35px;
+    @include material-card();
+    border-top-left-radius: 0;
+    em {
+        color: $white;
+        font-size: 12px;
+    }
+    h1,
+    h2,
+    h3 {
+        color: $white;
+    }
+    h1 {
+        display: none;
+    }
+    a {
+        color: $white;
+    }
+    ul {
+        li {
+            font-size: 14px;
+        }
+    }
+    .widgets-picker > .row {
+        .inactive {
+            i {
+                @include material-card();
+                background: $solid-grey !important;
+            }
+        }
+        .locked {
+            cursor: initial;
+            i {
+                box-shadow: none;
+                background: transparent !important;
+            }
+        }
+        .cell {
+            text-align: center;
+            line-height: 18px;
+            height: 90px;
+        }
+        i {
+            box-shadow: 0 2px 3px $shadow inset;
+            border-radius: 10px;
+        }
+        .cell:nth-child(6n) {
+            i {
+                background: $green;
+            }
+        }
+        .cell:nth-child(6n + 1) {
+            i {
+                background: $cyan;
+            }
+        }
+        .cell:nth-child(6n + 2) {
+            i {
+                background: $purple;
+            }
+        }
+        .cell:nth-child(6n + 3) {
+            i {
+                background: $pink;
+            }
+        }
+        .cell:nth-child(6n + 4) {
+            i {
+                background: $red;
+            }
+        }
+        .cell:nth-child(6n + 5) {
+            i {
+                background: $yellow;
+            }
+        }
+    }
+    i {
+        display: inline-block;
+        width: 55px;
+        height: 55px;
+        @include run-transition(all);
+    }
+}
+
+.toggle-panel.hide + ul.icons-tabs {
+    right: -35px;
+}

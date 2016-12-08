@@ -1,0 +1,35 @@
+section.lightbox {
+    .accordion ul.illustrated-list {
+        li {
+            margin-bottom: 5px;
+            img.illustration {
+                position: relative;
+            }
+        }
+    }
+}
+
+.lightbox-view .tabs.linker .illustrated-list,
+.lightbox .tabs.linker .illustrated-list {
+    li {
+        @include material-card(1px, 3px);
+        margin-bottom: 4px;
+        height: 42px;
+    }
+    li a {
+        display: block;
+    }
+    li.selected {
+        background: $primary;
+        a {
+            color: $white;
+        }
+    }
+    .name {
+        float: left;
+    }
+    .owner {
+        float: right;
+        margin-right: 8px;
+    }
+}

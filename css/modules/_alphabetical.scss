@@ -1,0 +1,30 @@
+alphabetical {
+    h1.letter-picker {
+        margin: auto auto 15px;
+    }
+    h1.letter-picker + hr.line {
+        padding: 0;
+        border-bottom: 1px solid $primary;
+        margin-bottom: 15px;
+    }
+    .domino {
+        @include run-transition(box-shadow);
+        .bottom {
+            background: transparent;
+        }
+        .bottom a {
+            display: block;
+            position: absolute;
+            height: 100%;
+            h4 {
+                @include run-transition;
+                color: $primary;
+                line-height: 20px;
+                padding: 5px 15px;
+            }
+        }
+        .bottom a:hover h4 {
+            color: $accent;
+        }
+    }
+}

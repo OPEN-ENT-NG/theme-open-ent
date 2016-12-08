@@ -1,0 +1,213 @@
+.panel {
+    background: url(../img/illustrations/logo.png) no-repeat 6px 6px $primary-dark;
+    background-size: 245px;
+    width: 100%;
+    height: 256px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    p.error,
+    p.info,
+    p.warning {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+    }
+    h1 {
+        color: $white;
+        width: 100%;
+        position: relative;
+        margin: 40px auto;
+        font-size: 40px;
+        line-height: 1em;
+        text-align: center;
+    }
+    label {
+        display: block;
+        width: auto;
+        margin-bottom: 5px;
+    }
+    form:not(.nostyle) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 600px;
+        background: $white;
+        border-radius: 3px;
+        padding: 30px;
+        box-sizing: border-box;
+        @include material-card(5px, 18px);
+    }
+    .content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 800px;
+        background: $white;
+        border-radius: 3px;
+        padding: 30px;
+        box-sizing: border-box;
+        @include material-card(5px, 18px);
+    }
+    &.browser-container {
+        > h1 {
+            color: $primary-dark;
+        }
+    }
+    .browser {
+        margin-left: auto;
+        margin-right: auto;
+        width: 600px;
+        background: $white;
+        border-radius: 3px;
+        padding: 10px 30px;
+        box-sizing: border-box;
+        box-shadow: 0 5px 18px $shadow;
+        border-radius: 2px;
+        h1 {
+            color: $primary-dark;
+        }
+        .update {
+            img {
+                height: 50px;
+                width: 50px;
+            }
+        }
+        .download {
+            img {
+                height: 30px;
+                width: 30px;
+            }
+        }
+    }
+    button.flat-button,
+    input[type=submit].flat-button {
+        background: $white;
+    }
+    &.activation {
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            float: none;
+        }
+    }
+    input.ng-invalid.ng-dirty {
+        border-bottom: 2px solid $red;
+    }
+    input[type=checkbox].ng-invalid.ng-dirty {
+        box-shadow: 0 0 10px $red;
+    }
+    .button-bar {
+        margin-top: 30px;
+        padding-top: 20px;
+        > * {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+    input-password {
+        input[type=password],
+        input[type=text] {
+            width: calc(100% - 50px);
+            margin: 0;
+            height: 32px;
+            display: inline-block;
+            float: none;
+        }
+    }
+    input[type=text].large-input {
+        width: 90%;
+        margin: 0;
+        height: 32px;
+        display: inline-block;
+        float: none;
+    }
+    &.activation{
+        form{
+            margin: auto !important;
+        }
+    }
+    &.login, &.activation {
+        .panels-container{
+            overflow: hidden;
+            width: 90%;
+            min-height: 500px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .welcome-text{
+            display: block;
+            max-width: 520px;
+            float: left;
+            background-color: $white;
+            box-shadow: 0 5px 18px $shadow;
+            border-radius: 2px;
+            padding: 30px;
+            box-sizing: border-box;
+
+            h1{
+                margin: 0;
+                margin-bottom: 20px;
+                color: $primary;
+                display: block;
+            }
+            h2{
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 13px;
+            }
+        }
+        form{
+            a {
+                margin-top: 10px;
+                font-size: 22px;
+            }
+        }
+        .welcome-text + form{
+            width: auto;
+            overflow: hidden;
+        }
+        .welcome-text, form{
+            margin: 15px;
+            min-width: 40%;
+            min-height: 345px;
+        }
+
+        input#email {
+            width: 100%;
+            height: 32px;
+            margin-top: 5px;
+            float: none;
+        }
+        input[type=checkbox]#rememberMe {
+            width: 11px;
+        }
+
+    }
+    form.nostyle {
+        overflow: hidden;
+        input {
+            width: auto;
+        }
+    }
+    form.rowstyle {
+        margin-top: 5px;
+        input {
+            height: 35px;
+        }
+        input[type=text],
+        input[type=email],
+        input[type=tel],
+        input[type=password] {
+            width: 80%;
+            float: left;
+        }
+    }
+    form[name=resetForm] p:last-of-type {
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,112 @@
+
+
+.lightbox-window,
+.lightbox .content {
+    padding: 10px;
+    box-shadow: 2px 2px 24px $shadow;
+    background: $lightest-grey;
+    h2,
+    h2:first-child {
+        font-size: 20px;
+        font-weight: normal;
+        margin-bottom: 10px;
+    }
+    nav.vertical {
+        margin-right: 0;
+        li {
+            padding-left: 10px;
+        }
+        ul:first-child > li,
+        div ul:first-child > li {
+            padding-left: 0;
+        }
+    }
+    .tabs {
+        margin-top: 10px;
+        section {
+            padding: 15px 20px;
+            border: none;
+            border-top: 1px solid $middle-grey;
+            background: $white;
+        }
+        header.selected {
+            background: transparent;
+        }
+    }
+}
+
+
+.lightbox-opened{
+    header.main{
+        &::after{
+            background: rgba(0,0,0,0.6);
+            pointer-events: all;
+        }
+    }
+}
+
+.lightbox form#changePassword {
+    label {
+        display: block;
+    }
+}
+
+
+section.lightbox-window {
+    form#upload-form {
+        h3 {
+            width: auto;
+            float: none;
+        }
+        .hidden-content {
+            float: left;
+        }
+        button,
+        .right-magnet input {
+            margin-bottom: 5px;
+        }
+    }
+}
+.lightbox-window .datepicker,
+.lightbox-view .datepicker,
+.lightbox .datepicker {
+    z-index: 1100;
+}
+.lightbox-view {
+    @include lightbox-window;
+}
+.lightbox-background {
+    @include lightbox-backdrop;
+}
+.media section.lightbox {
+    cursor: default;
+}
+
+
+.lightbox form {
+    .fill-bar {
+        margin-top: 12px;
+    }
+    p.input-errors {
+        margin-bottom: 30px;
+    }
+}
+
+
+.lightbox-view .linker .found-resources,
+.lightbox .linker .found-resources {
+    height: 200px;
+}
+
+//changePassword lightbox
+section.lightbox > .background + div.content > .twelve.cell {
+    > .twelve.cell {
+        float: none;
+    }
+}
+.lightbox form#changePassword {
+    height: auto;
+    > .twelve.cell.fluid {
+        height: auto;
+    }
+}
