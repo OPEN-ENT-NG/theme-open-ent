@@ -683,9 +683,14 @@ i.timelinegenerator-large::before, i.type.timelinegenerator::before, i.timelineg
 i.timeline-large, i.timeline.cas, i.timeline{
   @include fonticon;
 }
-i.timeline-large::before, i.type.timeline::before, i.timeline::before{
+i.timeline-large::before, i.timeline::before{
   content: '\e82b';
   // home icon
+}
+
+i.sticker.app.type.timeline::before, i.type.timeline::before{
+  content: '\e854';
+  // cog icon notif & filter
 }
 
 i.note-large, i.type.note, i.note{
