@@ -76,7 +76,8 @@
     right: 0;
     height: 100%;
     background-color: white;
-    transition: width 0.3s;
+    @include run-transition(width, 0.3s);
+
 
     .report a[disabled]{
         color: $warning-color;
@@ -101,8 +102,9 @@
     text-align: center;
     width: 30px;
     float: left;
-    @include run-transition(all);
+    background-color: $white;
     color: $accent;
+    @include run-transition(all, 0.4s);
 }
 
 .notification div.notification-actions>.opener:hover {
@@ -114,7 +116,6 @@
     font-size: 13px;
     display: table-cell;
     vertical-align: middle;
-    @include run-transition(all);
 }
 
 .notification div.notification-actions>.actions {
@@ -138,7 +139,18 @@
     transform: rotate(180deg);
 }
 
+
 .notification div.notification-actions.opened {
-    width: 75%;
-    max-width: 430px;
+    width: 55%;
+}
+
+@media screen and (max-width: $wide-screen){
+    .notification div.notification-actions.opened {
+        width: 70%;
+    }
+}
+@media screen and (max-width: $small-mobile){
+    .notification div.notification-actions.opened {
+        width: 80%;
+    }
 }
