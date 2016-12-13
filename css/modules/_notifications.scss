@@ -104,7 +104,7 @@
     float: left;
     background-color: $white;
     color: $accent;
-    @include run-transition(all, 0.4s);
+    @include run-transition(all);
 }
 
 .notification div.notification-actions>.opener:hover {
