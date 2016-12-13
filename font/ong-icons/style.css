@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'ong-icons';
   src:
-    url('fonts/ong-icons.ttf?phy37b') format('truetype'),
-    url('fonts/ong-icons.woff?phy37b') format('woff'),
-    url('fonts/ong-icons.svg?phy37b#ong-icons') format('svg');
+    url('fonts/ong-icons.ttf?978n2g') format('truetype'),
+    url('fonts/ong-icons.woff?978n2g') format('woff'),
+    url('fonts/ong-icons.svg?978n2g#ong-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,35 +23,17 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.sad:before {
-  content: "\e906";
+.dots-three-vertical:before {
+  content: "\e907";
 }
-.emoticon:before {
-  content: "\e906";
+.file:before {
+  content: "\e908";
 }
-.smiley:before {
-  content: "\e906";
+.new:before {
+  content: "\e908";
 }
-.face:before {
-  content: "\e906";
-}
-.person:before {
-  content: "\e905";
-}
-.warning:before {
-  content: "\e903";
-}
-.grades:before {
-  content: "\e614";
-}
-.timer-off:before {
-  content: "\e426";
-}
-.trending-up:before {
-  content: "\e8e5";
-}
-.eye-slash:before {
-  content: "\e904";
+.add:before {
+  content: "\e908";
 }
 .logbook:before {
   content: "\e902";
@@ -703,5 +685,50 @@ i {
 }
 .comment-empty:before {
   content: "\f0e5";
+}
+.person:before {
+  content: "\e905";
+}
+.warning:before {
+  content: "\e903";
+}
+.grades:before {
+  content: "\e614";
+}
+.timer-off:before {
+  content: "\e426";
+}
+.trending-up:before {
+  content: "\e8e5";
+}
+.public:before {
+  content: "\e90c";
+}
+.text_fields:before {
+  content: "\e909";
+}
+.view_carousel:before {
+  content: "\e90a";
+}
+.grid_on:before {
+  content: "\e90b";
+}
+.sad:before {
+  content: "\e906";
+}
+.emoticon:before {
+  content: "\e906";
+}
+.smiley:before {
+  content: "\e906";
+}
+.face:before {
+  content: "\e906";
+}
+.eye-blocked:before {
+  content: "\e9d1";
+}
+.eye-slash:before {
+  content: "\e904";
 }
 
