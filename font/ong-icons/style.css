@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'ong-icons';
   src:
-    url('fonts/ong-icons.ttf?978n2g') format('truetype'),
-    url('fonts/ong-icons.woff?978n2g') format('woff'),
-    url('fonts/ong-icons.svg?978n2g#ong-icons') format('svg');
+    url('fonts/ong-icons.ttf?3kzljn') format('truetype'),
+    url('fonts/ong-icons.woff?3kzljn') format('woff'),
+    url('fonts/ong-icons.svg?3kzljn#ong-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,18 +23,6 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.dots-three-vertical:before {
-  content: "\e907";
-}
-.file:before {
-  content: "\e908";
-}
-.new:before {
-  content: "\e908";
-}
-.add:before {
-  content: "\e908";
-}
 .logbook:before {
   content: "\e902";
 }
@@ -686,6 +674,15 @@ i {
 .comment-empty:before {
   content: "\f0e5";
 }
+.file:before {
+  content: "\e908";
+}
+.new:before {
+  content: "\e908";
+}
+.add:before {
+  content: "\e908";
+}
 .person:before {
   content: "\e905";
 }
@@ -713,6 +710,9 @@ i {
 .grid_on:before {
   content: "\e90b";
 }
+.dots-three-vertical:before {
+  content: "\e907";
+}
 .sad:before {
   content: "\e906";
 }
@@ -727,6 +727,9 @@ i {
 }
 .eye-blocked:before {
   content: "\e9d1";
+}
+.copy:before {
+  content: "\e92c";
 }
 .eye-slash:before {
   content: "\e904";
