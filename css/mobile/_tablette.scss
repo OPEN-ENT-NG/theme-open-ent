@@ -204,11 +204,6 @@
 		}
 	}
 
-	.notification article .notification-date{
-		right: 10px;
-		top: 8px;
-	}
-
 	h2 + article.rigid-grid .three-mobile + .margin-two{
 		margin-left: 25%;
 		form{
@@ -443,14 +438,6 @@
 
     div.flashmsg {
         margin-right: 60px;
-    }
-
-	.notification div.notification-actions {
-        display: block !important;
-        width: 30px;
-    }
-    .notification div.notification-date {
-        margin-right: 30px;
     }
 
 	image-select{

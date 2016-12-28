@@ -144,9 +144,69 @@
     width: 55%;
 }
 
+
+
+
 @media screen and (max-width: $wide-screen){
-    .notification div.notification-actions.opened {
-        width: 70%;
+    body{
+        .notification div.notification-actions.opened {
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (max-width: $tablette){
+    body{
+        .notification article .notification-date{
+            right: 10px;
+            top: 8px;
+        }
+        
+        .notification div.notification-actions {
+            display: block !important;
+            width: 30px;
+        }
+        .notification div.notification-date {
+            margin-right: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: $fat-mobile){
+    body {
+    	.notification{
+    		min-height: 95px;
+    		.avatar{
+    			width: 50px;
+    			height: 50px;
+    			margin: 10px 10px 20px 5px;
+    			i.system-avatar, img{
+    				width: 50px;
+    				height: 50px;
+    			}
+    		}
+    		.content {
+    			margin: 15px 10px 5px 10px;
+    		}
+    		.notification-date em{
+    			font-size: 10px!important;
+    			line-height: 7px;
+    		}
+    		i.sticker.app{
+    			top: -20px;
+    			left: 30px;
+    			width: 25px;
+    			height: 25px;
+    			line-height: 25px;
+    			font-size: 10px;
+    		}
+    	}
+    	.notification div.notification-actions>.actions>.action {
+    	    margin-left: 15px;
+    		width: auto;
+    	    font-size: 12px;
+    	}
+
     }
 }
 @media screen and (max-width: $small-mobile){
