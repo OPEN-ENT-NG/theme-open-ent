@@ -1,26 +1,13 @@
 .chip{
     background: $solid-grey;
     box-shadow: 2px 2px 4px 0px $shadow-dark inset;
-    width: auto;
-    height: auto;
-    margin: 2px 5px;
-    border-radius: 25px;
-    line-height: 25px;
-    display: inline-block;
-    padding: 0 15px;
-    cursor: pointer;
     @include run-transition(all);
     i{
-        margin-left: -5px;
-        margin-right: 3px;
-        font-size: 14px;
         &::before{
             color: $white!important;
         }
-
     }
     span{
-        font-size: 11px;
         color: $white;
     }
 }
@@ -37,10 +24,6 @@
 
 .chip.multiselect{
     background: $accent;
-    text-transform: uppercase;
-    margin-right: 12px;
-    font-weight: bold;
-    word-spacing: 5px;
     box-shadow: 2px 2px 1px 0px  $shadow;
     &:active{
         box-shadow: 2px 2px 4px 0px $shadow-darker inset;
@@ -50,27 +33,7 @@
 @media screen and (max-width: $small-mobile){
     body{
         .chip{
-            margin: 10px auto;
-            display: block;
-            width: 75%;
-            max-width: 200px;
-            line-height: 28px;
-            padding: 0 20px;
             @include run-transition(all);
-            i{
-                margin-right: 10px;
-                font-size: 14px;
-            }
-        }
-        .chip.multiselect{
-            margin-right: 5px;
-            display: inline-block;
-            width: auto;
-            &:after{
-                content:" ";
-                display: block;
-                width: 100%;
-            }
         }
     }
 }
