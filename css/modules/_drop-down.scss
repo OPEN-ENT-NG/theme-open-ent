@@ -1,22 +1,13 @@
 .drop-down-block{
-    margin-bottom: 30px;
-
     i.arrow{
         color: $accent;
-        &:before{
-            font-size: 14px;
-        }
     }
     .drop-down-label, .drop-up-label{
         border-bottom: 1px solid $disable-grey;
         @include run-transition(all);
-        margin-bottom: 25px;
-        overflow: hidden;
         & > label{
-            color: $grey;
             font-weight: bold;
-            margin-right: 5px;
-            cursor: pointer;
+            color: $grey;
             @include run-transition(all);
 
             &:hover{
@@ -30,44 +21,10 @@
     }
     .drop-down-label{
         i.arrow{
-            transform: rotate(90deg);
-            display: inline-block;
             @include run-transition(all);
         }
-        label{
-            padding-left: 5px;
-        }
         &+.drop-down-info{
-            font-size: 11px;
-            position: absolute;
-            top: 23px;
-            right: 5px;
             color: $disable-grey;
-            font-style: italic;
-        }
-    }
-    .drop-up-label{
-        text-align: right;
-        margin: 25px auto 0;
-        display: none;
-    }
-    .drop-down-content{
-        margin: 15px 5px;
-    }
-}
-.slided{
-    .drop-down-label{
-        i.arrow{
-            transform: rotate(180deg);
-        }
-    }
-}
-
-
-@media screen and (max-width: $small-mobile){
-    body{
-        .drop-down-block .drop-up-label{
-            display: block;
         }
     }
 }
