@@ -23,25 +23,12 @@
 }
 
 .tabs.heading-tabs {
-    display: flex;
-    justify-content: flex-start;
     background: $white;
-    margin-bottom: 30px!important;
-    overflow-x: auto;
     @include material-card;
-    >* {
-        text-align: initial;
-    }
+
     header {
         //width: 100%; tabs centered in whole space
         width: auto;
-        min-width: 170px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin: 0 4px;
-        padding: 10px 15px;
         border-bottom: 2px solid $white;
         @include run-transition(all);
         &:hover{
@@ -51,10 +38,7 @@
             }
         }
         a{
-            vertical-align: middle;
             i{
-                font-size: 15px;
-                margin-right: 5px;
                 color: $primary;
                 @include run-transition(all);
             }
@@ -65,22 +49,6 @@
         border-bottom: 2px solid $accent;
         a, a i{
             color: $accent;
-        }
-    }
-}
-@media screen and (max-width: $tablette){
-    .tabs.heading-tabs {
-        header{
-            font-size: 12px;
-        }
-    }
-}
-@media screen and (max-width: $fat-mobile){
-    .tabs.heading-tabs {
-        header{
-            &.selected{
-                order: -1;
-            }
         }
     }
 }
