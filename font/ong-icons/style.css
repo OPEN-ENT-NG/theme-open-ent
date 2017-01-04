@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'ong-icons';
   src:
-    url('fonts/ong-icons.ttf?qgnelr') format('truetype'),
-    url('fonts/ong-icons.woff?qgnelr') format('woff'),
-    url('fonts/ong-icons.svg?qgnelr#ong-icons') format('svg');
+    url('fonts/ong-icons.ttf?en2pav') format('truetype'),
+    url('fonts/ong-icons.woff?en2pav') format('woff'),
+    url('fonts/ong-icons.svg?en2pav#ong-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,6 +23,21 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.workspace:before {
+  content: "\e90d";
+}
+.workspace-large:before {
+  content: "\e90d";
+}
+.cahier-de-textes:before {
+  content: "\e90e";
+}
+.cahier-de-texte-large:before {
+  content: "\e90e";
+}
+.eye-slash:before {
+  content: "\e904";
+}
 .email:before {
   content: "\e90a";
 }
@@ -713,13 +728,13 @@ i {
 .scrapbook:before {
   content: "\e8d4";
 }
+.scrap-book:before {
+  content: "\e8d4";
+}
 .absence77:before {
   content: "\e900";
 }
 .comment-empty:before {
   content: "\f0e5";
-}
-.eye-slash:before {
-  content: "\e904";
 }
 
