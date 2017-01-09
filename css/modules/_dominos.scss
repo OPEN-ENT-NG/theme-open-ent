@@ -51,6 +51,13 @@
                 @include text-border ;
             }
         }
+        i.liquid.default{
+            font-size: 15px;
+            display: block;
+            &::before{
+                color: $medium-grey ;
+            }
+        }
     }
     .bottom-locked{
         right: 0;

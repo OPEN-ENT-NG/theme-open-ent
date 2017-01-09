@@ -3,12 +3,11 @@
 
 /* default */
 i.default{
-  @include fonticon;
-  font-size: 45px;
+  font-size: 35px;
   line-height: 45px;
 }
 i.default:before{
-  content: '\e870';
+  content: '\e8c0';
   color: $grey;
 }
 
