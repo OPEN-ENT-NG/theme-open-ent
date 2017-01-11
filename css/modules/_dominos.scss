@@ -52,11 +52,12 @@
             }
         }
         i.liquid.default{
-            font-size: 15px;
-            display: block;
-            &::before{
-                color: $medium-grey ;
-            }
+            display: none;
+            // font-size: 15px;
+            // display: block;
+            // &::before{
+            //     color: $medium-grey ;
+            // }
         }
     }
     .bottom-locked{
