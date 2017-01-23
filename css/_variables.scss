@@ -95,13 +95,13 @@ $small-screen: 959px;
 
 /* font family */
 @font-face {
-    font-family: 'ong-icons';
-    src: url(../../entcore-css-lib/font/ong-icons/fonts/ong-icons.woff);
+    font-family: 'generic-icons';
+    src: url(../../entcore-css-lib/font/generic-icons/fonts/generic-icons.woff);
     font-weight: normal;
     font-style: normal;
 }
 @mixin fonticon {
-    font-family: "ong-icons";
+    font-family: "generic-icons";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-image: none;
