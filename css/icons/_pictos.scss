@@ -25,7 +25,12 @@
     }
 }
 
-
+i.star{
+  @include fonticon;  
+}
+i.star:before{
+  content:'\e9d9';
+}
 i.bell{
   @include fonticon;
   text-align: center;
