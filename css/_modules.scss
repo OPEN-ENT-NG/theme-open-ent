@@ -2282,20 +2282,7 @@ container article form {
         }
     }
 }
-article.preview {
-    box-shadow: none;
-    background: transparent;
-    border: 1px solid $light-grey;
-}
-article.preview.expanded {
-    @include material-card();
-    background: $white;
-    border: none;
-}
-article.preview.important {
-    @include material-card(3px, 20px);
-    border: none;
-}
+
 .previews .preview-wrapper {
     //date
     em.metadata {
