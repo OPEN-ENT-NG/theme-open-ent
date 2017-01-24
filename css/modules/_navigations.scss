@@ -1,0 +1,28 @@
+header.main{
+    section nav.horizontal{
+
+        #my-photo{
+            background: $white;
+            display: block;
+            padding: 0;
+            margin: 0;
+            width: 30px;
+            margin-top: 17px;
+            border: 0;
+        }
+    }
+}
+
+@media screen and (max-width: $tablette){
+    body{
+        header.main{
+            section nav.horizontal{
+
+                #my-photo{
+                    width: 25px;
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+}
