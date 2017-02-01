@@ -374,16 +374,17 @@ i.schoolbook-large::before, i.type.schoolbook::before, i.schoolbook::before{
 
 
 //// 1D APPS background
-
-i.stats-large::after, i.cahier-de-texte-large::after, i.scrap-book-large::after, i.schoolbook::after{
-    content: " ";
-    display: block;
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    top: 0;
-    background-image: url(../img/icons/firstdeg.svg);
-    background-position: center;
-    background-size: 22px!important;
-    background-repeat: no-repeat;
+.apps{
+    i.stats-large::after, i.cahier-de-texte-large::after, i.scrap-book-large::after, i.schoolbook::after{
+        content: " ";
+        display: block;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 0;
+        background-image: url(../img/icons/firstdeg.svg);
+        background-position: center;
+        background-size: 22px!important;
+        background-repeat: no-repeat;
+    }
 }
