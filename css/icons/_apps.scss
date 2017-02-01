@@ -361,12 +361,21 @@ i.scrap-book-large::before, i.type.scrap-book::before, i.scrap-book::before{
   color: $green;
 }
 
+i.schoolbook-large, i.type.schoolbook, i.schoolbook{
+  @include fonticon;
+}
+
+i.schoolbook-large::before, i.type.schoolbook::before, i.schoolbook::before{
+  content: "\e91e";
+  color: $green;
+}
+
 
 
 
 //// 1D APPS background
 
-i.stats-large::after, i.cahier-de-texte-large::after, i.scrap-book-large::after{
+i.stats-large::after, i.cahier-de-texte-large::after, i.scrap-book-large::after, i.schoolbook::after{
     content: " ";
     display: block;
     position: absolute;
