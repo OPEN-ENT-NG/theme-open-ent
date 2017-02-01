@@ -2880,21 +2880,16 @@ ul.colored li {
             background: rgba($accent, 0.2);
         }
     }
-    > tbody > tr > td:first-child {
-        .added {
-            background: rgba($red, 0.2);
-        }
-        .removed {
-            visibility: hidden;
-        }
+    .added {
+        background: rgba($green, 0.2);
     }
-    > tbody > tr > td:last-child {
-        .added {
-            background: rgba($green, 0.2);
-        }
-        .removed {
-            visibility: hidden;
-        }
+    .removed {
+        background: rgba($red, 0.2);
+        text-decoration: line-through;
+
+    }
+    .diff {
+        background: rgba($indigo, 0.2);
     }
 }
 slider,
