@@ -3,6 +3,12 @@ dots-menu {
     position: relative;
     z-index: 120;
 
+    &.right{
+        .options{
+            right: auto;
+            left: 20px;
+        }
+    }
     .options {
         width: 0;
         opacity: 0;
