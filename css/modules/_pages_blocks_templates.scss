@@ -1,24 +1,13 @@
+
+
+// styles in toogle-panel
 .block-template {
-    &.title {
-        h1 {
-            display: block;
-            color: $primary;
-            padding: 15px;
-        }
-    }
-    &.image-block {
-        img {
-            margin: 6%;
-            width: 35%;
-            margin-left: 0;
-            margin-top: 4px;
-        }
+
+    //need to be override cause toogle-panel
+    h1{
+        display: block;
+        color: $primary;
+        margin: 0;
     }
 
-    &.title-block {
-        h1{
-            width: 100%;
-            text-align: center;
-        }
-    }
 }

@@ -462,11 +462,15 @@ grid-cell {
         background: #eee;
         color: #666;
         width: 500px;
-        padding: 15px;
+        padding: 35px;
         box-sizing: border-box;
         position: absolute;
         top: 0;
         left: 0;
+        & > div{
+            height: 230px;
+            overflow: hidden;
+        }
     }
 }
 
