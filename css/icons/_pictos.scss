@@ -50,6 +50,19 @@ i.quote-r{
     }
 }
 
+
+i.quote, i.quote-r{
+  @include fonticon;
+  text-align: center;
+  font-size: 16px;
+}
+i.quote:before, i.quote-r:before{
+  content: '\e8c2';
+}
+i.quote-r{
+    transform: rotate(90deg);
+}
+
 i.bell{
   @include fonticon;
   text-align: center;
