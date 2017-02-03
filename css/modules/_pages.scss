@@ -455,7 +455,7 @@ grid-cell {
         z-index: 1;
     }
 
-    .block {
+    .block-template {
         transform: scale(0.5);
         transform-origin: 0 0;
         height: 300px;
@@ -467,15 +467,6 @@ grid-cell {
         position: absolute;
         top: 0;
         left: 0;
-    }
-}
-.block {
-    &.title {
-        h1 {
-            display: block;
-            color: $primary;
-            padding: 15px;
-        }
     }
 }
 
