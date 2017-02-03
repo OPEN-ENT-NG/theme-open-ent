@@ -36,7 +36,8 @@ i.quote:before, i.quote-r:before{
   content: '\e8c2';
 }
 i.quote-r{
-    transform: rotate(90deg);
+    transform: rotate(180deg);
+    display: inline-block;
 }
 
 i.bell{
