@@ -39,6 +39,11 @@ i.quote-r{
     transform: rotate(180deg);
     display: inline-block;
 }
+.quote-block{
+    i.quote, i.quote-r{
+        font-size: 30px;
+    }
+}
 
 i.bell{
   @include fonticon;
