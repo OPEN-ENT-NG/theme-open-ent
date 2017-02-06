@@ -210,16 +210,13 @@ grid-cell .help {
         position: absolute;
         right: 10px;
         top: 10px;
-        background: rgba(200,200,200,0.5);
+        background: rgba(220,220,220,.5);
         border-radius: 15px;
-        height: 34px;
-        padding-top: 10px;
+        height: 35px;
         transition: background 250ms ease;
         width: 20px;
 
         &:hover {
-            background: rgba(220,220,220,.5);
-
             .opener {
                 color: $accent;
             }
@@ -236,7 +233,8 @@ grid-cell .help {
             top: 0;
             left: 0;
             height: 100%;
-            padding-top: 9px;
+            display: flex;
+            align-items: center;
         }
 
         .options {
