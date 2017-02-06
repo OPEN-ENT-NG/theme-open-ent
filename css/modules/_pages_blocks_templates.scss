@@ -16,8 +16,12 @@
 
 .media .drawing-zone{
 
-    .quote-block p {
+    .quote-block i.quote-r + div.block-container{
         padding: 0px 40px;
         margin-top: -15px;
+    }
+
+    img{
+        width: auto;
     }
 }
