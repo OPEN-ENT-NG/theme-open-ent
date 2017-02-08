@@ -211,9 +211,8 @@ grid-cell .help {
 
     dots-menu {
         position: absolute;
-        right: 10px;
-        top: 10px;
-        background: rgba(220,220,220,.5);
+        right: 5px;
+        top: 5px;
         border-radius: 15px;
         height: 35px;
         transition: background 250ms ease;
@@ -222,6 +221,7 @@ grid-cell .help {
         &:hover {
             .opener {
                 color: $accent;
+                cursor: pointer!important;
             }
         }
 
@@ -231,13 +231,14 @@ grid-cell .help {
 
         .opener {
             font-size: 20px;
-            color: #666;
+            color: $darkest-grey;
             position: absolute;
             top: 0;
             left: 0;
             height: 100%;
             display: flex;
             align-items: center;
+            transition: color 250ms ease;
         }
 
         .options {
