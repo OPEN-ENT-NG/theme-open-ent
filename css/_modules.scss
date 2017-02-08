@@ -3378,6 +3378,7 @@ body editor {
     }
     contextual-menu {
         @include material-card();
+        cursor: pointer;
     }
     [contenteditable] {
         article {

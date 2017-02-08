@@ -201,7 +201,7 @@ grid-cell .help {
     background: #f3f3f3;
     opacity: 0;
     transition: opacity 250ms ease;
-    height: 145px;
+    min-height: 145px;
     box-sizing: border-box;
     padding: 17px;
     a{
@@ -253,6 +253,7 @@ grid-cell .help {
 
         .options {
             margin-right: 3px;
+            cursor: pointer!important;
         }
     }
 }
@@ -566,5 +567,11 @@ grid-cell.media .media-container{
 
     img{
         width: auto;
+    }
+}
+.edit grid-cell.media .media-container{
+
+    img{
+        cursor: context-menu;
     }
 }
