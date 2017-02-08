@@ -32,7 +32,7 @@
 }
 
 .edit grid-cell {
-    margin-top: 10px;
+    margin-top: 25px;
     cursor: move;
 
     .color-picker {
@@ -80,9 +80,12 @@
     }
 
     &:hover {
-        border-color: #ccc !important;
-        border-width: 2px !important;
-        border-style: dashed !important;
+        // border-color: $primary !important;
+        // border-width: 2px !important;
+        // border-style: dashed !important;
+
+        box-shadow: 0px 0px 8px 4px $medium-grey;
+        z-index: 1;
     }
 
     &.drag-over:hover {
@@ -200,7 +203,7 @@ grid-cell .help {
 }
 
 .drawing-grid.edit grid-cell {
-    border: 1px solid #e4e4e4;
+    border: 2px solid $light-grey;
 
     image-select > div::before {
         left: 0;
