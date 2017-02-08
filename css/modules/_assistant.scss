@@ -1,0 +1,13 @@
+assistant{
+    lightbox{
+        .content{
+            padding: 30px;
+            border-color: $primary;
+        }
+    }
+    nav.dots{
+        li.dot.active::before{
+            color: $primary;
+        }
+    }
+}
