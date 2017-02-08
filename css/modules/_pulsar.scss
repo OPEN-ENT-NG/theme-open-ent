@@ -1,71 +1,11 @@
-$sizePulsar: 30px;
-$sizeWave: 46px;
-$stroke: 5px;
-
-
-.pulsar {
-    cursor: pointer;
-    width: $sizePulsar;
-    position: relative;
-    z-index: 1;
-}
-.pulsar i {
-    display: block;
-    color: $white;
-    background: $accent;
-    border-radius: 50%;
-    height: $sizePulsar;
-    width: $sizePulsar;
-    text-align: center;
-    line-height: ($sizePulsar - 2);
-    text-indent: -2;
-    font-size: 14px;
-    @include run-transition(all);
-}
-.pulsar:hover i {
-    //transform: scale(1.25);
-}
-.pulse,
-.pulse2 {
-    height: $sizeWave;
-    width: $sizeWave;
-    position: absolute;
-    z-index: -1;
-    top: -($sizeWave/2 - $sizePulsar/2);
-    left: -($sizeWave/2 - $sizePulsar/2);
-
-    //.pulsar:hover &:after {
-    .pulsar &:after {
-        transform: scale(0.1, 0.1);
-        content: "";
-        border-radius: 50%;
-        height: $sizeWave;
-        width: $sizeWave;
-        position: absolute;
-        left: 0;
-        top: 0;
-        box-shadow: 0 0 5px $stroke $primary-light;
-        animation: pulsate 1s ease-out;
-        animation-iteration-count: infinite;
-        opacity: 0.5;
+nav.dots{
+    li.dot.active::before{
+        color: $primary;
     }
 }
-//.pulsar:hover .pulse2:after {
-.pulsar .pulse2:after {
-    animation: pulsate 0.5s ease-out;
-    animation-iteration-count: infinite;
-    animation-delay: 0.5s;
-}
-@keyframes pulsate {
-    0% {
-        transform: scale(0.1, 0.1);
-        opacity: 0.0;
-    }
-    50% {
-        opacity: 1.0;
-    }
-    100% {
-        transform: scale(1.2, 1.2);
-        opacity: 0;
+
+pulsar{
+    .help::before{
+        color: $accent;
     }
 }
