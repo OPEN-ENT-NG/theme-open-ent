@@ -285,6 +285,19 @@ grid-cell .help {
 }
 
 grid-cell {
+    &.ew-resize-over{
+    }
+    &.ns-resize-over{
+    }
+    &.nwse-resize-over{
+    }
+    &.ew-resize{
+    }
+    &.ns-resize{
+    }
+    &.nwse-resize{
+    }
+
     &.height-undefined, &.height-zero {
         min-height: 200px;
         height: auto;
