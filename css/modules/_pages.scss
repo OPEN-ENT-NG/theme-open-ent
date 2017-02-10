@@ -82,15 +82,6 @@
         }
     }
 
-    &:hover {
-        // border-color: $primary !important;
-        // border-width: 2px !important;
-        // border-style: dashed !important;
-
-        box-shadow: 0px 0px 8px 4px $medium-grey;
-        z-index: 1;
-    }
-
     &.drag-over:hover {
         .header {
             height: 0;
@@ -284,18 +275,45 @@ grid-cell .help {
     }
 }
 
+.edit grid-cell:hover{
+    box-shadow: 0px 0px 8px 4px $medium-grey;
+    z-index: 1;
+}
+
 grid-cell {
-    &.ew-resize-over{
+
+    &.dragging {
+        border: 2px dashed $primary!important;
+        box-shadow: 0px 0px 8px 4px $medium-grey;
+        z-index: 1;
     }
-    &.ns-resize-over{
+
+    &.ew-resize-over, &.ew-resize{
+        border-right: 2px dashed $primary!important;
+        box-shadow: none!important;
     }
-    &.nwse-resize-over{
+    &.ns-resize-over, &.ns-resize{
+        border-bottom: 2px dashed $primary!important;
+        box-shadow: none!important;
     }
-    &.ew-resize{
+    &.nwse-resize-over, &.nwse-resize{
+        border-right: 2px dashed $primary!important;
+        border-bottom: 2px dashed $primary!important;
+        box-shadow: none!important;
     }
-    &.ns-resize{
-    }
-    &.nwse-resize{
+
+    &.editor-focus{
+        border: 2px dashed $accent!important;
+        box-shadow: none!important;
+        cursor: default;
+
+        img{
+            outline: 1px dashed $primary;
+            &:hover{
+                outline: 1px dashed $accent;
+            }
+        }
+
     }
 
     &.height-undefined, &.height-zero {
