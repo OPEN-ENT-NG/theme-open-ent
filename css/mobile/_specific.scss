@@ -1,5 +1,6 @@
 
 @media screen and (max-width: $wide-screen){
+
 	//actu createinfo
 	container article form{
 		& > .three.cell{
@@ -9,6 +10,7 @@
 			}
 		}
 	}
+
 	//actu editinfo
 	.previews container[template=infoEdit] article.preview{
 		& > .three.cell{
@@ -19,8 +21,11 @@
 		}
 	}
 
-	//forum
+
 	body{
+
+		//forum
+
 		//reset rules
 		nav.illustrated-links ul ul.secondary-list li > *{
 			display: block;
@@ -161,13 +166,18 @@
 		}//nav
 	}//end forum
 
+
 }//end wide-screen
 
+
 @media screen and (max-width: $small-screen) {
+
     // drop transitions for better perfs
     button, input[type=button], a.button, input[type=submit], .drop-down-button label, .drop-down-button.hidden label{
         transition: none;
     }
+
+
 	//workspace carousel
 	.rigid-grid .margin-four carousel.slide{
 		.image.previous, .image.next{
@@ -193,6 +203,7 @@
 		}
 	}
 
+
 	.centered nav.vertical.half-stamps{
 		article{
 			margin-left: 30px;
@@ -201,4 +212,6 @@
 			left: 110px;
 		}
 	}
+
+	
 }
