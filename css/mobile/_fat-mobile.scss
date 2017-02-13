@@ -13,7 +13,7 @@
 			margin-top: 30px;
 		}
 
-	
+
 	///////
 
 		.previews .preview-wrapper{
@@ -53,6 +53,8 @@
 			}
 
 		}
+
+
 		.icons-view.apps{
 			text-align: center;
 			.element{
@@ -68,11 +70,15 @@
 				left: 75px;
 			}
 		}
+
 		h2 span.warning-text{
 			display: block;
 		}
 
 	}
+////
+
+
 	.account{
 		//mode view > hobbies
 		h1.horizontal-spacing + article{
@@ -93,6 +99,7 @@
 		}
 	}// end account
 
+
 	//forum
 	body{
 		nav.illustrated-links ul li{
@@ -105,6 +112,7 @@
 		}
 
 	}//end forum
+
 
 
 	//responsive-table
@@ -145,5 +153,7 @@
 			}
 		}
 	}
+
+	
 
 }
