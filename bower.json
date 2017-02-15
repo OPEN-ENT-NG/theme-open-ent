@@ -16,8 +16,5 @@
     "bower_components",
     "test",
     "tests"
-  ],
-  "dependencies": {
-    "entcore-css-lib": "git://github.com/entcore/css-lib.git#1.8.2"
-  }
+  ]
 }
