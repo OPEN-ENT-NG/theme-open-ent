@@ -38,7 +38,7 @@ body.evaluations {
   }
 
   table thead tr, ul.list-view thead tr {
-    color: #fff !important;
+    color: $white !important;
   }
 
   @media screen and (min-device-width:$tablette ) {
@@ -160,12 +160,13 @@ body.evaluations {
     color: $green;
     font-weight: bold;
   }
+
   .display-check{
     height: 24px;
     text-align: center;
   }
   .statClasse {
-    box-shadow: 0 0 1px 0 grey;
+    @include box-shadow(0 0 1px 0 grey);
     tbody{
       tr{
         &:nth-child(2n){
@@ -178,7 +179,7 @@ body.evaluations {
     }
   }
   .tableReleve {
-    box-shadow: 0 0 1px 0 grey;
+    @include box-shadow(0 0 1px 0 grey);
     tbody{
       tr{
         &:nth-child(2n){
@@ -195,6 +196,7 @@ body.evaluations {
       }
     }
   }
+
   .ligneReleve{
     &.visible{
       &:nth-child(2n){
@@ -221,9 +223,10 @@ body.evaluations {
     padding: 0;
     margin: 0 auto;
   }
+
   input[type=text]{
     &.input-note, &.input-appreciation{
-      border-bottom: 1px solid rgb(75, 175, 213) !important;
+      border-bottom: 1px solid $primary !important;
       margin-bottom: 0 !important;
       padding: 0;
       &:focus {
@@ -231,6 +234,7 @@ body.evaluations {
       }
     }
   }
+
   .input-moyenne{
     font-weight: bold;
     width: 60%;
@@ -251,6 +255,7 @@ body.evaluations {
   .paddingHeight {
     padding: 8px;
   }
+
   .expandable{
     &:nth-child(2n){
       background-color: rgba(0,0,0,0.05);
@@ -301,6 +306,7 @@ body.evaluations {
       height:1em;
     }
   }
+
   .row{
     input:not(input[type="button"]){
       height: 20px !important;
@@ -321,9 +327,11 @@ body.evaluations {
       }
     }
   }
+
   .indent-five{
     text-indent: 5px;
   }
+
   .indent-fifteen{
     text-indent: 15px;
   }
@@ -373,6 +381,7 @@ body.evaluations {
       }
     }
   }
+
   @media screen and (max-width: $tablette) {
     .expandable-liste{
       .expandable-content{
@@ -409,7 +418,7 @@ body.evaluations {
         margin:0;
 
         &.card {
-          box-shadow: none;
+          @include box-shadow(none);
         }
       }
     }
@@ -426,11 +435,10 @@ body.evaluations {
     .microbox-content .microbox-material {
       padding-bottom: 5px;
     }
-
-
   }
+
   .openedEleve {
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
+    @include box-shadow(0 0 5px 0 rgba(0,0,0,0.35));
     padding: 10px;
     z-index: 1;
     transform: scaleY(1.005);
@@ -484,8 +492,8 @@ body.evaluations {
   }
   .alignCenterVertically {
     display: flex;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
+    justify-content: center;
+    align-items: center;
   }
   .notesDevoir {
     display: inline-flex;
@@ -515,7 +523,7 @@ body.evaluations {
       margin-left: 15px !important;
       margin-bottom: 15px !important;
       &:first-child{
-        margin-left: 0px !important;
+        margin-left: 0 !important;
       }
     }
   }
@@ -527,15 +535,16 @@ body.evaluations {
       height: 205px;
     }
   }
+
   .criteres, .statistiques-devoir, .detail-devoir, .student-info, .devoir-info{
     position: relative;
     .plus-input{
-      right: 5px;
+      right: 15px;
       position: absolute;
       top: 11px;
       &::after{
-        content: "\f067";
-        font-family: 'FontAwesome';
+        content: "\e841";
+        @include fonticon;
         font-size: 15px;
         color: $grey;
         font-weight: 300;
@@ -547,8 +556,14 @@ body.evaluations {
       &:hover::after{
         color: $cyan;
       }
-      &::after{
-        content: "\f068";
+    }
+
+    &.opened {
+      .plus-input{
+        &::after {
+          content: "\e87b";
+          @include fonticon;
+        }
       }
     }
   }
@@ -557,6 +572,7 @@ body.evaluations {
     overflow: hidden;
     @include transition(all 100ms ease-out);
   }
+
   .fiche{
     margin-top: 10px;
     border-radius: 5px;
@@ -592,7 +608,6 @@ body.evaluations {
       margin: 0;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
-      color: #fff;
       text-indent: 7px;
       color: $cyan;
       width: 80%;
@@ -604,6 +619,7 @@ body.evaluations {
       line-height: 24px !important;
     }
   }
+
   h1, h2, h3, h4, h5{
     > span{
       font-style: italic;
@@ -632,13 +648,14 @@ body.evaluations {
       width: 40%;
     }
   }
+
   .close-input{
     right: 18px;
     position: absolute;
     top: 5px;
     &::after{
-      content: '\f00d';
-      font-family: 'FontAwesome';
+      content: '\e866';
+      @include fonticon;
       font-size: 15px;
       color: $grey;
       font-weight: 300;
@@ -651,6 +668,7 @@ body.evaluations {
       color: $cyan;
     }
   }
+
   .header-fixed{
     position: fixed;
     top: 64px;
@@ -687,7 +705,7 @@ body.evaluations {
   .children-list{
     text-align: center;
     .dominos{
-      margin-bottom: 0px !important;
+      margin-bottom: 0 !important;
       text-align: center;
       .item{
         float: none !important;
@@ -707,6 +725,7 @@ body.evaluations {
       }
     }
   }
+
   .print-icon {
     font-size: 1.5em;
     padding: 6px 8px;
@@ -714,11 +733,12 @@ body.evaluations {
     position: relative;
     margin: 5px 0;
     &::before{
-      font-family: "FontAwesome";
-      content : "\f02f";
+      @include fonticon;
+      content : "\e86e";
       margin-right: -10px;
     }
   }
+
   .ul-competences{
     list-style-type: none;
     li{
@@ -728,9 +748,7 @@ body.evaluations {
   .ul-domaines{
     margin-top: 20px;
   }
-  /**
-      DIRECTIVE COLOR COMPETENCE
-  **/
+
   .green{background-color: $green !important;}
   .yellow{background-color: $yellow !important;}
   .orange{background-color: $orange !important;}
@@ -761,23 +779,24 @@ body.evaluations {
     &.opened{
       > .skills-text-overflow{
         &::before{
-          content: "\f0d7";
+          content: "\e841";
+          font-size: 10px;
         }
       }
     }
     > .skills-text-overflow{
       &::before{
-        font-family: "FontAwesome";
-        content: "\f0da";
-        /*left: 0px;*/
-        /*position: absolute;*/
+        @include fonticon;
+        content: "\e823";
         @include transition(all 200ms ease);
         position: absolute;
         left: 10px;
         top: 15px;
+        font-size: 10px;
       }
     }
   }
+
   .competence-color-header{
     display: inline-block;
     padding: 10px 50px 10px 0px;
@@ -796,6 +815,7 @@ body.evaluations {
       right: 65px;
     }
   }
+
   .competence-color, .competence-color-header{
     &:after{
       content : "";
@@ -804,7 +824,7 @@ body.evaluations {
       border-radius: 50%;
       display: inline-block;
       position: absolute;;
-      background-color: #000;
+      background-color: $black;
       right: 20px;
       top: 19px;
       cursor: pointer;
@@ -850,6 +870,7 @@ body.evaluations {
       }
     }
   }
+
   .competence-text-overflow{
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -889,6 +910,7 @@ body.evaluations {
       outline: none;
     }
   }
+
   .competence-color-popup-close{
     position: absolute;
     left: 3px;
@@ -930,6 +952,7 @@ body.evaluations {
       }
     }
   }
+
   .color-list{
     min-width: 200px;
     max-width: 300px;
@@ -977,13 +1000,7 @@ body.evaluations {
     display: block;
     overflow: hidden;
   }
-  /***
-                      DIRECTIVE COLOR SKILLS LIST : cColorSkillsList
-  ***/
 
-  /***
-                      DIRECTIVE SKILLS LIST
-  ***/
   .skills-list{
     width: 90%;
     margin-left: 5%;
@@ -1007,8 +1024,6 @@ body.evaluations {
       }
     }
   }
-
-
   .skills-header{
     cursor: pointer;
     @include transition(all 200ms ease);
@@ -1030,7 +1045,9 @@ body.evaluations {
       @include transition(all 200ms ease);
       > .skills-text-overflow{
         &::before{
-          content: "\f0d7";
+          content: "\e841";
+          @include fonticon;
+          font-size: 10px;
         }
       }
     }
@@ -1045,12 +1062,12 @@ body.evaluations {
     }
     > .skills-text-overflow{
       &::before{
-        font-family: "FontAwesome";
-        content: "\f0da";
+        @include fonticon;
+        content: "\e823";
         left: 0px;
         position: absolute;
         @include transition(all 200ms ease);
-        font-size: larger;
+        font-size: 10px;
       }
     }
   }
@@ -1100,9 +1117,7 @@ body.evaluations {
     display: inline-block;
     position: relative;
   }
-  /**
-          DIRECTIVE SKILLS COLOR PAGE
-  **/
+
   .skills-color-page{
     list-style-type: none;
     float: right;
@@ -1124,12 +1139,12 @@ body.evaluations {
     }
   }
   .grey-skill-page {
-    background-color: $grey!important;
+    background-color: $grey !important;
   }
 
   .skills-color-column {
     list-style-type: none;
-    padding: 0px 0px 0px 9px !important;
+    padding: 0 0 0 9px !important;
     margin: 0;
     li{
       display: inline-block;
@@ -1145,7 +1160,7 @@ body.evaluations {
 
   .compselected {
     transform: scale(1.3);
-    box-shadow: 1px 2px 3px grey;
+    @include box-shadow(1px 2px 3px $grey);
   }
   .skills-eleve-list{
     list-style-type: none;
@@ -1169,9 +1184,9 @@ body.evaluations {
       border-radius: 7px;
       min-width: 280px;
       max-width: 280px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 1px 2px rgba(0,0,0,0.24);
+      @include box-shadow2(0 1px 3px rgba(0,0,0,0.12), 1px 2px rgba(0,0,0,0.24));
       &:hover{
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        @include box-shadow2(0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23));
       }
       .devoir-icons-container {
         background: $white none repeat scroll 0 0 ;
@@ -1192,6 +1207,7 @@ body.evaluations {
       }
     }
   }
+
   .devoir-icons-name{
     font-weight: 300;
     font-size: 20px;
@@ -1301,9 +1317,7 @@ body.evaluations {
     bottom: 20px;
     right: 1%;
   }
-  //.list-devoirs{
-  //    margin-top: 60px;
-  //}
+
   .notes-help{
     .legend {
       > ul{
@@ -1317,10 +1331,9 @@ body.evaluations {
             position: absolute;
             left: -15px;
             &::before{
-              /*content: counter(step-counter)".";*/
               content : " ";
               font-weight: 400;
-              color: #444;
+              color: $grey;
               opacity: 0.8;
               position: absolute;
               left: 0;
@@ -1330,7 +1343,6 @@ body.evaluations {
         }
       }
     }
-
     > .eleven{
       margin-left: 4%;
       > h4{
@@ -1350,7 +1362,6 @@ body.evaluations {
           text-align: right;
           text-align-last: right;
           padding-right: 10px;
-          padding-top: 10px;
           padding-top: 10px;
         }
       }
@@ -1678,7 +1689,7 @@ body.evaluations {
             transition: all 0.2s ease-in-out;
 
             &:hover {
-              box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+              @include box-shadow2(0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23));
             }
             .bottom {
               padding: 0px 10px 85% 10px;
