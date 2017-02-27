@@ -783,6 +783,19 @@ i.dotsx3:before{
     content:"...";
 }
 
+i.dotsx3-h{
+    @include fonticon;
+    &:before{
+        content: '\e913';
+    }
+}
+i.dotsx3-v{
+    @include fonticon;
+    &:before{
+        content: '\e912';
+    }
+}
+
 .menu-items{
     i{
       background: none;
