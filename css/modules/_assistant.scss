@@ -1,13 +1,101 @@
 assistant{
-    lightbox{
-        .content{
-            padding: 30px;
-            border-color: $primary;
-        }
+    .ignore{
+        top: -30px;
+        right: -20px;
+        font-size: 13px;
     }
     nav.dots{
-        li.dot.active::before{
-            color: $primary;
+        li.dot::before{
+            border-color: $medium-grey;
         }
+        li.dot.active::before{
+            background: $accent;
+        }
+        li.dot:hover{
+    		 &::before{
+    			border-color: $primary;
+    		}
+    	}
+        li.dot.active:hover{
+             &::before{
+                border-color: $accent;
+                background: transparent;
+            }
+        }
+    }
+
+    lightbox .content{
+        padding: 50px!important;
+        padding-bottom: 30px!important;
+        box-sizing: border-box;
+        border: 10px solid $primary;
+
+        h1 + p{
+            margin-top: 45px;
+        }
+        h4{
+            margin: 50px 0 20px;
+            text-align: center;
+        }
+
+        p{
+            line-height: 25px;
+        }
+
+
+        .apps{
+
+            @for $i from 2 to 10 {
+
+                .container:nth-child(#{$i}){
+                    animation-delay: $i / 8 + s ;
+                }
+            }
+
+            .container{
+                width: 150px;
+                margin: 0 10px;
+                transform: scale(0);
+                animation-duration: 0.4s;
+                animation-name: bounce-pop-out;
+                animation-fill-mode: forwards;
+            }
+            i{
+                font-size: 65px;
+            }
+            legend{
+                color: $black;
+                margin: 20px auto 0;
+                font-size: 13px;
+            }
+        }
+        iframe{
+            position: absolute;
+            height: 100%;
+        }
+        .ratio-block{
+            width: 100%;
+            padding-bottom: 56%;
+            background:transparent;
+        }
+        .multi-apps{
+            position: relative;
+            height: 100px;
+            width: 125px;
+            i{
+                position: absolute;
+                font-size: 30px;
+                width: 50px;
+                height: 50px;
+                background: $light-grey;
+                border-radius: 6px;
+                line-height: 50px;
+                box-shadow: 0px 0px 6px 2px $shadow;
+                &:before{
+                    color: $grey;
+                }
+            }
+        }
+
     }
 }
