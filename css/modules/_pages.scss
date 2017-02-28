@@ -68,9 +68,9 @@
         margin: 0;
 
         > div > [contenteditable] {
-            margin-top: -8px;
             border-color: transparent !important;
-            min-height: 200px;
+            min-height: 100% !important;
+            padding: 0;
         }
 
         textarea {
