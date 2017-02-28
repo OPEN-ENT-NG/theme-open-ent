@@ -37,7 +37,11 @@
 			<a href="/timeline/timeline"><i class="home"></i></a>
 			<a class="zero-mobile community-button" href="/community" ng-if="me.hasWorkflow('net.atos.entng.community.controllers.CommunityController|view')"><i class="community"></i></a>
 			<popover>
-				<a href="/welcome" popover-opener ng-click="openApps($event)"><i class="apps"></i></a>
+				<a href="/welcome"
+				pulsar="{ index: 1, i18n: 'timeline.pulsar.widgets', position: 'top left'}"
+				popover-opener ng-click="openApps($event)">
+					<i class="apps"></i>
+				</a>
 				<popover-content>
 					<div class="content">
 						<div class="my-apps row">
