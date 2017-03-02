@@ -5,7 +5,10 @@
 		cursor: pointer!important;
 	}
 
+
 	body{
+
+
 		nav.vertical[side-nav].slide{
 			padding-bottom: 70px;
 		}
@@ -43,6 +46,8 @@
 			}
 
 		}
+
+
 		.mobile-nav-opener{
 			@include fonticon;
 			background: none;
@@ -61,7 +66,10 @@
 			}
 		}
 
+
 	}
+//// end body
+
 	.application-title{
 		i.blog, i.wiki{
 			display: inline-block!important;
@@ -80,9 +88,12 @@
 		}
 	}
 
+
 	[subtitle]{
 		background: $primary;
 	}
+
+
 
 	.login.panel{
 		box-sizing: border-box;
@@ -105,6 +116,7 @@
             float: none;
         }
 	}
+
 	.panel{
 		h1{
 			margin: 20px auto;
@@ -122,6 +134,8 @@
 			}
 		}
 	}
+
+
 	.navbar{
 		height: 50px;
 	}
@@ -131,10 +145,6 @@
 	nav.horizontal{
 		right: 0;
 		height: 50px;
-		#my-photo{
-			width: 25px;
-			margin-top: 4px;
-		}
 		> a, > popover a{
 			font-size: 14px;
 			margin-left: 2px;
@@ -162,6 +172,8 @@
 			font-size: 25px;
 		}
 	}
+
+
 	nav.vertical.half-stamps{
 		& > div{
 			width: 520px;
@@ -183,10 +195,14 @@
 			z-index: 2;
 		}
 	}
+
+
 	.previews{
 		width: 95%;
 		margin: auto;
 	}
+
+
 	body{
 		font-size: 14px;
 		.material section.main{
@@ -195,6 +211,8 @@
 			top: 52px;
 		}
 	}
+
+
 	.forgot.panel{
 		h1{
 			width: 100%;
@@ -203,6 +221,7 @@
 		    margin-top: 35px;
 		}
 	}
+
 
 	h2 + article.rigid-grid .three-mobile + .margin-two{
 		margin-left: 25%;
@@ -213,9 +232,12 @@
 			}
 		}
 	}
+
+
 	.twelve-mobile input[type=search]{
 		margin-top: 15px;
 	}
+
 
 	article form .rigid-grid > .margin-two{
 		margin-left: 25%;
@@ -269,11 +291,12 @@
 	}
 
 
-	//home filters
 
+	//home filters
 	.widgets-friend app-title ~ .twelve.cell {
 		margin-top: 15px;
 	}
+
 
 	.toggle-panel{
 		right: -15px;
@@ -282,17 +305,22 @@
 	.toggle-panel.hide+ul.icons-tabs {
 		right: -15px;
 	}
+
 	ul.icons-tabs{
 		top: 0;
 	    right: 285px;
 	}
+
+
 	.microbox-material .filters-icons li{
 		margin: 2px;
 	}
 
+
 	.bookmarked-apps{
 		display: none;
 	}
+
 
 	.account{
 		.avatar + h2{
@@ -321,11 +349,13 @@
 
 
 	}
+
 	.side-panel-right{
 	    position: absolute;
 	    top: 0;
 	    background: $background;
 	}
+
 
 //mailbox
 	article.list-view.mailbox{
@@ -346,6 +376,8 @@
 			}
 		}
 	}
+
+
 
 	//forum
 	body{
@@ -388,6 +420,9 @@
     		display: block;
 		}
 	}
+///end forum
+
+
 
 	.microbox-wrapper{
 		background: rgba($white, 0.6);
@@ -408,12 +443,15 @@
 		}
 	}
 
+
+
 	//specific notfs extern
 	.my-notifications{
 		input[type="email"]{
 			width: 60%;
 		}
 	}
+
 
 	//for lightbox medialib in side nav
 	body nav.vertical[side-nav] .lightbox{
@@ -428,6 +466,7 @@
 		}
 	}
 
+
 	body{
 		.lightbox-window .tabs, .lightbox .content .tabs{
 			header{
@@ -436,9 +475,11 @@
 		}
 	}
 
+
     div.flashmsg {
         margin-right: 60px;
     }
+
 
 	image-select{
 	    & > div > img{
@@ -446,5 +487,6 @@
 	    }
 
 	}
+	
 // end tablettes
 }

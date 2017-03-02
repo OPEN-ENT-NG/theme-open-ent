@@ -1,0 +1,63 @@
+dots-menu {
+    display: inline-block;
+    position: relative;
+    z-index: 120;
+
+    &.right{
+        .options{
+            right: auto;
+            left: 20px;
+        }
+    }
+    .options {
+        width: 0;
+        opacity: 0;
+        transition: all 250ms ease;
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+        overflow: hidden;
+        position: absolute;
+        right: 20px;
+        top: -3px;
+        background: $primary;
+        border-radius: 2px;
+
+        opt {
+            border-bottom: 1px solid #4fb9e2;
+            color: #fff;
+            width: 250px;
+            padding: 5px;
+            padding-left: 15px;
+            display: block;
+            transition: background 250ms ease;
+            background: transparent;
+            cursor: pointer;
+
+            &:hover {
+                background: $accent;
+                color: #fff;
+            }
+        }
+    }
+
+    &.opened {
+        .options {
+            width: 250px;
+            opacity: 1;
+        }
+
+        .opener, .opener:hover {
+            color: $accent;
+        }
+    }
+
+    .opener {
+        transition: color 250ms ease;
+        cursor: pointer;
+        @include fonticon;
+        font-size: 20px;
+
+        &::before {
+            content: '\e912';
+        }
+    }
+}

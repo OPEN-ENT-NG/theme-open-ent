@@ -293,7 +293,7 @@ input[type=email] {
     margin-bottom: 15px;
 }
 .logo {
-    background: url(../img/illustrations/logo.png) center no-repeat;
+    background: url(../../img/illustrations/logo.png) center no-repeat;
     height: $header-height;
     width: 236px;
     margin: 0;
@@ -1323,25 +1323,6 @@ textarea:focus {
     }
 }
 
-explorer{
-    .container{
-        transition: background 250ms ease;
-    }
-}
-
-explorer.selected{
-    .container{
-        background-color: $primary-light;
-        border: 1px solid $primary-light;
-        img {
-            opacity: 0.4;
-        }
-        h3, span{
-            color: #fff;
-        }
-    }
-}
-
 .selected .check-tool i {
     background: $primary-dark;
 }
@@ -1910,22 +1891,7 @@ select {
         background-size: 19px;
     }
 }
-.square-menu {
-    button {
-        background: $primary;
-        border-radius: 0;
-        color: $white;
-    }
-    button:hover {
-        background: $primary;
-    }
-}
-.grid-media {
-    border: 1px solid $primary;
-    image-select > div::before {
-        left: 0;
-    }
-}
+
 .drawing-grid {
     strong {
         color: inherit;
@@ -3220,27 +3186,7 @@ plus {
     }
 }
 
-.card {
-    background: $white;
-    @include material-card();
-    font-size: 14px;
-    h3 {
-        font-size: 18px;
-        line-height: 23px;
-    }
-    span.row {
-        height: 22px;
-        display: inline-block;
-        overflow: hidden;
-    }
-    .reduce-block-eight {
-        margin: 13px auto 0;
-        padding: 0;
-        em {
-            color: $grey;
-        }
-    }
-}
+
 .block-editor {
     div[drawing-zone] {
         height: auto;
@@ -3350,10 +3296,8 @@ nav.vertical {
         right: auto;
     }
 }
-.cards-list .card .illustration input[type=checkbox] {
-    left: 5px;
-    top: 5px;
-}
+
+
 select-list {
     .options {
         @include material-card();
@@ -3394,6 +3338,7 @@ body editor {
     }
     contextual-menu {
         @include material-card();
+        cursor: pointer;
     }
     [contenteditable] {
         article {
