@@ -38,7 +38,7 @@
 			<a class="zero-mobile community-button" href="/community" ng-if="me.hasWorkflow('net.atos.entng.community.controllers.CommunityController|view')"><i class="community"></i></a>
 			<popover>
 				<a href="/welcome"
-				pulsar="{ index: 1, i18n: 'timeline.pulsar.widgets', position: 'top left'}"
+				pulsar="{ index: 1, i18n: 'timeline.pulsar.apps', position: 'bottom center'}"
 				popover-opener ng-click="openApps($event)">
 					<i class="apps"></i>
 				</a>
@@ -65,7 +65,10 @@
 				<i class="mail"><span class="new-mails" ng-if="nbNewMessages">[[nbNewMessages]]</span></i>
 			</a>
 			<popover class="searchengine" ng-if="me.hasWorkflow('fr.openent.searchengine.controllers.SearchEngineController|view')">
-				<a href="/searchengine" popover-opener ng-click="openApps($event)"><i class="searchengine"></i></a>
+				<a href="/searchengine" popover-opener ng-click="openApps($event)"
+					pulsar="{ index: 2, i18n: 'timeline.pulsar.search', position: 'bottom center', workflow: 'org.entcore.workspace.service.WorkspaceService|listFolders'}">
+						<i class="searchengine"></i>
+				</a>
 				<popover-content class="searchPortal" ng-controller="SearchPortal">
 					<div class="content searchContent">
 						<div class="search-text row">
@@ -75,10 +78,13 @@
 					</div>
 				</popover-content>
 			</popover>
-			<a class="zero-mobile">
+			<a class="zero-mobile" pulsar="{ index: 3, i18n: 'timeline.pulsar.help', position: 'bottom center', workflow: 'org.entcore.workspace.service.WorkspaceService|listFolders'}">
 				<i18n>help.icon</i18n>
 			</a>
-			<a href="/userbook/mon-compte"><img data-ng-src="[[avatar ? avatar+'?thumbnail=48x48' : '']]" id="my-photo" /></a>
+			<a href="/userbook/mon-compte"
+				pulsar="{ index: 4, i18n: 'timeline.pulsar.account', position: 'bottom center'}">
+					<img data-ng-src="[[avatar ? avatar+'?thumbnail=48x48' : '']]" id="my-photo" />
+			</a>
 			<a logout><i class="disconnect"></i></a>
 		</nav>
 	</section>
