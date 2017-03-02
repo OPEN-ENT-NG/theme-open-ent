@@ -58,3 +58,12 @@ nav.subnavbar{
 		}	
 	}
 }
+
+#info-side-nav {
+	li.selected {
+		a {
+			color: $accent;
+			font-weight: bold;
+		}
+	}
+}
