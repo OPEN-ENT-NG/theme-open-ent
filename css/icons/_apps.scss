@@ -100,7 +100,7 @@ i.exercizer-large::before, i.type.exercizer::before, i.exercizer::before{
 /* ico image not font */
 
 i.faqsciences-large, i.type.faqsciences, i.faqsciences{
-    background-image: url(../img/illustrations/faqscience.svg);
+    background-image: url(../../img/illustrations/faqscience.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -155,7 +155,7 @@ i.support-large::before, i.type.support::before, i.support::before{
 i.userbook-large, i.type.userbook, i.userbook, i.directory-large, i.type.directory, i.directory{
   @include fonticon;
 }
-i.userbook-large::before, i.type.userbook::before, i.userbook::before, 
+i.userbook-large::before, i.type.userbook::before, i.userbook::before,
 i.directory-large::before, i.type.directory::before, i.directory::before{
   content: '\e811';
   color: $green;
@@ -383,7 +383,7 @@ i.schoolbook-large::before, i.type.schoolbook::before, i.schoolbook::before{
         width: 25px;
         height: 25px;
         top: 0;
-        background-image: url(../img/icons/firstdeg.svg);
+        background-image: url(../../img/icons/firstdeg.svg);
         background-position: center;
         background-size: 22px!important;
         background-repeat: no-repeat;
