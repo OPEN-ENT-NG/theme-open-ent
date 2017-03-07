@@ -19,6 +19,8 @@
             }
         }
         .avatar {
+            position: relative;
+
             img, i.system-avatar {
                 height: 75px;
                 width: 75px;
@@ -31,6 +33,8 @@
     }
     i.sticker.app {
         box-shadow: 1px 1px 0 0 $shadow-darker;
+        bottom: -5px;
+        left: 50px;
 
         &::before {
             color: $white!important;

@@ -1,6 +1,9 @@
 @import "apps";
+@import "navigations";
+
 @import "chips";
 @import "drop-down";
+@import "embedder";
 @import "flashmsg";
 @import "notifications";
 @import "pills";
@@ -15,6 +18,7 @@
 @import "illustrated-links";
 @import "illustrated-list";
 @import "lightbox";
+@import "cards";
 @import "dominos";
 @import "alphabetical";
 @import "schedule";
@@ -25,3 +29,7 @@
 @import "widgets";
 @import "exercizer";
 @import "viescolaire/custom";
+@import "pages";
+@import "pages_blocks_templates";
+@import "dots-menu";
+@import "explorer";

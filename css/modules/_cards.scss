@@ -1,0 +1,27 @@
+
+.cards-list .card .illustration input[type=checkbox] {
+    left: 5px;
+    top: 5px;
+}
+
+.card {
+    background: $white;
+    @include material-card();
+    font-size: 14px;
+    h3 {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    span.row {
+        height: 22px;
+        display: inline-block;
+        overflow: hidden;
+    }
+    .reduce-block-eight {
+        margin: 13px auto 0;
+        padding: 0;
+        em {
+            color: $grey;
+        }
+    }
+}

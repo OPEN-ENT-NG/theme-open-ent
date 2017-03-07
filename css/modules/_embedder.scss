@@ -1,0 +1,27 @@
+﻿embedder {
+    textarea:focus{
+        border: none;
+    }
+    .provider {
+        textarea{
+            font-family: Roboto;
+        }
+
+        i.copy.focus {
+            &::before {
+                color: $accent !important;
+            }
+        }
+
+        label {
+            &.focus {
+                color: $accent !important;
+            }
+        }
+
+        textarea:focus {
+            border-bottom: 1px solid;
+            border-bottom-color: $accent !important;
+        }
+    }
+}
