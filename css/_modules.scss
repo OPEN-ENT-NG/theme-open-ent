@@ -1466,22 +1466,6 @@ nav.vertical.floating {
     }
 }
 
-.message {
-    @include message;
-}
-.warning {
-    @include message;
-    background: $light-grey;
-    border-left: 10px solid $pink;
-}
-.info {
-    @include message;
-    //border-left: 10px solid $accent;
-}
-.success {
-    @include message;
-    //border-left: 10px solid $green;
-}
 [data-drop-down] {
     @include material-card(3px, 5px);
     border-top-left-radius: 0;
