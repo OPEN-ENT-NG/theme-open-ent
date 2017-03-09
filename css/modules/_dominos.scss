@@ -5,7 +5,6 @@
         padding: 14px;
         margin: 1px;
         display: inline-block;
-        float: none;
         .domino {
             @include material-card(2px, 3px);
             border-radius: 3px;
@@ -24,6 +23,13 @@
                         position: absolute;
                         bottom: 8px;
                         right: 8px;
+                        .inline{
+                            position: relative;
+                            display: inline-block;
+                            left: 0;
+                            right: 0;
+                            top: 0;
+                        }
                     }
                 }
                 i.send-mail:hover {
