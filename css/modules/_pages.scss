@@ -11,6 +11,7 @@
         margin: 5px;
         transition: all 250ms ease;
         vertical-align: top;
+        cursor: pointer;
 
         > i::before {
             color: #666;
@@ -27,6 +28,15 @@
     }
 }
 
+.flash{
+    background: $accent;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 .grid-editor{
     margin-top: 100px;
@@ -371,6 +381,10 @@ grid-cell {
         box-shadow: none;
         background-color: #eee;
         color: $accent;
+        &:hover{
+            background-color: $accent;
+            color: #fff;
+        }
     }
 }
 
