@@ -30,6 +30,7 @@ explorer.card{
     explorer.item{
         .domino, .content{
             transition: background 250ms ease;
+            cursor: pointer;
         }
         &.folder{
             .content, .domino{
