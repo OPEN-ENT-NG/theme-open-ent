@@ -177,6 +177,8 @@ body grid-cell editor {
 drawing-grid {
     display: block;
     transition: margin 250ms ease;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .toggle .info {
