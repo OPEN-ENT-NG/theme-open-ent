@@ -49,10 +49,12 @@ $header-height: 64px !default;
 //specific breakpoints
 $wide-screen: 1200px;
 $small-screen: 959px;
+
 @mixin material-card($shadow-size: 1px, $blur-size: 3px) {
     box-shadow: 0 $shadow-size $blur-size $shadow;
     border-radius: 2px;
 }
+
 @mixin message {
     color: $text-light;
     text-align: left;
@@ -61,6 +63,7 @@ $small-screen: 959px;
     border-left: 10px solid $primary;
     margin: 5px 0 15px;
 }
+
 @mixin flat-button {
     border: none;
     box-shadow: none;
