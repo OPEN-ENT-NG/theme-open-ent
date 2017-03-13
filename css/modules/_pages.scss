@@ -11,7 +11,7 @@
         margin: 5px;
         transition: all 250ms ease;
         vertical-align: top;
-        cursor: pointer;
+        cursor: move;
 
         > i::before {
             color: #666;
@@ -224,8 +224,8 @@ grid-cell .help {
 
     dots-menu {
         position: absolute;
-        right: 5px;
-        top: 5px;
+        right: 10px;
+        top: 10px;
         border-radius: 15px;
         height: 35px;
         transition: all 250ms ease;
@@ -521,6 +521,7 @@ grid-cell {
     width: 250px;
     overflow: hidden;
     margin-bottom: 15px;
+    cursor: move;
 
     &:hover {
         .block-description {
