@@ -42,7 +42,17 @@
     margin-top: 100px;
 }
 
+.grid-row{
+    transition: all 250ms ease;
+    border: 2px solid transparent;
+}
 
+grid-cell.dragover, .grid-row.dragover {
+    border-color: $accent !important;
+    border-width: 2px !important;
+    border-style: dashed !important;
+    background: #e4e4e4;
+}
 
 .edit grid-cell {
     margin-top: 25px;
@@ -50,12 +60,6 @@
 
     .color-picker {
         display: none;
-    }
-
-    &.dragover {
-        border-color: $accent !important;
-        border-width: 2px !important;
-        border-style: dashed !important;
     }
 
     image-select {
