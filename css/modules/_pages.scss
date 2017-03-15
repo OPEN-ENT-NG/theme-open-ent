@@ -47,11 +47,11 @@
     border: 2px solid transparent;
 }
 
-grid-cell.dragover, .grid-row.dragover {
+.grid-row.dragover {
     border-color: $accent !important;
     border-width: 2px !important;
     border-style: dashed !important;
-    background: #e4e4e4;
+    background: #eee;
 }
 
 .edit grid-cell {
@@ -178,11 +178,29 @@ body grid-cell editor {
     }
 }
 
+.new-row{
+    opacity: 0;
+    height: 15px;
+    width: 100%;
+    background: #ccc;
+    transition: opacity 250ms ease;
+    &.highlight{
+        background: $accent;
+        opacity: 1;
+    }
+}
+
 drawing-grid {
     display: block;
     transition: margin 250ms ease;
     padding-left: 80px;
     padding-right: 80px;
+    height: auto;
+    min-height: 400px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 200px;
 }
 
 .toggle .info {
@@ -224,6 +242,25 @@ grid-cell .help {
 
     image-select > div::before {
         left: 0;
+    }
+
+    i.trash{
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        opacity: 0;
+        transition: opacity 250ms ease;
+        z-index: 10;
+        &:hover{
+            &::before{
+                color: $accent;
+            }
+        }
+        &::before{
+            transition: color 250ms ease;
+            color: #444;
+            font-size: 18px;
+        }
     }
 
     dots-menu {
@@ -300,8 +337,9 @@ grid-cell .help {
     box-shadow: 0px 0px 8px 4px $medium-grey;
     z-index: 1;
     
-    //z-index: 120;
-    // same dots menu  !! pb hover other el whl dots menu open
+    i.trash{
+        opacity: 1;
+    }
 
     dots-menu{
         opacity: 1;
@@ -309,11 +347,12 @@ grid-cell .help {
 }
 
 grid-cell {
-
     &.dragging {
         border: 2px dashed $primary!important;
         box-shadow: 0px 0px 8px 4px $medium-grey;
         z-index: 1;
+        transform: scale(0.8, 0.8);
+        transition: none;
     }
 
     &.ew-resize-over, &.ew-resize{
