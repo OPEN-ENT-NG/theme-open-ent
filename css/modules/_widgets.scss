@@ -357,7 +357,7 @@
             opacity: 0.3;
             overflow: hidden;
             border: 1px solid $medium-grey;
-            @include run-transition(all)
+            @include run-transition(all);
 
             img{
                 width: 55px;
