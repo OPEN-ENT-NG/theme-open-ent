@@ -349,9 +349,7 @@ grid-cell .help {
 grid-cell {
     &.dragging {
         border: 2px dashed $primary!important;
-        box-shadow: 0px 0px 8px 4px $medium-grey;
-        z-index: 1;
-        transform: scale(0.8, 0.8);
+        z-index: 2000;
         transition: none;
     }
 
