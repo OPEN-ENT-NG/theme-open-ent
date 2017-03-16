@@ -6,6 +6,14 @@ body.evaluations {
     }
   }
 
+  @media screen and (max-width:  $small-mobile){
+    .input-moyenne {
+      float:none;
+      font-weight: bold;
+      display: inline-block;
+      text-align : center !important;
+    }
+  }
 
   @media screen and (max-device-width:$fat-mobile) {
     .responsive-table table thead {
