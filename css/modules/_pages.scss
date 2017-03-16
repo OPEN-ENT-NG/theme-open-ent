@@ -55,7 +55,6 @@
 }
 
 .edit grid-cell {
-    margin-top: 25px;
     cursor: move;
 
     .color-picker {
@@ -178,15 +177,23 @@ body grid-cell editor {
     }
 }
 
+.dragging{
+    .new-row{
+        background: #ddd;
+        cursor: pointer;
+    }
+}
+
 .new-row{
-    opacity: 0;
-    height: 15px;
+    height: 25px;
     width: 100%;
-    background: #ccc;
-    transition: opacity 250ms ease;
+    background: transparent;
+    transition: background 250ms ease;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
     &.highlight{
         background: $accent;
-        opacity: 1;
     }
 }
 
@@ -309,6 +316,10 @@ grid-cell .help {
 
 .view grid-cell {
     background: transparent;
+
+    i.trash{
+        display: none;
+    }
 
     &.shadow {
         .media-container {
