@@ -1054,6 +1054,7 @@ ul.icons-tabs {
         background: $accent;
         i {
             @include invert-colors();
+            display: block;
         }
         //fix ie
         i.tools:before {
