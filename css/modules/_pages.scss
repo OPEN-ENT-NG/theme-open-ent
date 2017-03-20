@@ -140,11 +140,11 @@ body grid-cell editor {
         editor-toolbar {
             position: fixed;
             top: 143px;
-            left: 35px;
-            width: calc(100% - 70px);
-            opacity: 0;
+            left: 0;
+            width: 100%;
+            transform: scaleY(0);
             overflow: hidden;
-            transition: opacity 250ms ease;
+            transition: transform 250ms ease;
             border-bottom: 1px solid #ddd;
             box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
             height: 0;
@@ -156,7 +156,7 @@ body grid-cell editor {
 
         &.focus {
             editor-toolbar {
-                opacity: 1;
+                transform: scaleY(1);
                 height: auto;
             }
 
@@ -194,6 +194,29 @@ body grid-cell editor {
     border-radius: 3px;
     &.highlight{
         background: $accent;
+    }
+}
+
+sticky-row{
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 200001;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    &.hide{
+        transform: scaleY(0);
+    }
+    &.floating{
+        position: fixed;
+        background: #eee;
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        padding: 15px;
+        left: 0;
+        width: 100%;
+        button.cancel, .buttons-set button{
+            background: #fff;
+        }
     }
 }
 
