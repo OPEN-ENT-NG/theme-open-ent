@@ -203,7 +203,7 @@ drawing-grid {
     padding-left: 80px;
     padding-right: 80px;
     height: auto;
-    min-height: 400px;
+    min-height: 1000px;
     position: relative;
     width: 100%;
     box-sizing: border-box;
@@ -448,10 +448,25 @@ grid-cell {
 }
 
 .buttons-set {
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
     button {
         box-shadow: none;
         background-color: #eee;
         color: $accent;
+        margin: 0;
+        color: #FF8500;
+        border-right: 1px solid #ccc;
+        border-radius: 0;
+        padding-left: 7px;
+        padding-right: 7px;
+        &:first-child{
+            padding-left: 15px;
+        }
+        &:last-child{
+            padding-right: 15px;
+        }
         &:hover{
             background-color: $accent;
             color: #fff;
