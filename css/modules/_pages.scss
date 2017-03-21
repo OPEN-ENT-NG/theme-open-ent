@@ -197,29 +197,6 @@ body grid-cell editor {
     }
 }
 
-sticky-row{
-    top: 0;
-    left: 0;
-    display: block;
-    z-index: 200001;
-    box-sizing: border-box;
-    transition: all 500ms ease;
-    &.hide{
-        transform: scaleY(0);
-    }
-    &.floating{
-        position: fixed;
-        background: #eee;
-        box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-        padding: 15px;
-        left: 0;
-        width: 100%;
-        button.cancel, .buttons-set button{
-            background: #fff;
-        }
-    }
-}
-
 drawing-grid {
     display: block;
     transition: margin 250ms ease;
@@ -231,6 +208,7 @@ drawing-grid {
     width: 100%;
     box-sizing: border-box;
     padding-bottom: 200px;
+    margin-top: 30px;
 }
 
 .toggle .info {
@@ -470,38 +448,14 @@ grid-cell {
     }
 }
 
-.buttons-set {
-    border-radius: 3px;
-    overflow: hidden;
-    box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-    button {
-        box-shadow: none;
-        background-color: #eee;
-        color: $accent;
-        margin: 0;
-        color: #FF8500;
-        border-right: 1px solid #ccc;
-        border-radius: 0;
-        padding-left: 7px;
-        padding-right: 7px;
-        &:first-child{
-            padding-left: 15px;
-        }
-        &:last-child{
-            padding-right: 15px;
-        }
-        &:hover{
-            background-color: $accent;
-            color: #fff;
-        }
-    }
-}
-
 .icons-tabs.pages-editor-panel {
     position: fixed;
     top: 80px;
     z-index: 30;
     right: 300px;
+    i.tools::before{
+        content: '\e87b';
+    }
 }
 
 .toggle-panel.hide + ul.icons-tabs.pages-editor-panel{
@@ -513,7 +467,7 @@ grid-cell {
     top: 80px;
     right: 0;
     z-index: 300;
-    height: 88%;
+    height: calc(100% - 85px);
     overflow-y: auto;
 
     .toggle{

@@ -1,0 +1,25 @@
+sticky-row{
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 200001;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    button{
+        margin-bottom: 0;
+    }
+    &.hide{
+        transform: scaleY(0);
+    }
+    &.floating{
+        position: fixed;
+        background: #fff;
+        box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        padding: 15px;
+        left: 0;
+        width: 100%;
+    }
+    .button-info{
+        line-height: 36px;
+    }
+}
