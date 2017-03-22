@@ -339,7 +339,7 @@ i.cahier-de-texte-large::before, i.type.cahier-de-texte::before, i.cahier-de-tex
 i.type.homeworks{
   @include fonticon;
 }
-i.type.homeworks::before, i.homeworks::before, {
+i.type.homeworks::before, i.homeworks::before {
   content: '\e86f';
 }
 
@@ -371,7 +371,14 @@ i.schoolbook-large::before, i.type.schoolbook::before, i.schoolbook::before{
   color: $green;
 }
 
+i.competences-large, i.type.competences, i.competences{
+  @include fonticon;
+}
 
+i.competences-large::before, i.type.competences::before, i.competences::before{
+  content: "\e927";
+  color: $red;
+}
 
 
 //// 1D APPS background
