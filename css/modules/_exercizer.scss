@@ -366,6 +366,17 @@ body.exercizer{
         min-height: 23px;
     }
 
+    .dominos.fallen{
+    	.item{
+            .domino{
+                .bottom{
+    				.title-icon i{
+    					color: $black;
+    				}
+                }
+            }
+        }
+    }
 }
 
 
