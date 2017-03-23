@@ -180,19 +180,52 @@ body grid-cell editor {
     .new-row{
         background: #ddd;
         cursor: pointer;
+        > div{
+            height: 100%;
+        }
     }
 }
 
 .new-row{
-    height: 25px;
+    height: 30px;
     width: 100%;
     background: transparent;
     transition: background 250ms ease;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 3px;
+    position: relative;
+    > div{
+        transition: transform 250ms ease;
+        height: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: $accent;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .show-default{
+        transform: scaleX(1);
+    }
+    .show-highlight{
+        transform: scaleX(0);
+    }
+
     &.highlight{
         background: $accent;
+        .show-default{
+            transform: scaleX(0);
+        }
+        .show-highlight{
+            transform: scaleX(1);
+            color: #fff;
+        }
     }
 }
 
