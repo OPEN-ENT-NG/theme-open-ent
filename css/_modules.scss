@@ -729,6 +729,7 @@ button.flat-button,
 input[type=submit].flat-button,
 input[type=button].cancel,
 button.cancel,
+a.button.cancel,
 .drop-down-button label,
 .drop-down-button.hidden label {
     @include flat-button;
