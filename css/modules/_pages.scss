@@ -199,8 +199,6 @@ body grid-cell editor {
 drawing-grid {
     display: block;
     transition: margin 250ms ease;
-    padding-left: 80px;
-    padding-right: 80px;
     height: auto;
     min-height: 1000px;
     position: relative;
@@ -208,6 +206,11 @@ drawing-grid {
     box-sizing: border-box;
     padding-bottom: 200px;
     margin-top: 30px;
+}
+
+.drawing-grid.edit{
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .toggle .info {
@@ -314,7 +317,7 @@ grid-cell .help {
     }
 }
 
-.view grid-cell {
+.drawing-grid.view grid-cell {
     background: transparent;
 
     i.trash{
@@ -344,7 +347,7 @@ grid-cell .help {
     }
 }
 
-.edit grid-cell:hover{
+.drawing-grid.edit grid-cell:hover{
     box-shadow: 0px 0px 8px 4px $medium-grey;
     z-index: 1;
     
