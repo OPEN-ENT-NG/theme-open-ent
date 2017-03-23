@@ -77,8 +77,13 @@ h4 {
     color: $grey;
     font-weight: bold;
 }
-.list-view,
-.share {
+
+.list-view, .share{
+    i.sort-desc, i.sort-asc, i.sort{
+        font-size: 14px;
+        padding-left: 5px;
+        color: inherit;
+    }
     .select-file {
         margin-top: 0;
     }
@@ -623,9 +628,6 @@ input[type=submit][disabled=disabled]:hover {
         line-height: 26px;
     }
 }
-.dragging a {
-    pointer-events: none;
-}
 
 .small-text a,
 .small-text em,
@@ -633,6 +635,26 @@ input[type=submit][disabled=disabled]:hover {
 .small-text span {
     font-size: 14px;
 }
+
+.medium-text {
+    font-size: 16px !important;
+    label {
+        font-size: 16px !important;
+        line-height: 28px;
+    }
+}
+.medium-text a,
+.medium-text em,
+.medium-text label,
+.medium-text span {
+    font-size: 16px;
+}
+
+.dragging a {
+    pointer-events: none;
+}
+
+
 .icons-select {
     background: transparent;
     i {
@@ -1579,7 +1601,6 @@ article.selected {
         margin-bottom: 10px;
     }
 }
-
 
 .warning-text {
     color: rgb(245, 103, 103);
