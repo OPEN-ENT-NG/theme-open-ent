@@ -1,18 +1,41 @@
 .message {
     @include message;
+    i{
+        color: inherit;
+    }
+}
+.alert {
+    @include message;
+    background: lighten($red, 40%);
+    border-left: 10px solid $red;
+    i{
+        color: $red!important;
+    }
 }
 .warning {
     @include message;
     background: $light-grey;
     border-left: 10px solid $pink;
+    i{
+        color: $pink;
+    }
 }
 .info {
     @include message;
     //border-left: 10px solid $accent;
+    i{
+        color: inherit;
+    }
 }
 .success {
     @include message;
     //border-left: 10px solid $green;
+    i{
+        color: inherit;
+    }
+}
+.valid-color, .valid-color em, .valid-color i{
+    color: $green!important;
 }
 
 

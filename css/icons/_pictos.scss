@@ -104,6 +104,17 @@ i.sad-face:before{
 }
 
 
+i.sort-asc:before{
+    content: '\e924';
+}
+i.sort-desc:before{
+    content: '\e925';
+}
+i.sort:before{
+    content: '\e926';
+}
+
+
 i.arrow{
   @include fonticon;
   text-align: center;
@@ -133,6 +144,9 @@ i.history:before{
   content: '\e844';
 }
 
+i.check-circle::before{
+    content: "\e916";
+}
 
 /* UI & indication type icons */
 
