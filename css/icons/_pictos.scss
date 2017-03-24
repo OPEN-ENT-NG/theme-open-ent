@@ -251,6 +251,15 @@ i.mail-new:before{
   font-size: 12px;
 }
 
+i.attachment{
+    width: auto;
+    height: auto;
+    @include fonticon;
+    &:before{
+        content: '\e805';
+    }
+}
+
 
 i.help-large, i.help.cas, i.help{
   @include fonticon;

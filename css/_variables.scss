@@ -120,3 +120,17 @@ $small-screen: 959px;
 i{
     @include fonticon;
 }
+
+@mixin droppable {
+    border-color: $medium-grey;
+    border-width: 2px;
+    border-style: dashed;
+    background: $light-grey;
+    &:hover{
+        border-color: $primary;
+    }
+    &.droptarget{
+        border-color: $accent;
+    }
+
+}
