@@ -707,7 +707,15 @@ textarea.inline-editing:focus {
     border-bottom: 2px solid $accent;
     outline: none;
 }
-.label-badge {
+
+.badge {
+    line-height: 16px;
+    background: $accent;
+    color: $white;
+}
+
+
+.label-badge, .label-badge-disabled {
     background: $primary-dark;
     @include material-card();
     @include run-transition(background);
@@ -722,14 +730,19 @@ textarea.inline-editing:focus {
         margin: 5px 5px 5px 10px;
     }
 }
-.badge {
-    line-height: 16px;
-    background: $accent;
-    color: $white;
-}
+
 .label-badge:hover {
     background: $primary;
 }
+.label-badge-disabled{
+    pointer-events: none;
+    background: $disable-grey;
+}
+
+
+
+
+
 //weird chrome hack for background color in prefilled inputs
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px white inset;
