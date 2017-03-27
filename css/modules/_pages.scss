@@ -381,14 +381,8 @@ grid-cell .help {
 }
 
 .drawing-grid.edit grid-cell:hover{
-    box-shadow: 0px 0px 8px 4px $medium-grey;
-    z-index: 1;
-    
-    i.trash{
-        opacity: 1;
-    }
-
-    dots-menu{
+    border-color: rgba($primary, 0.25);
+    i.trash, dots-menu{
         opacity: 1;
     }
 }
@@ -476,7 +470,7 @@ grid-cell {
 .breadcrumbs{
     a::after{
         content: " > ";
-        color: #ccc;
+        color: $medium-grey;
     }
     a:last-child::after{
         content: ""
