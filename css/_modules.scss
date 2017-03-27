@@ -299,10 +299,7 @@ input[type=email] {
     margin: 0;
     background-size: contain;
 }
-/* remove ico next App title ? */
-grid-cell h2 > i:before {
-    display: none;
-}
+
 /* nav horiz menu icons style */
 nav.horizontal {
     height: $header-height;
