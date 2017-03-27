@@ -149,10 +149,10 @@ i.pending-icon-large::before, i.pending-icon::before, table.colored i.pending-ic
 
 
 /* main indication type icons */
-i.searchengine-large, i.searchengine.cas, i.searchengine{
+i.searchengine-large, i.searchengine.cas, i.searchengine, i.search{
   @include fonticon;
 }
-i.searchengine-large::before, i.type.searchengine::before, i.searchengine::before{
+i.searchengine-large::before, i.type.searchengine::before, i.searchengine::before, i.search:before{
   content: '\e8d0';
 }
 
@@ -771,7 +771,7 @@ i.dotsx3-h{
         content: '\e913';
     }
 }
-i.dotsx3-v{
+i.dotsx3-v, dots-menu i.opener{
     @include fonticon;
     &:before{
         content: '\e912';
