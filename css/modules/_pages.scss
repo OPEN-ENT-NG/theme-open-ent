@@ -289,11 +289,12 @@ grid-cell .help {
 
     i.trash{
         position: absolute;
-        top: 15px;
+        top: 1px;
         right: 35px;
         opacity: 0;
         transition: opacity 250ms ease;
         z-index: 10;
+
         &:hover{
             &::before{
                 color: $accent;
@@ -301,15 +302,16 @@ grid-cell .help {
         }
         &::before{
             transition: color 250ms ease;
-            color: #444;
-            font-size: 18px;
+            color: $darkest-grey;
+            font-size: 14px;
+            text-shadow: 0px 0px 5px $white;
         }
     }
 
     dots-menu {
         position: absolute;
-        right: 10px;
-        top: 10px;
+        right: 5px;
+        top: -3px;
         border-radius: 15px;
         height: 35px;
         transition: all 250ms ease;
@@ -332,8 +334,9 @@ grid-cell .help {
         }
 
         .opener {
-            font-size: 20px;
+            font-size: 16px;
             color: $darkest-grey;
+            text-shadow: 0px 0px 5px $white;
             position: absolute;
             top: 0;
             left: 0;
@@ -345,6 +348,7 @@ grid-cell .help {
 
         .options {
             margin-right: 3px;
+            margin-top: 7px;
             cursor: pointer!important;
         }
     }
@@ -381,7 +385,7 @@ grid-cell .help {
 }
 
 .drawing-grid.edit grid-cell:hover{
-    border-color: rgba($primary, 0.25);
+    border-color: rgba($primary, 0.5);
     i.trash, dots-menu{
         opacity: 1;
     }
@@ -482,9 +486,14 @@ grid-cell {
     top: 80px;
     z-index: 30;
     right: 300px;
-    i.tools::before{
-        content: '\e87b';
-    }
+}
+
+.toggle-panel.hide + ul.icons-tabs.pages-editor-panel i{
+    transform: rotate(0deg);
+}
+ul.icons-tabs.pages-editor-panel i{
+    transform: rotate(180deg);
+    text-indent: -5px;
 }
 
 .toggle-panel.hide + ul.icons-tabs.pages-editor-panel{
@@ -511,16 +520,12 @@ grid-cell {
         color: #fff;
     }
 
-    input.search + i {
+    input.search + i.search {
         position: absolute;
-        right: 0;
+        right: -10px;
         font-size: 22px;
         height: 30px;
         width: 30px;
-
-        &::before {
-            content: '\e8d0';
-        }
     }
 }
 
@@ -585,7 +590,7 @@ grid-cell {
 }
 
 .block-preview {
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    box-shadow: 1px 1px 3px rgba($black, 0.4);
     background: #eee;
     color: #666;
     border-radius: 5px;

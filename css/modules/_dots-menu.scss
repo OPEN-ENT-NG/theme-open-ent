@@ -55,9 +55,5 @@ dots-menu {
         cursor: pointer;
         @include fonticon;
         font-size: 20px;
-
-        &::before {
-            content: '\e912';
-        }
     }
 }
