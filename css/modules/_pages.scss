@@ -184,7 +184,7 @@ body grid-cell editor {
     height: 30px;
     width: 100%;
     background: transparent;
-    transition: background 250ms ease;
+    transition: background 250ms ease, height 400ms linear;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 3px;
@@ -213,12 +213,16 @@ body grid-cell editor {
 
     &.highlight{
         background: $accent;
+        height: 100px;
         .show-default{
             transform: scaleX(0);
         }
         .show-highlight{
             transform: scaleX(1);
             color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 }
