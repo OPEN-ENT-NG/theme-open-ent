@@ -1,0 +1,22 @@
+
+.edit .pages-template-block{
+    img{
+        cursor: context-menu;
+        outline: 1px dashed $medium-grey;
+        &:hover{
+            outline: 1px dashed $accent;
+        }
+    }
+}
+
+// styles in toogle-panel
+.block-template {
+
+    //need to be override cause toogle-panel
+    h1{
+        display: block;
+        color: $primary;
+        margin: 0;
+    }
+
+}
