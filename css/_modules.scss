@@ -2694,7 +2694,7 @@ input[type=text][disabled=disabled] {
 image-select.droptarget {
     > div {
         background-color: $light-grey;
-        border: 3px dashed $medium-grey;
+        border: 1px dashed $accent;
     }
 }
 .cke_chrome.cke_float {
@@ -3151,13 +3151,13 @@ image-select{
     overflow: hidden;
     & > div > img{
         box-sizing: border-box;
-        border: 2px dashed $medium-grey;
+        border: 1px dashed $medium-grey;
         @include run-transition(all);
     }
 
 }
 image-select:hover > div > img{
-    border: 2px dashed $accent;
+    border: 1px dashed $primary;
 }
 
 
