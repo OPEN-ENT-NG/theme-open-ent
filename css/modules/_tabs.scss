@@ -41,6 +41,10 @@
             i{
                 color: $primary;
                 @include run-transition(all);
+
+                &.badge {
+                    color: $white;
+                }
             }
         }
     }
@@ -49,6 +53,10 @@
         border-bottom: 2px solid $accent;
         a, a i{
             color: $accent;
+        }
+
+        i.badge{
+            color: $white;
         }
     }
 }
