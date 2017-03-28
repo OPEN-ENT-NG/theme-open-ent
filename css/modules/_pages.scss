@@ -382,6 +382,10 @@ grid-cell .help {
             padding-bottom: 15px
         }
     }
+
+    img{
+        cursor: auto!important;
+    }
 }
 
 .drawing-grid.edit grid-cell:hover{
@@ -416,14 +420,6 @@ grid-cell {
         border: 2px dashed $accent!important;
         box-shadow: none!important;
         cursor: default;
-
-        img{
-            outline: 1px dashed $primary;
-            &:hover{
-                outline: 1px dashed $accent;
-            }
-        }
-
     }
 
     &.height-undefined, &.height-zero {
@@ -589,6 +585,7 @@ ul.icons-tabs.pages-editor-panel i{
     }
 }
 
+// templates preview
 .block-preview {
     box-shadow: 1px 1px 3px rgba($black, 0.4);
     background: #eee;
@@ -710,11 +707,5 @@ grid-cell.media .media-container{
 
     img{
         width: auto;
-    }
-}
-.edit grid-cell.media .media-container{
-
-    img{
-        cursor: context-menu;
     }
 }
