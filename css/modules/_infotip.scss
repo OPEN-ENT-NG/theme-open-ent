@@ -15,6 +15,12 @@
     //border-left: 10px solid $green;
 }
 
+
+.accent-color, .accent-color em, .accent-color i{
+    color: $accent!important;
+}
+
+
 infotip{
     position: relative;
     display: block;
