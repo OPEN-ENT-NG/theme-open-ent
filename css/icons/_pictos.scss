@@ -1126,6 +1126,9 @@ i.hidden::before {
     content: "\e904";
 }
 
+i.right-click:before{
+    content: "\e928";
+}
 .sniplet {
     .carousel.workspace::before {
         content: '\e90d';
