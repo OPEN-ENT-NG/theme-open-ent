@@ -289,8 +289,8 @@ grid-cell .help {
 
     i.trash{
         position: absolute;
-        top: 1px;
-        right: 35px;
+        top: 5px;
+        right: 30px;
         opacity: 0;
         transition: opacity 250ms ease;
         z-index: 10;
@@ -310,8 +310,8 @@ grid-cell .help {
 
     dots-menu {
         position: absolute;
-        right: 5px;
-        top: -3px;
+        right: 0px;
+        top: 0px;
         border-radius: 15px;
         height: 35px;
         transition: all 250ms ease;
