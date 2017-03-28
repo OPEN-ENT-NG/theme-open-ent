@@ -15,12 +15,9 @@ body.evaluations {
     }
   }
 
-
-  select.padding-select-accueil {
+select.padding-select-accueil {
     padding-right: 30px !important;
-  }
-
-@media screen and (max-device-width:$fat-mobile) {
+  }@media screen and (max-device-width:$fat-mobile) {
   .responsive-table table thead {
     display: none !important;
   }
@@ -323,9 +320,6 @@ input[type=text]{
   }
   .indent-five{
     text-indent: 5px;
-  }
-  .indent-fifteen{
-    text-indent: 15px;
   }
   .indent-fifteen{
     text-indent: 15px;
