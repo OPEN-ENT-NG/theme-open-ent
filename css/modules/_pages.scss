@@ -352,6 +352,14 @@ grid-cell .help {
     }
 }
 
+// set same cells size between edit and view mode
+.drawing-grid.view.pages-grid{
+    margin-left: 50px;
+    margin-right: 50px;
+    width: calc(100% - 100px);
+}
+
+
 .drawing-grid.view grid-cell {
     background: transparent;
 
@@ -394,6 +402,8 @@ grid-cell .help {
 }
 
 grid-cell {
+    word-break: break-word;
+
     &.dragging {
         border: 2px dashed $primary!important;
         z-index: 2000;
