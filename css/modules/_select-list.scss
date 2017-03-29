@@ -1,0 +1,20 @@
+select-list.button{
+    .selected-value{
+        color: $primary;
+        transition: all 250ms ease;
+        font-weight: 500;
+        &:hover{
+            color: #fff;
+            background: $accent;
+        }
+    }
+
+    opt{
+        background: $primary;
+        transition: background 250ms ease;
+        color: #fff;
+        &:hover{
+            background: $accent;
+        }
+    }
+}
