@@ -528,12 +528,21 @@ ul.icons-tabs.pages-editor-panel i{
         color: #fff;
     }
 
+
+    @include placeholder{
+        color: rgba($white, 0.5);
+        font-style: italic;
+        font-size: 13px;
+        opacity: 1;
+    }
+
     input.search + i.search {
         position: absolute;
         right: -10px;
         font-size: 22px;
         height: 30px;
         width: 30px;
+        color: $white;
     }
 }
 
