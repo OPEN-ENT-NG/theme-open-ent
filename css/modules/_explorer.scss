@@ -3,6 +3,9 @@ explorer{
     .container{
         transition: background 250ms ease;
     }
+    img{
+        transition: opacity 250ms ease;
+    }
 }
 
 explorer.card{
@@ -14,14 +17,14 @@ explorer.card{
     }
     &.folder{
         background: $primary;
-        color: #fff;
+        color: $white;
         h3{
-            color: #fff;
+            color: $white;
             line-height: 75px;
             margin: 0;
         }
         .illustration i, img{
-            color: #fff;
+            color: $white;
         }
     }
 }
@@ -32,60 +35,29 @@ explorer.card{
             transition: background 250ms ease;
             cursor: pointer;
         }
-        &.folder{
-            .content, .domino{
-                background: $primary;
-            }
-            .folder-large{
-                top: 22px;
-                position: relative;
-            }
-            color: #fff;
-            h3{
-                color: #fff;
-                line-height: 111px;
-                margin: 0;
-            }
-            .illustration i, img{
-                color: #fff;
-            }
-        }
     }
 }
 
 explorer.selected{
     &.card{
-        background-color: $primary-light;
+        background-color: $primary-lighter;
         img {
             opacity: 0.4;
-        }
-        h3, span{
-            color: #fff;
         }
     }
     &.item, &.item.folder{
         .domino, .content{
-            background-color: $primary-light;
-            strong, .shared{
-                opacity: 0.4
-            }
+            background-color: $primary-lighter;
         }
-        
         img {
             opacity: 0.4;
-        }
-        h3, span{
-            color: #fff;
         }
     }
     .container{
-        background-color: $primary-light;
-        border: 1px solid $primary-light;
+        background-color: $primary-lighter;
+        border: 1px solid $primary-lighter;
         img {
             opacity: 0.4;
-        }
-        h3, span{
-            color: #fff;
         }
     }
 }
