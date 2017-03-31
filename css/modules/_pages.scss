@@ -70,15 +70,17 @@
         }
     }
 
-    editor.both, editor.html, editor.edit {
-        padding: 0;
-        margin: 0;
-
-        > div > [contenteditable] {
+    .text-wrapper{
+        editor.both, editor.html, editor.edit  > div > [contenteditable] {
             border-color: transparent !important;
             min-height: 100% !important;
             padding: 0;
         }
+    }
+
+    editor.both, editor.html, editor.edit {
+        padding: 0;
+        margin: 0;
 
         textarea {
             min-height: 200px;
