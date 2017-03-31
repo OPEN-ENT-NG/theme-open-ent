@@ -25,13 +25,13 @@ $text-light: $grey !default;
 $background: $lightest-grey !default;
 ///////
 $primary: $cyan !default;
-$primary-darkest: saturate(darken($primary, 40%), 10%);
-$primary-dark: saturate(darken($primary, 9%), 3%);
-$primary-light: saturate(lighten($primary, 17%), 85%);
-$primary-lighter: desaturate(lighten($primary-light, 15%), 10%);
+$primary-darkest: saturate(darken($primary, 40%), 10%);             //#0c3848
+$primary-dark: saturate(darken($primary, 9%), 3%);                  //#2a9cc8
+$primary-light: saturate(lighten($primary, 17%), 85%);              //#97defa
+$primary-lighter: desaturate(lighten($primary-light, 15%), 10%);    //#c7edfc
 //Accent
 $accent: $orange !default;
-$dark-accent: darken($accent, 15%);
+$dark-accent: darken($accent, 15%);                                 //#b35d00
 $warning-color: $red;
 
 //FLASHMSG
@@ -40,6 +40,10 @@ $flash-red: $red;
 $flash-orange: $accent;
 $flash-green: $green;
 $flash-blue: $primary-darkest;
+
+
+$colorz: $cyan, $green, $yellow, $orange, $pink, $purple, $indigo;
+
 
 //EXERCISER SPECIFIC
 // $stroke-color: $black;
