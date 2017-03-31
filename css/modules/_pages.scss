@@ -491,63 +491,6 @@ grid-cell {
     }
 }
 
-.icons-tabs.pages-editor-panel {
-    position: fixed;
-    top: 80px;
-    z-index: 200;
-    right: 300px;
-}
-
-.toggle-panel.hide + ul.icons-tabs.pages-editor-panel i{
-    transform: rotate(0deg);
-}
-ul.icons-tabs.pages-editor-panel i{
-    transform: rotate(180deg);
-    text-indent: -5px;
-}
-
-.toggle-panel.hide + ul.icons-tabs.pages-editor-panel{
-    right: 0;
-}
-
-.toggle-panel.pages-editor-panel {
-    position: fixed;
-    top: 80px;
-    right: 0;
-    z-index: 300;
-    height: calc(100% - 85px);
-    overflow-y: auto;
-
-    .toggle{
-        min-height: 105%;
-    }
-
-    h4:first-child {
-        margin-top: 0;
-    }
-
-    input.search{
-        color: #fff;
-    }
-
-
-    @include placeholder{
-        color: rgba($white, 0.5);
-        font-style: italic;
-        font-size: 13px;
-        opacity: 1;
-    }
-
-    input.search + i.search {
-        position: absolute;
-        right: -10px;
-        font-size: 22px;
-        height: 30px;
-        width: 30px;
-        color: $white;
-    }
-}
-
 .info.inline{
     margin: 0;
     margin-right: 10px;
