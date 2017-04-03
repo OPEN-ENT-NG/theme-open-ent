@@ -356,10 +356,10 @@ grid-cell .help {
 
 // set same cells size between edit and view mode
 .drawing-grid.view.pages-grid{
-    margin-left: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
     padding: 20px 20px 0;
-    margin-right: 30px;
-    width: calc(100% - 60px);
+    width: calc(100% - 80px);
     background: $white;
     box-shadow: 0px 0px 1px 2px $shadow-light;
 }
