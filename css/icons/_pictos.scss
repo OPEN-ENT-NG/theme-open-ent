@@ -1074,3 +1074,11 @@ i.ticketinfo::before {
 i.copy::before, i.duplicate::before {
     content: '\e820';
 }
+
+i.refresh {
+  @include fonticon;
+
+  &::before {
+    content : '\e874';
+  }
+}
