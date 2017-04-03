@@ -1,4 +1,4 @@
-.chip.selected, .sticker.app{
+.chip.selected, .sticker.app, .sniplet{
 
     &.sharebigfiles{
         background: $purple;
@@ -202,6 +202,9 @@
         background: $green;
     }
     &.userbook{
+        background: $green;
+    }
+    &.directory{
         background: $green;
     }
     &.archive{
