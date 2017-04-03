@@ -125,6 +125,8 @@ ul.icons-tabs.pages-editor-panel i{
     }
 
     .sniplets{
+
+        // media
         @for $i from 1 through length($colorz) {
             .sniplet:nth-child(#{length($colorz)}n+#{$i}){
                 background: nth($colorz, $i);
@@ -132,6 +134,29 @@ ul.icons-tabs.pages-editor-panel i{
         }
 
          .sniplet{
+             // override apps sniplets
+             &.workspace{
+                 background: $red;
+            }
+             &.carousel{
+                 background: $pink;
+            }
+             &.navigation{
+                 background: $orange;
+            }
+             &.facebook{
+                 background: $green;
+            }
+             &.forum{
+                 background: $cyan;
+            }
+             &.articles{
+                 background: $indigo;
+            }
+             &.wiki{
+                 background: $purple;
+            }
+
              i:before{
                 color: $white;
             }
