@@ -148,7 +148,7 @@ ul.icons-tabs.pages-editor-panel i{
     }
 
     input.search{
-        //color: #fff;
+        color: $white;
     }
     @include placeholder{
         color: rgba($white, 0.5);
