@@ -254,9 +254,9 @@ input[type=text]{
   }
   &.opened{
     .plus-input{
+      @include fonticon;
       &::after{
-        font-family: "FontAwesome";
-        content: "\f068";
+        content: "\e85e";
       }
     }
   }
@@ -530,9 +530,9 @@ input[type=text]{
       right: 5px;
       position: absolute;
       top: 11px;
+      @include fonticon;
       &::after{
-        content: "\f067";
-        font-family: 'FontAwesome';
+        content: "\e85e";
         font-size: 15px;
         color: $grey;
         font-weight: 300;
@@ -633,9 +633,9 @@ input[type=text]{
     right: 18px;
     position: absolute;
     top: 5px;
+    @include fonticon;
     &::after{
-      content: '\f00d';
-      font-family: 'FontAwesome';
+      content: '\e866';
       font-size: 15px;
       color: $grey;
       font-weight: 300;
@@ -763,9 +763,9 @@ input[type=text]{
       }
     }
     > .skills-text-overflow{
+      @include fonticon;
       &::before{
-        font-family: "FontAwesome";
-        content: "\f0da";
+        content: "\e823";
         /*left: 0px;*/
         /*position: absolute;*/
         @include transition(all 200ms ease);
@@ -1041,9 +1041,9 @@ input[type=text]{
       }
     }
     > .skills-text-overflow{
+      @include fonticon;
       &::before{
-        font-family: "FontAwesome";
-        content: "\f0da";
+        content: "\e823";
         left: 0px;
         position: absolute;
         @include transition(all 200ms ease);
@@ -1838,15 +1838,15 @@ input[type=text]{
   }
 
   .Domaine{
+    @include fonticon;
     &::before {
-      font-family: "FontAwesome";
       margin-right: 0.5%;
-      content: "\f0d7";
+      content: "\e841";
     }
     &.openedDom {
       &::before {
         margin-right: 1%;
-        content: "\f0da";
+        content: "\e823";
       }
     }
   }

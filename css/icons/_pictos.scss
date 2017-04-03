@@ -1164,3 +1164,30 @@ i.right-click:before{
 i.grid::before {
     content: '\e90c';
 }
+i.sort-desc, i.sort-asc, i.calendar {
+  @include fonticon;
+}
+
+i.sort-desc::before {
+  content: '\e925';
+}
+
+i.sort-asc::before {
+  content : '\e924';
+}
+
+i.calendar{
+  content: '\e917';
+}
+
+i.clock, i.phone {
+  @include fonticon;
+}
+
+i.clock {
+  content : '\f017';
+}
+
+i.phone {
+  content : '\f095';
+}

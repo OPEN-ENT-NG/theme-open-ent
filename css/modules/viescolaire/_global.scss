@@ -536,6 +536,10 @@ body.vsco--global {
       }
     }
   }
+  .asterisk::before {
+    content: "*";
+    font-size: 16px;
+  }
   @media screen and (max-device-width: $tablette){
     .tab-content>.tab-pane {
       margin-top: 10px;
