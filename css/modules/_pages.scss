@@ -58,7 +58,8 @@
     cursor: move;
 
     .color-picker {
-        display: none;
+        opacity: 0;
+        pointer-events: none;
     }
 
     sniplet-source{
