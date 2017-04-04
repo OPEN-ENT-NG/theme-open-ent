@@ -205,6 +205,14 @@ body grid-cell editor {
     margin-bottom: 10px;
     border-radius: 3px;
     position: relative;
+
+    &:last-child{
+        height: 80px;
+        .show-default{
+            line-height: 80px;
+        }
+    }
+
     > div{
         transition: transform 250ms ease;
         height: 0;
