@@ -34,6 +34,19 @@ select.padding-select-accueil {
     padding-left: 5px;
   }
 
+  .legende-bfc-left {
+    width: 20%!important;
+  }
+
+  .legende-bfc-right {
+    width: 65%;
+    .conversion-libelle{
+      font-weight: 400;
+      max-width: 100%;
+      width: 100%
+    }
+  }
+
   table thead tr, ul.list-view thead tr {
     color: $white !important;
   }
