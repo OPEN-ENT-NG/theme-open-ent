@@ -4,6 +4,11 @@
         cursor: context-menu;
     }
 }
+.pages-template-block{
+    img{
+        height: auto!important;
+    }
+}
 
 // edit & view styles
 .pages-template-block{
@@ -52,13 +57,6 @@
                 img{
                     margin: auto;
                 }
-            }
-        }
-
-        &.multi-col-block{
-            display: block;
-            img{
-                margin: auto;
             }
         }
 
