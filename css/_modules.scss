@@ -3245,12 +3245,6 @@ nav.vertical {
     }
 }
 
-
-select-list {
-    .options {
-        @include material-card();
-    }
-}
 /* no ico in app page title*/
 h1 i:before,
 h1 i:after,

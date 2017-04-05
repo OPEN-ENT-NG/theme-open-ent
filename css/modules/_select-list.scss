@@ -1,5 +1,7 @@
 select-list.button{
     .selected-value{
+        box-shadow: 1px 1px 2px rgba(0,0,0,0.35);
+        background: $light-grey;
         color: $primary;
         transition: all 250ms ease;
         font-weight: 500;
@@ -8,7 +10,9 @@ select-list.button{
             background: $accent;
         }
     }
-
+    .options{
+        box-shadow: 1px 1px 8px rgba(0,0,0,0.4);
+    }
     opt{
         background: $primary;
         transition: background 250ms ease;
@@ -16,5 +20,18 @@ select-list.button{
         &:hover{
             background: $accent;
         }
+    }
+    .selected-value{
+        border-bottom: 1px solid #ddd;
+        &::after{
+            border-top: 6px solid #888;
+        }
+    }
+}
+
+
+select-list {
+    .options {
+        @include material-card();
     }
 }

@@ -188,7 +188,7 @@ body grid-cell editor {
 
 .dragging{
     .new-row{
-        background: #ddd;
+        background: $light-grey;
         cursor: pointer;
         > div{
             height: 100%;
@@ -200,11 +200,12 @@ body grid-cell editor {
     height: 30px;
     width: 100%;
     background: transparent;
-    transition: background 250ms ease, height 400ms linear;
+    transition: height 400ms linear;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 3px;
     position: relative;
+    border: 2px dashed transparent;
 
     &:last-child{
         height: 100px;
@@ -217,7 +218,6 @@ body grid-cell editor {
     }
 
     > div{
-        transition: transform 250ms ease;
         height: 0;
         overflow: hidden;
         position: absolute;
@@ -225,31 +225,38 @@ body grid-cell editor {
         left: 0;
         width: 100%;
         text-align: center;
-        line-height: 30px;
         text-transform: uppercase;
-        color: $accent;
         font-size: 14px;
         font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .show-default{
         transform: scaleX(1);
+        opacity: 1;
+        color: $accent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 250ms ease;
     }
     .show-highlight{
+        transition: transform 250ms ease;
         transform: scaleX(0);
+        color: $primary;
     }
 
     &.highlight{
-        background: $accent;
+        background: $light-grey;
         height: 100px;
+        border: 2px dashed $accent;
         .show-default{
             transform: scaleX(0);
+            opacity: 0;
         }
         .show-highlight{
             transform: scaleX(1);
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
     }
 }
