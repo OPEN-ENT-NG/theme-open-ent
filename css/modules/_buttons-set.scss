@@ -12,7 +12,6 @@
         margin-right: 0;
     }
     button, .tip{
-        border-right: 1px solid #ccc;
         border-radius: 0;
         padding-left: 10px;
         padding-right: 10px;
@@ -22,7 +21,8 @@
         }
     }
     .tip{
-        background-color: #eee;
+        border-right: 1px solid #ccc;
+        background-color: $light-grey;
         color: #666;
         float: left;
         height: 38px;
