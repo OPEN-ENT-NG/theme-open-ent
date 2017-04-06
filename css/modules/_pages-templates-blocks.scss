@@ -1,15 +1,4 @@
 
-.edit .pages-template-block{
-    img{
-        cursor: context-menu;
-    }
-}
-.pages-template-block{
-    img{
-        height: auto!important;
-    }
-}
-
 // edit & view styles
 .pages-template-block{
 
@@ -19,8 +8,28 @@
             margin-top: -15px;
         }
     }
+    &.title-block{
+        h1{
+            padding: 0;
+        }
+    }
 
 }
+
+
+
+.edit .pages-template-block{
+    img{
+        cursor: context-menu;
+    }
+}
+
+.pages-template-block{
+    img{
+        height: auto!important;
+    }
+}
+
 
 
 // styles in toogle-panel
