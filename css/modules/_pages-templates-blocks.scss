@@ -8,6 +8,11 @@
             margin-top: -15px;
         }
     }
+    &.title-block{
+        hr{
+            border-bottom: 2px solid $medium-grey;
+        }
+    }
 
 }
 
