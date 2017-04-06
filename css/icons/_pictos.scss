@@ -110,6 +110,7 @@ i.arrow{
   color: $white;
 }
 i.arrow:before{
+    font-family: none; //unicode not from generic icon font
   content: '\25B2';
   font-size: 20px;
   font-weight: bold;
