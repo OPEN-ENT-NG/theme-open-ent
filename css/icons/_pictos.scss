@@ -192,21 +192,28 @@ i.mail-large::before, i.type.mail::before, i.mail::before{
   content: '\e804';
 }
 
+i.download{
+    //reset css-lib
+    width: auto;
+    height: auto;
+    //for ico itself
+    margin-top: -5px;
+}
 
-i.mail-in{
+i.mail-in, i.download{
   @include fonticon;
   text-align: center;
 }
-i.mail-in:before{
+i.mail-in:before, i.download:before{
   content: '\e83f';
   font-size: 12px;
 }
 
-i.mail-out{
+i.mail-out, i.upload{
   @include fonticon;
   text-align: center;
 }
-i.mail-out:before{
+i.mail-out:before, i.upload:before{
   content: '\e84e';
   font-size: 12px;
 }

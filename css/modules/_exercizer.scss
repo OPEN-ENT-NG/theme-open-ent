@@ -370,9 +370,23 @@ body.exercizer{
     	.item{
             .domino{
                 .bottom{
+                    .content{
+                        background: $white;
+                    }
     				.title-icon i{
     					color: $black;
     				}
+                }
+            }
+        }
+        button.flat-button.right-magnet{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            i{
+                &:before{
+                    font-size: 13px;
+                    color: $text-light;
                 }
             }
         }
@@ -387,26 +401,42 @@ body.exercizer{
     *   COLOR CORRECTED / CORRECTION ON GOING / HAS BEEN START / IS SUBMITTED
     */
 
-    .background-color-corrected{
+    .background-color-corrected,
+    .dominos .item .domino .bottom.background-color-corrected{
         background-color: #72BB53;
+        .content{
+            width: calc(100% - 20px);
+        }
     }
     .color-corrected{
         color: #72BB53;
     }
-    .background-color-is-correction-on-going{
+    .background-color-is-correction-on-going,
+    .dominos .item .domino .bottom.background-color-is-correction-on-going{
         background-color: #FF8351;
+        .content{
+            width: calc(100% - 20px);
+        }
     }
     .color-is-correction-on-going{
         color: #FF8351;
     }
-    .background-color-is-submitted{
+    .background-color-is-submitted,
+    .dominos .item .domino .bottom.background-color-is-submitted{
         background-color: #00A4D3;
+        .content{
+            width: calc(100% - 20px);
+        }
     }
     .color-is-submitted{
         color: #00A4D3;
     }
-    .background-color-has-been-started{
+    .background-color-has-been-started,
+    .dominos .item .domino .bottom.background-color-has-been-started{
         background-color: #FF8351;
+        .content{
+            width: calc(100% - 20px);
+        }
     }
     .color-has-been-started{
         color: #FF8351;
