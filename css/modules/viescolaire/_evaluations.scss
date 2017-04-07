@@ -545,7 +545,7 @@ input[type=text]{
       top: 11px;
       @include fonticon;
       &::after{
-        content: "\e85e";
+        content: "\e87b";
         font-size: 15px;
         color: $grey;
         font-weight: 300;
@@ -553,12 +553,16 @@ input[type=text]{
         cursor: pointer;
         border: none;
         background-color: inherit;
+        font-size: 10px;
       }
       &:hover::after{
         color: $cyan;
       }
-      &::after{
-        content: "\f068";
+    }
+
+    &.opened {
+      .plus-input::after{
+        content: "\e841";
       }
     }
   }
@@ -1039,9 +1043,9 @@ input[type=text]{
       overflow: visible;
       @include transition(all 200ms ease);
       > .skills-text-overflow{
-        &::before{
-          content: "\f0d7";
-        }
+          i.skills-open-icon::before {
+            content: "\e841";
+          }
       }
     }
     > span{
@@ -1054,14 +1058,16 @@ input[type=text]{
       }
     }
     > .skills-text-overflow{
-      @include fonticon;
-      &::before{
-        content: "\e823";
-        left: 0px;
-        position: absolute;
-        @include transition(all 200ms ease);
-        font-size: larger;
-      }
+        i.skills-open-icon {
+          @include fonticon;
+          &::before{
+            content: "\e823";
+            left: 0;
+            position: absolute;
+            @include transition(all 200ms ease);
+            font-size: 10px;
+          }
+        }
     }
   }
   .skills-text-overflow{
@@ -1851,15 +1857,21 @@ input[type=text]{
   }
 
   .Domaine{
-    @include fonticon;
+
     &::before {
+      @include fonticon;
       margin-right: 0.5%;
       content: "\e841";
+      font-size:10px;
+      float: left;
     }
     &.openedDom {
       &::before {
+        @include fonticon;
         margin-right: 1%;
         content: "\e823";
+        font-size:10px;
+        float: left;
       }
     }
   }
