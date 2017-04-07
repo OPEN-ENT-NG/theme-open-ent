@@ -92,19 +92,6 @@
         }
     }
 
-    editor.both, editor.html, editor.edit {
-        padding: 0;
-        margin: 0;
-
-        textarea {
-            min-height: 200px;
-        }
-
-        editor-toolbar {
-            position: fixed;
-        }
-    }
-
     &.drag-over:hover {
         .header {
             height: 0;
@@ -448,6 +435,19 @@ grid-cell .help {
 
 grid-cell {
     word-break: break-word;
+
+    editor.both, editor.html, editor.edit {
+        padding: 0;
+        margin: 0;
+
+        textarea {
+            min-height: 200px;
+        }
+
+        editor-toolbar {
+            position: fixed;
+        }
+    }
 
     &.dragging {
         border: 2px dashed $primary!important;
