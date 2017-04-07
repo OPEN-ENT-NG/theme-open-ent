@@ -538,8 +538,7 @@ select.padding-select-accueil {
       position: absolute;
       top: 11px;
       &::after{
-        content: "\f067";
-        font-family: 'FontAwesome';
+        content: "\e87b";
         font-size: 15px;
         color: $grey;
         font-weight: 300;
@@ -547,12 +546,16 @@ select.padding-select-accueil {
         cursor: pointer;
         border: none;
         background-color: inherit;
+        font-size: 10px;
       }
       &:hover::after{
         color: $cyan;
       }
-      &::after{
-        content: "\f068";
+    }
+
+    &.opened {
+      .plus-input::after{
+        content: "\e841";
       }
     }
   }
@@ -640,9 +643,9 @@ select.padding-select-accueil {
     right: 18px;
     position: absolute;
     top: 5px;
+    @include fonticon;
     &::after{
-      content: '\f00d';
-      font-family: 'FontAwesome';
+      content: '\e866';
       font-size: 15px;
       color: $grey;
       font-weight: 300;
@@ -770,9 +773,9 @@ select.padding-select-accueil {
       }
     }
     > .skills-text-overflow{
+      @include fonticon;
       &::before{
-        font-family: "FontAwesome";
-        content: "\f0da";
+        content: "\e823";
         /*left: 0px;*/
         /*position: absolute;*/
         @include transition(all 200ms ease);
@@ -1033,9 +1036,9 @@ select.padding-select-accueil {
       overflow: visible;
       @include transition(all 200ms ease);
       > .skills-text-overflow{
-        &::before{
-          content: "\f0d7";
-        }
+          i.skills-open-icon::before {
+            content: "\e841";
+          }
       }
     }
     > span{
@@ -1048,14 +1051,16 @@ select.padding-select-accueil {
       }
     }
     > .skills-text-overflow{
-      &::before{
-        font-family: "FontAwesome";
-        content: "\f0da";
-        left: 0px;
-        position: absolute;
-        @include transition(all 200ms ease);
-        font-size: larger;
-      }
+        i.skills-open-icon {
+          @include fonticon;
+          &::before{
+            content: "\e823";
+            left: 0;
+            position: absolute;
+            @include transition(all 200ms ease);
+            font-size: 10px;
+          }
+        }
     }
   }
   .skills-text-overflow{
@@ -1845,15 +1850,21 @@ select.padding-select-accueil {
   }
 
   .Domaine{
+
     &::before {
-      font-family: "FontAwesome";
+      @include fonticon;
       margin-right: 0.5%;
-      content: "\f0d7";
+      content: "\e841";
+      font-size:10px;
+      float: left;
     }
     &.openedDom {
       &::before {
+        @include fonticon;
         margin-right: 1%;
-        content: "\f0da";
+        content: "\e823";
+        font-size:10px;
+        float: left;
       }
     }
   }
