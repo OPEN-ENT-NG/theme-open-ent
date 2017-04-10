@@ -69,7 +69,7 @@ $small-screen: 959px;
 @mixin message {
     color: $text-light;
     text-align: left;
-    @include border-radius(0px);
+    border-radius: 0;
     background: $light-grey;
     border-left: 10px solid $primary;
     margin: 5px 0 15px;

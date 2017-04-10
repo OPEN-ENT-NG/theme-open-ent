@@ -667,7 +667,7 @@ input[type=submit][disabled=disabled]:hover {
         width: 100%;
     }
     .current {
-        @include border-radius(3px);
+        border-radius: 3px;
         padding-left: 0;
         font-size: 18px;
         @include run-transition(padding-left);
@@ -1719,7 +1719,7 @@ select {
     }
 }
 .side-tabs-content {
-    @include border-radius(0);
+    border-radius: 0;
     border-color: $accent;
 }
 .humane-original-success {
