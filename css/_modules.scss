@@ -383,7 +383,7 @@ nav.horizontal {
         width: 195px !important;
         padding: 4px;
         box-sizing: border-box;
-        border: 1px solid $middle-grey;
+        border: 1px solid $neutral-grey;
     }
 }
 .nomargin {
@@ -700,7 +700,7 @@ input[type=submit][disabled=disabled]:hover {
 }
 textarea.inline-editing {
     background: transparent;
-    border-bottom: 1px solid $middle-grey;
+    border-bottom: 1px solid $neutral-grey;
     padding: 2px;
 }
 textarea.inline-editing:focus {
@@ -776,7 +776,7 @@ input[type=tel],
 input[type=email] {
     color: $text-light;
     background: transparent;
-    border-bottom: 1px solid $middle-grey;
+    border-bottom: 1px solid $neutral-grey;
     @include run-transition(border-bottom);
 }
 input[type=text]:focus,
@@ -1137,10 +1137,10 @@ ul.icons-tabs {
 // global  / notifications xtrn
 .responsive-table {
     //futur stick to top
-    border: 1px solid $middle-grey;
+    border: 1px solid $neutral-grey;
     .fixed-head {
         & + .row {
-            //border-bottom: 1px solid $middle-grey;
+            //border-bottom: 1px solid $neutral-grey;
         }
     }
     // .fixed-head.scrolling{
@@ -1225,7 +1225,7 @@ ul.icons-tabs {
 
 textarea {
     box-sizing: border-box;
-    border: 1px solid $middle-grey;
+    border: 1px solid $neutral-grey;
     padding: 10px;
     font-size: 14px;
     margin-top: 7px;
@@ -1423,7 +1423,7 @@ nav.vertical.floating {
     }
     .content{
         background: $lightest-grey;
-        border: 1px solid $middle-grey;
+        border: 1px solid $neutral-grey;
     }
     ul{
         border-left: none;
@@ -1497,7 +1497,7 @@ article.selected {
 }
 [contenteditable] {
     background: $white;
-    border: 1px solid $middle-grey;
+    border: 1px solid $neutral-grey;
 }
 [contenteditable]:focus {
     border: 2px solid $accent;
@@ -1530,7 +1530,7 @@ article.selected {
 .grid-exemple.row .absolute {
     font-size: 14px;
     padding: 10px;
-    color: $disable-grey;
+    color: $disable-color;
     border: $light-grey solid 5px;
     border-radius: 5px;
     background: $white;
@@ -1753,7 +1753,7 @@ select {
         }
     }
     .illustrated-text {
-        border-top: 1px solid $middle-grey;
+        border-top: 1px solid $neutral-grey;
         border-radius: 15px;
         box-shadow: 0 0 2px;
         .upper-title {
@@ -1762,7 +1762,7 @@ select {
         .cke_editable {
             border: none;
             min-height: 110px;
-            border: 1px dashed $middle-grey;
+            border: 1px dashed $neutral-grey;
             margin-bottom: 10px;
             &:focus {
                 border-width: 1px;
@@ -1798,8 +1798,8 @@ select {
         overflow: hidden;
     }
     .bubble::after {
-        border-left: 1px solid $middle-grey;
-        border-top: 1px solid $middle-grey;
+        border-left: 1px solid $neutral-grey;
+        border-top: 1px solid $neutral-grey;
         content: "";
         position: absolute;
         width: 15px;
@@ -2570,8 +2570,8 @@ ul.toc {
     }
 }
 input[type=text][disabled=disabled] {
-    background: $middle-grey;
-    color: $disable-grey;
+    background: $neutral-grey;
+    color: $disable-color;
     padding: 5px;
     font-size: 14px;
     line-height: 20px;
@@ -2670,7 +2670,7 @@ input[type=text][disabled=disabled] {
 }
 .droptarget.block-editor {
     background-color: $light-grey;
-    border: 3px dashed $middle-grey;
+    border: 3px dashed $neutral-grey;
 }
 image-select.droptarget {
     > div {
@@ -2886,11 +2886,11 @@ ul.colored li {
 }
 .wizard {
     background: $white;
-    border: 1px solid $middle-grey;
+    border: 1px solid $neutral-grey;
     .steps {
         background: $light-grey;
         li {
-            color: $disable-grey;
+            color: $disable-color;
         }
         li.active {
             background: $accent;
@@ -2905,7 +2905,7 @@ ul.colored li {
     margin-top: 20px;
     > tbody > tr > td,
     > thead > tr > td {
-        border: 1px solid $middle-grey;
+        border: 1px solid $neutral-grey;
         vertical-align: top;
         .diff {
             background: rgba($accent, 0.2);
@@ -3125,7 +3125,7 @@ label {
         margin-top: -11px;
     }
     input[type=checkbox]:disabled + span::before {
-        border-color: $middle-grey !important;
+        border-color: $neutral-grey !important;
     }
 }
 image-select{
@@ -3318,7 +3318,7 @@ body editor {
     }
     [contenteditable] {
         article {
-            border: 1px dotted $middle-grey;
+            border: 1px dotted $neutral-grey;
         }
     }
     .drawing-zone {

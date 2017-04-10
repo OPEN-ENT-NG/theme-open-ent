@@ -365,7 +365,7 @@
             }
             & + div{
                 text-align: center;
-                color: $disable-grey;
+                color: $disable-color;
                 @include run-transition(all)
             }
         }
@@ -456,11 +456,11 @@
             & > div{
                 margin: 0 20px 20px;
                 padding: 0 20px 10px;
-                border-bottom: 1px solid $middle-grey;
+                border-bottom: 1px solid $neutral-grey;
             }
 
             p{
-                // border-bottom: 1px solid $middle-grey;
+                // border-bottom: 1px solid $neutral-grey;
                 // padding: 15px 10px 5px;
                 margin: 20px 0 0 -10px;
 
