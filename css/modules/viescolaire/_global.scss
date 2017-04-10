@@ -1,6 +1,6 @@
 body.vsco--global {
   .box-accueil {
-    @include border-radius(5px);
+    border-radius: 5px;
     background-color: $white;
     height: 400px !important;
     margin: 2% 4%;
