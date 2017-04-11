@@ -22,7 +22,7 @@ select.padding-select-accueil {
   }
 
   .maitrise-bfc {
-    font-weight: bold;
+    font-weight: normal;
     font-style: italic;
     float: left;
     padding-left: 5px;
@@ -1691,6 +1691,10 @@ select.padding-select-accueil {
             }
             .bottom {
               padding: 0px 10px 85% 10px;
+              background: none !important;
+            }
+            .user-deleted {
+              background-color: #ccc !important;
             }
           }
         }
@@ -1735,6 +1739,7 @@ select.padding-select-accueil {
       .content-bilan-fin-cycle {
         .domaine-display {
           padding: 23px 0;
+          font-weight: bold;
         }
 
         .domaine-line{
