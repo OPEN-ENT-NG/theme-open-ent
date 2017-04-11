@@ -5,7 +5,9 @@ body.evaluations {
       z-index: 120000 !important;
     }
   }
-
+  canvas.chart.chart-bar {
+    cursor: pointer;
+  }
   @media screen and (max-width:  $small-mobile){
     .input-moyenne {
       float:none;
