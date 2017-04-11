@@ -5,7 +5,17 @@ body.evaluations {
       z-index: 120000 !important;
     }
   }
-
+  canvas.chart.chart-bar {
+    cursor: pointer;
+  }
+  @media screen and (max-width:  $small-mobile){
+    .input-moyenne {
+      float:none;
+      font-weight: bold;
+      display: inline-block;
+      text-align : center !important;
+    }
+  }
 
 select.padding-select-accueil {
     padding-right: 30px !important;
@@ -541,6 +551,7 @@ select.padding-select-accueil {
       right: 5px;
       position: absolute;
       top: 11px;
+      @include fonticon;
       &::after{
         content: "\e87b";
         font-size: 15px;
