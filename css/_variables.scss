@@ -19,16 +19,11 @@ $darkest-grey:      #333333 !default;
 $black:             #222222 !default;
 
 
-
-$disable-color:     darken($white, 46.5%)!default;                          //#888888
-
-
 $shadow-light:      rgba(0, 0, 0, 0.1) !default;
 $shadow:            rgba(0, 0, 0, 0.26) !default;
 $shadow-dark:       rgba(0, 0, 0, 0.4) !default;
 $shadow-darker:     rgba(0, 0, 0, 0.6) !default;
-$text-light:        $grey !default;
-$background:        $lightest-grey !default;
+
 ///////
 $primary:           $cyan !default;
 $primary-darkest:   saturate(darken($primary, 40%), 10%);                   //#0c3848
@@ -40,6 +35,13 @@ $accent:            $orange !default;
 $dark-accent:       darken($accent, 15%);                                   //#b35d00
 
 $warning-color:     $red;
+
+//////
+
+$background:        $lightest-grey !default;
+$text-light:        $grey !default;
+$disable-color:     darken($white, 46.5%)!default;                          //#888888
+
 
 //FLASHMSG
 
