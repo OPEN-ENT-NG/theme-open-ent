@@ -35,6 +35,9 @@ $accent:            $orange !default;
 $dark-accent:       darken($accent, 15%);                                   //#b35d00
 
 $warning-color:     $red;
+$warning-color-hover: darken($warning-color, 35%);
+$forewarn-color: $orange;
+$valid-color: $green;
 
 //////
 
