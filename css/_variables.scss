@@ -39,8 +39,13 @@ $warning-color:     $red;
 //////
 
 $background:        $lightest-grey !default;
-$text-light:        $grey !default;
 $disable-color:     darken($white, 46.5%)!default;                          //#888888
+
+$text-light:                    $grey !default;
+$text-lightest: 				$white !default;
+// $text-color: ;
+// $title-color: ;
+// $button-color: ;
 
 
 //FLASHMSG
