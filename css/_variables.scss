@@ -1,62 +1,68 @@
 // links = primary
-$cyan:              #4bafd5 !default;
-$green:             #46bfaf !default;
-$yellow:            #ecbe30 !default;
-$orange:            #FF8500 !default;
-$red:               #e13a3a !default;
-$pink:              #b930a2 !default;
-$purple:            #763294 !default;
-$indigo:            #1a22a2 !default;
+$cyan:                          #4bafd5 !default;
+$green:                         #46bfaf !default;
+$yellow:                        #ecbe30 !default;
+$orange:                        #FF8500 !default;
+$red:                           #e13a3a !default;
+$pink:                          #b930a2 !default;
+$purple:                        #763294 !default;
+$indigo:                        #1a22a2 !default;
 
-$white:             #FFFFFF !default;
-$lightest-grey:     #F9F9F9 !default;
-$light-grey:        #F0F0F0 !default;
-$neutral-grey:      #DDDDDD !default;
-$medium-grey:       #CCCCCC !default;
-$solid-grey:        #AAAAAA !default;
-$grey:              #555555 !default;
-$darkest-grey:      #333333 !default;
-$black:             #222222 !default;
+$white:                       #FFFFFF !default;
+$lightest-grey:               #F9F9F9 !default;
+$light-grey:                  #F0F0F0 !default;
+$neutral-grey:                #DDDDDD !default;
+$medium-grey:                 #CCCCCC !default;
+$solid-grey:                  #AAAAAA !default;
+$grey:                        #555555 !default;
+$darkest-grey:                #333333 !default;
+$black:                       #222222 !default;
 
 
-$shadow-light:      rgba(0, 0, 0, 0.1) !default;
-$shadow:            rgba(0, 0, 0, 0.26) !default;
-$shadow-dark:       rgba(0, 0, 0, 0.4) !default;
-$shadow-darker:     rgba(0, 0, 0, 0.6) !default;
+$shadow-light:                rgba(0, 0, 0, 0.1) !default;
+$shadow:                      rgba(0, 0, 0, 0.26) !default;
+$shadow-dark:                 rgba(0, 0, 0, 0.4) !default;
+$shadow-darker:               rgba(0, 0, 0, 0.6) !default;
 
 ///////
-$primary:           $cyan !default;
-$primary-darkest:   saturate(darken($primary, 40%), 10%);                   //#0c3848
-$primary-dark:      saturate(darken($primary, 9%), 3%);                     //#2a9cc8
-$primary-light:     saturate(lighten($primary, 17%), 85%);                  //#97defa
-$primary-lighter:   desaturate(lighten($primary-light, 15%), 10%);          //#c7edfc
+$primary:                     $cyan !default;
+$primary-darkest:             saturate(darken($primary, 40%), 10%) !default;                   //#0c3848
+$primary-dark:                saturate(darken($primary, 9%), 3%) !default;                     //#2a9cc8
+$primary-light:               saturate(lighten($primary, 17%), 85%) !default;                  //#97defa
+$primary-lighter:             desaturate(lighten($primary-light, 15%), 10%) !default;          //#c7edfc
 //Accent
-$accent:            $orange !default;
-$dark-accent:       darken($accent, 15%);                                   //#b35d00
+$accent:                      $orange !default;
+$hover: 		              $accent !default;
+$dark-accent:                 darken($accent, 15%) !default;                                   //#b35d00
 
-$warning-color:     $red;
-$warning-color-hover: darken($warning-color, 35%);
-$forewarn-color: $orange;
-$valid-color: $green;
+$warning-color:               $red !default;
+$warning-color-hover:         darken($warning-color, 35%) !default;
+$forewarn-color:              $orange !default;
+$valid-color:                 $green !default;
 
-//////
 
-$background:        $lightest-grey !default;
-$disable-color:     darken($white, 46.5%)!default;                          //#888888
 
-$text-light:                    $grey !default;
-$text-lightest: 				$white !default;
+$text-light:                  $grey !default;
+$text-lightest: 			  $white !default;
 // $text-color: ;
 // $title-color: ;
 // $button-color: ;
 
 
+//////
+
+$background:                  $lightest-grey !default;
+$disable-color:               darken($white, 46.5%)!default;                          //#888888
+$block-disabled-color: 		  $primary-lighter !default;
+
+
+
 //FLASHMSG
 
-$flash-red:         $red;
-$flash-orange:      $accent;
-$flash-green:       $green;
-$flash-blue:        $primary-darkest;
+$flash-red:                   $red;
+$flash-orange:                $accent;
+$flash-green:                 $green;
+$flash-blue:                  $primary-darkest;
 
 
 $colorz: $cyan, $green, $yellow, $orange, $pink, $purple, $indigo;
