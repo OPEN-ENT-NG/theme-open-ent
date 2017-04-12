@@ -1312,16 +1312,19 @@ textarea:focus {
             }
         }
         a,
-        a.container {
+        a.container,
+        .img.container{
             padding: 0;
             @include run-transition(all);
             i {
                 width: 117px;
                 height: 117px;
                 display: inline-block;
+                color: $primary;
             }
         }
-        a.container {
+        a.container,
+        .img.container {
             border: 1px solid $light-grey;
         }
         i.history {
@@ -1870,31 +1873,7 @@ select {
         background: $primary;
     }
 }
-.color-picker {
-    right: 42px;
-    button.pink {
-        background: $pink;
-    }
-    button.purple {
-        background: $purple;
-    }
-    button.orange {
-        background: $orange;
-    }
-    button.white {
-        background: $white;
-        border: 1px solid $primary-light;
-    }
-    button.green {
-        background: $green;
-    }
-    button.blue {
-        background: $accent;
-    }
-    button.black {
-        background: $primary;
-    }
-}
+
 .media-container.pink [contenteditable],
 .media-container.pink .text-wrapper > [bind-html] {
     background: $pink;

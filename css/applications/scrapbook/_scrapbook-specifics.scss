@@ -1,162 +1,24 @@
-/* svg mode cover */
-.scrapbook.cover .bloc-svg {
-    .scrapbook-svg {
-        .scrapbook-sheets {
-            fill: transparent;
-        }
 
-        .scrapbook-pagelines {
-            stroke: transparent;
+.scrapbook-infos,
+nav.scrapbook-buttons{
+    button.colors-opener {
+        background-image: url("../../img/icons/colorpicker.png");
+    }
+
+    button.colors-opener {
+        &:before{
+            display: none;
         }
     }
-}
-/*mode normal*/
-.bloc-svg {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    /*fix IE*/
-    height: 0;
-    padding-top: 70%;
-    /*fix IE*/
-    svg {
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    /* scrapbook style */
-    .scrapbook-svg {
-        /* cover */
-        &.orange .scrapbook-cover {
-            fill: $orange;
-        }
 
-        &.pink .scrapbook-cover {
-            fill: $pink;
-        }
-
-        &.purple .scrapbook-cover {
-            fill: $purple;
-        }
-
-        &.blue .scrapbook-cover {
-            fill: $cyan;
-        }
-
-        &.green .scrapbook-cover {
-            fill: $green;
-        }
-
-        &.black .scrapbook-cover {
-            fill: $black;
-        }
-
-        &.white .scrapbook-cover {
-            fill: $white;
-        }
-
-        &.transparent .scrapbook-cover {
-            fill: transparent;
-        }
-        // bordure
-        .scrapbook-cover {
-            stroke: $grey;
-        }
-        /* ombre portee spirales */
-        image {
-            opacity: 0.4!important;
-        }
-
-        .scrapbook-sheets {
-            fill: $white;
-        }
-
-        .scrapbook-pagelines {
-            stroke: $solid-grey;
-        }
-    }
 }
 
-/* mode edit scrapbook properties/ CREATE */
-.row.preview {
-    margin-bottom: 60px;
-}
-
-.scrapbook-infos.centered {
-    width: 85%;
-    overflow: hidden;
-
-    input {
-        margin: 5px auto 15px;
-        float: none;
-    }
-
-    h3 {
+.scrapbook-infos{
+    .color-picker{
+        position: static;
         float: left;
-        line-height: 33px;
-        margin: 0 15px;
-    }
-}
-
-//scrapbook container
-.preview .scrapbook {
-    position: relative;
-    width: 90%;
-    margin: auto;
-    top: 10px;
-    padding-bottom: 60px;
-
-    .bloc-svg {
-        position: relative;
-    }
-
-    .tools-layer {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        padding-top: 5%;
-
-        .centered {
-            width: 90%;
-
-            .small.button {
-                margin-top: 15px;
-                float: none;
-                display: inline-block;
-            }
+        button.colors-opener{
+            position: static;
         }
-
-        image-select img {
-            max-height: 280px;
-            max-width: 60%;
-        }
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-.row button.colors-opener,
-nav.scrapbook-buttons button.colors-opener {
-    height: 33px;
-    width: 30px;
-    background-image: url("../../img/icons/colorpicker.png");
-    background-size: 70%;
-    background-position: left center;
-    background-repeat: no-repeat;
-    border: none;
-    display: inline-block;
-    float: left;
-
-    &:focus {
-        outline: 0;
     }
 }
