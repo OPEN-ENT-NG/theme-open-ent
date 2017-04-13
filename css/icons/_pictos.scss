@@ -804,6 +804,18 @@ i.img:before{
   font-size: 20px;
 }
 
+i.wallpaper-add, i.image-background{
+    :before{
+      content: '\e929';
+    }
+}
+i.wallpaper-remove, i.image-background-delete{
+    :before{
+      content: '\e92a';
+    }
+}
+
+
 ///////////////////
 
 i.link{

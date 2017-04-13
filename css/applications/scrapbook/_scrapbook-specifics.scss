@@ -22,3 +22,116 @@ nav.scrapbook-buttons{
         }
     }
 }
+
+
+
+nav.scrapbook-buttons {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+
+    .toolbar {
+        height: 40px;
+        float: left;
+        p {
+            line-height: 40px;
+            margin: 0 5px 0 0;
+        }
+    }
+
+
+    input.image,
+    input.image-background,
+    input.image-background-delete,
+    input.sound,
+    input.text,
+    input.video {
+        border-radius: 0;
+        border: none;
+        padding: 0;
+        font-family: Arial;
+        margin: 5px 3px;
+        @include run-transition(all);
+        background: $light-grey;
+        color: $accent;
+    }
+
+    input.image-background-delete:hover,
+    input.image-background:hover,
+    input.image:hover,
+    input.sound:hover,
+    input.text:hover,
+    input.video:hover {
+        background: $accent;
+        color: $light-grey;
+    }
+
+    input.text {
+        @include icon(text-icon, 30px);
+    }
+    input.image {
+        @include icon(picture-icon, 30px);
+    }
+    input.sound {
+        @include icon(music-icon, 30px);
+    }
+    input.video {
+        @include icon(video-icon, 30px);
+    }
+    input.image-background {
+        @include icon(picture-icon-lock, 30px);
+    }
+    input.image-background-delete {
+        @include icon(picture-icon-delete, 30px);
+    }
+
+
+    .color-picker {
+        margin-right: 5px;
+    }
+    button.colors-opener{
+        margin: 3px 0px 3px 5px;
+        .colors-list{
+            margin-top: 3px;
+        }
+    }
+
+
+
+    > a {
+        line-height: 33px;
+        height: 33px;
+    }
+
+    .element a {
+        line-height: 20px;
+        height: 20px;
+    }
+
+///////
+    .scrapbook-pagination {
+        color: $primary;
+        input{
+            width: 20px;
+            padding-right: 5px;
+            text-align: right;
+            font-size: 15px;
+            margin: 5px 0 0;
+        }
+    }
+///////
+    .scrapbook-addpage {
+        text-align: center;
+
+        a {
+            line-height: 40px;
+        }
+
+        plus {
+            float: none!important;
+        }
+    }
+
+}
