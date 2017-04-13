@@ -1533,7 +1533,7 @@ article.selected {
 .grid-exemple.row .absolute {
     font-size: 14px;
     padding: 10px;
-    color: $disable-color;
+    color: $disabled-color;
     border: $light-grey solid 5px;
     border-radius: 5px;
     background: $white;
@@ -2537,7 +2537,7 @@ ul.toc {
 }
 input[type=text][disabled=disabled] {
     background: $neutral-grey;
-    color: $disable-color;
+    color: $disabled-color;
     padding: 5px;
     font-size: 14px;
     line-height: 20px;
@@ -2856,7 +2856,7 @@ ul.colored li {
     .steps {
         background: $light-grey;
         li {
-            color: $disable-color;
+            color: $disabled-color;
         }
         li.active {
             background: $accent;
