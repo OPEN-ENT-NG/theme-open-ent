@@ -13,7 +13,7 @@
         color: $accent;
     }
     .drop-down-label, .drop-up-label{
-        border-bottom: 1px solid $disable-color;
+        border-bottom: 1px solid $disabled-color;
         @include run-transition(all);
         & > label{
             font-weight: bold;
@@ -34,7 +34,7 @@
             @include run-transition(all);
         }
         &+.drop-down-info{
-            color: $disable-color;
+            color: $disabled-color;
         }
     }
 }

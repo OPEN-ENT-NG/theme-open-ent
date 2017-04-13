@@ -36,7 +36,7 @@
     }
     button[disabled=disabled],
     button.disabled {
-        color: $disable-color;
+        color: $disabled-color;
     }
     button:hover,
     .button:hover {
@@ -47,7 +47,7 @@
     button.disabled:hover {
         cursor: default;
         background: none;
-        color: $disable-color;
+        color: $disabled-color;
     }
     behaviour {
         @include cell;

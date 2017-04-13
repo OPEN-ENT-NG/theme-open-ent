@@ -365,7 +365,7 @@
             }
             & + div{
                 text-align: center;
-                color: $disable-color;
+                color: $disabled-color;
                 @include run-transition(all)
             }
         }
