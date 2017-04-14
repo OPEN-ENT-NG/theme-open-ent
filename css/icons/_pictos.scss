@@ -906,28 +906,6 @@ i.dotsx3-v, dots-menu i.opener{
 }
 
 
-
-.color-picker{
-    button.colors-opener {
-        @include fonticon;
-        width: 20px;
-        box-shadow: none;
-        margin: 0;
-        padding: 0;
-        border: none;
-        position: absolute;
-        right: -20px;
-        top: 1px;
-    }
-    button.colors-opener:before{
-      content: '\e83b';
-      text-indent: 13px;
-      color: black;
-    }
-}
-
-
-
 .schedule .schedule-items .schedule-item-content{
     i{
       @include fonticon;

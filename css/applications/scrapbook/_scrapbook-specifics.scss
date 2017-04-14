@@ -1,36 +1,17 @@
 
-.scrapbook-infos,
-nav.scrapbook-buttons{
-    button.colors-opener {
-        background-image: url("../../img/icons/colorpicker.png");
-    }
 
-    button.colors-opener {
-        &:before{
-            display: none;
-        }
-    }
-
+section.scrapbook{
+    margin-top: 65px;
 }
-
-.scrapbook-infos{
-    .color-picker{
-        position: static;
-        float: left;
-        button.colors-opener{
-            position: static;
-        }
-    }
-}
-
 
 
 nav.scrapbook-buttons {
 
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 0;
     height: 50px;
+    padding: 5px;
 
     .toolbar {
         height: 40px;
@@ -48,14 +29,20 @@ nav.scrapbook-buttons {
     input.sound,
     input.text,
     input.video {
+        width: 30px;
+        height: 30px;
         border-radius: 0;
         border: none;
         padding: 0;
         font-family: Arial;
         margin: 5px 3px;
-        @include run-transition(all);
         background: $light-grey;
         color: $accent;
+        box-shadow: 0 1px 1px $shadow-dark;
+        @include run-transition(all);
+        &:before{
+            @include fonticon;
+        }
     }
 
     input.image-background-delete:hover,
@@ -69,36 +56,35 @@ nav.scrapbook-buttons {
     }
 
     input.text {
-        @include icon(text-icon, 30px);
-    }
-    input.image {
-        @include icon(picture-icon, 30px);
-    }
-    input.sound {
-        @include icon(music-icon, 30px);
-    }
-    input.video {
-        @include icon(video-icon, 30px);
-    }
-    input.image-background {
-        @include icon(picture-icon-lock, 30px);
-    }
-    input.image-background-delete {
-        @include icon(picture-icon-delete, 30px);
-    }
-
-
-    .color-picker {
-        margin-right: 5px;
-    }
-    button.colors-opener{
-        margin: 3px 0px 3px 5px;
-        .colors-list{
-            margin-top: 3px;
+        &:before{
+            content:"T";
         }
     }
-
-
+    input.image {
+        &:before{
+            content:"\e84a";
+        }
+    }
+    input.sound {
+        &:before{
+            content:"\e839";
+        }
+    }
+    input.video {
+        &:before{
+            content:"\e872";
+        }
+    }
+    input.image-background {
+        &:before{
+            content:"\e929";
+        }
+    }
+    input.image-background-delete {
+        &:before{
+            content:"\e92a";
+        }
+    }
 
     > a {
         line-height: 33px;
@@ -134,4 +120,14 @@ nav.scrapbook-buttons {
         }
     }
 
+}
+
+.scrapbook {
+    editor {
+        editor-toolbar {
+            bottom: 100% !important;
+            top: auto !important;
+            z-index: 100001;
+        }
+    }
 }
