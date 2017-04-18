@@ -28,67 +28,20 @@ nav.scrapbook-buttons {
         }
     }
 
-
-    input.image,
-    input.image-background,
-    input.image-background-delete,
-    input.sound,
-    input.text,
-    input.video {
-        width: 30px;
-        height: 30px;
-        border-radius: 0;
-        border: none;
-        padding: 0;
-        font-family: Arial;
-        margin: 5px 3px;
-        background: $light-grey;
-        color: $accent;
-        box-shadow: 0 1px 1px $shadow-dark;
-        @include run-transition(all);
-        &:before{
-            @include fonticon;
+    .option{
+        margin: 6px 3px 0 3px;
+        > i{
+            font-size: 21px;
+            left: 7px;
+            top: 3px;
         }
-    }
-
-    input.image-background-delete:hover,
-    input.image-background:hover,
-    input.image:hover,
-    input.sound:hover,
-    input.text:hover,
-    input.video:hover {
-        background: $accent;
-        color: $light-grey;
-    }
-
-    input.text {
-        &:before{
-            content:"T";
+        > i.text{
+            font-size: 23px;
+            left: 11px;
         }
-    }
-    input.image {
-        &:before{
-            content:"\e84a";
-        }
-    }
-    input.sound {
-        &:before{
-            content:"\e839";
-        }
-    }
-    input.video {
-        &:before{
-            content:"\e872";
-        }
-    }
-    input.image-background {
-        &:before{
-            content:"\e929";
-        }
-    }
-    input.image-background-delete {
-        &:before{
-            content:"\e92a";
+        input.scrapbook-media{
+            box-shadow: 0 1px 1px $shadow-dark;
+            @include run-transition(all);
         }
     }
 
@@ -104,7 +57,7 @@ nav.scrapbook-buttons {
 
 ///////
 
-    //bouton ajouter page "+" 
+    //bouton ajouter page "+"
     .scrapbook-addpage {
         text-align: center;
 
