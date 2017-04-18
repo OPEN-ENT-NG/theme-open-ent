@@ -716,10 +716,10 @@ i.video-large:before{
 }
 i.video{
   @include fonticon;
+  font-size: 18px;
   text-align: center;
 }
 i.video:before{
-  font-size: 18px;
   content: '\e872';
 }
 
@@ -807,14 +807,19 @@ i.img:before{
   content: '\e84a';
   font-size: 20px;
 }
-
+i.image::before {
+    content: '\e84a';
+}
+i.sound::before {
+    content: '\e839';
+}
 i.wallpaper-add, i.image-background{
-    :before{
+    &:before{
       content: '\e929';
     }
 }
 i.wallpaper-remove, i.image-background-delete{
-    :before{
+    &:before{
       content: '\e92a';
     }
 }
@@ -871,6 +876,8 @@ i.dotsx3-v, dots-menu i.opener{
     }
 }
 
+
+
 .menu-items{
     i{
       background: none;
@@ -879,67 +886,66 @@ i.dotsx3-v, dots-menu i.opener{
     }
 
 
-	i.image, input[type=button].image, input[type=button].image:hover{
-	  background: none;
-	}
-  	//i.image:before, input[type=button].image:before, input[type=button].image:before:hover{
-	i.image:before, li > div.image:before{
-	  content: '\e84a';
-	  @include fonticon;
-	  display: block;
-	  position: absolute;
-	  line-height: 35px;
-	  font-size: 22px;
-	  color: black;
-	  text-align: center;
-	}
+    i.image, input[type=button].image, input[type=button].image:hover{
+      background: none;
+    }
+    	//i.image:before, input[type=button].image:before, input[type=button].image:before:hover{
+    i.image:before, li > div.image:before{
+      content: '\e84a';
+      @include fonticon;
+      display: block;
+      position: absolute;
+      line-height: 35px;
+      font-size: 22px;
+      color: black;
+      text-align: center;
+    }
 
-	i.sound, input[type=button].sound, input[type=button].sound:hover{
-	  background: none;
-	}
-	i.sound:before, li > div.sound:before{
-	  content: '\e839';
-	  @include fonticon;
-	  display: block;
-	  position: absolute;
-	  line-height: 35px;
-	  font-size: 22px;
-	  color: black;
-	  text-align: center;
-	}
+    i.sound, input[type=button].sound, input[type=button].sound:hover{
+      background: none;
+    }
+    i.sound:before, li > div.sound:before{
+      content: '\e839';
+      @include fonticon;
+      display: block;
+      position: absolute;
+      line-height: 35px;
+      font-size: 22px;
+      color: black;
+      text-align: center;
+    }
 
-	i.video{
-	  font-size: 20px;
-	  background: none;
-	  @include fonticon;
-	  text-align: left;
-	  color: black;
-	}
-  	i.video:before{
-	  content: '\e872';
-	}
+    i.video{
+      font-size: 20px;
+      background: none;
+      @include fonticon;
+      text-align: left;
+      color: black;
+    }
+    	i.video:before{
+      content: '\e872';
+    }
 
-	i.grid{
-	  font-size: 23px;
-	  background: none;
-	  @include fonticon;
-	  text-align: left;
-	  color: black;
-	}
+    i.grid{
+      font-size: 23px;
+      background: none;
+      @include fonticon;
+      text-align: left;
+      color: black;
+    }
 
-	i.sniplet{
-	  font-size: 26px;
-	  background: none;
-	  @include fonticon;
-	  text-align: left;
-	  color: black;
-	}
-  	i.sniplet:before {
-	  content: '\e837';
-	}
+    i.sniplet{
+      font-size: 26px;
+      background: none;
+      @include fonticon;
+      text-align: left;
+      color: black;
+    }
+    	i.sniplet:before {
+      content: '\e837';
+    }
 
 }
-
 
 .schedule .schedule-items .schedule-item-content{
     i{
@@ -1198,6 +1204,10 @@ i.hidden::before {
 
 i.right-click:before{
     content: "\e928";
+}
+
+.text::before {
+    content: 'T';
 }
 .sniplet {
     .carousel.workspace::before {
