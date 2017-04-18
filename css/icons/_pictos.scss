@@ -85,16 +85,20 @@ i.sort:before{
 
 
 i.arrow{
-  @include fonticon;
-  text-align: center;
-  color: $white;
+    @include fonticon;
+    text-align: center;
+    color: $white;
+    margin-top: 2px;
+    @include run-transition(all);
 }
 i.arrow:before{
-    font-family: none; //unicode not from generic icon font
-  content: '\25B2';
-  font-size: 20px;
-  font-weight: bold;
+    font-family: none; //unicode NOT from generic icon font
+    content: '\25B2';
+    font-size: 20px;
+    font-weight: bold;
 }
+
+
 i.left-open{
   @include fonticon;
   text-align: center;
