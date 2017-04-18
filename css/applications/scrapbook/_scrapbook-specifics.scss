@@ -4,6 +4,12 @@ section.scrapbook{
     margin-top: 65px;
 }
 
+.scrapbook-infos{
+    h3{
+        font-size: 1.2em;
+        margin-left: 5px;
+    }
+}
 
 nav.scrapbook-buttons {
 
@@ -97,17 +103,8 @@ nav.scrapbook-buttons {
     }
 
 ///////
-    .scrapbook-pagination {
-        color: $primary;
-        input{
-            width: 20px;
-            padding-right: 5px;
-            text-align: right;
-            font-size: 15px;
-            margin: 5px 0 0;
-        }
-    }
-///////
+
+    //bouton ajouter page "+" 
     .scrapbook-addpage {
         text-align: center;
 
@@ -121,6 +118,19 @@ nav.scrapbook-buttons {
     }
 
 }
+
+.scrapbook-pagination {
+    color: $primary;
+    input{
+        width: 20px;
+        padding-right: 5px;
+        text-align: right;
+        font-size: 15px;
+        margin: 5px 0 0;
+    }
+}
+///////
+
 
 .scrapbook {
     editor {
