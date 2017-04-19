@@ -59,14 +59,12 @@ nav.scrapbook-buttons {
 
     //bouton ajouter page "+"
     .scrapbook-addpage {
-        text-align: center;
-
-        a {
-            line-height: 40px;
-        }
-
         plus {
-            float: none!important;
+            .opener{
+                width: 38px;
+                height: 38px;
+                line-height: 38px;
+            }
         }
     }
 
