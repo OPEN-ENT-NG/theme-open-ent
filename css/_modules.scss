@@ -3149,6 +3149,11 @@ plus {
         box-shadow: 0 2px 3px $shadow inset;
     }
 }
+plus:hover {
+    .opener{
+        background: $dark-accent;
+    }
+}
 
 
 .block-editor {
