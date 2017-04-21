@@ -1673,6 +1673,14 @@ input[type=text]{
       font-size: 24px;
     }
 
+    i.reset {
+      @include fonticon;
+
+      &::before {
+        content : '\e8be';
+      }
+    }
+
     .suivi-eleve, .detail-competence {
       float: left;
     }
