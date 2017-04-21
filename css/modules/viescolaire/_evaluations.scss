@@ -16,7 +16,9 @@ body.evaluations {
       text-align : center !important;
     }
   }
-
+  .evalLibre{
+    height: 800px;
+  }
 select.padding-select-accueil {
     padding-right: 30px !important;
   }@media screen and (max-device-width:$fat-mobile) {
@@ -352,7 +354,7 @@ input[type=text]{
       border-bottom: solid 1px rgba(0,0,0,0.2);
       background-color: $white;
       @include transition(all 100ms ease-out);
-      height: 36px;
+      height: 35px;
       overflow: hidden;
       padding: 5px;
       box-sizing: border-box;
