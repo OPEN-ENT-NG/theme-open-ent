@@ -13,11 +13,11 @@ $handleHoverColor: $white;
 $labelTextColor: $grey;
 $handleBgColor: $primary;
 $handleInnerColor: $white;
-$handleDisabledColor: $disable-grey;
+$handleDisabledColor: $disabled-color;
 $limitLabelTextColor: $labelTextColor;
 $barFillColor: $handleBgColor;
-$barDisabledFillColor: $disable-grey;
-$barNormalColor: $middle-grey;
+$barDisabledFillColor: $disabled-color;
+$barNormalColor: $neutral-grey;
 
 body.vsco--global {
 
