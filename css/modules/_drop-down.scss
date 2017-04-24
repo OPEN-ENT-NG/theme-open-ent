@@ -1,9 +1,19 @@
+
+// cheat for use dropdown with scroll in lightbox
+.exercizer div[data-drop-down]{
+	z-index: 100000;
+	max-height: 350px;
+	overflow-y: scroll;
+	background-color: white;
+}
+
+
 .drop-down-block{
     i.arrow{
         color: $accent;
     }
     .drop-down-label, .drop-up-label{
-        border-bottom: 1px solid $disable-grey;
+        border-bottom: 1px solid $disabled-color;
         @include run-transition(all);
         & > label{
             font-weight: bold;
@@ -24,7 +34,7 @@
             @include run-transition(all);
         }
         &+.drop-down-info{
-            color: $disable-grey;
+            color: $disabled-color;
         }
     }
 }

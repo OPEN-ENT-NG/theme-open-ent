@@ -1,0 +1,94 @@
+
+
+section.scrapbook{
+    margin-top: 65px;
+}
+
+.scrapbook-infos{
+    h3{
+        font-size: 1.2em;
+        margin-left: 5px;
+    }
+}
+
+nav.scrapbook-buttons {
+
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 50px;
+    padding: 5px;
+
+    .toolbar {
+        height: 40px;
+        float: left;
+        p {
+            line-height: 40px;
+            margin: 0 5px 0 0;
+        }
+    }
+
+    .option{
+        margin: 6px 3px 0 3px;
+        > i{
+            font-size: 21px;
+            left: 7px;
+            top: 3px;
+        }
+        > i.text{
+            font-size: 23px;
+            left: 11px;
+        }
+        input.scrapbook-media{
+            box-shadow: 0 1px 1px $shadow-dark;
+            @include run-transition(all);
+        }
+    }
+
+    > a {
+        line-height: 33px;
+        height: 33px;
+    }
+
+    .element a {
+        line-height: 20px;
+        height: 20px;
+    }
+
+///////
+
+    //bouton ajouter page "+"
+    .scrapbook-addpage {
+        plus {
+            .opener{
+                width: 38px;
+                height: 38px;
+                line-height: 38px;
+            }
+        }
+    }
+
+}
+
+.scrapbook-pagination {
+    color: $primary;
+    input{
+        width: 20px;
+        padding-right: 5px;
+        text-align: right;
+        font-size: 15px;
+        margin: 5px 0 0;
+    }
+}
+///////
+
+
+.scrapbook {
+    editor {
+        editor-toolbar {
+            bottom: 100% !important;
+            top: auto !important;
+            z-index: 100001;
+        }
+    }
+}

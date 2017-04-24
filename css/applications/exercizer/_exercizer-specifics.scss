@@ -34,7 +34,7 @@ body.exercizer{
             }
             fill-zone{
                 cursor: pointer;
-                
+
                 text-zone{
                     pointer-events: none;
                     user-select: none;
@@ -49,7 +49,7 @@ body.exercizer{
                         z-index: 2;
                     }
                 }
-               
+
             }
         }
     }
@@ -186,7 +186,7 @@ body.exercizer{
                 z-index: 20;
             }
         }
-        
+
         background: #eee;
         padding: 8px;
         border-radius: 3px;
@@ -259,7 +259,7 @@ body.exercizer{
             border-bottom: none;
         }
         input[type=text]{
-            box-sizing: border-box;    
+            box-sizing: border-box;
         }
         input[type=text]:focus{
             border-bottom: 1px solid $accent;
@@ -364,5 +364,221 @@ body.exercizer{
         padding: 15px;
         border-radius: 7px;
         min-height: 23px;
+    }
+
+    .dominos.fallen{
+    	.item{
+            .domino{
+                .bottom{
+                    .content{
+                        background: $white;
+                    }
+    				.title-icon i{
+    					color: $black;
+    				}
+                }
+            }
+        }
+        button.flat-button.right-magnet{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            i{
+                &:before{
+                    font-size: 13px;
+                    color: $text-light;
+                }
+            }
+        }
+    }
+}
+
+
+
+/// TCM inner App css
+body.exercizer{
+    /*
+    *   COLOR CORRECTED / CORRECTION ON GOING / HAS BEEN START / IS SUBMITTED
+    */
+
+    .background-color-corrected,
+    .dominos .item .domino .bottom.background-color-corrected{
+        background-color: #72BB53;
+        .content{
+            width: calc(100% - 20px);
+        }
+    }
+    .color-corrected{
+        color: #72BB53;
+    }
+    .background-color-is-correction-on-going,
+    .dominos .item .domino .bottom.background-color-is-correction-on-going{
+        background-color: #FF8351;
+        .content{
+            width: calc(100% - 20px);
+        }
+    }
+    .color-is-correction-on-going{
+        color: #FF8351;
+    }
+    .background-color-is-submitted,
+    .dominos .item .domino .bottom.background-color-is-submitted{
+        background-color: #00A4D3;
+        .content{
+            width: calc(100% - 20px);
+        }
+    }
+    .color-is-submitted{
+        color: #00A4D3;
+    }
+    .background-color-has-been-started,
+    .dominos .item .domino .bottom.background-color-has-been-started{
+        background-color: #FF8351;
+        .content{
+            width: calc(100% - 20px);
+        }
+    }
+    .color-has-been-started{
+        color: #FF8351;
+    }
+
+    .input-response-correct{
+        color: green !important;
+        border: 1px solid green !important;
+    }
+    .input-response-incorrect{
+        color: red !important;
+        border: 1px solid red !important;
+    }
+
+    /**
+    *   FILTER STYLE
+    */
+    .custom-filter-button {
+        margin-right: 20px;
+        border: 1px solid lightgray;
+        background-color: lightgray;
+        border-radius: 2px;
+        min-width: 150px;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 7px;
+        padding-top: 7px;
+    }
+
+    .custom-filter-button-library {
+        border: 1px solid lightgray;
+        padding: 5px;
+        margin: 5px 0 5px 0;
+        background-color: lightgray;
+        border-radius: 2px;
+        text-align: center;
+        width: 100%;
+    }
+    .custom-filter-button-correction {
+        border: 1px solid lightgray;
+        padding: 5px;
+        margin: 5px;
+        background-color: lightgray;
+        border-radius: 2px;
+        text-align: center;
+    }
+
+    .custom-filter-button.custom-selected, .custom-filter-button-library.custom-selected, .custom-filter-button-correction.custom-selected {
+        background-color  : #FF8500;
+        color: white;
+    }
+
+    /**
+     * Floating nav selected
+     */
+    .floating-navigation li.selected {
+        background: #FF8500;
+        box-shadow: none;
+    }
+    .floating-navigation li.selected a {
+        color: white;
+    }
+
+    /**
+     * Custom tags for subject library list
+     */
+
+    .subject-library-tag {
+        font-size: 12px;
+        color: white;
+        background-color: #FF8500;
+        border-radius: 2px;
+        padding: 1px 3px 1px 2px;
+        margin: 5px 5px 0 0;
+        display: inline-block;
+    }
+
+    /**
+    *   OVERWRITE THEME
+    */
+
+    .tabs header.selected{
+        background-color: transparent !important;
+    }
+
+    .down-open:hover{
+        color: #FF8351;
+    }
+
+    .hover-orange:hover{
+        color: #FF8351;
+    }
+
+    #surcharge-force-cursor-default:before{
+        cursor: default !important;
+    }
+    #edit-subject .surcharge-force-margin-zero{
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .association-possible-answer-left{
+        border: 1px dashed black;
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 10px;
+        background-color: lightgray;
+    }
+
+    .association-possible-answer-left:hover{
+        border: 1px dashed #FF8500;
+        background-color: white;
+    }
+
+    .association-drop-hover{
+        border: 1px dashed #FF8500!important;
+        background-color: white;
+    }
+
+    .subject-dragged-grain {
+        z-index: 1000;
+        width: 100%;
+        border: 1px dashed #FF8500!important;
+        background-color: white;
+        cursor: move;
+    }
+
+    /// & body
+
+    editor.small-editor.edit > [contenteditable] {
+        width: 100%;
+        max-height: 100px!important;
+        min-height: 100px!important;
+        overflow-y: scroll;
+    }
+
+    editor.small-editor.edit > [contenteditable]:focus {
+        width: 100%;
+        max-height: none!important;
+        min-height: 250px!important;
+        overflow: visible;
     }
 }

@@ -77,8 +77,13 @@ h4 {
     color: $grey;
     font-weight: bold;
 }
-.list-view,
-.share {
+
+.list-view, .share{
+    i.sort-desc, i.sort-asc, i.sort{
+        font-size: 14px;
+        padding-left: 5px;
+        color: inherit;
+    }
     .select-file {
         margin-top: 0;
     }
@@ -378,7 +383,7 @@ nav.horizontal {
         width: 195px !important;
         padding: 4px;
         box-sizing: border-box;
-        border: 1px solid $middle-grey;
+        border: 1px solid $neutral-grey;
     }
 }
 .nomargin {
@@ -623,9 +628,6 @@ input[type=submit][disabled=disabled]:hover {
         line-height: 26px;
     }
 }
-.dragging a {
-    pointer-events: none;
-}
 
 .small-text a,
 .small-text em,
@@ -633,6 +635,26 @@ input[type=submit][disabled=disabled]:hover {
 .small-text span {
     font-size: 14px;
 }
+
+.medium-text {
+    font-size: 16px !important;
+    label {
+        font-size: 16px !important;
+        line-height: 28px;
+    }
+}
+.medium-text a,
+.medium-text em,
+.medium-text label,
+.medium-text span {
+    font-size: 16px;
+}
+
+.dragging a {
+    pointer-events: none;
+}
+
+
 .icons-select {
     background: transparent;
     i {
@@ -645,7 +667,7 @@ input[type=submit][disabled=disabled]:hover {
         width: 100%;
     }
     .current {
-        @include border-radius(3px);
+        border-radius: 3px;
         padding-left: 0;
         font-size: 18px;
         @include run-transition(padding-left);
@@ -678,14 +700,22 @@ input[type=submit][disabled=disabled]:hover {
 }
 textarea.inline-editing {
     background: transparent;
-    border-bottom: 1px solid $middle-grey;
+    border-bottom: 1px solid $neutral-grey;
     padding: 2px;
 }
 textarea.inline-editing:focus {
     border-bottom: 2px solid $accent;
     outline: none;
 }
-.label-badge {
+
+.badge {
+    line-height: 16px;
+    background: $accent;
+    color: $white;
+}
+
+
+.label-badge, .label-badge-disabled {
     background: $primary-dark;
     @include material-card();
     @include run-transition(background);
@@ -700,14 +730,19 @@ textarea.inline-editing:focus {
         margin: 5px 5px 5px 10px;
     }
 }
-.badge {
-    line-height: 16px;
-    background: $accent;
-    color: $white;
-}
+
 .label-badge:hover {
     background: $primary;
 }
+.label-badge-disabled{
+    pointer-events: none;
+    background: $disabled-color;
+}
+
+
+
+
+
 //weird chrome hack for background color in prefilled inputs
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px white inset;
@@ -741,7 +776,7 @@ input[type=tel],
 input[type=email] {
     color: $text-light;
     background: transparent;
-    border-bottom: 1px solid $middle-grey;
+    border-bottom: 1px solid $neutral-grey;
     @include run-transition(border-bottom);
 }
 input[type=text]:focus,
@@ -893,6 +928,9 @@ a.button.cancel:hover,
 input[type=submit].cancel:hover {
     background: $accent;
 }
+
+
+/// workspace
 nav.vertical,
 .app-menu {
     padding: 0 20px 0 0;
@@ -1102,10 +1140,10 @@ ul.icons-tabs {
 // global  / notifications xtrn
 .responsive-table {
     //futur stick to top
-    border: 1px solid $middle-grey;
+    border: 1px solid $neutral-grey;
     .fixed-head {
         & + .row {
-            //border-bottom: 1px solid $middle-grey;
+            //border-bottom: 1px solid $neutral-grey;
         }
     }
     // .fixed-head.scrolling{
@@ -1190,7 +1228,7 @@ ul.icons-tabs {
 
 textarea {
     box-sizing: border-box;
-    border: 1px solid $middle-grey;
+    border: 1px solid $neutral-grey;
     padding: 10px;
     font-size: 14px;
     margin-top: 7px;
@@ -1277,16 +1315,19 @@ textarea:focus {
             }
         }
         a,
-        a.container {
+        a.container,
+        .img.container{
             padding: 0;
             @include run-transition(all);
             i {
                 width: 117px;
                 height: 117px;
                 display: inline-block;
+                color: $primary;
             }
         }
-        a.container {
+        a.container,
+        .img.container {
             border: 1px solid $light-grey;
         }
         i.history {
@@ -1388,7 +1429,7 @@ nav.vertical.floating {
     }
     .content{
         background: $lightest-grey;
-        border: 1px solid $middle-grey;
+        border: 1px solid $neutral-grey;
     }
     ul{
         border-left: none;
@@ -1462,7 +1503,7 @@ article.selected {
 }
 [contenteditable] {
     background: $white;
-    border: 1px solid $middle-grey;
+    border: 1px solid $neutral-grey;
 }
 [contenteditable]:focus {
     border: 2px solid $accent;
@@ -1495,7 +1536,7 @@ article.selected {
 .grid-exemple.row .absolute {
     font-size: 14px;
     padding: 10px;
-    color: $disable-grey;
+    color: $disabled-color;
     border: $light-grey solid 5px;
     border-radius: 5px;
     background: $white;
@@ -1579,7 +1620,6 @@ article.selected {
         margin-bottom: 10px;
     }
 }
-
 
 .warning-text {
     color: rgb(245, 103, 103);
@@ -1685,7 +1725,7 @@ select {
     }
 }
 .side-tabs-content {
-    @include border-radius(0);
+    border-radius: 0;
     border-color: $accent;
 }
 .humane-original-success {
@@ -1719,7 +1759,7 @@ select {
         }
     }
     .illustrated-text {
-        border-top: 1px solid $middle-grey;
+        border-top: 1px solid $neutral-grey;
         border-radius: 15px;
         box-shadow: 0 0 2px;
         .upper-title {
@@ -1728,7 +1768,7 @@ select {
         .cke_editable {
             border: none;
             min-height: 110px;
-            border: 1px dashed $middle-grey;
+            border: 1px dashed $neutral-grey;
             margin-bottom: 10px;
             &:focus {
                 border-width: 1px;
@@ -1764,8 +1804,8 @@ select {
         overflow: hidden;
     }
     .bubble::after {
-        border-left: 1px solid $middle-grey;
-        border-top: 1px solid $middle-grey;
+        border-left: 1px solid $neutral-grey;
+        border-top: 1px solid $neutral-grey;
         content: "";
         position: absolute;
         width: 15px;
@@ -1836,31 +1876,7 @@ select {
         background: $primary;
     }
 }
-.color-picker {
-    right: 42px;
-    button.pink {
-        background: $pink;
-    }
-    button.purple {
-        background: $purple;
-    }
-    button.orange {
-        background: $orange;
-    }
-    button.white {
-        background: $white;
-        border: 1px solid $primary-light;
-    }
-    button.green {
-        background: $green;
-    }
-    button.blue {
-        background: $accent;
-    }
-    button.black {
-        background: $primary;
-    }
-}
+
 .media-container.pink [contenteditable],
 .media-container.pink .text-wrapper > [bind-html] {
     background: $pink;
@@ -2536,8 +2552,8 @@ ul.toc {
     }
 }
 input[type=text][disabled=disabled] {
-    background: $middle-grey;
-    color: $disable-grey;
+    background: $neutral-grey;
+    color: $disabled-color;
     padding: 5px;
     font-size: 14px;
     line-height: 20px;
@@ -2636,7 +2652,7 @@ input[type=text][disabled=disabled] {
 }
 .droptarget.block-editor {
     background-color: $light-grey;
-    border: 3px dashed $middle-grey;
+    border: 3px dashed $neutral-grey;
 }
 image-select.droptarget {
     > div {
@@ -2852,11 +2868,11 @@ ul.colored li {
 }
 .wizard {
     background: $white;
-    border: 1px solid $middle-grey;
+    border: 1px solid $neutral-grey;
     .steps {
         background: $light-grey;
         li {
-            color: $disable-grey;
+            color: $disabled-color;
         }
         li.active {
             background: $accent;
@@ -2871,7 +2887,7 @@ ul.colored li {
     margin-top: 20px;
     > tbody > tr > td,
     > thead > tr > td {
-        border: 1px solid $middle-grey;
+        border: 1px solid $neutral-grey;
         vertical-align: top;
         .diff {
             background: rgba($accent, 0.2);
@@ -3091,7 +3107,7 @@ label {
         margin-top: -11px;
     }
     input[type=checkbox]:disabled + span::before {
-        border-color: $middle-grey !important;
+        border-color: $neutral-grey !important;
     }
 }
 image-select{
@@ -3131,6 +3147,11 @@ plus {
     .opener.minus {
         background: $dark-accent;
         box-shadow: 0 2px 3px $shadow inset;
+    }
+}
+plus:hover {
+    .opener{
+        background: $dark-accent;
     }
 }
 
@@ -3245,12 +3266,6 @@ nav.vertical {
     }
 }
 
-
-select-list {
-    .options {
-        @include material-card();
-    }
-}
 /* no ico in app page title*/
 h1 i:before,
 h1 i:after,
@@ -3290,7 +3305,7 @@ body editor {
     }
     [contenteditable] {
         article {
-            border: 1px dotted $middle-grey;
+            border: 1px dotted $neutral-grey;
         }
     }
     .drawing-zone {

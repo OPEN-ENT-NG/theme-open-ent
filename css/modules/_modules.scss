@@ -1,14 +1,14 @@
 @import "alphabetical";
-@import "apps";
+@import "apps-view";
 @import "assistant";
 @import "buttons-set";
 @import "cards";
 @import "chips";
+@import "color-picker";
 @import "dominos";
 @import "dots-menu";
 @import "drop-down";
 @import "embedder";
-@import "exercizer";
 @import "explorer";
 @import "flashmsg";
 @import "forgot-panel";
@@ -23,8 +23,6 @@
 @import "loading-panel";
 @import "navigations";
 @import "notifications";
-@import "pages-templates-blocks";
-@import "pages";
 @import "panel";
 @import "pills";
 @import "pulsar";
@@ -37,6 +35,7 @@
 @import "tabs";
 @import "toaster";
 @import "toggle-panel";
+@import "tipbox";
 @import "viescolaire/custom";
 @import "viescolaire/evaluations";
 @import "viescolaire/global";
