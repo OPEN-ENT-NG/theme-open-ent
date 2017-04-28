@@ -27,38 +27,6 @@ header.main{
     }
 }
 
-nav.subnavbar{
-
-	ul{
-
-		li{
-			overflow: hidden;
-
-			&:after{
-				content: ' ';
-				position: absolute;
-				bottom: 0;
-				width: 100%;
-				background-color: $accent;
-				height: 3px;
-				left: -100%;
-				@include run-transition(left);
-			}
-
-			&.selected{
-
-				&:after{
-					left: 0;
-				}
-			}
-
-			&.disabled, &.disabled *{
-				color: $medium-grey !important;
-			}
-		}	
-	}
-}
-
 #info-side-nav {
 	li.selected {
 		a {
