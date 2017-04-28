@@ -1,0 +1,15 @@
+.actualites {
+  .info-preview {
+    .read-more-link {
+      z-index: 10;
+      position: relative;
+    }
+
+    .degrade {
+      position: absolute;
+      height: 80%;
+      bottom: 0;
+      background: linear-gradient(to top, $white 15%, transparent);
+    }
+  }
+}
