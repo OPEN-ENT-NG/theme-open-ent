@@ -25,6 +25,13 @@
     }
 }
 
+i.star{
+  @include fonticon;
+}
+i.star:before{
+  content:'\e9d9';
+}
+
 i.quote, i.quote-r{
   @include fonticon;
   text-align: center;
@@ -43,11 +50,17 @@ i.quote-r{
     }
 }
 
-i.star{
-  @include fonticon;  
+
+i.quote, i.quote-r{
+  @include fonticon;
+  text-align: center;
+  font-size: 16px;
 }
-i.star:before{
-  content:'\e9d9';
+i.quote:before, i.quote-r:before{
+  content: '\e8c2';
+}
+i.quote-r{
+    transform: rotate(90deg);
 }
 
 i.bell{
