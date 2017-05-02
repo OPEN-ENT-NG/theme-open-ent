@@ -44,7 +44,7 @@ i.quote-r{
 }
 
 i.star{
-  @include fonticon;  
+  @include fonticon;
 }
 i.star:before{
   content:'\e9d9';
@@ -1180,9 +1180,6 @@ i.right-click:before{
     content: "\e928";
 }
 
-.text::before {
-    content: 'T';
-}
 .sniplet {
     .carousel.workspace::before {
         content: '\e90d';
