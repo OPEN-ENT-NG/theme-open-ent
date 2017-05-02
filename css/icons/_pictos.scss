@@ -1180,6 +1180,10 @@ i.right-click:before{
     content: "\e928";
 }
 
+i.text::before {
+    content: 'T';
+}
+
 .sniplet {
     .carousel.workspace::before {
         content: '\e90d';
@@ -1187,10 +1191,6 @@ i.right-click:before{
 
     .navigation.pages::before {
         content: '\e84f';
-    }
-
-    .text::before {
-        content: 'T';
     }
 
     i.sound::before {

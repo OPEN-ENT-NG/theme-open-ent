@@ -1835,12 +1835,12 @@ select {
         text-align: center;
     }
     i.text:before {
-        content: 'T';
         font-family: serif;
         font-weight: bold;
         display: block;
         width: 24px;
     }
+
     > li > div > input[type=button] {
         background-position: 4px !important;
         padding-left: 29px;
