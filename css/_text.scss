@@ -1,0 +1,62 @@
+
+a {
+    color: $primary;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: $primary;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 30px;
+    a {
+        color: $primary;
+    }
+    strong.subtitle {
+        color: $grey;
+        font-size: 14px;
+        display: block;
+        margin-top: -5px;
+    }
+}
+h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+h1:first-child {
+    margin-top: 0;
+}
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+h4 {
+    font-size: 18px;
+    color: $grey;
+    font-weight: bold;
+}
+
+app-title {
+    display: block;
+    float: left;
+}
+app-title + h2 {
+    font-size: 26px;
+    clear: both;
+}
+
+strong {
+    color: $grey;
+}
