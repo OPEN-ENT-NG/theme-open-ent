@@ -353,10 +353,6 @@ body.exercizer{
         }
     }
 
-    nav{
-        padding-right: 35px;
-    }
-
     grain-copy-footer{
         display: block;
         position: relative;
@@ -497,9 +493,15 @@ body.exercizer{
         color: white;
     }
 
+
+    nav.floating-navigation, nav.vertical{
+        padding-right: 35px;
+    }
+
     /**
      * Floating nav selected
      */
+
     .floating-navigation li.selected {
         background: #FF8500;
         box-shadow: none;
