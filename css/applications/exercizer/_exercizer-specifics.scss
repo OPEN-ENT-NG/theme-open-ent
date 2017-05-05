@@ -3,9 +3,15 @@ body.exercizer.dragging{
         background: $accent;
         color: #fff;
     }
+
 }
 
 body.exercizer{
+    
+    .droppable{
+        @include droppable;
+    }
+
     edit-fill-text{
         editor.edit, editor.both, editor.html{
             editor-toolbar{
