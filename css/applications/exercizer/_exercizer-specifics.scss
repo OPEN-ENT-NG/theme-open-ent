@@ -391,6 +391,13 @@ body.exercizer{
             }
         }
     }
+
+    .flex-row.justify-center.centered > button.flat-button.five{
+        span{
+            float: none;
+            display: initial;
+        }
+    }
 }
 
 
