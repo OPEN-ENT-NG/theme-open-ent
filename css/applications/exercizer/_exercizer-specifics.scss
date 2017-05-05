@@ -322,8 +322,8 @@ body.exercizer{
     }
 
     perform-order .answer{
-        line-height: 40px;
-        height: 40px;
+        line-height: 25px;
+        min-height: 40px;
     }
 
     edit-order input[type=text]{
