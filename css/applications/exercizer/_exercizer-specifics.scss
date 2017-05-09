@@ -7,7 +7,7 @@ body.exercizer.dragging{
 }
 
 body.exercizer{
-    
+
     .droppable{
         @include droppable;
     }
@@ -397,7 +397,12 @@ body.exercizer{
     .flex-row.justify-center.centered > button.flat-button.five{
         span{
             float: none;
-            display: initial;
+            display: inline-block;
+            i{
+                font-size: 25px;
+                vertical-align: middle;
+                padding-right: 8px;
+            }
         }
     }
 }
