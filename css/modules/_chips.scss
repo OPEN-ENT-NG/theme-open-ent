@@ -1,4 +1,5 @@
 .chip{
+    padding-bottom: 2px;
     background: $medium-grey;
     box-shadow: 2px 2px 4px 0px $shadow-dark inset;
     @include run-transition(all);
