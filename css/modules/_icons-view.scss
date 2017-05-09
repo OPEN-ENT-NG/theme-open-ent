@@ -36,13 +36,14 @@ article.icons-view {
             background-size: 100%;
         }
         legend {
-            width: 100%;
+            position: absolute !important;
+            left: 1px;
+            bottom: 1px !important;
+            width: calc(100% - 2px);
             height: auto;
             text-align: center;
             padding-top: 5px !important;
             line-height: 20px !important;
-            position: absolute !important;
-            bottom: 0 !important;
             background: $shadow-dark;
             color: $white;
             box-sizing: border-box;
