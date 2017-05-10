@@ -105,12 +105,26 @@ i.arrow:before{
 
 
 i.left-open{
-  @include fonticon;
-  text-align: center;
+    text-align: center;
+    font-size: 14px;
+    &:before{
+      content: '\e87b';
+    }
 }
-i.left-open:before{
-  content: '\e87b';
-  font-size: 16px;
+
+i.open-right{
+    text-align: center;
+    font-size: 14px;
+    &:before{
+      content: '\e823';
+    }
+}
+//si pas tag i
+.open-right{
+    @include fonticon;
+    &:before{
+      content: '\e823';
+    }
 }
 
 i.history{
@@ -990,12 +1004,7 @@ i.dotsx3-v, dots-menu i.opener{
 
 }
 
-.open-right{
-	@include fonticon;
-}
-.open-right:before{
-  content: '\e823';
-}
+
 
 input-password{
     button{
