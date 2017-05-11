@@ -170,6 +170,8 @@ body.exercizer{
             overflow: hidden;
             box-sizing: border-box;
             transition: border 250ms ease;
+            border: 2px dashed transparent;
+            border-radius: 5px;
             > img{
                 width: 100%;
             }
