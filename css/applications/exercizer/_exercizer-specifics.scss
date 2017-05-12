@@ -412,20 +412,12 @@ body.exercizer{
 
                     }
     				.title-icon i{
-    					color: $black;
+    					color: $text-light;
     				}
                 }
 
             }
         }
-
-        i{
-            &:before{
-                font-size: 13px;
-                color: $text-light;
-            }
-        }
-
     }
 
     .flex-row.justify-center.centered > button.flat-button.five{
