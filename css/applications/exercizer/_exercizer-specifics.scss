@@ -391,29 +391,41 @@ body.exercizer{
     }
 
     .dominos.fallen{
+
     	.item{
             .domino{
+
                 .bottom{
                     .content{
                         background: $white;
+
+                        .buttons{
+                            position: absolute;
+                            top: 10px;
+                            right: 10px;
+                            height: calc(100% - 20px);
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: flex-start;
+                            flex-direction: column;
+                        }
+
                     }
     				.title-icon i{
     					color: $black;
     				}
                 }
+
             }
         }
-        button.flat-button.right-magnet{
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            i{
-                &:before{
-                    font-size: 13px;
-                    color: $text-light;
-                }
+
+        i{
+            &:before{
+                font-size: 13px;
+                color: $text-light;
             }
         }
+
     }
 
     .flex-row.justify-center.centered > button.flat-button.five{
@@ -427,6 +439,7 @@ body.exercizer{
             }
         }
     }
+
 }
 
 
