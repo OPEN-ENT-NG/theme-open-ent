@@ -5,20 +5,58 @@ body.evaluations {
       z-index: 120000 !important;
     }
   }
-
-
-  @media screen and (max-device-width:$fat-mobile) {
-    .responsive-table table thead {
-      display: none !important;
+  canvas.chart.chart-bar {
+    cursor: pointer;
+  }
+  @media screen and (max-width:  $small-mobile){
+    .input-moyenne {
+      float:none;
+      font-weight: bold;
+      display: inline-block;
+      text-align : center !important;
     }
+  }
+  .evalLibre{
+    height: 800px;
+  }
+  select.padding-select-accueil {
+    padding-right: 30px !important;
+  }@media screen and (max-device-width:$fat-mobile) {
+  .responsive-table table thead {
+    display: none !important;
+  }
 
-    input[type=text], input[type=password], input[type=search], input[type=tel], input[type=email] {
-      text-align: center !important;
+  input[type=text], input[type=password], input[type=search], input[type=tel], input[type=email] {
+    text-align: center !important;
+  }
+}
+
+  .maitrise-bfc {
+    font-weight: normal;
+    font-style: italic;
+    float: left;
+    padding-left: 5px;
+  }
+
+  .domaine-maitrise{
+    padding-top: 5px;
+  }
+
+  .legende-bfc-left {
+    width: 20%!important;
+  }
+
+  .legende-bfc-right {
+    width: 65%;
+    .conversion-libelle{
+      font-weight: 400;
+      max-width: 100%;
+      width: 100%
     }
   }
 
   table thead tr, ul.list-view thead tr {
-    color: #fff !important;
+    color: $white !important;
   }
 
   @media screen and (min-device-width:$tablette ) {
@@ -122,11 +160,11 @@ body.evaluations {
     }
     .col1 {
       width: 200px !important;
-    }
-    .colMoyenne {
-      width: 100px !important;
-      text-align: center !important;
-    }
+
+    }.colMoyenne {
+       width: 100px !important;
+       text-align: center !important;
+     }
   }
   .moyenneClasse {
     color: $primary-dark;
@@ -237,9 +275,9 @@ body.evaluations {
     }
     &.opened{
       .plus-input{
+        @include fonticon;
         &::after{
-          font-family: "FontAwesome";
-          content: "\f068";
+          content: "\e85e";
         }
       }
     }
@@ -316,7 +354,7 @@ body.evaluations {
       border-bottom: solid 1px rgba(0,0,0,0.2);
       background-color: $white;
       @include transition(all 100ms ease-out);
-      height: 36px;
+      height: 35px;
       overflow: hidden;
       padding: 5px;
       box-sizing: border-box;
@@ -504,7 +542,7 @@ body.evaluations {
   }
   .criteres{
     &.opened{
-      height: 180px;
+      height: 205px;
     }
   }
   .criteres, .statistiques-devoir, .detail-devoir, .student-info, .devoir-info{
@@ -513,9 +551,9 @@ body.evaluations {
       right: 5px;
       position: absolute;
       top: 11px;
+      @include fonticon;
       &::after{
-        content: "\f067";
-        font-family: 'FontAwesome';
+        content: "\e87b";
         font-size: 15px;
         color: $grey;
         font-weight: 300;
@@ -523,12 +561,16 @@ body.evaluations {
         cursor: pointer;
         border: none;
         background-color: inherit;
+        font-size: 10px;
       }
       &:hover::after{
         color: $cyan;
       }
-      &::after{
-        content: "\f068";
+    }
+
+    &.opened {
+      .plus-input::after{
+        content: "\e841";
       }
     }
   }
@@ -616,9 +658,9 @@ body.evaluations {
     right: 18px;
     position: absolute;
     top: 5px;
+    @include fonticon;
     &::after{
-      content: '\f00d';
-      font-family: 'FontAwesome';
+      content: '\e866';
       font-size: 15px;
       color: $grey;
       font-weight: 300;
@@ -746,9 +788,9 @@ body.evaluations {
       }
     }
     > .skills-text-overflow{
+      @include fonticon;
       &::before{
-        font-family: "FontAwesome";
-        content: "\f0da";
+        content: "\e823";
         /*left: 0px;*/
         /*position: absolute;*/
         @include transition(all 200ms ease);
@@ -1009,8 +1051,8 @@ body.evaluations {
       overflow: visible;
       @include transition(all 200ms ease);
       > .skills-text-overflow{
-        &::before{
-          content: "\f0d7";
+        i.skills-open-icon::before {
+          content: "\e841";
         }
       }
     }
@@ -1024,13 +1066,15 @@ body.evaluations {
       }
     }
     > .skills-text-overflow{
-      &::before{
-        font-family: "FontAwesome";
-        content: "\f0da";
-        left: 0px;
-        position: absolute;
-        @include transition(all 200ms ease);
-        font-size: larger;
+      i.skills-open-icon {
+        @include fonticon;
+        &::before{
+          content: "\e823";
+          left: 0;
+          position: absolute;
+          @include transition(all 200ms ease);
+          font-size: 10px;
+        }
       }
     }
   }
@@ -1331,7 +1375,7 @@ body.evaluations {
           text-align-last: right;
           padding-right: 10px;
           padding-top: 10px;
-          padding-top: 10px;
+
         }
       }
 
@@ -1631,6 +1675,14 @@ body.evaluations {
       font-size: 24px;
     }
 
+    i.reset {
+      @include fonticon;
+
+      &::before {
+        content : '\e8be';
+      }
+    }
+
     .suivi-eleve, .detail-competence {
       float: left;
     }
@@ -1662,6 +1714,10 @@ body.evaluations {
             }
             .bottom {
               padding: 0px 10px 85% 10px;
+              background: none !important;
+            }
+            .user-deleted {
+              background-color: #ccc !important;
             }
           }
         }
@@ -1706,6 +1762,7 @@ body.evaluations {
       .content-bilan-fin-cycle {
         .domaine-display {
           padding: 23px 0;
+          font-weight: bold;
         }
 
         .domaine-line{
@@ -1821,15 +1878,21 @@ body.evaluations {
   }
 
   .Domaine{
+
     &::before {
-      font-family: "FontAwesome";
+      @include fonticon;
       margin-right: 0.5%;
-      content: "\f0d7";
+      content: "\e841";
+      font-size:10px;
+      float: left;
     }
     &.openedDom {
       &::before {
+        @include fonticon;
         margin-right: 1%;
-        content: "\f0da";
+        content: "\e823";
+        font-size:10px;
+        float: left;
       }
     }
   }
