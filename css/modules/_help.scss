@@ -1,16 +1,22 @@
-help section.lightbox > div.content .app-single-post .app-content-section {
+help section.lightbox > div.content .sect1 {
     width: 620px;
 }
 help {
     color: black;
     line-height: normal;
     font-size: 16px;
-    .app-single-post {
-        p {
-            color: black;
-        }
+    p {
+        color: black;
     }
     section.lightbox {
         z-index: 10002;
     }
+    #preamble{
+        li{
+            display: block;
+        }
+        ul{
+            border-left: 5px solid #FF8500;
+        }
+  }
 }
