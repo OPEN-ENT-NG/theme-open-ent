@@ -18,7 +18,7 @@
 			</div>
 
 			<h2 ng-click="showWhat = showWhat === 'forgotId' ? null : 'forgotId'"><a><i18n>auth.lost.id</i18n></a></h2>
-			<div ng-if="showWhat === 'forgotId'" ng-init="user.login = ''">
+			<div ng-if="showWhat === 'forgotId'" ng-init="user.login = ''; user.mode = 'id'">
 				<i18n>auth.lost.id.text</i18n>
 				<div class="row">
 					<form class="nostyle rowstyle" method="post" name="forgotForm" ng-submit="forgot('mail')">
