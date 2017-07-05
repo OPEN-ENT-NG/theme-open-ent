@@ -1,0 +1,15 @@
+@import "overridable-variables";
+@import "variables-open-ent";
+@import "../entcore-css-lib/css-lib";
+
+@import "mixins";
+@import "fonts";
+@import "text";
+@import "modules";
+@import "modules/modules";
+@import "icons/icons";
+@import "applications/applications";
+@import "layout-styles";
+@import "mobile/mobile";
+
+@import "springboard-overrides";

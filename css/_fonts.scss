@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,300,700,400);
+
+@font-face {
+	font-family: "OpenDyslexic";
+	src: url(../../../entcore-css-lib/font/OpenDyslexic3-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'generic-icons';
+    src: url(../../../generic-icons/fonts/generic-icons.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+.fonticon {
+    @include fonticon;
+}
+i{
+    @include fonticon;
+}
