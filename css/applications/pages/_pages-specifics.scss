@@ -86,9 +86,13 @@
     }
 
     .text-wrapper{
+        [bind-html]{
+            min-height: 180px;
+        }
+        
         editor.both, editor.html, editor.edit  > div > [contenteditable] {
             border-color: transparent !important;
-            min-height: 100% !important;
+            min-height: 200px !important;
             padding: 0;
         }
     }
