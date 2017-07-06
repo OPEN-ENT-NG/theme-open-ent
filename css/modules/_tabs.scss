@@ -52,3 +52,57 @@
         }
     }
 }
+
+ul.icons-tabs {
+    top: 2px;
+    right: 265px;
+    @include run-transition(all);
+    li {
+        @include material-card();
+        border-radius: 50% 0 0 50%;
+        border: none;
+        background: $accent;
+        i {
+            @include invert-colors();
+            display: block;
+        }
+        //fix ie
+        i.tools:before {
+            @include invert-colors(100%);
+            color: $white!important;
+        }
+    }
+}
+
+
+.side-tabs {
+    ul {
+        li {
+            color: $white;
+            background: $primary;
+            border-color: $accent;
+            border-right: none;
+        }
+        li:first-child {
+            border-top-left-radius: 5px;
+        }
+        li:last-child {
+            border-bottom-left-radius: 5px;
+        }
+        li.selected:first-child {
+            border-top: 1px solid $accent;
+        }
+        li.selected {
+            color: $black;
+            background: $white;
+            border-color: $accent;
+            border-right: none;
+            border-top: none;
+            border-bottom: none;
+        }
+    }
+}
+.side-tabs-content {
+    border-radius: 0;
+    border-color: $accent;
+}

@@ -1,0 +1,122 @@
+a.button[disabled=disabled],
+button[disabled=disabled],
+input[type=button][disabled=disabled],
+input[type=submit][disabled=disabled],
+a.button[disabled=disabled]:hover,
+button[disabled=disabled]:hover,
+input[type=button][disabled=disabled]:hover,
+input[type=submit][disabled=disabled]:hover {
+    color: $solid-grey;
+    background: $grey;
+    //border: none;
+    //box-shadow: none;
+    cursor: default;
+}
+
+button:active,
+input[type=button]:active,
+a.button:active,
+input[type=submit]:active,
+button:focus,
+input[type=button]:focus,
+a.button:focus,
+input[type=submit]:focus {
+    &::before {
+        content: " ";
+        background: $white;
+        -webkit-animation: ripple 0.65s linear;
+        -moz-animation: ripple 0.65s linear;
+        -ms-animation: ripple 0.65s linear;
+        -o-animation: ripple 0.65s linear;
+        animation: ripple 0.65s linear;
+        top: -50%;
+        left: -50%;
+    }
+    outline: none;
+}
+
+.flat-button,
+button.flat-button,
+input[type=submit].flat-button,
+input[type=button].cancel,
+button.cancel,
+a.button.cancel,
+.drop-down-button label,
+.drop-down-button.hidden label {
+    @include flat-button;
+}
+input[type=button].pick-file {
+    @include flat-button;
+}
+
+input-password {
+    input[type=password],
+    input[type=text] {
+        width: calc(100% - 50px);
+        margin: 0;
+        height: 32px;
+        display: inline-block;
+        float: none;
+        &.ng-invalid.ng-dirty {
+            border-bottom: 2px solid $red;
+        }
+    }
+    button {
+        height: 32px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        &.pushed {
+            background-color: $dark-accent;
+            box-shadow: none;
+        }
+    }
+    button,
+    button:active,
+    button:focus {
+        &::before {
+            -webkit-animation: none;
+            -moz-animation: none;
+            -ms-animation: none;
+            -o-animation: none;
+            animation: none;
+            -webkit-transition: none;
+            transition: none;
+            width: auto;
+            height: auto;
+            top: 0;
+            left: -5px;
+        }
+    }
+    button::before {
+        line-height: 18px;
+        font-size: 27px;
+        text-align: center;
+        text-indent: 40px;
+        color: $white;
+        background: transparent !important;
+        position: relative;
+    }
+}
+
+
+button:hover,
+input[type=button]:hover,
+a.button:hover,
+input[type=submit]:hover {
+    background-color: $dark-accent;
+    box-shadow: none;
+    color: $white;
+}
+button.cancel:hover,
+input[type=button].cancel:hover,
+a.button.cancel:hover,
+input[type=submit].cancel:hover {
+    background: $accent;
+}
+
+
+//fix ipad buttons styles
+input[type="submit"],
+input[type="button"] {
+    -webkit-appearance: none;
+}

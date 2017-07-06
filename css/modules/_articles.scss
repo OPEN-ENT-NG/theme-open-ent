@@ -5,3 +5,22 @@ article {
     padding: 15px;
     box-sizing: border-box;
 }
+
+
+article {
+    @include material-card();
+    article {
+        box-shadow: none;
+    }
+}
+article.list-view {
+    padding: 0;
+}
+
+article.selected {
+    background: $primary;
+    color: $white;
+    a {
+        color: $white;
+    }
+}

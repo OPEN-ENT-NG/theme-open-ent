@@ -133,3 +133,160 @@ nav.subnavbar{
 		}
 	}
 }
+
+
+
+/// workspace
+nav.vertical,
+.app-menu {
+    padding: 0 20px 0 0;
+    margin-right: 10px;
+    h2 {
+        font-size: 16px;
+        font-weight: bold;
+        color: $primary;
+    }
+    > ul,
+    > div > ul {
+        border-left: 5px solid $accent;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        &.sublist {
+            margin-left: 10px;
+        }
+        li {
+            font-size: 16px;
+            padding-left: 20px;
+            box-sizing: border-box;
+            a {
+                @include run-transition(background);
+                margin-left: 0;
+                padding-left: 25px;
+                padding-right: 45px;
+                i.arrow {
+                    position: absolute;
+                    height: 20px;
+                    display: block;
+                    left: 2px;
+                    color: $white;
+                }
+                i.arrow::before {
+                    display: block;
+                    content: " ";
+                    border-top: 6px solid transparent;
+                    border-bottom: 6px solid transparent;
+                    border-left: 8px solid;
+                    height: 0;
+                    width: 0;
+                    color: $accent;
+                    width: 0;
+                }
+                i {
+                    margin-left: 5px;
+                    text-indent: 8px;
+                }
+                i.close,
+                i.edit {
+                    position: absolute;
+                    right: 5px;
+                    top: 1px;
+                }
+                i.edit {
+                    right: 30px;
+                }
+            }
+            a.selected {
+                color: $accent;
+                background: none;
+            }
+            a.opened {
+                i.arrow::before {
+                    margin-top: 3px;
+                    content: " ";
+                    border-top: 8px solid;
+                    border-bottom: none;
+                    border-left: 6px solid transparent;
+                    border-right: 6px solid transparent;
+                }
+            }
+        }
+    }
+    ul:first-child > li,
+    div ul:first-child > li,
+    h2 + ul > li,
+    .search + ul > li {
+        padding-left: 0;
+    }
+    a.classic-link {
+        display: block;
+        margin-top: 15px;
+        padding: 5px 0;
+        background: $light-grey;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        @include run-transition(background);
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    a.classic-link:hover {
+        background: $primary;
+        color: white;
+    }
+}
+nav.vertical.half-stamps.mobile-navigation.slide {
+    & > div {
+        width: auto;
+    }
+}
+
+
+.side-col.cell nav.vertical.floating.hash-magnet {
+    padding-top: 40px;
+    margin-bottom: 40px;
+    padding-right: 0;
+    background: $white;
+}
+nav.vertical.floating {
+    .arrow{
+        width: 26px;
+        margin-left: -13px;
+        left: 50%;
+        &::after{
+            color: $white;
+            background: $accent;
+            @include run-transition(background);
+        }
+        &:hover::after{
+            background: $dark-accent;
+        }
+    }
+    .content{
+        background: $lightest-grey;
+        border: 1px solid $neutral-grey;
+    }
+    ul{
+        border-left: none;
+    }
+    li {
+        @include material-card();
+        border-top: 0;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background: $white;
+        border-radius: 1px;
+        width: auto!important;
+        @include run-transition(all);
+    }
+    li:hover {
+        background: $accent;
+        box-shadow: none;
+        a {
+            color: $white;
+        }
+    }
+}

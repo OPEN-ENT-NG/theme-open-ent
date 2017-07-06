@@ -62,28 +62,12 @@ input[type=submit],
 }
 
 
-
-button:active,
-input[type=button]:active,
-a.button:active,
-input[type=submit]:active,
-button:focus,
-input[type=button]:focus,
-a.button:focus,
-input[type=submit]:focus {
-    &::before {
-        content: " ";
-        background: $white;
-        -webkit-animation: ripple 0.65s linear;
-        -moz-animation: ripple 0.65s linear;
-        -ms-animation: ripple 0.65s linear;
-        -o-animation: ripple 0.65s linear;
-        animation: ripple 0.65s linear;
-        top: -50%;
-        left: -50%;
-    }
-    outline: none;
+//weird chrome hack for background color in prefilled inputs
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+    -webkit-text-fill-color: $text-light !important;
 }
+
 input[type=text],
 input[type=password],
 input[type=search],
@@ -96,4 +80,38 @@ input[type=email] {
     padding-left: 5px;
     font-size: 14px;
     margin-bottom: 15px;
+}
+
+
+textarea.inline-editing {
+    background: transparent;
+    border-bottom: 1px solid $neutral-grey;
+    padding: 2px;
+}
+textarea.inline-editing:focus {
+    border-bottom: 2px solid $accent;
+    outline: none;
+}
+
+
+input[type=text],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=email] {
+    color: $text-light;
+    background: transparent;
+    border-bottom: 1px solid $neutral-grey;
+    @include run-transition(border-bottom);
+}
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=email]:focus {
+    border-bottom: 2px solid $accent;
+    outline: 0;
+}
+input.ng-invalid.ng-dirty {
+    border-bottom: 2px solid $red;
 }
