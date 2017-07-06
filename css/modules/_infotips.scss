@@ -1,3 +1,7 @@
+.warning-text {
+    color: $warning-color;
+}
+
 .message {
     @include message;
     i{
@@ -32,29 +36,5 @@
     //border-left: 10px solid $green;
     i{
         color: inherit;
-    }
-}
-.valid-color, .valid-color em, .valid-color i{
-    color: $green!important;
-}
-
-
-.accent-color, .accent-color em, .accent-color i{
-    color: $accent!important;
-}
-
-
-infotip{
-    position: relative;
-    display: none;
-    i.close{
-        transition: color 250ms ease;
-        cursor: pointer;
-        position: absolute;
-        top: 5px;
-        right: 10px;
-        &:hover{
-            color: $accent;
-        }
     }
 }
