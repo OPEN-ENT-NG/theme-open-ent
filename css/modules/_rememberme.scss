@@ -1,0 +1,36 @@
+
+input#rememberMe{
+    visibility: hidden;
+    overflow: hidden;
+    width: 25px!important;
+    height: 20px;
+    float: left;
+
+    &:before{
+        content: '';
+        visibility: visible;
+        border: 2px solid $grey;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 5px;
+        box-sizing: border-box;
+        @include run-transition(all);
+    }
+}
+input#rememberMe:checked{
+    &:before{
+        transform: rotate(40deg);
+        border-color: #46bfaf;
+        height: 25px;
+        width: 20px;
+        margin-top: -11px;
+        border-top-color: transparent;
+        border-left-color: transparent;
+    }
+}
+
+input#rememberMe + small{
+    margin-left: -5px;
+}

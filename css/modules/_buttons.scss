@@ -50,6 +50,7 @@ input[type=button].pick-file {
 }
 
 input-password {
+
     input[type=password],
     input[type=text] {
         width: calc(100% - 50px);
@@ -61,6 +62,7 @@ input-password {
             border-bottom: 2px solid $red;
         }
     }
+
     button {
         height: 32px;
         border-top-right-radius: 15px;
@@ -70,32 +72,42 @@ input-password {
             box-shadow: none;
         }
     }
-    button,
-    button:active,
-    button:focus {
-        &::before {
-            -webkit-animation: none;
-            -moz-animation: none;
-            -ms-animation: none;
-            -o-animation: none;
-            animation: none;
-            -webkit-transition: none;
-            transition: none;
-            width: auto;
-            height: auto;
-            top: 0;
-            left: -5px;
+
+
+    &.toggleable-password {
+
+        button,
+        button:active,
+        button:focus {
+
+            &::before {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                -o-animation: none;
+                animation: none;
+                -webkit-transition: none;
+                transition: none;
+            }
+        }
+
+        button::before {
+            color: $white;
+            background: transparent !important;
+            border-radius: 0;
+            width: 40px;
+            left: 4px;
+            top: calc(50% - 9px);
+            font-size: 23px;
+        }
+        button:active{
+            &::before {
+                opacity: 0.7
+            }
         }
     }
-    button::before {
-        line-height: 18px;
-        font-size: 27px;
-        text-align: center;
-        text-indent: 40px;
-        color: $white;
-        background: transparent !important;
-        position: relative;
-    }
+
+
 }
 
 
