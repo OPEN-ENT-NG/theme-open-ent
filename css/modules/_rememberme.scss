@@ -1,25 +1,39 @@
 
+
+
+
 input#rememberMe{
-    visibility: hidden;
+    appearance: none;
     overflow: hidden;
     width: 25px!important;
     height: 20px;
     float: left;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    &:focus{
+        outline: none;
+    }
+}
 
+input#rememberMe + small{
     &:before{
         content: '';
         visibility: visible;
+        appearance: auto;
         border: 2px solid $grey;
         width: 20px;
         height: 20px;
         display: inline-block;
         vertical-align: top;
-        margin-right: 5px;
+        margin-right: 10px;
         box-sizing: border-box;
+        margin-left: -35px;
+        margin-top: 3px;
         @include run-transition(all);
     }
 }
-input#rememberMe:checked{
+input#rememberMe:checked + small{
     &:before{
         transform: rotate(40deg);
         border-color: #46bfaf;
@@ -31,6 +45,6 @@ input#rememberMe:checked{
     }
 }
 
-input#rememberMe + small{
-    margin-left: -5px;
-}
+// input#rememberMe + small{
+//     margin-left: -5px;
+// }
