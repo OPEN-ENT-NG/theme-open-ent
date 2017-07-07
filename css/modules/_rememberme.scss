@@ -1,7 +1,4 @@
 
-
-
-
 input#rememberMe{
     appearance: none;
     overflow: hidden;
@@ -44,7 +41,3 @@ input#rememberMe:checked + small{
         border-left-color: transparent;
     }
 }
-
-// input#rememberMe + small{
-//     margin-left: -5px;
-// }
