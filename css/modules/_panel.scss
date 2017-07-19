@@ -211,6 +211,9 @@
         overflow: hidden;
         margin-bottom: 0;
     }
+    &.activation form {
+        width: calc(100% - 60px);
+    }
 }
 
 @media screen and (max-width: $tablette){
