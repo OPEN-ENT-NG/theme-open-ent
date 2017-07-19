@@ -95,45 +95,6 @@
 
 
 
-	.login.panel{
-		box-sizing: border-box;
-		h1{
-			display: none;
-		}
-		h1 + form{
-			margin-top: 70px;
-		}
-        .panels-container{
-            display: block;
-            margin-top: 70px;
-        }
-        .welcome-text, .welcome-text+form, form{
-            min-width: 0;
-            width: 90%;
-            margin-left: auto;
-            margin-right: auto;
-            clear: both;
-            float: none;
-        }
-	}
-
-	.panel{
-		h1{
-			margin: 20px auto;
-			font-size: 26px;
-		}
-		input-password{
-			button{
-				padding: 5px 0;
-				&::before{
-					position: relative;
-					line-height: 23px;
-					font-size: 16px;
-					left: 0;
-				}
-			}
-		}
-	}
 
 
 	.navbar{
@@ -487,6 +448,6 @@
 	    }
 
 	}
-	
+
 // end tablettes
 }
