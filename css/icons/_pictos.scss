@@ -25,6 +25,15 @@
     }
 }
 
+i.important {
+    color: $accent;
+}
+//  icons for side-panel opener tool
+//  delete if out from h1
+i.wiki {
+    display: inline-block!important;
+}
+
 i.quote, i.quote-r{
   @include fonticon;
   text-align: center;
