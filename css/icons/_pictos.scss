@@ -65,9 +65,41 @@ i.bell{
   color: $white;
   font-size: 20px;
   font-weight: bold;
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  visibility: hidden;
 }
 i.bell:before{
   content: '\E8C9';
+}
+i.bell-disabled{
+  @include fonticon;
+  text-align: center;
+  color: $grey;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  visibility: hidden;
+}
+i.bell-disabled:before{
+  content: '\E8C9';
+}
+i.bell-slash{
+  @include fonticon;
+  text-align: center;
+  color: $white;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  visibility: hidden;
+}
+i.bell-slash:before{
+  content: '\E92E';
 }
 i.person{
   @include fonticon;

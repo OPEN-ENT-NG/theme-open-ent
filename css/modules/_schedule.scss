@@ -188,6 +188,19 @@ calendar-daily-events {
   }
 }
 
+.resources-tree {
+  a:hover{
+    .notification-icon {
+      opacity: 1;
+      position: absolute;
+      top: 2px;
+      right: 5px;
+      margin-left: 5px;
+      text-indent: 8px;
+    }
+  }
+}
+
 .changeDisplayModeButtons {
 	button:not(.cyan) {
 		background-color: #aaa;
