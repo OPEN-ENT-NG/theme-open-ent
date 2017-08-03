@@ -1226,3 +1226,7 @@ i.grid::before {
 i.desktop::before {
     content: '\e92d';
 }
+
+i.leave-fullscreen::before{
+  content: '\e865';
+}
