@@ -423,7 +423,7 @@ ul.thought-out-actions {
 .badge {
     line-height: 16px;
     background: $accent;
-    color: $white;
+    color: $white!important;
 }
 .label-badge, .label-badge-disabled {
     background: $primary-dark;
