@@ -160,3 +160,9 @@ calendar-daily-events{
         }
     }
 }
+
+.changeDisplayModeButtons {
+	button:not(.cyan) {
+		background-color: #aaa;
+	}
+}
