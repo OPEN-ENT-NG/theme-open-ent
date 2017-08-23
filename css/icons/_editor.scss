@@ -19,20 +19,9 @@ body editor{
                 }
             }
 		}
-	}
+    }
+
 	&.edit editor-toolbar, &.both editor-toolbar, &.html editor-toolbar{
-		.option.undo > i{
-			@include editor-icon;
-            &::before{
-                content: '\e8be';
-            }
-		}
-		.option.redo > i{
-			@include editor-icon;
-            &::before{
-                content: '\e8bd';
-            }
-		}
 		.option.bold > i{
 			@include editor-icon;
             &::before{
@@ -187,6 +176,15 @@ body editor{
 
 @media screen and (max-width: $tablette){
     body editor{
+        .image-container{
+            &.has-menu{
+                border: 2px dashed $accent;
+            }
+            &:hover{
+                border: 2px dashed $accent;
+            }
+        }
+
         editor-toolbar{
             select-list .selected-value{
                 width: 44px;

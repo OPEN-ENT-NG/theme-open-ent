@@ -1,0 +1,57 @@
+image-editor{
+    .tools-background{
+        background: $primary;
+    }
+
+    .overlay{
+        .handle{
+            border: 2px dashed $primary;
+            &.top{
+                border-top-color: $accent;
+            }
+            &.left{
+                border-left-color: $accent;
+            }
+            &.right{
+                border-right-color: $accent;
+            }
+            &.bottom{
+                border-bottom-color: $accent;
+            }
+            &.top-left{
+                border-top-color: $accent;
+                border-left-color: $accent;
+                .corner.nw{
+                    background-color: $accent;
+                }
+            }
+            &.top-right{
+                border-right-color: $accent;
+                border-top-color: $accent;
+                .corner.ne{
+                    background-color: $accent;
+                }
+            }
+            &.bottom-left{
+                border-bottom-color: $accent;
+                border-left-color: $accent;
+                .corner.sw{
+                    background-color: $accent;
+                }
+            }
+            &.bottom-right{
+                border-bottom-color: $accent;
+                border-right-color: $accent;
+                .corner.se{
+                    background-color: $accent;
+                }
+            }
+        }
+        .corner{
+            background: $primary;
+            &:hover{
+                background: $accent;
+            }
+        }
+    }
+}

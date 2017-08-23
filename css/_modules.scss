@@ -529,35 +529,6 @@ div.background-material {
     }
 }
 
-media-library {
-    nav.vertical ul li a {
-        text-indent: 0;
-    }
-    section.media-library {
-        h2 {
-            font-size: 20px;
-            font-weight: normal;
-        }
-        header + section.medium-text {
-            text-align: left;
-        }
-        slider {
-            padding: 0;
-        }
-        .select-file {
-            h2 {
-                margin-bottom: 10px;
-            }
-            button.file-button {
-                float: left!important;
-            }
-            input[type=text] {
-                margin: 0;
-            }
-        }
-    }
-}
-
 .cell.my-notifications {
     p {
         color: $white;

@@ -15,7 +15,7 @@ select-list.button{
     }
     opt{
         background: $primary;
-        transition: background 250ms ease;
+        transition: 250ms ease;
         color: #fff;
         &:hover{
             background: $accent;
