@@ -499,3 +499,32 @@
         cursor: default;
     }
 }
+
+
+.qwant{
+    padding: 20px;
+    box-sizing: border-box;
+    input[type=text]{
+        position: absolute;
+        height: 38px;
+    }
+    button{
+        background: none;
+        color: #444;
+        font-size: 28px;
+        position: absolute;
+        right: 0;
+        box-shadow: none;
+        padding-right: 0;
+        .search{
+            margin: 0;
+        }
+        &:hover{
+            color: $accent;
+        }
+    }
+
+    .form{
+        height: 40px;
+    }
+}
