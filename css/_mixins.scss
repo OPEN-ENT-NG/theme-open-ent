@@ -101,10 +101,10 @@
     }
 }
 
-
-
-
-
+@mixin transform($value) {
+  transform: $value;
+  -webkit-transform: $value;
+}
 
 @mixin placeholder{
 
