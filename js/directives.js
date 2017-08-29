@@ -241,7 +241,7 @@ var addDirectives = function(module, done){
 						window.xtnv = document;
 						window.xtsd = window.location.protocol === "https:" ? "https://logs" : "http://logi7";
 						window.xtsite = scope.xitiConf.ID_COLLECTIVITE;
-						window.xtn2 = scope.xitiConf.ID_ETAB;
+						window.xtn2 = scope.xitiConf.ID_ETAB.id;
 						window.xtpage = scope.xitiConf.LIB_SERVICE;
 						window.xtdi = "";
 
