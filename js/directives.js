@@ -1,3 +1,5 @@
+console.log('ent additionnal directives')
+
 var addDirectives = function(module, done){
 
 	//We have to remove existing directives we want to replace, otherwise it breaks.
@@ -225,25 +227,25 @@ var addDirectives = function(module, done){
 					var loadScript = function(){
 						//console.log(scope.xitiConf)
 
-						xt_multc = "&x1=" + scope.xitiConf.ID_SERVICE +
+						window.xt_multc = "&x1=" + scope.xitiConf.ID_SERVICE +
 							"&x2=" + scope.xitiConf.ID_PROFIL +
 							"&x3=" + scope.xitiConf.ID_PROJET +
 							"&x4=" + scope.xitiConf.ID_PLATEFORME
 
-						xt_at = scope.xitiConf.ID_PERSO;
-						xtidc = scope.xitiConf.ID_PERSO;
-						xt_ac = scope.xitiConf.ID_PROFIL;
+							window.xt_at = scope.xitiConf.ID_PERSO;
+							window.xtidc = scope.xitiConf.ID_PERSO;
+							window.xt_ac = scope.xitiConf.ID_PROFIL;
 
-						window.xtparam = xt_multc + "&ac="+ xt_ac  +"&at=" + xt_at
+						window.xtparam = window.xt_multc + "&ac="+ window.xt_ac  +"&at=" + window.xt_at
 
-						xtnv = document;
-						xtsd = window.location.protocol === "https:" ? "https://logs" : "http://logi7";
-						xtsite = scope.xitiConf.ID_COLLECTIVITE;
-						xtn2 = scope.xitiConf.ID_ETAB;
-						xtpage = scope.xitiConf.LIB_SERVICE;
-						xtdi = "";
+						window.xtnv = document;
+						window.xtsd = window.location.protocol === "https:" ? "https://logs" : "http://logi7";
+						window.xtsite = scope.xitiConf.ID_COLLECTIVITE;
+						window.xtn2 = scope.xitiConf.ID_ETAB;
+						window.xtpage = scope.xitiConf.LIB_SERVICE;
+						window.xtdi = "";
 
-						loader.asyncLoad(scope.scriptPath, function(){})
+						http().get(scope.scriptPath, function(){})
 					}
 
 					//Script needs to be loaded only *after* everything is complete
