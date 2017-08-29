@@ -305,4 +305,5 @@ if(window.skin){
 }
 if(entcore.skin){
 	entcore.skin.addDirectives = addDirectives;
+	window.skin = entcore.skin;
 }
