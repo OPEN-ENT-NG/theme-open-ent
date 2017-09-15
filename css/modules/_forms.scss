@@ -121,3 +121,20 @@ search-user.focus{
         color: $accent;
     }
 }
+
+select {
+  background-color: $white;
+  height: 34px;
+  padding: 0 5px;
+  border-radius: 2px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  outline: none;
+  min-width: 150px;
+  border: solid 1px $solid-grey;
+  color: $darkest-grey;
+
+  &:hover {
+    border-color: $primary;
+  }
+}
