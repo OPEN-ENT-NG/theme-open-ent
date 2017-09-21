@@ -115,3 +115,9 @@ input[type=email]:focus {
 input.ng-invalid.ng-dirty {
     border-bottom: 2px solid $red;
 }
+
+search-user.focus{
+    label{
+        color: $accent;
+    }
+}
