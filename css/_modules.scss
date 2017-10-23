@@ -2255,14 +2255,14 @@ image-select{
         border: 1px dashed $medium-grey;
         @include run-transition(all);
     }
+    & > div > i:hover {
+        color: $accent;
+    }
 
 }
 image-select:hover > div > img{
     border: 1px dashed $primary;
 }
-
-
-
 
 plus {
     .opener.plus {

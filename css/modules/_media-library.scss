@@ -45,6 +45,7 @@ media-library {
         i.loading{
             color: $cyan;
         }
+        
         .close{
             color: $red;
             &:hover{
@@ -56,6 +57,11 @@ media-library {
             border-color: $primary;
             &:hover{
                 border-color: $accent;
+                .icon{
+                    i.edit{
+                        color: $accent;
+                    }
+                }
             }
         }
     }
