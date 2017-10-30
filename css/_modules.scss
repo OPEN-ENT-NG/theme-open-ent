@@ -2087,9 +2087,6 @@ recorder {
     input[type=text] {
         color: $white;
     }
-    i {
-        @include invert-colors();
-    }
 }
 file-viewer .file .default-viewer button {
     float: none;

@@ -1,43 +1,13 @@
-.image-contextual-menu{
-    background: $accent;
-    i:hover, i.selected{
-        background: $dark-accent;
-    }
-    button:hover{
-        color: $accent;
-    }
-}
-
-body editor [contenteditable]{
-    .image-container{
-        border: 2px dashed $primary;
-        &.top{
-            border-top-color: $accent;
-        }
-        &.left{
-            border-left-color: $accent;
-        }
-        &.right{
-            border-right-color: $accent;
-        }
-        &.bottom{
-            border-bottom-color: $accent;
-        }
-        &.top-left{
-            border-top-color: $accent;
-            border-left-color: $accent;
-        }
-        &.top-right{
-            border-right-color: $accent;
-            border-top-color: $accent;
-        }
-        &.bottom-left{
-            border-bottom-color: $accent;
-            border-left-color: $accent;
-        }
-        &.bottom-right{
-            border-bottom-color: $accent;
-            border-right-color: $accent;
+.media-library{
+    .loading-list{
+        ul{
+            li{
+                .close{
+                    &:hover{
+                        color: white;
+                    }
+                }
+            }
         }
     }
 }

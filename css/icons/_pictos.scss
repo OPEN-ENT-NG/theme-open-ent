@@ -268,14 +268,6 @@ i.attachment{
     }
 }
 
-
-i.help-large, i.help.cas, i.help{
-  @include fonticon;
-}
-i.help-large::before, i.type.help::before, i.help::before{
-  content: '\e835';
-  cursor: pointer;
-}
 nav.horizontal > a{
     i.help{
         display: block;
@@ -586,12 +578,6 @@ i.tools{
   	display: block;
     text-align: center;
     text-indent: 2px;
-}
-i.tools:before{
-  content: '\e855';
-  font-size: 23px;
-  color: #000;
-  //cause invert colors
 }
 
 i.remove-small{
