@@ -15,7 +15,8 @@ article.icons-view {
         font-weight: normal;
         font-size: 14px;
     }
-    .element {
+    
+    .element, explorer {
         padding: 0;
         margin: 8px;
         width: auto;
@@ -122,6 +123,10 @@ article.icons-view {
                 -webkit-filter: none;
             }
         }
+    }
+
+    .element{
+        margin: 0;
     }
 }
 .icons-view .element.selected {
