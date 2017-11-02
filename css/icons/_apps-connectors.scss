@@ -33,7 +33,14 @@ i.absences-large::before, i.type.absences::before, i.absences::before{
 
 
 ///  CONNECTORS
+i.pearltrees-large, i.type.pearltrees, i.pearltrees{
+  @include fonticon;
+}
 
+i.pearltrees-large::before, i.type.pearltrees::before, i.pearltrees::before{
+  content: "\e933";
+  color: $cyan;
+}
 
 i.esidoc-large, i.type.esidoc, i.esidoc{
   @include fonticon;
