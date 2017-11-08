@@ -62,6 +62,14 @@ nav.horizontal {
         margin-top: 10px;
         vertical-align: 0;
     }
+
+    @media screen and (max-height: $small-tablette){
+        popover-content {
+            max-height: 220px;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+    }
 }
 
 header.main{
