@@ -1,0 +1,30 @@
+div.select-blocks {
+  margin: 10px 0px;
+
+  > div {
+	margin-right: 2px;
+	padding: 5px 10px;
+	padding-right: 30px;
+	border-radius: 10px;
+	margin-bottom: 5px;
+	background-color: $light-grey;
+	color: $grey;
+	transition: all 0.25s ease-in-out;
+
+	&.partial {
+		background-color: $light-grey;
+	}
+
+	&:hover {
+		background-color: $grey;
+		color: $white;
+
+		&::after {
+			background-image: url(/public/img/glyphicons_197_remove.png);
+			filter: invert(100%);
+			-webkit-filter: invert(100%);
+			transition: opacity 0.25s ease-in-out;
+		}
+	}
+  }
+}
