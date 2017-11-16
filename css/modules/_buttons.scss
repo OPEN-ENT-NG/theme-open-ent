@@ -5,7 +5,7 @@ input[type=submit][disabled=disabled],
 a.button[disabled=disabled]:hover,
 button[disabled=disabled]:hover,
 input[type=button][disabled=disabled]:hover,
-input[type=submit][disabled=disabled]:hover {
+input[type=submit][disabled=disabled]:hover, button.cancel[disabld=disabled] {
     color: $solid-grey;
     background: $grey;
     //border: none;

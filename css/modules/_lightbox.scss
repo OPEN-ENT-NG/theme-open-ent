@@ -16,8 +16,8 @@
         li {
             padding-left: 10px;
         }
-        ul:first-child > li,
-        div ul:first-child > li {
+        > ul > li,
+        > div > ul > li {
             padding-left: 0;
         }
     }
