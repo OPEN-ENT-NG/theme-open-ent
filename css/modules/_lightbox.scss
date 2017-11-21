@@ -38,10 +38,8 @@
 
 .lightbox-opened{
     header.main{
-        &::after{
-            background: rgba(0,0,0,0.6);
-            pointer-events: all;
-        }
+        opacity: 0;
+        pointer-events: none;
     }
 }
 
@@ -109,4 +107,20 @@ section.lightbox > .background + div.content > .twelve.cell {
     > .twelve.cell.fluid {
         height: auto;
     }
+}
+
+.lightbox > .background::before{
+    content: " ";
+    display: block;
+    height: $header-height;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    width: 100%;
+    background: url(../../img/illustrations/logo.png) 23px 0px no-repeat $primary-dark;
+    background-size: contain;
+    filter: brightness(50%);
+    box-shadow: 0 2px 5px $shadow;
 }
