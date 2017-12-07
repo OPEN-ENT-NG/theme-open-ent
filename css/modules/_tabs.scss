@@ -26,10 +26,8 @@
     header {
         //width: 100%; tabs centered in whole space
         width: auto;
-        border-bottom: 2px solid $white;
         @include run-transition(all);
         &:hover{
-            border-bottom: 2px solid $accent;
             a, a i{
                 color: $accent;
             }
@@ -43,7 +41,6 @@
     }
     header.selected{
         background: $white;
-        border-bottom: 2px solid $accent;
         a, a i{
             color: $accent;
         }
