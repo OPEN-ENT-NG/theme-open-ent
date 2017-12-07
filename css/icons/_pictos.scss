@@ -1216,3 +1216,8 @@ i.desktop::before {
 i.leave-fullscreen::before{
   content: '\e865';
 }
+
+i.tools:before{
+  content: '\e855';
+  font-size: 23px;
+}
