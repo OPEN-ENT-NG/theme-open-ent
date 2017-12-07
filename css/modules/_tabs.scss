@@ -27,22 +27,11 @@
         //width: 100%; tabs centered in whole space
         width: auto;
         @include run-transition(all);
-        &:hover{
-            a, a i{
-                color: $accent;
-            }
-        }
         a{
             i{
                 color: $primary;
                 @include run-transition(all);
             }
-        }
-    }
-    header.selected{
-        background: $white;
-        a, a i{
-            color: $accent;
         }
     }
 }
