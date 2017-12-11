@@ -31,38 +31,3 @@
         box-shadow: 2px 2px 4px 0px $shadow-darker inset;
     }
 }
-
-
-/// REMOVABLES
-
-.chip.removable{
-    border: 1px solid $medium-grey;
-    background: $white;
-    box-shadow: none;
-    text-shadow: none;
-    span{
-        color: $black;
-    }
-    i{
-        &:before{
-            color: $solid-grey!important;
-            text-shadow: none!important;
-            font-size: 10px;
-            vertical-align: top;
-            @include run-transition;
-        }
-    }
-    &:hover{
-        i:before{
-            color: $warning-color!important;
-        }
-    }
-}
-
-@media screen and (max-width: $small-mobile){
-    body{
-        .chip{
-            @include run-transition(all);
-        }
-    }
-}
