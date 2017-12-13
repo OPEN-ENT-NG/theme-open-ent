@@ -1,0 +1,33 @@
+image-select.droptarget {
+    > div {
+        background-color: $light-grey;
+        border: 1px dashed $accent;
+    }
+}
+
+image-select{
+    overflow: hidden;
+    & > div > img{
+        box-sizing: border-box;
+        border: 1px dashed $medium-grey;
+        @include run-transition(all);
+    }
+    & > div > i:hover {
+        color: $accent;
+    }
+
+}
+image-select:hover > div > img{
+    border: 1px dashed $primary;
+}
+
+@media screen and (max-width: $tablette){
+	body{
+    	image-select{
+    	    & > div > img{
+    	        border-radius: 50%;
+    	    }
+
+    	}
+	}
+}

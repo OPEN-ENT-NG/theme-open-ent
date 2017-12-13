@@ -1784,12 +1784,7 @@ input[type=text][disabled=disabled] {
     background-color: $light-grey;
     border: 3px dashed $neutral-grey;
 }
-image-select.droptarget {
-    > div {
-        background-color: $light-grey;
-        border: 1px dashed $accent;
-    }
-}
+
 .cke_chrome.cke_float {
     .cke_inner {
         border: none;
@@ -2232,21 +2227,7 @@ label {
         border-color: $neutral-grey !important;
     }
 }
-image-select{
-    overflow: hidden;
-    & > div > img{
-        box-sizing: border-box;
-        border: 1px dashed $medium-grey;
-        @include run-transition(all);
-    }
-    & > div > i:hover {
-        color: $accent;
-    }
 
-}
-image-select:hover > div > img{
-    border: 1px dashed $primary;
-}
 
 plus {
     .opener.plus {
