@@ -15,7 +15,7 @@ article.icons-view {
         font-weight: normal;
         font-size: 14px;
     }
-    
+
     .element, explorer {
         padding: 0;
         margin: 8px;
@@ -97,6 +97,13 @@ article.icons-view {
         a.container,
         .img.container {
             border: 1px solid $light-grey;
+        }
+        .selected a.container,
+        .selected .img.container {
+            border: 1px solid $accent;
+            & + legend{
+                background: rgba($primary-darkest,  0.7);
+            }
         }
         i.history {
             position: absolute;
