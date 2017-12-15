@@ -405,41 +405,6 @@ ul.thought-out-actions {
     }
 }
 
-
-
-.badge {
-    line-height: 16px;
-    background: $accent;
-    color: $white!important;
-}
-.label-badge, .label-badge-disabled {
-    background: $primary-dark;
-    @include material-card();
-    @include run-transition(background);
-    border-radius: 2px;
-    color: $white;
-    padding: 4px;
-    margin: 2px;
-    i.close {
-        @include invert-colors();
-        width: 10px;
-        height: 10px;
-        margin: 5px 5px 5px 10px;
-    }
-}
-.label-badge:hover {
-    background: $primary;
-}
-.label-badge-disabled{
-    pointer-events: none;
-    background: $disabled-color;
-}
-
-
-
-
-
-
 div.background-material {
     position: absolute;
     background: linear-gradient(to bottom, $primary 0%, $primary 200px, $primary 200px, white 200px, white 100%);
