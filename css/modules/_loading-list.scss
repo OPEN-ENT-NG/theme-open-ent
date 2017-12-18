@@ -1,0 +1,11 @@
+.loading-list{
+    ul{
+        li{
+            .close{
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+    }
+}
