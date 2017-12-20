@@ -112,3 +112,8 @@ strong {
 .medium-text span {
     font-size: 16px;
 }
+
+.signature:not(:empty) {
+    border-top: 1px solid $neutral-grey;
+    font-size: $font-size - 1;
+}
