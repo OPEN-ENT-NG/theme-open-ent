@@ -924,42 +924,7 @@ select {
         height: 100px;
     }
 }
-.bubble-container {
-    .image {
-        padding: 15px;
-        margin-left: auto;
-        margin-right: auto;
-        > img {
-            border-radius: 50px;
-            width: 100px;
-            height: 100px;
-        }
-    }
-    article {
-        min-height: 180px;
-        border-radius: 5px;
-        editor {
-            margin-bottom: 15px;
-        }
-    }
-    .bubble {
-        position: relative;
-        overflow: hidden;
-    }
-    .bubble::after {
-        border-left: 1px solid $neutral-grey;
-        border-top: 1px solid $neutral-grey;
-        content: "";
-        position: absolute;
-        width: 15px;
-        height: 15px;
-        top: 60px;
-        background: $white;
-        left: -8px;
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-    }
-}
+
 .menu-items {
     > li {
         min-height: 30px;
