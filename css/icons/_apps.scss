@@ -390,6 +390,16 @@ i.parametrage-large::before, i.type.parametrage::before, i.parametrage::before{
 }
 
 
+i.diary-large, i.type.diary, i.diary{
+  @include fonticon;
+}
+
+
+i.diary-large::before, i.type.diary::before, i.diary::before{
+  content: "\e86f";
+  color: $purple;
+}
+ 
 //// 1D APPS background
 .apps{
     i.stats-large::after, i.cahier-de-texte-large::after, i.schoolbook::after{
