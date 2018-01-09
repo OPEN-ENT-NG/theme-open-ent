@@ -1,14 +1,6 @@
 
 //editor icons
 
-@mixin editor-icon(){
-    @include fonticon;
-    display: block;
-    position: absolute;
-    text-align: center;
-    line-height: 44px;
-}
-
 body editor{
 	> popover{
 		> [popover-opener]{
@@ -186,6 +178,7 @@ body editor{
         }
 
         editor-toolbar{
+
             select-list .selected-value{
                 width: 44px;
                 &::after{
@@ -198,45 +191,16 @@ body editor{
             }
 
             .option.table{
-            popover{
-                > i{
-                    &::before{
-                        left: 7px;
-                        position: absolute;
-                    }
-			    }
-            }
-		}
-
-            .option.font{
-                select-list .selected-value{
-                    @include editor-icon();
-                    &::after{
-                        content: '\e8c4';
-                        color: black;
-                    }
+                popover{
+                    > i{
+                        &::before{
+                            left: 7px;
+                            position: absolute;
+                        }
+    			    }
                 }
-            }
-
-            .option.font-size{
-                select-list .selected-value{
-                    @include editor-icon();
-                    &::after{
-                        content: '\e8c7';
-                        color: black;
-                    }
-                }
-            }
-
-            .option.format{
-                select-list .selected-value{
-                    @include editor-icon();
-                    &::after{
-                        content: '\e8c8';
-                        color: black;
-                    }
-                }
-            }
+    		}
+            
         }
     }
 }
