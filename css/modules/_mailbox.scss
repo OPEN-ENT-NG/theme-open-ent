@@ -1,0 +1,14 @@
+article.mailbox {
+    .row.new-element {
+        background: $primary-lighter;
+    }
+
+    i.mail-large {
+        color: $primary-dark;
+    }
+
+    .row.checked {
+        background: $primary-light;
+        font-weight: bold;
+    }
+}
