@@ -313,28 +313,6 @@
 	}
 
 
-//mailbox
-	article.list-view.mailbox{
-
-		tbody{
-			tr:first-of-type{
-				border-top: 1px solid $shadow-light;
-			}
-		}
-
-	}
-	//write mail
-	section.main-col{
-		nav.contextual-buttons{
-			float: right;
-			width: auto;
-			.action-buttons{
-			}
-		}
-	}
-
-
-
 	//forum
 	body{
 		nav.illustrated-links ul li{

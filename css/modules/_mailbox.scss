@@ -12,3 +12,33 @@ article.mailbox {
         font-weight: bold;
     }
 }
+
+//mailbox subject
+.conversation section.main-col {
+	padding-left: 0;
+}
+
+
+@media screen and (max-width: $tablette){
+	body{
+        //mailbox
+    	article.list-view.mailbox{
+
+    		tbody{
+    			tr:first-of-type{
+    				border-top: 1px solid $shadow-light;
+    			}
+    		}
+
+    	}
+    	//write mail
+    	section.main-col{
+    		nav.contextual-buttons{
+    			float: right;
+    			width: auto;
+    			.action-buttons{
+    			}
+    		}
+    	}
+	}
+}
