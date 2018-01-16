@@ -35,3 +35,65 @@ label {
         border-color: $neutral-grey !important;
     }
 }
+
+
+
+
+label.wrapping-checkbox{
+
+    span, i18n{
+        cursor: pointer;
+    }
+    &:hover{
+        i18n:before{
+            box-shadow: 2px 2px 2px rgba($primary-light, 0.7) inset;
+        }
+    }
+
+    input[type=checkbox] + span::before,
+    input[type=checkbox] + i18n::before {
+        content: " ";
+        border: 2px solid $primary-dark;
+        width: 15px;
+        height: 15px;
+        background: $white;
+        margin: 0;
+        transform: none;
+        -webkit-transform: none;
+        opacity: 1;
+    }
+    input[type=checkbox] + span::after,
+    input[type=checkbox] + i18n::after {
+        @include run-transition(all);
+        @include fonticon;
+        content: "\e916";
+        display: block;
+        position: absolute;
+        right: -2px;
+        bottom: 7px;
+        border-radius: 15px;
+        width: 14px;
+        height: 14px;
+        font-size: 19px;
+        line-height: 16px;
+        text-indent: -1px;
+        background: $white;
+        color: $primary-dark;
+        border: 3px solid $white;
+        opacity: 0
+    }
+    input[type=checkbox]:checked + span::before,
+    input[type=checkbox]:checked + i18n::before {
+        opacity: 0;
+    }
+    input[type=checkbox]:checked + span::after,
+    input[type=checkbox]:checked + i18n::after {
+        opacity: 1;
+    }
+
+    input[type=checkbox]:disabled + span::before {
+        border-color: $neutral-grey !important;
+        pointer-events: none;
+    }
+
+}
