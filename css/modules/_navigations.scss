@@ -298,3 +298,114 @@ nav.vertical.floating {
         }
     }
 }
+
+
+nav.vertical.stamps,
+nav.vertical.half-stamps {
+    overflow: hidden;
+    article {
+        @include material-card(2px, 3px);
+        background: white;
+        line-height: 20px;
+        @include run-transition(all);
+        font-size: 12px;
+        h3 {
+            font-size: 15px;
+            border: 0;
+            color: $black;
+            line-height: 20px;
+            font-style: normal;
+            margin: 0;
+        }
+        a {
+            color: $primary;
+            margin: 0;
+            &:hover {
+                color: $accent;
+            }
+        }
+    }
+    article:hover {
+        i.send-mail {
+            margin: 7px;
+        }
+    }
+    article.selected {
+        background: $accent;
+        color: $white;
+        i.send-mail {
+            margin: 7px;
+        }
+        h3 {
+            color: $white;
+        }
+        a {
+            color: $white;
+            &:hover {
+                color: $primary;
+            }
+        }
+        input[type=text] {
+            color: $white;
+        }
+    }
+}
+nav.vertical.half-stamps {
+    article {
+        margin: 10px auto;
+        margin-bottom: 10px;
+        h3 {
+            color: $solid-grey;
+        }
+        input[type=text] {
+            margin-left: 30px;
+            color: $grey;
+            @include run-transition(all);
+        }
+        input[type=text]:hover {
+            color: $black;
+        }
+    }
+    article.selected {
+        background: $primary;
+        h3 {
+            color: $white;
+        }
+    }
+    input[type=checkbox] {
+        margin-top: 0;
+        position: absolute;
+        top: 35px;
+        left: 127px;
+        cursor: pointer;
+    }
+}
+
+
+.navbar {
+    background: $primary-dark;
+    width: 100%;
+    height: $header-height;
+    box-shadow: 0 2px 5px $shadow;
+    .welcome-message {
+        display: none;
+    }
+    .account a {
+        color: $white;
+        display: block;
+        margin-left: 10px;
+        margin-top: 10px;
+        font-weight: 300;
+        font-size: 1.3em;
+    }
+}
+
+
+
+
+//only manage threads
+.centered nav.vertical.half-stamps {
+    article {
+        margin-left: 50px;
+    }
+}

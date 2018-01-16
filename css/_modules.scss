@@ -1,138 +1,5 @@
 
 
-
-
-
-
-.list {
-    li {
-        list-style-type: none;
-        color: $grey;
-    }
-    li::before {
-        content: "\2666";
-        color: $accent;
-        padding-right: 6px;
-    }
-}
-
-
-.list-view, .share{
-    i.sort-desc, i.sort-asc, i.sort{
-        font-size: 14px;
-        padding-left: 5px;
-        color: inherit;
-    }
-    .select-file {
-        margin-top: 0;
-    }
-    tbody {
-        tr {
-            td.small-font {
-                font-size: 12px;
-                padding-top: 7px;
-            }
-            i.center {
-                margin-left: auto;
-                margin-right: auto;
-                float: none !important;
-            }
-        }
-        tr.new-element {
-            background: $light-grey;
-            font-weight: bold;
-        }
-        tr.new-element.checked {
-            background: $primary-light;
-        }
-    }
-}
-ul.list-view {
-    margin: 0;
-}
-
-table,
-ul.list-view {
-    line-height: 20px;
-    font-size: 14px;
-    background: $white;
-    li.head {
-        background: $primary;
-        color: $white;
-        &:hover {
-            background: $primary;
-        }
-    }
-    thead {
-        tr {
-            background: $primary;
-            color: $white;
-            border: none;
-        }
-        th {
-            padding: 10px;
-            text-align: left;
-        }
-    }
-    li {
-        padding: 10px;
-        @include run-transition(background);
-        &.checked {
-            background-color: $primary-light;
-            color: $white;
-            a {
-                color: $white;
-            }
-        }
-        &:hover {
-            background: $light-grey;
-        }
-    }
-    tbody {
-        tr {
-            @include run-transition(background);
-            &.checked,
-            &.checked:hover {
-                background-color: $primary-light;
-                color: $white;
-                a {
-                    color: $white;
-                }
-            }
-            &:hover {
-                background: $light-grey;
-            }
-            td {
-                padding: 10px;
-            }
-        }
-    }
-}
-
-
-
-
-.shockwave{
-    //background: $primary;
-}
-
-
-.logo {
-    background: url(../../img/illustrations/logo.png) center no-repeat;
-    height: $header-height;
-    width: 236px;
-    margin: 0;
-    background-size: contain;
-}
-
-
-.current i {
-    font-size: 40px;
-    line-height: 40px;
-}
-/* end icones */
-
-
 .select-file {
     input[type=text] {
         height: 39px;
@@ -141,173 +8,6 @@ ul.list-view {
         padding: 4px;
         box-sizing: border-box;
         border: 1px solid $neutral-grey;
-    }
-}
-.nomargin {
-    margin: 0 !important;
-}
-
-
-header.main {
-    height: $header-height;
-    background: transparent;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100000;
-    width: 100%;
-}
-.container {
-    .main.wrapper {
-        padding-top: 0 !important;
-        max-width: none;
-    }
-    .main {
-        min-width: 320px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-.row {
-    max-width: 100%;
-}
-
-
-nav.vertical.stamps,
-nav.vertical.half-stamps {
-    overflow: hidden;
-    article {
-        @include material-card(2px, 3px);
-        background: white;
-        line-height: 20px;
-        @include run-transition(all);
-        font-size: 12px;
-        h3 {
-            font-size: 15px;
-            border: 0;
-            color: $black;
-            line-height: 20px;
-            font-style: normal;
-            margin: 0;
-        }
-        a {
-            color: $primary;
-            margin: 0;
-            &:hover {
-                color: $accent;
-            }
-        }
-    }
-    article:hover {
-        i.send-mail {
-            margin: 7px;
-        }
-    }
-    article.selected {
-        background: $accent;
-        color: $white;
-        i.send-mail {
-            margin: 7px;
-        }
-        h3 {
-            color: $white;
-        }
-        a {
-            color: $white;
-            &:hover {
-                color: $primary;
-            }
-        }
-        input[type=text] {
-            color: $white;
-        }
-    }
-}
-nav.vertical.half-stamps {
-    article {
-        margin: 10px auto;
-        margin-bottom: 10px;
-        h3 {
-            color: $solid-grey;
-        }
-        input[type=text] {
-            margin-left: 30px;
-            color: $grey;
-            @include run-transition(all);
-        }
-        input[type=text]:hover {
-            color: $black;
-        }
-    }
-    article.selected {
-        background: $primary;
-        h3 {
-            color: $white;
-        }
-    }
-    input[type=checkbox] {
-        margin-top: 0;
-        position: absolute;
-        top: 35px;
-        left: 127px;
-        cursor: pointer;
-    }
-}
-//only manage threads
-.centered nav.vertical.half-stamps {
-    article {
-        margin-left: 50px;
-    }
-}
-.row.rigid-grid > .centered {
-    max-width: 800px;
-}
-
-
-.green {
-    background: $green;
-}
-.grey {
-    background: $grey;
-}
-.yellow {
-    background: $yellow;
-}
-.orange {
-    background: $orange;
-}
-.purple {
-    background: $purple;
-}
-.cyan {
-    background: $cyan;
-}
-.pink {
-    background: $pink;
-}
-.red {
-    background: $red;
-}
-.grey {
-    background: $primary;
-}
-
-ul.thought-out-actions {
-    padding: 0;
-    margin: 0;
-    li {
-        background: $light-grey;
-        margin-bottom: 1px;
-        list-style-type: none;
-        padding: 8px;
-        @include run-transition(background);
-    }
-    li:hover, li.selected {
-        background: $primary;
-        h2 {
-            color: $white;
-        }
     }
 }
 
@@ -324,6 +24,7 @@ ul.thought-out-actions {
         }
     }
 }
+
 #my-photo {
     margin-top: 0;
     padding: 5px 0;
@@ -333,23 +34,6 @@ ul.thought-out-actions {
     vertical-align: middle;
 }
 
-.navbar {
-    background: $primary-dark;
-    width: 100%;
-    height: $header-height;
-    box-shadow: 0 2px 5px $shadow;
-    .welcome-message {
-        display: none;
-    }
-    .account a {
-        color: $white;
-        display: block;
-        margin-left: 10px;
-        margin-top: 10px;
-        font-weight: 300;
-        font-size: 1.3em;
-    }
-}
 .tag {
     color: $accent;
     padding-left: 10px;
@@ -405,16 +89,9 @@ ul.thought-out-actions {
     }
 }
 
-div.background-material {
-    position: absolute;
-    background: linear-gradient(to bottom, $primary 0%, $primary 200px, $primary 200px, white 200px, white 100%);
-}
 
 
-.aligned {
-    display: inline-block;
-    vertical-align: middle;
-}
+
 
 
 
@@ -2105,45 +1782,6 @@ nav.horizontal .my-apps {
     }
     a:hover {
         border-bottom: none !important;
-    }
-}
-label {
-    overflow: hidden;
-    input[type=checkbox] {
-        opacity: 0;
-        width: 0;
-        margin: 0
-    }
-    input[type=checkbox] + span {
-        display: inline-block;
-        height: 21px;
-        overflow: hidden;
-        cursor: pointer;
-    }
-    input[type=checkbox] + span::before,
-    input[type=checkbox] + i18n::before {
-        content: " ";
-        border: 2px solid $grey;
-        width: 20px;
-        height: 20px;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 5px;
-        @include run-transition(all);
-        box-sizing: border-box;
-    }
-    input[type=checkbox]:checked + span::before,
-    input[type=checkbox]:checked + i18n::before {
-        content: " ";
-        transform: rotate(40deg);
-        -webkit-transform: rotate(40deg);
-        border-color: $green;
-        height: 37px;
-        width: 27px;
-        margin-top: -25px;
-    }
-    input[type=checkbox]:disabled + span::before {
-        border-color: $neutral-grey !important;
     }
 }
 

@@ -1,0 +1,37 @@
+label {
+    overflow: hidden;
+    input[type=checkbox] {
+        display: none;
+    }
+    input[type=checkbox] + span {
+        display: inline-block;
+        height: 21px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    input[type=checkbox] + span::before,
+    input[type=checkbox] + i18n::before {
+        content: " ";
+        border: 2px solid $grey;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 5px;
+        @include run-transition(all);
+        box-sizing: border-box;
+    }
+    input[type=checkbox]:checked + span::before,
+    input[type=checkbox]:checked + i18n::before {
+        content: " ";
+        transform: rotate(40deg);
+        -webkit-transform: rotate(40deg);
+        border-color: $green;
+        height: 25px;
+        width: 20px;
+        margin-top: -11px;
+    }
+    input[type=checkbox]:disabled + span::before {
+        border-color: $neutral-grey !important;
+    }
+}
