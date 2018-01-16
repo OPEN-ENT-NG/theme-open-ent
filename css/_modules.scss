@@ -2123,7 +2123,7 @@ label {
     input[type=checkbox] + span::before,
     input[type=checkbox] + i18n::before {
         content: " ";
-        border: 3px solid $grey;
+        border: 2px solid $grey;
         width: 20px;
         height: 20px;
         display: inline-block;
@@ -2131,8 +2131,6 @@ label {
         margin-right: 5px;
         @include run-transition(all);
         box-sizing: border-box;
-        background: $white;
-
     }
     input[type=checkbox]:checked + span::before,
     input[type=checkbox]:checked + i18n::before {
