@@ -2145,7 +2145,9 @@ nav.horizontal .my-apps {
 label {
     overflow: hidden;
     input[type=checkbox] {
-        display: none;
+        opacity: 0;
+        width: 0;
+        margin: 0
     }
     input[type=checkbox] + span {
         display: inline-block;
