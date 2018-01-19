@@ -32,3 +32,17 @@ a.selected .badge {
     pointer-events: none;
     background: $disabled-color;
 }
+
+.long-badge {
+    border-radius: 10px;
+    background: $medium-grey;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 1px 4px;
+    display: inline-block;
+    height: 15px;
+    text-align: center;
+    line-height: 19px;
+    color: $black;
+    margin-top: 2px;
+}

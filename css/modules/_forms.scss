@@ -116,6 +116,18 @@ input.ng-invalid.ng-dirty {
     border-bottom: 2px solid $red;
 }
 
+
+input[type=text][disabled=disabled] {
+    background: $neutral-grey;
+    color: $disabled-color;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 3px 0;
+    cursor: default;
+}
+
+
 search-user.focus{
     label{
         color: $accent;

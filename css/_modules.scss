@@ -1275,28 +1275,8 @@ ul.toc {
         color: $accent;
     }
 }
-input[type=text][disabled=disabled] {
-    background: $neutral-grey;
-    color: $disabled-color;
-    padding: 5px;
-    font-size: 14px;
-    line-height: 20px;
-    margin: 3px 0;
-    cursor: default;
-}
-.long-badge {
-    border-radius: 10px;
-    background: $medium-grey;
-    font-weight: bold;
-    font-size: 12px;
-    padding: 1px 4px;
-    display: inline-block;
-    height: 15px;
-    text-align: center;
-    line-height: 19px;
-    color: $black;
-    margin-top: 2px;
-}
+
+
 .flexible:empty + .flexible {
     .patchwork {
         .row {
