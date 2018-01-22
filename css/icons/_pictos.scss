@@ -202,10 +202,16 @@ i.pending-icon-large::before, i.pending-icon::before, table.colored i.pending-ic
 
 
 /* main indication type icons */
-i.searchengine-large, i.searchengine.cas, i.type.searchengine, i.searchengine, i.search{
+i.searchengine-large, i.searchengine.cas, i.type.searchengine, i.searchengine{
   @include fonticon;
   &:before{
       content: '\e8d0';
+  }
+}
+i.search{
+  @include fonticon;
+  &:before{
+      content: '\e930';
   }
 }
 
