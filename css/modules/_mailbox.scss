@@ -1,20 +1,5 @@
 
-//mailbox subject
+//conversation main-col
 .conversation section.main-col {
 	padding-left: 0;
-}
-
-
-@media screen and (max-width: $tablette){
-	body{
-    	//write mail
-    	section.main-col{
-    		nav.contextual-buttons{
-    			float: right;
-    			width: auto;
-    			.action-buttons{
-    			}
-    		}
-    	}
-	}
 }
