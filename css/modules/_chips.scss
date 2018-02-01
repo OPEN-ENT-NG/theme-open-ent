@@ -32,21 +32,6 @@
     }
 }
 
-.chip.not-available{
-    background: none;
-    box-shadow: none;
-    cursor: default;
-    @include run-transition(all);
-    i{
-        &::before{
-            color: $solid-grey!important;
-        }
-    }
-    span{
-        color: $solid-grey;
-    }
-}
-
 /// REMOVABLES
 
 .chip.removable{
