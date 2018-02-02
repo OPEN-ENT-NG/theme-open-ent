@@ -1103,10 +1103,10 @@ i.eye-slash:before, i.discard:before{
 }
 .trash{
   @include fonticon;
+  font-size: 15px;
 }
 .trash:before{
   content: '\e8cf';
-  font-size: 15px;
 }
 
 i.add-icon{
