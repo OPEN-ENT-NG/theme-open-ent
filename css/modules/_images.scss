@@ -1,3 +1,13 @@
+#my-photo {
+    margin-top: 0;
+    padding: 5px 0;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
 image-select.droptarget {
     > div {
         background-color: $light-grey;
