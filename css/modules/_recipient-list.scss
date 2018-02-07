@@ -1,0 +1,15 @@
+recipient-list {
+    div {
+        border-bottom: 1px solid #ddd;
+    }
+    div.focus {
+        box-shadow: inset 0px -1px 0 0px $accent;
+        border-bottom: 1px solid $accent;
+    }
+    input.chip-input {
+        border: 0 !important;
+        margin: 0 !important;
+        min-height: 40px;
+    }
+
+}

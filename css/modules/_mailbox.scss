@@ -3,3 +3,15 @@
 .conversation section.main-col {
 	padding-left: 0;
 }
+
+
+article.write-mail {
+    .receivers, .subject {
+        label.two {
+            margin-top: 20px;
+        }
+    }
+    .subject input {
+        min-height: 40px;
+    }
+}
