@@ -1,4 +1,26 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:500,300,700,400);
+
+@font-face {
+	font-family: "Roboto";
+	src: url(../../../entcore-css-lib/font/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+	font-family: "Roboto";
+	src: url(../../../entcore-css-lib/font/Roboto/Roboto-Italic.ttf);
+	font-style: italic;
+}
+@font-face {
+	font-family: "Roboto";
+	src: url(../../../entcore-css-lib/font/Roboto/Roboto-Bold.ttf);
+	font-weight: bold;
+}
+@font-face {
+	font-family: "Roboto";
+	src: url(../../../entcore-css-lib/font/Roboto/Roboto-BoldItalic.ttf);
+	font-style: italic;
+	font-weight: bold;
+}
+
+
 
 @font-face {
 	font-family: "OpenDyslexic";
