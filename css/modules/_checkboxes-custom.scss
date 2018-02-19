@@ -8,6 +8,7 @@ label {
         height: 21px;
         overflow: hidden;
         cursor: pointer;
+        vertical-align: middle;
     }
     input[type=checkbox] + span::before,
     input[type=checkbox] + i18n::before {
