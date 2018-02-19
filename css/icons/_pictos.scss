@@ -151,9 +151,7 @@ i.history:before{
   content: '\e844';
 }
 
-i.check-circle::before{
-    content: "\e916";
-}
+
 
 /* UI & indication type icons */
 
@@ -1001,10 +999,11 @@ i.system-avatar {
 
 
 
-i.warning:before, i.report:before{
+i.report:before{
   content: '\e903';
   font-size: 18px;
 }
+
 i.eye-slash:before, i.discard:before{
   content: '\e904';
   font-size: 18px;
