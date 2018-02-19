@@ -80,7 +80,8 @@ label.wrapping-checkbox{
         background: $white;
         color: $primary-dark;
         border: 3px solid $white;
-        opacity: 0
+        opacity: 0;
+        line-height: -moz-block-height;
     }
     input[type=checkbox]:checked + span::before,
     input[type=checkbox]:checked + i18n::before {
