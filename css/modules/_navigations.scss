@@ -94,6 +94,7 @@ header.main{
 
                 #my-photo{
                     width: 25px;
+                    height: 25px;
                     margin-top: 12px;
                 }
             }
@@ -172,7 +173,7 @@ nav.vertical,
             a {
                 @include run-transition(background);
                 margin-left: 0;
-                padding-left: 25px;                
+                padding-left: 25px;
                 i.arrow {
                     position: absolute;
                     height: 20px;
