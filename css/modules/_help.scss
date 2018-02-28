@@ -1,6 +1,8 @@
 help section.lightbox > div.content .sect1 {
-    width: 620px;
+    width: 70%;
+    float: left;
 }
+
 help {
     color: black;
     line-height: normal;
@@ -11,7 +13,9 @@ help {
     section.lightbox {
         z-index: 10002;
     }
-    #preamble{
+    #summary{
+        width: 25%;
+        float: left;
         li{
             display: block;
         }
