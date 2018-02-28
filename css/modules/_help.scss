@@ -16,7 +16,7 @@ help {
     section.lightbox {
         z-index: 10002;
     }
-    #preamble{
+    #summary{
         width: 25%;
         float: left;
         li{
@@ -26,7 +26,7 @@ help {
             border-left: 5px solid #FF8500;
         }
     }
-  img{
-    max-width: 100%;
-  }
+    img{
+        max-width: 100%;
+    }
 }
