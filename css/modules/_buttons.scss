@@ -132,3 +132,38 @@ input[type="submit"],
 input[type="button"] {
     -webkit-appearance: none;
 }
+
+
+// Button imitating select behavior
+button.select-button {
+    background-color: white;
+    color: $text-color;
+    border: 1px solid $medium-grey;
+    border-radius: 4px;
+    box-shadow: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    &.selected {
+        color: $primary;
+        border-color: $primary;
+    }
+
+    span.active {
+        color: $primary;
+    }
+
+    &:not(.selected):hover {
+        color: $text-light;
+    }
+
+    &::before, &:active {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        -o-animation: none;
+        animation: none;
+        -webkit-transition: none;
+        transition: none;
+    }
+}

@@ -9,7 +9,7 @@ article {
 
 article {
     @include material-card();
-    article {
+    article:not(.absolute-w) {
         box-shadow: none;
     }
 }
