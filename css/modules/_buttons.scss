@@ -143,14 +143,20 @@ button.select-button {
     box-shadow: none;
     padding-top: 5px;
     padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 
     &.selected {
         color: $primary;
         border-color: $primary;
     }
 
-    span.active {
-        color: $primary;
+    span {
+        font-size: 11px;
+
+        &.active {
+            color: $primary;
+        }
     }
 
     &:not(.selected):hover {
