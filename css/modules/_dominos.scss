@@ -73,9 +73,9 @@
 .dominos.centered-text{
     .item{
         padding: 0px;
-        margin: 8px;
+        margin: 15px;
         max-width: 140px;
-        min-width: 100px;
+        min-width: 140px;
         .domino{
             .top{
                 & + span{
@@ -109,7 +109,7 @@
         }
     }
     .bottom-locked{
-        right: 0;
+        right: 10px;
     }
 }
 
