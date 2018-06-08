@@ -58,6 +58,12 @@ i.quote-r{
     }
 }
 
+i.right-arrow {
+  @include fonticon;
+}
+i.right-arrow:before {
+  content: '\e867';
+}
 i.star{
   @include fonticon;
 }
