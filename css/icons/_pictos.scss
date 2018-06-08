@@ -376,6 +376,42 @@ nav.stamps.vertical{
     }
 }
 
+i.add-favorite {
+  @include fonticon;
+  margin: 7px;
+  @include run-transition(background);
+}
+
+i.add-favorite::before {
+  content: '\e80c';
+  color: $white;  
+}
+
+.domino{
+  i.add-favorite::before{
+    color: $primary;
+  }
+}
+i.add-favorite:hover{
+  &::before{
+      color: $accent;
+  }
+}
+.action-item{
+  i.add-favorite{
+      line-height: 43px;
+      &::before{
+          color: $primary;
+      }
+  }
+  &:hover{
+      i.add-favorite{
+          &::before{
+              color: $accent;
+          }
+      }
+  }
+}
 
 i.show-icons{
 	@include fonticon;

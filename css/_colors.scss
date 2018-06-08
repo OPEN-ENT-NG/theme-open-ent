@@ -24,6 +24,31 @@
     background: $red;
 }
 
+.lighten-green {
+    background: lighten($green, 17%);
+}
+.lighten-grey {
+    background: lighten($grey, 17%);
+}
+.lighten-yellow {
+    background: lighten($yellow, 17%);
+}
+.lighten-orange {
+    background: lighten($orange, 17%);
+}
+.lighten-purple {
+    background: lighten($purple, 17%);
+}
+.lighten-cyan {
+    background: lighten($cyan, 17%);
+}
+.lighten-pink {
+    background: lighten($pink, 17%);
+}
+.lighten-red {
+    background: lighten($red, 17%);
+}
+
 div.background-material {
     position: absolute;
     background: linear-gradient(to bottom, $primary 0%, $primary 200px, $primary 200px, white 200px, white 100%);
