@@ -102,7 +102,6 @@ input[type=email] {
     color: $text-light;
     background: transparent;
     border-bottom: 1px solid $neutral-grey;
-    -webkit-box-shadow: 0 0 0px 1000px white inset;
     @include run-transition(border-bottom);
 }
 input[type=text]:focus,
@@ -150,4 +149,15 @@ select {
   &:hover {
     border-color: $primary;
   }
+}
+
+// Avoid red borders in firefox
+@-moz-document url-prefix() {
+    input[type=text],
+    input[type=password],
+    input[type=search],
+    input[type=tel],
+    input[type=email] {
+        box-shadow: none;
+    }
 }
