@@ -768,19 +768,37 @@ select {
         padding: 0;
         margin: 0;
     }
-    .autocomplete > em {
+    .autocomplete > div {
         border-bottom: 1px solid $shadow-light;
         background: $white;
         color: $text-light;
         @include run-transition(background);
+
+        a.sharebookmark {
+            font-style: italic;
+        }
+        i.add-favorite {
+            margin: 0 5px 0 0;
+
+            &::before {
+                color: $primary;
+            }
+        }
         em.low-importance {
             height: auto;
-            padding-top: 5px;
+            padding-top: 3px;
+            padding-left: 10px;
         }
     }
-    .autocomplete > em:hover {
+    .autocomplete > div:hover {
         color: $white;
         background: $accent;
+        a {
+            color: $white;
+            i.add-favorite::before {
+                color: $white;
+            }
+        }
     }
     input[type=text] {
         width: 100%;
@@ -795,9 +813,6 @@ select {
     }
     .found-users-list {
         margin-bottom: 15px;
-        a {
-            margin-top: 10px;
-        }
     }
 }
 .drop-down-filters,
