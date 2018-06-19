@@ -133,36 +133,10 @@ input[type="button"] {
     -webkit-appearance: none;
 }
 
-
-// Button imitating select behavior
 button.select-button {
     background-color: white;
-    color: $text-color;
-    border: 1px solid $medium-grey;
     border-radius: 4px;
-    box-shadow: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-
-    &.selected {
-        color: $primary;
-        border-color: $primary;
-    }
-
-    span {
-        font-size: 11px;
-
-        &.active {
-            color: $primary;
-        }
-    }
-
-    &:not(.selected):hover {
-        color: $text-light;
-    }
-
+    
     &::before, &:active {
         -webkit-animation: none;
         -moz-animation: none;

@@ -128,34 +128,3 @@
         overflow: hidden;
     }
 }
-
-.dominos alphabetical .item {
-    max-width: 230px;
-    width: 20%;
-    .domino {
-        border-radius: 0;
-        padding: 0;
-        img {
-            background-color: $primary;
-        }
-        .bottom {
-            margin: 0;
-            div.content {
-                padding: 0;
-            }
-        }
-    }
-    .domino:hover {
-        box-shadow: 0 2px 6px $shadow-darker;
-    }
-}
-
-@media screen and (max-width: $fat-mobile) {
-	.dominos.centered-text{
-        .item{
-            margin: 10px;
-            max-width: 90px;
-            min-width: 90px;
-        }
-    }
-}

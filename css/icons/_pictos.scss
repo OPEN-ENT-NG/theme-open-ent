@@ -58,12 +58,6 @@ i.quote-r{
     }
 }
 
-i.right-arrow {
-  @include fonticon;
-}
-i.right-arrow:before {
-  content: '\e867';
-}
 i.star{
   @include fonticon;
 }
@@ -81,14 +75,6 @@ i.bell{
 i.bell:before{
   content: '\E8C9';
 }
-i.person{
-  @include fonticon;
-  text-align: center;
-  font-size: 16px;
-}
-i.person:before{
-  content: '\e905';
-}
 i.sad-face{
   @include fonticon;
   text-align: center;
@@ -104,9 +90,6 @@ i.sort-asc:before{
 }
 i.sort-desc:before{
     content: '\e925';
-}
-i.sort:before{
-    content: '\e926';
 }
 
 
@@ -321,42 +304,6 @@ i.dates::before{
 
 /* actions icons */
 
-
-i.send-mail{
-  @include fonticon;
-  margin: 7px;
-  @include run-transition(background);
-}
-i.send-mail::before{
-  content: '\e804';
-  color: $white;
-}
-.domino{
-    i.send-mail::before{
-      color: $primary;
-    }
-}
-i.send-mail:hover{
-    &::before{
-        color: $accent;
-    }
-}
-.action-item{
-    i.send-mail{
-        line-height: 43px;
-        &::before{
-            color: $primary;
-        }
-    }
-    &:hover{
-        i.send-mail{
-            &::before{
-                color: $accent;
-            }
-        }
-    }
-}
-
 nav.stamps.vertical{
     article.clip.fluid{
         .bottom-locked{
@@ -380,43 +327,6 @@ nav.stamps.vertical{
             }
         }
     }
-}
-
-i.add-favorite {
-  @include fonticon;
-  margin: 7px;
-  @include run-transition(background);
-}
-
-i.add-favorite::before {
-  content: '\e80c';
-  color: $white;  
-}
-
-.domino{
-  i.add-favorite::before{
-    color: $primary;
-  }
-}
-i.add-favorite:hover{
-  &::before{
-      color: $accent;
-  }
-}
-.action-item{
-  i.add-favorite{
-      line-height: 43px;
-      &::before{
-          color: $primary;
-      }
-  }
-  &:hover{
-      i.add-favorite{
-          &::before{
-              color: $accent;
-          }
-      }
-  }
 }
 
 i.show-icons{
@@ -544,7 +454,7 @@ i.close{
 }
 i.close:before{
   content: '\e866';
-	font-size: 12px;
+	font-size: 14px;
 }
 
 
