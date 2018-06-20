@@ -620,6 +620,11 @@ body.exercizer{
         cursor: move;
     }
 
+    .row-like-input{
+        line-height:25px;
+        height:25px;
+    }
+
     /// & body
 
     editor.small-editor.edit > [contenteditable] {
