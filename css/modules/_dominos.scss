@@ -128,3 +128,13 @@
         overflow: hidden;
     }
 }
+
+@media screen and (max-width: $fat-mobile) {
+	.dominos.centered-text{
+        .item{
+            margin: 10px;
+            max-width: 90px;
+            min-width: 90px;
+        }
+    }
+}
