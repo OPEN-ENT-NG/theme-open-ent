@@ -645,4 +645,55 @@ body.exercizer{
         min-height: 250px!important;
         overflow: visible;
     }
+
+    table.scores{
+         width:70%; 
+         overflow:hidden; 
+         float:left; 
+         border-left: 1px solid $cyan;
+
+         tbody{
+             max-height:450px;
+             overflow:auto;
+             overflow-x:hidden;
+             display:block;
+         }
+    }
+
+    table.infos{
+         width:30%; 
+         overflow:hidden; 
+         float:left; 
+
+         tbody{
+             max-height:450px;
+             overflow:auto;
+             overflow-x:hidden;
+             display:block;
+             margin-right:-30px;
+         }
+    }
+    .small-cell{
+        width: 10px;
+    }
+
+    th.nav{
+        border-left: 1px solid;
+        border-right: 1px solid;
+        i{
+            color: $white;
+        }
+    }
+
+    tr.hover-hidden{
+        background: $white;
+    }
+
+    .display-table{
+        display:table;
+        width:100%;
+        table-layout:fixed;
+    }
+
+
 }

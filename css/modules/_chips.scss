@@ -26,3 +26,40 @@
 .chip.removable{
     box-shadow: none;
 }
+
+.chip.text{
+  background: $white;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.chip-valide{ 
+  border: 1px solid $green;
+  span{
+    color: $green;
+  }
+}
+.chip-error{
+  border: 1px solid $red;
+  span{
+    color: $red;
+  }
+}
+
+.chip-warning{
+  border: 1px solid $yellow;
+  span{
+    color: $yellow;
+  }
+}
+
+.chip-default{
+  border: 1px solid $grey;
+  span{
+    color: $grey;
+  }
+}
+
+.chip-hide{
+  border: 1px solid $white;
+}
