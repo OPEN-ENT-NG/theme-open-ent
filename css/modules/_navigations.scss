@@ -11,6 +11,7 @@ nav.horizontal {
         min-height: 0;
     }
     > a,
+    span > a,
     popover > a {
         height: $header-height;
         line-height: $header-height;
@@ -39,6 +40,9 @@ nav.horizontal {
         }
     }
     > a:hover {
+        border-bottom: 3px solid $accent;
+    }
+    span > a:hover {
         border-bottom: 3px solid $accent;
     }
     i.mail span {
