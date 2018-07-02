@@ -147,3 +147,25 @@ button.select-button {
         transition: none;
     }
 }
+
+.is-light {
+	background-color: $light-grey;
+	color: $primary;
+	box-shadow: none;
+    text-transform: none;
+
+	&.uppercase {
+		text-transform: uppercase;
+	}
+
+	&:hover {
+		background-color: $primary;
+		color: $white;
+	}
+}
+
+.is-light[disabled] {
+	color: $solid-grey;
+    background: $grey;
+    cursor: default;
+}
