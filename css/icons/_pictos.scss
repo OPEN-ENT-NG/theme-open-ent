@@ -448,6 +448,13 @@ i.show-carousel.selected{
 	opacity: 0.6;
 }
 
+i.close-icon {
+	@include fonticon;
+	&:before{
+		content: '\e866';
+		font-size: 12px;
+	}
+}
 i.close{
 	@include fonticon;
 	text-align: center;
