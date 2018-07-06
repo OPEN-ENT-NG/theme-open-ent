@@ -307,6 +307,11 @@ filters {
         padding: 1px;
         li {
             text-align: left;
+            em.low-importance {
+                height: auto;
+                padding-top: 9px;
+                padding-left: 10px;
+            }
         }
         li:hover {
             color: $white;
@@ -785,7 +790,7 @@ select {
         }
         em.low-importance {
             height: auto;
-            padding-top: 3px;
+            padding-top: 2px;
             padding-left: 10px;
         }
     }
