@@ -8,6 +8,39 @@ body.exercizer.dragging{
 
 body.exercizer{
 
+    .chip{
+        &.selected{
+            box-shadow: 2px 2px 1px 0px  $shadow;
+            background: $primary;
+            i{
+                &:hover{
+                    &:before{
+                        color: $black!important;
+                    }
+                }
+            }
+        }
+
+        &.deletable{
+            box-shadow: 2px 2px 1px 0px  $shadow;
+            background: $white;
+            span {
+                color: $black;
+            }
+            i {
+                &:before{
+                    color: $solid-grey!important;
+                    @include run-transition;
+                }
+                &:hover {
+                    &:before {
+                        color: $warning-color!important;
+                    }
+                }
+            }
+        }
+    }
+
     .droppable{
         @include droppable;
     }
