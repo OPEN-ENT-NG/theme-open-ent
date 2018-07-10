@@ -64,4 +64,7 @@
 
 .chip-hide{
   border: 1px solid $white;
+  span{
+    color: $black;
+  }
 }
