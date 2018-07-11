@@ -452,6 +452,14 @@ i.lemonde-large::before, i.type.lemonde::before, i.lemonde::before{
   color: $cyan;
 }
 
+i.edumoov-large, i.type.edumoov, i.edumoov{
+  @include fonticon;
+}
+i.edumoov-large::before, i.type.edumoov::before, i.edumoov::before{
+  content: '\e939';
+  color: $red;
+}
+
 i.connecteurgenerique1-large, i.type.connecteurgenerique1, i.connecteurgenerique1{
   @include fonticon;
 }
