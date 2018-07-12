@@ -41,8 +41,12 @@ body.exercizer{
         }
     }
 
-    .droppable{
+    .droppable{        
         @include droppable;
+        background: transparent;
+        &.dragover{
+            background: $light-grey;
+        }
     }
 
     edit-fill-text{
