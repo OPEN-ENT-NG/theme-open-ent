@@ -307,10 +307,11 @@ filters {
         padding: 1px;
         li {
             text-align: left;
+            line-height: initial;
+            white-space: normal;
             em.low-importance {
                 height: auto;
-                padding-top: 9px;
-                padding-left: 10px;
+                margin-top: 1px;
             }
         }
         li:hover {
@@ -791,7 +792,6 @@ select {
         em.low-importance {
             height: auto;
             padding-top: 2px;
-            padding-left: 10px;
         }
     }
     .autocomplete > div:hover {
