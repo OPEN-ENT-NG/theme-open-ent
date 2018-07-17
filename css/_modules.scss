@@ -782,13 +782,6 @@ select {
         a.sharebookmark {
             font-style: italic;
         }
-        i.add-favorite {
-            margin: 0 10px 0 0;
-
-            &::before {
-                color: $primary;
-            }
-        }
         em.low-importance {
             height: auto;
             padding-top: 2px;
