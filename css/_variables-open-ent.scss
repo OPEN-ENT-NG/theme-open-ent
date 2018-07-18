@@ -39,7 +39,8 @@ $warning-color:               $pink !default;
 $warning-color-hover:         darken($warning-color, 20%) !default;
 $forewarn-color:              $orange !default;
 $valid-color:                 $green !default;
-
+$error-color:                 $red !default;
+$info-color:                  $cyan !default;
 
 $text-light:                  $grey !default;
 $text-lightest: 			  $white !default;

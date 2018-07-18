@@ -1379,17 +1379,16 @@ ul.toc {
 .humane.humane-original-info,
 .humane.humane-original-success,
 .humane.humane-original-error {
-    background: $black;
     color: $white;
 }
 .humane.humane-original-info {
-    background: $forewarn-color;
+    background: $info-color;
 }
 .humane.humane-original-success {
     background: $valid-color;
 }
 .humane.humane-original-error {
-    color: $red;
+    background: $error-color;
 }
 .humane.humane-animate,
 .humane-original.humane-original-animate {
