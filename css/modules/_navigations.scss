@@ -38,6 +38,14 @@ nav.horizontal {
             width: auto;
             display: block;
         }
+        i.close-2x{
+            display: block;
+            height: auto;
+            &:before{
+                color: unset;
+                font-size: unset;
+            }
+        }
     }
     > a:hover {
         border-bottom: 3px solid $accent;
