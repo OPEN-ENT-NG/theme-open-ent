@@ -11,6 +11,17 @@ i.default:before{
   color: $grey;
 }
 
+/* aucun */
+i.none{
+  @include fonticon;
+  &::before{
+    content: '\e83a';
+    color: $solid-grey;
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+
 /* concentre */
 i.angry{
   @include fonticon;

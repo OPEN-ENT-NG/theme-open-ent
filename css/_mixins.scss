@@ -13,6 +13,24 @@
     margin: 5px 0 15px;
 }
 
+@mixin input-message($color) {
+    color: $color;
+    font-size: 12px;
+    display: block;
+    label {
+        font-size: 10px !important;
+        margin-left: 0;
+        float: none !important;
+        &:before {
+            content: "* ";
+        }
+        &:after {
+            content: "\A";
+            white-space: pre;
+        }
+    }
+}
+
 @mixin flat-button {
     border: none;
     box-shadow: none;

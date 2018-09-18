@@ -40,19 +40,9 @@
 }
 
 .input-errors {
-    color: $red;
-    font-size: 12px;
-    display: block;
-    label {
-        font-size: 10px !important;
-        margin-left: 0;
-        float: none !important;
-        &:before {
-            content: "* ";
-        }
-        &:after {
-            content: "\A";
-            white-space: pre;
-        }
-    }
+    @include input-message($red)
+}
+
+.input-warnings {
+    @include input-message($orange)
 }
