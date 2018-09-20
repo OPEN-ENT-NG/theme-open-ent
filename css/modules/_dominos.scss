@@ -143,3 +143,18 @@
         }
     }
 }
+
+@media screen and (min-width: $wide-screen) {
+    .user-infos {
+        margin-top: 44px;
+    }
+    .dominos-infos {
+        margin-top: 82px;
+    }
+    .group-infos {
+        margin-top: 50px;
+    }
+    .favorite-infos {
+        margin-top: 100px;
+    }
+}
