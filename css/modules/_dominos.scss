@@ -134,6 +134,10 @@
     }
 }
 
+sniplet .dominos .item {
+    box-shadow: 0 2px 3px $shadow;
+}
+
 @media screen and (max-width: $fat-mobile) {
 	.dominos.centered-text{ 
         .item{
