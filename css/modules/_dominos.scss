@@ -83,11 +83,18 @@
 
         .domino{
             .top{
+                &.domino-group {
+                    height: 124.667px;
+                }
                 & + span{
                     color: $white;
                 }
                 img{
                     background: $white;
+
+                    &.domino-group {
+						margin-top: 30px;
+					}
                 }
             }
             .bottom{
