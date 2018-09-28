@@ -83,9 +83,7 @@
 
         .domino{
             .top{
-                &.domino-group {
-                    height: 124.667px;
-                }
+                height: 136px;
                 & + span{
                     color: $white;
                 }
@@ -151,6 +149,10 @@ sniplet .dominos .item {
             margin: 5px;
             max-width: 120px;
             min-width: 120px;
+
+            .domino .top{
+                height: 116px;
+            }
         }
     }
 }
