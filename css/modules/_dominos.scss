@@ -93,24 +93,6 @@
             }
         }
     }
-    .mood{
-        top: 5px;
-        i.liquid{
-            font-size: 20px;
-            line-height: normal;
-            &::before{
-                @include text-border ;
-            }
-        }
-        i.liquid.default{
-            display: none;
-            // font-size: 15px;
-            // display: block;
-            // &::before{
-            //     color: $medium-grey ;
-            // }
-        }
-    }
     .bottom-locked{
         right: 10px;
     }
