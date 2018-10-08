@@ -71,7 +71,6 @@ i.star:before{
 i.bell{
   @include fonticon;
   text-align: center;
-  color: $white;
   font-size: 20px;
   font-weight: bold;
 }
