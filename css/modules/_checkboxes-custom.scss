@@ -43,12 +43,14 @@ label {
 label.wrapping-checkbox{
     overflow: visible;
 
-    span, i18n{
-        cursor: pointer;
-    }
-    &:hover{
-        i18n:before{
-            box-shadow: 2px 2px 2px rgba($primary-light, 0.7) inset;
+    &:not([disabled]) {
+        span, i18n{
+            cursor: pointer;
+        }
+        &:hover {
+            i18n:before{
+                box-shadow: 2px 2px 2px rgba($primary-light, 0.7) inset;
+            }
         }
     }
 
@@ -104,6 +106,16 @@ label.wrapping-checkbox{
         pointer-events: none;
     }
 
+    &[disabled] {
+        input[type=checkbox] + span::before,
+        input[type=checkbox] + i18n::before {
+            border: 2px solid $solid-grey;
+        }
+
+        & + i18n {
+            color: $solid-grey;
+        }
+    }
 }
 
 
