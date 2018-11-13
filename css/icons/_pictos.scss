@@ -235,11 +235,11 @@ i.download{
 
 
 nav.horizontal > a{
-    i.help{
+    i.help, i.navbar-help{
         display: block;
     }
 
-    i.help:before{
+    i.help::before, i.navbar-help::before{
         font-size: 34px;
         line-height: 62px;
     }
