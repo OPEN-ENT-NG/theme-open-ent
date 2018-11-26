@@ -108,6 +108,10 @@ i.arrow:before{
     font-size: 20px;
     font-weight: bold;
 }
+i.arrow.bottom {
+	transform: rotate(180deg);
+	display: inline-block;
+}
 
 
 i.left-open{
