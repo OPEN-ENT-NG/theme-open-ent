@@ -475,3 +475,10 @@ i.connecteurgenerique2-large::before, i.type.connecteurgenerique2::before, i.con
   content: '\e8ab';
   color: $cyan;
 }
+i.lsu{ 
+  @include fonticon;
+}
+i.lsu::before{ 
+  content: '\e93a';
+  color: $cyan;
+}
