@@ -18,4 +18,7 @@
     .icons-view explorer {
         overflow: visible !important;
     }
+    article.list-view, article.icons-view > div{
+        padding-bottom: 50px;
+    }
 }
