@@ -20,6 +20,7 @@
     @include message;
     background: $light-grey;
     border-left: 10px solid $pink;
+    width: 70%;
     i{
         color: $pink;
     }
