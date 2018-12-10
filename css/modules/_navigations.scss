@@ -208,6 +208,10 @@ nav.vertical,
                     margin-left: 5px;
                     text-indent: 8px;
                 }
+                i.shared {
+                    position: unset;
+                    opacity: 1;
+                }
 
             }
             a.selected {
