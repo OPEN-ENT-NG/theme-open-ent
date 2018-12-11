@@ -430,8 +430,9 @@ i.show-details.selected{
 
 i.show-list{
   @include fonticon;
-	opacity: 0.2;
-	text-align: center;
+  opacity: 0.2;
+  text-align: center;
+  line-height: initial;
 }
 i.show-list:before{
   content: '\e8bc';
@@ -442,10 +443,11 @@ i.show-list.selected{
 }
 
 i.show-carousel{
-	@include icon(show-carousel, 24px);
-	opacity: 0.2;
-	background-size: 100% 93%;
-	margin-top: -4px;
+  @include icon(show-carousel, 24px);
+  opacity: 0.2;
+  background-size: 100% 93%;
+  margin-top: -4px;
+  margin-left: 4px;
 }
 i.show-carousel:before{
   /*attention icone en cours de création*/
