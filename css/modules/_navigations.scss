@@ -178,6 +178,14 @@ nav.vertical,
         &.sublist {
             margin-left: 10px;
         }
+        ul.selected {
+            @include run-transition(all, 250ms, ease-in-out)
+        }
+        ul.closed {
+            max-height: 0;
+            @include run-transition(all);
+            overflow: hidden;
+        }
         li {
             font-size: 16px;
             padding-left: 20px;
