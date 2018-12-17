@@ -51,7 +51,7 @@
         @include material-card(5px, 18px);
     }
     &.browser-container {
-        > h1 {
+        >h1 {
             color: $primary-dark;
         }
     }
@@ -101,7 +101,7 @@
     .button-bar {
         margin-top: 30px;
         padding-top: 20px;
-        > * {
+        >* {
             display: inline-block;
             vertical-align: middle;
         }
@@ -123,13 +123,14 @@
         display: inline-block;
         float: none;
     }
-    &.activation{
-        form{
+    &.activation {
+        form {
             margin: auto !important;
         }
     }
-    &.login, &.activation {
-        .panels-container{
+    &.login,
+    &.activation {
+        .panels-container {
             overflow: hidden;
             width: 90%;
             min-height: 500px;
@@ -138,7 +139,7 @@
             justify-content: center;
             align-items: flex-start;
         }
-        .welcome-text{
+        .welcome-text {
             display: block;
             max-width: 520px;
             float: left;
@@ -147,36 +148,35 @@
             border-radius: 2px;
             padding: 30px;
             box-sizing: border-box;
-
-            h1{
+            h1 {
                 margin: 0;
                 margin-bottom: 20px;
                 color: $primary;
                 display: block;
             }
-            h2{
+            h2 {
                 margin-bottom: 20px;
             }
-            p{
+            p {
                 font-size: 13px;
             }
         }
-        form{
+        form {
             a {
                 margin-top: 10px;
                 font-size: 22px;
             }
         }
-        .welcome-text + form{
+        .welcome-text+form {
             width: auto;
             overflow: hidden;
         }
-        .welcome-text, form{
+        .welcome-text,
+        form {
             margin: 15px;
             min-width: 40%;
             min-height: 345px;
         }
-
         input#email {
             width: 100%;
             height: 32px;
@@ -186,7 +186,6 @@
         input[type=checkbox]#rememberMe {
             width: 11px;
         }
-
     }
     form.nostyle {
         overflow: hidden;
@@ -216,21 +215,23 @@
     }
 }
 
-@media screen and (max-width: $tablette){
-    body{
-        .login.panel{
+@media screen and (max-width: $tablette) {
+    body {
+        .login.panel {
             box-sizing: border-box;
-            h1{
+            h1 {
                 display: none;
             }
-            h1 + form{
+            h1+form {
                 margin-top: 70px;
             }
-            .panels-container{
+            .panels-container {
                 display: block;
                 margin-top: 70px;
             }
-            .welcome-text, .welcome-text+form, form{
+            .welcome-text,
+            .welcome-text+form,
+            form {
                 min-width: 0;
                 width: 90%;
                 margin-left: auto;
@@ -239,25 +240,29 @@
                 float: none;
             }
         }
-
-
-        .panel{
+        .panel {
             background-size: 200px;
-    		h1{
-    			margin: 65px auto 30px;
-    			font-size: 26px;
-    		}
-    		input-password{
-    			button{
-    				padding: 5px 0;
-    				&::before{
-    					position: relative;
-    					line-height: 23px;
-    					font-size: 16px;
-    					left: 0;
-    				}
-    			}
-    		}
-    	}
+            h1 {
+                margin: 65px auto 30px;
+                font-size: 26px;
+            }
+            input-password {
+                button {
+                    padding: 5px 0;
+                    &::before {
+                        position: relative;
+                        line-height: 23px;
+                        font-size: 16px;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $small-mobile) {
+    .panel form:not(.nostyle) {
+        padding: 15px;
     }
 }
