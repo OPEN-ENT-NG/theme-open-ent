@@ -475,10 +475,38 @@ i.connecteurgenerique2-large::before, i.type.connecteurgenerique2::before, i.con
   content: '\e8ab';
   color: $cyan;
 }
-i.lsu{ 
-  @include fonticon;
+i.lsu {
+    @include fonticon;
 }
-i.lsu::before{ 
-  content: '\e93a';
-  color: $cyan;
+
+i.lsu::before {
+    content: '\e93a';
+    color: $cyan;
+}
+
+i.charte {
+    @include fonticon;
+}
+
+i.charte::before {
+    content: '\e93b';
+    color: $yellow;
+}
+
+i.assisstance {
+    @include fonticon;
+}
+
+i.assisstance::before {
+    content: '\e93c';
+    color: $cyan;
+}
+
+i.qwant {
+    @include fonticon;
+}
+
+i.qwant::before {
+    content: '\e93d';
+    color: $orange;
 }
