@@ -493,11 +493,11 @@ i.charte::before {
     color: $yellow;
 }
 
-i.assisstance {
+i.assistance {
     @include fonticon;
 }
 
-i.assisstance::before {
+i.assistance::before {
     content: '\e93c';
     color: $cyan;
 }
