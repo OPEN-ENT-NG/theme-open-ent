@@ -222,6 +222,9 @@ nav.vertical,
                     position: unset;
                     opacity: 1;
                 }
+                &:not(.selected) i.arrow:hover ~ .workspace-menu-label{
+                    color: $primary;
+                }
 
             }
             a.selected {
