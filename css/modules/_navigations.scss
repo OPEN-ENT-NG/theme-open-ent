@@ -224,6 +224,9 @@ nav.vertical,
                 }
 
             }
+            &:not(.selected) .arrow:hover ~ .workspace-menu-label {
+                color: $primary;
+            }
             a.selected {
                 color: $accent;
                 background: none;
