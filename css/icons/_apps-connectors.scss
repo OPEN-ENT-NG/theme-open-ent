@@ -502,11 +502,11 @@ i.assistance::before {
     color: $cyan;
 }
 
-i.qwant {
-    @include fonticon;
+i.qwant-junior {
+  @include fonticon;
 }
 
-i.qwant::before {
-    content: '\e93d';
-    color: $indigo;
+i.qwant-junior::before {
+  content: '\e93d';
+  color: $indigo;
 }
