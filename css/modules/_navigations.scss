@@ -248,6 +248,11 @@ nav.vertical,
     .search + ul > li {
         padding-left: 0;
     }
+
+    .folder-tree > ul > li {
+      margin-left: -20px;
+    }
+
     a.classic-link {
         display: block;
         margin-top: 15px;
