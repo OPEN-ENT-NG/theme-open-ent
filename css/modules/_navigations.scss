@@ -228,6 +228,7 @@ nav.vertical,
             }
             a.selected {
                 color: $accent;
+                font-weight: bold;
                 background: none;
             }
             a.opened {
@@ -251,6 +252,11 @@ nav.vertical,
 
     .folder-tree > ul > li {
       margin-left: -20px;
+    }
+
+    .folder-list-item {
+      white-space: normal!important;
+      padding-right: 10px!important;
     }
 
     a.classic-link {
