@@ -435,22 +435,23 @@ i.show-list{
   line-height: initial;
 }
 i.show-list:before{
-  content: '\e8bc';
-  font-size: 24px;
+  content: '\e941';
+  font-size: 28px;
 }
 i.show-list.selected{
   opacity: 0.6;
 }
 
 i.show-carousel{
-  @include icon(show-carousel, 24px);
+  @include fonticon;
   opacity: 0.2;
-  background-size: 100% 93%;
-  margin-top: -4px;
-  margin-left: 4px;
+  text-align: center;
+  line-height: initial;
 }
 i.show-carousel:before{
-  /*attention icone en cours de création*/
+  content : '\e90d';
+  font-size: 26px;
+
 }
 i.show-carousel.selected{
 	opacity: 0.6;
