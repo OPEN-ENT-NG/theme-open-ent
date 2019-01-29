@@ -11,6 +11,27 @@
     }
 }
 
+.workspace-app {
+  .list-view {
+    tr:nth-last-child(even) {
+      background-color: $lightest-grey;
+    }
+    .last-modified {
+      width: 160px;
+    }
+    .date {
+      text-align: center;
+    }
+    .size {
+      width: 60px;
+      text-align: right;
+    }
+    .count-comment {
+      width: 30px;
+    }
+  }
+}
+
 .list-view, .share{
     i.sort-desc, i.sort-asc, i.sort{
         font-size: 14px;
@@ -94,7 +115,10 @@ ul.list-view {
                 }
             }
             &:hover {
-                background: $light-grey;
+                background: $orange!important;
+                * {
+                  color: $white!important;
+                }
             }
             td {
                 padding: 10px;
