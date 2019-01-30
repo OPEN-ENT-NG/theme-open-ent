@@ -219,9 +219,14 @@ nav.vertical,
                     text-indent: 8px;
                 }
                 i.shared {
-                    position: unset;
                     opacity: 1;
-                }            
+                    position: inherit;
+                    right: 0;
+                    bottom: 0;
+                    width: 18px;
+                    height: 18px;
+                    margin: 0 5px 0 0;
+                }
                 &:not(.selected) .arrow:hover ~ .workspace-menu-label {
                     color: $primary;
                 }
