@@ -4,6 +4,9 @@
     right: 0;
 }
 .workspace-app {
+    .maxheight-minus350 {
+      overflow-y: auto;
+    }
     .material .main{
         padding-bottom: 0;
     }
@@ -12,14 +15,11 @@
     }
     article.icons-view>div {
         height: 100%;
-        overflow-y: scroll;
+        overflow-y: auto;
     }
     .icons-view .element,
     .icons-view explorer {
         overflow: visible !important;
-    }
-    article.list-view, article.icons-view > div{
-        padding-bottom: 50px;
     }
     share-panel td .tipbox .tipbox-content {
         min-width: 400px;
