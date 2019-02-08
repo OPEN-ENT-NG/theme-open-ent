@@ -109,7 +109,7 @@ ul.list-view {
             border-color: $shadow-light;
             &.checked,
             &.checked:hover {
-                background-color: $orange!important;
+                background-color: lighten($cyan, 20%)!important;
                 color: $darkest-grey!important;
             }
             td {
