@@ -337,53 +337,52 @@ nav.stamps.vertical{
 
 i.show-icons{
 	@include fonticon;
-	opacity: 0.2;
-    margin: 0 5px;
-}
-i.show-icons:before{
-  content: '\e837';
-  font-size: 28px;
-}
-i.show-icons.selected{
-  opacity: 0.6;
+  &::before {
+    content: '\e837';
+  }
 }
 
 i.show-admin{
 	@include fonticon;
- 	 text-align: center;
-      opacity: 0.3;
-}
-i.show-admin:before{
-	content: '\e81a';
- 	 font-size: 28px;
-}
-i.show-admin.selected{
-  opacity: 0.6;
+  &::before {
+    content: '\e81a';
+  }
 }
 
 i.show-calendar{
 	@include fonticon;
-	opacity: 0.2;
-	margin-left: 2px;
-	margin-right: 2px;
 	@include right-magnet;
-}
-i.show-calendar:before{
-  content: '\e834';
-  font-size: 28px;
-  padding: 0 10px;
-}
-i.show-calendar.selected{
-	opacity: 0.6;
+  &::before {
+    content: '\e834';
+  }
 }
 
 i.show-details{
 	@include fonticon;
-	opacity: 0.2;
+  &::before {
+    content: '\e811';
+  }
 }
-i.show-details:before{
-  content: '\e811';
-  font-size: 28px;
+
+.choice-view {
+  vertical-align: middle;
+  i[class*="show"] {
+    float: none!important;
+    color: $darkest-grey;
+    margin: 0 5px;
+    font-size: 24px;
+    vertical-align: middle;
+    opacity: .2;
+    &:hover {
+      opacity: .4;
+    }
+    &.selected {
+      opacity: .6;
+    }
+  }
+  i.show-admin {
+    margin-right: 25px;
+  }
 }
 
 //rack download
@@ -431,12 +430,9 @@ i.show-details.selected{
 i.show-list{
   @include fonticon;
   opacity: 0.2;
-  text-align: center;
-  line-height: initial;
 }
 i.show-list:before{
   content: '\e941';
-  font-size: 28px;
 }
 i.show-list.selected{
   opacity: 0.6;
@@ -445,12 +441,9 @@ i.show-list.selected{
 i.show-carousel{
   @include fonticon;
   opacity: 0.2;
-  text-align: center;
-  line-height: initial;
 }
 i.show-carousel:before{
   content : '\e90d';
-  font-size: 26px;
 }
 i.show-carousel.selected{
 	opacity: 0.6;
