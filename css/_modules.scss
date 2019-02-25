@@ -1686,10 +1686,26 @@ recorder {
     }
 }
 .embedded-viewer {
-    background: $primary;
-    color: $white;
+    background: $white;
+    color: $grey;
+    border: 1px solid $shadow-light;
+    margin: 10px 0;
     input[type=text] {
-        color: $white;
+        color: $grey;
+    }
+    img {
+      box-shadow: 1px 1px 3px $shadow;
+    }
+    &.fullscreen {
+      border: none;
+      margin: 0;
+      i.close::before {
+        color: $red;
+        content: "\e848";
+      }
+    }
+    .controls {
+      background-color: $white;
     }
 }
 file-viewer .file .default-viewer button {
