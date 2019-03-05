@@ -380,15 +380,24 @@ i.competences-large::before, i.type.competences::before, i.competences::before{
   color: $red;
 }
 
-i.parametrage-large, i.type.parametrage, i.parametrage{ 
-  @include fonticon; 
-}
- 
-i.parametrage-large::before, i.type.parametrage::before, i.parametrage::before{ 
-  content: "\e92f"; 
-  color: $red; 
+i.parametrage-large, i.type.parametrage, i.parametrage{
+  @include fonticon;
 }
 
+i.parametrage-large::before, i.type.parametrage::before, i.parametrage::before{
+  content: "\e92f";
+  color: $red;
+}
+
+i.settings-class-large,
+i.type.settings-class,
+i.settings-class {
+  @include fonticon;
+  &::before {
+    content: "\e942";
+    color: $yellow;
+  }
+}
 
 //// 1D APPS background
 .apps{
