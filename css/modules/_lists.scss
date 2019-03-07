@@ -30,6 +30,36 @@
       width: 30px;
     }
   }
+  table,
+  ul.list-view {
+    tbody tr {
+      border-color: $shadow-light;
+      &.checked,
+      &.checked:hover {
+        background-color: lighten($cyan, 20%) !important;
+        color: $darkest-grey !important;
+      }
+    }
+  }
+  @media screen and (min-width: $tablette) {
+    table,
+    ul.list-view {
+      tbody {
+        tr {
+          &:hover {
+            background: lighten($cyan, 30%) !important;
+            * {
+              color: mix($cyan, $darkest-grey, 30%) !important;
+            }
+            .badge {
+              background-color: $cyan;
+              color: white !important;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .list-view, .share{
@@ -106,11 +136,16 @@ ul.list-view {
     tbody {
         tr {
             @include run-transition(background);
-            border-color: $shadow-light;
             &.checked,
             &.checked:hover {
-                background-color: lighten($cyan, 20%)!important;
-                color: $darkest-grey!important;
+                background-color: $primary-light;
+                color: $white;
+                a {
+                  color: $white;
+              }
+          }
+          &:hover {
+              background: $light-grey !important;
             }
             td {
                 padding: 10px;
@@ -139,25 +174,4 @@ ul.thought-out-actions {
             color: $white;
         }
     }
-}
-
-@media screen and (min-width: $tablette) {
-  table,
-  ul.list-view {
-    tbody {
-      tr {
-        &:hover {
-            background: lighten($cyan, 30%)!important;
-            * {
-              color: mix($cyan, $darkest-grey, 30%)!important;
-            }
-            .badge {
-              background-color: $cyan;
-              color: white!important;
-            }
-        }
-      }
-    }
-  }
-
 }
