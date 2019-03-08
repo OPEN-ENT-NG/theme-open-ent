@@ -146,9 +146,6 @@ ul.list-view {
           }
           &:hover {
               background: $light-grey !important;
-              * {
-                  color: $white !important
-              }
             }
             td {
                 padding: 10px;
