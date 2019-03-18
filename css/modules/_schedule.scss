@@ -50,7 +50,7 @@
             padding-top: 9px;
             border-bottom: 1px solid #ccc;
             border-right: 1px solid #ccc;
-           hr{ border: 0.5px dashed #ddd;}
+            hr{ border: 0.5px dashed #ddd;}
           }
         }
       }
@@ -62,14 +62,52 @@
       border-color: #eee;
       background-color: #fdfdfd;
       position: relative;
-      width: calc(100% / 7);
       height: 80px;
       float: left;
       overflow: auto;
       border-right-width: 0;
       box-sizing: border-box;
       margin-bottom: -1px;
+      width: calc(100% / 7);
     }
+
+    &.sixDays .month-day {
+      width: calc(100% / 6);
+    }
+    &.fiveDays .month-day {
+      width: calc(100% / 5);
+    }
+    &.sixDays .offset-1.month-day:first-of-type {
+      margin-left: calc(1 * 100% / 6);
+    }
+    &.fiveDays .offset-1.month-day:first-of-type {
+      margin-left: calc(1 * 100% / 5);
+    }
+    &.sixDays .offset-2.month-day:first-of-type {
+      margin-left: calc(2 * 100% / 6);
+    }
+    &.fiveDays .offset-2.month-day:first-of-type {
+      margin-left: calc(2 * 100% / 5);
+    }
+    &.sixDays .offset-3.month-day:first-of-type {
+      margin-left: calc(3 * 100% / 6);
+    }
+    &.fiveDays .offset-3.month-day:first-of-type {
+      margin-left: calc(3 * 100% / 5);
+    }
+    &.sixDays .offset-4.month-day:first-of-type {
+      margin-left: calc(4 * 100% / 6);
+    }
+    &.fiveDays .offset-4.month-day:first-of-type {
+      margin-left: calc(4 * 100% / 5);
+    }
+    &.fiveDays .offset-5.month-day:first-of-type {
+      margin-left: calc(5 * 100% / 5);
+    }
+    &.sixDays .offset-5.month-day:first-of-type {
+      margin-left: calc(5 * 100% / 6);
+    }
+
     .legend .month-day {
       background-color: $primary-light;
       color: $white;
