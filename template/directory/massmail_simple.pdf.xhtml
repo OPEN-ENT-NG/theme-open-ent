@@ -13,6 +13,15 @@
         color: #555;
         line-height: 1.4;
     }
+    @page {
+	    size: A4;
+    }
+    @media print {
+        html, body {
+            width: 210mm;
+            height: 297mm;
+        }
+    }
     p {
         font-size: 12px;
         margin: 0;
