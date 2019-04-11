@@ -2,42 +2,46 @@
     color: $warning-color;
 }
 
+.alert,
+.warning,
+.info,
+.success,
+.message {
+  box-shadow: 1px 1px 3px $shadow-light;
+  i.close {
+    color: $shadow-dark;
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
 .message {
     @include message;
-    i{
-        color: inherit;
-    }
 }
 .alert {
     @include message;
     background: lighten($red, 40%);
+    border: 1px solid lighten($red, 30%);
     border-left: 10px solid $red;
-    i{
-        color: $red!important;
-    }
 }
 .warning {
     @include message;
-    background: $light-grey;
-    border-left: 10px solid $pink;
-    width: 70%;
-    i{
-        color: $pink;
-    }
+    background: lighten($orange, 40%);
+    border: 1px solid lighten($orange, 30%);
+    border-left: 10px solid $orange;
 }
 .info {
     @include message;
-    //border-left: 10px solid $accent;
-    i{
-        color: inherit;
-    }
+    background: lighten($cyan, 40%);
+    border: 1px solid lighten($cyan, 30%);
+    border-left: 10px solid $cyan;
 }
 .success {
     @include message;
-    //border-left: 10px solid $green;
-    i{
-        color: inherit;
-    }
+    background: lighten($green, 40%);
+    border: 1px solid lighten($green, 30%);
+    border-left: 10px solid $green;
 }
 
 .input-errors {
