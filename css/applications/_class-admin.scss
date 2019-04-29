@@ -24,7 +24,7 @@
   .found-users-list {
     background-color: white;
     border: 1px solid $light-grey;
-    box-shadow: 2px 2px 10px $shadow-lightest;
+    box-shadow: 2px 2px 10px $shadow-light;
     margin: 0 auto;
     position: absolute;
     z-index: 100;
@@ -40,7 +40,7 @@
         }
       }
       + div {
-        border-top: 1px solid $shadow-lightest;
+        border-top: 1px solid $shadow-light;
       }
     }
   }
@@ -73,7 +73,7 @@
     margin: 10px 0;
   }
   &__class-list {
-    border: 1px solid $shadow-lightest;
+    border: 1px solid $shadow-light;
     background-color: white;
     border-radius: 50px;
     position: relative;
@@ -132,7 +132,7 @@
     @include run-transition(all);
     &:hover {
       border-color: #fff;
-      box-shadow: 4px 4px 5px rgba(0,0,0,0.3);
+      box-shadow: 4px 4px 5px $shadow;
     }
   }
   .wrapping-checkbox i18n {
