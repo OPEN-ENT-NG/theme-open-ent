@@ -48,6 +48,7 @@
   .button-big {
     font-size: 18px;
     margin: 15px;
+    flex: 1;
     border: 1px solid $shadow-light;
     background-color: white;
     &:hover {
@@ -133,6 +134,30 @@
     &:hover {
       border-color: #fff;
       box-shadow: 4px 4px 5px $shadow;
+    }
+  }
+  &__find-users {
+    display: flex;
+    &--title {
+      color: $grey;
+    }
+    &--link {
+      font-size: 14px;
+      i {
+        padding: 0 5px;
+      }
+    }
+    &--to-add,
+    &--add {
+      margin-top: 15px;
+      padding: 15px;
+    }
+    &--to-add {
+      width: 55%;
+    }
+    &--add {
+      width: 45%;
+      border-left: 1px solid $shadow-lightest;
     }
   }
   .wrapping-checkbox i18n {
