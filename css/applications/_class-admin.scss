@@ -159,6 +159,10 @@
       width: 45%;
       border-left: 1px solid $shadow-light;
     }
+    &--list {
+      max-height: 300px;
+      overflow: auto;
+    }
   }
   .wrapping-checkbox i18n {
     position: absolute;
