@@ -19,6 +19,14 @@
         box-shadow: 2px 2px 4px 0px $shadow-darker inset;
     }
 }
+.chip.type {
+  margin: 3px!important;
+  &.parent {background-color: $cyan;}
+  &.teacher {background-color: $green;}
+  &.student {background-color: $orange;}
+  &.staff {background-color: $purple;}
+  &.guest {background-color: $pink;}
+}
 
 /// REMOVABLES
 
