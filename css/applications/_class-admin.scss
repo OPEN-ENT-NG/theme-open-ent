@@ -188,6 +188,14 @@
 
   table {
     margin: 0;
+    thead tr:first-of-type th {
+      &:first-of-type {
+        width: 75px;
+      }
+      &:last-of-type {
+        width: 150px;
+      }
+    }
     tbody {
       td {
         padding: 7px;
