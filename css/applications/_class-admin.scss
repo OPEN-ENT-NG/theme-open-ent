@@ -5,6 +5,9 @@
   h1 {
     margin: 25px 0;
   }
+  h2 > i.back {
+    font-size: inherit;
+  }
   .main {
     margin-bottom: 50px;
   }
@@ -254,11 +257,22 @@
   .add-spacing {
     height: 250px;
   }
+  &__group {
+    padding: 10px;
+  }
+  &__indent {
+    margin-left: 15px;
+    padding-left: 20px;
+    border-left: 1px solid $shadow-light;
+  }
+  &__group + &__group {
+    border-top: 1px solid $shadow-light;
+  }
 }
-.force-fullwidth{
+.force-fullwidth {
   width: 100% !important;
 }
-.icons-select{
+.icons-select {
   background: none !important;
 }
 inputdate input {
