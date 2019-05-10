@@ -164,7 +164,8 @@
     }
     &--list {
       max-height: 300px;
-      overflow: auto;
+      overflow-y: auto;
+      overflow-x: hidden;
     }
   }
   .wrapping-checkbox i18n {
@@ -257,13 +258,22 @@
   .add-spacing {
     height: 250px;
   }
+  &__limit-height {
+    max-height: 45vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
   &__group {
     padding: 10px;
   }
   &__indent {
     margin-left: 15px;
-    padding-left: 20px;
+    padding: 5px 5px 5px 20px;
     border-left: 1px solid $shadow-light;
+    a {
+      font-size: 14px;
+      color: mix($cyan, $grey, 20%);
+    }
   }
   &__group + &__group {
     border-top: 1px solid $shadow-light;
