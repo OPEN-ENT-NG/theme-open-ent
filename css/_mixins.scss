@@ -1,6 +1,6 @@
 
 @mixin material-card($shadow-size: 1px, $blur-size: 3px) {
-    box-shadow: 0 $shadow-size $blur-size $shadow;
+    box-shadow: 0 $shadow-size $blur-size $shadow-light;
     border-radius: 2px;
 }
 

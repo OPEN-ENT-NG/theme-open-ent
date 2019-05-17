@@ -1,27 +1,25 @@
 .dominos {
-
     //domninos as folder
-    .folder{
-        .top{
+    .folder {
+        .top {
             display: flex;
             align-items: center;
             justify-content: center;
             color: $primary;
         }
-        .content{
+        .content {
             display: flex;
             align-items: center;
         }
-        strong{
+        strong {
             overflow: hidden;
             max-height: 100%;
             padding-left: 5px;
         }
-        .illustration i, img{
+        .illustration i, img {
             color: $primary;
         }
     }
-
     .item {
         width: 14%;
         border: 0;
@@ -30,29 +28,26 @@
         display: inline-block;
 
         .domino {
-            @include material-card(2px, 3px);
-            border-radius: 3px;
+            @include box-shadow(2px, 2px, 5px);
+            border-radius: 2px;
             border: 0;
-
             .bottom {
                 text-align: left;
                 background: white;
                 color: $primary;
                 div.content {
-                    padding: 8px;
-
-                    em.smaller-text.block{
+                    em.smaller-text.block {
                         margin-top: -5px;
                     }
-                    i.shared{
+                    i.shared {
                         right: 8px;
                         top: 8px;
                     }
-                    .icons{
+                    .icons {
                         position: absolute;
                         bottom: 0;
                         right: 5px;
-                        .inline{
+                        .inline {
                             position: relative;
                             display: inline-block;
                             left: 0;
@@ -69,35 +64,31 @@
     }
 }
 
-
-.dominos.centered-text{
-    .item{
+.dominos.centered-text {
+    .item {
         padding: 0px;
         margin: 15px;
         max-width: 140px;
         min-width: 140px;
-
         &.user, &.group {
             padding: 2px;
         }
-
-        .domino{
-            .top{
+        .domino {
+            .top {
                 height: 136px;
                 & + span{
                     color: $white;
                 }
             }
-            .bottom{
+            .bottom {
                 margin-top: 0;
             }
         }
     }
-    .bottom-locked{
+    .bottom-locked {
         right: 10px;
     }
 }
-
 
 .dominos.fallen {
     .item {
@@ -115,16 +106,15 @@
 }
 
 sniplet .dominos .item {
-    box-shadow: 0 2px 3px $shadow;
+    box-shadow: 2px 2px 5px $shadow-light;
 }
 
 @media screen and (max-width: $fat-mobile) {
-	.dominos.centered-text{ 
+	.dominos.centered-text{
         .item{
             margin: 5px;
             max-width: 120px;
             min-width: 120px;
-
             .domino .top{
                 height: 116px;
             }
