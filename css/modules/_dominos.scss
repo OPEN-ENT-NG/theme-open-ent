@@ -8,8 +8,8 @@
             color: $primary;
         }
         .content {
-            display: flex;
-            align-items: center;
+          display: flex;
+          align-items: center;
         }
         strong {
             overflow: hidden;
@@ -45,14 +45,11 @@
                     }
                     .icons {
                         position: absolute;
-                        bottom: 0;
-                        right: 5px;
+                        bottom: 5px;
+                        right: 10px;
+                        color: $medium-grey;
                         .inline {
-                            position: relative;
-                            display: inline-block;
-                            left: 0;
-                            right: 0;
-                            top: 0;
+                            padding: 0 5px;
                         }
                     }
                 }
