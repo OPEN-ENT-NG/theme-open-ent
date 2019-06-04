@@ -151,8 +151,10 @@ var addDirectives = function(module, done){
 									return
 
 								scope.xitiConf.ID_COLLECTIVITE = data.ID_COLLECTIVITE
-								scope.xitiConf.ID_PLATEFORME = data.ID_PLATEFORME
-								scope.xitiConf.ID_PROJET = data.ID_PROJET
+								scope.xitiConf.ID_PLATEFORME = data.structureMap[model.me.structures[0]].plateformeId ?
+									data.structureMap[model.me.structures[0]].plateformeId : data.ID_PLATEFORME
+								scope.xitiConf.ID_PROJET = data.structureMap[model.me.structures[0]].projetId ?
+									data.structureMap[model.me.structures[0]].projetId : data.ID_PROJET
 
 								scope.xitiConf.ID_ETAB =
 									model.me.structures.length > 0 ?
