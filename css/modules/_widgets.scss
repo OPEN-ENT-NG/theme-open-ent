@@ -528,3 +528,26 @@
         height: 40px;
     }
 }
+
+.dicodelazone {
+  box-sizing: border-box;
+  background-color: $white;
+  padding: 10px;
+  .content {
+    padding: 10px;
+    @extend .clearfix;
+  }
+  p {
+    padding: 0 10px;
+    color: $grey;
+  }
+  input[type="text"] {
+    border: 1px solid $shadow-light;
+    border-radius: 20px;
+    padding: 5px 15px;
+    height: inherit;
+  }
+  &__input {
+    position: relative;
+  }
+}
