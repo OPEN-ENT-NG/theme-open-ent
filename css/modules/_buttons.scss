@@ -136,7 +136,7 @@ input[type="button"] {
 button.select-button {
     background-color: white;
     border-radius: 4px;
-    
+
     &::before, &:active {
         -webkit-animation: none;
         -moz-animation: none;
@@ -168,4 +168,30 @@ button.select-button {
 	color: $solid-grey;
     background: $grey;
     cursor: default;
+}
+
+.editor-edit-action {
+  position: absolute;
+  top: -13px;
+  height: 26px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background: rgba($white,0.75);
+  font-size: 14px;
+  color: $grey;
+  line-height: 1;
+  text-transform: none;
+  font-family: Arial;
+  @include box-shadow;
+  @include run-transition;
+  &::before {
+    @include fonticon;
+    content: "\e858";
+    margin-right: 5px;
+  }
+  &:hover {
+    background-color: $white;
+    color: $darkest-grey;
+    @include run-transition;
+  }
 }
