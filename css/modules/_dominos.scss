@@ -28,7 +28,7 @@
         display: inline-block;
 
         .domino {
-            @include box-shadow(2px, 2px, 5px);
+            @include box-shadow3(2px, 2px, 5px);
             border-radius: 2px;
             border: 0;
             .bottom {

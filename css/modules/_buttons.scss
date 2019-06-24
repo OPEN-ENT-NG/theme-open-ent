@@ -180,7 +180,7 @@ button.select-button {
   line-height: 1;
   text-transform: none;
   font-family: Arial;
-  @include box-shadow(1px, 1px, 3px);
+  @include box-shadow3(1px, 1px, 3px);
   @include run-transition;
   &::before {
     @include fonticon;
