@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+
+<head>
+    <!-- We use this i18n key to ensure portability because it is overriden by themes  -->
+	<title>{{#i18n}}directory.admin.massMailing{{/i18n}}</title>
+    <style type="text/css">
+			body {
+				font-family: sans-serif;
+				color: #333;
+			}
+			h2 {font-size: 1.2em}
+			h3 {font-size: 1.1em}
+			strong,
+			a,
+			.red {
+				font-weight: bold;
+				color: #d1232a;
+			}
+			ol li {
+				padding: 10px 0;
+				margin-left: -20px;
+			}
+			.column {
+				width: 30%;
+				margin: 1%;
+				display: inline-block;
+				vertical-align: top;
+				text-align: center;
+				font-size: 0.8em;
+			}
+			.column img {
+				width: 75px;
+				text-align: center;
+			}
+      .center{
+        text-align: center;
+      }
+      #right{
+				text-align: right;
+			}
+			.inline-block .baseline,
+			.inline-block #logo {
+				display: inline-block;
+				vertical-align: middle;
+			}
+      #logo{
+				width: 150px;
+			}
+			.baseline {
+				text-align: right;
+				color: #666;
+				letter-spacing: 2px;
+				font-weight: lighter;
+				padding: 5px;
+				border-bottom: 2px solid transparent;
+			}
+			.neo {
+				border-color: #4bafd5;
+			}
+			.one {
+				border-color: #FF8500;
+			}
+			{{#A5}}
+			@page {
+				size: landscape;
+			}
+			body {
+				font-size: 0.7em;
+			}
+			.size {
+				display: inline-block;
+				vertical-align: top;
+				width: 47%;
+				margin: 0 1%;
+			}
+			.column img {
+				width: 50px;
+			}
+			#logo {
+				width: 100px;
+			}
+			{{/A5}}
+	</style>
+</head>
+
+<body>
+
+{{#users}}
+
+<div class="size" style="page-break-after: always">
+	<div class="inline-block">
+		<img id="logo" src="illustrations/logo.png"></img>
+		<p class="baseline neo">La red social colaborativa adaptada a las escuelas<br /> secundarias y preparatorias</p>
+	</div>
+	{{^activationCode}}
+	<h2>Información sobre mi cuenta NEO</h2>
+	{{/activationCode}}
+	{{#activationCode}}
+	<h2>Mi primera conexión en 5 pasos</h2>
+	{{/activationCode}}
+    <h3> » Esta ficha es para <strong>{{firstName}} {{lastName}}</strong>{{#firstChild}}, padre(s) de <strong>{{firstName}} {{lastName}}</strong>{{#otherChildren}}, <strong>{{firstName}} {{lastName}}</strong>{{/otherChildren}}{{/firstChild}}{{#firstClass}} en clase(s) de <strong>{{.}}</strong>{{#otherClasses}}, {{.}}{{/otherClasses}}{{/firstClass}}.</h3>
+    <p>Destinada a profesores, personal, alumnos y familiares, NEO es una solución digital segura y fácil de usar para:</p>
+    <div class="column">
+        <img src="illustrations/Publipostage_Actus.png"></img>
+        <p>Crear contenidos interactivos (Wiki, Barra, Mapa mental…)</p>
+    </div>
+    <div class="column">
+        <img src="illustrations/Publipostage_Messagerie.png"></img>
+        <p>Simplificar la comunicación entre los miembros de la red educativa</p>
+    </div>
+    <div class="column">
+        <img src="illustrations/Publipostage_Resa_Ressources.png"></img>
+        <p>Reunir todos los servicios digitales en un mismo sitio</p>
+    </div>
+    {{^activationCode}}
+    <h2> » ¿Cómo conectarme?</h2>
+    <p>Ya dispone de una cuenta en el espacio digital. Solo debe introducir su nombre
+	de usuario y la contraseña que creó durante su primera conexión.
+    <br />Como recordatorio, su nombre de usuario es:</p>
+    <p class="center red">{{login}}</p>
+    <br />
+    <h2> » 3 pasos para restablecer la contraseña</h2>
+    <ol>
+			<li>En caso de olvidar su contraseña, vaya a <a href="{{host}}://{{hostname}}">{{hostname}}</a> y haga clic en « Contraseña olvidada ».</li>
+			<li>Introduzca su nombre de usuario y haga clic en « Enviar ». Una vez activada su cuenta, recibirá un correo electrónico en la dirección que indicó.</li>
+			<li>Abra el correo electrónico y, a continuación, haga clic en el vínculo para indicar su nueva contraseña.</li>
+		</ol>
+    {{/activationCode}}
+    {{#activationCode}}
+    <h2> » Instrucciones para mi primera conexión</h2>
+    <ol>
+			<li>Para conectarse, vaya a <a href="{{host}}://{{hostname}}">{{hostname}}</a> y haga clic en « Conectarse ».</li>
+			<li>Introduzca su nombre de usuario (se debe guardar para poder conectarse ulteriormente) y su código de activación:
+				<div class="center">
+					<p class="red">Nombre de usuario: {{login}}</p>
+					<p class="red">Código de activación: {{activationCode}}</p>
+				</div>
+			</li>
+			<li>Seleccione una nueva contraseña que cuente con un mínimo de 8 caracteres compuesta <strong>de al menos una letra mayúscula, una letra minúscula y una cifra</strong>.</li>
+			<li>Introduzca su dirección de correo electrónico personal para obtener un correo electrónico de restablecimiento en caso de olvidar la contraseña.</li>
+			<li>Ahora ya solo tiene que leer y aceptar las Condiciones generales de uso. </li>
+		</ol>
+    {{/activationCode}}
+    <p id="right">¡Feliz navegación!</p>
+</div>
+{{/users}}
+</body>
+
+</html>
