@@ -79,7 +79,12 @@
             <p><strong>{{#i18n}}classAdmin.template.code{{/i18n}} : </strong>{{activationCode}}</p>
             {{/activationCode}}
             {{^activationCode}}
+            {{^resetCode}}
             <p class="activated">{{#i18n}}classAdmin.template.activated{{/i18n}}</p>
+            {{/resetCode}}
+            {{#resetCode}}
+            <p><strong>{{#i18n}}classAdmin.template.reset{{/i18n}} : </strong>{{resetCode}}</p>
+            {{/resetCode}}
             {{/activationCode}}
             <br />
             <p>
