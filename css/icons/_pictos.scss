@@ -392,11 +392,11 @@ i.show-details{
     right: 15px;
     @include invert-colors();
     background-color: rgba($white, 0.5);
-    background-size: 55%;
-    background-position: 5px 5px;
-    border: 1px solid $black;
     border-radius: 50%;
-
+    &::before {
+      position: absolute;
+      left: 7px;
+    }
     a{
         width: 25px;
         height: 25px;
@@ -404,10 +404,7 @@ i.show-details{
     }
 }
 
-
-
 //annuaire
-
 .account{
     i.show-details, i.show-icons{
         width: 35px;
