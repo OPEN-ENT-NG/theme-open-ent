@@ -1,3 +1,10 @@
+button,
+input[type="button"],
+a.button,
+input[type="submit"] {
+  text-transform: none!important;
+}
+
 a.button[disabled=disabled],
 button[disabled=disabled],
 input[type=button][disabled=disabled],
