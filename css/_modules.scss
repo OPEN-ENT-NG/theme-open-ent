@@ -1703,8 +1703,8 @@ recorder {
       border: none;
       margin: 0;
       i.close::before {
-        color: $red;
-        content: "\e848";
+        content: "\e866";
+        font-size: 20px;
       }
     }
     .controls {
