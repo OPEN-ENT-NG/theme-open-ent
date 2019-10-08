@@ -1689,9 +1689,12 @@ recorder {
     background: $white;
     color: $grey;
     border: 1px solid $shadow-light;
-    margin: 10px 0;
+    margin: 10px 0 0;
     input[type=text] {
+        width: 30px;
         color: $grey;
+        margin-left: 20px;
+        border: 1px solid $shadow-light;
     }
     img {
       box-shadow: 1px 1px 3px $shadow;
@@ -1708,6 +1711,7 @@ recorder {
       background-color: $white;
     }
 }
+
 file-viewer .file .default-viewer button {
     float: none;
 }
