@@ -562,21 +562,21 @@ i.unknown:before, i.doc:before{
   content: '\e850';
 }
 
-i.xls-large{
+i.xls-large, i.csv-large{
   @include fonticon;
   text-align: center;
 }
-i.xls-large:before{
+i.xls-large:before, i.csv-large:before{
   font-size: 43px;
   display: block;
   line-height: 78px;
   content: '\e881';
 }
-i.xls{
+i.xls, i.csv{
   @include fonticon;
   text-align: center;
 }
-i.xls:before{
+i.xls:before, i.csv:before{
   font-size: 18px;
   content: '\e881';
 }
