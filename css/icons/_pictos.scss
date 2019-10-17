@@ -543,21 +543,21 @@ i.file-interactive{
 }
 
 
-i.unknown-large, i.doc-large{
+i.unknown-large, i.doc-large, i.txt-large{
   @include fonticon;
   text-align: center;
 }
-i.unknown-large:before, i.doc-large:before{
+i.unknown-large:before, i.doc-large:before, i.txt-large:before{
   font-size: 43px;
   display: block;
   line-height: 78px;
   content: '\e850';
 }
-i.unknown, i.doc{
+i.unknown, i.doc, i.txt{
   @include fonticon;
   text-align: center;
 }
-i.unknown:before, i.doc:before{
+i.unknown:before, i.doc:before, i.txt:before{
   font-size: 18px;
   content: '\e850';
 }
