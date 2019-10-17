@@ -23,6 +23,10 @@
     .icons-view .element,
     .icons-view explorer {
         overflow: visible !important;
+        i,
+        img {
+          cursor: move!important;
+        }
     }
     share-panel td .tipbox .tipbox-content {
         min-width: 400px;
