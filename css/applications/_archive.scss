@@ -1,7 +1,13 @@
 .archive-library {
-    max-width: 45%;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    .import-files {
+      margin-top: 50px;
+      .file-loading {
+        padding: 100px 25px;
+      }
+    }
 }
 .file-size {
     margin-left: 5px;
@@ -14,4 +20,10 @@
     border: 2px dashed #606060 !important;
     padding-bottom: 0px !important;
     padding-top: 50px !important;
+}
+
+@media screen and (max-width: $tablette) {
+  .archive-library {
+    width: 100%;
+  }
 }
