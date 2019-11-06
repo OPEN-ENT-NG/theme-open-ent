@@ -399,6 +399,11 @@ i.settings-class {
   }
 }
 
+i.library-large::before, i.type.library::before, i.library::before{
+  color: $yellow;
+}
+
+
 //// 1D APPS background
 .apps{
     i.stats-large::after, i.cahier-de-texte-large::after, i.schoolbook::after{
