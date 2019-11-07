@@ -7,7 +7,6 @@ body.exercizer.dragging{
 }
 
 body.exercizer{
-
     .chip{
         &.selected{
             box-shadow: 2px 2px 1px 0px  $shadow;
@@ -132,7 +131,7 @@ body.exercizer{
             display: block;
             width: 100%;
             height: 100%;
-            background: rgba(236, 0, 0, 0.4);
+            background: $red;
             position: absolute;
             top: 0;
             left: 0;
@@ -142,7 +141,7 @@ body.exercizer{
             display: block;
             width: 100%;
             height: 100%;
-            background: rgba(32, 204, 36, 0.4);
+            background: $green;
             position: absolute;
             top: 0;
             left: 0;
@@ -251,9 +250,9 @@ body.exercizer{
                 z-index: 20;
             }
         }
-
-        background: #eee;
-        padding: 8px;
+        background: $lightest-grey;
+        padding: 10px;
+        margin-top: 10px;
         border-radius: 3px;
         transition: background 250ms ease;
     }
@@ -289,16 +288,16 @@ body.exercizer{
     text-zone{
         background: #fff;
         margin: 5px;
-        box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.25);
         padding: 5px;
         color: #666;
         width: 150px;
         display: inline-block;
         position: relative;
-        padding-left: 12px;
+        padding-left: 15px;
         box-sizing: border-box;
-        height: 33px;
-        line-height: 23px;
+        height: 30px;
+        line-height: 20px;
         transition: all 250ms ease;
 
         span{
@@ -381,9 +380,24 @@ body.exercizer{
         background: $primary;
         color: #fff;
         float: left;
+        font-size: 15px;
         text-align: center;
         line-height: 40px;
         transition: background 250ms ease;
+    }
+
+    ul.thought-out-actions li {
+      padding: 15px;
+      margin: 5px 0;
+      &::after {
+        @include fonticon;
+        content: "\e847";
+        font-size: 20px;
+        position: absolute;
+        right: 25px;
+        top: calc(50% - 12px);
+        opacity: .75;
+      }
     }
 
     perform-order .answer{
@@ -400,7 +414,8 @@ body.exercizer{
         ul.thought-out-actions > li:hover{
             color: #fff;
             .order-index{
-                background-color: $accent;
+                background-color: white;
+                color: $primary;
             }
         }
     }
@@ -646,28 +661,27 @@ body.exercizer{
     }
 
     .association-possible-answer-left{
-        border: 1px dashed black;
-        padding: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
+        border: 1px dashed $darkest-grey;
+        padding: 5px 20px;
+        margin: 10px;
         border-radius: 10px;
-        background-color: lightgray;
+        background-color: $light-grey;
     }
 
     .association-possible-answer-left:hover{
-        border: 1px dashed #FF8500;
+        border: 1px dashed $orange;
         background-color: white;
     }
 
     .association-drop-hover{
-        border: 1px dashed #FF8500!important;
-        background-color: white;
+        border: 1px dashed $orange!important;
+        background-color: lighten($orange, 45%);
     }
 
     .subject-dragged-grain {
         z-index: 1000;
         width: 100%;
-        border: 1px dashed #FF8500!important;
+        border: 1px dashed $orange!important;
         background-color: white;
         cursor: move;
     }
@@ -699,9 +713,9 @@ body.exercizer{
     }
 
     table.scores{
-         width:70%; 
-         overflow:hidden; 
-         float:left; 
+         width:70%;
+         overflow:hidden;
+         float:left;
          border-left: 1px solid $cyan;
 
          tbody{
@@ -713,9 +727,9 @@ body.exercizer{
     }
 
     table.infos{
-         width:30%; 
-         overflow:hidden; 
-         float:left; 
+         width:30%;
+         overflow:hidden;
+         float:left;
 
          tbody{
              max-height:450px;
@@ -747,5 +761,80 @@ body.exercizer{
         table-layout:fixed;
     }
 
+    .association {
+      &__left {
+        justify-content: flex-end;
+        border-bottom: 1px solid $solid-grey;
+        padding: 10px;
+      }
+      &__right {
+        border: 1px dashed $solid-grey;
+        border-radius: 10px;
+        text-align: center;
+        min-height: 50px;
+        .close {
+          padding: 15px;
+        }
+      }
+      &__delete {
+        padding: 15px;
+        position: absolute;
+        right: 0;
+      }
+    }
 
+    .tap-tap {
+      background-color: $primary;
+      color: white;
+      padding: 25px;
+      position: fixed;
+      z-index: 1000;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-height: 40vh;
+      margin: 0!important;
+      border: none;
+      box-shadow: 0 -3px 10px rgba(0,0,0,0.2);
+      &__item {
+        cursor: pointer;
+        display: inline-block;
+        background-color: white;
+        border: none;
+        padding: 10px 30px;
+        margin: 10px;
+        color: $darkest-grey;
+        box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        &:hover,
+        &:active {
+          background-color: $orange;
+          color: white;
+          border: none;
+        }
+      }
+      &__target {
+        border-color: $orange;
+      }
+    }
+    @media screen and (max-width: $tablette) {
+      .main-col {
+        padding-left: 0!important;
+      }
+      input {
+        padding: 10px;
+        height: inherit;
+      }
+      ul.thought-out-actions li {
+        margin: 10px 0;
+      }
+    }
+    @media screen and (max-width: $fat-mobile) {
+      .association {
+        flex-direction: column;
+        padding: 10px;
+      }
+      .association__left {
+        justify-content: center;
+      }
+    }
 }
