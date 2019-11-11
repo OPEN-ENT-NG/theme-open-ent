@@ -6,6 +6,9 @@ body.exercizer.dragging{
 }
 
 body.exercizer{
+    h2 {
+      font-size: 18px;
+    }
     .chip{
         &.selected{
             box-shadow: 2px 2px 1px 0px  $shadow;
@@ -397,6 +400,9 @@ body.exercizer{
         top: calc(50% - 12px);
         opacity: .75;
       }
+      &:hover {
+        color: white;
+      }
     }
 
     perform-order .answer{
@@ -504,14 +510,35 @@ body.exercizer{
 
 }
 
-
-
 /// TCM inner App css
 body.exercizer{
     /*
     *   COLOR CORRECTED / CORRECTION ON GOING / HAS BEEN START / IS SUBMITTED
     */
-
+    .dominos .item .domino .due-date {
+      padding: 5px 10px;
+      background-color: $cyan;
+      color: white;
+      & > * {
+        display: inline-block;
+      }
+      &::before {
+        @include fonticon;
+        content: "\f017";
+        font-size: 20px;
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+      &.delay {
+        background-color: $red;
+      }
+    }
+    .dominos .item .domino .bottom .content {
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: $grey;
+    }
     .background-color-corrected,
     .dominos .item .domino .bottom.background-color-corrected{
         background-color: $green;
@@ -605,7 +632,7 @@ body.exercizer{
 
 
     nav.floating-navigation, nav.vertical{
-        padding-right: 35px;
+        padding-right: 15px;
     }
 
     /**
