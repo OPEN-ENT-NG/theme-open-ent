@@ -516,9 +516,11 @@ body.exercizer{
     *   COLOR CORRECTED / CORRECTION ON GOING / HAS BEEN START / IS SUBMITTED
     */
     .dominos .item .domino .due-date {
-      padding: 5px 10px;
-      background-color: $cyan;
-      color: white;
+      padding: 10px 0;
+      color: $grey;
+      strong {
+        color: inherit;
+      }
       & > * {
         display: inline-block;
       }
@@ -526,18 +528,26 @@ body.exercizer{
         @include fonticon;
         content: "\f017";
         font-size: 20px;
-        margin-right: 10px;
+        margin-right: 5px;
         vertical-align: middle;
       }
       &.delay {
-        background-color: $red;
+        color: $red;
+        &::before {
+          @include fonticon;
+          content: '\e426';
+        }
       }
     }
     .dominos .item .domino .bottom .content {
       display: inline-flex;
       align-items: center;
       justify-content: flex-start;
-      color: $grey;
+      color: $darkest-grey;
+    }
+    .dominos .item .domino .score {
+      font-size: 20px;
+
     }
     .background-color-corrected,
     .dominos .item .domino .bottom.background-color-corrected{
@@ -551,23 +561,23 @@ body.exercizer{
     }
     .background-color-is-correction-on-going,
     .dominos .item .domino .bottom.background-color-is-correction-on-going{
-        background-color: $orange;
+        background-color: $purple;
         .content{
             width: calc(100% - 20px);
         }
     }
     .color-is-correction-on-going{
-        color: $orange;
+        color: $purple;
     }
     .background-color-is-submitted,
     .dominos .item .domino .bottom.background-color-is-submitted{
-        background-color: #00A4D3;
+        background-color: $cyan;
         .content{
             width: calc(100% - 20px);
         }
     }
     .color-is-submitted{
-        color: #00A4D3;
+        color: $cyan;
     }
     .background-color-has-been-started,
     .dominos .item .domino .bottom.background-color-has-been-started{
@@ -823,7 +833,20 @@ body.exercizer{
         right: 0;
       }
     }
-
+    .back-to-top {
+      background-color: $orange;
+      color: white;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      box-shadow: 1px 1px 5px rgba(black, 0.1);
+      &::before {
+        @include fonticon;
+        content: "\e838";
+        display: block;
+      }
+    }
     .tap-tap {
       background-color: $primary;
       color: white;
@@ -867,6 +890,9 @@ body.exercizer{
       }
       ul.thought-out-actions li {
         margin: 10px 0;
+      }
+      .right-spacing-twice {
+        margin-right: 0!important;
       }
     }
     @media screen and (max-width: $fat-mobile) {
