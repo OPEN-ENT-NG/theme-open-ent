@@ -424,6 +424,10 @@ body.exercizer{
             }
         }
     }
+    // Delete border from Order question in correction
+    input[data-ng-model="filled_answer.order_by"] {
+      border: none;
+    }
 
     perform-qcm{
         .checkbox{
@@ -563,7 +567,7 @@ body.exercizer{
     .dominos .item .domino .bottom.background-color-is-correction-on-going{
         background-color: $purple;
         .content{
-            width: calc(100% - 20px);
+            width: calc(100% - 10px);
         }
     }
     .color-is-correction-on-going{
@@ -573,7 +577,7 @@ body.exercizer{
     .dominos .item .domino .bottom.background-color-is-submitted{
         background-color: $cyan;
         .content{
-            width: calc(100% - 20px);
+            width: calc(100% - 10px);
         }
     }
     .color-is-submitted{
@@ -583,13 +587,17 @@ body.exercizer{
     .dominos .item .domino .bottom.background-color-has-been-started{
         background-color: $orange;
         .content{
-            width: calc(100% - 20px);
+            width: calc(100% - 10px);
         }
     }
     .color-has-been-started{
         color: $orange;
     }
-
+    .input-response-correct,
+    .input-response-incorrect {
+      padding: 5px 15px;
+      height: inherit;
+    }
     .input-response-correct{
         color: $green !important;
         border: 1px solid $green !important;
@@ -881,7 +889,23 @@ body.exercizer{
       }
     }
     .grain-correction {
-      background-color: #daf2ef;
+      background-color: rgba($green, 0.1);
+      border: 1px solid $green !important;
+      border-radius: 7px;
+      h2 {color: $green}
+      input[type="text"] {
+        margin: 0;
+        border: none;
+        height: inherit;
+        line-height: inherit;
+        color: inherit!important;
+      }
+      .input-response-correct,
+      .input-response-incorrect {
+        padding: 5px 15px;
+        border: none!important;
+        background-color: rgba(black, 0.025);
+      }
     }
     @media screen and (max-width: $tablette) {
       .main-col {
