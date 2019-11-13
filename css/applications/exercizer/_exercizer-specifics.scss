@@ -842,17 +842,25 @@ body.exercizer{
       }
     }
     .back-to-top {
+      position: absolute;
+      right: 25px;
+      bottom: 25px;
+      font-size: 20px;
       background-color: $orange;
       color: white;
       width: 40px;
       height: 40px;
       line-height: 40px;
       text-align: center;
-      box-shadow: 1px 1px 5px rgba(black, 0.1);
+      box-shadow: 2px 2px 5px rgba(black, 0.25);
+      cursor: pointer;
       &::before {
         @include fonticon;
         content: "\e838";
         display: block;
+      }
+      &:hover {
+        background-color: darken($orange, 10%);
       }
     }
     .tap-tap {
@@ -929,6 +937,12 @@ body.exercizer{
       }
       .association__left {
         justify-content: center;
+      }
+      .dominos .item .domino .top {
+        display: none;
+      }
+      .dominos .item .domino .bottom {
+        margin-left: 0!important;
       }
     }
 }
