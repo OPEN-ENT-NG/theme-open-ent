@@ -498,7 +498,7 @@ body.exercizer {
       margin-right: 5px;
       vertical-align: middle;
     }
-    &.delay {
+    .delay {
       color: $red;
       &::before {
         @include fonticon;
@@ -519,7 +519,7 @@ body.exercizer {
   .dominos .item .domino .bottom.background-color-corrected {
     background-color: $green;
     .content {
-      width: calc(100% - 40px);
+      width: calc(100% - 10px);
     }
   }
   .color-corrected {
@@ -818,6 +818,10 @@ body.exercizer {
     }
     &__target {
       border-color: $orange;
+    }
+    &__explanation {
+      font-size: 13px;
+      font-style: italic;
     }
   }
   .grain-correction {
