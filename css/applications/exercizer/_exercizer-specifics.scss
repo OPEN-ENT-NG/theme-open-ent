@@ -870,6 +870,12 @@ body.exercizer {
           }
           .bottom {
             margin-left: 0!important;
+            height: 150px;
+            .content {
+              flex-direction: column;
+              justify-content: center;
+              align-items: flex-start;
+            }
           }
           .due-date {
             font-size: 13px;
