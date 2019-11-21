@@ -13,7 +13,7 @@ body {
 	}
 }
 
-button, input[type=button], a.button, input[type=submit], input[type=search], .drop-down-button label, .drop-down-button.hidden label {
+button, input[type=button], a.button, input[type=submit], input[type=search],input[type=file],  .drop-down-button label, .drop-down-button.hidden label {
 	font-family: OpenDyslexic;
 }
 
@@ -25,12 +25,34 @@ h2{
 	font-size: 18px;
 }
 
-input[type=text], input[type=password], input[type=password], input[type=search], input[type="tel"], input[type="email"]{
+input[type=password], input[type=password], input[type=search], input[type="tel"], input[type="email"]{
 	height: 35px;
+}
+
+input[type=text]{
+	height: 25px;
 }
 
 input[type=text], textarea, select{
 	font-family: OpenDyslexic;
+}
+
+select{
+	padding: 0 5px !important;
+	min-width: 180px;
+}
+
+.textarea-appreciation{
+	margin-top: -5px!important;
+	min-height: 25px;
+}
+
+a:after{
+	padding: 10px 0px;
+}
+
+.suivi-proportion{
+	line-height: 17px;
 }
 
 nav.vertical.stamps article h3, nav.vertical.half-stamps article h3{
