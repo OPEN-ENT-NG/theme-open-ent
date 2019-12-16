@@ -24,3 +24,15 @@ article.selected {
         color: $white;
     }
 }
+
+article.select-border {
+    border: 1px solid $white;
+    &.selected {
+        background: $white;
+        color: $grey;
+        border: 1px solid $orange;
+        a {
+            color: $cyan;
+        }
+    }
+}
