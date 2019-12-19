@@ -394,6 +394,7 @@ i.show-details{
     height: 25px!important;
     background-color: $shadow-dark;
     color: white!important;
+    border-radius: 50%;
     &::before {
       position: absolute;
       left: 7px;
