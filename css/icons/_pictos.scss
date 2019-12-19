@@ -390,9 +390,10 @@ i.show-details{
     position: absolute;
     top: 15px;
     right: 15px;
-    @include invert-colors();
-    background-color: rgba($white, 0.5);
-    border-radius: 50%;
+    width: 25px!important;
+    height: 25px!important;
+    background-color: $shadow-dark;
+    color: white!important;
     &::before {
       position: absolute;
       left: 7px;
