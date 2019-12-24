@@ -45,8 +45,8 @@ explorer.selected{
             opacity: 0.4;
         }
     }
-    &.item, &.item.folder{
-        .domino, .content{
+    .domino {
+        .content{
             background-color: $primary-lighter;
         }
         img {
