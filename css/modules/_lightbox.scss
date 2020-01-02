@@ -1,7 +1,7 @@
 
 
 .lightbox-window,
-.lightbox .content {
+.lightbox > .content {
     padding: 10px;
     box-shadow: 2px 2px 24px $shadow;
     background: $lightest-grey;
