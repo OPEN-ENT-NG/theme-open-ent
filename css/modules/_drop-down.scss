@@ -13,9 +13,9 @@
         color: $accent;
     }
     .drop-down-label, .drop-up-label{
-        border-bottom: 1px solid $disabled-color;
+        border-bottom: 1px solid $shadow-light;
         @include run-transition(all);
-        & > label{
+        & > label {
             font-weight: bold;
             color: $grey;
             @include run-transition(all);
