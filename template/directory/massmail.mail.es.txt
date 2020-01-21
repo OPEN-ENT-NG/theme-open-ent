@@ -1,0 +1,46 @@
+{{! Users that are not activated }}
+{{#activationCode}}
+Hola,<br/>
+<br/>
+Este mensaje se envía automáticamente con sus informaciones de primera conexión a NEO.<br/>
+<br/>
+Para conectarse, vaya a <a href="https://neoconnect.opendigitaleducation.com">neoconnect.opendigitaleducation.com</a>.<br/>
+<br/>
+Introduzca su nombre de usuario (se debe guardar para poder conectarse ulteriormente) y su código de activación:<br/>
+<br/>
+Id. de usuario: {{login}}<br/>
+Código de activación: {{activationCode}}<br/>
+<br/>
+Seleccione una nueva contraseña e introduzca su dirección de correo electrónico personal para obtener un correo electrónico de restauración si usted olvida su contraseña.<br/>
+<br/>
+Recomendamos que mezcle números, letras, mayúsculas, minúsculas y caracteres especiales al elegir su contraseña personal.<br/>
+<br/>
+¡Feliz navegación!<br/>
+<br/>
+El equipo NEO<br/>
+<br/>
+{{/activationCode}}
+{{! Users that are activated }}
+{{^activationCode}}
+Hola,<br/>
+<br/>
+Este mensaje se envía automáticamente con sus informaciones de primera conexión a NEO.<br/>
+<br/>
+Usted ya tiene una cuenta en NEO.<br/>
+Su Id. de usuario es: <i>{{login}}</i><br/>
+<br/>
+Si no recuerda su contraseña, puede establecer una nueva siguiendo las siguientes instrucciones:<br/>
+<br/>
+- Vaya a <a href="https://neoconnect.opendigitaleducation.com">https://neoconnect.opendigitaleducation.com</a> y haga clic en “Contraseña olvidada”<br/>
+<br/>
+- Introduzca su Id. de usuario y haga clic en “Enviar”.<br/>
+<br/>
+Se enviará un correo electrónico a la dirección que ingresó al activar su cuenta. Luego haga clic en el enlace de restauración de contraseña recibido para definir su nueva contraseña.<br/>
+<br/>
+Recomendamos que mezcle números, letras, mayúsculas, minúsculas y caracteres especiales al elegir su contraseña personal.<br/>
+<br/>
+¡Feliz navegación!<br/>
+<br/>
+El equipo NEO<br/>
+<br/>
+{{/activationCode}}
