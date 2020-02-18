@@ -159,6 +159,15 @@ i.conversation-large::before, i.type.messagerie::before, i.mail::before{
   color: $yellow;
 }
 
+i.paths-large, i.parcours-large{
+  @include fonticon;
+}
+
+i.paths-large::before, i.parcours-large::before{
+  content: "\e804";
+  color: $orange;
+}
+
 
 i.validated-icon-large, i.validated-icon{
   @include fonticon;

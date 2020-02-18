@@ -314,7 +314,14 @@ i.conversation-large::before, i.type.messagerie::before, i.mail::before{
   color: $yellow;
 }
 
+i.paths-large,i.parcours-large{
+  @include fonticon;
+}
 
+i.paths-large::before,i.parcours-large::before{
+  content: "\e94d";
+  color: $orange;
+}
 //// & also 1D APPS
 
 i.statistics-large, i.statistics.cas, i.statistics, i.statistics::before,
