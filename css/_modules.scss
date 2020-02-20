@@ -1689,7 +1689,10 @@ recorder {
 	.controls{
 		button{
 			background: $white;
-			background-color: $white;
+            background-color: $white;
+            i{
+                color:$orange;
+            }
 		}
 	}
 }
