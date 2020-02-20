@@ -1685,6 +1685,15 @@ recorder {
         color: $primary;
     }
 }
+.videocontroller {
+	.controls{
+		button{
+			background: $white;
+			background-color: $white;
+		}
+	}
+}
+
 .embedded-viewer {
     background: $white;
     color: $grey;
