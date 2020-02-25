@@ -377,6 +377,10 @@ filters {
         line-height: 28px;
     }
 }
+[contenteditable="false"] {
+    background: unset;
+    border: unset;
+}
 .grid-exemple.row .article,
 .grid-exemple.row .absolute {
     font-size: 14px;
