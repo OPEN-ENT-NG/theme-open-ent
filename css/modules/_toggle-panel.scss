@@ -47,6 +47,11 @@
             box-shadow: 0 2px 3px $shadow inset;
             border-radius: 10px;
         }
+        .widget-picker__name {
+            display: block;
+            font-size: 14px;
+            margin: 5px 0 15px;
+        }
         .cell:nth-child(6n) {
             i {
                 background: $green;
