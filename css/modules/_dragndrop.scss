@@ -1,0 +1,18 @@
+.ode-js-drop-hover.ode-js-drop-available[ode-drop-target] {
+    background: white!important;
+}
+.ode-js-drop-available[ode-drop-target] {
+    border-color: $accent!important;
+}
+
+.dnd-poly-drag-image {
+    opacity: .5 !important;
+}
+
+/* applied when the drag effect is none and the operation ends */
+.dnd-poly-drag-image.snapback {
+    -webkit-transition: -webkit-transform 250ms ease-out !important;
+    -moz-transition: -moz-transform 250ms ease-out !important;
+    -o-transition: -o-transform 250ms ease-out !important;
+    transition: transform 250ms ease-out !important;
+}
