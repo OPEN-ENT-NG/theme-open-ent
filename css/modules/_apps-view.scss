@@ -1,9 +1,15 @@
 ﻿.icons-view.apps {
     padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     .element {
+        margin: 25px 10px;
         padding: 0;
         height: 140px;
         width: 140px;
+        left: 0!important;
+        bottom:0!important;
         &:hover {
             background: transparent !important;
             a {
@@ -56,4 +62,42 @@ input[type="search"].apps-search {
     height: inherit;
     width: 600px;
     margin: 0 auto;
+}
+
+.bookmarked-apps {
+	margin-bottom: 30px;
+	background-color: rgba(white, 0.75);
+	border: 1px solid transparent;
+	box-shadow: 1px 1px 10px rgba(black, 0.1);
+	font-size: 24px;
+	border-radius: 5px;
+	text-align: center;
+	.icons-view.apps{
+		margin-top: 0;
+	}
+	.container {
+		font-weight: bold;
+	}
+}
+
+@media screen and (max-width: $tablette) {
+    .icons-view.apps {
+        .element {
+            width: 100px!important;
+            height: 100px!important;
+            .container {
+                width: 100px!important;
+                height: 100px!important;
+                line-height: 75px;
+                font-size: 55px;
+            }
+            legend {
+                width: 100px;
+                height: 30px;
+                a {
+                    position: static;
+                }
+            }
+        }
+    }
 }
