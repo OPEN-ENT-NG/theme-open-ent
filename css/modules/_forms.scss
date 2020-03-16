@@ -21,7 +21,7 @@ textarea {
 }
 textarea:focus {
     outline: none;
-    border: 2px solid $accent;
+    border: 1px solid $accent;
 }
 
 
@@ -89,7 +89,7 @@ textarea.inline-editing {
     padding: 2px;
 }
 textarea.inline-editing:focus {
-    border-bottom: 2px solid $accent;
+    border-bottom: 1px solid $accent;
     outline: none;
 }
 
@@ -109,11 +109,11 @@ input[type=password]:focus,
 input[type=search]:focus,
 input[type=tel]:focus,
 input[type=email]:focus {
-    border-bottom: 2px solid $accent;
+    border-bottom: 1px solid $accent;
     outline: 0;
 }
 input.ng-invalid.ng-dirty {
-    border-bottom: 2px solid $red;
+    border-bottom: 1px solid $red;
 }
 
 
