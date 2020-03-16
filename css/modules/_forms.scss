@@ -90,6 +90,7 @@ textarea.inline-editing {
 }
 textarea.inline-editing:focus {
     border-bottom: 1px solid $accent;
+    box-shadow: 0 1px 0 0 $accent;
     outline: none;
 }
 
@@ -110,10 +111,12 @@ input[type=search]:focus,
 input[type=tel]:focus,
 input[type=email]:focus {
     border-bottom: 1px solid $accent;
+    box-shadow: 0 1px 0 0 $accent;
     outline: 0;
 }
 input.ng-invalid.ng-dirty {
     border-bottom: 1px solid $red;
+    box-shadow: 0 1px 0 0 $red;
 }
 
 
