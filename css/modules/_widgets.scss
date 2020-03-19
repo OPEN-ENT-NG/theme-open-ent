@@ -1,7 +1,3 @@
-
-.widget {
-    width: 100% !important;
-}
 .widget-container {
     @include material-card();
     background-color: $white;
@@ -21,7 +17,10 @@
     }
 }
 
-
+.widget {
+    max-width: 100% !important;
+    padding: 10px;
+}
 
 .mood-widget {
     border: 1px solid $primary-light;
@@ -97,11 +96,10 @@
         }
     }
 }
-.notes-widget {
-    padding: 0 10px;
-}
+.notes-widget {padding: 0 10px}
 
 .last-infos-widget {
+    ul {margin-left: -10px}
     .last-infos-config-button {
         display: block;
         font-size: 30px;
@@ -139,7 +137,6 @@
 .rss-widget.widget {
     font-weight: normal;
     width: auto !important;
-    padding: 5px;
     a {
         color: $primary;
         font-weight: bold;
@@ -263,6 +260,7 @@
         }
     }
 }
+
 .cursus-widget {
     padding-bottom: 15px;
     font-size: 14px;
@@ -299,7 +297,6 @@
 }
 
 .bookmark-widget {
-    padding: 5px;
     width: auto !important;
     h1::before {}
     .bookmark-add-button {
@@ -329,9 +326,7 @@
     }
 }
 
-
 .logbook-widget{
-
     ul{
         height: 90px;
         margin: 0;
@@ -379,7 +374,6 @@
             }
         }
     }
-
     .logbook-children, .logbook-child{
         padding: 0 15px;
     }
