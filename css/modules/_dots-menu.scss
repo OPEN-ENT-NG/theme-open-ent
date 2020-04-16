@@ -56,4 +56,7 @@ dots-menu {
         @include fonticon;
         font-size: 20px;
     }
+    i.opener:hover {
+        color: $orange;
+    }
 }
