@@ -103,11 +103,17 @@ header.main{
     body{
         header.main{
             section nav.horizontal{
-
                 #my-photo{
                     width: 25px;
                     height: 25px;
                     margin-top: 12px;
+                }
+                > a i.help, i.navbar-help {
+                    height: 50px;
+                    line-height: 50px;
+                    &::before {
+                        line-height: inherit!important;
+                    }
                 }
             }
         }
