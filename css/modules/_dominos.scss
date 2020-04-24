@@ -1,66 +1,25 @@
 .dominos {
-    //domninos as folder
-    .folder {
-        .top {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: $primary;
-        }
-        .content {
-          display: flex;
-          align-items: center;
-        }
-        strong {
-            overflow: hidden;
-            max-height: 100%;
-            padding-left: 5px;
-        }
-        .illustration i, img {
-            color: $primary;
-        }
-    }
+    .folder, 
     .item {
-        width: 14%;
-        border: 0;
-        padding: 10px;
-        margin: 1px;
-        display: inline-block;
-
+        @include box-shadow3(2px, 2px, 5px);
         .domino {
-            @include box-shadow3(2px, 2px, 5px);
-            border-radius: 2px;
-            border: 0;
+            border: none;
+            .top {
+                background-color: $grey;
+            }
             .bottom {
-                text-align: left;
-                background: white;
-                color: $primary;
-                div.content {
-                    em.smaller-text.block {
-                        margin-top: -5px;
+                .content {
+                    span {
+                        color: $primary;
                     }
-                    i.shared {
-                        right: 8px;
-                        top: 8px;
+                    em.smaller-text {
+                        font-size: 11px;
                     }
-                    .icons {
-                        position: absolute;
-                        bottom: 5px;
-                        right: 10px;
-                        color: $medium-grey;
-                        .inline {
-                            padding: 0 5px;
-                        }
-                    }
-                }
-                i.send-mail:hover {
-                    margin: 7px;
                 }
             }
         }
     }
 }
-
 .dominos.centered-text {
     .item {
         padding: 0px;
@@ -88,11 +47,6 @@
 }
 
 .dominos.fallen {
-    .item {
-        font-size: 12px;
-        line-height: 21px;
-        float: left;
-    }
     .two-lines {
         max-height: 42px;
         overflow: hidden;
