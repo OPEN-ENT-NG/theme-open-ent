@@ -20,31 +20,6 @@
         }
     }
 }
-.dominos.centered-text {
-    .item {
-        padding: 0px;
-        margin: 15px;
-        max-width: 140px;
-        min-width: 140px;
-        &.user, &.group {
-            padding: 2px;
-        }
-        .domino {
-            .top {
-                height: 136px;
-                & + span{
-                    color: $white;
-                }
-            }
-            .bottom {
-                margin-top: 0;
-            }
-        }
-    }
-    .bottom-locked {
-        right: 10px;
-    }
-}
 
 .dominos.fallen {
     .two-lines {
