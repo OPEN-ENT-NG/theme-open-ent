@@ -32,19 +32,6 @@ sniplet .dominos .item {
     box-shadow: 2px 2px 5px $shadow-light;
 }
 
-@media screen and (max-width: $fat-mobile) {
-	.dominos.centered-text{
-        .item{
-            margin: 5px;
-            max-width: 120px;
-            min-width: 120px;
-            .domino .top{
-                height: 116px;
-            }
-        }
-    }
-}
-
 @media screen and (min-width: $wide-screen) {
     .user-infos {
         margin-top: 44px;
