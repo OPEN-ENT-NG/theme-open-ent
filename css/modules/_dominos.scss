@@ -12,8 +12,9 @@
                     span {
                         color: $primary;
                     }
-                    em.smaller-text {
-                        font-size: 11px;
+                    em.smaller-text span {
+                        font-size: 11px!important;
+                        color: $grey;
                     }
                 }
             }
