@@ -24,28 +24,24 @@
     @include message;
     background: linear-gradient(to right, lighten($red, 40%),lighten($red, 35%));
     border: 1px solid lighten($red, 30%);
-    border-left: 10px solid $red;
     color: darken($red, 20%);
 }
 .warning {
     @include message;
     background: linear-gradient(to right, lighten($orange, 40%),lighten($orange, 35%));
     border: 1px solid lighten($orange, 30%);
-    border-left: 10px solid $orange;
     color: darken($orange, 20%);
 }
 .info {
     @include message;
     background: linear-gradient(to right, lighten($cyan, 40%),lighten($cyan, 35%));
     border: 1px solid lighten($cyan, 30%);
-    border-left: 10px solid $cyan;
     color: darken($cyan, 20%);
 }
 .success {
     @include message;
     background: linear-gradient(to right, lighten($green, 40%),lighten($green, 35%));
     border: 1px solid lighten($green, 30%);
-    border-left: 10px solid $green;
     color: darken($green, 20%);
 }
 
