@@ -77,25 +77,17 @@
 	}
 	h1{
 		font-size: 18px;
-		margin-bottom: 9px;
 		line-height: 30px;
 	}
 	h1.application-title{
-		color: transparent;
-		font-size: 16px;
-		span{
-			color: $white;
-		}
+		font-size: 22px;
+		line-height: 40px;
 	}
 
 
 	[subtitle]{
 		background: $primary;
 	}
-
-
-
-
 
 	.navbar{
 		height: 50px;
