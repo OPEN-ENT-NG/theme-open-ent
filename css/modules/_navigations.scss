@@ -116,8 +116,8 @@ header.main{
                         font-size: 30px;
                     }
                 }
-                > a i.mail {font-size: 26px;}
-                > a i.apps {font-size: 24px;}
+                > a i.mail::before {font-size: 26px;}
+                > a i.apps::before {font-size: 24px;}
             }
         }
     }
