@@ -77,11 +77,15 @@
 	}
 	h1{
 		font-size: 18px;
+		margin-bottom: 9px;
 		line-height: 30px;
 	}
 	h1.application-title{
-		font-size: 22px;
-		line-height: 40px;
+		color: transparent;
+		font-size: 16px;
+		span{
+			color: $white;
+		}
 	}
 
 

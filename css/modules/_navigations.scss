@@ -112,9 +112,12 @@ header.main{
                     height: 50px;
                     line-height: 50px;
                     &::before {
-                        line-height: inherit!important;
+                        line-height: 47px!important;
+                        font-size: 30px;
                     }
                 }
+                > a i.mail {font-size: 26px;}
+                > a i.apps {font-size: 24px;}
             }
         }
     }
