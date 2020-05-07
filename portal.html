@@ -62,8 +62,8 @@
 				</popover-content>
 			</popover>
 			<span ng-include="template.containers.portal.conversationUnread"></span>
-			<popover class="searchengine" tooltip="navbar.search" ng-if="me.hasWorkflow('fr.openent.searchengine.controllers.SearchEngineController|view')">
-				<a href="/searchengine" popover-opener ng-click="openApps($event)"
+			<popover class="searchengine" ng-if="me.hasWorkflow('fr.openent.searchengine.controllers.SearchEngineController|view')">
+				<a href="/searchengine" popover-opener ng-click="openApps($event)" tooltip="navbar.search"
 					pulsar="{ index: 2, i18n: 'portal.pulsar.search', position: 'bottom center', workflow: 'org.entcore.workspace.service.WorkspaceService|listFolders'}">
 						<i class="searchengine"></i>
 				</a>
