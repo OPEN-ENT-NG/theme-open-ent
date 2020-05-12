@@ -97,6 +97,15 @@ i.exercizer-large::before, i.type.exercizer::before, i.exercizer::before{
   color: $purple;
 }
 
+i.visioconf,
+i.visioconf-large {
+  @include fonticon;
+  &::before {
+    content: "\e957";
+    color: $purple;
+  }
+}
+
 /* ico image not font */
 
 i.faqsciences-large, i.type.faqsciences, i.faqsciences{
