@@ -1,4 +1,23 @@
+// font-face commune au 1D/2D (a déporter dans entcore-css-lib)
+@font-face {
+	font-family: 'Arial';
+	src: url("../../fonts/Arial.woff");
+}
+@font-face {
+	font-family: 'Comic Sans MS';
+	src: url("../../fonts/ComicSansMS.woff");
+}
+@font-face {
+	font-family: 'Tahoma';
+	src: url("../../fonts/Tahoma.woff");
+}
+@font-face {
+	font-family: 'Verdana';
+	src: url("../../fonts/Verdana.woff");
+}
 
+
+// font-face 2D
 @font-face {
 	font-family: "Roboto";
 	src: url(../../../entcore-css-lib/font/Roboto/Roboto-Regular.ttf);
@@ -19,8 +38,6 @@
 	font-style: italic;
 	font-weight: bold;
 }
-
-
 
 @font-face {
 	font-family: "OpenDyslexic";
