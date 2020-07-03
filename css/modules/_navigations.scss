@@ -429,6 +429,7 @@ nav.vertical.half-stamps {
 
 .navbar {
     background: $primary-dark;
+    background: linear-gradient(to bottom right, $primary, $primary-dark);
     width: 100%;
     height: $header-height;
     box-shadow: 0 2px 5px $shadow;
