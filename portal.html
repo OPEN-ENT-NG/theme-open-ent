@@ -38,7 +38,7 @@
 			<a class="zero-mobile community-button" href="/community" tooltip="navbar.community" ng-if="me.hasWorkflow('net.atos.entng.community.controllers.CommunityController|view')"><i class="community"></i></a>
 			<popover>
 				<a href="/welcome" tooltip="navbar.applications"
-				pulsar="{ index: 1, i18n: 'portal.pulsar.apps', position: 'bottom center'}"
+				pulsar="{ index: 3, i18n: 'portal.pulsar.apps', position: 'bottom center'}"
 				popover-opener ng-click="openApps($event)">
 					<i class="apps"></i>
 				</a>
@@ -63,8 +63,7 @@
 			</popover>
 			<span ng-include="template.containers.portal.conversationUnread"></span>
 			<popover class="searchengine" ng-if="me.hasWorkflow('fr.openent.searchengine.controllers.SearchEngineController|view')">
-				<a href="/searchengine" popover-opener ng-click="openApps($event)" tooltip="navbar.search"
-					pulsar="{ index: 2, i18n: 'portal.pulsar.search', position: 'bottom center', workflow: 'org.entcore.workspace.service.WorkspaceService|listFolders'}">
+				<a href="/searchengine" popover-opener ng-click="openApps($event)" tooltip="navbar.search">
 						<i class="searchengine"></i>
 				</a>
 				<popover-content class="searchPortal" ng-controller="SearchPortal">
@@ -76,7 +75,7 @@
 					</div>
 				</popover-content>
 			</popover>
-			<a ng-if="currentLanguage == 'fr'" tooltip="navbar.help" pulsar="{ index: 3, i18n: 'portal.pulsar.help', position: 'bottom center', workflow: 'org.entcore.workspace.service.WorkspaceService|listFolders'}">
+			<a ng-if="currentLanguage == 'fr'" tooltip="navbar.help" pulsar="{ index: 5, i18n: 'portal.pulsar.help', position: 'bottom center'}">
 				<i18n>help.icon</i18n>
 			</a>
 			<a href="/userbook/mon-compte" tooltip="navbar.myaccount"
