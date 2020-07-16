@@ -47,3 +47,78 @@ sniplet .dominos .item {
         margin-top: 100px;
     }
 }
+
+@media screen and (min-width: 1800px) {
+	.dominos .item,
+	.dominos .folder {
+		width: calc(20% - 20px);
+	}
+}
+@media screen and (max-width: 1400px) {
+	.dominos .item,
+	.dominos .folder {
+		width: calc(33% - 20px);
+	}
+}
+@media screen and (max-width: 1000px) {
+	.dominos .item,
+	.dominos .folder {
+		width: calc(50% - 20px);
+	}
+}
+@media screen and (max-width: 600px) {
+	.dominos .item,
+	.dominos .folder {
+		width: calc(100% - 20px);
+	}
+}
+
+// Resize cards if they are contained in .margin-four (= left panel)
+@media screen and (max-width: 1800px) {
+    .margin-four {
+        .dominos .item,
+        .dominos .folder {
+            width: calc(20% - 20px);
+        }
+    }
+}
+@media screen and (max-width: 1650px) {
+    .margin-four {
+        .dominos .item,
+        .dominos .folder {
+            width: calc(33% - 20px);
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .margin-four {
+        .dominos .item,
+        .dominos .folder {
+            width: calc(50% - 20px);
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    .margin-four {
+        .dominos .item,
+        .dominos .folder {
+            width: calc(100% - 20px);
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .margin-four {
+        .dominos .item,
+        .dominos .folder {
+            width: calc(50% - 20px);
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .margin-four {
+        .dominos .item,
+        .dominos .folder {
+            width: calc(100% - 20px);
+        }
+    }
+}
