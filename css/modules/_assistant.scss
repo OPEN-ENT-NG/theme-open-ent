@@ -68,6 +68,10 @@ assistant{
             i{
                 font-size: 65px;
             }
+            i.small {
+                font-size: 40px;
+                padding: 5px;
+            }
             legend{
                 color: $black;
                 margin: 20px auto 0;
