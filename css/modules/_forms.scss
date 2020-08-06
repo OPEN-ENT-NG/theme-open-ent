@@ -81,6 +81,24 @@ input[type=email] {
     font-size: 14px;
     margin-bottom: 15px;
 }
+input[type=text],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=email] {
+    color: $text-light;
+    background: transparent;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 5px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    &::placeholder {
+        color: $text-light;
+        opacity: 0.6;
+        font-style: italic;
+    }
+}
 
 
 textarea.inline-editing {
