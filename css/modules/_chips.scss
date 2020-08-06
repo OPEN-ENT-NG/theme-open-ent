@@ -1,6 +1,6 @@
 .chip, contact-chip{
     background: $solid-grey;
-    box-shadow: 2px 2px 4px 0px $shadow-dark inset;
+    box-shadow: 2px 2px 4px 0px $shadow inset;
     @include run-transition(all);
     i{
         &::before{
@@ -12,11 +12,20 @@
     }
 }
 
+.chip,
+contact-chip,
+.chip.selected,
+contact-chip.selected {
+    &:hover, &:active {
+        box-shadow: 2px 2px 4px 0px $shadow-dark inset;
+    }
+}
+
 .chip.multiselect{
     background: $accent;
-    box-shadow: 2px 2px 1px 0px  $shadow;
+    box-shadow: 2px 2px 3px 0px $shadow;
     &:active{
-        box-shadow: 2px 2px 4px 0px $shadow-darker inset;
+        box-shadow: 2px 2px 4px 0px $shadow-dark inset;
     }
 }
 .chip.type {
