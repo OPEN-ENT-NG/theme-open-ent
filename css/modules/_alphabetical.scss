@@ -1,4 +1,5 @@
 alphabetical {
+    width: 100%;
     h1.letter-picker {
         margin: auto auto 15px;
     }
@@ -11,10 +12,10 @@ alphabetical {
         @include run-transition(box-shadow);
         .bottom {
             background: transparent;
+            margin-left: 120px;
         }
         .bottom a {
             display: block;
-            position: absolute;
             height: 100%;
             h4 {
                 @include run-transition;
