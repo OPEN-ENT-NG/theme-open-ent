@@ -310,9 +310,10 @@ inputdate input {
   }
   .account {
     .avatar {
-      width: 50px;
-      height: 50px;
       position: static;
+      + div {
+        margin: 0;
+      }
     }
   }
 }
