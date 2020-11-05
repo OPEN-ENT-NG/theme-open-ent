@@ -1,0 +1,5 @@
+.bubble-right{
+    &:before{
+        @include triangle-left(25px, $white);
+    }
+}
