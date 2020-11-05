@@ -1165,3 +1165,25 @@ i.tools:before{
   content: '\e855';
   font-size: 23px;
 }
+
+i.various::before {
+  content: '\e91f';
+}
+i.outing::before {
+  content: '\e91c';
+}
+i.leisure::before {
+  content: '\e918';
+}
+i.canteen::before {
+  content: '\e91b';
+}
+i.last-minute::before {
+  content: '\e91a';
+}
+i.event::before {
+  content: '\e614';
+}
+i.calendar-o::before{
+  content:"\e917";
+}
