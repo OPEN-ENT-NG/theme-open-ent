@@ -422,7 +422,7 @@ i.library-large::before, i.type.library::before, i.library::before{
 
 //// 1D APPS background
 .apps{
-    i.stats-large::after, i.cahier-de-texte-large::after, i.schoolbook::after{
+    i.stats-large::after, i.cahier-de-texte-large::after {
         content: " ";
         display: block;
         position: absolute;
