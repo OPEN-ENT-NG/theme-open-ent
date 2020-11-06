@@ -12,6 +12,7 @@
 			}
 			h2 {font-size: 1.2em}
 			h3 {font-size: 1.1em}
+			h4 {margin-left: 1.1em}
 			strong,
 			a,
 			.red {
@@ -100,7 +101,13 @@
 	{{#activationCode}}
 	<h2>Meine erste Anmeldung in 5 Schritten</h2>
 	{{/activationCode}}
-    <h3> » Dieses Datenblatt ist bestimmt für <strong>{{firstName}} {{lastName}}</strong>{{#firstChild}}, Elter von <strong>{{firstName}} {{lastName}}</strong>{{#otherChildren}}, <strong>{{firstName}} {{lastName}}</strong>{{/otherChildren}}{{/firstChild}}{{#firstClass}} in der (den) Klasse(n) <strong>{{.}}</strong>{{#otherClasses}}, {{.}}{{/otherClasses}}{{/firstClass}}.</h3>
+    <h3> » Dieses Datenblatt ist bestimmt für <strong>{{firstName}} {{lastName}}</strong></h3>
+	  {{^isGuestOrPersonnel}}
+    <h4>{{^firstChild}}{{#i18n}}{{profile}}{{/i18n}}{{/firstChild}}{{#firstChild}}Elter von <strong>{{firstName}} {{lastName}}</strong>{{#otherChildren}}, <strong>{{firstName}} {{lastName}}</strong>{{/otherChildren}}{{/firstChild}}{{#firstClass}} in der Klasse <strong>{{.}}</strong>{{#otherClasses}}, <strong>{{.}}</strong>{{/otherClasses}}{{/firstClass}}.</h4>
+	  {{/isGuestOrPersonnel}}
+	  {{#isGuestOrPersonnel}}
+    <h4>{{#i18n}}{{profile}}{{/i18n}}.</h4>
+  	{{/isGuestOrPersonnel}}
     <p>Der den Lehrpersonen, den Personalmitgliedern, den Schülern und ihrer Familie vorbehaltene Plattform ist eine gesicherte und leicht zu handhabende digitale Lösung, die dazu dient:</p>
     <div class="column">
         <img src="illustrations/Publipostage_Actus.png"></img>

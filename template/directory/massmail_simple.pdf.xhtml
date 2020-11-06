@@ -41,7 +41,7 @@
         margin: 0;
     }
     .logo {
-        width: 120px;
+        width: 100px;
         float: right;
     }
     .grade {
@@ -68,8 +68,14 @@
         <div class="card">
             <img class="logo" src="logo.png"></img>
             <h2 class="name">{{displayName}}</h2>
+            {{^isGuestOrPersonnel}}
+            <strong class="grade">{{#i18n}}{{profile}}{{/i18n}}{{#firstClass}} {{#i18n}}classAdmin.template.class{{/i18n}} <strong>{{.}}</strong>{{#otherClasses}}, <strong>{{.}}</strong>{{/otherClasses}}{{/firstClass}}.</strong>
+            <br />
+            {{/isGuestOrPersonnel}}
+            {{#isGuestOrPersonnel}}
             <strong class="grade">{{#i18n}}{{profile}}{{/i18n}}</strong>
             <br />
+            {{/isGuestOrPersonnel}}
             {{#firstChild}}
             <p><strong>{{#i18n}}classAdmin.template.relative{{/i18n}} : </strong><br />{{firstName}} {{lastName}}{{#otherChildren}}, {{firstName}} {{lastName}}{{/otherChildren}}</p>
             <br />

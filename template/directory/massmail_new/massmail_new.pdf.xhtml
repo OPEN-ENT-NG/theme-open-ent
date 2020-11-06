@@ -12,6 +12,7 @@
 			}
 			h2 {font-size: 1.2em}
 			h3 {font-size: 1.1em}
+			h4 {margin-left: 1.1em}
 			strong,
 			a,
 			.red {
@@ -100,7 +101,13 @@
 	{{#activationCode}}
 	<h2>Ma première connexion en 5 étapes</h2>
 	{{/activationCode}}
-    <h3> » Cette fiche s'adresse à <strong>{{firstName}} {{lastName}}</strong>{{#firstChild}}, parent de <strong>{{firstName}} {{lastName}}</strong>{{#otherChildren}}, <strong>{{firstName}} {{lastName}}</strong>{{/otherChildren}}{{/firstChild}}{{#firstClass}} en classe(s) de <strong>{{.}}</strong>{{#otherClasses}}, {{.}}{{/otherClasses}}{{/firstClass}}.</h3>
+    <h3> » Cette fiche s'adresse à <strong>{{firstName}} {{lastName}}</strong></h3>
+	  {{^isGuestOrPersonnel}}
+    <h4>{{^firstChild}}{{#i18n}}{{profile}}{{/i18n}}{{/firstChild}}{{#firstChild}}Parent de <strong>{{firstName}} {{lastName}}</strong>{{#otherChildren}}, <strong>{{firstName}} {{lastName}}</strong>{{/otherChildren}}{{/firstChild}}{{#firstClass}} en classe de <strong>{{.}}</strong>{{#otherClasses}}, <strong>{{.}}</strong>{{/otherClasses}}{{/firstClass}}.</h4>
+	  {{/isGuestOrPersonnel}}
+	  {{#isGuestOrPersonnel}}
+    <h4>{{#i18n}}{{profile}}{{/i18n}}.</h4>
+  	{{/isGuestOrPersonnel}}
     <p>Réservé aux enseignants, aux personnels, aux élèves et leur famille, l'espace numérique est une solution sécurisée et facile à prendre en main pour :</p>
     <div class="column">
         <img src="illustrations/Publipostage_Actus.png"></img>

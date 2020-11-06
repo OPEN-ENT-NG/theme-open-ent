@@ -12,6 +12,7 @@
 			}
 			h2 {font-size: 1.2em}
 			h3 {font-size: 1.1em}
+			h4 {margin-left: 1.1em}
 			strong,
 			a,
 			.red {
@@ -100,7 +101,13 @@
 	{{#activationCode}}
 	<h2>Sign in for the first time in 5 steps</h2>
 	{{/activationCode}}
-    <h3> » This document is for <strong>{{firstName}} {{lastName}}</strong>{{#firstChild}}, the parent of <strong>{{firstName}} {{lastName}}</strong>{{#otherChildren}}, <strong>{{firstName}} {{lastName}}</strong>{{/otherChildren}}{{/firstChild}}{{#firstClass}} in class(es) <strong>{{.}}</strong>{{#otherClasses}}, {{.}}{{/otherClasses}}{{/firstClass}}.</h3>
+    <h3> » This document is for <strong>{{firstName}} {{lastName}}</strong></h3>
+	  {{^isGuestOrPersonnel}}
+    <h4>{{^firstChild}}{{#i18n}}{{profile}}{{/i18n}}{{/firstChild}}{{#firstChild}}The parent of <strong>{{firstName}} {{lastName}}</strong>{{#otherChildren}}, <strong>{{firstName}} {{lastName}}</strong>{{/otherChildren}}{{/firstChild}}{{#firstClass}} in class <strong>{{.}}</strong>{{#otherClasses}}, <strong>{{.}}</strong>{{/otherClasses}}{{/firstClass}}.</h4>
+	  {{/isGuestOrPersonnel}}
+	  {{#isGuestOrPersonnel}}
+    <h4>{{#i18n}}{{profile}}{{/i18n}}.</h4>
+  	{{/isGuestOrPersonnel}}
     <p>Designed for teachers, school personnel, students, and their families, the virtual learning environment is a secure and easy-to-use digital solution for:</p>
     <div class="column">
         <img src="illustrations/Publipostage_Actus.png"></img>

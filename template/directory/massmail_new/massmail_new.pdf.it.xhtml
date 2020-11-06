@@ -12,6 +12,7 @@
 			}
 			h2 {font-size: 1.2em}
 			h3 {font-size: 1.1em}
+			h4 {margin-left: 1.1em}
 			strong,
 			a,
 			.red {
@@ -100,7 +101,13 @@
 	{{#activationCode}}
 	<h2>5 passi da seguire alla prima connessione</h2>
 	{{/activationCode}}
-    <h3> » Questa scheda è per <strong>{{firstName}} {{lastName}}</strong>{{#firstChild}}, genitore di <strong>{{firstName}} {{lastName}}</strong>{{#otherChildren}}, <strong>{{firstName}} {{lastName}}</strong>{{/otherChildren}}{{/firstChild}}{{#firstClass}} della classe <strong>{{.}}</strong>{{#otherClasses}}, {{.}}{{/otherClasses}}{{/firstClass}}.</h3>
+    <h3> » Questa scheda è per <strong>{{firstName}} {{lastName}}</strong></h3>
+	  {{^isGuestOrPersonnel}}
+    <h4>{{^firstChild}}{{#i18n}}{{profile}}{{/i18n}}{{/firstChild}}{{#firstChild}}Genitore di <strong>{{firstName}} {{lastName}}</strong>{{#otherChildren}}, <strong>{{firstName}} {{lastName}}</strong>{{/otherChildren}}{{/firstChild}}{{#firstClass}} della classe <strong>{{.}}</strong>{{#otherClasses}}, <strong>{{.}}</strong>{{/otherClasses}}{{/firstClass}}.</h4>
+	  {{/isGuestOrPersonnel}}
+	  {{#isGuestOrPersonnel}}
+    <h4>{{#i18n}}{{profile}}{{/i18n}}.</h4>
+  	{{/isGuestOrPersonnel}}
     <p>Riservato agli insegnanti, al personale, agli studenti e alle loro famiglie, il portale digitale è una soluzione sicura e facile da usare per:</p>
     <div class="column">
         <img src="illustrations/Publipostage_Actus.png"></img>
