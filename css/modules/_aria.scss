@@ -1,0 +1,27 @@
+button.word-slider {
+	width: 100%;
+	display: block;
+	text-align: left;
+	background: transparent;
+	border-radius: initial;
+	text-transform: none;
+	&:hover {
+		background: transparent;
+	}
+}			
+button.word-slider::before {
+	font-family: "generic-icons";
+	content: "\e841";
+	position: absolute;
+	color: $cyan;
+	top: 0;
+	left: 0;
+	height: 45px;
+	line-height: 45px;
+	transform: rotate(-90deg);
+	transition: transform .5s;
+}
+button.word-slider.slided::before {
+	transition: transform .5s;
+	transform: rotate(0);
+}
