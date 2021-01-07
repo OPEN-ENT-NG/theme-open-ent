@@ -145,7 +145,7 @@ var addDirectives = function(module, done){
 					//Retrieves structure mapping & platform dependant vars
 					var getXitiConfig = function(hook){
 						return function(){
-							$http.get('/xiti/config').success(function(data){
+							$http.get('/xiti/config').then(function(data){
 								//If XiTi is disabled
 								if(!data.active)
 									return
@@ -203,7 +203,7 @@ var addDirectives = function(module, done){
 								inEliot = true
 							}
 
-							$http.get('/' + (inUserbook ? 'directory' : inEliot ? 'eliot' : appPrefix) + '/conf/public').success(function(data){
+							$http.get('/' + (inUserbook ? 'directory' : inEliot ? 'eliot' : appPrefix) + '/conf/public').then(function(data){
 								var currentLocation = inEliot ? '/eliot/'+eliotPrefix : scope.locationPath
 
 								var serviceObj = getOrElse(data.xiti, 'ID_SERVICE', {})
