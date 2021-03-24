@@ -1,0 +1,122 @@
+.indicator-icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    &.folded {
+        border: 1px solid $neutral-grey;
+    }
+    .indicator-icon-box {
+        flex: 0 0 calc(33% - 10px);
+        min-height: 115px;
+        box-sizing: border-box;
+        border: 1px solid $neutral-grey;
+        border-radius: 15px;
+        background-color: $lightest-grey;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 5px 10px;
+        margin: 5px;
+        transition: background-color 0.25s ease-in-out;
+        i.connection-by-visitors-icon {
+            transition: background 0.25s ease-in-out;
+        }
+        &:hover {
+            background-color: $cyan;
+            i.connection-by-visitors-icon {
+                @include icon(connection-by-visitors-icon-alt, 70px);
+            }
+        }
+        .indicator-icon {
+            margin-bottom: 0;
+            float: left;
+            background-size: 100%;
+        }
+        .indicator-number {
+            margin: 5px 0;
+            text-align: end;
+            font-weight: normal;
+            font-size: 35px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .indicator-name {
+            font-weight: bold;
+            text-align: right;
+            font-size: 16px;
+            text-overflow: ellipsis;
+            //white-space: nowrap;
+            overflow: hidden;
+        }
+        .indicator-since {
+            text-align: right;
+            font-size: 11px;
+        }
+    }
+}
+.indicator-container-combo {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.indicator-list-box {
+
+    .indicator-number {
+        text-align: end;
+        font-weight: normal;
+        font-size: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        float: right;
+        max-height: 40px;
+    }
+    .indicator-name {
+        font-weight: bold;
+        text-align: left;
+        font-size: 14px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .indicator-since {
+        text-align: left;
+        white-space: nowrap;
+    }
+}
+nav.vertical ul li a.selected {
+    color: rgba(white, 0.8)!important;
+    h1 {
+        color: white;
+    }
+}
+
+@media screen and (max-width: $tablette) {
+    .indicator-icons-container {
+        .indicator-icon-box {
+            flex: 0 0 calc(50% - 10px);
+        }
+    }
+    .indicator-list-box {
+        .indicator-since {
+            display: none;
+        }
+    }
+    nav.vertical {
+        ul li {
+            width: 49% !important;
+            display: inline-block;
+            margin: 0.5%;
+            a {
+                padding-top: 6px!important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $fat-mobile) {
+    .indicator-icons-container {
+        .indicator-icon-box {
+            flex: 0 0 calc(100% - 10px);
+        }
+    }
+}
