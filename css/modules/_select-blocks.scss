@@ -20,7 +20,7 @@ div.select-blocks {
 		color: $white;
 
 		&::after {
-			background-image: url(/public/img/glyphicons_197_remove.png);
+			background-image: url($cdnDomain + "/public/img/glyphicons_197_remove.png");
 			filter: invert(100%);
 			-webkit-filter: invert(100%);
 			transition: opacity 0.25s ease-in-out;

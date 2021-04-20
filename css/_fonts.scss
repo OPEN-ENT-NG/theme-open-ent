@@ -1,52 +1,52 @@
 // font-face commune au 1D/2D (a déporter dans entcore-css-lib)
 @font-face {
 	font-family: 'Arial';
-	src: url("../../fonts/Arial.woff");
+	src: url($cdnDomain + "../../fonts/Arial.woff");
 }
 @font-face {
 	font-family: 'Comic Sans MS';
-	src: url("../../fonts/ComicSansMS.woff");
+	src: url($cdnDomain + "../../fonts/ComicSansMS.woff");
 }
 @font-face {
 	font-family: 'Tahoma';
-	src: url("../../fonts/Tahoma.woff");
+	src: url($cdnDomain + "../../fonts/Tahoma.woff");
 }
 @font-face {
 	font-family: 'Verdana';
-	src: url("../../fonts/Verdana.woff");
+	src: url($cdnDomain + "../../fonts/Verdana.woff");
 }
 
 
 // font-face 2D
 @font-face {
 	font-family: "Roboto";
-	src: url(../../../entcore-css-lib/font/Roboto/Roboto-Regular.ttf);
+	src: url($cdnDomain + "../../../entcore-css-lib/font/Roboto/Roboto-Regular.ttf");
 }
 @font-face {
 	font-family: "Roboto";
-	src: url(../../../entcore-css-lib/font/Roboto/Roboto-Italic.ttf);
+	src: url($cdnDomain + "../../../entcore-css-lib/font/Roboto/Roboto-Italic.ttf");
 	font-style: italic;
 }
 @font-face {
 	font-family: "Roboto";
-	src: url(../../../entcore-css-lib/font/Roboto/Roboto-Bold.ttf);
+	src: url($cdnDomain + "../../../entcore-css-lib/font/Roboto/Roboto-Bold.ttf");
 	font-weight: bold;
 }
 @font-face {
 	font-family: "Roboto";
-	src: url(../../../entcore-css-lib/font/Roboto/Roboto-BoldItalic.ttf);
+	src: url($cdnDomain + "../../../entcore-css-lib/font/Roboto/Roboto-BoldItalic.ttf");
 	font-style: italic;
 	font-weight: bold;
 }
 
 @font-face {
 	font-family: "OpenDyslexic";
-	src: url(../../../entcore-css-lib/font/OpenDyslexic3-Regular.ttf);
+	src: url($cdnDomain + "../../../entcore-css-lib/font/OpenDyslexic3-Regular.ttf");
 }
 
 @font-face {
     font-family: 'generic-icons';
-    src: url(../../../generic-icons/fonts/generic-icons.ttf);
+    src: url($cdnDomain + "../../../generic-icons/fonts/generic-icons.ttf");
     font-weight: normal;
     font-style: normal;
 }

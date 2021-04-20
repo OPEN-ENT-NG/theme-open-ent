@@ -88,13 +88,13 @@ div {
       padding: 8px 14px 10px;
 
       &.multi-combo-select-all {
-        background-image: url(/public/img/glyphicons-halflings-white.png);
+        background-image: url($cdnDomain + "/public/img/glyphicons-halflings-white.png");
         background-position: 15% 67%;
         background-repeat: no-repeat;
       }
 
       &.multi-combo-deselect-all {
-        background-image: url(/public/img/glyphicons-halflings-white.png);
+        background-image: url($cdnDomain + "/public/img/glyphicons-halflings-white.png");
         background-position: 9.5% 67%;
         background-repeat: no-repeat;
       }
@@ -110,7 +110,7 @@ div {
     }
 
     > i.multi-icon-search-cancel {
-      background-image: url(/public/img/glyphicons_197_remove.png);
+      background-image: url($cdnDomain + "/public/img/glyphicons_197_remove.png");
       background-repeat: no-repeat;
       background-size: cover;
       top: 8px;

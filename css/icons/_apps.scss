@@ -109,7 +109,7 @@ i.visioconf-large {
 /* ico image not font */
 
 i.faqsciences-large, i.type.faqsciences, i.faqsciences{
-    background-image: url(../../img/illustrations/faqscience.svg);
+    background-image: url($cdnDomain + "../../img/illustrations/faqscience.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -429,7 +429,7 @@ i.library-large::before, i.type.library::before, i.library::before{
         width: 25px;
         height: 25px;
         top: 0;
-        background-image: url(../../img/icons/firstdeg.svg);
+        background-image: url($cdnDomain + "../../img/icons/firstdeg.svg");
         background-position: center;
         background-size: 22px!important;
         background-repeat: no-repeat;

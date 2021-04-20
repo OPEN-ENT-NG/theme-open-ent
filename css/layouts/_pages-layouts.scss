@@ -1,7 +1,7 @@
 
 
 .logo {
-    background: url(../../img/illustrations/logo.png) center no-repeat;
+    background: url($cdnDomain + "../../img/illustrations/logo.png") center no-repeat;
     height: $header-height;
     width: 236px;
     margin: 0;
