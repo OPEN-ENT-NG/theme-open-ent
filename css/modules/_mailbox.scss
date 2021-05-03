@@ -5,6 +5,7 @@
 }
 
 article.write-mail {
+	padding: 25px;
 	.receivers, .subject {
 		label.two {
 			margin-top: 20px;
@@ -12,6 +13,9 @@ article.write-mail {
 	}
 	.subject input {
 		min-height: 40px;
+	}
+	.select-file button {
+		margin-top: -30px;
 	}
 }
 .loading-list ul li {
