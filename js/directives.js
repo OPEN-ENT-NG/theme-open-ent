@@ -146,6 +146,8 @@ var addDirectives = function(module, done){
 					var getXitiConfig = function(hook){
 						return function(){
 							$http.get('/xiti/config').then(function(data){
+								if(data != null)
+									data = data.data;
 								//If XiTi is disabled
 								if(!data.active)
 									return
@@ -218,8 +220,6 @@ var addDirectives = function(module, done){
 								scope.xitiConf.ID_SERVICE = isNaN(scope.xitiConf.ID_SERVICE) ? '' : scope.xitiConf.ID_SERVICE
 								scope.xitiConf.LIB_SERVICE = getOrElse(scope.serviceMap, scope.xitiConf.ID_SERVICE, "Page_ENT")
 
-								hookCheck(hook)
-							}).error(function(){
 								hookCheck(hook)
 							})
 						}
