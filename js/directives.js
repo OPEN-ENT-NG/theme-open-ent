@@ -247,7 +247,7 @@ var addDirectives = function(module, done){
 						window.xtpage = scope.xitiConf.LIB_SERVICE;
 						window.xtdi = "";
 
-						http().get(scope.scriptPath, function(){})
+						jQuery.getScript(scope.scriptPath, function(){ console.log("xiti ready"); })
 					}
 
 					//Script needs to be loaded only *after* everything is complete
