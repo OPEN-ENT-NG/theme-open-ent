@@ -206,6 +206,9 @@ var addDirectives = function(module, done){
 							}
 
 							$http.get('/' + (inUserbook ? 'directory' : inEliot ? 'eliot' : appPrefix) + '/conf/public').then(function(data){
+								if(data.data){
+                                    data = data.data
+                                }
 								var currentLocation = inEliot ? '/eliot/'+eliotPrefix : scope.locationPath
 
 								var serviceObj = getOrElse(data.xiti, 'ID_SERVICE', {})
