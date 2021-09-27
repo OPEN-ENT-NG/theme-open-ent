@@ -213,7 +213,7 @@ var addDirectives = function(module, done){
 
 								var serviceObj = getOrElse(data.xiti, 'ID_SERVICE', {})
 								scope.xitiConf.ID_SERVICE = getOrElse(serviceObj, 'default', '')
-								scope.xitiConf.ENABLE_PROXY = getOrElse(serviceObj, 'proxy', true)
+								scope.xitiConf.ENABLE_PROXY = getOrElse(serviceObj, 'proxy', false)
 								for(var prop in serviceObj){
 									if(prop !== 'default' && serviceObj.hasOwnProperty(prop) && currentLocation.indexOf(prop) >= 0){
 										scope.xitiConf.ID_SERVICE = serviceObj[prop]
@@ -245,7 +245,7 @@ var addDirectives = function(module, done){
 						window.xtparam = window.xt_multc + "&ac="+ window.xt_ac  +"&at=" + window.xt_at
 
 						window.xtnv = document;
-						if(scope.xitiConf.ENABLE_PROXY != false){
+						if(scope.xitiConf.ENABLE_PROXY == true){
 							window.xtsdi = window.location.protocol + "//" + window.location.host + "/hit.xitif"
 						}
 						window.xtsd = window.location.protocol === "https:" ? "https://logs" : "http://logi7";
