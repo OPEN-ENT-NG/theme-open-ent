@@ -196,12 +196,15 @@
 
   table {
     margin: 0;
-    thead tr:first-of-type th {
-      &:first-of-type {
-        width: 75px;
+    table-layout: fixed;
+    thead {
+      tr:first-of-type th {
+        &:first-of-type {
+          width: 130px;
+        }
       }
-      &:last-of-type {
-        width: 150px;
+      th .sortable {
+        justify-content: center;
       }
     }
     tbody {
@@ -210,6 +213,7 @@
         font-size: 14px;
         font-weight: bold;
         color: $grey;
+        text-align: center;
         &.action-cell {
           padding: 0;
         }
