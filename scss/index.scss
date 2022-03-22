@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+@import "variables-open-ent";
+
+/* OVERRIDE */
+// @import "overrides";
+
+/* ENTCORE CSS LIB */
+@import "entcore-css-lib/scss/index.scss";
+
+@import "colors";
+@import "mixins";
+@import "fonts";
+@import "text";
+@import "layouts/layouts";
+@import "modules";
+@import "modules/modules";
+@import "icons/icons";
+@import "applications/applications";
+@import "layout-styles";
+@import "mobile/mobile";
+@import "modules/dragndrop";
+@import "specifics/";

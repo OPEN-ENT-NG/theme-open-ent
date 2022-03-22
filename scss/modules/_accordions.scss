@@ -1,0 +1,53 @@
+.accordions:last-of-type {
+  margin-bottom: 15px;
+}
+.accordions {
+  .accordion {
+    h2 {
+      background: $primary;
+      border: none;
+      font-size: 20px;
+      color: $white;
+      margin: 3px;
+    }
+    h2:hover {
+      background: $primary-dark;
+    }
+    &:last-child {
+      h2 {
+        border: none;
+      }
+    }
+    .toggle {
+      border: 0;
+      background: $background;
+      .content {
+        color: $grey;
+        h3 {
+          font-weight: normal;
+          color: $accent;
+          font-size: 16px;
+        }
+        select,
+        input[type="text"],
+        textarea {
+          background: $white;
+        }
+      }
+    }
+  }
+  .accordion.opened {
+    h2 {
+      color: $white;
+      background: $accent;
+      border: none;
+    }
+    .toggle {
+      border-top: 0;
+      padding: 10px;
+      overflow: auto;
+      background: $white;
+      border: none;
+    }
+  }
+}

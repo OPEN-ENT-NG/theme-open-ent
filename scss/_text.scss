@@ -1,0 +1,110 @@
+a {
+  color: $primary;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover,
+a:hover > h1,
+a:hover > h2,
+a:hover > h3 {
+  color: $accent;
+}
+
+a[disabled] {
+  pointer-events: none;
+  color: gray;
+}
+
+.line {
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $primary;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 30px;
+  a {
+    color: $primary;
+  }
+  strong.subtitle {
+    color: $grey;
+    font-size: 14px;
+    display: block;
+    margin-top: -5px;
+  }
+}
+h1 {
+  font-size: 34px;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+h1:first-child {
+  margin-top: 0;
+}
+h2 {
+  font-size: 20px;
+}
+h2.float-title {
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 18px;
+  color: $dark-grey;
+  font-weight: bold;
+}
+
+app-title {
+  display: block;
+  float: left;
+}
+app-title + h2 {
+  font-size: 26px;
+  clear: both;
+}
+
+.small-text {
+  font-size: 14px !important;
+  label {
+    font-size: 14px !important;
+    line-height: 26px;
+  }
+}
+
+.small-text a,
+.small-text em,
+.small-text label,
+.small-text span {
+  font-size: 14px;
+}
+
+.medium-text {
+  font-size: 16px !important;
+  label {
+    font-size: 16px !important;
+    line-height: 28px;
+  }
+}
+.medium-text a,
+.medium-text em,
+.medium-text label,
+.medium-text span {
+  font-size: 16px;
+}
+
+.arial {
+  font-family: Arial, sans-serif;
+}

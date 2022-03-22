@@ -1,0 +1,132 @@
+/* attention moods icons */
+
+/* default */
+i.default {
+  font-size: 35px;
+  line-height: 45px;
+}
+i.default:before {
+  content: "\e870";
+  color: $grey;
+}
+
+/* aucun */
+i.none {
+  @include fonticon;
+  &::before {
+    content: "\e83a";
+    color: $solid-grey;
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+
+/* concentre */
+i.angry {
+  @include fonticon;
+  font-size: 44px;
+  line-height: 50px;
+}
+i.angry:before {
+  content: "\e845";
+  color: $orange;
+}
+
+/* nerveux */
+i.dreamy {
+  @include fonticon;
+  font-size: 40px;
+  line-height: 50px;
+}
+i.dreamy:before {
+  content: "\e862";
+  color: $pink;
+}
+
+/* accompli */
+i.happy {
+  @include fonticon;
+  font-size: 45px;
+  line-height: 50px;
+}
+i.happy:before {
+  content: "\e877";
+  color: $yellow;
+}
+
+/* determine */
+i.joker {
+  @include fonticon;
+  font-size: 35px;
+  line-height: 50px;
+}
+i.joker:before {
+  content: "\e849";
+  color: $cyan;
+}
+
+/* inspire */
+i.love {
+  @include fonticon;
+  font-size: 36px;
+  line-height: 50px;
+}
+i.love:before {
+  content: "\e84b";
+  color: $orange;
+}
+
+/* serein */
+i.proud {
+  @include fonticon;
+  font-size: 46px;
+  line-height: 50px;
+}
+i.proud:before {
+  content: "\e87e";
+  color: $green;
+}
+
+/* distrait */
+i.sad {
+  @include fonticon;
+  font-size: 46px;
+  line-height: 50px;
+}
+i.sad:before {
+  content: "\e869";
+  color: $pink;
+}
+
+/* impatient */
+i.sick {
+  @include fonticon;
+  font-size: 43px;
+  line-height: 50px;
+}
+i.sick:before {
+  content: "\e87d";
+  color: $red;
+}
+
+/* stresse */
+i.tired {
+  @include fonticon;
+  font-size: 47px;
+  line-height: 50px;
+}
+i.tired:before {
+  content: "\e87c";
+  color: $red;
+}
+
+/* incertain */
+i.worried {
+  @include fonticon;
+  font-size: 47px;
+  line-height: 50px;
+}
+i.worried:before {
+  content: "\e87f";
+  color: $purple;
+}

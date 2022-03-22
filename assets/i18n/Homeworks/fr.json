@@ -1,0 +1,22 @@
+{
+  "homeworks.copy": "Copier dans mes carnets",
+  "homeworks.empty.mine.text": "Avec l'application Carnet d'activités, plus d'excuse pour les jeunes étourdis. Notez toutes les activités, partagez-les aux enfants, aux parents et tout le monde est au courant !",
+  "homeworks.empty.mine.title": "C'est l'heure de créer un carnet d'activités numérique. ",
+  "homeworks.empty.shared.text": "Bientôt vous pourrez consulter toutes les activités à faire sur ce carnet d'activité numérique.<br/>Génial, non ?",
+  "homeworks.help.title": "Mon carnet d'activités évolue !",
+  "homeworks.infos": "Carnet de <a ng-href=\"/directory/annuaire#/user-view/[[notebook.current.owner.userId]]\">[[notebook.current.owner.displayName]]</a>. Dernière modification le [[formatInfos(notebook.current.modified.$date)]].",
+  "homeworks.manager": "Gérer",
+  "homeworks.mine": "Mes carnets d'activités",
+  "homeworks.notify.deleted": "Le carnet a été supprimé",
+  "homeworks.notify.modified": "Le carnet a été modifié",
+  "homeworks.notify.restored": "Le carnet a été restauré",
+  "homeworks.notify.saved": "Le carnet a été sauvegardé",
+  "homeworks.notify.shared": "Le carnet a été partagé",
+  "homeworks.notify.trashed": "Le carnet a été mis à la corbeille",
+  "homeworks.placeholder.title": "Veuillez saisir le titre de votre carnet",
+  "homeworks.shared": "Carnets partagés avec moi",
+  "homeworks.title": "Carnet d'activités",
+  "pushnotif.homeworks.modified1": "Le carnet d'activités",
+  "pushnotif.homeworks.shared": "a partagé avec vous le carnet d'activités",
+  "timeline.homeworks.shared": "a partagé avec vous le carnet d'activités"
+}

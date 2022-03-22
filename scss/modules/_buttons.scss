@@ -1,0 +1,196 @@
+button,
+input[type="button"],
+a.button,
+input[type="submit"] {
+  text-transform: none !important;
+}
+
+a.button[disabled="disabled"],
+button[disabled="disabled"],
+input[type="button"][disabled="disabled"],
+input[type="submit"][disabled="disabled"],
+a.button[disabled="disabled"]:hover,
+button[disabled="disabled"]:hover,
+input[type="button"][disabled="disabled"]:hover,
+input[type="submit"][disabled="disabled"]:hover,
+button.cancel[disabld="disabled"] {
+  color: $solid-grey;
+  background: $grey;
+  //border: none;
+  //box-shadow: none;
+  cursor: default;
+}
+
+button:active,
+input[type="button"]:active,
+a.button:active,
+input[type="submit"]:active,
+button:focus,
+input[type="button"]:focus,
+a.button:focus,
+input[type="submit"]:focus {
+  &::before {
+    content: " ";
+    background: $white;
+    -webkit-animation: ripple 0.65s linear;
+    -moz-animation: ripple 0.65s linear;
+    -ms-animation: ripple 0.65s linear;
+    -o-animation: ripple 0.65s linear;
+    animation: ripple 0.65s linear;
+    top: -50%;
+    left: -50%;
+  }
+  outline: none;
+}
+
+.flat-button,
+button.flat-button,
+input[type="submit"].flat-button,
+input[type="button"].cancel,
+button.cancel,
+a.button.cancel,
+.drop-down-button label,
+.drop-down-button.hidden label {
+  @include flat-button;
+}
+input[type="button"].pick-file {
+  @include flat-button;
+}
+
+input-password {
+  input[type="password"],
+  input[type="text"] {
+    width: calc(100% - 50px);
+    margin: 0;
+    height: 32px;
+    display: inline-block;
+    float: none;
+    &.ng-invalid.ng-dirty {
+      border-bottom: 2px solid $red;
+    }
+  }
+
+  button {
+    height: 32px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    &.pushed {
+      background-color: $dark-accent;
+      box-shadow: none;
+    }
+  }
+
+  &.toggleable-password {
+    button,
+    button:active,
+    button:focus {
+      &::before {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        -o-animation: none;
+        animation: none;
+        -webkit-transition: none;
+        transition: none;
+      }
+    }
+
+    button::before {
+      color: $white;
+      background: transparent !important;
+      border-radius: 0;
+      width: 40px;
+      left: 4px;
+      top: calc(50% - 9px);
+      font-size: 23px;
+    }
+    button:active {
+      &::before {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+button:hover,
+input[type="button"]:hover,
+a.button:hover,
+input[type="submit"]:hover {
+  background-color: $dark-accent;
+  box-shadow: none;
+  color: $white;
+}
+button.cancel:hover,
+input[type="button"].cancel:hover,
+a.button.cancel:hover,
+input[type="submit"].cancel:hover {
+  background: $accent;
+}
+
+//fix ipad buttons styles
+input[type="submit"],
+input[type="button"] {
+  -webkit-appearance: none;
+}
+
+button.select-button {
+  background-color: white;
+  border-radius: 4px;
+
+  &::before,
+  &:active {
+    -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    -o-animation: none;
+    animation: none;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.is-light {
+  background-color: $light-grey;
+  color: $primary;
+  box-shadow: none;
+  text-transform: none;
+
+  &.uppercase {
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    background-color: $primary;
+    color: $white;
+  }
+}
+
+.is-light[disabled] {
+  color: $solid-grey;
+  background: $grey;
+  cursor: default;
+}
+
+.editor-edit-action {
+  height: 26px;
+  padding: 5px 15px;
+  border-radius: 15px;
+  background: rgba($white, 0.8);
+  font-size: 14px;
+  color: $grey;
+  line-height: 1;
+  text-transform: none;
+  font-family: Arial;
+  @include box-shadow3(1px, 1px, 3px);
+  @include run-transition;
+  &::before {
+    @include fonticon;
+    content: "\e858";
+    margin-right: 5px;
+  }
+  &:hover {
+    background-color: $white;
+    color: $darkest-grey;
+    @include run-transition;
+  }
+}

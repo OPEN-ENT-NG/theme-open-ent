@@ -1,0 +1,333 @@
+.class-admin {
+  * {
+    box-sizing: border-box;
+  }
+  h1 {
+    margin: 25px 0;
+  }
+  h2 > i.back {
+    font-size: inherit;
+  }
+  .main {
+    margin-bottom: 50px;
+  }
+  .arrow {
+    cursor: pointer;
+    &::before {
+      font-size: 10px;
+    }
+  }
+  .sort {
+    color: $grey;
+    padding: 12px 10px 15px 50px;
+    &.double {
+      padding: 26px 10px 26px 50px;
+    }
+  }
+  .found-users-list {
+    background-color: white;
+    border: 1px solid $light-grey;
+    box-shadow: 2px 2px 10px $shadow-light;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 100;
+    margin: -1px 40px 0;
+    width: calc(60% - 80px);
+    &__item {
+      padding: 10px;
+      &:hover {
+        background-color: $cyan;
+        color: white !important;
+        span {
+          color: white !important;
+        }
+      }
+      + div {
+        border-top: 1px solid $shadow-light;
+      }
+    }
+  }
+
+  .button-big {
+    font-size: 18px;
+    margin: 15px;
+    flex: 1;
+    border: 1px solid $shadow-light;
+    background-color: white;
+    &:hover {
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    }
+    &.disabled {
+      box-shadow: inherit;
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    &.three {
+      width: calc(25% - 30px);
+    }
+    &.six {
+      width: calc(50% - 30px);
+    }
+  }
+
+  &__options {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    margin: 10px 0;
+  }
+  &__class-list {
+    border: 1px solid $shadow-light;
+    background-color: white;
+    border-radius: 50px;
+    position: relative;
+    margin: 0 10px;
+    padding: 10px 20px;
+    width: calc(60% - 20px);
+    @include run-transition(all);
+    &:hover,
+    &:focus {
+      border-color: $orange;
+      @include run-transition(all);
+    }
+  }
+  &__input {
+    &[type="text"] {
+      background-color: transparent;
+      border: none;
+      color: $grey;
+      font-weight: bold;
+      font-size: 24px;
+      height: inherit;
+      border: none !important;
+      margin-bottom: 0;
+      @include run-transition(all);
+    }
+    &--no-border {
+      border: none !important;
+      margin: 0 !important;
+    }
+  }
+  &__school {
+    margin: 5px 0 0;
+    color: $grey;
+  }
+  &__list {
+    &:hover {
+      background-color: $lightest-grey;
+      & * {
+        color: $orange !important;
+      }
+    }
+    & input {
+      position: absolute;
+    }
+  }
+  &__avatar {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    background-color: $white;
+    max-width: none;
+    display: block;
+    border-radius: 50%;
+    border: 1px solid $light-grey;
+    object-fit: cover;
+    @include run-transition(all);
+    &:hover {
+      border-color: #fff;
+      box-shadow: 4px 4px 5px $shadow;
+    }
+  }
+  &__find-users {
+    display: flex;
+    &--title {
+      color: $grey;
+    }
+    &--link {
+      font-size: 14px;
+      i {
+        padding: 0 5px;
+      }
+    }
+    &--to-add,
+    &--add {
+      margin-top: 15px;
+      padding: 15px;
+    }
+    &--to-add {
+      width: 55%;
+    }
+    &--add {
+      width: 45%;
+      border-left: 1px solid $shadow-light;
+    }
+    &--list {
+      max-height: 300px;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  }
+  .wrapping-checkbox i18n {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .fix-checkbox {
+    position: absolute;
+    left: 40px;
+    top: 32px;
+  }
+
+  .tabs {
+    header {
+      display: inline-block;
+      width: 20%;
+      text-align: center;
+    }
+    section {
+      border: none;
+      border-top: 1px solid $light-grey;
+      padding: 10px;
+      min-height: 100vh;
+    }
+  }
+
+  table {
+    margin: 0;
+    table-layout: fixed;
+    thead {
+      tr:first-of-type th {
+        &:first-of-type {
+          width: 130px;
+        }
+      }
+      th .sortable {
+        justify-content: center;
+      }
+    }
+    tbody {
+      td {
+        padding: 7px;
+        font-size: 14px;
+        font-weight: bold;
+        color: $grey;
+        text-align: center;
+        &.action-cell {
+          padding: 0;
+        }
+        &.activated {
+          color: $green;
+        }
+        &.blocked {
+          color: $red;
+        }
+      }
+    }
+    .searchbar {
+      margin: 0 auto 10px;
+      background-color: white;
+      border-radius: 5px;
+      padding: 10px;
+      i.search {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 12px;
+      }
+    }
+  }
+  .lightbox {
+    h2 {
+      font-size: 20px;
+    }
+    h3.name {
+      font-size: 20px;
+      margin: -10px 0 25px;
+    }
+    .avatar img {
+      border-radius: 10px;
+    }
+    .button {
+      margin: 10px;
+    }
+    article {
+      padding: 15px;
+      border-top-style: solid;
+      border-top-color: rgb(204, 204, 204);
+      border-top-width: 1px;
+    }
+  }
+  .add-spacing {
+    height: 250px;
+  }
+  &__limit-height {
+    max-height: 45vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  &__group {
+    padding: 10px;
+  }
+  &__indent {
+    margin-left: 15px;
+    padding: 5px 5px 5px 20px;
+    border-left: 1px solid $shadow-light;
+    a {
+      font-size: 14px;
+      color: mix($cyan, $grey, 20%);
+    }
+  }
+  &__group + &__group {
+    border-top: 1px solid $shadow-light;
+  }
+}
+.force-fullwidth {
+  width: 100% !important;
+}
+.icons-select {
+  background: none !important;
+}
+inputdate input {
+  width: 100%;
+}
+
+@media screen and (max-width: $tablette) {
+  .class-admin {
+    &__options {
+      flex-wrap: wrap;
+    }
+    &__class-list {
+      width: calc(100% - 20px);
+    }
+    .button-big.three {
+      width: calc(50% - 30px);
+    }
+    .found-users-list {
+      width: calc(100% - 80px);
+    }
+    &__avatar {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .account {
+    .avatar {
+      position: static;
+      + div {
+        margin: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: $fat-mobile) {
+  .class-admin {
+    &__options {
+      flex-direction: column;
+    }
+    .button-big.three {
+      width: calc(100% - 30px);
+    }
+  }
+}

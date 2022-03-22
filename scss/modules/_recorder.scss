@@ -1,0 +1,85 @@
+.recorder {
+  &--control {
+    box-shadow: none !important;
+    i {
+      border-radius: 50%;
+    }
+    span {
+      padding-top: 10px;
+    }
+    &.start i,
+    &.suspend i,
+    &.stop i,
+    &.save i {
+      background-color: $orange;
+      color: white;
+      @include run-transition(all);
+      &:hover {
+        background-color: darken($orange, 10%);
+        @include run-transition(all);
+      }
+    }
+    &.redo i,
+    &.play i,
+    &.pause i {
+      border-color: $primary;
+      color: $primary;
+      @include run-transition(all);
+      &:hover {
+        background-color: darken($primary, 10%);
+        color: white;
+        @include run-transition(all);
+      }
+    }
+    &.disabled,
+    &[disabled="disabled"] {
+      i {
+        background-color: $neutral-grey;
+        border-color: $neutral-grey;
+        color: white;
+        cursor: not-allowed;
+        &:hover {
+          background-color: darken($neutral-grey, 10%);
+        }
+      }
+      span {
+        color: $grey;
+      }
+    }
+    .loading {
+      border-color: transparent;
+      background-color: $orange !important;
+      animation: none !important;
+      &::before {
+        display: block;
+        animation: rotate 1000ms linear infinite;
+      }
+    }
+  }
+  &--audio {
+    text-align: center;
+    .recorder--timer {
+      font-size: 30px;
+      color: $grey;
+      vertical-align: middle;
+      margin: 10px;
+    }
+    input {
+      width: 250px;
+    }
+  }
+  &--starting {
+    button {
+      float: none;
+      margin: 20px auto;
+    }
+    p {
+      margin: 10px;
+    }
+    img[skin-src*="recorder-audio.svg"] {
+      display: block;
+      width: 100px;
+      margin: 0 auto;
+    }
+  }
+}

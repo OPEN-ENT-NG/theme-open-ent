@@ -1,0 +1,49 @@
+.badge {
+  line-height: 15px;
+  background: #ccc;
+  color: $white !important;
+}
+
+a.selected .badge {
+  background: $accent;
+}
+
+.label-badge,
+.label-badge-disabled {
+  background: $primary-dark;
+  @include material-card();
+  @include run-transition(background);
+  border-radius: 2px;
+  color: $white;
+  padding: 4px;
+  margin: 2px;
+  i.close {
+    @include invert-colors();
+    width: 10px;
+    height: 10px;
+    margin: 5px 5px 5px 10px;
+  }
+}
+
+.label-badge:hover {
+  background: $primary;
+}
+
+.label-badge-disabled {
+  pointer-events: none;
+  background: $disabled-color;
+}
+
+.long-badge {
+  border-radius: 10px;
+  background: $medium-grey;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 1px 4px;
+  display: inline-block;
+  height: 15px;
+  text-align: center;
+  line-height: 19px;
+  color: $black;
+  margin-top: 2px;
+}

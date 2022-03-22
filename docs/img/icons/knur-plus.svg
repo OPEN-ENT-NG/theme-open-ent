@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	
+		.Demi_x002D_tons_x0020_clairs_x0020__x002D__x0020_Bleus{fill:url(#SVGID_1_);stroke:#FFFFFF;stroke-width:0.25;stroke-miterlimit:1;}
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{fill:none;stroke:#000000;stroke-width:18;stroke-linecap:round;stroke-linejoin:round;}
+	.st3{fill:none;stroke:#000000;stroke-width:18;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:32.2093,32.2093;}
+	.st4{display:inline;fill:none;stroke:#000000;stroke-width:29;stroke-miterlimit:10;}
+</style>
+<symbol  id="Zoom_avant" viewBox="-31.6 -19.6 57.4 56.8">
+	<path d="M24.6,7.8c4,11.6-2.1,24.2-13.7,28.2c-2.4,0.8-4.8,1.2-7.2,1.2c-9.2,0-17.7-5.7-20.9-14.9c-4-11.6,2.1-24.2,13.7-28.2
+		c2.4-0.8,4.8-1.2,7.2-1.2C12.8-7.1,21.4-1.3,24.6,7.8z M3.7-1.1c-1.8,0-3.6,0.3-5.3,0.9C-5.7,1.2-9,4.2-10.9,8
+		c-1.9,3.9-2.1,8.3-0.7,12.3c2.2,6.5,8.4,10.9,15.2,10.9c1.8,0,3.6-0.3,5.3-0.9l0,0c4.1-1.4,7.4-4.3,9.2-8.2
+		c1.9-3.9,2.1-8.3,0.7-12.3C16.7,3.3,10.5-1.1,3.7-1.1z"/>
+	<polygon points="6.5,17.9 6.5,24.4 0.9,24.4 0.9,17.9 -5.7,17.9 -5.7,12.3 0.9,12.3 0.9,5.7 6.5,5.7 6.5,12.3 13,12.3 13,17.9 	"/>
+	<polygon points="-9.7,-5.3 -25.5,-19.6 -31.6,-12.8 -15.9,1.5 	"/>
+	<g id="Calque_6_2_">
+	</g>
+</symbol>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="4.489659e-11" y2="-1">
+	<stop  offset="0" style="stop-color:#0017B8"/>
+	<stop  offset="0.618" style="stop-color:#001390"/>
+	<stop  offset="0.6292" style="stop-color:#000EA6"/>
+	<stop  offset="0.9831" style="stop-color:#00629E"/>
+</linearGradient>
+<g id="tools" class="st0">
+</g>
+<g id="dragdrop" class="st0">
+	<g class="st1">
+		<g>
+			<line class="st2" x1="182.6" y1="316.7" x2="166.6" y2="316.7"/>
+			<path class="st3" d="M134.4,316.7H53c-6.6,0-12-5.4-12-12V70c0-6.6,5.4-12,12-12h234.7c6.6,0,12,5.4,12,12v85.2"/>
+			<line class="st2" x1="299.7" y1="171.3" x2="299.7" y2="187.3"/>
+		</g>
+	</g>
+	<path class="st4" d="M429.3,446H194.7c-6.6,0-12-5.4-12-12V199.3c0-6.6,5.4-12,12-12h234.7c6.6,0,12,5.4,12,12V434
+		C441.3,440.6,435.9,446,429.3,446z"/>
+	<polygon class="st1" points="299,256.3 299,411.1 338.8,371.3 367.7,427 388.7,416.1 360.9,362.5 414.6,362.5 	"/>
+</g>
+<g id="loupe">
+	
+		<use xlink:href="#Zoom_avant"  width="57.4" height="56.8" id="XMLID_1_" x="-31.6" y="-19.6" transform="matrix(-7.9324 0 0 -7.9324 225.8369 320.032)" style="overflow:visible;"/>
+</g>
+</svg>

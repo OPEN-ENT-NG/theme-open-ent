@@ -1,0 +1,12 @@
+.notification {
+  @include material-card();
+}
+
+//only open ent (full width nav allowed)
+@media screen and (max-width: $wide-screen) {
+  body {
+    .notification div.notification-actions.opened {
+      width: 70%;
+    }
+  }
+}

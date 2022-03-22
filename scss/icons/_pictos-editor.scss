@@ -1,0 +1,216 @@
+//editor icons
+
+body editor {
+  > popover {
+    > [popover-opener] {
+      &.tools {
+        @include fonticon;
+        &::before {
+          content: "\e8c3";
+        }
+      }
+    }
+  }
+
+  &.edit editor-toolbar,
+  &.both editor-toolbar,
+  &.html editor-toolbar {
+    .option.bold > i {
+      @include editor-icon;
+      &::before {
+        content: "\e8b9";
+      }
+    }
+    .option.italic > i {
+      @include editor-icon;
+      &::before {
+        content: "\e8b4";
+      }
+    }
+    .option.underline > i {
+      @include editor-icon;
+      &::before {
+        content: "\e8b1";
+      }
+    }
+    .option.justify-left > i {
+      @include editor-icon;
+      &::before {
+        content: "\e8b8";
+      }
+    }
+    .option.justify-right > i {
+      @include editor-icon;
+      &::before {
+        content: "\e8b6";
+      }
+    }
+    .option.justify-center > i {
+      @include editor-icon;
+      &::before {
+        content: "\e8b7";
+      }
+    }
+    .option.justify-full > i {
+      @include editor-icon;
+      &::before {
+        content: "\e8b5";
+      }
+    }
+    .option.subscript > i {
+      @include editor-icon;
+      &::before {
+        content: "\e8b0";
+      }
+    }
+    .option.superscript > i {
+      @include editor-icon;
+      &::before {
+        content: "\e8af";
+      }
+    }
+    .option.quote > i {
+      @include editor-icon;
+      &::before {
+        content: "\e8c2";
+      }
+    }
+    .option.ulist i {
+      @include editor-icon;
+      &::before {
+        content: "\e8ad";
+      }
+    }
+    .option.olist > i {
+      @include editor-icon;
+      &::before {
+        content: "\e8ae";
+      }
+    }
+    .option.image > i {
+      @include editor-icon;
+      &::before {
+        content: "\e84a";
+      }
+    }
+    .option.attachment > i {
+      @include editor-icon;
+      &::before {
+        content: "\e805";
+      }
+    }
+    .option.sound > i {
+      @include editor-icon;
+      &::before {
+        content: "\e839";
+      }
+    }
+    .option.table {
+      popover {
+        > i {
+          @include editor-icon;
+          top: -6px;
+          &::before {
+            content: "\e8b3";
+            color: black;
+          }
+        }
+      }
+    }
+    .option.linker {
+      > i {
+        @include editor-icon;
+        &::before {
+          content: "\e84d";
+        }
+      }
+    }
+    .option.smileys {
+      > i {
+        @include editor-icon;
+        &::before {
+          content: "\e8c0";
+        }
+      }
+    }
+    .option.unlink > i {
+      @include editor-icon;
+      &::before {
+        content: "\e8bf";
+      }
+    }
+    .option.embed > i {
+      @include editor-icon;
+      &::before {
+        content: "\e872";
+      }
+    }
+    .option.audio > i {
+      @include editor-icon;
+      &::before {
+        content: "\e839";
+      }
+    }
+    .option.color > i {
+      @include editor-icon;
+      &::before {
+        content: "\e8c4";
+      }
+    }
+    .option.background-color > i {
+      @include editor-icon;
+      &::before {
+        content: "\e8c4";
+      }
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: $tablette) {
+  body editor {
+    .image-container {
+      &.has-menu {
+        border: 2px dashed $accent;
+      }
+      &:hover {
+        border: 2px dashed $accent;
+      }
+    }
+
+    editor-toolbar {
+      select-list .selected-value {
+        width: 44px;
+        &::after {
+          height: 44px;
+          width: 30px;
+          top: 0;
+          left: 0;
+          border: none;
+        }
+      }
+
+      .option.table {
+        popover {
+          > i {
+            &::before {
+              left: 7px;
+              position: absolute;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.download-attachments {
+  .download {
+    @include fonticon;
+    font-size: 20px;
+    vertical-align: top;
+  }
+  .download::before {
+    content: "\e805";
+  }
+}

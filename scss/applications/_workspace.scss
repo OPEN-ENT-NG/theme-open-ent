@@ -1,0 +1,39 @@
+.workspace-share button.panel-button {
+  position: absolute;
+  top: -63px;
+  right: 0;
+}
+.workspace-spacing {
+  line-height: 17px;
+}
+.workspace-app {
+  .maxheight-minus350 {
+    overflow-y: auto;
+  }
+  .material .main {
+    padding-bottom: 0;
+  }
+  .toggle-buttons-spacer {
+    margin-bottom: 0px;
+  }
+  article.icons-view > div {
+    height: 100%;
+    overflow-y: auto;
+  }
+  .icons-view .element,
+  .icons-view explorer {
+    overflow: visible !important;
+    i,
+    img {
+      cursor: move !important;
+    }
+  }
+}
+
+@media screen and(max-width: $tablette) {
+  .workspace-app {
+    .height-minus200 {
+      height: calc(100vh - 250px);
+    }
+  }
+}

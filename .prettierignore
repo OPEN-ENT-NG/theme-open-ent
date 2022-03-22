@@ -1,0 +1,13 @@
+# Ignore artifacts:
+build
+coverage
+dist
+template
+assets
+skins
+docs
+*.json
+*.md
+*.html
+*.yml
+*.sh

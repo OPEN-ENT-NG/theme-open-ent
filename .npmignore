@@ -1,0 +1,7 @@
+node_modules/
+.gitignore
+build.sh
+docker-compose.yml
+Jenkinsfile
+build/
+build-css/

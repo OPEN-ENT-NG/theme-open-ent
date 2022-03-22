@@ -1,0 +1,25 @@
+@media screen and (max-width: $small-mobile) {
+  body {
+    popover popover-content.right {
+      left: -190px;
+    }
+    popover popover-content.right::before {
+      left: 80%;
+    }
+
+    .icons-view.apps {
+      .element {
+        margin: auto 5px;
+      }
+    }
+
+    .share {
+      .autocomplete > em {
+        em.low-importance {
+          display: block;
+          float: none;
+        }
+      }
+    }
+  } //body
+}

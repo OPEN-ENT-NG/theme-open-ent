@@ -1,3 +1,9 @@
-<a href="/conversation/conversation" title="[[lang.translate('navbar.messages')]]" ng-if="me.hasWorkflow('org.entcore.conversation.controllers.ConversationController|view')">
-    <i class="mail ic-conversation"><span class="new-mails" ng-if="nbNewMessages">[[nbNewMessages]]</span></i>
+<a
+  href="/conversation/conversation"
+  title="[[lang.translate('navbar.messages')]]"
+  ng-if="me.hasWorkflow('org.entcore.conversation.controllers.ConversationController|view')"
+>
+  <i class="mail ic-conversation"
+    ><span class="new-mails" ng-if="nbNewMessages">[[nbNewMessages]]</span></i
+  >
 </a>

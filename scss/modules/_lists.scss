@@ -1,0 +1,179 @@
+.list {
+  li {
+    list-style-type: none;
+    color: $grey;
+  }
+  li::before {
+    content: "\2666";
+    color: $accent;
+    padding-right: 6px;
+  }
+}
+
+.workspace-app {
+  .list-view {
+    tr:nth-last-child(even) {
+      background-color: $lightest-grey;
+    }
+    .last-modified {
+      width: 160px;
+    }
+    .date {
+      text-align: center;
+    }
+    .size {
+      width: 60px;
+      text-align: right;
+    }
+    .count-comment {
+      width: 30px;
+    }
+  }
+  table,
+  ul.list-view {
+    tbody tr {
+      border-color: $shadow-light;
+      &.checked,
+      &.checked:hover {
+        background-color: lighten($cyan, 20%) !important;
+        color: $darkest-grey !important;
+      }
+    }
+  }
+  @media screen and (min-width: $tablette) {
+    table,
+    ul.list-view {
+      tbody {
+        tr {
+          &:hover {
+            background: lighten($cyan, 30%) !important;
+            * {
+              color: mix($cyan, $darkest-grey, 30%) !important;
+            }
+            .badge {
+              background-color: $cyan;
+              color: white !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.list-view,
+.share {
+  i.sort-desc,
+  i.sort-asc,
+  i.sort {
+    font-size: 14px;
+    padding-left: 5px;
+    color: inherit;
+  }
+  .select-file {
+    margin-top: 0;
+  }
+  tbody {
+    tr {
+      td.small-font {
+        font-size: 12px;
+        padding-top: 7px;
+      }
+      i.center {
+        margin-left: auto;
+        margin-right: auto;
+        float: none !important;
+      }
+    }
+    tr.new-element {
+      background: $light-grey;
+      font-weight: bold;
+    }
+    tr.new-element.checked {
+      background: $primary-light;
+    }
+  }
+}
+ul.list-view {
+  margin: 0;
+}
+
+table,
+ul.list-view {
+  line-height: 20px;
+  font-size: 14px;
+  background: $white;
+  li.head {
+    background: $primary;
+    color: $white;
+    &:hover {
+      background: $primary;
+    }
+  }
+  thead {
+    tr {
+      background: $primary;
+      color: $white;
+      border: none;
+    }
+    th {
+      padding: 10px;
+      text-align: left;
+    }
+  }
+  li {
+    padding: 10px;
+    @include run-transition(background);
+    &.checked {
+      background-color: $primary-light;
+      color: $white;
+      a {
+        color: $white;
+      }
+    }
+    &:hover {
+      background: $light-grey;
+    }
+  }
+  tbody {
+    tr {
+      @include run-transition(background);
+      &.checked,
+      &.checked:hover {
+        background-color: $primary-light;
+        color: $white;
+        a {
+          color: $white;
+        }
+      }
+      &:hover {
+        background: $light-grey !important;
+      }
+      td {
+        padding: 10px;
+      }
+    }
+  }
+  .content {
+    max-width: 250px;
+  }
+}
+
+ul.thought-out-actions {
+  padding: 0;
+  margin: 0;
+  li {
+    background: $light-grey;
+    margin-bottom: 1px;
+    list-style-type: none;
+    padding: 8px;
+    @include run-transition(background);
+  }
+  li:hover,
+  li.selected {
+    background: $primary;
+    h2 {
+      color: $white;
+    }
+  }
+}

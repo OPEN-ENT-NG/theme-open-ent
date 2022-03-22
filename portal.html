@@ -18,74 +18,119 @@
  ~
  -->
 
-	<div class="material main wrapper">
-		<section class="main">
-			<div id="directory"></div>
-			<div ng-transclude  class="twelve cell"></div>
-		</section>
-	</div>
+<div class="material main wrapper">
+  <section class="main">
+    <div id="directory"></div>
+    <div ng-transclude class="twelve cell"></div>
+  </section>
+</div>
 
 <header class="main height-marker" ng-controller="Account">
-	<section class="navbar row">
-		<div class="mobile-nav-opener"></div>
-		<div class="cell">
-			<a href="/timeline/timeline"><i class="logo"></i></a>
-		</div>
-	</section>
-	<section class="row">
-		<nav class="horizontal">
-			<a href="/timeline/timeline" tooltip="navbar.home"><i class="home"></i></a>
-			<a class="zero-mobile community-button" href="/community" tooltip="navbar.community" ng-if="me.hasWorkflow('net.atos.entng.community.controllers.CommunityController|view')"><i class="community"></i></a>
-			<popover>
-				<a href="/welcome" tooltip="navbar.applications"
-				pulsar="{ index: 3, i18n: 'portal.pulsar.apps', position: 'bottom center'}"
-				popover-opener ng-click="openApps($event)">
-					<i class="apps"></i>
-				</a>
-				<popover-content>
-					<div class="content">
-						<div class="my-apps row">
-							<div ng-if="me.bookmarkedApps.length === 0">
-								<i18n>navbar.myapps.more</i18n>
-							</div>
-							<div class="bookmarked-app" ng-repeat="app in me.bookmarkedApps">
-								<a connector-lightbox-trigger="app">
-									<i class="[[app.icon]]" ng-if="app.icon.indexOf('/') === -1" tooltip="[[app.displayName]]"></i>
-									<img skin-src="[[app.icon]]" ng-if="app.icon.indexOf('/') !== -1" tooltip="[[app.displayName]]" />
-								</a>
-							</div>
-						</div>
-						<div class="more row">
-							<a href="/welcome"><i18n>plus</i18n></a>
-						</div>
-					</div>
-				</popover-content>
-			</popover>
-			<span ng-include="template.containers.portal.conversationUnread"></span>
-			<popover class="searchengine" ng-if="me.hasWorkflow('fr.openent.searchengine.controllers.SearchEngineController|view')">
-				<a href="/searchengine" popover-opener ng-click="openApps($event)" tooltip="navbar.search">
-						<i class="searchengine"></i>
-				</a>
-				<popover-content class="searchPortal" ng-controller="SearchPortal">
-					<div class="content searchContent">
-						<div class="search-text row">
-							<input type="text" class="searchInput" name="mysearch" ng-model="mysearch" ng-keyup="launchSearch($event);" />
-							<button class="searchButton" ng-click="launchSearch('link');"><i18n>ok</i18n></button>
-						</div>
-					</div>
-				</popover-content>
-			</popover>
-			<a ng-if="currentLanguage == 'fr'" tooltip="navbar.help" pulsar="{ index: 5, i18n: 'portal.pulsar.help', position: 'bottom center'}">
-				<i18n>help.icon</i18n>
-			</a>
-			<a href="/userbook/mon-compte" tooltip="navbar.myaccount"
-				pulsar="{ index: 4, i18n: 'portal.pulsar.account', position: 'bottom center'}">
-					<img data-ng-src="[[avatar ? avatar+'?thumbnail=48x48' : '']]" id="my-photo" />
-			</a>
-			<a logout tooltip="navbar.disconnect"><i class="disconnect"></i></a>
-		</nav>
-	</section>
-
+  <section class="navbar row">
+    <div class="mobile-nav-opener"></div>
+    <div class="cell">
+      <a href="/timeline/timeline"><i class="logo"></i></a>
+    </div>
+  </section>
+  <section class="row">
+    <nav class="horizontal">
+      <a href="/timeline/timeline" tooltip="navbar.home"
+        ><i class="home"></i
+      ></a>
+      <a
+        class="zero-mobile community-button"
+        href="/community"
+        tooltip="navbar.community"
+        ng-if="me.hasWorkflow('net.atos.entng.community.controllers.CommunityController|view')"
+        ><i class="community"></i
+      ></a>
+      <popover>
+        <a
+          href="/welcome"
+          tooltip="navbar.applications"
+          pulsar="{ index: 3, i18n: 'portal.pulsar.apps', position: 'bottom center'}"
+          popover-opener
+          ng-click="openApps($event)"
+        >
+          <i class="apps"></i>
+        </a>
+        <popover-content>
+          <div class="content">
+            <div class="my-apps row">
+              <div ng-if="me.bookmarkedApps.length === 0">
+                <i18n>navbar.myapps.more</i18n>
+              </div>
+              <div class="bookmarked-app" ng-repeat="app in me.bookmarkedApps">
+                <a connector-lightbox-trigger="app">
+                  <i
+                    class="[[app.icon]]"
+                    ng-if="app.icon.indexOf('/') === -1"
+                    tooltip="[[app.displayName]]"
+                  ></i>
+                  <img
+                    skin-src="[[app.icon]]"
+                    ng-if="app.icon.indexOf('/') !== -1"
+                    tooltip="[[app.displayName]]"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="more row">
+              <a href="/welcome"><i18n>plus</i18n></a>
+            </div>
+          </div>
+        </popover-content>
+      </popover>
+      <span ng-include="template.containers.portal.conversationUnread"></span>
+      <popover
+        class="searchengine"
+        ng-if="me.hasWorkflow('fr.openent.searchengine.controllers.SearchEngineController|view')"
+      >
+        <a
+          href="/searchengine"
+          popover-opener
+          ng-click="openApps($event)"
+          tooltip="navbar.search"
+        >
+          <i class="searchengine"></i>
+        </a>
+        <popover-content class="searchPortal" ng-controller="SearchPortal">
+          <div class="content searchContent">
+            <div class="search-text row">
+              <input
+                type="text"
+                class="searchInput"
+                name="mysearch"
+                ng-model="mysearch"
+                ng-keyup="launchSearch($event);"
+              />
+              <button class="searchButton" ng-click="launchSearch('link');">
+                <i18n>ok</i18n>
+              </button>
+            </div>
+          </div>
+        </popover-content>
+      </popover>
+      <a
+        ng-if="currentLanguage == 'fr'"
+        tooltip="navbar.help"
+        pulsar="{ index: 5, i18n: 'portal.pulsar.help', position: 'bottom center'}"
+      >
+        <i18n>help.icon</i18n>
+      </a>
+      <a
+        href="/userbook/mon-compte"
+        tooltip="navbar.myaccount"
+        pulsar="{ index: 4, i18n: 'portal.pulsar.account', position: 'bottom center'}"
+      >
+        <img
+          data-ng-src="[[avatar ? avatar+'?thumbnail=48x48' : '']]"
+          id="my-photo"
+        />
+      </a>
+      <a logout tooltip="navbar.disconnect"><i class="disconnect"></i></a>
+    </nav>
+  </section>
 </header>
 
 <xiti></xiti>

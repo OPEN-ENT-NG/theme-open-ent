@@ -1,82 +1,96 @@
-html, body{
-	font-family: OpenDyslexic;
+html,
+body {
+  font-family: OpenDyslexic;
 }
 
 body {
-	font-size: 11px;
-	line-height: 19px;
+  font-size: 11px;
+  line-height: 19px;
 
-	.material{
-		section.main{
-			top: $header-height + 40px;
-		}
-	}
+  .material {
+    section.main {
+      top: $header-height + 40px;
+    }
+  }
 }
 
-button, input[type=button], a.button, input[type=submit], input[type=search],input[type=file],  .drop-down-button label, .drop-down-button.hidden label {
-	font-family: OpenDyslexic;
+button,
+input[type="button"],
+a.button,
+input[type="submit"],
+input[type="search"],
+input[type="file"],
+.drop-down-button label,
+.drop-down-button.hidden label {
+  font-family: OpenDyslexic;
 }
 
-h1{
-	font-size: 24px;
+h1 {
+  font-size: 24px;
 }
 
-h2{
-	font-size: 18px;
+h2 {
+  font-size: 18px;
 }
 
-input[type=password], input[type=password], input[type=search], input[type="tel"], input[type="email"]{
-	height: 35px;
+input[type="password"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="email"] {
+  height: 35px;
 }
 
-input[type=text]{
-	height: 25px;
+input[type="text"] {
+  height: 25px;
 }
 
-input[type=text], textarea, select{
-	font-family: OpenDyslexic;
+input[type="text"],
+textarea,
+select {
+  font-family: OpenDyslexic;
 }
 
-select{
-	padding: 0 5px !important;
-	min-width: 180px;
+select {
+  padding: 0 5px !important;
+  min-width: 180px;
 }
 
-.textarea-appreciation{
-	margin-top: -5px!important;
-	min-height: 25px;
+.textarea-appreciation {
+  margin-top: -5px !important;
+  min-height: 25px;
 }
 
-a:after{
-	padding: 10px 0px;
+a:after {
+  padding: 10px 0px;
 }
 
-.suivi-proportion{
-	line-height: 17px;
+.suivi-proportion {
+  line-height: 17px;
 }
 
-nav.vertical.stamps article h3, nav.vertical.half-stamps article h3{
-	font-size: 13px;
+nav.vertical.stamps article h3,
+nav.vertical.half-stamps article h3 {
+  font-size: 13px;
 }
 
-i side-panel{
+i side-panel {
   font-family: OpenDyslexic;
 }
 
 .vertical-spacing-twice label span {
   line-height: 18px;
 }
-.form-section select{
+.form-section select {
   padding: 0;
   height: 30px;
 }
-.notification article .notification-date{
-	top: 3px;
+.notification article .notification-date {
+  top: 3px;
 }
 
-@media screen and (max-width: $fat-mobile){
-
-	h1.application-title{
-		font-size: 14px;
-	}
+@media screen and (max-width: $fat-mobile) {
+  h1.application-title {
+    font-size: 14px;
+  }
 }

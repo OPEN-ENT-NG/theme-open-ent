@@ -1,0 +1,97 @@
+help {
+  color: black;
+  line-height: normal;
+  font-size: 16px;
+  p {
+    color: black;
+  }
+  section.lightbox {
+    z-index: 10002;
+  }
+  .burger-button {
+    display: none;
+  }
+  #TOC {
+    width: 20%;
+    margin-right: 5%;
+    float: left;
+    li {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+    }
+    ul {
+      border-left: 5px solid #ff8500;
+    }
+  }
+  img {
+    max-width: 100%;
+  }
+
+  section.lightbox > div.content div.section {
+    width: 70%;
+    margin-left: 25%;
+    h2 {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: $tablette) {
+  help {
+    #TOC {
+      width: auto;
+      margin: 20px;
+      float: none;
+      ul {
+        display: none;
+        position: absolute;
+        background-color: white;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+        margin-left: -20px;
+        margin-top: 40px;
+      }
+      ul li {
+        border-bottom: 1px solid #ddd;
+        padding: 15px;
+        margin: 0;
+        margin-left: -40px;
+        &:hover {
+          background-color: $orange;
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+    .burger-button {
+      display: block;
+      background-color: $orange;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      color: white;
+      position: absolute;
+      cursor: pointer;
+      padding: 0;
+      .burger-icon::before {
+        font-size: 18px;
+        line-height: inherit;
+      }
+    }
+    .burger-menu.active #TOC ul {
+      display: block;
+    }
+    section.lightbox > div.content div.section {
+      width: auto;
+      margin: 25px 0 0;
+      h2 {
+        margin-left: 50px;
+        width: auto;
+      }
+    }
+  }
+}

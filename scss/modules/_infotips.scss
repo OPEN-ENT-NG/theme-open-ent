@@ -1,0 +1,66 @@
+.warning-text {
+  color: $warning-color;
+}
+
+.alert,
+.warning,
+.info,
+.success,
+.message {
+  font-size: 14px !important;
+  box-shadow: 1px 1px 3px $shadow-light;
+  i.close {
+    color: $shadow-dark;
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+.message {
+  @include message;
+}
+.alert {
+  @include message;
+  background: linear-gradient(to right, lighten($red, 40%), lighten($red, 35%));
+  border: 1px solid lighten($red, 30%);
+  color: darken($red, 20%);
+}
+.warning {
+  @include message;
+  background: linear-gradient(
+    to right,
+    lighten($orange, 40%),
+    lighten($orange, 35%)
+  );
+  border: 1px solid lighten($orange, 30%);
+  color: darken($orange, 20%);
+}
+.info {
+  @include message;
+  background: linear-gradient(
+    to right,
+    lighten($cyan, 40%),
+    lighten($cyan, 35%)
+  );
+  border: 1px solid lighten($cyan, 30%);
+  color: darken($cyan, 20%);
+}
+.success {
+  @include message;
+  background: linear-gradient(
+    to right,
+    lighten($green, 40%),
+    lighten($green, 35%)
+  );
+  border: 1px solid lighten($green, 30%);
+  color: darken($green, 20%);
+}
+
+.input-errors {
+  @include input-message($red);
+}
+
+.input-warnings {
+  @include input-message($orange);
+}

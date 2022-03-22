@@ -1,0 +1,213 @@
+@media screen and (max-width: $wide-screen) {
+  //actu createinfo
+  container article form {
+    & > .three.cell {
+      width: 100%;
+      & + .nine.cell {
+        width: 100%;
+      }
+    }
+  }
+
+  //actu editinfo
+  .previews container[template="infoEdit"] article.preview {
+    & > .three.cell {
+      width: 100%;
+      & + .nine.cell {
+        width: 100%;
+      }
+    }
+  }
+
+  body {
+    //forum
+
+    //reset rules
+    nav.illustrated-links ul ul.secondary-list li > * {
+      display: block;
+      overflow: hidden;
+
+      height: 30px;
+      padding: 5px 5px 0px 5px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      vertical-align: middle;
+      border-bottom: none; //eee
+    }
+
+    nav.illustrated-links ul li {
+      display: block;
+      overflow: hidden;
+      padding: 0;
+      background: $white;
+
+      .tiny-illustration {
+        display: block;
+        float: left;
+      }
+      .tiny-illustration + .content {
+        padding-left: 5px;
+        display: block;
+        box-sizing: border-box;
+        background: transparent;
+
+        resource-right {
+          float: left;
+          min-width: 10px;
+          display: block !important;
+          border: 1px solid transparent;
+          //to keep gap if no checkbox
+        }
+        h1 {
+          padding-top: 1px;
+          font-size: 18px;
+          width: calc(100% - 95px);
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    nav.illustrated-links {
+      padding-top: 10px;
+
+      ul.secondary-list {
+        padding-left: 62px;
+        li {
+          position: relative;
+          display: block;
+          //checkbox
+          resource-right.fixed-tiny {
+            float: left;
+            width: auto;
+            padding: 0 10px;
+            height: 114px;
+            line-height: 114px;
+            text-align: center;
+            border-top: 1px solid $light-grey;
+            border-right: 1px solid $neutral-grey;
+          }
+          //title
+          h4.fixed-large {
+            width: auto;
+            margin: 0;
+            padding-right: 40px;
+            padding-left: 15px;
+            height: 36px;
+            font-size: 16px;
+            border-top: 1px solid $light-grey;
+          }
+          //num posts
+          em.fixed-regular {
+            position: absolute;
+            right: 7px;
+            top: 7px;
+            width: 25px;
+            height: 25px;
+            line-height: 26px;
+            text-align: center;
+            font-style: normal;
+            font-size: 12px !important;
+            border-radius: 50%;
+            border: 1px solid $solid-grey;
+            background-color: $white;
+            padding: 0;
+            i18n {
+              display: none;
+            }
+          }
+          //when
+          div.fixed-regular {
+            position: absolute;
+            width: auto;
+            padding: 0;
+            height: auto;
+            bottom: 0;
+            right: 20px;
+            z-index: 1;
+            em {
+              font-size: 11px;
+            }
+            span {
+              display: none;
+            }
+          }
+          //pic
+          div.fixed-small {
+            float: left;
+            padding: 6px;
+            height: auto;
+            padding-left: 13px;
+            img {
+              border-radius: 50%;
+              height: 55px;
+              width: 55px;
+            }
+          }
+          //last post
+          .bubble-container {
+            height: auto;
+            padding: 15px 0px 25px;
+            &::after {
+              top: 26px;
+            }
+            .bubble-small {
+              max-width: calc(100% - 60px);
+              margin-left: 20px;
+            }
+          }
+        } //li
+      } //ul
+    } //nav
+  } //end forum
+} //end wide-screen
+
+@media screen and (max-width: $small-screen) {
+  // drop transitions for better perfs
+  button,
+  input[type="button"],
+  a.button,
+  input[type="submit"],
+  .drop-down-button label,
+  .drop-down-button.hidden label {
+    transition: none;
+  }
+
+  //workspace carousel
+  .rigid-grid .margin-four carousel.slide {
+    .image.previous,
+    .image.next {
+      width: 0;
+      height: 0;
+      padding: 0;
+      border: none;
+    }
+    .image.next {
+      margin-left: 100%;
+    }
+    .image.current {
+      width: 80%;
+      margin-left: 10%;
+    }
+    //arrow bg
+    .image.previous::before,
+    .image.next::before {
+      top: -20px;
+    }
+    //arrow shape & color
+    .image.previous::after,
+    .image.next::after {
+      top: -10px;
+    }
+  }
+
+  .centered nav.vertical.half-stamps {
+    article {
+      margin-left: 30px;
+    }
+    input[type="checkbox"] {
+      left: 110px;
+    }
+  }
+}

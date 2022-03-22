@@ -1,0 +1,94 @@
+// Module pour l'affichage des structures et sous structures, se présente sous forme de liste déroulante au hover du nom de la structuré sélectionné
+.structure-tree {
+  display: inline-block;
+  &__current {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    color: $dark-grey;
+    padding: 15px 0;
+    @include run-transition(color);
+    &::before {
+      font-family: "generic-icons";
+      content: "\e956";
+      margin-right: 10px;
+    }
+    &:hover {
+      @include run-transition(color);
+      &::before {
+        color: $orange;
+      }
+    }
+  }
+  structure-tree {
+    display: block;
+  }
+  > structure-tree {
+    position: absolute;
+    z-index: 10000;
+    background-color: white;
+    width: 400px;
+    box-shadow: 2px 2px 10px rgba(black, 0.25);
+    max-height: 65vh;
+    overflow-y: auto;
+  }
+}
+
+structure-tree {
+  .caret {
+    cursor: pointer;
+    user-select: none;
+  }
+  .caret::before {
+    content: "\25B6";
+    display: inline-block;
+    margin-right: 6px;
+    color: $grey;
+    @include run-transition(color);
+  }
+  .caret:hover::before {
+    color: $orange;
+    @include run-transition(color);
+  }
+  .caret-down::before {
+    transform: rotate(90deg);
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    margin-left: -30px !important;
+    li {
+      margin: 1px;
+      padding: 10px;
+      color: $grey;
+      @include run-transition(color);
+      &:hover {
+        color: $dark-grey;
+        @include run-transition(color);
+      }
+      &.active {
+        background-color: $primary;
+        color: white !important;
+        ul {
+          background: white;
+          margin: 5px -5px -5px;
+        }
+        > span.caret::before {
+          color: white;
+        }
+      }
+    }
+    .nested {
+      display: none;
+    }
+    .unfolded {
+      display: block;
+    }
+  }
+}
+@media screen and (max-width: $tablette) {
+  .structure-tree structure-tree {
+    width: calc(100% - 20px);
+    max-height: 50vh;
+  }
+}

@@ -1,0 +1,591 @@
+.widget-container {
+  @include material-card();
+  background-color: $white;
+  margin-bottom: 30px;
+  width: 98%;
+  @include run-transition(all);
+  h1:first-child {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  &:hover {
+    box-shadow: 0 1px 3px $shadow inset;
+    background: $white;
+  }
+}
+
+.widget {
+  max-width: 100% !important;
+  padding: 10px;
+}
+
+.mood-widget {
+  border: 1px solid $primary-light;
+  background: $light-grey;
+  padding-top: 0;
+  .icons-select {
+    margin-top: 0;
+  }
+}
+.birthday {
+  background: $white;
+  border: 1px solid $primary-light;
+  h1 {
+    text-align: center;
+  }
+  .content {
+    border: none;
+  }
+}
+
+.calendar.widget {
+  height: 180px;
+  .current-month-header {
+    padding-top: 5px;
+    color: $primary;
+    top: 0;
+  }
+  .content {
+    border: none;
+    height: 124px;
+    box-sizing: content-box;
+    margin-top: 45px;
+    .day {
+      font-size: 10px;
+      height: 21px;
+      line-height: 19px;
+      padding-left: 2px;
+    }
+    .previous-month,
+    .next-month {
+      color: $white;
+    }
+    .day.today {
+      color: $white;
+      background: $accent;
+      border-radius: 10px;
+      padding-right: 2px;
+    }
+    h2 {
+      color: $primary;
+    }
+  }
+  .current-day {
+    h1 {
+      font-size: 14px;
+      text-align: center;
+      font-weight: normal;
+      margin-bottom: -10px;
+      margin-top: 5px;
+    }
+    h2 {
+      font-size: 40px;
+      margin: 5px 0 0;
+      text-align: center;
+      font-weight: normal;
+    }
+    h3 {
+      font-weight: 100;
+      font-size: 14px;
+      text-align: center;
+      margin-top: -10px;
+      padding-top: 6px;
+    }
+  }
+}
+.notes-widget {
+  padding: 0 10px;
+}
+
+.last-mails-widget,
+.pages-widget {
+  background: $white;
+  margin-bottom: 12px;
+  border: 1px solid $primary-light;
+  width: 254px;
+  box-sizing: border-box;
+  h1 {
+    text-align: center;
+  }
+  ul {
+    margin-bottom: 0;
+    padding-left: 0;
+    li {
+      list-style-type: none;
+      padding-left: 7px;
+      border-left: 5px solid $accent;
+      line-height: 22px;
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+}
+.rss-widget.widget {
+  font-weight: normal;
+  width: auto !important;
+  a {
+    color: $primary;
+    font-weight: bold;
+    &:hover {
+      color: $accent;
+    }
+  }
+  .fluxes {
+    padding: 8px;
+    .rss-flux {
+      border-bottom: 1px solid $white;
+    }
+    .rss-flux:last-child {
+      border-bottom: 0;
+    }
+    .rss-flux,
+    .rss-flux:last-child {
+      padding-bottom: 5px;
+      padding-top: 5px;
+      > p {
+        color: $primary;
+      }
+    }
+  }
+  .message {
+    color: $text-light;
+    padding: 15px 8px;
+  }
+  .channel {
+    margin: 10px auto;
+    display: block;
+    background-color: $primary;
+  }
+  .channel:hover {
+    background: $accent;
+  }
+  .rss-article {
+    border-bottom: 1px solid $accent;
+    font-size: 13px;
+    padding: 5px;
+    a {
+      color: $text-light;
+      font-weight: normal;
+    }
+  }
+  .rss-article:last-child {
+    border-bottom: 0;
+  }
+  .selected-item {
+    background: $accent;
+    color: $white;
+    padding: 10px;
+    p {
+      margin: 0;
+    }
+    a {
+      color: $white;
+      font-weight: bold;
+    }
+  }
+  .loading-panel {
+    border: none;
+    h1 {
+      padding: 10px;
+      color: $accent;
+    }
+  }
+}
+
+/*ico ok*/
+.maxicours-widget {
+  h1:first-child {
+    margin-bottom: 15px;
+  }
+  button {
+    float: none;
+    display: inline;
+  }
+  i.fonticon {
+    font-size: 50px;
+  }
+  > i.fonticon {
+    color: $primary;
+  }
+  .top-right-magnet {
+    position: absolute;
+    right: 5px;
+    top: 25px;
+  }
+  div.text-band {
+    background-color: $primary-light;
+    border-bottom: 2px solid $black;
+    border-top: 2px solid $black;
+    padding: 5px 0;
+    .highlighted {
+      background-color: $accent;
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 5px;
+    }
+  }
+  div.activity {
+    box-shadow: 0 0 2px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    > * {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    img.picto {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+  }
+  .loading-panel {
+    border: none;
+    h1 {
+      padding: 10px;
+      color: $accent;
+    }
+  }
+}
+
+.cursus-widget {
+  padding-bottom: 15px;
+  font-size: 14px;
+  .loading-panel {
+    border: none;
+    h1 {
+      padding: 10px;
+      color: $accent;
+    }
+  }
+  table thead th {
+    text-align: center;
+  }
+  button {
+    float: none;
+    display: inline;
+  }
+  div.content {
+    padding: 0 5%;
+    h2 {
+      color: $accent;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .input-label {
+      label {
+        color: $accent;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      input {
+      }
+    }
+  }
+}
+
+.bookmark-widget {
+  width: auto !important;
+  h1::before {
+  }
+  .bookmark-add-button {
+    display: block;
+    font-size: 40px;
+    float: right;
+    margin-right: 15px;
+    &:hover {
+      color: $accent;
+    }
+  }
+  .bookmark-add-button::before {
+    content: "+";
+  }
+  .bookmark-config-button {
+    display: block;
+    font-size: 30px;
+    float: left;
+    margin-left: 15px;
+    &:hover {
+      color: $accent;
+    }
+  }
+  .message {
+    color: $text-light;
+    padding: 15px 8px;
+  }
+}
+
+.logbook-widget {
+  ul {
+    height: 90px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .avatar {
+    display: inline-block;
+    overflow: hidden;
+    margin: 8px 5px 0;
+    font-size: 12px;
+    padding: 0;
+    list-style: none;
+    figure {
+      width: 55px;
+      height: 55px;
+      transform: scale(0.85);
+      margin: 0 auto;
+      padding: 0;
+      border-radius: 50%;
+      opacity: 0.3;
+      overflow: hidden;
+      border: 1px solid $medium-grey;
+      @include run-transition(all);
+
+      img {
+        width: 55px;
+        height: 55px;
+      }
+      & + div {
+        text-align: center;
+        color: $disabled-color;
+        @include run-transition(all);
+      }
+    }
+  }
+  .avatar.selected,
+  .avatar:hover {
+    figure {
+      opacity: 1;
+      transform: scale(1);
+      & + div {
+        color: $black;
+      }
+    }
+  }
+  .logbook-children,
+  .logbook-child {
+    padding: 0 15px;
+  }
+  .logbook-child {
+    figure {
+      float: left;
+      margin-left: 15px;
+      & + div {
+        float: left;
+        line-height: 55px;
+        font-size: 16px;
+        margin-left: 15px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .logbook-content {
+    padding: 15px 25px 25px;
+  }
+  .logbook-sections {
+    @include shade-colors($primary-darkest, 8);
+    box-shadow: 0px 1px 1px 0 $shadow;
+    cursor: default;
+  }
+
+  //mode compact
+  .ticket-card {
+    background: $background;
+    border: 1px solid $light-grey;
+    border-bottom: none;
+    &:last-child {
+      border-bottom: 1px solid $light-grey;
+    }
+    figure {
+      box-shadow: 0px 0px 0px $shadow;
+      i {
+        &:before {
+          color: $white;
+        }
+      }
+    }
+    section {
+      h5 {
+        span {
+          color: $black;
+        }
+      }
+      p,
+      em {
+        color: $text-light;
+      }
+    }
+
+    &:hover {
+      background: $primary-lighter;
+      figure {
+        box-shadow: 3px 3px 0px $shadow;
+      }
+    }
+    section + i:hover {
+      color: $primary;
+    }
+  }
+  .ticket-card.empty {
+    pointer-events: none;
+  }
+  //mode full
+  section.lightbox {
+    h2 {
+      margin: 20px;
+    }
+    article {
+      margin: 30px 20px 40px;
+      & > div {
+        margin: 0 20px 20px;
+        padding: 0 20px 10px;
+        border-bottom: 1px solid $neutral-grey;
+      }
+
+      p {
+        // border-bottom: 1px solid $neutral-grey;
+        // padding: 15px 10px 5px;
+        margin: 20px 0 0 -10px;
+
+        span {
+          padding-right: 10px;
+          font-weight: bold;
+        }
+      }
+
+      h4 {
+        margin: 10px 0 5px;
+        color: $primary;
+        font-size: 16px;
+        font-weight: normal;
+      }
+      section {
+        margin: 5px 0 5px 10px;
+        font-size: 14px;
+        b {
+          line-height: 15px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
+
+.widget-container {
+  section.lightbox {
+    cursor: default;
+  }
+}
+
+.qwant,
+.qwant-junior {
+  padding: 20px;
+  box-sizing: border-box;
+  input[type="text"] {
+    position: absolute;
+    height: 38px;
+  }
+  button {
+    background: none;
+    color: #444;
+    font-size: 28px;
+    position: absolute;
+    right: 0;
+    box-shadow: none;
+    padding-right: 0;
+    .search {
+      margin: 0;
+    }
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  .form {
+    height: 40px;
+  }
+}
+
+.dicodelazone {
+  box-sizing: border-box;
+  background-color: $white;
+  padding: 10px;
+  .content {
+    padding: 10px;
+    @extend .clearfix;
+  }
+  p {
+    padding: 0 10px;
+    color: $grey;
+  }
+  input[type="text"] {
+    border: 1px solid $shadow-light;
+    border-radius: 20px;
+    padding: 5px 15px;
+    height: inherit;
+  }
+  &__input {
+    position: relative;
+  }
+}
+
+.widgets .recorder--audio {
+  width: inherit;
+  border: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.widgets .news {
+  background-color: white;
+  box-sizing: border-box;
+  h1 {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+  }
+  .new {
+    max-height: 245px;
+    overflow: hidden;
+    scrollbar-width: thin;
+    &:hover {
+      overflow-y: auto;
+    }
+    a {
+      display: block;
+      padding: 10px;
+      cursor: pointer;
+      @include run-transition(all);
+      &:hover {
+        @include run-transition(all);
+        background-color: rgba($primary, 0.1);
+        color: $primary;
+      }
+    }
+    a + a {
+      border-top: 1px solid $lightest-grey;
+    }
+    &--icon {
+      float: left;
+      margin-right: 10px;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+    &--info {
+      display: block;
+      font-size: 12px;
+      color: $grey;
+    }
+    &--empty {
+      text-align: center;
+    }
+  }
+}

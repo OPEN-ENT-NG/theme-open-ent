@@ -1,0 +1,66 @@
+explorer {
+  transition: background 250ms ease;
+  .container {
+    transition: background 250ms ease;
+  }
+  img {
+    transition: opacity 250ms ease;
+  }
+}
+
+explorer.card {
+  .illustration i,
+  img {
+    position: absolute;
+    color: $primary;
+    width: 100%;
+    height: 100%;
+  }
+  &.folder {
+    background: $primary;
+    color: $white;
+    h3 {
+      color: $white;
+      line-height: 75px;
+      margin: 0;
+    }
+    .illustration i,
+    img {
+      color: $white;
+    }
+  }
+}
+
+.dominos {
+  explorer.item {
+    .domino,
+    .content {
+      transition: background 250ms ease;
+      cursor: pointer;
+    }
+  }
+}
+
+explorer.selected {
+  &.card {
+    background-color: $primary-lighter;
+    img {
+      opacity: 0.4;
+    }
+  }
+  .domino {
+    .content {
+      background-color: $primary-lighter;
+    }
+    img {
+      opacity: 0.4;
+    }
+  }
+  .container {
+    background-color: $primary-lighter;
+    border: 1px solid $primary-lighter;
+    img {
+      opacity: 0.4;
+    }
+  }
+}

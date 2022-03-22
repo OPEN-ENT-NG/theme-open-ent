@@ -1,7 +1,0 @@
-/* remove ico next App title ? */
-sniplet h2>i:first-child{
-    display: none!important;
-    &:before{
-        display: none!important;
-    }
-}
