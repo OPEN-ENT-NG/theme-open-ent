@@ -1,0 +1,62 @@
+body.exercizer {
+
+  @import './components/forms';
+  
+  .droppable {
+    @include droppable;
+    background: transparent;
+
+    &.dragover {
+      background: $light-grey;
+    }
+  }
+
+  .helper-text {
+    font-size: 12px;
+    margin-top: 8px;
+    display: block;
+  }
+
+  [contenteditable],
+  [bind-html] {
+    div[style*="width"] {
+      width: 100% !important;
+    }
+  }
+
+  .block-select-copy {
+    @media only screen and (min-width: $fat-mobile) {
+      display: flex;
+
+      > div,
+      > button {
+        flex: 1;
+        flex-basis: 0;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $fat-mobile) {
+    [contenteditable],
+    [bind-html] {
+      .image-container {
+        padding: 0;
+        width: 100% !important;
+        height: auto !important;
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    .droppable {
+      width: auto !important;
+    }
+
+    .simple-button {
+      width: 100% !important;
+    }
+  }
+}
