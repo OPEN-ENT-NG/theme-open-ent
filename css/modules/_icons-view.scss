@@ -1,44 +1,50 @@
 article.icons-view {
     padding-left: 15px;
+
     header {
         display: none;
     }
 }
 
 .icons-view {
-  .ic-share {
-    background-color: $white;
-    font-size: 12px;
-    position: absolute;
-    border-radius: 50%;
-    top: 5px;
-    left: 5px;
-    height: 20px;
-    width: 20px;
-    line-height: 20px;
-    text-align: center;
-    @include box-shadow3(1px,1px,3px);
-  }
-    & .mini-block-container{
+    .ic-share {
+        background-color: $white;
+        font-size: 12px;
+        position: absolute;
+        border-radius: 50%;
+        top: 5px;
+        left: 5px;
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+        text-align: center;
+        @include box-shadow3(1px, 1px, 3px);
+    }
+
+    & .mini-block-container {
         padding: 0;
     }
+
     strong {
         font-style: italic;
         font-weight: normal;
         font-size: 14px;
     }
 
-    .element, explorer {
+    .element,
+    explorer {
         padding: 0;
         margin: 8px;
         width: auto;
         height: auto;
         overflow: hidden;
         vertical-align: top;
+
         .img.container {
             padding: 0;
             border: none;
         }
+
         i.inline.shared {
             width: 15px;
             height: 15px;
@@ -48,6 +54,7 @@ article.icons-view {
             bottom: auto;
             background-size: 100%;
         }
+
         legend {
             position: absolute !important;
             left: 1px;
@@ -61,12 +68,14 @@ article.icons-view {
             color: $white;
             box-sizing: border-box;
             @include run-transition(all);
+
             a {
                 color: $white;
                 font-size: 15px;
                 margin: 0;
                 line-height: 17px;
             }
+
             a:first-child {
                 span.badge {
                     font-size: 11px;
@@ -80,43 +89,55 @@ article.icons-view {
                     margin: 1px 4px 1px 1px;
                     z-index: 1;
                 }
+
                 span {
                     line-height: 2px;
                 }
             }
+
             strong {
                 font-style: normal;
                 font-size: 10px;
                 color: $white;
                 @include run-transition(color);
             }
-            a.author{
+
+            a.author {
                 display: inline;
             }
         }
+
         a,
         a.container,
-        .img.container{
+        .img.container {
             padding: 0;
             @include run-transition(all);
+
             i {
                 width: 117px;
-                height: 117px;
-                display: inline-block;
+                height: calc(117px - 30px);
+                display: inline-flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
                 color: $primary;
             }
         }
+
         a.container,
         .img.container {
             border: 1px solid $light-grey;
         }
+
         .selected a.container,
         .selected .img.container {
             border: 1px solid $accent;
-            & + legend{
-                background: rgba($primary-darkest,  0.7);
+
+            &+legend {
+                background: rgba($primary-darkest, 0.7);
             }
         }
+
         i.history {
             position: absolute;
             top: 6px;
@@ -127,9 +148,10 @@ article.icons-view {
             background-size: 15px;
             background-position: center;
             transition: all 0.25s ease-in-out;
-            filter:invert(80%);
+            filter: invert(80%);
             -webkit-filter: invert(0.8);
             background-color: $white;
+
             &:hover {
                 background-color: rgba($white, 0.5);
                 width: 23px;
@@ -138,16 +160,17 @@ article.icons-view {
                 background-position: center;
                 box-shadow: 0 0 2px $black;
                 border-radius: 12px;
-                filter:none;
+                filter: none;
                 -webkit-filter: none;
             }
         }
     }
 
-    .element{
+    .element {
         margin: 0;
     }
 }
+
 .icons-view .element.selected {
     legend {
         background: rgba(darken($primary-dark, 15%), 0.7);
