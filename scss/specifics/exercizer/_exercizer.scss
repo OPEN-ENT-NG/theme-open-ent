@@ -1,6 +1,6 @@
 body.exercizer {
 
-  @import './components/forms';
+  @import './components/bs5-forms';
   
   .droppable {
     @include droppable;
