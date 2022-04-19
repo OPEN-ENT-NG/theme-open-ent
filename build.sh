@@ -167,6 +167,9 @@ do
     build)
       build
       ;;
+    buildLocal)
+      rm -rf build-css && build && cp -r dist/* ../recette/assets/themes/theme-open-ent
+      ;;
     install)
       build && publishMavenLocal
       ;;
