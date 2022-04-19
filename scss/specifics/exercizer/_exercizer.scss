@@ -2,6 +2,14 @@ body.exercizer {
 
   @import './components/bs5-forms';
   
+  .empty-state {
+    min-height: 176px;
+    img {
+      height: 176px;
+      width: 176px;
+    }
+  }
+
   .droppable {
     @include droppable;
     background: transparent;
