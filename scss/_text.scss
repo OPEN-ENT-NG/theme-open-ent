@@ -109,11 +109,25 @@ app-title + h2 {
   font-family: Arial, sans-serif;
 }
 
-.text-body-common{
+.text-body{
   font-family: Work Sans;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
+}
+
+.text-small{
+  font-family: Work Sans;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.text-bold{
+  font-family: Work Sans;
+  font-weight: 700;
+}
+
+.text-center{
+  text-align: center;
 }

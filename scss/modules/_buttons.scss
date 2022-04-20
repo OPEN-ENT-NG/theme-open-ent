@@ -182,6 +182,29 @@ input[type="submit"].cancel:hover {
       }
     }
   }
+  //flat
+  &-flat {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    //primary
+    &-primary {
+      @extend .btns-flat;
+      color: $primary;
+      --color: #{$primary};
+    }
+    &-primary:hover {
+      color: $accent;
+      --color: #{$accent};
+    }
+    
+    //secondary
+    &-secondary {
+      @extend .btns-flat;
+      color: $accent;
+      --color: #{$accent};
+    }
+  }
 }
 
 //fix ipad buttons styles
