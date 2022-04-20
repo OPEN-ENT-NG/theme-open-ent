@@ -162,6 +162,26 @@ input[type="submit"].cancel:hover {
     background-color: $dark-accent;
     color: $white;
   }
+  //tertiary
+  &-tertiary {
+    background-color: #FAFAFA;
+    color: $primary;
+    border: 0;
+    box-shadow: none;
+
+    svg[class*="icon-"] {
+      fill: $primary;
+    }
+
+    &:hover {
+      background-color: $primary;
+      color: #FAFAFA;
+
+      svg[class*="icon-"] {
+        fill: #FAFAFA;
+      }
+    }
+  }
 }
 
 //fix ipad buttons styles
