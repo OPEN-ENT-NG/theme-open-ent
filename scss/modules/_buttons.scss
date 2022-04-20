@@ -164,7 +164,7 @@ input[type="submit"].cancel:hover {
   }
   //tertiary
   &-tertiary {
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     color: $primary;
     border: 0;
     box-shadow: none;
@@ -175,10 +175,10 @@ input[type="submit"].cancel:hover {
 
     &:hover {
       background-color: $primary;
-      color: #FAFAFA;
+      color: #fafafa;
 
       svg[class*="icon-"] {
-        fill: #FAFAFA;
+        fill: #fafafa;
       }
     }
   }
@@ -197,7 +197,7 @@ input[type="submit"].cancel:hover {
       color: $accent;
       --color: #{$accent};
     }
-    
+
     //secondary
     &-secondary {
       @extend .btns-flat;
