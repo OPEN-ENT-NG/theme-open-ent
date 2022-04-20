@@ -127,6 +127,43 @@ input[type="submit"].cancel:hover {
   background: $accent;
 }
 
+//btns (to avoid conflict)
+.btns {
+  padding: 8px 18px;
+  color: $white;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 4px;
+  @include run-transition(all);
+  font-weight: 500;
+  border: none;
+  box-shadow: 0 1px 1px $shadow-dark;
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: none;
+  }
+
+  //primary
+  &-primary {
+    background: $primary;
+  }
+
+  &-primary:hover {
+    background-color: $primary-darkest;
+    color: $white;
+  }
+  //secondary
+  &-secondary {
+    background: $accent;
+  }
+
+  &-secondary:hover {
+    background-color: $dark-accent;
+    color: $white;
+  }
+}
+
 //fix ipad buttons styles
 input[type="submit"],
 input[type="button"] {
