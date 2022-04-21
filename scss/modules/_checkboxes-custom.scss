@@ -3,7 +3,8 @@ label {
   input[type="checkbox"] {
     display: none;
   }
-  input[type="checkbox"] + span {
+  input[type="checkbox"] + span,
+  input[type="checkbox"] + i18n {
     display: inline-block;
     height: 21px;
     overflow: hidden;

@@ -2,6 +2,13 @@ body.exercizer {
 
   @import './components/bs5-forms';
   
+  input[type="checkbox"][id^="ck-no-err-allowed-"] {
+    width: 17px;
+    height: 17px;
+    accent-color: #3e9abc;
+    vertical-align: top;
+  }
+
   .empty-state {
     min-height: 176px;
     img {
