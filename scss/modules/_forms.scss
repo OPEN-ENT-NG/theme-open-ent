@@ -164,7 +164,7 @@ select {
   }
 }
 
-input[type=text].form-control.ng-invalid.skip-dirty {
+input[type="text"].form-control.ng-invalid.skip-dirty {
   border-color: $red;
   outline: 0;
 }
