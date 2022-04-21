@@ -116,11 +116,22 @@ app-title + h2 {
   line-height: 24px;
 }
 
+.text-medium {
+  font-family: Work Sans;
+  font-size: 14px;
+  line-height: 22px;
+}
+
 .text-small{
   font-family: Work Sans;
   font-size: 10px;
   font-weight: 400;
   line-height: 15px;
+}
+
+.text-semibold{
+  font-family: Work Sans;
+  font-weight: 600;
 }
 
 .text-bold{
@@ -130,4 +141,11 @@ app-title + h2 {
 
 .text-center{
   text-align: center;
+}
+
+.text-caption{
+  font-family: Work Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
 }
