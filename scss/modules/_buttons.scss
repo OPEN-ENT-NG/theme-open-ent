@@ -174,16 +174,12 @@ input[type="submit"].cancel:hover {
     box-shadow: none;
 
     svg[class*="icon-"] {
-      fill: $primary;
+      fill: currentColor;
     }
 
     &:hover {
       background-color: transparent;
       color: $accent;
-
-      svg[class*="icon-"] {
-        fill: $accent;
-      }
     }
   }
   //flat
