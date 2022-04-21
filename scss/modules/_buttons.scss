@@ -134,11 +134,11 @@ input[type="submit"].cancel:hover {
   text-align: center;
   font-size: 14px;
   border-radius: 4px;
-  @include run-transition(all);
   font-weight: 500;
   border: none;
   box-shadow: 0 1px 1px $shadow-dark;
   overflow: hidden;
+  @include run-transition(all);
 
   &:hover {
     box-shadow: none;
@@ -147,11 +147,15 @@ input[type="submit"].cancel:hover {
   //primary
   &-primary {
     background: $primary;
-  }
 
-  &-primary:hover {
-    background-color: $primary-darkest;
-    color: $white;
+    svg[class*="icon-"] {
+      fill: #FAFAFA;
+    }
+
+    &:hover {
+      background-color: $primary-darkest;
+      color: $white;
+    }
   }
   //secondary
   &-secondary {
@@ -164,7 +168,7 @@ input[type="submit"].cancel:hover {
   }
   //tertiary
   &-tertiary {
-    background-color: #fafafa;
+    background-color: transparent;
     color: $primary;
     border: 0;
     box-shadow: none;
@@ -174,11 +178,11 @@ input[type="submit"].cancel:hover {
     }
 
     &:hover {
-      background-color: $primary;
-      color: #fafafa;
+      background-color: transparent;
+      color: $accent;
 
       svg[class*="icon-"] {
-        fill: #fafafa;
+        fill: $accent;
       }
     }
   }
