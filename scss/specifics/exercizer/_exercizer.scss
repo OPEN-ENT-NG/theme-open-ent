@@ -83,4 +83,26 @@ body.exercizer {
       width: 100% !important;
     }
   }
+
+  table {
+    font-family: 'Work Sans';
+
+    tr {
+      &:first-child {
+        border-top: 0;
+      }
+    }
+
+    thead {
+      tr {
+        background-color: $pale-cyan;
+        color: $grey-black;
+        border: none;
+      }
+      th {
+        font-size: 13px;
+        font-weight: 600;
+      }
+    }
+  }
 }
