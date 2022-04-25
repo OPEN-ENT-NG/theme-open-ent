@@ -53,6 +53,19 @@ a.button.cancel,
 .drop-down-button.hidden label {
   @include flat-button;
 }
+
+.flat-button {
+    svg[class*="icon-"] {
+      fill: $accent;
+    }
+
+    &:hover {
+
+      svg[class*="icon-"] {
+        fill: currentColor;
+      }
+    }
+}
 input[type="button"].pick-file {
   @include flat-button;
 }
@@ -160,6 +173,10 @@ input[type="submit"].cancel:hover {
   //secondary
   &-secondary {
     background: $accent;
+
+    svg[class*="icon-"] {
+      fill: $white;
+    }
   }
 
   &-secondary:hover {
