@@ -1,7 +1,8 @@
 body.exercizer {
+  font-family: 'Work Sans';
 
   @import './components/bs5-forms';
-  
+
   input[type="checkbox"][id^="ck-no-err-allowed-"] {
     width: 17px;
     height: 17px;
@@ -11,18 +12,19 @@ body.exercizer {
 
   .empty-state {
     min-height: 176px;
+
     img {
       height: 176px;
       width: 176px;
     }
   }
 
-  .card-footer{
+  .card-footer {
     background-color: #fafafa;
     border-top: 1px solid #f0f2f4;
   }
 
-  .answer-choice{
+  .answer-choice {
     width: 72px;
   }
 
@@ -52,8 +54,8 @@ body.exercizer {
     @media only screen and (min-width: $fat-mobile) {
       display: flex;
 
-      > div,
-      > button {
+      >div,
+      >button {
         flex: 1;
         flex-basis: 0;
       }
@@ -61,6 +63,7 @@ body.exercizer {
   }
 
   @media only screen and (max-width: $fat-mobile) {
+
     [contenteditable],
     [bind-html] {
       .image-container {
@@ -99,6 +102,7 @@ body.exercizer {
         color: $grey-black;
         border: none;
       }
+
       th {
         font-size: 13px;
         font-weight: 600;

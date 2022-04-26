@@ -3,10 +3,11 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+
 a:hover,
-a:hover > h1,
-a:hover > h2,
-a:hover > h3 {
+a:hover>h1,
+a:hover>h2,
+a:hover>h3 {
   color: $accent;
 }
 
@@ -29,9 +30,11 @@ h5 {
   margin-top: 10px;
   margin-bottom: 10px;
   line-height: 30px;
+
   a {
     color: $primary;
   }
+
   strong.subtitle {
     color: $grey;
     font-size: 14px;
@@ -39,17 +42,21 @@ h5 {
     margin-top: -5px;
   }
 }
+
 h1 {
   font-size: 34px;
   margin-bottom: 20px;
   line-height: 40px;
 }
+
 h1:first-child {
   margin-top: 0;
 }
+
 h2 {
   font-size: 20px;
 }
+
 h2.float-title {
   text-transform: uppercase;
   font-size: 15px;
@@ -71,13 +78,15 @@ app-title {
   display: block;
   float: left;
 }
-app-title + h2 {
+
+app-title+h2 {
   font-size: 26px;
   clear: both;
 }
 
 .small-text {
   font-size: 14px !important;
+
   label {
     font-size: 14px !important;
     line-height: 26px;
@@ -93,11 +102,13 @@ app-title + h2 {
 
 .medium-text {
   font-size: 16px !important;
+
   label {
     font-size: 16px !important;
     line-height: 28px;
   }
 }
+
 .medium-text a,
 .medium-text em,
 .medium-text label,
@@ -109,42 +120,36 @@ app-title + h2 {
   font-family: Arial, sans-serif;
 }
 
-.text-body{
-  font-family: Work Sans;
+.text-body {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 }
 
 .text-medium {
-  font-family: Work Sans;
   font-size: 14px;
   line-height: 22px;
 }
 
-.text-small{
-  font-family: Work Sans;
+.text-small {
   font-size: 10px;
   font-weight: 400;
   line-height: 15px;
 }
 
-.text-semibold{
-  font-family: Work Sans;
+.text-semibold {
   font-weight: 600;
 }
 
-.text-bold{
-  font-family: Work Sans;
+.text-bold {
   font-weight: 700;
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
 
-.text-caption{
-  font-family: Work Sans;
+.text-caption {
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;

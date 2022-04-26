@@ -40,6 +40,7 @@ input[type="submit"]:focus {
     top: -50%;
     left: -50%;
   }
+
   outline: none;
 }
 
@@ -55,22 +56,24 @@ a.button.cancel,
 }
 
 .flat-button {
+  svg[class*="icon-"] {
+    fill: $accent;
+  }
+
+  &:hover {
+
     svg[class*="icon-"] {
-      fill: $accent;
+      fill: currentColor;
     }
-
-    &:hover {
-
-      svg[class*="icon-"] {
-        fill: currentColor;
-      }
-    }
+  }
 }
+
 input[type="button"].pick-file {
   @include flat-button;
 }
 
 input-password {
+
   input[type="password"],
   input[type="text"] {
     width: calc(100% - 50px);
@@ -78,6 +81,7 @@ input-password {
     height: 32px;
     display: inline-block;
     float: none;
+
     &.ng-invalid.ng-dirty {
       border-bottom: 2px solid $red;
     }
@@ -87,6 +91,7 @@ input-password {
     height: 32px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+
     &.pushed {
       background-color: $dark-accent;
       box-shadow: none;
@@ -94,6 +99,7 @@ input-password {
   }
 
   &.toggleable-password {
+
     button,
     button:active,
     button:focus {
@@ -117,6 +123,7 @@ input-password {
       top: calc(50% - 9px);
       font-size: 23px;
     }
+
     button:active {
       &::before {
         opacity: 0.7;
@@ -133,6 +140,7 @@ input[type="submit"]:hover {
   box-shadow: none;
   color: $white;
 }
+
 button.cancel:hover,
 input[type="button"].cancel:hover,
 a.button.cancel:hover,
@@ -170,6 +178,7 @@ input[type="submit"].cancel:hover {
       color: $white;
     }
   }
+
   //secondary
   &-secondary {
     background: $accent;
@@ -183,6 +192,7 @@ input[type="submit"].cancel:hover {
     background-color: $dark-accent;
     color: $white;
   }
+
   //tertiary
   &-tertiary {
     background-color: transparent;
@@ -199,17 +209,20 @@ input[type="submit"].cancel:hover {
       color: $accent;
     }
   }
+
   //flat
   &-flat {
     background: transparent;
     box-shadow: none;
     border: none;
+
     //primary
     &-primary {
       @extend .btns-flat;
       color: $primary;
       --color: #{$primary};
     }
+
     &-primary:hover {
       color: $accent;
       --color: #{$accent};
@@ -280,11 +293,13 @@ button.select-button {
   font-family: Arial;
   @include box-shadow3(1px, 1px, 3px);
   @include run-transition;
+
   &::before {
     @include fonticon;
     content: "\e858";
     margin-right: 5px;
   }
+
   &:hover {
     background-color: $white;
     color: $darkest-grey;
