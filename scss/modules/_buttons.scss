@@ -207,6 +207,10 @@ input[type="submit"].cancel:hover {
     &:hover {
       background-color: transparent;
       color: $accent;
+
+      svg[class*="icon-"] {
+        fill: $accent;
+      }
     }
   }
 
