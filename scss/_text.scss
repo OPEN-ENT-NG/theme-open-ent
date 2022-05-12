@@ -137,12 +137,28 @@ app-title+h2 {
   line-height: 15px;
 }
 
+.text-lighter{
+  font-weight: 200 !important;
+}
+
+.text-light{
+  font-weight: 300 !important;
+}
+
+.text-semilight{
+  font-weight: 400 !important;
+}
+
+.text-nobold {
+  font-weight: 500 !important;
+}
+
 .text-semibold {
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 
 .text-bold {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 .text-center {
