@@ -3,9 +3,10 @@ body.exercizer {
 
   @import './components/bs5-forms';
 
-  input[type="checkbox"][id^="ck-no-err-allowed-"] {
-    width: 17px;
-    height: 17px;
+  input[type="checkbox"][id^="ck-no-err-allowed-"],
+  input[type="checkbox"][class*="sized"] {
+    width: 16px;
+    height: 16px;
     accent-color: #3e9abc;
     vertical-align: top;
   }
