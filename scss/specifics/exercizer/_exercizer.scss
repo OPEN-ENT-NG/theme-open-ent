@@ -5,10 +5,17 @@ body.exercizer {
 
   input[type="checkbox"][id^="ck-no-err-allowed-"],
   input[type="checkbox"][class*="sized"] {
+    display: inline-block !important;
     width: 16px;
     height: 16px;
     accent-color: #3e9abc;
-    vertical-align: top;
+    vertical-align: middle;
+
+    +i18n {
+      &::before {
+        display: none;
+      }
+    }
   }
 
   .empty-state {

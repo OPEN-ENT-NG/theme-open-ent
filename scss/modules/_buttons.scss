@@ -61,7 +61,6 @@ a.button.cancel,
   }
 
   &:hover {
-
     svg[class*="icon-"] {
       fill: currentColor;
     }
@@ -186,13 +185,13 @@ input[type="submit"].cancel:hover {
     svg[class*="icon-"] {
       fill: $white;
     }
-  }
 
-  &-secondary:hover {
-    background-color: $dark-accent;
-    color: $white;
+    &:hover {
+      background-color: $dark-accent;
+      color: $white;
+    }
   }
-
+  
   //tertiary
   &-tertiary {
     background-color: transparent;
