@@ -18,7 +18,7 @@
     "prettier:all": "npm run prettier:write && npm run prettier:check",
     "release:clean": "rimraf ${DIST_DIR}",
     "release:dependencies": "cpr node_modules/entcore-css-lib/assets/ ${DIST_DIR}/ -o",
-    "release:prepare": "npm run release:clean && npm run release:dependencies && cpr assets/ ${DIST_DIR}/ -o",
+    "release:prepare": "npm run release:clean && npm run release:dependencies && cpr template/ ${DIST_DIR}/template/ -o && cpr portal.html ${DIST_DIR}/ -o && cpr assets/ ${DIST_DIR}/ -o",
     "release:build": "npm run release:prepare && SKIN=default npm run sass:build:release"
   },
   "repository": {

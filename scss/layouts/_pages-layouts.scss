@@ -1,9 +1,14 @@
 .logo {
-  background: url(../../img/illustrations/logo.png) center no-repeat;
   height: $header-height;
   width: 236px;
   margin: 0;
   background-size: contain;
+
+  &:not(img) {
+    background-image: url(../../img/illustrations/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .row {

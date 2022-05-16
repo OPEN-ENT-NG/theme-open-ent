@@ -29,7 +29,10 @@
   <section class="navbar row">
     <div class="mobile-nav-opener"></div>
     <div class="cell">
-      <a href="/timeline/timeline"><i class="logo"></i></a>
+      <a href="/timeline/timeline">
+				<i ng-if="!displayTheme.isThemeLegacy" class="logo"></i>
+				<img ng-if="displayTheme.isThemeLegacy" class="logo" src="/assets/themes/[[skin.skin]]/img/illustrations/logo.png" alt="Logo de l'ENT">
+			</a>
     </div>
   </section>
   <section class="row">
