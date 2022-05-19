@@ -1,4 +1,16 @@
+// Generic Class Form Elements
+button,
+input,
+textarea,
+select {
+    font-family: var(--font-primary);
+}
+
 .input-block {
     max-width: 550px;
     width: 100%;
+}
+
+editor [contentEditable=true][placeholder]:empty:before {
+    font-family: var(--font-primary);
 }

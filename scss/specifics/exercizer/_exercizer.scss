@@ -1,7 +1,17 @@
+$purple: #a348c0;
+
+:root {
+  --font-primary: 'Work Sans';
+  --font-secondary: 'Comfortaa', cursive;
+}
 body.exercizer {
-  font-family: 'Work Sans';
+  font-family: var(--font-primary);
 
   @import './components/bs5-forms';
+
+  .new-title {
+    font-family: var(--font-secondary);
+  }
 
   input[type="checkbox"][id^="ck-no-err-allowed-"],
   input[type="checkbox"][class*="sized"] {
@@ -96,7 +106,7 @@ body.exercizer {
   }
 
   table {
-    font-family: 'Work Sans';
+    font-family: var(--font-primary);
 
     tr {
       &:first-child {
