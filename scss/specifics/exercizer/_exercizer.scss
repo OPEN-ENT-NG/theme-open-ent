@@ -150,3 +150,62 @@ body.exercizer {
     }
   }
 }
+
+#print-subject{
+  color-adjust: exact;
+  -webkit-print-color-adjust: exact !important;
+  .app-title{
+    padding-left: 1.6rem;
+  }
+  article{
+    box-shadow: none;
+  }
+  h4{
+    font-size: 18px;
+  }
+  .options {
+    min-height: auto;
+    border: 1px solid #C7C7C7;
+    border-radius: 8px;
+    img{
+      border-radius: 3px;
+      box-shadow: 1px 1px 3px rgb(0 0 0 / 15%);
+    }
+  }
+  text-zone{
+    border: 1px dashed #C7C7C7;
+    &.noresponses{
+      min-width: 80px;
+    }
+  }
+  .zone-image {
+    position: relative;
+    border: 1px solid #C7C7C7;
+    overflow: hidden;
+    border-radius: 8px;
+    article{
+      background: transparent;
+      text-zone{
+        background: rgb(250 250 250 / 86%);
+      }
+    }
+    image-zone{
+      border: 1px dashed #c7c7c7;
+    }
+  }
+  .zone-response{
+    min-height: 50px;
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 14px;
+  }
+  .table-association{
+    input{
+      width: 100%;
+    }
+    th, input{
+      text-align: center;
+    }
+  }
+}
