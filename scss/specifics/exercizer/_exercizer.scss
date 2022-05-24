@@ -169,11 +169,14 @@ body.exercizer {
     border-radius: 8px;
     img{
       border-radius: 3px;
-      box-shadow: 1px 1px 3px rgb(0 0 0 / 15%);
+      //box-shadow: 1px 1px 3px rgb(0 0 0 / 15%);
+      box-shadow: none;
+      border: 1px dashed #c7c7c7;
     }
   }
   text-zone{
     border: 1px dashed #C7C7C7;
+    box-shadow: none;
     &.noresponses{
       min-width: 80px;
     }
@@ -190,6 +193,7 @@ body.exercizer {
       }
     }
     image-zone{
+      box-shadow: none;
       border: 1px dashed #c7c7c7;
     }
   }
@@ -206,6 +210,30 @@ body.exercizer {
     }
     th, input{
       text-align: center;
+    }
+  }
+}
+
+@media print, screen{
+  #print-subject{
+   image-zone {
+      min-width: 100px;
+      width: 100px;
+      height: 100px;
+      img{
+        min-width: 100px;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+      }
+    }
+    .options{
+      img{
+        min-width: 100px;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+      }
     }
   }
 }
