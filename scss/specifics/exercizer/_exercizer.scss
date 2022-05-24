@@ -159,6 +159,7 @@ body.exercizer {
   }
   article{
     box-shadow: none;
+    page-break-inside: avoid;
   }
   h4{
     font-size: 18px;
