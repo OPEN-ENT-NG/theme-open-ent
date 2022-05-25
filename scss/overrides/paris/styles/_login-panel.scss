@@ -1,0 +1,89 @@
+
+.login.panel{
+    background-size: 280px;
+    background-position: 15px 10px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+
+    h1{
+        text-align: center;
+        width: auto;
+    }
+    .rigid-grid{
+        overflow: hidden;
+        width: 90%;
+        margin: auto;
+    }
+    .welcome-text{
+        display: block;
+        max-width: 520px;
+        float: left;
+        background-color: $white;
+        box-shadow: 0 5px 18px $shadow;
+        border-radius: 2px;
+        padding: 30px;
+        box-sizing: border-box;
+
+        h2{
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 13px;
+        }
+
+        a{
+            font-weight: bold;
+            display: inline;
+        }
+    }
+    .welcome-text + form{
+        width: auto;
+        overflow: hidden;
+        a{
+            font-size: 18px;
+            margin-top: 0px;
+        }
+    }
+    .welcome-text, .welcome-text + form{
+        margin: 15px;
+    }
+
+}
+
+@media screen and (max-width: 1200px){
+    .login.panel{
+        .rigid-grid{
+            width: auto;
+        }
+        h1{
+            display: block;
+        }
+        .welcome-text{
+            max-width: 50%;
+        }
+
+    }
+
+}
+
+@media screen and (max-width: $tablette){
+    .login.panel{
+
+        background-size: 230px;
+        background-position: 5px 2px;
+
+        h1{
+            font-size: 40px;
+            margin: 50px auto 10px;
+        }
+        .welcome-text, .welcome-text + form{
+            width: 90%;
+            max-width: none;
+            margin: 15px auto;
+            float: none;
+        }
+
+
+    }
+
+}
