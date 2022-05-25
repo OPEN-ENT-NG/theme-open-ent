@@ -1,0 +1,11 @@
+.logo{
+    height: 60px;
+    width: 235px;
+    background-position: 5px center;
+    background-size: 230px;
+}
+
+section.lightbox .background::before{
+    background-size: 236px;
+    background-position: left;
+}

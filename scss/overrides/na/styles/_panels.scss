@@ -1,0 +1,11 @@
+.panel {
+ background: url(../../img/illustrations/logo.png) no-repeat 6px 6px $primary;
+  background-size: 245px;
+}
+
+@media screen and (max-width: $tablette){
+    .forgot.panel{
+        background-image: url(../../img/illustrations/logo-light.png);
+        background-size: 75px;
+    }
+}

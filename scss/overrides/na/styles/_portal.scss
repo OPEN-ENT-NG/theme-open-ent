@@ -1,0 +1,26 @@
+.navbar {
+  background: $primary;
+}
+
+.info {
+  border-left: 10px solid $accent;
+
+  i.check-circle {
+    color: $accent;
+  }
+}
+
+.tuto b:first-child{
+  color: $accent;
+}
+
+table.sticky-header thead tr th, table.sticky-header thead tr th {
+  background: $primary;
+}
+
+.logo{
+  height: 60px;
+  width: 235px;
+  background-position: 5px center;
+  background-size: 230px;
+}

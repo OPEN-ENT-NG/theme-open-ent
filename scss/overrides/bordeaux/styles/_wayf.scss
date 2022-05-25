@@ -1,0 +1,28 @@
+body.wayf {
+  background: $lightest-grey;
+  height: auto;
+  padding: 50px 50px 10px;
+  .ts {
+    background: $cyan;
+  }
+
+  .perseducnat2d {
+    background: $green;
+  }
+
+  .perseducnat1d {
+    background: $purple;
+  }
+
+  .login1dother {
+    background: $pink;
+  }
+
+  .login1d {
+    background: $orange;
+  }
+
+  .login2d {
+    background: $solid-grey;
+  }
+}
