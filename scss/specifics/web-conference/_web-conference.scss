@@ -1,0 +1,26 @@
+.wc {
+  .cards-view {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .grid {
+    padding: 25px;
+  }
+  .flex-card {
+    border: 1px solid white;
+    &:hover {
+      border-color: $orange;
+      box-shadow: 1px 1px 10px rgba(black, 0.1);
+      @include run-transition(all);
+    }
+    &.card {
+      background-color: $white;
+      @include run-transition(all);
+      &.active {
+        border-color: $orange;
+        background-color: #c7edfc;
+        @include run-transition(all);
+      }
+    }
+  }
+}
