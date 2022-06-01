@@ -1,10 +1,8 @@
 $purple: #a348c0;
 
-:root {
+body.exercizer {
   --font-primary: 'Work Sans';
   --font-secondary: 'Comfortaa', cursive;
-}
-body.exercizer {
   font-family: var(--font-primary);
 
   h1,

@@ -1,0 +1,26 @@
+section.main .panel{
+    background: url(../../img/illustrations/logo-4x3.png) no-repeat 6px 6px #2a9cc8;
+    background-size: 145px
+}
+
+@media screen and (max-width: $tablette){
+    .login.panel .panels-container{
+        margin-top: 120px;
+    }
+
+    section.main .panel h1 + .content{
+        margin-top: 80px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: $fat-mobile){
+    section.main .panel h1{
+        margin: 45px auto 40px;
+        padding-left: 180px;
+        text-align: left;
+    }
+    section.main .panel h1 + .content{
+        margin-top: 65px;
+    }
+}

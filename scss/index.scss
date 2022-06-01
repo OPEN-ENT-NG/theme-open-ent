@@ -3,10 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 
 @import "./variables-open-ent";
-
-/* OVERRIDE */
-// @import "./overrides";
 @import "./mixins";
+
 /* ENTCORE CSS LIB */
 @import "./entcore-css-lib/scss/index.scss";
 
@@ -21,7 +19,7 @@
 @import "./layout-styles";
 @import "./mobile/mobile";
 @import "./table";
+/* OVERRIDE */
 
 @import "specifics/";
-
 @import "_springboard-overrides.scss";
