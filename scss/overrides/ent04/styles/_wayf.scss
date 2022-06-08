@@ -1,6 +1,5 @@
 body.wayf {
-  background: url(../../img/illustrations/logo.png) no-repeat 6px 6px $primary-dark;
-  background-size: 245px;
+  background-color: $primary-dark;
   width: 100%;
   height: 256px;
   position: absolute;
@@ -12,8 +11,8 @@ body.wayf {
     margin: 0;
   }
 
-  .logo{
-    display : none;
+  #credentials-content .logo {
+    display: none;
   }
 
   #credentials-content{
@@ -21,17 +20,8 @@ body.wayf {
   }
 }
 
-@media screen and (max-width: $tablette) {
-  body.wayf{
-    background:url(../../img/illustrations/logo.png) no-repeat 6px 6px $primary-dark;
-    background-size: 200px;
-  }
-}
-
 @media screen and (max-width: $fat-mobile) {
   body.wayf{
-    background: url(../../img/illustrations/logo.png) no-repeat 6px 6px $primary-dark;
-    background-size: 200px;
 
     .dominos .item a {
       line-height: 160%;

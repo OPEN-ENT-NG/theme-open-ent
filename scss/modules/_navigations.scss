@@ -86,6 +86,7 @@ nav.horizontal {
 header.main {
   section nav.horizontal {
     #my-photo {
+      object-fit: cover;
       background: $white;
       display: block;
       padding: 0;
