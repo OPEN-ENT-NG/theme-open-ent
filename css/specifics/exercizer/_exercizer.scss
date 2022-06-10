@@ -16,6 +16,7 @@ body.exercizer {
   h5,
   h6 {
     font-family: var(--font-secondary);
+    font-weight: 700 !important;
   }
 
   @import './components/bs5-forms';
@@ -55,6 +56,7 @@ body.exercizer {
 
   .answer-choice {
     width: 72px;
+    font-size: 12px;
   }
 
   .droppable {
@@ -117,6 +119,7 @@ body.exercizer {
   }
 
   table {
+    margin-bottom: 0;
     font-family: var(--font-primary);
 
     tr {

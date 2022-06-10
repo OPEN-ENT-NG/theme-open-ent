@@ -7,8 +7,8 @@ title{
 }
 
 html, body{
-	background: $background;
-	background: linear-gradient(to bottom right, $lightest-grey, $light-grey) fixed;
+	background: $grey-fog;
+	// background: linear-gradient(to bottom right, $lightest-grey, $light-grey) fixed;
 	font-family: Roboto;
 }
 
