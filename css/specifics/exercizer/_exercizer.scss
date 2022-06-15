@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 
 $purple: #a348c0;
 
@@ -167,24 +165,6 @@ body.exercizer {
 
   .btns {
     box-shadow: none;
-  }
-
-  .lightbox {
-    .content {
-      min-height: auto;
-      padding: 24px;
-      h2{
-        margin-top: 0px;
-      }
-    }
-    .close-lightbox{
-      margin: 20px;
-      i.close-2x:before {
-        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='close' viewBox='0 0 24 24'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.222 4.222a1.1 1.1 0 0 1 1.556 0l14 14a1.1 1.1 0 1 1-1.556 1.556l-14-14a1.1 1.1 0 0 1 0-1.556Z'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M19.778 4.222a1.1 1.1 0 0 1 0 1.556l-14 14a1.1 1.1 0 1 1-1.556-1.556l14-14a1.1 1.1 0 0 1 1.556 0Z'/%3E%3C/svg%3E");
-        display: block;
-        width: 22px;
-      }
-    }
   }
 }
 

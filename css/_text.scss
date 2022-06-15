@@ -1,185 +1,186 @@
 a {
+  color: $primary;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover,
+a:hover>h1,
+a:hover>h2,
+a:hover>h3 {
+  color: $accent;
+}
+
+a[disabled] {
+  pointer-events: none;
+  color: gray;
+}
+
+.line {
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $primary;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 30px;
+
+  a {
     color: $primary;
-    text-decoration: none;
-    cursor: pointer;
   }
-  
-  a:hover,
-  a:hover>h1,
-  a:hover>h2,
-  a:hover>h3 {
-    color: $accent;
-  }
-  
-  a[disabled] {
-    pointer-events: none;
-    color: gray;
-  }
-  
-  .line {
-    border: none;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    color: $primary;
-    font-weight: 400;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    line-height: 30px;
-  
-    a {
-      color: $primary;
-    }
-  
-    strong.subtitle {
-      color: $grey;
-      font-size: 14px;
-      display: block;
-      margin-top: -5px;
-    }
-  }
-  
-  h1 {
-    font-size: 34px;
-    margin-bottom: 20px;
-    line-height: 40px;
-  }
-  
-  h1:first-child {
-    margin-top: 0;
-  }
-  
-  h2 {
-    font-size: 20px;
-  }
-  
-  h2.float-title {
-    text-transform: uppercase;
-    font-size: 15px;
-    text-align: center;
-    font-weight: bold;
-  }
-  
-  h3 {
-    font-size: 1.4em;
-  }
-  
-  h4 {
-    font-size: 18px;
-    color: $dark-grey;
-    font-weight: bold;
-  }
-  
-  app-title {
+
+  strong.subtitle {
+    color: $grey;
+    font-size: 14px;
     display: block;
-    float: left;
+    margin-top: -5px;
   }
-  
-  app-title+h2 {
-    font-size: 26px;
-    clear: both;
-  }
-  
-  .small-text {
+}
+
+h1 {
+  font-size: 34px;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+
+h1:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h2.float-title {
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 18px;
+  color: $dark-grey;
+  font-weight: bold;
+}
+
+app-title {
+  display: block;
+  float: left;
+}
+
+app-title+h2 {
+  font-size: 26px;
+  clear: both;
+}
+
+.small-text {
+  font-size: 14px !important;
+
+  label {
     font-size: 14px !important;
-  
-    label {
-      font-size: 14px !important;
-      line-height: 26px;
-    }
+    line-height: 26px;
   }
-  
-  .small-text a,
-  .small-text em,
-  .small-text label,
-  .small-text span {
-    font-size: 14px;
-  }
-  
-  .medium-text {
+}
+
+.small-text a,
+.small-text em,
+.small-text label,
+.small-text span {
+  font-size: 14px;
+}
+
+.medium-text {
+  font-size: 16px !important;
+
+  label {
     font-size: 16px !important;
-  
-    label {
-      font-size: 16px !important;
-      line-height: 28px;
-    }
+    line-height: 28px;
   }
-  
-  .medium-text a,
-  .medium-text em,
-  .medium-text label,
-  .medium-text span {
-    font-size: 16px;
-  }
-  
-  .arial {
-    font-family: Arial, sans-serif;
-  }
-  
-  .text-body {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-  }
-  
-  .text-medium {
-    font-size: 14px;
-    line-height: 22px;
-  }
-  
-  .text-heading {
-    font-size: 26px !important;
-    line-height: 34px !important;
-  }
-  
-  .text-subheading {
-    font-size: 18px !important;
-    line-height: 26px !important;
-  }
-  
-  .text-small {
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 15px;
-  }
-  
-  .text-lighter{
-    font-weight: 200 !important;
-  }
-  
-  .text-light{
-    font-weight: 300 !important;
-  }
-  
-  .text-semilight{
-    font-weight: 400 !important;
-  }
-  
-  .text-nobold {
-    font-weight: 500 !important;
-  }
-  
-  .text-semibold {
-    font-weight: 600 !important;
-  }
-  
-  .text-bold {
-    font-weight: 700 !important;
-  }
-  
-  .text-center {
-    text-align: center;
-  }
-  
-  .text-caption {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 20px;
-  }
-  .text-primary{
-    color: $primary !important;
-  }
+}
+
+.medium-text a,
+.medium-text em,
+.medium-text label,
+.medium-text span {
+  font-size: 16px;
+}
+
+.arial {
+  font-family: Arial, sans-serif;
+}
+
+.text-body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.text-medium {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.text-heading {
+  font-size: 26px !important;
+  line-height: 34px !important;
+}
+
+.text-subheading {
+  font-size: 18px !important;
+  line-height: 26px !important;
+}
+
+.text-small {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.text-lighter {
+  font-weight: 200 !important;
+}
+
+.text-light {
+  font-weight: 300 !important;
+}
+
+.text-semilight {
+  font-weight: 400 !important;
+}
+
+.text-nobold {
+  font-weight: 500 !important;
+}
+
+.text-semibold {
+  font-weight: 600 !important;
+}
+
+.text-bold {
+  font-weight: 700 !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-caption {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.text-primary {
+  color: $primary !important;
+}
