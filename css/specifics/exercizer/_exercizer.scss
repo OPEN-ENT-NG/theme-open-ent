@@ -183,6 +183,12 @@ body.exercizer {
   .btns {
     box-shadow: none;
   }
+
+  explorer.selected{
+    .container{
+      border: initial;
+    }
+  }
 }
 
 #print-subject{
