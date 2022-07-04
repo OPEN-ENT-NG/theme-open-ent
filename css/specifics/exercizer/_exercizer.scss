@@ -91,6 +91,13 @@ body.exercizer {
     }
   }
 
+
+  @media only screen and (max-width: $tablette) {
+      header.main h1.application-title {
+      margin-top: .5em;
+    }
+  }
+
   @media only screen and (max-width: $fat-mobile) {
 
     [contenteditable],
