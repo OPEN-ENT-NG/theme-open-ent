@@ -198,6 +198,10 @@ body.exercizer {
       border: initial;
     }
   }
+
+  .datepicker table thead tr {
+    background-color: $primary;
+  }
 }
 
 #print-subject{
