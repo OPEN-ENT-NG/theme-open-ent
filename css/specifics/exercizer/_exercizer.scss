@@ -34,6 +34,15 @@ body.exercizer {
     }
   }
 
+  button, 
+  .button {
+    border-radius: 4px;
+  }
+
+  button>* {
+    vertical-align: middle;
+  }
+
   label[for^="ck-no-err-allowed"] {
     cursor: pointer;
   }
