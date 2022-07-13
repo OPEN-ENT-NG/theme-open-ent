@@ -40,7 +40,6 @@ input[type="submit"]:focus {
     top: -50%;
     left: -50%;
   }
-
   outline: none;
 }
 
@@ -54,19 +53,6 @@ a.button.cancel,
 .drop-down-button.hidden label {
   @include flat-button;
 }
-
-.flat-button {
-  svg[class*="icon-"] {
-    fill: $accent;
-  }
-
-  &:hover {
-    svg[class*="icon-"] {
-      fill: currentColor;
-    }
-  }
-}
-
 input[type="button"].pick-file {
   @include flat-button;
 }
@@ -79,7 +65,6 @@ input-password {
     height: 32px;
     display: inline-block;
     float: none;
-
     &.ng-invalid.ng-dirty {
       border-bottom: 2px solid $red;
     }
@@ -89,7 +74,6 @@ input-password {
     height: 32px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-
     &.pushed {
       background-color: $dark-accent;
       box-shadow: none;
@@ -120,7 +104,6 @@ input-password {
       top: calc(50% - 9px);
       font-size: 23px;
     }
-
     button:active {
       &::before {
         opacity: 0.7;
@@ -137,105 +120,11 @@ input[type="submit"]:hover {
   box-shadow: none;
   color: $white;
 }
-
 button.cancel:hover,
 input[type="button"].cancel:hover,
 a.button.cancel:hover,
 input[type="submit"].cancel:hover {
   background: $accent;
-}
-
-//btns (to avoid conflict)
-.btns {
-  padding: 8px 18px;
-  color: $white;
-  text-align: center;
-  font-size: 14px;
-  border-radius: 4px;
-  font-weight: 500;
-  border: none;
-  box-shadow: 0 1px 1px $shadow-dark;
-  overflow: hidden;
-  @include run-transition(all);
-
-  &:hover {
-    box-shadow: none;
-  }
-
-  //primary
-  &-primary {
-    background: $primary;
-
-    svg[class*="icon-"] {
-      fill: #fafafa;
-    }
-
-    &:hover {
-      background-color: $primary-darkest;
-      color: $white;
-    }
-  }
-
-  //secondary
-  &-secondary {
-    background: $accent;
-
-    svg[class*="icon-"] {
-      fill: $white;
-    }
-
-    &:hover {
-      background-color: $dark-accent;
-      color: $white;
-    }
-  }
-
-  //tertiary
-  &-tertiary {
-    background-color: transparent;
-    color: $primary;
-    border: 0;
-    box-shadow: none;
-
-    svg[class*="icon-"] {
-      fill: currentColor;
-    }
-
-    &:hover {
-      background-color: transparent;
-      color: $accent;
-
-      svg[class*="icon-"] {
-        fill: $accent;
-      }
-    }
-  }
-
-  //flat
-  &-flat {
-    background: transparent;
-    box-shadow: none;
-    border: none;
-
-    //primary
-    &-primary {
-      @extend .btns-flat;
-      color: $primary;
-      --color: #{$primary};
-    }
-
-    &-primary:hover {
-      color: $accent;
-      --color: #{$accent};
-    }
-
-    //secondary
-    &-secondary {
-      @extend .btns-flat;
-      color: $accent;
-      --color: #{$accent};
-    }
-  }
 }
 
 //fix ipad buttons styles
@@ -294,13 +183,11 @@ button.select-button {
   font-family: Arial;
   @include box-shadow3(1px, 1px, 3px);
   @include run-transition;
-
   &::before {
     @include fonticon;
     content: "\e858";
     margin-right: 5px;
   }
-
   &:hover {
     background-color: $white;
     color: $darkest-grey;

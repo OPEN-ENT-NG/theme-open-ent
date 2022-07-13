@@ -1,43 +1,36 @@
-.no-2d {
-  display: none !important;
+.no-2d{
+	display: none !important;
 }
 
-title {
-  display: block;
+title{
+	display: block;
 }
 
-html,
-body {
-  background: $background;
-  background: linear-gradient(to bottom right, $lightest-grey, $light-grey)
-    fixed;
-  font-family: "Roboto";
+html, body{
+	background: $grey-fog;
+	// background: linear-gradient(to bottom right, $lightest-grey, $light-grey) fixed;
+	font-family: Roboto;
 }
 
 body {
-  overflow-x: hidden;
-  font-size: 16px;
-  line-height: 23px;
-  color: $dark-grey;
-  section.main {
-    background: transparent;
-  }
-  .material {
-    section.main {
-      position: relative;
-      top: $header-height + 10px;
-      box-sizing: border-box;
-      padding: 8px 35px;
-      padding-bottom: 60px;
-    }
-  }
+	overflow-x: hidden;
+	font-size: 16px;
+	line-height: 23px;
+	color: $dark-grey;
+	section.main{
+		background: transparent;
+	}
+	.material{
+		section.main{
+			position: relative;
+			top: $header-height + 10px;
+			box-sizing: border-box;
+			padding: 8px 35px;
+			padding-bottom: 60px;
+		}
+	}
 }
 
-button,
-input[type="button"],
-a.button,
-input[type="submit"],
-.drop-down-button label,
-.drop-down-button.hidden label {
-  font-family: "Roboto";
+button, input[type=button], a.button, input[type=submit], .drop-down-button label, .drop-down-button.hidden label {
+	font-family: Roboto;
 }

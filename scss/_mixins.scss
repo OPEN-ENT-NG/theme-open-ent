@@ -1,77 +1,74 @@
+
 @mixin material-card($shadow-size: 1px, $blur-size: 3px) {
-  box-shadow: 0 $shadow-size $blur-size $shadow-light;
-  border-radius: 2px;
+    box-shadow: 0 $shadow-size $blur-size $shadow-light;
+    border-radius: 2px;
 }
 
 @mixin message {
-  color: $text-light;
-  text-align: left;
-  border-radius: 0;
-  background: $light-grey;
-  border-left: 10px solid $primary;
-  margin: 5px 0 15px;
+    color: $text-light;
+    text-align: left;
+    border-radius: 0;
+    background: $light-grey;
+    border-left: 10px solid $primary;
+    margin: 5px 0 15px;
 }
 
 @mixin input-message($color) {
-  color: $color;
-  font-size: 12px;
-  display: block;
-
-  label {
-    font-size: 10px !important;
-    margin-left: 0;
-    float: none !important;
-
-    &:before {
-      content: "* ";
+    color: $color;
+    font-size: 12px;
+    display: block;
+    label {
+        font-size: 10px !important;
+        margin-left: 0;
+        float: none !important;
+        &:before {
+            content: "* ";
+        }
+        &:after {
+            content: "\A";
+            white-space: pre;
+        }
     }
-
-    &:after {
-      content: "\A";
-      white-space: pre;
-    }
-  }
 }
 
 @mixin flat-button {
-  border: none;
-  box-shadow: none;
-  color: $accent;
-  background: $light-grey;
-
-  &:hover {
-    background: $accent;
-    color: $white;
-  }
+    border: none;
+    box-shadow: none;
+    color: $accent;
+    background: $light-grey;
+    &:hover {
+        background: $accent;
+        color: $white;
+    }
 }
 
 // camaieu
 // low gap # = hard shades
 @mixin shade-colors($shadecolor, $gap) {
-  @for $i from 0 through $gap {
-    $pc: calc(100 / $gap) * $i;
-    $modColor: saturate(lighten($shadecolor, $pc * 1%), 15%);
-
-    .shade-color-#{$i} {
-      background-color: $modColor;
+    @for $i from 0 through $gap {
+        $pc: calc(100/$gap) * $i;
+        $modColor: saturate(lighten($shadecolor,$pc * 1%), 15%);
+        .shade-color-#{$i} {
+            background-color: $modColor;
+        }
     }
-  }
 }
+
 
 @mixin droppable {
-  border-color: $grey-cloudy;
-  border-width: 2px;
-  border-style: dashed;
-  background: $light-grey;
+    border-color: $medium-grey;
+    border-width: 2px;
+    border-style: dashed;
+    background: $light-grey;
+    &:hover{
+        border-color: $primary;
+    }
+    &.droptarget{
+        border-color: $accent;
+    }
 
-  &:hover {
-    border-color: $primary;
-  }
-
-  &.droptarget {
-    border-color: $accent;
-  }
 }
+
 
 // @-webkit-keyframes ripple {
 //     100% {
@@ -98,29 +95,28 @@
 //     }
 // }
 
+
 //buttons click
 @-webkit-keyframes ripple {
-  100% {
-    opacity: 0;
-    width: 200%;
-    padding-bottom: 200%;
-  }
+    100% {
+        opacity: 0;
+        width: 200%;
+        padding-bottom: 200%;
+    }
 }
-
 @-moz-keyframes ripple {
-  100% {
-    opacity: 0;
-    width: 200%;
-    height: 200%;
-  }
+    100% {
+        opacity: 0;
+        width: 200%;
+        height: 200%;
+    }
 }
-
 @keyframes ripple {
-  100% {
-    opacity: 0;
-    width: 200%;
-    padding-bottom: 200%;
-  }
+    100% {
+        opacity: 0;
+        width: 200%;
+        padding-bottom: 200%;
+    }
 }
 
 @mixin transform($value) {

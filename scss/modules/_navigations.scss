@@ -67,7 +67,7 @@ nav.horizontal {
     left: 20px;
     top: -30px;
     font-weight: bold;
-    font-family: "Roboto";
+    font-family: Roboto;
   }
   #my-photo {
     margin-top: 10px;
@@ -86,7 +86,6 @@ nav.horizontal {
 header.main {
   section nav.horizontal {
     #my-photo {
-      object-fit: cover;
       background: $white;
       display: block;
       padding: 0;

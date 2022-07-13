@@ -112,7 +112,8 @@ section.lightbox > .background + div.content > .twelve.cell {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: $primary-dark;
+  background: url(../../img/illustrations/logo.png) 23px 0px no-repeat
+    $primary-dark;
   background-size: contain;
   box-shadow: 0 2px 5px $shadow;
 }

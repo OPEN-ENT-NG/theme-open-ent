@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 $purple: #a348c0;
 
 body.exercizer {
-  --font-primary: 'Work Sans';
+  --font-primary: 'Roboto';
   --font-secondary: 'Comfortaa', cursive;
   font-family: var(--font-primary);
 
@@ -12,6 +14,7 @@ body.exercizer {
   h5,
   h6 {
     font-family: var(--font-secondary);
+    font-weight: 700 !important;
   }
 
   @import './components/bs5-forms';
@@ -29,6 +32,15 @@ body.exercizer {
         display: none;
       }
     }
+  }
+
+  button, 
+  .button {
+    border-radius: 4px;
+  }
+
+  button>* {
+    vertical-align: middle;
   }
 
   label[for^="ck-no-err-allowed"] {
@@ -51,6 +63,7 @@ body.exercizer {
 
   .answer-choice {
     width: 72px;
+    font-size: 12px;
   }
 
   .droppable {
@@ -87,6 +100,13 @@ body.exercizer {
     }
   }
 
+
+  @media only screen and (max-width: $tablette) {
+      header.main h1.application-title {
+      margin-top: .5em;
+    }
+  }
+
   @media only screen and (max-width: $fat-mobile) {
 
     [contenteditable],
@@ -103,9 +123,9 @@ body.exercizer {
       }
     }
 
-    .droppable {
+    /* .droppable {
       width: auto !important;
-    }
+    } */
 
     .simple-button {
       width: 100% !important;
@@ -113,6 +133,7 @@ body.exercizer {
   }
 
   table {
+    margin-bottom: 0;
     font-family: var(--font-primary);
 
     tr {
@@ -158,30 +179,45 @@ body.exercizer {
     }
   }
 
+  share-panel {
+    table {
+      thead {
+        tr {
+          background-color: $primary;
+        }
+      }
+    }
+  }
+
   .btns {
     box-shadow: none;
   }
 
-  .lightbox {
-    .content {
-      min-height: auto;
-      padding: 24px;
-      h2{
-        margin-top: 0px;
-      }
+  explorer.selected{
+    .container{
+      border: initial;
     }
-    .close-lightbox{
-      margin: 20px;
-      i.close-2x:before {
-        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='close' viewBox='0 0 24 24'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.222 4.222a1.1 1.1 0 0 1 1.556 0l14 14a1.1 1.1 0 1 1-1.556 1.556l-14-14a1.1 1.1 0 0 1 0-1.556Z'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M19.778 4.222a1.1 1.1 0 0 1 0 1.556l-14 14a1.1 1.1 0 1 1-1.556-1.556l14-14a1.1 1.1 0 0 1 1.556 0Z'/%3E%3C/svg%3E");
-        display: block;
-        width: 22px;
-      }
-    }
+  }
+
+  .datepicker table thead tr {
+    background-color: $primary;
   }
 }
 
 #print-subject{
+  width: 210mm;
+  text-zone {
+    max-height: none;
+  }
+  .base-image {
+    img {
+      aspect-ratio: 4 / 3;
+      -o-object-fit: contain;
+      object-fit: contain;
+      width: 100%;
+      max-height: 100%;
+    }
+  }
   color-adjust: exact;
   -webkit-print-color-adjust: exact !important;
   .app-title{
@@ -220,7 +256,7 @@ body.exercizer {
     article{
       background: transparent;
       text-zone{
-        background: rgb(250 250 250 / 86%);
+        background: rgba(250, 250, 250, .8);
       }
     }
     image-zone{

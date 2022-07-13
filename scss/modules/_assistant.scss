@@ -3,14 +3,17 @@ assistant {
     li.dot::before {
       border-color: $medium-grey;
     }
+
     li.dot.active::before {
       background: $accent;
     }
+
     li.dot:hover {
       &::before {
         border-color: $primary;
       }
     }
+
     li.dot.active:hover {
       &::before {
         border-color: $accent;
@@ -31,6 +34,7 @@ assistant {
       background-repeat: no-repeat;
       background-position: center;
     }
+
     iframe {
       width: calc(100% - 20px);
     }
@@ -38,6 +42,7 @@ assistant {
     h1 + p {
       margin-top: 45px;
     }
+
     h4 {
       margin: 50px 0 20px;
       text-align: center;
@@ -62,13 +67,16 @@ assistant {
         animation-name: bounce-pop-out;
         animation-fill-mode: forwards;
       }
+
       i {
         font-size: 65px;
       }
+
       i.small {
         font-size: 40px;
         padding: 5px;
       }
+
       legend {
         color: $black;
         margin: 20px auto 0;
@@ -80,15 +88,18 @@ assistant {
       position: absolute;
       height: 100%;
     }
+
     .ratio-block {
       width: 100%;
       padding-bottom: 56%;
       background: transparent;
     }
+
     .multi-apps {
       position: relative;
       height: 100px;
       width: 125px;
+
       i {
         position: absolute;
         font-size: 30px;
@@ -98,6 +109,7 @@ assistant {
         border-radius: 3px;
         line-height: 50px;
         box-shadow: 0px 0px 15px 1px $shadow;
+
         &:before {
           //color: $grey;
           color: $white;
@@ -110,30 +122,35 @@ assistant {
         right: 0;
         transform: scale(0.8);
       }
+
       i.rack-large {
         background: $red;
         top: -10px;
         left: 3px;
         transform: scale(0.5);
       }
+
       i.timelinegenerator-large {
         background: $yellow;
         top: -14px;
         right: 3px;
         transform: scale(0.6);
       }
+
       i.rbs-large {
         background: $pink;
         left: -15px;
         bottom: 13px;
         transform: scale(0.4);
       }
+
       i.exercizer-large {
         background: $purple;
         left: 8px;
         bottom: -6px;
         transform: scale(0.7);
       }
+
       i.dotsx3-h {
         background: $cyan;
         left: 37px;
@@ -142,6 +159,7 @@ assistant {
     }
   }
 }
+
 @media screen and (max-width: $tablette) {
   body {
     assistant {
@@ -152,10 +170,12 @@ assistant {
           margin-top: -45px;
           margin-left: 10px;
         }
+
         h1 {
           font-weight: bold;
           margin-top: 8px;
         }
+
         h4 {
           font-weight: normal;
           margin: 20px 0 30px;
@@ -163,6 +183,7 @@ assistant {
           padding: 0 15px;
           line-height: 18px;
         }
+
         h4 + hr {
           display: none;
         }
@@ -170,6 +191,7 @@ assistant {
     }
   }
 }
+
 @media screen and (max-width: $fat-mobile) {
   body {
     assistant {
@@ -182,6 +204,7 @@ assistant {
     }
   }
 }
+
 @media screen and (max-width: $small-mobile) {
   body {
     assistant {
@@ -190,9 +213,11 @@ assistant {
           .container {
             width: 80px;
           }
+
           i {
             font-size: 45px;
           }
+
           legend {
             font-size: 12px;
           }
