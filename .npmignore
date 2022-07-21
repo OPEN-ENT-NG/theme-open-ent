@@ -11,3 +11,6 @@ build-css/
 gradle/
 .npmrc*
 .prettier*
+build.gradle
+gradle*
+*.template
