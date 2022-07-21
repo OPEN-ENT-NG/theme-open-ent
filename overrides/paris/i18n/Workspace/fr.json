@@ -1,0 +1,3 @@
+{
+    "workspace.folders.warning.content": "<p>Attention, le partage d'un dossier entraîne la modification des partages de tous les fichiers et sous dossiers contenus dans celui-ci.</p><p>De plus, les fichiers et dossiers crées ou déplacés dans ce dossier auront les mêmes droits de partage que ceux attribués sur le dossier.</p><p>Par ailleurs, notez qu'un droit de contribution sur un dossier permet uniquement aux fichiers qui s'y trouvent d'hériter du même droit.</p>"
+}

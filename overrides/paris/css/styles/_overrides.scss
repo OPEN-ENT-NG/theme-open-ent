@@ -1,0 +1,22 @@
+.logo {
+    background-size: 335px;
+    background-position: 15px center;
+    height: 80px;
+    width: 350px;
+}
+
+
+.navbar + .row nav.horizontal {
+    bottom: auto;
+    top: 50%;
+    margin-top: -15px;
+}
+@media screen and(max-width: $tablette) {
+    body{
+        .navbar + .row nav.horizontal {
+            bottom: 0;
+            top: auto;
+            margin-top: auto
+        }
+    }
+}

@@ -61,6 +61,8 @@ task generateTemplate(type: Copy,dependsOn: 'generateDeployment') {
   extra.put('npmToken', npmToken.bytes.encodeBase64().toString());
   extra.put('DIST_DIR', '$DIST_DIR');
   extra.put('SKIN_DIR', '$SKIN_DIR');
+  extra.put('OVERRIDE_SRC', '$OVERRIDE_SRC');
+  extra.put('OVERRIDE_DIST', '$OVERRIDE_DIST');
   extra.keySet().each{
       if(extra[it]!=null && extra[it] instanceof String){
         extra[it] = extra[it].replace("%generateVersion%",new Date().format( 'yyyyMMddHHmm' ))
@@ -83,6 +85,8 @@ task generateTemplateDev(type: Copy,dependsOn: 'generateDeployment') {
   extra.put('npmToken', npmToken.bytes.encodeBase64().toString());
   extra.put('DIST_DIR', '$DIST_DIR');
   extra.put('SKIN_DIR', '$SKIN_DIR');
+  extra.put('OVERRIDE_SRC', '$OVERRIDE_SRC');
+  extra.put('OVERRIDE_DIST', '$OVERRIDE_DIST');
   extra.keySet().each{
       if(extra[it]!=null && extra[it] instanceof String){
         extra[it] = extra[it].replace("%generateVersion%",new Date().format( 'yyyyMMddHHmm' ))
@@ -110,7 +114,7 @@ task deploymentJar(type: Jar) {
 task fatJar(type: Jar) {
     classifier = 'fat'
     archiveName = "${modowner}~${System.env.OVERRIDE_MODNAME}~$version-$classifier.$extension"
-    includes = ["dist/**", "conf.j2", "${modname}/**", "${System.env.OVERRIDE_MODNAME}/**"]
+    includes = ["dist/**","conf.j2","${System.env.OVERRIDE_MODNAME}/**","${modname}/**"]
     from "."
 }
 

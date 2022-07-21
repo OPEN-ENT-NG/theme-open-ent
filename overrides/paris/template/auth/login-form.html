@@ -1,0 +1,48 @@
+<div class="absolute">
+	<div class="centered container row">
+		<section class="main">
+			<div class="row"></div>
+			<div class="welcome-text" ng-if="!welcome.hideContent">
+				<div class="row">
+					<div class="twelve cell" bind-html="welcome.content"></div>
+				</div>
+			</div>
+
+			<div class="panel" ng-class="{ 'lonely-panel': welcome.hideContent }">
+				<h1><img src="/auth/public/img/auth.png" /><span translate content="auth.header"></span></h1>
+				<p class="warning" translate content="[[error]]" ng-if="error"></p>
+				<form method="post" action="/auth/login">
+					<p>
+						<label translate content="auth.email"></label>
+						<input type="text" ng-model="user.email" ng-keydown="noSpace($event)" ng-change="noUpperCase()" name="email" id="email" autofocus tabindex=1 />
+					</p>
+					<p>
+						<label translate content="auth.password"></label>
+						<input-password type="password" ng-model="user.password" name="password" id="password" tabindex=2></input-password>
+					</p>
+					<p>
+						<input type="checkbox" ng-model="user.rememberMe" name="rememberMe" id="rememberMe" value="true"/>
+						<label translate content="auth.remember.me" style="display: inline"></label>
+					</p>
+					<div>
+						<a href="/auth/forgot#/password" translate content="missing.password" style="display: inline"></a>
+					</div>
+					<div>
+						<a href="/auth/forgot#/id" translate content="missing.id" style="display: inline"></a>
+					</div>
+
+					<div>
+						<br>
+						<a href="[[lang.translate('auth.faq.link')]]" target="_blank" translate content="auth.faq" style="display: inline"></a>
+					</div>
+
+					<input type="hidden" name="callBack" ng-value="callBack" />
+					<input type="hidden" name="details" ng-value="details" />
+
+					<input type="submit" translate attr="value" value="auth.login" tabindex=3 class="vertical-spacing" />
+				</form>
+				<div style="clear:both"></div>
+			</div>
+		</section>
+	</div>
+</div>

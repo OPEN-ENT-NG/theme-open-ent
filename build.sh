@@ -95,12 +95,26 @@ build () {
   mkdir -p $OVERRIDE_BUILD
   cp -R skins $SKIN_DIR
   cp -R scss $SCSS_DIR
-  cp -R scss/$OVERRIDE_SRC/* $OVERRIDE_BUILD/scss/
+  cp -R $OVERRIDE_SRC/css/* $SCSS_DIR/
+  #build css
   docker-compose run -e SKIN_DIR=$SKIN_DIR -e SCSS_DIR=$SCSS_DIR -e DIST_DIR=$OVERRIDE_DIST --rm -u "$USER_UID:$GROUP_GID" node sh -c "npm run release:prepare"
   for dir in "${dirs[@]}"; do
     tmp=`echo $dir | sed 's/.\/skins\///'`
     docker-compose run -e SKIN_DIR=$SKIN_DIR -e SCSS_DIR=$SCSS_DIR -e DIST_DIR=$OVERRIDE_DIST -e SKIN=$tmp  --rm -u "$USER_UID:$GROUP_GID" node sh -c "npm run sass:build:release"
   done
+  #copy override theme
+  echo "Merge assets from theme...."
+  cp -R template/ $OVERRIDE_DIST/template/ 
+  cp -R portal.html $OVERRIDE_DIST/
+  cp -R assets/* $OVERRIDE_DIST/
+  #copy override platform
+  echo "Merge assets from platform...."
+  cp -R $OVERRIDE_SRC/* $OVERRIDE_DIST/
+  #override i18n
+  echo "Merge i18n from theme and platform..."
+  docker-compose run -e OVERRIDE_SRC=$OVERRIDE_SRC -e OVERRIDE_DIST=$OVERRIDE_DIST --rm -u "$USER_UID:$GROUP_GID" node sh -c "npm run override:i18n"
+  echo "End merge"
+  #set version
   cp node_modules/entcore-css-lib/dist/version.txt $OVERRIDE_DIST/version.txt
   VERSION=`grep "version="  gradle.properties| sed 's/version=//g'`
   echo "$OVERRIDE_MODNAME=$VERSION `date +'%d/%m/%Y %H:%M:%S'`" >> $OVERRIDE_DIST/version.txt

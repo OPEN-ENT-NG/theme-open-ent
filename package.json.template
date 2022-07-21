@@ -3,6 +3,7 @@
   "version": "${npmVersion}",
   "description": "Open ENT theme by Open Digital Education",
   "scripts": {
+    "override:i18n": "OVERRIDE_SRC=${OVERRIDE_SRC} OVERRIDE_DIST=${OVERRIDE_DIST} node ode-override-plugin.js",
     "sass:watch": "sass --source-map -w scss/index.scss docs/index.css",
     "sass:build:debug": "sass --load-path=node_modules/ --source-map scss/index.scss docs/index.css",
     "sass:build:release": "sass --load-path=node_modules/ --style=compressed ${SKIN_DIR}/$SKIN/theme.scss ${SKIN_DIR}/$SKIN/theme.css && cpr ${SKIN_DIR}/$SKIN/ ${DIST_DIR}/skins/$SKIN/ -o",

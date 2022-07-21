@@ -1,0 +1,6 @@
+{
+	"auth": ["login-form", "activation-form", "forgot-form", "forgot-message", "reset-form"],
+	"portal": ["applications"],
+	"timeline": ["notifications"]
+}
+
