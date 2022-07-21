@@ -5,3 +5,9 @@ docker-compose.yml
 Jenkinsfile
 build/
 build-css/
+?/
+.gradle/
+.npm/
+gradle/
+.npmrc*
+.prettier*
