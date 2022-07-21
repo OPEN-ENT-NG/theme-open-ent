@@ -8,7 +8,7 @@ gradle:
     - ~/.gradle:/home/gradle/.gradle
 
 node:
-  image: opendigitaleducation/node:12-alpine
+  image: opendigitaleducation/node:16-alpine
   working_dir: /home/node/app
   net: host
   volumes:
