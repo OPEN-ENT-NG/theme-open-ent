@@ -1,20 +1,18 @@
-
-.login.panel{
-    background-size: 280px;
-    background-position: 15px 10px;
-    background-repeat: no-repeat;
+.login.panel {
     box-sizing: border-box;
 
-    h1{
+    h1 {
         text-align: center;
         width: auto;
     }
-    .rigid-grid{
+
+    .rigid-grid {
         overflow: hidden;
         width: 90%;
         margin: auto;
     }
-    .welcome-text{
+
+    .welcome-text {
         display: block;
         max-width: 520px;
         float: left;
@@ -24,41 +22,48 @@
         padding: 30px;
         box-sizing: border-box;
 
-        h2{
+        h2 {
             margin-bottom: 20px;
         }
-        p{
+
+        p {
             font-size: 13px;
         }
 
-        a{
+        a {
             font-weight: bold;
             display: inline;
         }
     }
-    .welcome-text + form{
+
+    .welcome-text+form {
         width: auto;
         overflow: hidden;
-        a{
+
+        a {
             font-size: 18px;
             margin-top: 0px;
         }
     }
-    .welcome-text, .welcome-text + form{
+
+    .welcome-text,
+    .welcome-text+form {
         margin: 15px;
     }
 
 }
 
-@media screen and (max-width: 1200px){
-    .login.panel{
-        .rigid-grid{
+@media screen and (max-width: 1200px) {
+    .login.panel {
+        .rigid-grid {
             width: auto;
         }
-        h1{
+
+        h1 {
             display: block;
         }
-        .welcome-text{
+
+        .welcome-text {
             max-width: 50%;
         }
 
@@ -66,17 +71,16 @@
 
 }
 
-@media screen and (max-width: $tablette){
-    .login.panel{
+@media screen and (max-width: $tablette) {
+    .login.panel {
 
-        background-size: 230px;
-        background-position: 5px 2px;
-
-        h1{
+        h1 {
             font-size: 40px;
             margin: 50px auto 10px;
         }
-        .welcome-text, .welcome-text + form{
+
+        .welcome-text,
+        .welcome-text+form {
             width: 90%;
             max-width: none;
             margin: 15px auto;
