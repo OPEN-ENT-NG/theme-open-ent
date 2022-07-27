@@ -104,7 +104,7 @@ build () {
   done
   #copy override theme
   echo "Merge assets from theme...."
-  cp -R template/ $OVERRIDE_DIST/template/ 
+  cp -R template/* $OVERRIDE_DIST/template/ 
   cp -R portal.html $OVERRIDE_DIST/
   cp -R assets/* $OVERRIDE_DIST/
   #copy override platform

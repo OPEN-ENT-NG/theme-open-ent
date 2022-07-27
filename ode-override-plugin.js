@@ -1,6 +1,25 @@
 const fs = require("fs");
 const path = require("path");
 
+async function mergeOverrideJson(){
+    const overrideDir = process.env.OVERRIDE_SRC;
+    const outputDir = process.env.OVERRIDE_DIST;
+    const templateOverrideDest = path.join(outputDir, "template", "override.json");
+    const templateOverrideChild = path.join(overrideDir, "template", "override.json");
+    const templateOverrideRoot = path.join("template", "override.json");
+    const childExists = await fs.promises.access(templateOverrideChild).then(e => true).catch(e => false)
+    if(childExists){
+        const parentJson = JSON.parse((await fs.promises.readFile(templateOverrideRoot)).toString());
+        const childJson = JSON.parse((await fs.promises.readFile(templateOverrideChild)).toString());
+        for (const key in childJson) {
+            const parentTab = parentJson[key] || []
+            const childTab = childJson[key] || []
+            parentJson[key] = [...parentTab,...childTab];
+        }
+        await fs.promises.writeFile(templateOverrideDest, JSON.stringify(parentJson, null, 2))
+    }
+}
+
 async function mergeOneFileI18N(base, app, parent) {
     try {
         const overrideDir = process.env.OVERRIDE_SRC;
@@ -50,6 +69,7 @@ async function mergeAllI18N() {
             promises.push(mergeOneAppI18N(BASE, app));
         }
         await Promise.all(promises);
+        await mergeOverrideJson();
     } catch (e) {
         console.error("Failed to merge i18n: ", e)
         throw e;
