@@ -9,6 +9,7 @@
 			</div>
 
 			<div class="panel" ng-class="{ 'lonely-panel': welcome.hideContent }">
+				<img class="logo absolute" src="/assets/themes/[[childTheme]]/img/illustrations/logo.png" alt="Logo de l'ENT">
 				<h1><img src="/auth/public/img/auth.png" /><span translate content="auth.header"></span></h1>
 				<p class="warning" translate content="[[error]]" ng-if="error"></p>
 				<form method="post" action="/auth/login">
