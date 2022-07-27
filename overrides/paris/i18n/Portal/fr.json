@@ -9,5 +9,15 @@
   "userBook.mood.sad": "Distrait(e)",
   "userBook.mood.sick": "Impatient(e)",
   "userBook.mood.tired": "Stressé(e)",
-  "userBook.mood.worried": "Incertain(e)"
+  "userBook.mood.worried": "Incertain(e)",
+  "default": "Défaut",
+  "dyslexic": "Dyslexiques",
+    "smartbanner.name": "Open ENT",
+    "smartbanner.description": "Le réseau éducatif qui tient dans la poche !",
+    "smartbanner.action": "Voir",
+    "smartbanner.icon.uri": "/assets/themes/paris1d/overrides/img/illustrations/open-ent-pocket.png",
+    "smartbanner.android.store": "Google Play",
+    "smartbanner.android.uri": "https://play.google.com/store/apps/details?id=fr.openent.mobile",
+    "smartbanner.ios.store": "App Store",
+    "smartbanner.ios.uri": "https://apps.apple.com/fr/app/open-ent/id1526672567"
 }

@@ -13,9 +13,9 @@ Munissez-vous de votre adresse e-mail personnelle et des informations ci-dessous
 Identifiant : <b>{{login}}</b><br/>
 Code d'activation : <b>{{activationCode}}</b><br/>
 <br/>
-Pour s&eacute;curiser vos acc&egrave;s, il vous sera demand&eacute; de choisir un nouveau de mot de passe, d'indiquer votre adresse e-mail personnelle et, si vous le souhaitez, de saisir un num&eacute;ro de t&eacute;l&eacute;phone portable.<br/>
+Pour s&eacute;curiser vos acc&egrave;s, il vous sera demand&eacute; de choisir un nouveau mot de passe, d'indiquer votre adresse e-mail personnelle et, si vous le souhaitez, de saisir un num&eacute;ro de t&eacute;l&eacute;phone portable.<br/>
 <br/>
-Votre nouveau de passe doit contenir 8 caract&egrave;res minimum, dont au moins une majuscule, une minuscule et un chiffre. Pour plus de s&eacute;curit&eacute;, vous pouvez ajouter des caract&egrave;res sp&eacute;ciaux.<br/>
+Votre nouveau mot de passe doit contenir 8 caract&egrave;res minimum, dont au moins une majuscule, une minuscule et un chiffre. Pour plus de s&eacute;curit&eacute;, vous pouvez ajouter des caract&egrave;res sp&eacute;ciaux.<br/>
 <br/>
 Bonne navigation sur Paris Classe Num&eacute;rique !<br/>
 <br/>
@@ -41,7 +41,7 @@ Cliquez ensuite sur "Vous avez perdu votre mot de passe ?", saisissez votre iden
 <br/>
 Un mail sera envoy&eacute; &agrave; l'adresse que vous avez saisie lors de l'activation de votre compte. Cliquez ensuite sur le lien hypertexte dans le mail re&ccedil;u pour d&eacute;finir votre nouveau mot de passe.<br/>
 <br/>
-Votre nouveau de passe doit contenir 8 caract&egrave;res minimum, dont au moins une majuscule, une minuscule et un chiffre. Il est recommand&eacute; de choisir un mot de passe associant chiffres, lettres, majuscules, minuscules et caract&egrave;res sp&eacute;ciaux.<br/>
+Votre nouveau mot de passe doit contenir 8 caract&egrave;res minimum, dont au moins une majuscule, une minuscule et un chiffre. Il est recommand&eacute; de choisir un mot de passe associant chiffres, lettres, majuscules, minuscules et caract&egrave;res sp&eacute;ciaux.<br/>
 <br/>
 Bonne navigation sur Paris Classe Num&eacute;rique !<br/>
 <br/>

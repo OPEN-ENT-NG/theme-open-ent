@@ -86,7 +86,7 @@
 
 {{! Users that are not activated }}
 {{#activationCode}}
-<div style="page-break-after: always">
+<div{{^end}} style="page-break-after: always"{{/end}}>
 	<header>
         <img id="logo" src="illustrations/logo.png"></img>
 	</header>
@@ -130,7 +130,7 @@
 					</p>
 					<p>
 						Lors de votre premi&egrave;re connexion &agrave; l&apos;ENT il vous sera
-						demand&eacute; de choisir un nouveau de mot de passe, d&apos;indiquer
+						demand&eacute; de choisir un nouveau mot de passe, d&apos;indiquer
 						votre adresse e-mail personnelle et, si vous le souhaitez,
 						de saisir un num&eacute;ro de t&eacute;l&eacute;phone portable.
 					</p>
@@ -144,7 +144,7 @@
 			<div>
 				<div style="text-align: justify;">
 					<p>
-						Votre nouveau de passe doit contenir 8 caract&egrave;res minimum,
+						Votre nouveau mot de passe doit contenir 8 caract&egrave;res minimum,
 						dont au moins une majuscule, une minuscule et un chiffre.
 						Pour plus de s&eacute;curit&eacute;, vous pouvez ajouter des caract&egrave;res sp&eacute;ciaux.
 					</p>
@@ -176,7 +176,7 @@
 
 {{! Users that are activated }}
 {{^activationCode}}
-<div style="page-break-after: always">
+<div{{^end}} style="page-break-after: always"{{/end}}>
 	<header>
 		<img id="logo" src="illustrations/logo.png"></img>
 	</header>
