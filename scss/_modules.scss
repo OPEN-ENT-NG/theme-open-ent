@@ -1987,7 +1987,7 @@ h1 i {
     display: none!important;
 }
 
-@media screen and(min-width: $tablette){
+@media screen and (min-width: $tablette){
     .selected-value:hover {
         border-color: $accent;
     }
@@ -2034,7 +2034,7 @@ body editor {
         border-bottom: 1px solid #ddd;
         transition: margin-top 200ms ease;
     }
-    @media screen and(min-width: $tablette){
+    @media screen and (min-width: $tablette){
         &.edit editor-toolbar .option:hover,
         &.both editor-toolbar .option:hover {
             border-bottom: 3px solid $accent;

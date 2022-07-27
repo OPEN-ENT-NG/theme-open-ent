@@ -30,7 +30,7 @@
   }
 }
 
-@media screen and(max-width: $tablette) {
+@media screen and (max-width: $tablette) {
   .workspace-app {
     .height-minus200 {
       height: calc(100vh - 250px);

@@ -11,7 +11,7 @@
     top: 50%;
     margin-top: -15px;
 }
-@media screen and(max-width: $tablette) {
+@media screen and (max-width: $tablette) {
     body{
         .navbar + .row nav.horizontal {
             bottom: 0;
