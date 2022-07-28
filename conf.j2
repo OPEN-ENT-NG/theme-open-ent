@@ -2,5 +2,8 @@
     "name":"{{openENT}}",
     "type": "theme",
     "waitDeploy": false,
+    {% if openENTDir is defined %}
+    "output-dir-name": "{{ openENTDir }}",
+    {% endif %}
     "extension":"-fat.jar"
 }
