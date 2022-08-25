@@ -1,0 +1,18 @@
+﻿.panel {
+  .logo {
+    max-width: 130px;
+    margin-top: 0;
+  }
+
+  &::before {
+    content: "";
+    background: url(../../img/illustrations/open-ent-logo.png) no-repeat;
+    display: block;
+    height: 53px;
+    width: 116px;
+    position: absolute;
+    left: 153px;
+    background-size: contain;
+    top: 7px;
+  }
+}

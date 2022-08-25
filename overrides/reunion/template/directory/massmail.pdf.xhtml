@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Guide de prise en main ONE</title>
+	<style type="text/css">
+	body{
+		font-family: Calibri, Arial, Sans-Serif;
+		font-size: 0.8em;
+	}
+	div.banner{
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	span.content{
+		margin-top: 15px;
+		margin-bottom: 10px;
+		font-size: 15px;
+	}
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+	li{
+		list-style: none;
+	}
+	div.twocolumns > div{
+		max-width: 45%;
+		display: inline-block;
+		vertical-align: top;
+	}
+	div.twocolumns.center > div{
+		vertical-align: middle;
+	}
+	span#login, span#code{
+		color: orange;
+	}
+	img#logo{
+		height: 80px;
+		width: 100%;
+	}
+	img.left-img{
+		width: 280px;
+		margin-right: 30px;
+	}
+	img#compagnon{
+		width: 280px;
+		margin-left: 75px;
+	}
+	img#login{
+		width: 250px;
+		margin-left: 130px;
+	}
+	img#activation{
+		width: 180px;
+		margin-right: 30px;
+	}
+	div.twocolumns > div.txt-wide{
+		max-width: 55%;
+	}
+
+	div.twocolumns > div.txt-wide.first{
+		width: 430px;
+		max-width: none;
+	}
+	div.twocolumns > div.txt-wide.second{
+		width: 410px;
+		max-width: none;
+	}
+	img#oubli{
+		width: 210px;
+		margin-left: 30px;
+	}
+	img#oubli-left{
+		width: 220px;
+		margin-right: 30px;
+	}
+	img#reinit{
+		width: 230px;
+		margin-left: 60px;
+	}
+	.conclusion p{
+		margin-top: 20px;
+	}
+	</style>
+</head>
+
+<body>
+	{{#users}}
+	{{! Users that are not activated }}
+	{{#activationCode}}
+	<div style="page-break-after: always">
+		<img id="logo" src="logo.png" alt="logo"></img>
+		<div class="banner">
+			<span class="content">Ce document s'adresse à <b>{{firstName}} {{lastName}}</b></span><br/>
+			{{#child}}
+			<span class="content"><b>Parent de {{firstName}} {{lastName}} en classe de {{classname}}.</b></span>
+			{{/child}}
+			{{^child}}
+			{{#isInClass}}
+			<span class="content"><b>en classe(s) de{{^classes}} {{classname}}{{/classes}}{{#classes}} {{.}}{{/classes}}.</b></span>
+			{{/isInClass}}
+			{{/child}}
+		</div>
+		<ul>
+			<li>
+				<div class="twocolumns center">
+					<div>
+						<img class="left-img" src="compagnon.jpg" alt="site compagnon"></img>
+					</div>
+					<div>
+						Rendez-vous sur le site <a href="https://ent1d.ac-reunion.fr">ent1d.ac-reunion.fr</a> puis renseignez vos informations de connexion :
+						<p>
+						</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="twocolumns center" style="margin-top: 15px">
+					<div class="txt-wide">
+						<p>
+							Identifiant : <span id="login"><b>{{login}}</b></span><br/>
+							Mot de passe : <span id="code"><b>{{activationCode}}</b></span><br/>
+							<br/>
+							Cliquez ensuite sur « Connexion ».
+						</p>
+					</div>
+					<div>
+						<img id="login" src="login.jpg" alt="login"></img>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="twocolumns center" style="margin-top: 15px">
+					<div>
+						<img id="activation" src="activation.png" alt="activation"></img>
+					</div>
+					<div class="txt-wide first">
+						<p>
+							Dans la nouvelle fenêtre, choisissez votre nouveau mot de passe et confirmez-le. <br/>
+							Nous vous recommandons de mélanger chiffres, lettres, majuscules, minuscules et
+							caractères spéciaux lors du choix de votre mot de passe personnel.<br/>
+							Vous pouvez renseigner votre adresse email pour retrouver facilement votre
+							mot de passe en cas d’oubli. Lisez et acceptez les conditions générales
+							d’utilisation et cliquez sur « Activer ». <br/>
+							Vous êtes maintenant connecté et pouvez commencer à utiliser ONE !
+						</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="twocolumns center" style="margin-top: 15px">
+					<div class="txt-wide second">
+						<p>
+							Conservez bien votre identifiant et votre mot de passe, ils
+							vous seront demandés à chaque connexion à ONE. <br/>
+							Nous vous rappelons qu’il est indispensable de conserver vos données confidentielles.<br/>
+							<br/>
+							En cas d’oubli de votre mot de passe, il vous suffit de cliquer sur le lien
+							« Mot de passe oublié » puis de saisir votre identifiant.<br/>
+							Un message contenant le lien pour renouveler votre mot de passe
+							est alors envoyé sur votre adresse email personnelle.
+						</p>
+					</div>
+					<div>
+						<img id="oubli" src="oubli.jpg" alt="oubli"></img>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="conclusion">
+					<p>
+						Bonne navigation sur ONE !
+					</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	{{/activationCode}}
+	{{! Users that are activated }}
+	{{^activationCode}}
+	<div style="page-break-after: always">
+		<img id="logo" src="logo.png" alt="logo"></img>
+		<div class="banner">
+			<span class="content">Ce document s'adresse à <b>{{firstName}} {{lastName}}</b></span><br/>
+			{{#child}}
+			<span class="content"><b>Parent de {{firstName}} {{lastName}} en classe de {{classname}}.</b></span>
+			{{/child}}
+			{{^child}}
+			{{#isInClass}}
+			<span class="content"><b>en classe{{^classname}}(s){{/classname}} de{{#firstClass}} {{.}}{{/firstClass}}{{#otherClasses}}, {{.}}{{/otherClasses}}.</b></span>
+			{{/isInClass}}
+			{{/child}}
+		</div>
+		<ul>
+			<li>
+				<p>
+					Vous possédez déjà un compte sur ONE.<br/>
+					Votre identifiant de connexion est rappelé ci-contre : <span id="login"><b>{{login}}</b></span><br/>
+					<br/>
+				</p>
+			</li>
+			<li>
+				<p>
+					Si vous ne vous souvenez pas de votre mot de passe,
+					vous pouvez en définir un nouveau en suivant les instructions
+					ci-dessous, également disponibles sur <a href="https://one.opendigitaleducation.com/aide-support/aide-support/connexion/retrouver-son-mot-de-passe/">cette page</a>.<br/>
+					<br/>
+				</p>
+			</li>
+			<li>
+				<div class="twocolumns center" style="margin-top: 15px">
+					<div>
+						<p>
+							Rendez-vous sur le site <a href="https://ent1d.ac-reunion.fr">https://ent1d.ac-reunion.fr</a>.
+						</p>
+					</div>
+					<div>
+						<img id="compagnon" src="compagnon.jpg" alt="site compagnon"></img>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="twocolumns center" style="margin-top: 15px">
+					<div>
+						<img id="oubli-left" src="oubli.jpg" alt="oubli"></img>
+					</div>
+					<div>
+						<p>
+							Cliquez sur « Mot de passe oublié ».
+						</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="twocolumns center" style="margin-top: 15px">
+					<div class="txt-wide">
+						<p>
+							Saisissez ensuite votre identifiant puis cliquez sur « Envoyer ».<br/>
+							Vous recevrez alors un email à l’adresse que vous avez indiquée
+							dans la rubrique « Mon compte ». Cet email contient un lien
+							vous permettant de renouveler votre mot de passe.
+						</p>
+					</div>
+					<div>
+						<img id="reinit" src="reinit.jpg" alt="reinitialisation"></img>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="conclusion">
+					<p>
+						Si vous n’avez pas renseigné d’adresse email dans la rubrique « Mon compte », ce message sera envoyé à <br/>
+						l’enseignant de la classe.
+					</p>
+					<p>
+						Bonne navigation sur ONE !
+					</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	{{/activationCode}}
+	{{/users}}
+</body>
+</html>

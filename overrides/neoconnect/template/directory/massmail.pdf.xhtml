@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+    <!-- We use this i18n key to ensure portability because it is overriden by themes  -->
+	<title>{{#i18n}}directory.admin.massMailing{{/i18n}}</title>
+    <style type="text/css">
+			body {
+				font-family: sans-serif;
+				color: #333;
+			}
+			h2 {font-size: 1.2em}
+			h3 {font-size: 1.1em}
+			h4 {margin-left: 1.1em}
+			strong,
+			a,
+			.red {
+				font-weight: bold;
+				color: #d1232a;
+			}
+			ol li {
+				padding: 10px 0;
+				margin-left: -20px;
+			}
+			.column {
+				width: 30%;
+				margin: 1%;
+				display: inline-block;
+				vertical-align: top;
+				text-align: center;
+				font-size: 0.8em;
+			}
+			.column img {
+				width: 75px;
+				text-align: center;
+			}
+      .center{
+        text-align: center;
+      }
+      #right{
+				text-align: right;
+			}
+			.inline-block .baseline,
+			.inline-block #logo {
+				display: inline-block;
+				vertical-align: middle;
+			}
+      #logo{
+				width: 150px;
+			}
+			.baseline {
+				text-align: right;
+				color: #666;
+				letter-spacing: 2px;
+				font-weight: lighter;
+				padding: 5px;
+				border-bottom: 2px solid transparent;
+			}
+			.neo {
+				border-color: #4bafd5;
+			}
+			.one {
+				border-color: #FF8500;
+			}
+			{{#A5}}
+			@page {
+				size: landscape;
+			}
+			body {
+				font-size: 0.7em;
+			}
+			.size {
+				display: inline-block;
+				vertical-align: top;
+				width: 47%;
+				margin: 0 1%;
+			}
+			.column img {
+				width: 50px;
+			}
+			#logo {
+				width: 100px;
+			}
+			{{/A5}}
+	</style>
+</head>
+
+<body>
+
+{{#users}}
+
+<div class="size"{{^end}} style="page-break-after: always"{{/end}}>
+	<div class="inline-block">
+		<img id="logo" src="logo.png"></img>
+		<p class="baseline neo">Le réseau social collaboratif adapté aux collèges et aux lycées</p>
+	</div>
+	{{^activationCode}}
+	<h2>Informations sur mon compte</h2>
+	{{/activationCode}}
+	{{#activationCode}}
+	<h2>Ma première connexion en 5 étapes</h2>
+	{{/activationCode}}
+    <h3> » Cette fiche s'adresse à <strong>{{firstName}} {{lastName}}</strong></h3>
+	  {{^isGuestOrPersonnel}}
+    <h4>{{^firstChild}}{{#i18n}}{{profile}}{{/i18n}}{{/firstChild}}{{#firstChild}}Parent de <strong>{{firstName}} {{lastName}}</strong>{{#otherChildren}}, <strong>{{firstName}} {{lastName}}</strong>{{/otherChildren}}{{/firstChild}}{{#firstClass}} en classe de <strong>{{.}}</strong>{{#otherClasses}}, <strong>{{.}}</strong>{{/otherClasses}}{{/firstClass}}.</h4>
+	  {{/isGuestOrPersonnel}}
+	  {{#isGuestOrPersonnel}}
+    <h4>{{#i18n}}{{profile}}{{/i18n}}.</h4>
+  	{{/isGuestOrPersonnel}}
+    <p>Réservé aux enseignants, aux personnels, aux élèves et leur famille, l'espace numérique est une solution sécurisée et facile à prendre en main pour :</p>
+    <div class="column">
+        <img src="illustrations/Publipostage_Actus.png"></img>
+        <p>Créer des contenus interactifs (Wiki, Frise, Carte mentale…)</p>
+    </div>
+    <div class="column">
+        <img src="illustrations/Publipostage_Messagerie.png"></img>
+        <p>Simplifier les échanges entre les membres du réseau éducatif</p>
+    </div>
+    <div class="column">
+        <img src="illustrations/Publipostage_Resa_Ressources.png"></img>
+        <p>Rassembler tous les services numériques au même endroit</p>
+    </div>
+    {{^activationCode}}
+    <h2> » Comment me connecter ?</h2>
+    <p>Vous possédez déjà un compte sur l’espace numérique. Il vous suffit de saisir
+    votre identifiant habituel et le mot de passe défini lors de votre première
+    connexion. <br />Pour rappel, votre identifiant est le suivant :</p>
+    <p class="center red">{{login}}</p>
+    <br />
+    <h2> » 3 étapes pour réinitialiser mon mot de passe</h2>
+    <ol>
+			<li>En cas d'oubli de votre mot de passe, rendez-vous sur <a href="{{host}}://{{hostname}}">{{hostname}}</a> et cliquez sur « Mot de passe oublié ».</li>
+			<li>Saisissez votre identifiant puis cliquez sur « Envoyer ». Un mail sera envoyé à l'adresse indiquée lors de l'activation de votre compte.</li>
+			<li>Ouvrez le mail et cliquez ensuite sur le lien pour définir votre nouveau mot de passe.</li>
+		</ol>
+    {{/activationCode}}
+    {{#activationCode}}
+    <h2> » Mode d'emploi de ma première connexion</h2>
+    <ol>
+			<li>Pour se connecter, rendez-vous sur <a href="{{host}}://{{hostname}}">{{hostname}}</a> et cliquez sur « Se connecter ».</li>
+			<li>Entrez votre identifiant (à conserver pour vous connecter ultérieurement) et votre code d'activation :
+				<div class="center">
+            <p class="red">Identifiant : {{login}}</p>
+            <p class="red">Code d'activation : {{activationCode}}</p>
+				</div>
+			</li>
+			<li>Choisissez un nouveau mot de passe, comprenant 8 caractères minimum, <strong>dont au moins une majuscule, une minuscule et un chiffre</strong>.</li>
+			<li>Renseignez votre adresse mail personnelle pour obtenir un mail de réinitialisation en cas d'oubli de votre mot de passe.</li>
+			<li>Vous n'avez plus qu'à lire et accepter les Conditions Générales d'Utilisation.</li>
+		</ol>
+    {{/activationCode}}
+    <p id="right">Bonne navigation !</p>
+</div>
+{{/users}}
+</body>
+
+</html>

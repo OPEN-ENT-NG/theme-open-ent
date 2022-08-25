@@ -1,0 +1,17 @@
+{
+  "default": "Défaut",
+  "dyslexic": "Dyslexiques",
+  "recorder": "Dictaphone",
+  "calendar": "Agenda",
+  "actualites": "Actualités",
+  "community": "Communautés",
+  "admin.xiti": "Paramétrage Xiti",
+  "smartbanner.name": "MonLycée.net",
+  "smartbanner.description": "Téléchargez l'application mobile MonLycee.net",
+  "smartbanner.action": "Télécharger",
+  "smartbanner.icon.uri": "/assets/themes/monlycee/overrides/img/illustrations/logo-monlyceenet.png",
+  "smartbanner.android.store": "Google Play",
+  "smartbanner.android.uri": "https://play.google.com/store/apps/details?id=com.ode.monlyceenet",
+  "smartbanner.ios.store": "App Store",
+  "smartbanner.ios.uri": "https://apps.apple.com/fr/app/monlyc%C3%A9e-net/id1479210717"
+}

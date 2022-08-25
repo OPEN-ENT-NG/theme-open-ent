@@ -1,0 +1,5 @@
+{
+	"auth.charter": "/assets/cgu/it.pdf",
+  "password.errors": "La password deve essere composta da almeno 6 caratteri.",
+	"email.signature": "Il team NEO"
+}

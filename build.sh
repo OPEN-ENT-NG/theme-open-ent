@@ -28,7 +28,7 @@ fi
 
 
 # OVERRIDES VARS
-OVERRIDE_NAME="default"
+OVERRIDE_NAME="cg77"
 for i in "$@"
 do
 case $i in
@@ -85,6 +85,7 @@ initDev () {
 }
 
 build () {
+  rm -rf build-css/
   local extras=$1
   #get skins
   dirs=($(ls -d ./skins/*))

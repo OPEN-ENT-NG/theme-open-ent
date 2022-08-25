@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Guide de prise en main de votre ENT</title>
+	<style type="text/css">
+		body{
+			font-family: 'arial', sans-serif;
+			font-size: 0.8em;
+			line-height: 1.6;
+		}
+		h1{
+			color: #2a9cc8;
+		}
+		h2{
+			color: #2a9cc8;
+		}
+		div.banner{
+			background-color: rgb(213, 239, 248);
+			margin-bottom: 10px;
+			padding: 15px;
+			padding-top: 1px;
+			line-height: 15px;
+		}
+		div.banner span.content{
+			margin-top: 15px;
+			margin-bottom: 10px;
+			font-size: 15px;
+			font-weight: bold;
+		}
+
+		ul li{
+			list-style: circle;
+		}
+
+		div.twocolumns > div{
+			max-width: 45%;
+			display: inline-block;
+			vertical-align: top;
+		}
+		div.twocolumns.center > div{
+			vertical-align: middle;
+		}
+		ul.login-list{
+			margin-top: 35px;
+		}
+		ul.login-list > li{
+			margin-bottom: 15px;
+		}
+		b.highlighted{
+			background-color: #feeb59;
+		}
+
+		div#login{
+			position: absolute;
+			top: 60px;
+			left: 75px;
+		}
+		div#code{
+			position: absolute;
+			top: 90px;
+			left: 75px;
+		}
+		img#logo-neo{
+			width: 200px;
+		}
+		img#besoinaide{
+			width: 250px;
+			margin-left: 30px;
+		}
+		img#demandereinitialisation{
+			width: 250px;
+			margin-right: 30px;
+		}
+		img#reinitialisation{
+			width: 300px;
+			margin-left: 30px;
+		}
+		#logo {
+			width: 220px;
+			text-align:right;
+		}
+		.text-right {
+			text-align: right;
+		}
+		.float-right {
+			float: right;
+		}
+	</style>
+</head>
+
+<body>
+	{{#users}}
+	{{! Users that are not activated }}
+	{{#activationCode}}
+	<div style="page-break-after: always">
+		<p class="text-right"><img id="logo" src="logo-color.png"></img></p>
+		<div style="margin: 25px 0">
+			<p>À l'intention de <b>{{firstName}} {{lastName}}</b>{{^isInClass}}.{{/isInClass}}</p>
+			{{#child}}
+				<p>Parent de <b>{{firstName}} {{lastName}}</b> en classe de {{classname}}.</p>
+			{{/child}}
+			{{^child}}
+				{{#isInClass}}
+					<p>en classe(s) de{{^classes}} {{classname}}{{/classes}}{{#classes}} {{.}}{{/classes}}.</p>
+				{{/isInClass}}
+			{{/child}}
+		</div>
+		<p style="margin: 25px 0; font-size: 1.2em"><u>Objet: Connexion à votre Espace Numérique de Travail</u></p>
+		<img class="float-right" src="login.png" style="width: 250px"></img>
+		<p>Pour vous connecter, rendez-vous sur <br /><a href="https://ent.l-educdenormandie.fr">https://ent.l-educdenormandie.fr</a></p>
+		<p style="margin-top: 25px">Entrez ensuite vos coordonnées personnelles :</p>
+		<ul style="margin: 25px 0">
+			<li>Identifiant : <b>{{login}}</b></li>
+			<li>Code d'activation <b>{{activationCode}}</b></li>
+		</ul>
+
+		<p style="margin-top: 75px">Lors de votre première connexion à l’ENT il vous sera demandé de choisir un nouveau de mot de passe, d’indiquer votre adresse e-mail personnelle et, si vous le souhaitez, de saisir un numéro de téléphone portable.</p>
+		<p>Votre nouveau de passe doit contenir 6 caractères minimum.</p>
+		<p>Notez bien ce mot de passe. En cas d’oubli, il vous suffira de cliquer sur « mot de passe oublié » puis de saisir votre identifiant. Un nouveau mot de passe sera envoyé sur votre adresse email personnelle.</p>
+		<p>A partir de cette connexion, vous pourrez accéder à l’espace numérique de travail de votre établissement. Les élèves ont des identifiants distincts de ceux de leurs parents. Nous vous rappelons qu’il est indispensable de conserver vos données confidentielles.</p>
+		<p class="text-right" style="margin: 50px 0; font-size: 1.2em">Bonne navigation !</p>
+	</div>
+	{{/activationCode}}
+	{{! Users that are activated }}
+	{{^activationCode}}
+	<div style="page-break-after: always">
+		<p class="text-right"><img id="logo" src="logo.png"></img></p>
+		<div style="margin: 25px 0">
+			<p>À l'intention de <b>{{firstName}} {{lastName}}</b>{{^isInClass}}.{{/isInClass}}</p>
+			{{#child}}
+				<p>Parent de <b>{{firstName}} {{lastName}}</b> en classe de {{classname}}.</p>
+			{{/child}}
+			{{^child}}
+				{{#isInClass}}
+					<p>en classe(s) de{{^classes}} {{classname}}{{/classes}}{{#classes}} {{.}}{{/classes}}.</p>
+				{{/isInClass}}
+			{{/child}}
+		</div>
+		<p style="margin: 25px 0; font-size: 1.2em"><u>Objet: Connexion à votre Espace Numérique de Travail</u></p>
+		<p style="margin: 25px 0">Vous possédez déjà un compte sur l’ENT.</p>
+		<ul style="margin: 25px 0">
+			<li>Identifiant : <b>{{login}}</b></li>
+		</ul>
+		<p style="margin: 25px 0">Si vous ne vous souvenez pas de votre mot de passe, vous pouvez en définir un nouveau en suivant les instructions ci-dessous.</p>
+		<h2>1. Demande de réinitialisation de mot de passe</h2>
+		<img class="float-right" src="help.png" style="width: 250px"></img>
+		<ul style="margin: 25px 0">
+			<li>Aller sur le site <a href="https://ent.l-educdenormandie.fr">https://ent.l-educdenormandie.fr</a></li>
+			<li>Cliquez sur <b>«Besoin d'aide»</b></li>
+			<li>Cliquez ensuite sur <b>«Vous avez perdu votre mot de passe ?»</b>, saisissez votre <b>identifiant</b>b> puis cliquez sur <b>«Envoyer»</b>.</li>
+		</ul>
+		<p>Un mail sera envoyé à l’adresse que vous avez saisie lors de l’activation de votre compte.</p>
+		<h2>2. Réinitialisation du mot de passe</h2>
+		<p>Cliquez ensuite sur le lien figurant dans le mail reçu pour définir votre nouveau mot de passe. Ce dernier doit contenir 6 caractères minimum.</p>
+		<p>À partir de cette connexion, vous pourrez accéder à l’espace numérique de travail de votre établissement. Les élèves ont des identifiants distincts de ceux de leurs parents.</p>
+		<p>Nous vous rappelons qu’il est indispensable de conserver vos données confidentielles.</p>
+		<p class="text-right" style="margin: 50px 0; font-size: 1.2em">Bonne navigation !</p>
+	</div>
+	{{/activationCode}}
+	{{/users}}
+</body>
+
+</html>

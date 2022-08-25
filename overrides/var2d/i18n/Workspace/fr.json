@@ -1,0 +1,13 @@
+{
+	"workspace": "Espace de stockage",
+	"workspace.header": "Espace de stockage",
+	"workspace.headers": "Espace de stockage",
+	"workspace.title": "Espace de stockage",
+	"workspace.search.inworkspace": "Rechercher dans tout l'espace de stockage",
+	"workspace.search.results.inworkspace": "Résultats de la recherche dans tout l'espace de stockage",
+	"workspace.add.document.success": "Le fichier a été importé et est disponible dans votre espace de stockage",
+	"workspace.help.title": "Du nouveau dans l'espace de stockage",
+	"empty.workspace": "Bienvenue dans votre espace de stockage, le cloud qui vous permet de stocker en ligne toutes vos ressources. Chargez ou téléchargez vos documents, commentez-les et partagez-les facilement aux membres de votre réseau !",
+	"workspace.element.uri.notfound": "Les fichiers ou dossiers ont été déplacés dans un dossier auquel vous n'avez pas accès, vous pouvez les retrouver en effectuant une recherche dans tout l'espace de stockage",
+	"confirm.remove": "Attention, si vous supprimez une image ou du son, il ne sera plus visible dans les applications qui l'utilisent (blog, cahier multimédia, ...). Êtes-vous sûr de vouloir supprimer le document ?"
+}

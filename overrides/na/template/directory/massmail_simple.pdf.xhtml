@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+	<title>{{#i18n}}directory.admin.massMailing{{/i18n}}</title>
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			font-family: Arial, sans-serif;
+			color: #555;
+			line-height: 1.4;
+		}
+		@page {
+			size: A4;
+		}
+		@media print {
+			html, body {
+				width: 220mm;
+				height: 297mm;
+			}
+		}
+		p {
+			font-size: 12px;
+			margin: 0;
+		}
+		strong {
+			color: #444;
+		}
+		a {
+			color: #3889c1;
+		}
+		.card {
+			float: left;
+			width: 8cm;
+			min-height: 5.9cm;
+			border: 0.5px dashed #ccc;
+			padding: 15px;
+			margin: 0;
+		}
+		.logo {
+			width: 100px;
+			float: right;
+		}
+		.grade {
+			display: inline-block;
+			font-size: 11px;
+			margin-bottom: 15px;
+			font-style: oblique;
+		}
+		.name {
+			font-size: 16px;
+			margin: 0;
+			line-height: 1.1;
+		}
+		.activated {
+			font-style: oblique;
+		}
+	</style>
+</head>
+
+<body>
+{{#blocks}}
+<div style="page-break-after:always;">
+	{{#users}}
+	<div class="card">
+		<img class="logo" src="illustrations/logo_noir.png"></img>
+		<h2 class="name">{{displayName}}</h2>
+		<strong class="grade">{{#i18n}}{{profile}}{{/i18n}}</strong>
+		<br />
+		{{#firstChild}}
+		<p><strong>{{#i18n}}classAdmin.template.relative{{/i18n}} : </strong><br />{{firstName}} {{lastName}}{{#otherChildren}}, {{firstName}} {{lastName}}{{/otherChildren}}</p>
+		<br />
+		{{/firstChild}}
+		<p><strong>{{#i18n}}classAdmin.template.id{{/i18n}} : </strong>{{login}}</p>
+		{{#activationCode}}
+		<p><strong>{{#i18n}}classAdmin.template.code{{/i18n}} : </strong>{{activationCode}}</p>
+		{{/activationCode}}
+		{{^activationCode}}
+		<p class="activated">{{#i18n}}classAdmin.template.activated{{/i18n}}</p>
+		{{/activationCode}}
+		<p>
+			<table style="width:100%">
+				<tr>
+					<th>
+						<strong>{{#i18n}}classAdmin.template.url{{/i18n}} :</strong><br />
+						{{#activationCode}}
+						<a href="https://lyceeconnecte.fr">https://lyceeconnecte.fr</a><br/>
+						{{/activationCode}}
+						{{^activationCode}}
+						<a href="https://mon.lyceeconnecte.fr">https://lyceeconnecte.fr</a><br/>
+						{{/activationCode}}
+					</th>
+					<th style="width:53%">
+						<span style="font-size: 10px;font-style: normal">Cliquez sur "Se connecter" puis sur "Lycée Connecté" après avoir sélectionné votre profil.</span>
+					</th>
+				</tr>
+			</table>
+		</p>
+	</div>
+	{{/users}}
+	{{^end}}
+	<div>&nbsp;</div>
+	{{/end}}
+</div>
+{{/blocks}}
+</body>
+</html>

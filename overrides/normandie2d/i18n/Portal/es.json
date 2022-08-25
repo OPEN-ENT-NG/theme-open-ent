@@ -1,0 +1,21 @@
+{
+	"userBook.mood.angry": "concentrado(a)",
+	"userBook.mood.default": "No especificado",
+	"userBook.mood.dreamy": "nervioso(a)",
+	"userBook.mood.happy": "feliz",
+	"userBook.mood.joker": "decidido(a)",
+	"userBook.mood.love": "inspirado(a)",
+	"userBook.mood.proud": "sereno(a)",
+	"userBook.mood.sad": "distraído(a)",
+	"userBook.mood.sick": "impaciente",
+	"userBook.mood.tired": "estresado(a)",
+	"userBook.mood.worried": "preocupado(a)",
+	"smartbanner.name": "L'Educ de Normandie",
+	"smartbanner.description": "Descargar la aplicación móvil",
+	"smartbanner.action": "Descargar",
+	"smartbanner.icon.uri": "/assets/themes/normandie1d/overrides/img/illustrations/educ.png",
+	"smartbanner.android.store": "Google Play",
+	"smartbanner.android.uri": "https://play.google.com/store/apps/details?id=com.ode.leducdenormandie",
+	"smartbanner.ios.store": "App Store",
+	"smartbanner.ios.uri": "https://apps.apple.com/fr/app/leduc-de-normandie/id1577366447"
+}

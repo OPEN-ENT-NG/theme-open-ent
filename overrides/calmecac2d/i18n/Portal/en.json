@@ -1,0 +1,21 @@
+{
+	"userBook.mood.angry": "concentrated",
+	"userBook.mood.default": "Not provided",
+	"userBook.mood.dreamy": "anxious",
+	"userBook.mood.happy": "accomplished",
+	"userBook.mood.joker": "determined",
+	"userBook.mood.love": "inspired",
+	"userBook.mood.proud": "calm",
+	"userBook.mood.sad": "distracted",
+	"userBook.mood.sick": "impatient",
+	"userBook.mood.tired": "stressed out",
+	"userBook.mood.worried": "worried",
+	"smartbanner.name": "NEO Pocket",
+	"smartbanner.description": "All of NEO's main features, right at your fingertips!",
+	"smartbanner.action": "Ver",
+	"smartbanner.icon.uri": "/assets/themes/calmecac2d/img/illustrations/neo-pocket.png",
+	"smartbanner.android.store": "Google Play",
+	"smartbanner.android.uri": "https://play.google.com/store/apps/details?id=com.ode.neo",
+	"smartbanner.ios.store": "App Store",
+	"smartbanner.ios.uri": "https://itunes.apple.com/us/app/one-pocket/id1458097439"
+}

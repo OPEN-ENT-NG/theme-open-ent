@@ -1,0 +1,11 @@
+{
+	"auth.charter": "/assets/cgu/fr.pdf",
+  "password.errors": "Votre mot de passe personnel doit contenir au moins 6 caractères.",
+	"email.signature": "L'équipe NEO",
+	"loginperseducnat": "Enseignants et personnels de l'Éducation Nationale",
+	"loginother": "Invités et personnels hors Éducation Nationale",
+	"loginstudent": "Élèves et parents (connexion via NEO)",
+	"relative": "Élèves et parents (connexion via ÉduConnect)",
+	"otherrelative": "Élèves et parents (connexion via ÉduConnect)",
+	"wayf.select.profile": "Choisissez votre mode de connexion.<br>A NOTER : à partir de la rentrée 2022, élèves et parents devront progressivement se connecter via ÉduConnect.<br>Les identifiants seront distribués par les établissements lors des 1ères semaines de la rentrée scolaire."
+}

@@ -1,0 +1,19 @@
+{
+  "default": "Défaut",
+  "dyslexic": "Dyslexiques",
+  "recorder": "Dictaphone",
+  "calendar": "Agenda",
+  "actualites": "Actualités",
+  "community": "Communautés",
+  "admin.xiti": "Paramétrage Xiti", 
+  "oops": "Contenu inaccessible", 
+  "e404.page": "La page demandée n’existe pas, a été supprimée ou vous n’avez pas les droits pour y accéder.",
+  "smartbanner.name": "Open ENT",
+  "smartbanner.description": "L'essentiel de votre réseau éducatif !",
+  "smartbanner.action": "Voir",
+  "smartbanner.icon.uri": "/assets/themes/cg77/overrides/img/illustrations/open-ent-pocket.png",
+  "smartbanner.android.store": "Google Play",
+  "smartbanner.android.uri": "https://play.google.com/store/apps/details?id=fr.openent.mobile",
+  "smartbanner.ios.store": "App Store",
+  "smartbanner.ios.uri": "https://apps.apple.com/fr/app/open-ent/id1526672567"
+}

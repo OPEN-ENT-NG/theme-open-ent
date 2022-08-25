@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+
+<head>
+    <!-- We use this i18n key to ensure portability because it is overriden by themes  -->
+	<title>{{#i18n}}directory.admin.massMailing{{/i18n}}</title>
+    <style type="text/css">
+			body {
+				font-family: sans-serif;
+				color: #333;
+			}
+			h2 {font-size: 1.2em}
+			h3 {font-size: 1.1em}
+			strong,
+			a,
+			.red {
+				font-weight: bold;
+				color: #d1232a;
+			}
+			ol li {
+				padding: 10px 0;
+				margin-left: -20px;
+			}
+			.column {
+				width: 30%;
+				margin: 1%;
+				display: inline-block;
+				vertical-align: top;
+				text-align: center;
+				font-size: 0.8em;
+			}
+			.column img {
+				width: 75px;
+				text-align: center;
+			}
+      .center{
+        text-align: center;
+      }
+      #right{
+				text-align: right;
+			}
+			.inline-block .baseline,
+			.inline-block #logo {
+				display: inline-block;
+				vertical-align: middle;
+			}
+      #logo{
+				width: 150px;
+			}
+			.baseline {
+				text-align: right;
+				color: #666;
+				letter-spacing: 2px;
+				font-weight: lighter;
+				padding: 5px;
+				border-bottom: 2px solid transparent;
+			}
+			.neo {
+				border-color: #4bafd5;
+			}
+			.one {
+				border-color: #FF8500;
+			}
+			{{#A5}}
+			@page {
+				size: landscape;
+			}
+			body {
+				font-size: 0.7em;
+			}
+			.size {
+				display: inline-block;
+				vertical-align: top;
+				width: 47%;
+				margin: 0 1%;
+			}
+			.column img {
+				width: 50px;
+			}
+			#logo {
+				width: 100px;
+			}
+			{{/A5}}
+	</style>
+</head>
+
+<body>
+
+{{#users}}
+
+<div class="size"{{^end}} style="page-break-after: always"{{/end}}>
+	<div class="inline-block">
+    	<img id="logo" src="logo.png"></img>
+    	<p class="baseline neo">A rede social colaborativa adaptada ao ensino médio</p>
+	</div>
+	{{^activationCode}}
+	<h2>Informações na minha conta</h2>
+	{{/activationCode}}
+	{{#activationCode}}
+	<h2>Minha primeira conexão em 5 etapas</h2>
+	{{/activationCode}}
+    <h3> » Esta ficha se dirige a <strong>{{firstName}} {{lastName}}</strong>{{#firstChild}}, pais de <strong>{{firstName}} {{lastName}}</strong>{{#otherChildren}}, <strong>{{firstName}} {{lastName}}</strong>{{/otherChildren}}{{/firstChild}}{{#firstClass}} na(s) turma(s) de <strong>{{.}}</strong>{{#otherClasses}}, {{.}}{{/otherClasses}}{{/firstClass}}.</h3>
+    <p>Reservado aos professores, funcionários da escola, alunos e suas famílias, o ambiente virtual é uma solução segura e simples para:</p>
+    <div class="column">
+        <img src="illustrations/Publipostage_Actus.png"></img>
+        <p>Criar conteúdos interativos (Wiki, Linha do Tempo, Mapa mental…)</p>
+    </div>
+    <div class="column">
+        <img src="illustrations/Publipostage_Messagerie.png"></img>
+        <p>Simplificar a comunicação entre os membros da rede educativa</p>
+    </div>
+    <div class="column">
+        <img src="illustrations/Publipostage_Resa_Ressources.png"></img>
+        <p>Reunir todos os serviços digitais em um mesmo lugar</p>
+    </div>
+    {{^activationCode}}
+    <h2> » Como me conectar?</h2>
+    <p>Você já possui uma conta no ambiente virtual. Basta agora digitar seu login
+	e sua senha, definida no momento de sua primeira conexão.
+    <br />Lembrete: seu login é:</p>
+    <p class="center red">{{login}}</p>
+    <br />
+    <h2> » 3 etapas para reiniciar minha senha</h2>
+    <ol>
+			<li>Caso tenha esquecido sua senha, entre em <a href="{{host}}://{{hostname}}">{{hostname}}</a> e clique em « Senha esquecida ».</li>
+			<li>Digite seu login depois clique em « Enviar ». Um e-mail será enviado ao endereço indicado no momento da ativação da sua conta.</li>
+			<li>Abra o e-mail e clique em seguida no link para redefinir a sua senha.</li>
+		</ol>
+    {{/activationCode}}
+    {{#activationCode}}
+    <h2> » Instruções para a primeira conexão</h2>
+    <ol>
+			<li>Para se conectar, entre em <a href="{{host}}://{{hostname}}">{{hostname}}</a> e clique em « Conectar-se ».</li>
+			<li>Digite login (conservar para as próximas conexões) e seu código de ativação:
+				<div class="center">
+					<p class="red">Login:  {{login}}</p>
+					<p class="red">Código de ativação: {{activationCode}}</p>
+				</div>
+			</li>
+			<li>Escolha uma nova senha, com no mínimo 8 caracteres, <strong>e pelo menos uma letra maiúscula, uma minúscula e um número</strong>.</li>
+			<li>Digite seu e-mail pessoal para receber um e-mail de reinicialização caso esqueça sua senha.</li>
+			<li>Agora só falta ler e aceitar as Condições Gerais de Utilização.</li>
+		</ol>
+    {{/activationCode}}
+    <p id="right">Boa navegação!</p>
+</div>
+{{/users}}
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+{
+  "auth.title" : "One : Autenticação",
+  "auth.resetCodeSent": "Um email foi enviado (o a seu profesor se você ê aluno) com instruções para modificar a senha.",
+  "auth.welcome.p1" : "Bem vindo sobre One, o Ambiente Virtual de Aprendizagem para escolas primàrias!",
+  "auth.welcome.p2" : "Alunos, professores, funcionàrios e pais, ONE permite aceder facilmente a informações e instrumentos colaborativos. Este versão è muito simples e vai evoluir durante o ano com novos serviços e novas funcionalidades.",
+  "auth.charter": "/assets/cgu/pt.pdf",
+  "password.errors": "Escolha no mínimo 6 caracteres.",
+	"email.signature": "A equipe ONE"
+}

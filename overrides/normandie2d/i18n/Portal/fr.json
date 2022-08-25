@@ -1,0 +1,22 @@
+{
+  "userBook.mood.angry": "concentré(e)",
+  "userBook.mood.default": "Non renseigné",
+  "userBook.mood.dreamy": "nerveux(se)",
+  "userBook.mood.happy": "accompli(e)",
+  "userBook.mood.joker": "déterminé(e)",
+  "userBook.mood.love": "inspiré(e)",
+  "userBook.mood.proud": "serein(e)",
+  "userBook.mood.sad": "distrait(e)",
+  "userBook.mood.sick": "impatient(e)",
+  "userBook.mood.tired": "stressé(e)",
+  "userBook.mood.worried": "incertain(e)",
+  "smartbanner.name": "L'Educ de Normandie",
+  "smartbanner.description": "Mon réseau éducatif en poche !",
+  "smartbanner.action": "Voir",
+  "smartbanner.icon.uri" : "/assets/themes/normandie2d/img/illustrations/educ.png",
+  "smartbanner.android.store": "Google Play",
+  "smartbanner.android.uri": "https://play.google.com/store/apps/details?id=com.ode.leducdenormandie",
+  "smartbanner.ios.store": "App Store",
+  "smartbanner.ios.uri": "https://apps.apple.com/fr/app/leduc-de-normandie/id1577366447",
+  "disconnected.redirect.url": "https://connexion.l-educdenormandie.fr/"
+}

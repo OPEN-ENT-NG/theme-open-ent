@@ -1,0 +1,15 @@
+{
+  "auth.charter": "/assets/cgu/Charte_Wilapa.pdf",
+  "password.errors": "Votre mot de passe personnel doit contenir au moins 6 caractères.",
+  "student":"ÉLÈVE",
+  "otherstudent":"ÉLÈVE",
+  "loginstudent":"ÉLÈVE",
+  "teacher":"ENSEIGNANT",
+  "otherteacher":"ENSEIGNANT",
+  "relative":"PARENT",
+  "otherrelative":"PARENT",
+  "loginrelative":"PARENT",
+  "perseducnat":"PERSONNEL DE L'ACADÉMIE",
+  "otherperseducnat":"PERSONNEL DE L'ACADÉMIE",
+  "loginother":"INVITÉ OU LYCÉE AGRICOLE"
+}

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Guide de prise en main monLyc&eacute;e.net</title>
+	<style type="text/css">
+		body{
+			font-family: 'Verdana';
+			font-size: 0.8em;
+		}
+		h1{
+			color: rgb(58, 155, 252);
+		}
+		h2{
+			color: rgb(58, 155, 252);
+		}
+		div.banner{
+			background-color: rgb(213, 239, 248);
+			margin-top: 20px;
+			margin-bottom: 10px;
+			padding: 15px;
+			padding-top: 1px;
+			line-height: 15px;
+		}
+		div.banner span.content{
+			margin-top: 15px;
+			margin-bottom: 10px;
+			font-size: 15px;
+			font-weight: bold;
+		}
+
+		ul li{
+			list-style: square;
+		}
+
+		div.twocolumns > div{
+			max-width: 45%;
+			display: inline-block;
+			vertical-align: top;
+		}
+		div.twocolumns.center > div{
+			vertical-align: middle;
+		}
+		ul.login-list{
+			margin-top: 55px;
+		}
+		ul.login-list > li{
+			margin-bottom: 15px;
+		}
+
+		div#login{
+			position: absolute;
+			top: 60px;
+			left: 75px;
+		}
+		div#code{
+			position: absolute;
+			top: 90px;
+			left: 75px;
+		}
+		img#logo{
+			width: 300px;
+		}
+		img#connexion{
+			width: 200px;
+			margin-left: 30px;
+		}
+		img#besoinaide{
+			width: 210px;
+			margin-left: 30px;
+		}
+		img#demandereinitialisation{
+			width: 250px;
+			margin-right: 30px;
+		}
+		img#reinitialisation{
+			width: 300px;
+			margin-left: 30px;
+		}
+		img#ode{
+			width: 230px;
+		}
+		img#licence{
+			width: 150px;
+			margin-left: 300px;
+		}
+		.copyright{
+			margin-top: 50px;
+		}
+	</style>
+</head>
+
+<body>
+	{{#users}}
+	{{! Users that are not activated }}
+	{{#activationCode}}
+	<div{{^end}} style="page-break-after: always"{{/end}}>
+		<img id="logo" src="logo.png"></img>
+		<div class="banner">
+			<h1>La premi&egrave;re connexion &agrave; monLyc&eacute;e.net</h1>
+			<span class="content">Ce document s'adresse &agrave; <i>{{firstName}} {{lastName}}</i>{{^isInClass}}.{{/isInClass}}</span>
+			{{#child}}
+				<br/>
+				<span class="content">Parent de <i>{{firstName}} {{lastName}}</i> en classe de {{classname}}.</span>
+			{{/child}}
+			{{^child}}
+				{{#isInClass}}
+					<span class="content">en classe(s) de{{^classes}} {{classname}}{{/classes}}{{#classes}} {{.}}{{/classes}}.</span>
+				{{/isInClass}}
+			{{/child}}
+		</div>
+
+		La premi&egrave;re connexion &agrave; monLyc&eacute;e.net comprend une &eacute;tape pr&eacute;alable indispensable, qui vous permet de personnaliser vos informations de connexion.
+
+		<ul>
+			<li>
+				<h2>De quoi se munir ?</h2>
+				Pour se connecter &agrave; monLyc&eacute;e.net, vous devez vous munir de votre adresse &eacute;lectronique personnelle et de cette feuille.
+			</li>
+			<li>
+				<h2>Comment acc&eacute;der &agrave; monLyc&eacute;e.net ?</h2>
+				Rendez-vous sur le site <a href="https://ent.iledefrance.fr">ent.iledefrance.fr</a>
+			</li>
+			<li>
+				<h2>Comment se connecter la premi&egrave;re fois ?</h2>
+				<b>Utilisez les identifiants ci-dessous sur la page de connexion de monLyc&eacute;e.net :</b>
+				<div class="twocolumns" style="margin-top: 15px">
+					<div>
+						<ul class="login-list">
+							<li>Saisissez votre identifiant</li>
+							<li>et le code d'activation</li>
+							<li>Cliquez sur <b>Connexion</b></li>
+						</ul>
+					</div>
+					<div style="position: relative">
+						<img src="login.png" alt="login"></img>
+						<div id="login"><b>{{login}}</b></div>
+						<div id="code"><b>{{activationCode}}</b></div>
+					</div>
+				</div>
+
+			</li>
+		</ul>
+
+		<div class="footer">
+			<p>
+				Pour s&eacute;curiser vos acc&egrave;s, il vous sera demand&eacute;
+				de choisir un nouveau mot de passe,
+				d’indiquer votre adresse e-mail personnelle et, si vous le souhaitez,
+				d’indiquer un num&eacute;ro de t&eacute;l&eacute;phone portable.<br/>
+				Vous aurez aussi la possibilit&eacute; de consulter
+				la charte d’utilisation et l’obligation d’en accepter les termes.</p>
+
+			<p class="highlighted">
+				Votre nouveau mot de passe doit contenir au minimum 8 caract&egrave;res.
+			</p>
+
+			<p>
+				<b>D&eacute;sormais, vous pouvez vous connecter &agrave; l'ENT en utilisant votre nouveau mot de passe.</b>
+				<br/>
+				<br/>
+				<b>Bonne navigation !</b>
+			</p>
+		</div>
+	</div>
+	{{/activationCode}}
+	{{! Users that are activated }}
+	{{^activationCode}}
+	<div{{^end}} style="page-break-after: always"{{/end}}>
+		<img id="logo" src="logo.png"></img>
+		<div class="banner">
+			<h1>Informations sur votre compte monLyc&eacute;e.net</h1>
+			<span class="content">Ce document s'adresse &agrave; <i>{{firstName}} {{lastName}}</i>{{^isInClass}}.{{/isInClass}}</span>
+			{{#child}}
+				<br/>
+				<span class="content">Parent de <i>{{firstName}} {{lastName}}</i> en classe de {{classname}}.</span>
+			{{/child}}
+			{{^child}}
+				{{#isInClass}}
+					<span class="content">en classe{{^classes}}{{#classname}} {{classname}}{{/classname}}{{/classes}}{{#classes}} {{.}}{{/classes}}.</span>
+				{{/isInClass}}
+			{{/child}}
+		</div>
+
+		<p>Vous poss&eacute;dez d&eacute;j&agrave; un compte sur l’ENT (environnement num&eacute;rique de travail) monLyc&eacute;e.net.</p>
+
+		<p>Votre identifiant de connexion est rappel&eacute; ci-contre : <i><b>{{login}}</b></i></p>
+
+		<p>Si vous ne vous souvenez pas de votre mot de passe, vous pouvez en d&eacute;finir un nouveau en suivant les instructions ci-dessous.</p>
+
+		<ul>
+			<li>
+				<h2>Demande de r&eacute;initialisation de mot de passe</h2>
+				<div class="twocolumns center">
+					<div>
+						<p><i>
+							Rendez-vous &agrave; l’adresse <a href="https://ent.iledefrance.fr">ent.iledefrance.fr</a> et cliquez sur « Mot de passe oublié ? ».
+						</i></p>
+					</div>
+					<div>
+						<img id="besoinaide" src="capture_mdp.png" alt="Besoin d'aide"></img>
+					</div>
+				</div>
+				<div class="twocolumns center">
+					<div>
+						<img id="demandereinitialisation" src="capture_mdp2.png" alt="Demande de r&eacute;initialisation"></img>
+					</div>
+					<div>
+						<p>
+							Cliquez ensuite sur « Vous avez perdu votre mot de passe »,
+							saisissez votre identifiant puis cliquez sur « Envoyer ».<br/>
+							Un mail sera envoy&eacute; &agrave; l’adresse que vous avez saisie
+							lors de l’activation de votre compte.
+						</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<h2>R&eacute;initialisation du mot de passe</h2>
+				Cliquez ensuite sur le lien hypertexte dans le mail reçu pour d&eacute;finir votre nouveau mot de passe.
+				<br/>
+				<br/>
+				Bonne navigation !
+			</li>
+		</ul>
+	</div>
+	{{/activationCode}}
+	{{/users}}
+</body>
+
+</html>

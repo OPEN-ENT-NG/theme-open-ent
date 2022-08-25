@@ -1,0 +1,10 @@
+{
+  "workspace.title": "Documents",
+  "workspace.headers": "Documents",
+  "workspace.header": "Documents",
+  "workspace.headers.short": "Documents",
+  "workspace.search.results.inworkspace": "Résultats de la recherche dans tout Documents",
+  "workspace.search.inworkspace": "Rechercher dans tout Documents",
+  "workspace.help.title": "Du nouveau dans Documents!",
+  "max.file.size": "524288000"
+}

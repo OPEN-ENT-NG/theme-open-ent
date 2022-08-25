@@ -1,0 +1,10 @@
+{
+    "smartbanner.name": "MonLycée.net",
+    "smartbanner.description": "All of MonLycée.net's main features, right at your fingertips!",
+    "smartbanner.action": "Ver",
+    "smartbanner.icon.uri": "/assets/themes/monlycee/overrides/img/illustrations/logo-monlyceenet.png",
+    "smartbanner.android.store": "Google Play",
+    "smartbanner.android.uri": "https://play.google.com/store/apps/details?id=com.ode.monlyceenet",
+    "smartbanner.ios.store": "App Store",
+    "smartbanner.ios.uri": "https://apps.apple.com/mr/app/monlyc%C3%A9e-net/id1479210717"
+}

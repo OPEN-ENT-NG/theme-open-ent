@@ -1,0 +1,6 @@
+{
+	"auth.charter": "/assets/cgu/CGU_colleges.pdf",
+	"email.signature" : "L'équipe ENT",
+	"auth.resetCodeSent": "Un mail vous a été envoyé (ou à votre enseignant si vous êtes un élève), avec les instructions pour changer votre mot de passe.",
+	"password.errors": "Choisissez 6 caractères minimum, dont une minuscule, une majuscule et un chiffre ou un caractère spécial."
+	}

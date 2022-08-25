@@ -1,0 +1,11 @@
+{
+  "email.signature" : "L'équipe Wilapa",
+  "welcome.subject" : "Bienvenue dans l'ENT Wilapa",
+  "welcome.info" : "Bienvenue dans votre ENT Wilapa !",
+  "welcome.signature" : "L'équipe Wilapa",
+  "no-reply" : "L'équipe Wilapa",
+  "password.recommandations": "",
+  "directory.massmail.mail.subject.not.activated": "Vos informations de connexion à Wilapa",
+  "directory.massmail.mail.subject.activated": "Vos informations de connexion à Wilapa",
+  "password.errors": "Votre mot de passe personnel doit contenir au moins 6 caractères."
+}

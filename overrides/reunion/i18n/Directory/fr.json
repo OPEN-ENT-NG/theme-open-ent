@@ -1,0 +1,16 @@
+{
+  "directory.admin.title": "One : Admin annuaire",
+  "classAdmin.fileHelp": "Vous pouvez obtenir un export de votre classe en faisant une demande auprès de votre directeur(trice). Si ce n'est pas possible, vous pouvez récupérer et compléter les modèles proposés dans la rubrique Aide et Support du <u><a href=\"http://one.opendigitaleducation.com/aide-support/aide-support/parametrage-de-la-classe/creer-des-utilisateurs-dans-la-classe/\" target=\"_blank\">site ONE</a></u>. Chaque tableau doit au moins contenir le nom, le prénom, la date de naissance et la classe des utilisateurs concernés.",
+  "email.user.created.info" : "Votre demande de création de classe sur ONE a été validée.",
+  "email.activation.infos2" : "La solution ONE est très intuitive et nécessite peu de formation. Néanmoins, des tutoriels, de la documentation, une FAQ et un accès au support est disponible sur : <a href=\"http://oneconnect.opendigitaleducation.com\">http://oneconnect.opendigitaleducation.com</a>.",
+  "email.signature" : "L'équipe ONE",
+  "welcome.subject" : "Bienvenue dans l'ENT ONE",
+  "welcome.info" : "Bienvenue dans votre ENT ONE !",
+  "welcome.class.admin.info5" : "Pour toute information complémentaire sur la prise en main de ONE, vous trouverez des tutoriels, de l’aide et des documents sur le site <a href=\"http://one.opendigitaleducation.com\">http://one.opendigitaleducation.com</a>, et plus généralement toute l'actualité de l'ENT.",
+  "welcome.signature" : "L'équipe ONE",
+  "no-reply" : "L'équipe ONE",
+  "password.recommandations": "",
+  "directory.massmail.mail.subject.not.activated": "Vos informations de connexion à ONE",
+  "directory.massmail.mail.subject.activated": "Vos informations de connexion à ONE", 
+  "password.errors": "Votre mot de passe personnel doit contenir au moins 6 caractères."
+}

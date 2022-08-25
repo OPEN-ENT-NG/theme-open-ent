@@ -1,0 +1,4 @@
+{
+  "auth": ["forgot-form", "activation-form"],
+  "portal": ["conversation-unread"]
+}

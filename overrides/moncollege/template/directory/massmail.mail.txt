@@ -1,0 +1,42 @@
+{{! Users that are not activated }}
+{{#activationCode}}
+Bonjour,<br/>
+<br/>
+Ceci est un mail généré automatiquement qui contient vos informations de première connexion à MonCollege.essonne.fr.<br/>
+La première connexion à MonCollege.essonne.fr s'effectue en passant par le site d'accompagnement <a href="moncollege.essonne.fr">MonCollege.essonne.fr</a> en cliquant sur le bouton "connexion à MonCollege.essonne.fr".<br/>
+<br/>
+Une première étape indispensable vous permettra de personnaliser vos informations de connexion.<br/>
+<br/>
+Munissez vous de votre adresse e-mail personnelle et des informations ci-dessous :<br/>
+<br/>
+Identifiant : {{login}}<br/>
+Code d’activation : {{activationCode}}<br/>
+<br/>
+Pour sécuriser vos accès, il vous sera demandé de choisir un nouveau de mot de passe, d’indiquer votre adresse e-mail personnelle et, si vous le souhaitez, de saisir un numéro de téléphone portable pour récupération du mot de passe en cas d’oubli.<br/>
+<br/>
+Votre nouveau de passe doit contenir 8 caractères dont au moins une majuscule.<br/>
+<br/>
+Bonne navigation sur MonCollege.essonne.fr !<br/>
+<br/>
+MonCollege.essonne.fr, l’ENT des collèges de l'Essonne.<br/>
+{{/activationCode}}
+{{! Users that are activated }}
+{{^activationCode}}
+Bonjour,<br/>
+<br/>
+Ceci est un mail généré automatiquement qui contient vos informations de connexion à MonCollege.essonne.fr.<br/>
+<br/>
+Vous possédez déjà un compte sur l’ENT MonCollege.essonne.fr.<br/>
+Votre identifiant de connexion est rappelé ci-contre :  <i>{{login}}</i><br/>
+<br/>
+Si vous ne vous souvenez pas de votre mot de passe, vous pouvez en définir un nouveau en suivant les instructions ci-dessous :<br/>
+<br/>
+Rendez-vous sur le site d'accompagnement <a href="moncollege.essonne.fr">MonCollege.essonne.fr</a> et cliquez sur le bouton "connexion à MonCollege.essonne.fr". Cliquez ensuite sur « Besoin d’aide ? ».<br/>
+<br/>
+Cliquez sur « Vous avez perdu votre mot de passe », saisissez votre identifiant puis cliquez sur « Envoyer ».<br/>
+Un mail sera envoyé à l’adresse que vous avez saisie lors de l’activation de votre compte.<br/>
+<br/>
+Cliquez ensuite sur le lien dans le mail reçu pour définir votre nouveau mot de passe. Votre nouveau de passe doit contenir 8 caractères dont au moins une majuscule.<br/>
+<br/>
+Bonne navigation sur MonCollege.essonne.fr !<br/>
+{{/activationCode}}

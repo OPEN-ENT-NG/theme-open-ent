@@ -1,0 +1,8 @@
+{
+  "auth.title" : "One : Authentication",
+  "auth.resetCodeSent": "An email was sent to you (or your teacher if you are a student), with instructions to change your password.",
+  "email.signature" : "The ONE Team",
+  "auth.welcome.p1" : "Welcom on One, the Virtual Learning Environment for the primary degre!",
+  "auth.charter": "/assets/cgu/en.pdf",
+  "password.errors": "Choose a minimum of 6 characters."
+}

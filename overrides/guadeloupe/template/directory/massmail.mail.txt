@@ -1,0 +1,55 @@
+{{! Users that are not activated }}
+{{#activationCode}}
+
+
+Bonjour,<br/>
+<br/>
+Ceci est un mail généré automatiquement qui contient vos informations de première connexion à l’ENT IGUANE de L'Académie de Guadeloupe.<br/>
+<br/>
+La première connexion s'effectue sur : <br/>
+- <a href="https://iguane1d.ac-guadeloupe.fr">iguane1d.ac-guadeloupe.fr</a> pour les écoles <br/>
+- <a href="https://iguane2d.ac-guadeloupe.fr">iguane2d.ac-guadeloupe.fr</a> pour les collèges et lycées <br/>
+Une première étape indispensable vous permettra de personnaliser vos informations de connexion.<br/>
+<br/>
+Munissez vous de votre adresse e-mail personnelle et des informations ci-dessous :<br/>
+<br/>
+<b>Identifiant : {{login}}</b><br/>
+<b>Code d’activation : {{activationCode}}</b><br/>
+<br/>
+Pour sécuriser vos accès, il vous sera demandé de choisir un nouveau de mot de passe, et si vous le souhaitez, d’indiquer votre adresse e-mail personnelle et un numéro de téléphone portable<br/>
+<br/>
+Votre nouveau de passe doit contenir 8 caractères minimum.<br/>
+<br/>
+Bonne navigation sur l’ENT IGUANE !<br/>
+<br/>
+{{/activationCode}}
+{{! Users that are activated }}
+{{^activationCode}}
+Bonjour,<br/>
+<br/>
+Ceci est un mail généré automatiquement qui contient vos informations de connexion à l’ENT IGUANE de L'Académie de Guadeloupe.<br/>
+<br/>
+Vous possédez déjà un compte sur l’ENT.<br/>
+<br/>
+Votre identifiant de connexion est rappelé ci-contre : <i>{{login}}</i><br/>
+<br/>
+Si vous ne vous souvenez pas de votre mot de passe, vous pouvez en définir un nouveau en suivant les instructions ci-dessous :<br/>
+<br/>
+
+<b>Pour les écoles</b><br/>
+- Rendez-vous à l’adresse <a href="https://iguane1d.ac-guadeloupe.fr">iguane1d.ac-guadeloupe.fr</a> et cliquez sur « Mot de passe oublié »<br/>
+- Saisissez votre identifiant puis cliquez sur "Envoyer".<br/>
+<br/>
+
+<b>Pour les collèges et lycées</b><br/>
+- Rendez-vous à l’adresse <a href="https://iguane2d.ac-guadeloupe.fr">iguane2d.ac-guadeloupe.fr</a> et cliquez sur "Besoin d’aide ?"<br/>
+- Cliquez ensuite sur "Vous avez perdu votre mot de passe ?", saisissez votre identifiant puis cliquez sur "Envoyer".<br/>
+<br/>
+
+Un mail sera envoyé à l’adresse que vous avez saisie lors de l’activation de votre compte. Cliquez ensuite sur le lien hypertexte dans le mail reçu pour définir votre nouveau mot de passe.<br/>
+<br/>
+Votre nouveau de passe doit contenir 8 caractères minimum.<br/>
+<br/>
+Bonne navigation sur l’ENT IGUANE !<br/>
+<br/>
+{{/activationCode}}

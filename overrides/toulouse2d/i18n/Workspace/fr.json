@@ -1,0 +1,5 @@
+{
+	"workspace.add.document": "Créer",
+	"workspace.send.rack": "Envoyer",
+    "confirm.remove": "Attention, si vous supprimez une image ou du son, il ne sera plus visible dans les applications qui l'utilisent (blog, cahier multimédia, ...). Êtes-vous sûr de vouloir supprimer le document ?"
+}

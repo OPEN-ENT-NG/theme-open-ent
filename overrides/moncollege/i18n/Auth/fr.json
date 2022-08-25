@@ -1,0 +1,19 @@
+{
+	"auth.forgot.header": "Besoin d'aide ?",
+	"password.errors": "Choisissez 8 caractères minimum, en mélangeant les majuscules et les minuscules.",
+	"password.recommandations": " Il est recommandé de mélanger chiffres, lettres, majuscules, minuscules et caractères spéciaux.",
+
+	"auth.forgot.text": "Fournissez simplement les informations suivantes et nous vous aiderons à accéder à votre compte.",
+	"auth.lost.password": "Vous avez perdu votre mot de passe ?",
+	"auth.lost.password.text": "Entrez votre identifiant de connexion pour recevoir les instructions pour changer votre mot de passe.",
+	"auth.lost.id": "Vous avez perdu votre identifiant ?",
+	"auth.lost.id.text": "Entrez votre adresse courrielle pour recevoir votre identifiant.",
+	"auth.back.to.login": "Retour à l'écran d'accueil",
+	"auth.charter": "/assets/themes/moncollege/img/charte_ent_MonCollege.pdf",
+
+	"email.reset.infos2" : "Vous avez demandé la réinitialisation de votre mot de passe pour accéder à <a href='https://www.moncollege-ent.essonne.fr'>MonCollege.essonne.fr</a>",
+	"email.click.to.reset" : "Pour procéder à cette réinitialisation, veuillez cliquer sur le lien ci-dessous :",
+	"email.login" : "Pour rappel, votre identifiant est ",
+	"email.reset.infos" : "Si vous n'êtes pas à l'origine de cette demande, vous pouvez ignorer cet email. Notez que ceci est un email automatique et qu’aucune réponse ne sera donnée à cette adresse.",
+	"email.signature" : "L'équipe de MonCollege.essonne.fr"
+}

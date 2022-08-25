@@ -1,0 +1,21 @@
+{
+  "userBook.mood.angry": "concentré(e)",
+  "userBook.mood.default": "Non renseigné",
+  "userBook.mood.dreamy": "nerveux(se)",
+  "userBook.mood.happy": "accompli(e)",
+  "userBook.mood.joker": "déterminé(e)",
+  "userBook.mood.love": "inspiré(e)",
+  "userBook.mood.proud": "serein(e)",
+  "userBook.mood.sad": "distrait(e)",
+  "userBook.mood.sick": "impatient(e)",
+  "userBook.mood.tired": "stressé(e)",
+  "userBook.mood.worried": "incertain(e)",
+  "smartbanner.name": "NEO Pocket",
+  "smartbanner.description": "Le réseau éducatif qui tient dans la poche !",
+  "smartbanner.action": "Voir",
+  "smartbanner.icon.uri": "/assets/themes/calmecac2d/overrides/img/illustrations/neo-pocket.png",
+  "smartbanner.android.store": "Google Play",
+  "smartbanner.android.uri": "https://play.google.com/store/apps/details?id=com.ode.neo",
+  "smartbanner.ios.store": "App Store",
+  "smartbanner.ios.uri": "https://itunes.apple.com/us/app/one-pocket/id1458097439"
+}

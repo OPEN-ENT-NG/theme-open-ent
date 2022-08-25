@@ -1,0 +1,16 @@
+{
+  "email.hi": "Bonjour,",
+  "email.reset.pw.infos": "Vous avez demandé la réinitialisation de votre mot de passe pour vous connecter à Lycée Connecté.",
+  "email.signature": "L'équipe Lycée Connecté",
+  "auth.charter": "/assets/themes/na/img/charte_ent.pdf",
+  "auth.forgot.header": "Besoin d'aide ?",
+  "password.errors": "Choisissez 8 caractères minimum, en mélangeant les majuscules et les minuscules.",
+  "password.recommandations": " Il est recommandé de mélanger chiffres, lettres, majuscules, minuscules et caractères spéciaux.",
+  "auth.forgot.text": "Fournissez simplement les informations suivantes et nous vous aiderons à accéder à votre compte.",
+  "auth.lost.password": "Vous avez perdu votre mot de passe ?",
+  "auth.lost.password.text": "Entrez votre identifiant de connexion pour recevoir les instructions pour changer votre mot de passe.",
+  "auth.lost.id": "Vous avez perdu votre identifiant ?",
+  "auth.lost.id.text": "Entrez votre adresse courrielle pour recevoir votre identifiant.",
+  "auth.back.to.login": "Retour à l'écran d'accueil",
+  "auth.click.to.send.mail": "Cliquez ici pour recevoir un email à l'adresse suivante : "
+}

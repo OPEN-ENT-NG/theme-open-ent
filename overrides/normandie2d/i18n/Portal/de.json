@@ -1,0 +1,10 @@
+{
+	"smartbanner.name": "L'Educ de Normandie",
+	"smartbanner.description": "Alles Wesentliche über ONE auf Knopfdruck!",
+	"smartbanner.action": "Herunterladen",
+	"smartbanner.icon.uri": "/assets/themes/normandie1d/overrides/img/illustrations/educ.png",
+	"smartbanner.android.store": "Google Play",
+	"smartbanner.android.uri": "https://play.google.com/store/apps/details?id=com.ode.leducdenormandie",
+	"smartbanner.ios.store": "App Store",
+	"smartbanner.ios.uri": "https://apps.apple.com/fr/app/leduc-de-normandie/id1577366447"
+}

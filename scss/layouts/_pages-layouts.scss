@@ -3,17 +3,8 @@
   height: 64px;
   max-width: 300px;
   object-fit: contain;
-  margin-left: 35px !important;
-  /* height: $header-height;
-  width: 236px;
-  margin: 0;
-  background-size: contain; */
-
-  /* &:not(img) {
-    // background-image: url(../../img/illustrations/logo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-  } */
+  object-position: left;
+  margin-left: 1rem !important;
 }
 
 .row {
