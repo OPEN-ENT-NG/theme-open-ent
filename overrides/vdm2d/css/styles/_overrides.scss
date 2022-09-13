@@ -1,11 +1,11 @@
-.logo{
-    height: 44px !important;
-    width: 155px !important;
-    margin: 10px !important;
+.logo {
+  height: 44px !important;
+  width: 155px !important;
+  margin: 10px !important;
 }
 
-.panel{
-    background-size: 170px !important;
+.panel {
+  background-size: 170px !important;
 }
 
 body.wayf {
@@ -16,31 +16,39 @@ body.wayf {
   left: 0;
   border-radius: 0;
 
-  header{
+  header {
     margin: 0;
   }
 
-  .logo{
-    display : none;
+  .logo {
+    display: none;
   }
 
-  #credentials-content{
+  #credentials-content {
     margin: 100px auto 50px;
   }
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media screen and (max-width: $tablette) {
   body.wayf{
     background:url(../../img/illustrations/logo.png) no-repeat 6px 6px $primary-dark;
+=======
+/* @media screen and (max-width: $tablette) {
+  body.wayf {
+    background: url(../../img/illustrations/logo.png) no-repeat 6px 6px
+      $primary-dark;
+>>>>>>> 5ae2381 (feat: #WB-733 remove wayf logo background)
     background-size: 200px;
   }
-}
+} */
 
 @media screen and (max-width: $fat-mobile) {
-  body.wayf{
-    background: url(../../img/illustrations/logo.png) no-repeat 6px 6px $primary-dark;
-    background-size: 200px;
+  body.wayf {
+    /* background: url(../../img/illustrations/logo.png) no-repeat 6px 6px
+      $primary-dark;
+    background-size: 200px; */
 
 =======
 @media screen and (max-width: $fat-mobile) {
