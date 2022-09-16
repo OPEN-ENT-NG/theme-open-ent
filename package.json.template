@@ -1,6 +1,6 @@
 {
-  "name": "${modname}",
-  "version": "${npmVersion}",
+  "name": "theme-open-ent",
+  "version": "1.0.0-feat-produit.%generateVersion%",
   "description": "Open ENT theme by Open Digital Education",
   "scripts": {
     "override:i18n": "OVERRIDE_SRC=${OVERRIDE_SRC} OVERRIDE_DIST=${OVERRIDE_DIST} node ode-override-plugin.js",
@@ -34,7 +34,7 @@
   "author": "Open Digital Education",
   "license": "ISC",
   "dependencies": {
-    "entcore-css-lib": "${entcoreCSSVersion}"
+    "entcore-css-lib": "%entcoreCSSVersion%"
   },
   "devDependencies": {
     "concurrently": "^5.0.2",
@@ -44,5 +44,6 @@
     "rimraf": "^3.0.2",
     "sass": "^1.49.9",
     "entcore-generic-icons": "git+https://github.com/opendigitaleducation/generic-icons.git"
-  }
+  },
+  "files": ["dist"]
 }

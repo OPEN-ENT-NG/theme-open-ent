@@ -26,6 +26,17 @@ pipeline {
           }
         }
       }
+      stage('Archive') {
+        steps {
+          script {
+            if (params.OVERRIDE) {
+              sh "./build.sh --override=\"${params.OVERRIDE}\" archive"
+            } else {
+              sh './build.sh archive'
+            }
+          }
+        }
+      }
       stage('Publish Nexus') {
         steps {
           script {
