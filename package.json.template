@@ -1,5 +1,5 @@
 {
-  "name": "theme-open-ent",
+  "name": "ode-csslib-openent",
   "version": "1.0.0-feat-produit.%generateVersion%",
   "description": "Open ENT theme by Open Digital Education",
   "scripts": {
@@ -32,7 +32,7 @@
     "theme"
   ],
   "author": "Open Digital Education",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "dependencies": {
     "entcore-css-lib": "%entcoreCSSVersion%"
   },
