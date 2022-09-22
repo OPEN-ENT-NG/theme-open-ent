@@ -34,7 +34,7 @@
   "author": "Open Digital Education",
   "license": "AGPL-3.0",
   "dependencies": {
-    "entcore-css-lib": "%entcoreCSSVersion%"
+    "entcore-css-lib": "npm:ode-csslib@%entcoreCSSVersion%"
   },
   "devDependencies": {
     "concurrently": "^5.0.2",
