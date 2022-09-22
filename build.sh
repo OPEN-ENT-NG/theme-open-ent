@@ -176,7 +176,7 @@ publishNPM () {
   if [ "$OVERRIDE_NAME" != "default" ];
   then
     # rename npm package name to FINAL_MODNAME in package.json
-    sed -i "0,/theme-open-ent/{s|theme-open-ent|$FINAL_MODNAME|}" package.json
+    sed -i "0,/ode-csslib-openent/{s|ode-csslib-openent|$FINAL_MODNAME|}" package.json
   fi
 
   docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "npm publish --tag $LOCAL_BRANCH"
