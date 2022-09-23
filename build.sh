@@ -64,6 +64,7 @@ clean () {
   rm -rf build
   rm -rf build-css
   rm -f yarn.lock
+  rm -f package.json
   rm -rf deployment/*
 }
 
