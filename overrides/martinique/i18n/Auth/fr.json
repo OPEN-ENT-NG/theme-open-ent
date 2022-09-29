@@ -1,0 +1,14 @@
+{
+  "email.signature": "Cordialement, l'équipe projet Colibri",
+  "auth.charter": "/assets/cgu/Charte.pdf",
+  "password.errors": "Choisissez 6 caractères minimum.",
+  "otherperseducnat":"PERSONNEL ÉDUCATION NATIONALE",
+  "perseducnat":"PERSONNEL ÉDUCATION NATIONALE",
+  "loginother":"PERSONNEL COLLECTIVITÉS ET INVITÉS",
+  "otherteacher":"ENSEIGNEMENT AGRICOLE",
+  "teacher":"ENSEIGNEMENT AGRICOLE",
+  "loginstudent":"ÉLÈVES ET PARENTS (IDENTIFIANTS COLIBRI)",
+  "loginrelative":"EDUCONNECT (à venir)",
+  "relative":"EDUCONNECT",
+  "otherrelative":"EDUCONNECT"
+}
