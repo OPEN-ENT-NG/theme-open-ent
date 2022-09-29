@@ -1,0 +1,12 @@
+{
+  "default": "Défaut",
+  "dyslexic": "Dyslexiques",
+  "recorder": "Dictaphone",
+  "calendar": "Agenda",
+  "actualites": "Actualités",
+  "community": "Communautés",
+  "admin.xiti": "Paramétrage Xiti",
+  "portal.pulsar.apps": "Accédez ici à l’ensemble des applications de LEO (messagerie, documents, vie-scolaire etc…) et choisissez vos favorites pour un accès plus rapide.",
+  "portal.pulsar.search": "Recherchez directement depuis la page d'accueil une information ou un document dans LEO.",
+  "portal.pulsar.account": "L'espace \"Mon compte\" vous permet de mettre à jour votre profil  (e-mail, photo, n° de téléphone pour renouveler votre mot de passe...) et vos préférences (fréquence de réception des mails). Il vous permet également de consulter l’historique de vos notifications émises."
+}

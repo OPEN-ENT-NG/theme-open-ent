@@ -1,0 +1,23 @@
+assistant{
+    lightbox .content{
+
+        .logo-quickstart{
+            width: 130px;
+            height: 75px;
+            margin-top: -40px;
+            margin-left: -20px;
+        }
+
+        i.carte-cursus{
+            display: block;
+            width: 100px;
+            height: 65px;
+            background-image: url(../../img/gen-hdf.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: auto;
+        }
+
+    }
+}

@@ -1,0 +1,25 @@
+<p>
+Cher utilisateur de LEO,
+</p>
+<p>
+Bienvenue dans LEO, votre ENT de seconde génération !
+</p>
+<p>
+LEO  vous offre tous les services numériques dont vous avez besoin pour accompagner la scolarité de votre enfant : accès aux notes et au cahier de textes, informations sur la vie de l’établissement, outils pour communiquer avec les équipes du lycée, ressources pour aider votre enfant à réviser ou à approfondir un point de cours (en particulier l’Aide aux devoirs), etc.
+</p>
+<p>
+Pour faire plus ample connaissance avec LEO, nous vous invitons à consulter la <a href="http://leo.picardie.fr/2015/09/video-leo-2-visite-guidee/" target="_blank">vidéo de découverte</a> ainsi que les autres <a href="http://leo.picardie.fr/category/ressources/video-scena/" target="_blank">vidéos</a> qui vous guideront dans votre prise en main des différentes applications. Un service d’aide en ligne, accessible grâce au bouton (?) dans la barre de navigation de l’ENT, est également disponible.
+</p>
+<p>
+Enfin, le référent ENT de votre établissement est à votre disposition pour vous accompagner dans votre découverte de LEO.
+</p>
+<p>
+Nous vous souhaitons une bonne navigation dans LEO et une très bonne année scolaire à votre enfant !
+</p>
+<p>
+Bien cordialement,
+</p>
+<p>
+L’équipe projet LEO
+</p>
+<p> LEO, l'environnement numérique de travail des lycées picards </p>

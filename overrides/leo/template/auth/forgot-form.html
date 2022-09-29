@@ -1,0 +1,74 @@
+<section class="main">
+	<div class="forgot panel">
+		<h1 translate content="auth.forgot.header"></h1>
+		<p class="warning" ng-if="error" translate content="[[error]]"></p>
+
+		<div class="content">
+			<h4><i18n>auth.forgot.text</i18n></h4>
+
+			<h2 ng-click="showWhat = showWhat === 'forgotPassword' ? null : 'forgotPassword'"><a><i18n>auth.lost.password</i18n></a></h2>
+			<div ng-if="showWhat === 'forgotPassword'" ng-init="initUser()">
+				<p><i18n>auth.lost.password.text</i18n></p>
+				<div class="row">
+					<form class="nostyle rowstyle" name="forgotPasswordForm" ng-submit="passwordChannels(user.login)">
+						<input type="text" translate attr="placeholder" placeholder="auth.email"
+							name="login" ng-model="user.login" ng-change="user.channels = {}" required/>
+						<input type="submit" translate attr="value" value="auth.forgot.send" ng-disabled="forgotPasswordForm.$invalid"/>
+					</form>
+
+					<ul ng-if="user.channels.mobile || user.channels.mail">
+						<li ng-if="user.channels.mail">
+							<a class="reduce-block-eight" ng-click="forgotPassword(user.login, 'mail')">
+								<u><i18n>auth.click.to.send.mail</i18n></u>
+							</a>
+							<b class="horizontal-spacing">[[user.channels.mail]]</b>
+						</li>
+						<li ng-if="user.channels.mobile">
+							<a class="reduce-block-eight" ng-click="forgotPassword(user.login, 'mobile')">
+								<u><i18n>auth.click.to.send.sms</i18n></u>
+							</a>
+							<b class="horizontal-spacing">[[user.channels.mobile]]</b>
+						</li>
+					</ul>
+					<br>
+				</div>
+			</div>
+
+			<h2 ng-click="showWhat = showWhat === 'forgotId' ? null : 'forgotId'"><a><i18n>auth.lost.id</i18n></a></h2>
+			<div ng-if="showWhat === 'forgotId'" ng-init="initUser(); user.mode = 'id'">
+				<p><i18n>auth.lost.id.text</i18n></p>
+				<form class="nostyle rowstyle" method="post" name="forgotForm" ng-submit="forgot('mail')">
+					<p>
+						<label translate ng-if="user.mode === 'id'" content="auth.mail"></label>
+						<label translate ng-if="user.mode === 'checkFirstName'" content="auth.info.firstName"></label>
+						<label translate ng-if="user.mode === 'checkStructure'" content="auth.info.structure"></label>
+						<input type="email" name="mail" ng-if="user.mode === 'id'" ng-model="user.mail" required/>
+						<input type="text" name="firstName" ng-if="user.mode === 'checkFirstName'" ng-model="user.firstName" required/>
+						<select ng-if="user.mode === 'checkStructure'" ng-options="structure.structureId as structure.structureName for structure in structures | orderBy: 'name'" ng-model="user.structureId" required></select>
+					</p>
+					<input type="submit" translate attr="value" value="auth.forgot.send" ng-disabled="forgotForm.$invalid"/>
+				</form>
+				<div class="card info row" ng-if="user.channels.mobile" >
+					<a class="reduce-block-eight" ng-if="user.channels.mobile" ng-click="forgot('mobile')">
+						<i18n>auth.click.to.send.sms</i18n> <b class="horizontal-spacing">[[user.channels.mobile]]</b>
+					</a>
+				</div>
+
+			</div>
+
+			<h2 ng-click="showWhat = showWhat === 'stillLost' ? null : 'stillLost'"><a><i18n>auth.still.lost</i18n></a></h2>
+			<div ng-if="showWhat === 'stillLost'">
+				<i18n>auth.still.lost.text</i18n>
+			</div>
+
+			<h2 ng-click="showWhat = showWhat === 'contactHelp' ? null : 'contactHelp'"><a><i18n>auth.contact.help</i18n></a></h2>
+			<div ng-if="showWhat === 'contactHelp'">
+				<p><i18n>auth.contact.help.text</i18n></p>
+			</div>
+
+			<form class="row centered-text nostyle button-bar" method="get" action="/auth/login">
+				<button class="right-magnet" translate content="auth.back.to.login"></button>
+			</form>
+		</div>
+	</div>
+</section>

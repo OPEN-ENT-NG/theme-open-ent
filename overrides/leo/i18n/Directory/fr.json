@@ -1,0 +1,23 @@
+{
+  "userBook.mood.angry": "concentré(e)",
+  "userBook.mood.default": "Non renseigné",
+  "userBook.mood.dreamy": "nerveux(se)",
+  "userBook.mood.happy": "accompli(e)",
+  "userBook.mood.joker": "déterminé(e)",
+  "userBook.mood.love": "inspiré(e)",
+  "userBook.mood.proud": "serein(e)",
+  "userBook.mood.sad": "distrait(e)",
+  "userBook.mood.sick": "impatient(e)",
+  "userBook.mood.tired": "stressé(e)",
+  "userBook.mood.worried": "incertain(e)",
+  "directory.explaination": "Saisissez quelques caractères et cliquez sur OK pour afficher les résultats.",
+  "userBook.profile.health": "Divers",
+  "password.errors": "Choisissez 8 caractères minimum, lettres et chiffres obligatoires.",
+  "password.recommandations": " Il est recommandé de mélanger chiffres, lettres, majuscules, minuscules et caractères spéciaux.",
+  "directory.massmail.filename": "publipostage_leo",
+  "directory.massmail.mail.subject.not.activated": "Première connexion à l’ENT Léo",
+  "directory.massmail.mail.subject.activated": "Informations sur votre compte Léo",
+  "welcome.subject" : "Bienvenue dans LEO 2",
+  "no-reply" : "Conseil régional Hauts-de-France",
+  "wizard.files.details.option3" : "Si vous souhaitez importer des utilisateurs à partir de fichiers csv constitués à la main ou issus d’un logiciel, vous devez suivre les consignes suivantes :<br /><ul><li>Un fichier doit être constitué pour chaque profil d’utilisateurs (enseignants, élèves, parents, personnels).</li><li>Les modèles de fichiers sont disponibles via les liens suivants :</li><ul><li><a href=\"https://opendigitaleducation.com/wp-content/uploads/2016/07/CSV_Enseignants.csv\" target=\"_blank\">Modèle fichier enseignants</a></li><li><a href=\"https://opendigitaleducation.com/wp-content/uploads/2016/07/CSV_Eleves.csv\" target=\"_blank\">Modèle fichier élèves</a></li><li><a href=\"https://opendigitaleducation.com/wp-content/uploads/2016/07/CSV_Parents.csv\" target=\"_blank\">Modèle fichier parents</a></li><li><a href=\"https://opendigitaleducation.com/wp-content/uploads/2016/07/CSV_Personnels.csv\" target=\"_blank\">Modèle fichier personnels</a></li><li><a href=\"https://opendigitaleducation.com/wp-content/uploads/2016/07/CSV_Invites.csv\" target=\"_blank\">Modèle fichier invités</a></li></ul><li>Les fichiers doivent être enregistrés au format .csv (séparateur point virgule).</li><li>Pour chaque fichier, les colonnes commençant par une majuscule doivent obligatoirement être complétées.</li><li>Chaque fichier commence par une colonne externalID. Elle permet de gérer les modifications de comptes directement dans le fichier CSV. Cette colonne correspond à la ligne \"identifiant externe\" sur la fiche de l'utilisateur dans la console d'administration de l'ENT.</li><li>Pour éviter d'entrer en conflit avec des comptes d'autres établissements, il est conseillé de renseigner le champ externalID lors du premier import. Vous pouvez utiliser les identifiants externes de votre choix, par exemple sur le modèle “RNE_enseignant_1”, “RNE_enseignant_2”...</li><li>Le champ externalID permet de reconnaître un utilisateur entre deux imports successifs et de mettre à jour ses informations personnelles.</li><li>Le fichier des élèves doit obligatoirement être chargé avant le fichier des parents. Pour que les parents soit rattachés aux bons élèves, il faut indiquer l’identifiant correspondant à(aux) enfant(s) dans le fichier des parents.</li></ul><br />Attention, le traitement des fichiers de parents peut parfois prendre plusieurs minutes.<br />"
+}

@@ -1,0 +1,26 @@
+<p>
+Cher utilisateur de LEO,
+</p>
+<p>
+Bienvenue dans LEO, votre ENT de seconde génération !
+</p>
+<p>
+Dans LEO 2, vous retrouvez des services liés à la communication (actualités, messagerie), à la gestion de l’établissement (réservation de ressources), au suivi de la scolarité (accès aux notes et aux absences) et à l’animation de projets collaboratifs (communautés, partage de documents, forum…).
+</p>
+<p>
+Pour faire plus ample connaissance avec LEO, nous vous invitons à consulter la <a href="http://leo.picardie.fr/2015/09/video-leo-2-visite-guidee/" target="_blank">vidéo de découverte</a> ainsi que les autres <a href="http://leo.picardie.fr/category/ressources/video-scena/" target="_blank">vidéos</a> qui vous guideront dans votre prise en main des différentes applications. Un service d’aide en ligne, accessible grâce au bouton (?) dans la barre de navigation de l’ENT, est également disponible.
+</p>
+<p>
+Enfin, le référent ENT de votre établissement est à votre disposition pour vous accompagner dans votre découverte de LEO.
+</p>
+<p>
+Nous vous souhaitons une bonne navigation dans LEO 2 et une très bonne année scolaire !
+</p>
+<p>
+Bien cordialement,
+</p>
+<p>
+L’équipe projet LEO
+</p>
+<p> LEO, l'environnement numérique de travail des lycées picards </p>
+
