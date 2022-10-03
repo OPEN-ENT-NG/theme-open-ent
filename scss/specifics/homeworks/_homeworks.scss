@@ -1,0 +1,82 @@
+.notebook {
+    #topbar {
+        h1 {
+            font-size: 26px;
+        }
+
+        i {
+            display: inline-block;
+        }
+
+        i.add {
+            height: inherit !important;
+        }
+
+        i.calendar::before {
+            color: $orange;
+        }
+
+        i.arrow-right::before {
+            content: "\e823";
+        }
+
+        i.arrow-left::before {
+            content: "\e87b";
+        }
+    }
+
+    #book_wrapper {
+        .date-picker-icon {
+            margin-top: -20px;
+        }
+    }
+
+    #side {
+        .day {
+            font-family: "Roboto";
+            font-size: 20px;
+        }
+    }
+
+    .weekly-view {
+        .homeworksDate {
+            font-family: "Roboto";
+        }
+    }
+
+    .daily-view .close,
+    .editor .close {
+        color: $red;
+    }
+
+    .homeworksRecurrence {
+        .modal {
+            .homeworksRecurrence--day label {
+                left: -33px;
+                top: 5px;
+            }
+
+            button {
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tablette) {
+    .notebook {
+        .homeworksLine {
+            .close {
+                top: 5px;
+
+                &::before {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        editor.focus .close-focus {
+            width: 60px;
+        }
+    }
+}
