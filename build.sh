@@ -89,7 +89,7 @@ doInit () {
   
   if [ "$1" == "Dev" ]
   then
-    sed -i "s/%entcoreCSSVersion%/file:\/home\/node\/entcore-css-lib/" package.json
+    sed -i "s/npm:ode-csslib@%entcoreCSSVersion%/file:\/home\/node\/entcore-css-lib/" package.json
   else
     sed -i "s/%entcoreCSSVersion%/${BRANCH_NAME}/" package.json
   fi
