@@ -5,9 +5,9 @@ a {
 }
 
 a:hover,
-a:hover>h1,
-a:hover>h2,
-a:hover>h3 {
+a:hover > h1,
+a:hover > h2,
+a:hover > h3 {
   color: $accent;
 }
 
@@ -79,7 +79,7 @@ app-title {
   float: left;
 }
 
-app-title+h2 {
+app-title + h2 {
   font-size: 26px;
   clear: both;
 }
