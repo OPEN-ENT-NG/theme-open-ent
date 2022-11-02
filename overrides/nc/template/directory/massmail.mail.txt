@@ -4,9 +4,9 @@ Bonjour,<br/>
 <br/>
 Ceci est un mail généré automatiquement qui contient vos informations de première connexion à NEO.<br/>
 <br/>
-La première connexion à ONE s’effectue sur le site <a href="https://ent.province-sud.nc">https://ent.province-sud.nc</a>.<br/>
+La première connexion à NEO s’effectue sur le site <a href="https://ent.province-sud.nc">https://ent.province-sud.nc</a>.<br/>
 <br/>
-Une première étape indispensable vous permettra de personnaliser vos informations de connexion. Cette étape de première connexion est expliquée <a href="https://one.opendigitaleducation.com/fr/aide-support/aide-support/connexion/activer-son-compte//">ici</a>.<br/>
+Une première étape indispensable vous permettra de personnaliser vos informations de connexion.<br/>
 <br/>
 Munissez vous de votre adresse e-mail personnelle et des informations ci-dessous :<br/>
 <br/>

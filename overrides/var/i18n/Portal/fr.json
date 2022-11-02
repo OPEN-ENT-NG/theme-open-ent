@@ -18,5 +18,6 @@
   "smartbanner.android.uri": "https://play.google.com/store/apps/details?id=com.ode.neo",
   "smartbanner.ios.store": "App Store",
   "smartbanner.ios.uri": "https://apps.apple.com/fr/app/neo-pocket/id1458097439",
-  "workspace": "Espace de stockage"
+  "workspace": "Espace de stockage",
+  "disconnected.redirect.url": "https://moncollege-ent.var.fr/auth/saml/wayf"
 }
