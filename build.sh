@@ -32,6 +32,7 @@ fi
 
 
 # OVERRIDES VARS
+ITEMS=(default monlycee hdf paris moncollege na cg77 leo);
 OVERRIDE_NAME="default"
 for i in "$@"
 do
@@ -65,6 +66,7 @@ clean () {
   rm -rf build-css
   rm -f yarn.lock
   rm -f package.json
+  rm -f LICENSE
   rm -rf deployment/*
 }
 
@@ -89,9 +91,23 @@ doInit () {
   
   if [ "$1" == "Dev" ]
   then
-    sed -i "s/npm:ode-csslib@%entcoreCSSVersion%/file:\/home\/node\/entcore-css-lib/" package.json
+    sed -i "s/npm:ode-csslib@%entcoreCSSVersion%/file:..\/entcore-css-lib\//" package.json
   else
     sed -i "s/%entcoreCSSVersion%/${BRANCH_NAME}/" package.json
+  fi
+
+  if [[ ${ITEMS[@]} =~ "$OVERRIDE_NAME" ]];
+  then
+    sed -i "s/%license%/AGPL-3.0/" package.json
+    echo "[init$1][$OVERRIDE_NAME] Generate README file..."
+    cp README.md.template README.md
+    echo "[init$1][$OVERRIDE_NAME] Generate LICENSE file..."
+    cp LICENSE.template LICENSE
+  else
+    sed -i "s/%license%/UNLICENSED/" package.json
+      rm -f README.md
+      rm -f LICENSE
+    break
   fi
 
   echo "[init$1][$OVERRIDE_NAME] Install yarn dependencies..."

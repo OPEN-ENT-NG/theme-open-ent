@@ -32,7 +32,7 @@
     "theme"
   ],
   "author": "Open Digital Education",
-  "license": "AGPL-3.0",
+  "license": "%license%",
   "dependencies": {
     "entcore-css-lib": "npm:ode-csslib@%entcoreCSSVersion%"
   },
