@@ -104,7 +104,7 @@ doInit () {
     echo "[init$1][$OVERRIDE_NAME] Generate LICENSE file..."
     cp LICENSE.template LICENSE
   else
-    sed -i "s/%license%/UNLICENSED/" package.json
+    sed -i "s/%license%/NONE/" package.json
       rm -f README.md
       rm -f LICENSE
     break
