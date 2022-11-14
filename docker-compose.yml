@@ -6,3 +6,4 @@ node:
     - ./:/home/node/app
     - ~/.npm:/.npm
     - ../entcore-css-lib:/home/node/entcore-css-lib
+    - ~/.gitconfig:/home/node/.gitconfig

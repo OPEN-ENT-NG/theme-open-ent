@@ -46,7 +46,7 @@ case $i in
 esac
 done
 
-MOD_NAME=`grep "modname=" gradle.properties | sed 's/modname=//g'`
+MOD_NAME=`grep "modname=" gradle.properties | sed 's/modname=//g' | sed 's/\r$//'`
 if [ "$OVERRIDE_NAME" = "default" ];
 then
   export FINAL_MODNAME="$MOD_NAME"

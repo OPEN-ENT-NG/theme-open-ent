@@ -1,8 +1,13 @@
 # Dev
 
+## Prerequisites
+
+`entcore-css-lib` must be installed and configured on the same branch.
+
 ## Install
 
-Will install all dependencies including `entcore-css-lib` local version
+Will install all dependencies including `entcore-css-lib` local version.
+
 
 ```bash
 ./build.sh initDev
