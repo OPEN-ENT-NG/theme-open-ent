@@ -580,6 +580,32 @@ i.parametrage::before {
   color: $red;
 }
 
+i.forms-large,
+i.type.forms,
+i.forms {
+  @include fonticon;
+}
+
+i.forms-large::before,
+i.type.forms::before,
+i.forms::before {
+  content: "\e95c";
+  color: $purple;
+}
+
+i.presence-large,
+i.type.presence,
+i.presence {
+  @include fonticon;
+}
+
+i.presence-large::before,
+i.type.presence::before,
+i.presence::before {
+  content: "\e95d";
+  color: $yellow;
+}
+
 i.settings-class-large,
 i.type.settings-class,
 i.settings-class {
