@@ -593,15 +593,15 @@ i.forms::before {
   color: $purple;
 }
 
-i.presence-large,
-i.type.presence,
-i.presence {
+i.presences-large,
+i.type.presences,
+i.presences {
   @include fonticon;
 }
 
-i.presence-large::before,
-i.type.presence::before,
-i.presence::before {
+i.presences-large::before,
+i.type.presences::before,
+i.presences::before {
   content: "\e95d";
   color: $yellow;
 }
@@ -616,10 +616,43 @@ i.settings-class {
   }
 }
 
+i.library-large,
+i.type.library,
+i.library {
+  @include fonticon;
+}
+
 i.library-large::before,
 i.type.library::before,
 i.library::before {
+  content: "\e94c";
   color: $yellow;
+}
+
+i.web-conference-large,
+i.type.web-conference,
+i.web-conference {
+  @include fonticon;
+}
+
+i.web-conference-large::before,
+i.type.web-conference::before,
+i.web-conference::before {
+  content: "\e957";
+  color: $cyan;
+}
+
+i.website-large,
+i.type.website,
+i.website {
+  @include fonticon;
+}
+
+i.website-large::before,
+i.type.website::before,
+i.website::before {
+  content: "\e90a";
+  color: $cyan;
 }
 
 //// 1D APPS background
