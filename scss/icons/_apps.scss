@@ -582,26 +582,38 @@ i.parametrage::before {
 
 i.forms-large,
 i.type.forms,
-i.forms {
+i.forms,
+i.formulaire-large,
+i.type.formulaire,
+i.formulaire {
   @include fonticon;
 }
 
 i.forms-large::before,
 i.type.forms::before,
-i.forms::before {
+i.forms::before,
+i.formulaire-large::before,
+i.type.formulaire::before,
+i.formulaire::before {
   content: "\e95c";
   color: $purple;
 }
 
 i.presences-large,
 i.type.presences,
-i.presences {
+i.presences,
+i.absences-large,
+i.type.absences,
+i.absences {
   @include fonticon;
 }
 
 i.presences-large::before,
 i.type.presences::before,
-i.presences::before {
+i.presences::before,
+i.absences-large::before,
+i.type.absences::before,
+i.absences::before {
   content: "\e95d";
   color: $yellow;
 }
