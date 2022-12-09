@@ -35,9 +35,5 @@
     "timeline.weekly.mail.subject.start": "Bonjour {{displayName}}, voici les",
     "timeline.weekly.mail.subject.bold": "nouveautés de la semaine",
     "timeline.weekly.mail.subject.end": "dans votre ENT",
-    "timeline.weekly.mail.action.text": "Consulter",
-    "timeline.zimbra.sent.message": "vous a envoyé un message ",
-    "timeline.zimbra.storage.size.alert": "Votre espace de stockage est bientôt plein.",
-    "timeline.no.subject": "aucun objet",
-    "timeline.no.sender": "Expéditeur inconnu"
+    "timeline.weekly.mail.action.text": "Consulter"
 }
