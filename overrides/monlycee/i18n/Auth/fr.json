@@ -7,6 +7,8 @@
 	"auth.lost.password.text": "Entrez votre identifiant de connexion pour recevoir les instructions pour changer votre mot de passe.",
 	"auth.lost.id": "Vous avez perdu votre identifiant ?",
 	"auth.lost.id.text": "Entrez votre adresse courrielle pour recevoir votre identifiant.",
+	"auth.click.to.send.mail": "Cliquez ici pour recevoir un <b>email</b> à l'adresse suivante : ",
+	"auth.click.to.send.sms": "Cliquez ici pour recevoir un <b>SMS (texto)</b> au numéro suivant : ",
 	"auth.back.to.login": "Retour à l'écran d'accueil",
 	"auth.charter": "/assets/themes/monlycee/img/Charte.pdf",
 	"email.reset.pw.infos": "Ceci est un envoi généré automatiquement. Veuillez ne pas répondre directement à ce message.",
