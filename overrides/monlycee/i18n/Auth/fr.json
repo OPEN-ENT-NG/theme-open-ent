@@ -1,6 +1,6 @@
 {
 	"auth.forgot.header": "Besoin d'aide ?",
-	"password.errors": "Choisissez 8 caractères minimum, en mélangeant les majuscules et les minuscules.",
+	"password.errors": "Choisissez 12 caractères minimum, en mélangeant les majuscules et les minuscules.",
 	"password.recommandations": " Il est recommandé de mélanger chiffres, lettres, majuscules, minuscules et caractères spéciaux.",
 	"auth.forgot.text": "Fournissez simplement les informations suivantes et nous vous aiderons à accéder à votre compte.",
 	"auth.lost.password": "Vous avez perdu votre mot de passe ?",
