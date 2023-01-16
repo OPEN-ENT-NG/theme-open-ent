@@ -18,7 +18,6 @@
     "email.regards": "",
     "email.reset.infos": "Si vous n'êtes pas à l'origine de cette demande, vous pouvez ignorer cet email.",
     "email.reset.pw.infos": "Vous avez demandé la réinitialisation de votre mot de passe.",
-        "email.signature" : "Cordialement,",
         "phone.hi": "Bonjour, ",
         "phone.how.to.reset": "Vous pouvez vous connecter à l'ENT en saisissant votre identifiant et votre nouveau code d'activation",
         "phone.login": "Voici le rappel de votre identifiant de connexion à l'ENT",

@@ -25,5 +25,6 @@
 	"password.recommandations": "Il est recommandé de mélanger chiffres, lettres, majuscules, minuscules et caractères spéciaux.",
 	"auth.reset": "Enregistrer",
 	"cancel": "Annuler",
-	"auth.activation.confirm.password": "Confirmation du nouveau mot de passe"
+	"auth.activation.confirm.password": "Confirmation du nouveau mot de passe",
+	"email.signature" : "L'équipe Paris Classe Numérique"
 }
