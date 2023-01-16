@@ -1,0 +1,12 @@
+{
+  "timeline.mail.body.bgcolor": "#f9f9f9",
+  "timeline.mail.body.bg": "background-color: #f9f9f9;",
+  "timeline.mail.main": "background-color: #fff;",
+  "timeline.mail.main.border": "border: 1px solid #e9e9e9;",
+  "timeline.mail.maincolor": "#fff",
+  "timeline.mail.text.color": "color: #fff;",
+  "timeline.mail.header.bg": "background-color: #209DCC;",
+  "timeline.mail.header.bgcolor": "#209DCC",
+  "timeline.mail.main.text.color": "color: #000;",
+  "timeline.mail.footer.color": "color: #999;"
+}
