@@ -1,0 +1,80 @@
+Arguments: 
+  /usr/local/bin/node /opt/yarn-v1.22.15/bin/yarn.js install
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  16.13.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/node/app/package.json: Unexpected string in JSON at position 1934
+      at JSON.parse (<anonymous>)
+      at /opt/yarn-v1.22.15/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/opt/yarn-v1.22.15/lib/cli.js:310:30)
+      at /opt/yarn-v1.22.15/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "ode-csslib-openent",
+    "version": "3.0.7-dev-produit.202304251119",
+    "description": "Open ENT theme by Open Digital Education",
+    "scripts": {
+      "override:i18n": "OVERRIDE_SRC=${OVERRIDE_SRC} OVERRIDE_DIST=${OVERRIDE_DIST} node ode-override-plugin.js",
+      "sass:watch": "sass --source-map -w scss/index.scss docs/index.css",
+      "sass:build:debug": "sass --load-path=node_modules/ --source-map scss/index.scss docs/index.css",
+      "sass:build:release": "sass --load-path=node_modules/ --style=compressed ${SKIN_DIR}/$SKIN/theme.scss ${SKIN_DIR}/$SKIN/theme.css && cpr ${SKIN_DIR}/$SKIN/ ${DIST_DIR}/skins/$SKIN/ -o",
+      "dev:dependencies": "cpr node_modules/entcore-css-lib/assets/ docs/ -o",
+      "dev:prepare": "npm run sass:build:debug && npm run dev:dependencies && cpr assets/ docs/ -o",
+      "dev:watch": "npm run dev:prepare && concurrently  \" npm run sass:watch \" \" npm run dev:serve  \" ",
+      "dev:serve": "live-server --open=docs/ --ignore=**/node_modules/**,**/dist/**,**/package.json,**/.git/**",
+      "dev:lint": "stylelint scss/**/*.scss || echo \"lint faild for some file(s).\"",
+      "dev:lint-fix": "stylelint scss/**/*.scss --fix || echo \"lint faild for some file(s).\"",
+      "dev:copy-theme": "rm -rf build-css && ./build.sh build && cp -r dist/* ../recette/assets/themes/theme-open-ent",
+      "prettier:check": "npx prettier --check scss/**/*.scss",
+      "prettier:write": "npx prettier --write scss/**/*.scss",
+      "prettier:all": "npm run prettier:write && npm run prettier:check",
+      "release:clean": "rimraf ${DIST_DIR}",
+      "release:dependencies": "cpr node_modules/entcore-css-lib/assets/ ${DIST_DIR}/ -o",
+      "release:prepare": "npm run release:clean && npm run release:dependencies && cpr template/ ${DIST_DIR}/template/ -o && cpr portal.html ${DIST_DIR}/ -o && cpr assets/ ${DIST_DIR}/ -o",
+      "release:build": "npm run release:prepare && SKIN=default npm run sass:build:release"
+      "watch": "sass --watch --style compressed --load-path=node_modules/ --no-source-map scss/index.scss ../ode-dev-server/assets/themes/cg77/skins/default/theme.css"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git@github.com:OPEN-ENT-NG/theme-open-ent.git"
+    },
+    "keywords": [
+      "Open-ENT",
+      "ODE",
+      "theme"
+    ],
+    "author": "Open Digital Education",
+    "license": "AGPL-3.0",
+    "dependencies": {
+      "entcore-css-lib": "link:../entcore-css-lib/"
+    },
+    "devDependencies": {
+      "concurrently": "^5.0.2",
+      "copyfiles": "^2.2.0",
+      "cpr": "^3.0.1",
+      "prettier": "2.6.0",
+      "rimraf": "^3.0.2",
+      "sass": "^1.49.9",
+      "entcore-generic-icons": "git+https://github.com/opendigitaleducation/generic-icons.git#master"
+    },
+    "files": ["dist"]
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
