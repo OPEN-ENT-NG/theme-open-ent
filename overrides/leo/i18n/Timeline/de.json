@@ -1,0 +1,5 @@
+{
+    "timeline.mail.logo.src": "{{#host}}/assets/themes/leo/img/illustrations/logo-light.png{{/host}}",
+    "timeline.mail.logo.width":"100",
+    "timeline.mail.logo.height":"54"
+}

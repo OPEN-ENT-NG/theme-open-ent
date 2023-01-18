@@ -1,6 +1,6 @@
 {
     "timeline.home.url": "{{#host}}/timeline/timeline{{/host}}",
-    "timeline.mail.logo.src": "{{#host}}/assets/themes/nantes2d/img/illustrations/logo.png{{/host}}",
+    "timeline.mail.logo.src": "{{#host}}/assets/themes/nantes2d/img/illustrations/logo_notif.png{{/host}}",
     "timeline.mail.logo.width":"161",
     "timeline.mail.logo.height":"54",
     "timeline.mail.accent.bg":"background-color: #FF8500;",
