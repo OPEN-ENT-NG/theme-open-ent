@@ -35,6 +35,19 @@ body.exercizer {
     }
   }
 
+  .header {
+    .container-fluid {
+      max-width: 1320px;
+      margin: 0 auto;
+    }
+    .navbar .navbar-nav {
+      margin-right: 0 !important;
+    }
+    .logo {
+      margin-left: 0 !important;
+    }
+  }
+
   .lightbox > .content h2 {
     color: $grey-black;
   }
