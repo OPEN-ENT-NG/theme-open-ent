@@ -599,6 +599,18 @@ i.formulaire::before {
   color: $purple;
 }
 
+i.minibadge-large,
+i.type.minibadge,
+i.minibadge {
+  @include fonticon;
+}
+
+i.minibadge-large::before,
+i.type.minibadge::before,
+i.minibadge::before {
+  content: "\e960";
+}
+
 i.presences-large,
 i.type.presences,
 i.presences,
