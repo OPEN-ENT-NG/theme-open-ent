@@ -57,6 +57,10 @@
 .popover-body {
   padding: var(--ode-popover-body-padding-y) var(--ode-popover-body-padding-x);
   color: var(--ode-popover-body-color);
+
+  img {
+    max-width: 100%;
+  }
 }
 
 .popover::before {
