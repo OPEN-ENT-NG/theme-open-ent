@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <!-- We use this i18n key to ensure portability because it is overriden by themes  -->
+	<title>{{#i18n}}directory.admin.massMailing{{/i18n}}</title>
+    <style type="text/css">
+			body {
+				font-family: sans-serif;
+				color: #333;
+			}
+			h2 {font-size: 1.2em}
+			h3 {font-size: 1.1em}
+			h4 {margin-left: 1.1em}
+			strong,
+			a,
+			.red {
+				font-weight: bold;
+				color: #d1232a;
+			}
+			ol li {
+				padding: 10px 0;
+				margin-left: -20px;
+			}
+			.column {
+				width: 30%;
+				margin: 1%;
+				display: inline-block;
+				vertical-align: top;
+				text-align: center;
+				font-size: 0.8em;
+			}
+			.column img {
+				width: 75px;
+				text-align: center;
+			}
+      .center{
+        text-align: center;
+      }
+      #right{
+				text-align: right;
+			}
+			.inline-block .baseline,
+			.inline-block #logo {
+				display: inline-block;
+				vertical-align: middle;
+			}
+      #logo{
+				width: 150px;
+			}
+			.baseline {
+				text-align: right;
+				color: #666;
+				letter-spacing: 2px;
+				font-weight: lighter;
+				padding: 5px;
+				border-bottom: 2px solid transparent;
+			}
+			.neo {
+				border-color: #4bafd5;
+			}
+			.one {
+				border-color: #FF8500;
+			}
+			{{#A5}}
+			@page {
+				size: landscape;
+			}
+			body {
+				font-size: 0.7em;
+			}
+			.size {
+				display: inline-block;
+				vertical-align: top;
+				width: 47%;
+				margin: 0 1%;
+			}
+			.column img {
+				width: 50px;
+			}
+			#logo {
+				width: 100px;
+			}
+			{{/A5}}
+	</style>
+</head>
+
+<body>
+
+{{#users}}
+
+<div class="size"{{^end}} style="page-break-after: always"{{/end}}>
+	<div class="inline-block">
+    	<img id="logo" src="logo.png"></img>
+	</div>
+	{{^activationCode}}
+	<h2>Information about my account</h2>
+	{{/activationCode}}
+	{{#activationCode}}
+	<h2>Sign in for the first time in 5 steps</h2>
+	{{/activationCode}}
+    <h3> » This document is for <strong>{{firstName}} {{lastName}}</strong></h3>
+	  {{^isGuestOrPersonnel}}
+    <h4>{{^firstChild}}{{#i18n}}{{profile}}{{/i18n}}{{/firstChild}}{{#firstChild}}The parent of <strong>{{firstName}} {{lastName}}</strong>{{#otherChildren}}, <strong>{{firstName}} {{lastName}}</strong>{{/otherChildren}}{{/firstChild}}{{#firstClass}} in class <strong>{{.}}</strong>{{#otherClasses}}, <strong>{{.}}</strong>{{/otherClasses}}{{/firstClass}}.</h4>
+	  {{/isGuestOrPersonnel}}
+	  {{#isGuestOrPersonnel}}
+    <h4>{{#i18n}}{{profile}}{{/i18n}}.</h4>
+  	{{/isGuestOrPersonnel}}
+    <p>Designed for teachers, school personnel, students, and their families, the virtual learning environment is a secure and easy-to-use digital solution for:</p>
+    <div class="column">
+        <img src="illustrations/Publipostage_Actus.png"></img>
+        <p>Creating interactive content (Wiki, Timeline, Mindmap, etc.)</p>
+    </div>
+    <div class="column">
+        <img src="illustrations/Publipostage_Messagerie.png"></img>
+        <p>Streamlining communication between members of the educational network</p>
+    </div>
+    <div class="column">
+        <img src="illustrations/Publipostage_Resa_Ressources.png"></img>
+        <p>Keeping all your digital services together in the same place</p>
+    </div>
+    {{^activationCode}}
+    <h2> » How do I sign in?</h2>
+    <p>You already have an account in the virtual learning environment. All you have to do
+	is enter your normal username and the password you selected the first time you signed in.
+    <br />As a reminder, your username is:</p>
+    <p class="center red">{{login}}</p>
+    <br />
+    <h2> » Resetting your password in three steps</h2>
+    <ol>
+			<li>If you forget your password, visit <a href="{{host}}://{{hostname}}">{{hostname}}</a> and click on « Forgotten password ».</li>
+			<li>Enter your username, then click « Send ». An email will be sent to the address you provided when you activated your account.</li>
+			<li>Open the email and click on the link to reset your password.</li>
+		</ol>
+    {{/activationCode}}
+    {{#activationCode}}
+    <h2> » Signing in for the first time</h2>
+    <ol>
+			<li>To sign in, visit <a href="{{host}}://{{hostname}}">{{hostname}}</a> and click « Sign in ».</li>
+			<li>Enter your username (and be sure to make note of it so you can sign in again later) and your activation code:
+				<div class="center">
+					<p class="red">Username: {{login}}</p>
+					<p class="red">Activation code: {{activationCode}}</p>
+				</div>
+			</li>
+			<li>Choose a new password with at least 8 characters, <strong>including at least one uppercase letter, one lowercase letter, and a number</strong>.</li>
+			<li>Enter your personal email address so you can receive a reset email in case you forget your password.</li>
+			<li>All that's left is to read and accept the terms and conditions.</li>
+		</ol>
+    {{/activationCode}}
+    <p id="right">Enjoy!</p>
+</div>
+{{/users}}
+</body>
+
+</html>
