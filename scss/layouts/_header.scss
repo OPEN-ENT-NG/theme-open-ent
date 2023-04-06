@@ -169,7 +169,6 @@
 .header .navbar .navbar-nav {
   padding: 0;
   margin: 0;
-  margin-right: 2rem !important;
   list-style: none;
   display: inline-flex;
   flex-direction: row;
@@ -190,6 +189,10 @@
 }
 
 @media (min-width: 800px) {
+  .header .navbar .navbar-nav {
+    margin-right: 2rem !important;
+  }
+
   .header .navbar .navbar-brand {
     padding: 0;
     margin-right: 0;
