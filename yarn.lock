@@ -202,7 +202,7 @@ emoji-regex@^8.0.0:
   version "0.0.0"
   uid ""
 
-"entcore-generic-icons@git+https://github.com/opendigitaleducation/generic-icons.git", "entcore-generic-icons@git+https://github.com/opendigitaleducation/generic-icons.git#master":
+"entcore-generic-icons@git+https://github.com/opendigitaleducation/generic-icons.git#master":
   version "1.5.1"
   resolved "git+https://github.com/opendigitaleducation/generic-icons.git#1b3b80c4b2100c97156d48db7e2345bffc0af49e"
 
