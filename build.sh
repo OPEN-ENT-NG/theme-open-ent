@@ -176,7 +176,7 @@ build () {
 }
 
 watch () {
-  docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "npm run dev:watch"
+  yarn install && yarn watch
 }
 
 lint () {

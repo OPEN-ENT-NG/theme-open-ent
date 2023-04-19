@@ -42,4 +42,7 @@ It's easier to build and copy at once:
 
 ## Watch
 
-Work in progress...
+```bash
+yarn watch
+```
+
