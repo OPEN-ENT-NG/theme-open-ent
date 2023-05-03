@@ -103,15 +103,16 @@ nav.scrapbook-buttons {
     font-size: 16px;
     color: $darkest-grey;
     border-radius: 0;
-    width: 60px;
+    width: auto;
+    min-width: 60px;
     text-align: right;
-    padding-right: 15px!important;
+    padding-right: 15px !important;
     padding: 5px;
     height: auto;
     margin: 0;
     box-sizing: border-box;
     background-color: white;
-    border: none!important;
+    border: none !important;
   }
 }
 
