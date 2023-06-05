@@ -1,5 +1,5 @@
 /* nav horiz menu icons style */
-nav.horizontal {
+/* nav.horizontal {
   height: $header-height;
   bottom: 0;
   right: 10px;
@@ -82,7 +82,7 @@ nav.horizontal {
     }
   }
 }
-
+ */
 header.main {
   section nav.horizontal {
     #my-photo {
@@ -421,25 +421,6 @@ nav.vertical.half-stamps {
     top: 35px;
     left: 127px;
     cursor: pointer;
-  }
-}
-
-.navbar {
-  background: $primary-dark;
-  background: linear-gradient(to bottom right, $primary, $primary-dark);
-  width: 100%;
-  height: $header-height;
-  box-shadow: 0 2px 5px $shadow;
-  .welcome-message {
-    display: none;
-  }
-  .account a {
-    color: $white;
-    display: block;
-    margin-left: 10px;
-    margin-top: 10px;
-    font-weight: 300;
-    font-size: 1.3em;
   }
 }
 

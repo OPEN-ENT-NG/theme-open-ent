@@ -1,7 +1,3 @@
-.navbar {
-  background: $primary;
-}
-
 .info {
   border-left: 10px solid $accent;
 
@@ -10,15 +6,16 @@
   }
 }
 
-.tuto b:first-child{
+.tuto b:first-child {
   color: $accent;
 }
 
-table.sticky-header thead tr th, table.sticky-header thead tr th {
+table.sticky-header thead tr th,
+table.sticky-header thead tr th {
   background: $primary;
 }
 
-.logo{
+.logo {
   height: 60px;
   width: 235px;
   background-position: 5px center;
