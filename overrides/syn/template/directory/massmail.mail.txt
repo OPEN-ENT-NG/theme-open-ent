@@ -1,0 +1,44 @@
+{{! Users that are not activated }}
+{{#activationCode}}
+Bonjour,<br/>
+<br/>
+Ceci est un mail g&eacute;n&eacute;r&eacute; automatiquement qui contient vos informations de premi&egrave;re connexion &agrave; votre Espace Num&eacute;rique de Travail (ENT).<br/>
+<br/>
+La premi&egrave;re connexion s'effectue sur <a href="https://college-syn.opendigitaleducation.com">college-syn.opendigitaleducation.com</a>.<br />
+Une premi&egrave;re &eacute;tape indispensable vous permettra de personnaliser vos informations de connexion.
+Cliquez sur <b>"Se connecter"</b> en haut à droite de l'&eacute;cran.<br/>
+<br/>
+Munissez-vous de votre adresse e-mail personnelle et des informations ci-dessous :<br/>
+<br/>
+Identifiant : <b>{{login}}</b><br/>
+Code d'activation : <b>{{activationCode}}</b><br/>
+<br/>
+Pour s&eacute;curiser vos acc&egrave;s, il vous sera demand&eacute; de choisir un nouveau de mot de passe, d'indiquer votre adresse e-mail personnelle et, si vous le souhaitez, de saisir un num&eacute;ro de t&eacute;l&eacute;phone portable.<br/>
+<br/>
+Votre nouveau de passe doit contenir 6 caract&egrave;res minimuml.<br/>
+<br/>
+Bonne navigation sur votre ENT !<br/>
+<br/>
+<b>-------------------------------------------------------</b>
+{{/activationCode}}
+{{! Users that are activated }}
+{{^activationCode}}
+Bonjour,<br/>
+<br/>
+Ceci est un mail g&eacute;n&eacute;r&eacute; automatiquement qui contient vos informations de renouvellement de mot de passe pour l’acc&egrave;s &agrave; votre Espace Numérique de Travail (ENT) car vous poss&eacute;dez d&eacute;j&agrave; un compte.<br/>
+<br/>
+Votre identifiant de connexion est rappel&eacute; ci-contre : <b><i>{{login}}</i></b><br/>
+<br/>
+Si vous ne vous souvenez pas de votre mot de passe, vous pouvez en d&eacute;finir un nouveau en suivant les instructions ci-dessous :<br/>
+<br/>
+Rendez-vous &agrave; l'adresse <a href="https://college-syn.opendigitaleducation.com">college-syn.opendigitaleducation.com</a>, et cliquez sur "Besoin d'aide ?"<br/>
+Cliquez ensuite sur "Vous avez perdu votre mot de passe ?", saisissez votre identifiant puis cliquez sur "Envoyer".<br/>
+<br/>
+Un mail sera envoy&eacute; &agrave; l'adresse que vous avez saisie lors de l'activation de votre compte. Cliquez ensuite sur le lien hypertexte dans le mail re&ccedil;u pour d&eacute;finir votre nouveau mot de passe.<br/>
+<br/>
+Votre nouveau de passe doit contenir 6 caract&egrave;res minimum.<br/>
+<br/>
+Bonne navigation sur votre ENT !<br/>
+<br/>
+<b>-------------------------------------------------------</b>
+{{/activationCode}}
