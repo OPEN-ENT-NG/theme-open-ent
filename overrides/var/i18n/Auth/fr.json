@@ -7,5 +7,6 @@
 	"loginrelative":"Parents ou élèves",
 	"perseducnat":"Enseignants ou personnels de l'Éducation Nationale",
 	"otherperseducnat":"Enseignants ou personnels de l'Éducation Nationale",
-	"loginother":"Invités ou personnels hors Éducation Nationale"
+	"loginother":"Invités ou personnels hors Éducation Nationale",
+	"wayf.logo.partner" : "/assets/themes/var2d/img/logo-partenaire.png"
 }
