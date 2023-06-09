@@ -14,3 +14,4 @@ build/
 build-css/
 .DS_Store
 .idea
+*.lock
