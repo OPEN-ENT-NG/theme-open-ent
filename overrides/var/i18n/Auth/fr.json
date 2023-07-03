@@ -8,5 +8,9 @@
 	"perseducnat":"Enseignants ou personnels de l'Éducation Nationale",
 	"otherperseducnat":"Enseignants ou personnels de l'Éducation Nationale",
 	"loginother":"Invités ou personnels hors Éducation Nationale",
-	"wayf.logo.partner" : "/assets/themes/var2d/img/logo-partenaire.png"
+	"wayf.logo.partner" : "/assets/themes/var2d/img/logo-partenaire.png",
+	"wayf.logo.partner.width" : "200px",
+	"wayf.insert.title" : "<b>EduConnect pour les élèves et les parents</b>",
+	"wayf.insert.link" : "https://www.pedagogie.ac-nice.fr/dane/s-informer/educonnect",
+	"wayf.insert.link.content" : "Aide et informations en cliquant ici."
 }
