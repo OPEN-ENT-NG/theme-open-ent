@@ -209,6 +209,18 @@
 }
 
 .header {
+  @media only screen and (max-width: 800px) {
+    position: fixed;
+    top: 0;
+    z-index: 99999999;
+    left: 0;
+    right: 0;
+
+    & + .centered.container.row {
+      padding-top: 40px;
+    }
+  }
+
   .nav-link {
     display: block;
     padding: var(--ode-nav-link-padding-y) var(--ode-nav-link-padding-x);
