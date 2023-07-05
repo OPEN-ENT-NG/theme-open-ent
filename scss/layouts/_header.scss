@@ -209,6 +209,7 @@
 }
 
 .header {
+<<<<<<< HEAD
   @media only screen and (max-width: 800px) {
     position: fixed;
     top: 0;
@@ -221,6 +222,8 @@
     }
   }
 
+=======
+>>>>>>> develop-b2school
   .nav-link {
     display: block;
     padding: var(--ode-nav-link-padding-y) var(--ode-nav-link-padding-x);
