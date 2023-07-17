@@ -1,0 +1,17 @@
+{
+    "timeline.home.url": "{{#host}}/timeline/timeline{{/host}}",
+    "timeline.mail.logo.src": "{{#host}}/assets/themes/neoconnect/img/illustrations/logo.png{{/host}}",
+    "timeline.mail.logo.width":"161",
+    "timeline.mail.logo.height":"54",
+    "timeline.mail.accent.bg":"background-color: #FF8500;",
+    "timeline.mail.accent.border":"border-color: #FF8500;",
+    "timeline.mail.title.color":"color: #FF8500;",
+    "timeline.mail.main.text.color":"color: #000;",
+    "timeline.mail.footer.color": "color: #999;",
+    "timeline.mail.footer.link": "{{#host}}{{/host}}",
+    "timeline.mail.subfooter.link": "{{#host}}/userbook/mon-compte{{/host}}",
+    "timeline.content.mail.border": "border-bottom: 1px solid #006f81;",
+	"timeline.daily.mail.subject.header": "NEO - Notizie del giorno",
+	"timeline.weekly.mail.subject.header": "NEO - Notizie della settimana",
+	"assistant.welcome.title": "Benvenuto"
+}
