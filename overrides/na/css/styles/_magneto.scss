@@ -1,0 +1,44 @@
+body.magneto {
+  .boardsContainer-container-body-folder-button {
+    a {
+      border-color: $primary !important;
+    }
+  }
+
+  .boardsContainer-container {
+    .side-nav-mobile-folder-button {
+      a {
+        border-color: $primary !important;
+      }
+    }
+  }
+
+  .search-barDirective {
+    border-color: $primary !important;
+  }
+
+  .boardDirective-list-folder-infos {
+    i.magneto-folder {
+      color: $primary;
+    }
+  }
+}
+
+switch {
+  .switch {
+    input[type=checkbox]:checked + .tick {
+      background: $primary-light;
+
+      &:before {
+        background: $primary-dark;
+      }
+    }
+    input[type=checkbox]:disabled:checked + .tick {
+      background: $primary-lighter;
+
+      &:before {
+        background: $primary-lighter;
+      }
+    }
+  }
+}
