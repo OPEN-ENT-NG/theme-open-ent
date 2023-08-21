@@ -4,7 +4,7 @@ Bonjour,<br/>
 <br/>
 Ceci est un mail g&eacute;n&eacute;r&eacute; automatiquement qui contient vos informations de premi&egrave;re connexion &agrave; votre Espace Num&eacute;rique de Travail (ENT).<br/>
 <br/>
-La premi&egrave;re connexion s'effectue sur <a href="https://college-syn.opendigitaleducation.com">college-syn.opendigitaleducation.com</a>.<br />
+La premi&egrave;re connexion s'effectue sur <a href="https://ent.ecollege78.fr">ent.ecollege78.fr</a>.<br />
 Une premi&egrave;re &eacute;tape indispensable vous permettra de personnaliser vos informations de connexion.
 Cliquez sur <b>"Se connecter"</b> en haut à droite de l'&eacute;cran.<br/>
 <br/>
@@ -31,7 +31,7 @@ Votre identifiant de connexion est rappel&eacute; ci-contre : <b><i>{{login}}</i
 <br/>
 Si vous ne vous souvenez pas de votre mot de passe, vous pouvez en d&eacute;finir un nouveau en suivant les instructions ci-dessous :<br/>
 <br/>
-Rendez-vous &agrave; l'adresse <a href="https://college-syn.opendigitaleducation.com">college-syn.opendigitaleducation.com</a>, et cliquez sur "Besoin d'aide ?"<br/>
+Rendez-vous &agrave; l'adresse <a href="https://ent.ecollege78.fr">ent.ecollege78.fr</a>, et cliquez sur "Besoin d'aide ?"<br/>
 Cliquez ensuite sur "Vous avez perdu votre mot de passe ?", saisissez votre identifiant puis cliquez sur "Envoyer".<br/>
 <br/>
 Un mail sera envoy&eacute; &agrave; l'adresse que vous avez saisie lors de l'activation de votre compte. Cliquez ensuite sur le lien hypertexte dans le mail re&ccedil;u pour d&eacute;finir votre nouveau mot de passe.<br/>
