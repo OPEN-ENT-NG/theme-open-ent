@@ -1,0 +1,5 @@
+{
+	"auth.charter": "/assets/cgu/fr.pdf",
+  "password.errors": "Votre mot de passe personnel doit contenir au moins 6 caractères.",
+	"email.signature": "L'équipe ENT"
+}
