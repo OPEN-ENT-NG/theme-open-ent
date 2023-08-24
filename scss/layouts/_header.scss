@@ -153,6 +153,7 @@
   width: 100%;
   background: linear-gradient(to bottom right, #4bafd5, #2a9cc8);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  height: auto;
 }
 
 .header .navbar .container {
@@ -261,7 +262,7 @@
 .header .navbar .nav-link .badge {
   --ode-badge-padding-x: 0.55em;
   --ode-badge-padding-y: 0.35em;
-  --ode-badge-font-size: 0.55em;
+  //--ode-badge-font-size: 0.55em;
   right: 0;
   top: 4px;
   background-color: #f59700 !important;
