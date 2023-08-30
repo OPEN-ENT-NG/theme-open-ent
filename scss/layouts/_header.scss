@@ -151,7 +151,7 @@
 .header .navbar {
   --ode-navbar-padding-y: 0;
   width: 100%;
-  background: linear-gradient(to bottom right, #4bafd5, #2a9cc8);
+  background: linear-gradient(to bottom, $primary, darken($primary, 5%));
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   height: auto;
 }
