@@ -4,7 +4,9 @@
 	"email.signature": "L'équipe ENT",
 	"otherstudent":"Elève",
 	"otherrelative":"Représentant légal",
-	"loginperseducnat":"Personnel Education Nationale",
-	"otherperseducnat":"Personnel de la collectivité",
+	"otherperseducnat":"Personnel Education Nationale",
+	"loginperseducnat":"Personnel de la collectivité",
+	"loginpers":"Personnel de la collectivité",
+	"otherpers":"Personnel de la collectivité",
 	"loginother":"Invité"
 }
