@@ -33,7 +33,7 @@ fi
 
 # OVERRIDES VARS
 ITEMS=(default monlycee hdf paris moncollege na cg77 leo);
-OVERRIDE_NAME="na"
+OVERRIDE_NAME="default"
 for i in "$@"
 do
 case $i in
