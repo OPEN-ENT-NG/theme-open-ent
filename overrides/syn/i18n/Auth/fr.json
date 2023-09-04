@@ -1,5 +1,5 @@
 {
-	"auth.charter": "/assets/cgu/fr.pdf",
+	"auth.charter": "/assets/cgu/Charte_SYN_NEO.pdf",
 	"email.signature" : "L'équipe ENT",
-	"password.errors": "Votre mot de passe doit contenir au moins 6 caractères, dont une minuscule, une majuscule et un chiffre ou un caractère spécial."
+	"password.errors": "Votre mot de passe doit contenir au moins 8 caractères, dont une minuscule, une majuscule et un chiffre ou un caractère spécial."
 }

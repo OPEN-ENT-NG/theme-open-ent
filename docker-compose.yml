@@ -1,12 +1,14 @@
-version: "2"
+version: "3"
 services:
   node:
-    image: "opendigitaleducation/node:16-alpine"
+    image: "opendigitaleducation/node:18-alpine-pnpm"
+    user: "node"
     working_dir: /home/node/app
-    environment:
-      - NODE_ENV=production
+    network_mode: host
     volumes:
       - ./:/home/node/app
+      - ~/.pnpm:/.pnpm
       - ~/.npm:/.npm
+      - ~/.cache:/.cache
       - ../entcore-css-lib:/home/node/entcore-css-lib
       - ~/.gitconfig:/home/node/.gitconfig

@@ -1,0 +1,12 @@
+{
+	"auth.charter": "/assets/cgu/fr.pdf",
+  "password.errors": "Votre mot de passe personnel doit contenir au moins 6 caractères.",
+	"email.signature": "L'équipe ENT",
+	"otherstudent":"Elève",
+	"otherrelative":"Représentant légal",
+	"otherperseducnat":"Personnel Education Nationale",
+	"loginperseducnat":"Personnel de la collectivité",
+	"loginpers":"Personnel de la collectivité",
+	"otherpers":"Personnel de la collectivité",
+	"loginother":"Invité"
+}

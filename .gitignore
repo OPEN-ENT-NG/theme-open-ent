@@ -15,3 +15,5 @@ build-css/
 .DS_Store
 .idea
 *.lock
+pnpm-lock.yaml
+.pnpm-store
