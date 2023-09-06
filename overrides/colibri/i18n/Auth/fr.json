@@ -2,13 +2,14 @@
   "email.signature": "L'équipe projet Colibri",
   "auth.charter": "/assets/cgu/Charte.pdf",
   "password.errors": "Choisissez 6 caractères minimum.",
-  "otherperseducnat":"PERSONNEL ÉDUCATION NATIONALE",
+  "otherperseducnat":"Personnel Éducation Nationale",
   "perseducnat":"PERSONNEL ÉDUCATION NATIONALE",
-  "loginother":"PERSONNEL COLLECTIVITÉS ET INVITÉS",
-  "otherteacher":"ENSEIGNEMENT AGRICOLE",
+  "loginother":"Élève de la maternelle au CM1 ou autre profil",
+  "otherteacher":"Lycée agricole",
   "teacher":"ENSEIGNEMENT AGRICOLE",
   "loginstudent":"ÉLÈVES ET PARENTS (IDENTIFIANTS COLIBRI)",
   "loginrelative":"EDUCONNECT (à venir)",
   "relative":"EDUCONNECT",
-  "otherrelative":"EDUCONNECT"
+  "otherrelative":"Représentant légal",
+  "otherstudent": "Élève du CM2 au lycée"
 }
