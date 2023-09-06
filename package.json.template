@@ -1,6 +1,6 @@
 {
   "name": "ode-csslib-openent",
-  "version": "3.1.8-dev.%generateVersion%",
+  "version": "3.1.8",
   "description": "Open ENT theme by Open Digital Education",
   "scripts": {
     "override:i18n": "OVERRIDE_SRC=${OVERRIDE_SRC} OVERRIDE_DIST=${OVERRIDE_DIST} node ode-override-plugin.js",
