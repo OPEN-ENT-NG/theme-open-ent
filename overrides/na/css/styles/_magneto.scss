@@ -17,11 +17,59 @@ body.magneto {
     border-color: $primary !important;
   }
 
-  .boardDirective-list-folder-infos {
-    i.magneto-folder {
+  .folderDirective-tree-nav {
+
+    &-item {
+      &-name {
+        &.selected {
+          background-color: $primary-lighter;
+          color: $primary-light;
+          a {
+            color: $primary-light;
+          }
+        }
+      }
+    }
+  }
+  .boardDirective-list-folder {
+    &.active {
+      border: solid $primary-light 3px !important;
+      background: $primary-lighter;
+    }
+    &-infos {
+      i.magneto-folder {
+        color: $primary;
+      }
+    }
+  }
+  .boardDirective-list-item {
+    width: 300px !important;
+    &.active {
+      border: solid $primary-light 3px !important;
+      background: $primary-lighter;
+
+      &-image {
+        background: $primary-lighter;
+      }
+    }
+  }
+  .cardDirective-navbar-item{
+    &.selected
+    {
+      color:$primary-light;
+    }
+  }
+
+  .boardDirective-date {
+    background-color: $primary-lighter;
+    color: $primary;
+
+    & i.magneto-check-circle {
       color: $primary;
     }
   }
+
+
 }
 
 switch {
