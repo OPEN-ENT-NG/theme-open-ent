@@ -12,5 +12,8 @@
 	"eduprovence":"Personnel de la collectivité",
 	"perseducnat":"Personnel de la collectivité",
 	"teacher": "Connexion avec un compte Eduprovence",
-	"loginother":"Invité"
+	"loginother":"Invité",
+	"wayf.logo.partner" : "/assets/themes/cd13/img/logo-partenaire.png",
+	"wayf.logo.partner.width" : "300px",
+	"wayf.message" : "Bienvenue dans votre ENT."
 }
