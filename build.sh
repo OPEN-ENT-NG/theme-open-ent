@@ -1,9 +1,5 @@
 #!/bin/bash
 
-MVN_MOD_GROUPID=`grep 'modowner=' gradle.properties | sed 's/modowner=//'`
-MVN_MOD_NAME=`grep 'modname=' gradle.properties | sed 's/modname=//'`
-MVN_MOD_VERSION=`grep 'version=' gradle.properties | sed 's/version=//'`
-
 if [ ! -e node_modules ]
 then
   mkdir node_modules
@@ -46,7 +42,7 @@ case $i in
 esac
 done
 
-MOD_NAME=`grep "modname=" gradle.properties | sed 's/modname=//g' | sed 's/\r$//'`
+MOD_NAME="ode-csslib-openent"
 if [ "$OVERRIDE_NAME" = "default" ];
 then
   export FINAL_MODNAME="$MOD_NAME"
@@ -79,12 +75,6 @@ doInit () {
     echo "[init$1][$OVERRIDE_NAME] Get branch name from git..."
     BRANCH_NAME=`git branch | sed -n -e "s/^\* \(.*\)/\1/p"`
   fi
-  
-  echo "[init$1][$OVERRIDE_NAME] Generate deployment file from conf.deployment..."
-  mkdir -p deployment/$FINAL_MODNAME
-  cp conf.deployment deployment/$FINAL_MODNAME/conf.json.template
-  sed -i "s/%MODNAME%/${FINAL_MODNAME}/" deployment/$FINAL_MODNAME/conf.json.template
-  sed -i "s/%VERSION%/${MVN_MOD_VERSION}/" deployment/$FINAL_MODNAME/conf.json.template
   
   echo "[init$1][$OVERRIDE_NAME] Generate package.json from package.json.template..."
   NPM_VERSION_SUFFIX=`date +"%Y%m%d%H%M"`
@@ -173,8 +163,7 @@ build () {
   echo "End merge"
   #set version
   cp node_modules/entcore-css-lib/dist/version.txt $OVERRIDE_DIST/version.txt
-  VERSION=`grep "version="  gradle.properties| sed 's/version=//g'`
-  echo "$FINAL_MODNAME=$VERSION `date +'%d/%m/%Y %H:%M:%S'`" >> $OVERRIDE_DIST/version.txt
+  echo "$FINAL_MODNAME `date +'%d/%m/%Y %H:%M:%S'`" >> $OVERRIDE_DIST/version.txt
 }
 
 watch () {
