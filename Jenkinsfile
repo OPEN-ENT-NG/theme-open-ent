@@ -26,17 +26,6 @@ pipeline {
           }
         }
       }
-      stage('Archive') {
-        steps {
-          script {
-            if (params.OVERRIDE) {
-              sh "./build.sh --override=\"${params.OVERRIDE}\" archive"
-            } else {
-              sh './build.sh archive'
-            }
-          }
-        }
-      }
       stage('Publish NPM') {
         steps {
           configFileProvider([configFile(fileId: '.npmrc-infra-front', variable: 'NPMRC')]) {
