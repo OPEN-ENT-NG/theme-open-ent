@@ -37,17 +37,6 @@ pipeline {
           }
         }
       }
-      stage('Publish Nexus') {
-        steps {
-          script {
-            if (params.OVERRIDE) {
-              sh "./build.sh --override=\"${params.OVERRIDE}\" publishNexus"
-            } else {
-              sh './build.sh publishNexus'
-            }
-          }
-        }
-      }
       stage('Publish NPM') {
         steps {
           configFileProvider([configFile(fileId: '.npmrc-infra-front', variable: 'NPMRC')]) {
