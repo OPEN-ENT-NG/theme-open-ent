@@ -1,6 +1,0 @@
-{
-  "name":"com.opendigitaleducation~%MODNAME%~%VERSION%",
-  "type": "theme",
-  "waitDeploy": true,
-  "extension":"-fat.jar"
-}
