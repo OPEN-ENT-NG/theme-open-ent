@@ -7,5 +7,5 @@
 	"loginstudent": "Élèves et parents (connexion via NEO)",
 	"relative": "Élèves et parents (connexion via ÉduConnect)",
 	"otherrelative": "Élèves et parents (connexion via ÉduConnect)",
-	"wayf.select.profile": "Choisissez votre mode de connexion.<br>A NOTER : à partir de la rentrée 2022, élèves et parents devront progressivement se connecter via ÉduConnect.<br>Les identifiants seront distribués par les établissements lors des 1ères semaines de la rentrée scolaire."
+	"wayf.select.profile": "Choisissez votre mode de connexion.<br>A NOTER : à partir de la rentrée 2022, élèves et parents devront progressivement se connecter via ÉduConnect. A compter du 01-01-2024 <b>les élèves</b> devront obligatoirement s'identifier via ÉduConnect pour accéder à l'ENT.<br>Les identifiants seront distribués par les établissements lors des 1ères semaines de la rentrée scolaire."
 }
