@@ -1,6 +1,6 @@
 {
   "name": "ode-csslib-openent",
-  "version": "3.2.2",
+  "version": "3.2.2-dev.%generateVersion%",
   "description": "Open ENT theme by Open Digital Education",
   "scripts": {
     "override:i18n": "OVERRIDE_SRC=${OVERRIDE_SRC} OVERRIDE_DIST=${OVERRIDE_DIST} node ode-override-plugin.js",
@@ -35,7 +35,7 @@
   "author": "Open Digital Education",
   "license": "%license%",
   "dependencies": {
-    "entcore-css-lib": "npm:ode-csslib@%entcoreCSSVersion%"
+    "entcore-css-lib": "npm:ode-csslib@master"
   },
   "devDependencies": {
     "concurrently": "^5.0.2",
