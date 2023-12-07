@@ -490,7 +490,11 @@ i.cahier-de-texte {
 }
 i.cahier-textes-large::before,
 i.type.cahier-textes::before,
-i.cahier-textes::before,
+i.cahier-textes::before {
+  content: "\e965";
+  color: $green;
+}
+
 i.type.cahier-de-texte::before,
 i.cahier-de-texte::before {
   content: "\e86f";
@@ -565,6 +569,19 @@ i.type.competences::before,
 i.competences::before {
   content: "\e927";
   color: $red;
+}
+
+i.edt-large,
+i.type.edt,
+i.edt {
+  @include fonticon;
+}
+
+i.edt-large::before,
+i.type.edt::before,
+i.edt::before {
+  content: "\e964";
+  color: $blue;
 }
 
 i.parametrage-large,
