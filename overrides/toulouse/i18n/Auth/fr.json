@@ -1,5 +1,5 @@
 {
-  "auth.charter": "/assets/cgu/Toulouse_charteENT_premier_degre.pdf",
+  "auth.charter": "/assets/cgu/Charte_Toulouse.pdf",
   "password.errors": "Votre mot de passe personnel doit contenir au moins 6 caractères.",
   "email.signature" : "L'équipe ONE"
 }

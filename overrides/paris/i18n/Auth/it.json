@@ -16,7 +16,7 @@
 	"auth.back.to.login": "Torna alla pagina iniziale",
 	"auth.click.to.send.mail": "Clicca qui per ricevere una <b>email</b> all'indirizzo seguente:",
 	"auth.click.to.send.sms": "Clicca qui per ricevere un <b>SMS</b> al numero seguente:",
-	"auth.charter": "/assets/themes/paris/img/charte_ent.pdf",
+	"auth.charter": "/assets/cgu/Charte_Paris.pdf",
 	"auth.activation.invalid.argument": "Il form contiene degli errori, si prega di verificare che le password coincidano e rispettino i parametri di sicurezza. La password deve essere composta da almeno 8 caratteri di cui almeno una lettera maiuscola, una lettera minuscola ed un numero.",
 	"email.reset.infos2" : "Hai chiesto di reimpostare la password per accedere a <href='https://www.parisclassenumerique.fr'>Paris Classe Numérique</a>",
 	"email.click.to.reset" : "Per reimpostare la password, clicca sul link in basso :",
