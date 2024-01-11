@@ -9,7 +9,7 @@
 	"auth.lost.id": "Vous avez perdu votre identifiant ?",
 	"auth.lost.id.text": "Entrez votre adresse courrielle pour recevoir votre identifiant.",
 	"auth.back.to.login": "Retour à l'écran d'accueil",
-	"auth.charter": "/assets/themes/moncollege/img/charte_ent_MonCollege.pdf",
+	"auth.charter": "/assets/cgu/Charte_MonCollege.pdf",
 
 	"email.reset.infos2" : "Vous avez demandé la réinitialisation de votre mot de passe pour accéder à <a href='https://www.moncollege-ent.essonne.fr'>MonCollege.essonne.fr</a>",
 	"email.click.to.reset" : "Pour procéder à cette réinitialisation, veuillez cliquer sur le lien ci-dessous :",

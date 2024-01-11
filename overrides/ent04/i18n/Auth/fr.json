@@ -1,5 +1,5 @@
 {
-	"auth.charter": "/assets/cgu/ENT04-Charte_usages_college_v1.1.pdf",
+	"auth.charter": "/assets/cgu/Charte_ENT04.pdf",
 	"email.signature" : "L'équipe ENT",
 	"auth.resetCodeSent": "Un mail vous a été envoyé (ou à votre enseignant si vous êtes un élève), avec les instructions pour changer votre mot de passe.",
 	"password.errors": "Choisissez 6 caractères minimum.",
