@@ -1,7 +1,7 @@
 {
   "name": "ode-csslib-openent",
-  "version": "3.2.15-dev.%generateVersion%",
-  "description": "Open ENT theme by Edifice",
+  "version": "3.2.15-dev-integration.%generateVersion%",
+  "description": "Open ENT theme by Open Digital Education",
   "scripts": {
     "override:i18n": "OVERRIDE_SRC=${OVERRIDE_SRC} OVERRIDE_DIST=${OVERRIDE_DIST} node ode-override-plugin.js",
     "sass:watch": "sass --source-map -w scss/index.scss docs/index.css",
@@ -35,7 +35,7 @@
   "author": "Edifice",
   "license": "%license%",
   "dependencies": {
-    "entcore-css-lib": "npm:ode-csslib@master"
+    "entcore-css-lib": "npm:ode-csslib@dev-integration"
   },
   "devDependencies": {
     "concurrently": "^5.0.2",
