@@ -14,7 +14,6 @@
 	"auth.lost.id": "Did you forget your username?",
 	"auth.lost.id.text": "Enter your email address to receive your username.",
 	"auth.back.to.login": "Back to the homepage",
-	"auth.click.to.send.mail": "Click here to send an <b>email</b> to the following email address:",
 	"auth.click.to.send.sms": "Click here to send a <b>text message</b> to the following number:",
 	"auth.charter": "/assets/cgu/Charte_Paris.pdf",
 	"auth.activation.invalid.argument": "The form contains errors. Please make sure your passwords match and meet the security requirements. Your password must contain at least 8 characters, including at least one capital letter, one lower-case letter, and one number.",
