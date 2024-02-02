@@ -17,7 +17,7 @@ Pour sécuriser vos accès, il vous sera demandé de choisir un nouveau de mot d
 <br/>
 Nous vous recommandons de mélanger chiffres, lettres, majuscules, minuscules et caractères spéciaux lors du choix de votre mot de passe personnel.<br/>
 <br/>
-Bonne navigation sur Eduprovence !<br/>
+Bonne navigation sur ENT16 !<br/>
 <br/>
 {{/activationCode}}
 {{! Users that are activated }}
@@ -39,6 +39,6 @@ Un mail sera envoyé à l’adresse que vous avez saisi lors de l’activation d
 <br/>
 Nous vous recommandons de mélanger chiffres, lettres, majuscules, minuscules et caractères spéciaux lors du choix de votre mot de passe personnel.<br/>
 <br/>
-Bonne navigation sur Eduprovence !<br/>
+Bonne navigation sur ENT16 !<br/>
 <br/>
 {{/activationCode}}
