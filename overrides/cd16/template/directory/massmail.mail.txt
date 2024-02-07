@@ -17,7 +17,7 @@ Pour sécuriser vos accès, il vous sera demandé de choisir un nouveau de mot d
 <br/>
 Nous vous recommandons de mélanger chiffres, lettres, majuscules, minuscules et caractères spéciaux lors du choix de votre mot de passe personnel.<br/>
 <br/>
-Bonne navigation sur Eduprovence !<br/>
+Bonne navigation sur ENT16 !<br/>
 <br/>
 {{/activationCode}}
 {{! Users that are activated }}
@@ -26,7 +26,7 @@ Bonjour,<br/>
 <br/>
 Ceci est un mail généré automatiquement qui contient vos informations de connexion à ENT16.<br/>
 <br/>
-Vous possédez déjà un compte sur le réseau social collaboratif Eduprovence.<br/>
+Vous possédez déjà un compte sur le réseau social collaboratif ENT16.<br/>
 Votre identifiant de connexion est rappelé ci-contre : <i>{{login}}</i><br/>
 <br/>
 Si vous ne vous souvenez pas de votre mot de passe, vous pouvez en définir un nouveau en suivant les instructions ci-dessous :<br/>
@@ -39,6 +39,6 @@ Un mail sera envoyé à l’adresse que vous avez saisi lors de l’activation d
 <br/>
 Nous vous recommandons de mélanger chiffres, lettres, majuscules, minuscules et caractères spéciaux lors du choix de votre mot de passe personnel.<br/>
 <br/>
-Bonne navigation sur Eduprovence !<br/>
+Bonne navigation sur ENT16 !<br/>
 <br/>
 {{/activationCode}}
