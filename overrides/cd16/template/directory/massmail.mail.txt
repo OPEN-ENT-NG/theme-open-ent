@@ -26,7 +26,7 @@ Bonjour,<br/>
 <br/>
 Ceci est un mail généré automatiquement qui contient vos informations de connexion à ENT16.<br/>
 <br/>
-Vous possédez déjà un compte sur le réseau social collaboratif Eduprovence.<br/>
+Vous possédez déjà un compte sur le réseau social collaboratif ENT16.<br/>
 Votre identifiant de connexion est rappelé ci-contre : <i>{{login}}</i><br/>
 <br/>
 Si vous ne vous souvenez pas de votre mot de passe, vous pouvez en définir un nouveau en suivant les instructions ci-dessous :<br/>
