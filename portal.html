@@ -59,7 +59,7 @@
                   <div class="text-dark" ng-if="me.bookmarkedApps.length === 0">
                     <i18n>navbar.myapps.more</i18n>
                   </div>
-                  <a class="bookmarked-app" connector-lightbox-trigger="app" ng-repeat="app in me.bookmarkedApps">
+                  <a class="bookmarked-app" connector-lightbox-trigger="app" ng-repeat="app in me.bookmarkedApps | limitTo:6">
                     <i class="[[app.icon]]" ng-if="app.icon.indexOf('/') === -1" tooltip="[[app.displayName]]"></i>
                     <img skin-src="[[app.icon]]" ng-if="app.icon.indexOf('/') !== -1" tooltip="[[app.displayName]]" />
                   </a>

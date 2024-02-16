@@ -14,7 +14,6 @@
 	"auth.back.to.login": "Retour à l'écran d'accueil",
 	"auth.click.to.send.mail": "Cliquez ici pour recevoir un <b>email</b> à l'adresse suivante : ",
 	"auth.click.to.send.sms": "Cliquez ici pour recevoir un <b>SMS (texto)</b> au numéro suivant : ",
-	"auth.charter": "/assets/themes/leo/img/charte_ent.pdf",
 	"mail.reset.pw.subject": "Réinitialisation mot de passe - ENT LEO",
 	"mail.reset.id.subject": "Rappel de votre identifiant de connexion - ENT LEO",
 	"email.hi": "Bonjour,",

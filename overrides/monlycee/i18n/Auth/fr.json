@@ -10,7 +10,7 @@
 	"auth.click.to.send.mail": "Cliquez ici pour recevoir un <b>email</b> à l'adresse suivante : ",
 	"auth.click.to.send.sms": "Cliquez ici pour recevoir un <b>SMS (texto)</b> au numéro suivant : ",
 	"auth.back.to.login": "Retour à l'écran d'accueil",
-	"auth.charter": "/assets/themes/monlycee/img/Charte.pdf",
+	"auth.charter": "/assets/cgu/Charte_IDF.pdf",
 	"email.reset.pw.infos": "Ceci est un envoi généré automatiquement. Veuillez ne pas répondre directement à ce message.",
 	"email.click.to.reset" : " Pour procéder à la réinitialisation de votre mot de passe, veuillez cliquer sur le lien ci-dessous :",
 	"email.reset.infos": " Si vous n'êtes pas à l'origine de cette demande, vous pouvez ignorer cet email. Notez que ceci est un email automatique et qu’aucune réponse ne sera donnée à cette adresse. Vous pouvez à tout moment vous connecter à l’adresse suivante : <a href='https://ent.iledefrance.fr'>ent.iledefrance.fr</a>",

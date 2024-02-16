@@ -16,7 +16,7 @@
 	"auth.back.to.login": "Retour à l'écran d'accueil",
 	"auth.click.to.send.mail": "Cliquez ici pour recevoir un <b>email</b> à l'adresse suivante : ",
 	"auth.click.to.send.sms": "Cliquez ici pour recevoir un <b>SMS (texto)</b> au numéro suivant : ",
-	"auth.charter": "/assets/themes/paris/img/charte_ent.pdf",
+	"auth.charter": "/assets/cgu/Charte_Paris.pdf",
 	"auth.activation.invalid.argument": "Le formulaire contient des erreurs, veuillez vérifier que les deux mots de passe concordent et respectent les contraintes de sécurité. Le mot de passe doit contenir au moins 8 caractères dont au moins une majuscule, une minuscule et un chiffre.",
 	"email.reset.infos2" : "Vous avez demandé la réinitialisation de votre mot de passe pour accéder à <a href='https://www.parisclassenumerique.fr'>Paris Classe Numérique</a>",
 	"email.click.to.reset" : "Pour procéder à cette réinitialisation, veuillez cliquer sur le lien ci-dessous :",

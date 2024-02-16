@@ -11,7 +11,7 @@
 		"auth.back.to.login": "Retour à l'écran d'accueil",
 		"auth.click.to.send.mail": "Recevoir un courriel à l'adresse",
 		"auth.click.to.send.sms": "Recevoir un texto au numéro",
-		"auth.charter": "/assets/themes/cg77/img/charte_ent.pdf",
+		"auth.charter": "/assets/cgu/Charte_ENT77.pdf",
 		"mail.reset.pw.subject": "Réinitialisation mot de passe - ENT 77",
 		"mail.reset.id.subject": "Rappel de votre identifiant de connexion - ENT 77",
 		"email.hi": "Bonjour,",
