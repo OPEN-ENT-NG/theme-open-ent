@@ -1,4 +1,6 @@
 {
   "password.errors": "La password deve essere composta da almeno 6 caratteri.",
-	"email.signature": "Il team NEO"
+	"email.signature": "Il team NEO",
+  "password.rules.reset": "La password deve essere composta da almeno 6 caratteri. Inoltre deve essere diversa dalle password precedentemente utilizzate.",
+  "password.rules.activation": "La password deve essere composta da almeno 6 caratteri."
 }

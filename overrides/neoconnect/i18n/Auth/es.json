@@ -1,4 +1,6 @@
 {
   "password.errors": "Seleccione un mínimo obligatorio de 6 caracteres.",
-	"email.signature": "El equipo NEO"    
+	"email.signature": "El equipo NEO",
+  "password.rules.reset": "Su contraseña debe contener al menos 6 caracteres. También debe ser diferente de las contraseñas utilizadas anteriormente.",
+  "password.rules.activation": "Su contraseña debe contener al menos 6 caracteres."
 }

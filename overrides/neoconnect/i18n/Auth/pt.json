@@ -1,4 +1,6 @@
 {
   "password.errors": "Escolha no mínimo 6 caracteres.",
-	"email.signature": "A equipe NEO"
+	"email.signature": "A equipe NEO",
+  "password.rules.reset": "Sua senha deve conter pelo menos 6 caracteres. Também deve ser diferente das senhas anteriores utilizadas.",
+  "password.rules.activation": "Sua senha deve conter pelo menos 6 caracteres."
 }
