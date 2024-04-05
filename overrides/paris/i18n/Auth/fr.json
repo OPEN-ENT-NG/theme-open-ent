@@ -33,5 +33,7 @@
 	"phone.regards": "",
 	"phone.signature": "",
 	"auth.secure.location" : "Connexion depuis un lieu sécurisé",
-	"auth.error.authenticationFailed": "Votre combinaison nom d'utilisateur et mot de passe est invalide"
+	"auth.error.authenticationFailed": "Votre combinaison nom d'utilisateur et mot de passe est invalide",
+	"password.rules.activation": "Votre mot de passe doit contenir au moins un chiffre, une lettre majuscule, une lettre minuscule et avoir une longueur minimale de 12 caractères.",
+  "password.rules.reset": "Votre mot de passe doit contenir au moins un chiffre, une lettre majuscule, une lettre minuscule, et avoir une longueur minimale de 12 caractères. Il doit aussi être différent des précédents mots de passe déjà utilisés."
 }

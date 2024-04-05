@@ -1,0 +1,4 @@
+{
+    "password.rules.activation": "La password deve essere composta da almeno 4 caratteri.",
+    "password.rules.reset": "La password deve essere composta da almeno 4 caratteri. IInoltre deve essere diversa dalle password precedentemente utilizzate."
+}

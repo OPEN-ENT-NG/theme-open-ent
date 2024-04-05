@@ -15,5 +15,7 @@
 	"email.click.to.reset" : "Pour procéder à cette réinitialisation, veuillez cliquer sur le lien ci-dessous :",
 	"email.login" : "Pour rappel, votre identifiant est ",
 	"email.reset.infos" : "Si vous n'êtes pas à l'origine de cette demande, vous pouvez ignorer cet email. Notez que ceci est un email automatique et qu’aucune réponse ne sera donnée à cette adresse.",
-	"email.signature" : "L'équipe de MonCollege.essonne.fr"
+	"email.signature" : "L'équipe de MonCollege.essonne.fr",
+	"password.rules.activation": "Votre mot de passe doit contenir au moins un chiffre, une lettre et avoir une longueur minimale de 8 caractères.",
+	"password.rules.reset": "Votre mot de passe doit contenir au moins un chiffre, une lettre et avoir une longueur minimale de 8 caractères. Il doit aussi être différent des précédents mots de passe déjà utilisés."
 }

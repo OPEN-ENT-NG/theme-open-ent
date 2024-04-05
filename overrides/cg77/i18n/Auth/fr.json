@@ -24,5 +24,7 @@
 		"phone.how.to.reset": "Vous pouvez vous connecter à l'ENT 77 en saisissant votre identifiant et votre nouveau code d'activation",
 		"phone.login": "Voici le rappel de votre identifiant de connexion à l'ENT 77",
 		"phone.regards": "",
-		"phone.signature": ""
+		"phone.signature": "",
+		"password.rules.activation": "Votre mot de passe doit contenir au moins un chiffre, une lettre et avoir une longueur minimale de 8 caractères.",
+		"password.rules.reset": "Votre mot de passe doit contenir au moins un chiffre, une lettre et avoir une longueur minimale de 8 caractères. Il doit aussi être différent des précédents mots de passe déjà utilisés."
 }

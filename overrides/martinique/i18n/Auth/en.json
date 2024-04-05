@@ -1,3 +1,6 @@
 {
   "email.signature": "Regards,The Colibri team",
+  "password.rules.activation": "Your password must contain at least 6 characters.",
+  "password.rules.reset": "Your password must contain at least 6 characters. It must also be different from the previous passwords used."
+
 }

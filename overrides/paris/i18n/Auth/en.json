@@ -33,5 +33,7 @@
 	"phone.regards": "",
 	"phone.signature": "",
 	"auth.secure.location" : "Connection from a secure location",
-	"auth.error.authenticationFailed": "Invalid username and password combination"
+	"auth.error.authenticationFailed": "Invalid username and password combination",
+	"password.rules.activation": "Your password must contain at least one digit, one uppercase letter, one lowercase letter, and have a minimum length of 12 characters.",
+  "password.rules.reset": "Your password must contain at least one digit, one uppercase letter, one lowercase letter, and have a minimum length of 12 characters. It must also be different from the previous passwords used."
 }

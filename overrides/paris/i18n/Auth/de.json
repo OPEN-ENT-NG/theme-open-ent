@@ -33,5 +33,7 @@
 	"phone.regards": "",
 	"phone.signature": "",
 	"auth.secure.location" : "Anmeldung von einem sicheren Ort aus",
-	"auth.error.authenticationFailed": "Ihre Kombination von Benutzername und Passwort ist ungültig"
+	"auth.error.authenticationFailed": "Ihre Kombination von Benutzername und Passwort ist ungültig",
+	"password.rules.activation": "Ihr Passwort muss mindestens eine Ziffer, einen Großbuchstaben, einen Kleinbuchstaben enthalten und eine minimale Länge von 12 Zeichen haben.",
+  "password.rules.reset": "Ihr Passwort muss mindestens eine Ziffer, einen Großbuchstaben, einen Kleinbuchstaben enthalten und eine minimale Länge von 12 Zeichen haben. Es muss sich außerdem von den bisher verwendeten Passwörtern unterscheiden."
 }

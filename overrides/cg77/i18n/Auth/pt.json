@@ -1,3 +1,5 @@
 {
-	"auth.charter": "/assets/cgu/Charte_ENT77.pdf"
+    "auth.charter": "/assets/cgu/Charte_ENT77.pdf",
+    "password.rules.activation": "Sua senha deve conter pelo menos um número, uma letra e ter um comprimento mínimo de 8 caracteres.",
+    "password.rules.reset": "Sua senha deve conter pelo menos um número, uma letra e ter um comprimento mínimo de 8 caracteres. Também deve ser diferente das senhas anteriores utilizadas."
 }

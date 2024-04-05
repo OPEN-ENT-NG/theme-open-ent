@@ -22,5 +22,8 @@
         "phone.how.to.reset": "Vous pouvez vous connecter à l'ENT en saisissant votre identifiant et votre nouveau code d'activation",
         "phone.login": "Voici le rappel de votre identifiant de connexion à l'ENT",
         "phone.regards": "",
-        "phone.signature": ""
+        "phone.signature": "",
+    "password.rules.activation": "Votre mot de passe doit contenir au moins un caractère spécial, une lettre minuscule, une lettre majuscule et avoir une longueur minimale de 6 caractères.",
+		"password.rules.reset": "Votre mot de passe doit contenir au moins un caractère spécial, une lettre minuscule, une lettre majuscule et avoir une longueur minimale de 6 caractères. Il doit aussi être différent des précédents mots de passe déjà utilisés."
+
 }

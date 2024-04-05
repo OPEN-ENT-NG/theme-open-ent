@@ -1,0 +1,4 @@
+{
+    "password.rules.activation": "Sua senha deve conter pelo menos um dígito, uma letra maiúscula, uma letra minúscula e ter um comprimento mínimo de 12 caracteres.",
+    "password.rules.reset": "Sua senha deve conter pelo menos um dígito, uma letra maiúscula, uma letra minúscula e ter um comprimento mínimo de 12 caracteres. Também deve ser diferente das senhas anteriores utilizadas."
+}

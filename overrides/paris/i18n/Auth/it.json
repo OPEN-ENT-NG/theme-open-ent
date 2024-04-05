@@ -33,5 +33,7 @@
 	"phone.regards": "",
 	"phone.signature": "",
 	"auth.secure.location" : "Autenticazione da luogo sicuro",
-	"auth.error.authenticationFailed": "La combinazione username - password non è corretta"
+	"auth.error.authenticationFailed": "La combinazione username - password non è corretta",
+	"password.rules.activation": "La tua password deve contenere almeno una cifra, una lettera maiuscola, una lettera minuscola e avere una lunghezza minima di 12 caratteri.",
+  "password.rules.reset": "La tua password deve contenere almeno una cifra, una lettera maiuscola, una lettera minuscola e avere una lunghezza minima di 12 caratteri. Inoltre deve essere diversa dalle password precedentemente utilizzate."
 }

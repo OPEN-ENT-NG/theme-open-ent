@@ -1,5 +1,7 @@
 {
-	"auth.charter": "/assets/cgu/Charte_SYN_NEO.pdf",
-	"email.signature" : "L'équipe ENT",
-	"password.errors": "Votre mot de passe doit contenir au moins 8 caractères, dont une minuscule, une majuscule et un chiffre ou un caractère spécial."
+  "auth.charter": "/assets/cgu/Charte_SYN_NEO.pdf",
+  "email.signature": "L'équipe ENT",
+  "password.errors": "Votre mot de passe doit contenir au moins 8 caractères, dont une minuscule, une majuscule et un chiffre ou un caractère spécial.",
+  "password.rules.activation": "Votre mot de passe doit contenir au moins un chiffre, une lettre et avoir une longueur minimale de 8 caractères.",
+  "password.rules.reset": "Votre mot de passe doit contenir au moins un chiffre, une lettre et avoir une longueur minimale de 8 caractères. Il doit aussi être différent des précédents mots de passe déjà utilisés."
 }
