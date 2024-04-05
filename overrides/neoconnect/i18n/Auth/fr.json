@@ -1,4 +1,6 @@
 {
   "password.errors": "Votre mot de passe personnel doit contenir au moins 6 caractères.",
-	"email.signature": "L'équipe NEO"
+	"email.signature": "L'équipe NEO",
+  "password.rules.reset": "Votre mot de passe doit contenir au moins 6 caractères. Il doit aussi être différent des précédents mots de passe déjà utilisés.",
+  "password.rules.activation": "Votre mot de passe doit contenir au moins 6 caractères."
 }
