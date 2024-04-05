@@ -12,5 +12,7 @@
   "auth.lost.id": "Vous avez perdu votre identifiant ?",
   "auth.lost.id.text": "Entrez votre adresse courrielle pour recevoir votre identifiant.",
   "auth.back.to.login": "Retour à l'écran d'accueil",
-  "auth.click.to.send.mail": "Cliquez ici pour recevoir un email à l'adresse suivante : "
+  "auth.click.to.send.mail": "Cliquez ici pour recevoir un email à l'adresse suivante : ",
+  "password.rules.activation": "Votre mot de passe doit contenir au moins une lettre majuscule, une lettre minuscule et avoir une longueur minimale de 8 caractères.",
+  "password.rules.reset": "Votre mot de passe doit contenir au moins une lettre majuscule, une lettre minuscule, et avoir une longueur minimale de 8 caractères. Il doit aussi être différent des précédents mots de passe déjà utilisés."
 }

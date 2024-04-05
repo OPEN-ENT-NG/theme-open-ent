@@ -1,2 +1,4 @@
 {
+    "password.rules.activation": "La tua password deve contenere almeno una cifra, una lettera e avere una lunghezza minima di 8 caratteri.",
+    "password.rules.reset": "La tua password deve contenere almeno una cifra, una lettera e avere una lunghezza minima di 8 caratteri. Inoltre deve essere diversa dalle password precedentemente utilizzate."
 }

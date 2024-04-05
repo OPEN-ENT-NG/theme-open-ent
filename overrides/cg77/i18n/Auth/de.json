@@ -1,3 +1,5 @@
 {
-	"auth.charter": "/assets/cgu/Charte_ENT77.pdf"
+    "auth.charter": "/assets/cgu/Charte_ENT77.pdf",
+    "password.rules.activation": "Ihr Passwort muss mindestens eine Ziffer, einen Buchstaben enthalten und eine minimale Länge von 8 Zeichen haben.",
+    "password.rules.reset": "Ihr Passwort muss mindestens eine Ziffer, einen Buchstaben enthalten und eine minimale Länge von 8 Zeichen haben. Es muss sich außerdem von den bisher verwendeten Passwörtern unterscheiden."
 }

@@ -1,2 +1,4 @@
 {
+    "password.rules.activation": "Sua senha deve conter pelo menos um número, uma letra e ter um comprimento mínimo de 8 caracteres.",
+    "password.rules.reset": "Sua senha deve conter pelo menos um número, uma letra e ter um comprimento mínimo de 8 caracteres. Também deve ser diferente das senhas anteriores utilizadas."
 }
