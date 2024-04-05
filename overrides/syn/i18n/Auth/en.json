@@ -1,2 +1,4 @@
 {
+  "password.rules.activation": "Your password must contain at least one digit, one letter, and have a minimum length of 8 characters.",
+  "password.rules.reset": "Your password must contain at least one digit, one letter, and have a minimum length of 8 characters. It must also be different from the previous passwords already used."
 }
