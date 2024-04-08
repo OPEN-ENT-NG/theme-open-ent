@@ -8,23 +8,14 @@
 			<h4><i18n>auth.forgot.text</i18n></h4>
 
 			<h2 ng-click="showWhat = showWhat === 'forgotPassword' ? null : 'forgotPassword'"><a><i18n>auth.lost.password</i18n></a></h2>
-			<div ng-if="showWhat === 'forgotPassword'" ng-init="initUser()">
+			<div ng-if="showWhat === 'forgotPassword'" ng-init="initUser(); passwordChannels()">
 				<p><i18n>auth.lost.password.text</i18n></p>
 				<div class="row">
-					<form class="nostyle rowstyle" name="forgotPasswordForm" ng-submit="passwordChannels(user.login)">
+					<form class="nostyle rowstyle" name="forgotPasswordForm" ng-submit="forgotPassword(user.login, 'mail')">
 						<input type="text" translate attr="placeholder" placeholder="auth.email"
 							name="login" ng-model="user.login" ng-keydown="noSpace($event)" ng-change="noUpperCase(); user.channels = {}" required/>
-						<input type="submit" translate attr="value" value="auth.forgot.send" ng-disabled="forgotPasswordForm.$invalid"/>
+						<input type="submit" translate attr="value" value="auth.forgot.send.mail" ng-disabled="forgotPasswordForm.$invalid"/>
 					</form>
-
-					<ul ng-if="user.channels.mail">
-						<li ng-if="user.channels.mail">
-							<a class="reduce-block-eight" ng-click="forgotPassword(user.login, 'mail')">
-								<u><i18n>auth.click.to.send.mail</i18n></u>
-							</a>
-							<b class="horizontal-spacing">[[user.channels.mail]]</b>
-						</li>
-					</ul>
 					<br>
 				</div>
 			</div>
