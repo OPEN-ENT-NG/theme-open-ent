@@ -1,5 +1,6 @@
 {
     "auth.charter": "/assets/cgu/Charte_ENT77.pdf",
-    "password.rules.activation": "Your password must contain at least one digit, one letter, and have a minimum length of 8 characters.",
-    "password.rules.reset": "Your password must contain at least one digit, one letter, and have a minimum length of 8 characters. It must also be different from the previous passwords already used."
+    "password.errors": "Choose a minimum of 12 characters, using both letters and numbers.",
+    "password.rules.activation": "Your password must contain at least one special character, one lowercase letter, one uppercase letter, one digit, and have a minimum length of 12 characters.",
+    "password.rules.reset": "Your password must contain at least one special character, one lowercase letter, one uppercase letter, one digit, and have a minimum length of 12 characters. It must also be different from the previous passwords already used."
 }
