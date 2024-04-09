@@ -1,5 +1,6 @@
 {
     "auth.charter": "/assets/cgu/Charte_ENT77.pdf",
-    "password.rules.activation": "La tua password deve contenere almeno una cifra, una lettera e avere una lunghezza minima di 8 caratteri.",
-    "password.rules.reset": "La tua password deve contenere almeno una cifra, una lettera e avere una lunghezza minima di 8 caratteri. Inoltre deve essere diversa dalle password precedentemente utilizzate."
+    "password.errors": "La password deve essere composta da almeno 12 caratteri e deve necessariamente contenere lettere e numeri.",
+    "password.rules.activation": "La tua password deve contenere almeno un carattere speciale, una lettera minuscola, una lettera maiuscola, un numero e avere una lunghezza minima di 12 caratteri.",
+    "password.rules.reset": "La tua password deve contenere almeno un carattere speciale, una lettera minuscola, una lettera maiuscola, un numero e avere una lunghezza minima di 12 caratteri. Inoltre deve essere diversa dalle password precedentemente utilizzate."
 }

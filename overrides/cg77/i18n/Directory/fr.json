@@ -1,4 +1,5 @@
 {
+	"auth.charter": "/assets/cgu/Charte_ENT77.pdf", 
   "userBook.mood.angry": "concentré(e)",
   "userBook.mood.default": "Non renseigné",
   "userBook.mood.dreamy": "nerveux(se)",
@@ -12,7 +13,7 @@
   "userBook.mood.worried": "incertain(e)",
   "directory.explaination": "Saisissez quelques caractères et cliquez sur OK pour afficher les résultats.",
   "userBook.profile.health": "Divers",
-  "password.errors": "Choisissez 8 caractères minimum, en mélangeant les majuscules et les minuscules.",
+  "password.errors": "Choisissez 12 caractères minimum, avec au minimum une lettre et un chiffre.",
   "password.recommandations": " Il est recommandé de mélanger chiffres, lettres, majuscules, minuscules et caractères spéciaux.",
   "directory.massmail.filename": "publipostage_ENT_77",
   "directory.massmail.mail.subject.not.activated": "Première connexion à l’ENT 77",
