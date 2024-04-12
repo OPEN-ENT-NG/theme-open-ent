@@ -13,7 +13,7 @@
 				<div class="row">
 					<form class="nostyle rowstyle" name="forgotPasswordForm">
 						<input type="text" translate attr="placeholder" placeholder="auth.email"
-							name="login" ng-model="user.login" ng-change="user.channels = {}" required/>
+							name="login" ng-model="user.login" required/>
 						<input type="submit" translate attr="value" ng-click="forgotPassword(user.login, 'mail')" value="auth.forgot.send.mail" ng-disabled="forgotPasswordForm.$invalid"/>
 						<input ng-if="user.channels.mobile" type="submit" translate attr="value" ng-click="forgotPassword(user.login, 'mobile')" value="auth.forgot.send.sms" ng-disabled="forgotPasswordForm.$invalid"/>
 					</form>
