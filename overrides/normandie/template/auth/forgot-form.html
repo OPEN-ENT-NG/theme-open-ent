@@ -8,12 +8,12 @@
 			<h4><i18n>auth.forgot.text</i18n></h4>
 
 			<h2 ng-click="showWhat = showWhat === 'forgotPassword' ? null : 'forgotPassword'"><a><i18n>auth.lost.password</i18n></a></h2>
-			<div ng-if="showWhat === 'forgotPassword'" ng-init="initUser(); passwordChannels()">
+			<div ng-if="showWhat === 'forgotPassword'" ng-init="initUser()">
 				<p><i18n>auth.lost.password.text</i18n></p>
 				<div class="row">
 					<form class="nostyle rowstyle" name="forgotPasswordForm" ng-submit="forgotPassword(user.login, 'mail')">
 						<input type="text" translate attr="placeholder" placeholder="auth.email"
-							name="login" ng-model="user.login" ng-keydown="noSpace($event)" ng-change="noUpperCase(); user.channels = {}" required/>
+							name="login" ng-model="user.login" ng-keydown="noSpace($event)" ng-change="noUpperCase()" required/>
 						<input type="submit" translate attr="value" value="auth.forgot.send.mail" ng-disabled="forgotPasswordForm.$invalid"/>
 					</form>
 					<br>
