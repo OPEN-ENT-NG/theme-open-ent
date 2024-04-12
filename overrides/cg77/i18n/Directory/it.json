@@ -1,0 +1,4 @@
+{
+	"auth.charter": "/assets/cgu/Charte_ENT77.pdf", 
+    "password.errors": "La password deve essere composta da almeno 12 caratteri e deve necessariamente contenere lettere e numeri."
+}
