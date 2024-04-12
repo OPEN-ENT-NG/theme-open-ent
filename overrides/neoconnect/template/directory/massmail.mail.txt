@@ -4,7 +4,7 @@ Bonjour,<br/>
 <br/>
 Ceci est un mail généré automatiquement qui contient vos informations de première connexion à NEO.<br/>
 <br/>
-La première connexion s’effectue sur <a href="https://neoconnect.opendigitaleducation.com">neoconnect.opendigitaleducation.com</a>.<br/>
+La première connexion s’effectue sur <a href="https://neoconnect.edifice.io">neoconnect.edifice.io</a>.<br/>
 <br/>
 Une première étape indispensable vous permettra de personnaliser vos informations de connexion.<br/>
 <br/>
@@ -31,7 +31,7 @@ Votre identifiant de connexion est rappelé ci-contre : <i>{{login}}</i><br/>
 <br/>
 Si vous ne vous souvenez pas de votre mot de passe, vous pouvez en définir un nouveau en suivant les instructions ci-dessous :<br/>
 <br/>
-- Rendez-vous à l’adresse <a href="https://neoconnect.opendigitaleducation.com">https://neoconnect.opendigitaleducation.com</a> et cliquez sur « Besoin d'aide? ».<br/>
+- Rendez-vous à l’adresse <a href="https://neoconnect.edifice.io">https://neoconnect.edifice.io</a> et cliquez sur « Besoin d'aide? ».<br/>
 <br/>
 - Cliquez ensuite sur "Vous avez perdu votre mot de passe ?", saisissez votre identifiant puis cliquez sur "Envoyer".<br/>
 <br/>
