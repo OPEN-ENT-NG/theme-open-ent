@@ -1,6 +1,6 @@
 {
   "directory.admin.title" : "One : admin diretório",
   "userBook.profile.displayName": "Nome em One",
-  "password.errors": "Escolha no mínimo 6 caracteres.",
+  "password.errors": "Escolha no mínimo 12 caracteres.",
 	"email.signature": "A equipe ONE"
 }

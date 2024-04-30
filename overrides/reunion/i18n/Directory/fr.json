@@ -12,5 +12,5 @@
   "password.recommandations": "",
   "directory.massmail.mail.subject.not.activated": "Vos informations de connexion à ONE",
   "directory.massmail.mail.subject.activated": "Vos informations de connexion à ONE", 
-  "password.errors": "Votre mot de passe personnel doit contenir au moins 6 caractères."
+  "password.errors": "Votre mot de passe doit contenir au moins 12 caractères, dont une minuscule, une majuscule, un chiffre et un caractère spécial."
 }
