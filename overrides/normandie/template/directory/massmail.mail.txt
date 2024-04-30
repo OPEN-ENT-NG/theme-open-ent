@@ -15,7 +15,7 @@ Code d’activation : <b>{{activationCode}}</b><br/>
 <br/>
 Pour sécuriser vos accès, il vous sera demandé de choisir un nouveau de mot de passe, d’indiquer votre adresse e-mail personnelle et, si vous le souhaitez, de saisir un numéro de téléphone portable.<br/>
 <br/>
-Votre nouveau de passe doit contenir 6 caractères minimum.<br/>
+Votre mot de passe doit contenir au moins 12 caractères, dont une minuscule, une majuscule, un chiffre et un caractère spécial.<br/>
 <br/>
 Bonne navigation sur votre ENT !<br/>
 <br/>
@@ -38,7 +38,7 @@ Si vous ne vous souvenez pas de votre mot de passe, vous pouvez en définir un n
 <br/>
 Un mail sera envoyé à l’adresse que vous avez saisi lors de l’activation de votre compte. Cliquez ensuite sur le lien hypertexte dans le mail reçu pour définir votre nouveau mot de passe.<br/>
 <br/>
-Votre nouveau de passe doit contenir 6 caractères minimum.<br/>
+Votre mot de passe doit contenir au moins 12 caractères, dont une minuscule, une majuscule, un chiffre et un caractère spécial.<br/>
 <br/>
 Bonne navigation sur votre ENT !<br/>
 <br/>

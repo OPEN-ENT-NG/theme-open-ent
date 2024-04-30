@@ -1,6 +1,6 @@
 {
 	"auth.charter": "/assets/cgu/Charte_LEduc.pdf",
-  "password.errors": "Votre mot de passe doit contenir au moins 6 caractères, dont une minuscule, une majuscule et un chiffre ou un caractère spécial",
+  "password.errors": "Votre mot de passe doit contenir au moins 12 caractères, dont une minuscule, une majuscule, un chiffre et un caractère spécial",
 	"email.signature": "L'équipe NEO",
 "auth.forgot.header": "Besoin d'aide ?",
         "password.recommandations": " Il est recommandé de mélanger chiffres, lettres, majuscules, minuscules et caractères spéciaux.",
@@ -21,6 +21,6 @@
         "phone.login": "Voici le rappel de votre identifiant de connexion à l'ENT",
         "phone.regards": "",
         "phone.signature": "",
-  "password.rules.activation": "Votre mot de passe doit contenir au moins un caractère spécial, une lettre minuscule, une lettre majuscule et avoir une longueur minimale de 6 caractères.",
-  "password.rules.reset": "Votre mot de passe doit contenir au moins un caractère spécial, une lettre minuscule, une lettre majuscule et avoir une longueur minimale de 6 caractères. Il doit aussi être différent des précédents mots de passe déjà utilisés."
+  "password.rules.activation": "Votre mot de passe doit contenir au moins un caractère spécial, un chiffre, une lettre minuscule, une lettre majuscule et avoir une longueur minimale de 12 caractères.",
+  "password.rules.reset": "Votre mot de passe doit contenir au moins un caractère spécial, une lettre minuscule, une lettre majuscule, un chiffre et avoir une longueur minimale de 12 caractères. Il doit aussi être différent des précédents mots de passe déjà utilisés."
 }
