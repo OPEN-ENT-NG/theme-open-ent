@@ -1,4 +1,4 @@
 {
-  "password.errors": "Seleccione un mínimo obligatorio de 6 caracteres.",
+  "password.errors": "Seleccione un mínimo obligatorio de 12 caracteres.",
 	"email.signature": "El equipo ONE"
 }

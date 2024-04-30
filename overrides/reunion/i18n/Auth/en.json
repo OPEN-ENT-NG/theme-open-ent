@@ -3,5 +3,5 @@
   "auth.resetCodeSent": "An email was sent to you (or your teacher if you are a student), with instructions to change your password.",
   "email.signature" : "The ONE Team",
   "auth.welcome.p1" : "Welcom on One, the Virtual Learning Environment for the primary degre!",
-  "password.errors": "Choose a minimum of 6 characters."
+  "password.errors": "Choose a minimum of 12 characters."
 }

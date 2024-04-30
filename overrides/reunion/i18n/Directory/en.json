@@ -1,5 +1,5 @@
 {
   "directory.admin.title" : "One : Admin directory",
   "email.signature" : "The One Team",
-  "password.errors": "Choose a minimum of 6 characters."
+  "password.errors": "Choose a minimum of 12 characters."
 }
