@@ -1,6 +1,6 @@
 {
   "email.signature": "Il team NEO",
-  "password.errors": "La password deve essere composta da almeno 6 caratteri.",
-  "password.rules.activation": "La tua password deve contenere almeno un carattere speciale, una lettera minuscola, una lettera maiuscola e avere una lunghezza minima di 6 caratteri.",
-  "password.rules.reset": "La tua password deve contenere almeno un carattere speciale, una lettera minuscola, una lettera maiuscola e avere una lunghezza minima di 6 caratteri. Inoltre deve essere diversa dalle password precedentemente utilizzate."
+  "password.errors": "La password deve essere composta da almeno 12 caratteri.",
+  "password.rules.activation": "La tua password deve contenere almeno un carattere speciale, una lettera minuscola, una lettera maiuscola e avere una lunghezza minima di 12 caratteri.",
+  "password.rules.reset": "La tua password deve contenere almeno un carattere speciale, una lettera minuscola, una lettera maiuscola e avere una lunghezza minima di 12 caratteri. Inoltre deve essere diversa dalle password precedentemente utilizzate."
 }
