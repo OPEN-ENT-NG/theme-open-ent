@@ -1,4 +1,6 @@
 {
+  "email.signature": "The NEO Team",
   "password.errors": "Choose a minimum of 6 characters.",
-	"email.signature": "The NEO Team"
+  "password.rules.activation": "Your password must contain at least one special character, one lowercase letter, one uppercase letter, and have a minimum length of 6 characters.",
+  "password.rules.reset": "Your password must contain at least one special character, one lowercase letter, one uppercase letter, and have a minimum length of 6 characters. It must also be different from the previous passwords used."
 }

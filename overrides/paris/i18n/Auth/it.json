@@ -14,7 +14,6 @@
 	"auth.lost.id": "Hai dimenticato il tuo username?",
 	"auth.lost.id.text": "Inserisci il tuo indirizzo email per ricevere il tuo username.",
 	"auth.back.to.login": "Torna alla pagina iniziale",
-	"auth.click.to.send.mail": "Clicca qui per ricevere una <b>email</b> all'indirizzo seguente:",
 	"auth.click.to.send.sms": "Clicca qui per ricevere un <b>SMS</b> al numero seguente:",
 	"auth.charter": "/assets/cgu/Charte_Paris.pdf",
 	"auth.activation.invalid.argument": "Il form contiene degli errori, si prega di verificare che le password coincidano e rispettino i parametri di sicurezza. La password deve essere composta da almeno 8 caratteri di cui almeno una lettera maiuscola, una lettera minuscola ed un numero.",
@@ -33,5 +32,7 @@
 	"phone.regards": "",
 	"phone.signature": "",
 	"auth.secure.location" : "Autenticazione da luogo sicuro",
-	"auth.error.authenticationFailed": "La combinazione username - password non è corretta"
+	"auth.error.authenticationFailed": "La combinazione username - password non è corretta",
+	"password.rules.activation": "La tua password deve contenere almeno una cifra, una lettera maiuscola, una lettera minuscola e avere una lunghezza minima di 12 caratteri.",
+  "password.rules.reset": "La tua password deve contenere almeno una cifra, una lettera maiuscola, una lettera minuscola e avere una lunghezza minima di 12 caratteri. Inoltre deve essere diversa dalle password precedentemente utilizzate."
 }

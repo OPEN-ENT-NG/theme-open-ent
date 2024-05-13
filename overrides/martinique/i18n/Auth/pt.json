@@ -1,3 +1,5 @@
 {
   "email.signature": "Atenciosamente, a Colibri",
+  "password.rules.activation": "Sua senha deve conter pelo menos 6 caracteres.",
+  "password.rules.reset": "Sua senha deve conter pelo menos 6 caracteres. Também deve ser diferente das senhas anteriores utilizadas."
 }

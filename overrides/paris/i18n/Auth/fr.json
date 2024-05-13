@@ -6,7 +6,7 @@
 	"auth.faq": "Foire aux questions",
 	"auth.faq.link": "https://www.ac-paris.fr/portail/jcms/p1_1419742/foire-aux-questions-pour-les-eleves-parents-et-enseignants-sur-open-ent-ng",
 	"auth.welcome.content": "<h2>Bienvenue sur l’ENT parisien Nouvelle Génération !</h2><p>Cet espace numérique de travail (ENT) permet à tous les membres de la communauté éducative d’un collège, ainsi qu’aux parents d’élèves, d’accéder aux informations de la vie scolaire, à des ressources pédagogiques, aux actualités, ainsi qu’à des outils de communication, de partage et de travail collaboratif.<br/><br/>Il est utilisé en 2016 dans le cadre d’une expérimentation par deux collèges parisiens : <b>Georges Méliès (75019) et Jean-François Oeben (75012).</b><br/>L’ENT présente le grand avantage d’offrir un « cadre de confiance » dans lequel toutes les données personnelles sont protégées et les règles de communication bien établies. Pour ce faire une authentification (avec mot de passe personnel) est requise lors de chaque connexion.<br/>Les modalités de connexion (adresse, identifiant, mot de passe temporaire) sont diffusées aux utilisateurs directement par le chef d’établissement.<br/><br/>Bonne visite et bon travail !</p>",
-	"password.errors": "Le mot de passe doit contenir au moins 8 caractères dont au moins une majuscule, une minuscule et un chiffre.",
+	"password.errors": "Le mot de passe doit contenir au moins 12 caractères dont au moins une majuscule, une minuscule et un chiffre.",
 	"password.recommandations": " Pour augmenter la sécurité de votre mot de passe, il est recommandé de mélanger chiffres, lettres, majuscules, minuscules et caractères spéciaux.",
 	"auth.forgot.text": "Fournissez simplement les informations suivantes et nous vous aiderons à accéder à votre compte.",
 	"auth.lost.password": "Vous avez perdu votre mot de passe ?",
@@ -14,10 +14,9 @@
 	"auth.lost.id": "Vous avez perdu votre identifiant ?",
 	"auth.lost.id.text": "Entrez votre adresse courrielle pour recevoir votre identifiant.",
 	"auth.back.to.login": "Retour à l'écran d'accueil",
-	"auth.click.to.send.mail": "Cliquez ici pour recevoir un <b>email</b> à l'adresse suivante : ",
-	"auth.click.to.send.sms": "Cliquez ici pour recevoir un <b>SMS (texto)</b> au numéro suivant : ",
+	"auth.click.to.send.sms": "Cliquez ici pour recevoir un <b>SMS (texto)</b> au numéro de téléphone mobile que vous avez indiqué dans votre profil.",
 	"auth.charter": "/assets/cgu/Charte_Paris.pdf",
-	"auth.activation.invalid.argument": "Le formulaire contient des erreurs, veuillez vérifier que les deux mots de passe concordent et respectent les contraintes de sécurité. Le mot de passe doit contenir au moins 8 caractères dont au moins une majuscule, une minuscule et un chiffre.",
+	"auth.activation.invalid.argument": "Le formulaire contient des erreurs, veuillez vérifier que les deux mots de passe concordent et respectent les contraintes de sécurité. Le mot de passe doit contenir au moins 12 caractères dont au moins une majuscule, une minuscule et un chiffre.",
 	"email.reset.infos2" : "Vous avez demandé la réinitialisation de votre mot de passe pour accéder à <a href='https://www.parisclassenumerique.fr'>Paris Classe Numérique</a>",
 	"email.click.to.reset" : "Pour procéder à cette réinitialisation, veuillez cliquer sur le lien ci-dessous :",
 	"email.login" : "Identifiant ",
@@ -33,5 +32,7 @@
 	"phone.regards": "",
 	"phone.signature": "",
 	"auth.secure.location" : "Connexion depuis un lieu sécurisé",
-	"auth.error.authenticationFailed": "Votre combinaison nom d'utilisateur et mot de passe est invalide"
+	"auth.error.authenticationFailed": "Votre combinaison nom d'utilisateur et mot de passe est invalide",
+	"password.rules.activation": "Votre mot de passe doit contenir au moins un chiffre, une lettre majuscule, une lettre minuscule et avoir une longueur minimale de 12 caractères.",
+  "password.rules.reset": "Votre mot de passe doit contenir au moins un chiffre, une lettre majuscule, une lettre minuscule, et avoir une longueur minimale de 12 caractères. Il doit aussi être différent des précédents mots de passe déjà utilisés."
 }

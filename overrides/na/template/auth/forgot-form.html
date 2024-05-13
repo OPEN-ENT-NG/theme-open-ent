@@ -8,29 +8,15 @@
 			<h4><i18n>auth.forgot.text</i18n></h4>
 
 			<h2 ng-click="showWhat = showWhat === 'forgotPassword' ? null : 'forgotPassword'"><a><i18n>auth.lost.password</i18n></a></h2>
-			<div ng-if="showWhat === 'forgotPassword'" ng-init="initUser()">
+			<div ng-if="showWhat === 'forgotPassword'" ng-init="initUser(); passwordChannels()">
 				<p><i18n>auth.lost.password.text</i18n></p>
 				<div class="row">
-					<form class="nostyle rowstyle" name="forgotPasswordForm" ng-submit="passwordChannels(user.login)">
+					<form class="nostyle rowstyle" name="forgotPasswordForm">
 						<input type="text" translate attr="placeholder" placeholder="auth.email"
-							name="login" ng-model="user.login" ng-change="user.channels = {}" required/>
-						<input type="submit" translate attr="value" value="auth.forgot.send" ng-disabled="forgotPasswordForm.$invalid"/>
+							name="login" ng-model="user.login" ng-keydown="noSpace($event)" ng-change="noUpperCase()" required/>
+						<input type="submit" translate attr="value" ng-click="forgotPassword(user.login, 'mail')" value="auth.forgot.send.mail" ng-disabled="forgotPasswordForm.$invalid"/>
+						<input ng-if="user.channels.mobile" type="submit" translate attr="value" ng-click="forgotPassword(user.login, 'mobile')" value="auth.forgot.send.sms" ng-disabled="forgotPasswordForm.$invalid"/>
 					</form>
-
-					<ul ng-if="user.channels.mobile || user.channels.mail">
-						<li ng-if="user.channels.mail">
-							<a class="reduce-block-eight" ng-click="forgotPassword(user.login, 'mail')">
-								<u><i18n>auth.click.to.send.mail</i18n></u>
-							</a>
-							<b class="horizontal-spacing">[[user.channels.mail]]</b>
-						</li>
-						<li ng-if="user.channels.mobile">
-							<a class="reduce-block-eight" ng-click="forgotPassword(user.login, 'mobile')">
-								<u><i18n>auth.click.to.send.sms</i18n></u>
-							</a>
-							<b class="horizontal-spacing">[[user.channels.mobile]]</b>
-						</li>
-					</ul>
 					<br>
 				</div>
 			</div>
@@ -51,7 +37,7 @@
 				</form>
 				<div class="card info row" ng-if="user.channels.mobile" >
 					<a class="reduce-block-eight" ng-if="user.channels.mobile" ng-click="forgot('mobile')">
-						<i18n>auth.click.to.send.sms</i18n> <b class="horizontal-spacing">[[user.channels.mobile]]</b>
+						<i18n>auth.click.to.send.sms</i18n>
 					</a>
 				</div>
 

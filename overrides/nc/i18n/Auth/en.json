@@ -1,0 +1,4 @@
+{
+    "password.rules.activation": "Your password must contain at least 4 characters.",
+    "password.rules.reset": "Your password must contain at least 4 characters. It must also be different from the previous passwords used."
+}

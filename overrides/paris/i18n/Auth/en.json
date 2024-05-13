@@ -14,7 +14,6 @@
 	"auth.lost.id": "Did you forget your username?",
 	"auth.lost.id.text": "Enter your email address to receive your username.",
 	"auth.back.to.login": "Back to the homepage",
-	"auth.click.to.send.mail": "Click here to send an <b>email</b> to the following email address:",
 	"auth.click.to.send.sms": "Click here to send a <b>text message</b> to the following number:",
 	"auth.charter": "/assets/cgu/Charte_Paris.pdf",
 	"auth.activation.invalid.argument": "The form contains errors. Please make sure your passwords match and meet the security requirements. Your password must contain at least 8 characters, including at least one capital letter, one lower-case letter, and one number.",
@@ -33,5 +32,7 @@
 	"phone.regards": "",
 	"phone.signature": "",
 	"auth.secure.location" : "Connection from a secure location",
-	"auth.error.authenticationFailed": "Invalid username and password combination"
+	"auth.error.authenticationFailed": "Invalid username and password combination",
+	"password.rules.activation": "Your password must contain at least one digit, one uppercase letter, one lowercase letter, and have a minimum length of 12 characters.",
+  "password.rules.reset": "Your password must contain at least one digit, one uppercase letter, one lowercase letter, and have a minimum length of 12 characters. It must also be different from the previous passwords used."
 }

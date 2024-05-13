@@ -13,9 +13,11 @@ Munissez-vous de votre adresse e-mail personnelle et des informations ci-dessous
 Identifiant : <b>{{login}}</b><br/>
 Code d'activation : <b>{{activationCode}}</b><br/>
 <br/>
+Merci de v&eacute;rifier qu&rsquo;il n&rsquo;y ait pas d'espace avant et/ou apr&egrave;s l&rsquo;identifiant et le mot de passe si vous les copiez et collez &agrave; la page d&rsquo;accueil de PCN.<br/>
+<br/>
 Pour s&eacute;curiser vos acc&egrave;s, il vous sera demand&eacute; de choisir un nouveau mot de passe, d'indiquer votre adresse e-mail personnelle et, si vous le souhaitez, de saisir un num&eacute;ro de t&eacute;l&eacute;phone portable.<br/>
 <br/>
-Votre nouveau mot de passe doit contenir 8 caract&egrave;res minimum, dont au moins une majuscule, une minuscule et un chiffre. Pour plus de s&eacute;curit&eacute;, vous pouvez ajouter des caract&egrave;res sp&eacute;ciaux.<br/>
+Votre nouveau mot de passe doit contenir 12 caract&egrave;res minimum, dont au moins une majuscule, une minuscule et un chiffre. Pour plus de s&eacute;curit&eacute;, vous pouvez ajouter des caract&egrave;res sp&eacute;ciaux.<br/>
 <br/>
 Bonne navigation sur Paris Classe Num&eacute;rique !<br/>
 <br/>
@@ -31,6 +33,8 @@ Vous poss&eacute;dez d&eacute;j&agrave; un compte sur l'ENT (environnement num&e
 <br/>
 Votre identifiant de connexion est rappel&eacute; ci-contre : <b><i>{{login}}</i></b><br/>
 <br/>
+Merci de v&eacute;rifier qu&rsquo;il n&rsquo;y ait pas d'espace avant et/ou apr&egrave;s l&rsquo;identifiant et le mot de passe si vous les copiez et collez &agrave; la page d&rsquo;accueil de PCN.<br/>
+<br/>
 Si vous ne vous souvenez pas de votre mot de passe, vous pouvez en d&eacute;finir un nouveau en suivant les instructions ci-dessous :<br/>
 <br/>
 
@@ -41,7 +45,7 @@ Cliquez ensuite sur "Vous avez perdu votre mot de passe ?", saisissez votre iden
 <br/>
 Un mail sera envoy&eacute; &agrave; l'adresse que vous avez saisie lors de l'activation de votre compte. Cliquez ensuite sur le lien hypertexte dans le mail re&ccedil;u pour d&eacute;finir votre nouveau mot de passe.<br/>
 <br/>
-Votre nouveau mot de passe doit contenir 8 caract&egrave;res minimum, dont au moins une majuscule, une minuscule et un chiffre. Il est recommand&eacute; de choisir un mot de passe associant chiffres, lettres, majuscules, minuscules et caract&egrave;res sp&eacute;ciaux.<br/>
+Votre nouveau mot de passe doit contenir 12 caract&egrave;res minimum, dont au moins une majuscule, une minuscule et un chiffre. Il est recommand&eacute; de choisir un mot de passe associant chiffres, lettres, majuscules, minuscules et caract&egrave;res sp&eacute;ciaux.<br/>
 <br/>
 Bonne navigation sur Paris Classe Num&eacute;rique !<br/>
 <br/>

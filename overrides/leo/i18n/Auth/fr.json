@@ -12,8 +12,7 @@
 	"auth.contact.help": "Vous souhaitez contacter l'assistance ?",
 	"auth.contact.help.text": "<ul><li>ASSISTANCE PARENT : via le <a href='http://leo.picardie.fr/assistance/' target='_blank' style='display: inline'>formulaire d'assistance</a>.</li><li>Assistance académique pour les enseignants et personnels : 03 22 82 37 40</li></ul>",
 	"auth.back.to.login": "Retour à l'écran d'accueil",
-	"auth.click.to.send.mail": "Cliquez ici pour recevoir un <b>email</b> à l'adresse suivante : ",
-	"auth.click.to.send.sms": "Cliquez ici pour recevoir un <b>SMS (texto)</b> au numéro suivant : ",
+	"auth.click.to.send.sms": "Cliquez ici pour recevoir un <b>SMS (texto)</b> au numéro de téléphone mobile que vous avez indiqué dans votre profil.",
 	"mail.reset.pw.subject": "Réinitialisation mot de passe - ENT LEO",
 	"mail.reset.id.subject": "Rappel de votre identifiant de connexion - ENT LEO",
 	"email.hi": "Bonjour,",
@@ -26,5 +25,7 @@
 	"phone.how.to.reset": "Vous pouvez vous connecter à l'ENT LEO en saisissant votre identifiant et votre nouveau code d'activation",
 	"phone.login": "Voici le rappel de votre identifiant de connexion à l'ENT LEO",
 	"phone.regards": "",
-	"phone.signature": ""
+	"phone.signature": "",
+	"password.rules.activation": "Votre mot de passe doit contenir au moins un caractère spécial, une lettre minuscule, une lettre majuscule et avoir une longueur minimale de 6 caractères.",
+	"password.rules.reset": "Votre mot de passe doit contenir au moins un caractère spécial, une lettre minuscule, une lettre majuscule et avoir une longueur minimale de 6 caractères. Il doit aussi être différent des précédents mots de passe déjà utilisés."
 }
