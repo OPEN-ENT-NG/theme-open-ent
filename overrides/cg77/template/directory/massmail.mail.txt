@@ -12,9 +12,11 @@ Munissez vous de votre adresse e-mail personnelle et des informations ci-dessous
 Identifiant : {{login}}<br/>
 Code d’activation : {{activationCode}}<br/>
 <br/>
-Pour sécuriser vos accès, il vous sera demandé de choisir un nouveau de mot de passe, d’indiquer votre adresse e-mail personnelle pour récupération du mot de passe en cas d’oubli.<br/>
+Lors de votre première connexion à l'ENT, il vous sera demandé de choisir un nouveau mot de passe.<br/>
 <br/>
-Votre nouveau de passe doit contenir au minimum 8 caractères parmi lesquels au moins une lettre et au moins un chiffre. Il est recommandé de mélanger chiffres, lettres, majuscules, minuscules et caractères spéciaux.<br/>
+<b>Votre mot de passe doit être composé d'un minima de 12 caractères combinant majuscules, minuscules, chiffres et caractères spéciaux.</b><br/>
+<br/>
+Notez bien ce mot de passe. En cas d'oubli, il vous suffira de cliquer sur "Mot de passe oublié" puis rentrer votre identifiant et un nouveau mot de passe sera envoyé sur votre adresse email personnelle.
 <br/>
 Bonne navigation.<br/>
 <br/>
@@ -35,7 +37,7 @@ Rendez-vous sur le site <a href="https://ent77.seine-et-marne.fr">https://ent77.
 Cliquez sur « Vous avez perdu votre mot de passe », saisissez votre identifiant puis cliquez sur « Envoyer ».<br/>
 Un mail sera envoyé à l’adresse que vous avez saisie lors de l’activation de votre compte.<br/>
 <br/>
-Cliquez ensuite sur le lien dans le mail reçu pour définir votre nouveau mot de passe. Votre nouveau de passe doit contenir au minimum 8 caractères parmi lesquels au moins une lettre et au moins un chiffre. Il est recommandé de mélanger chiffres, lettres, majuscules, minuscules et caractères spéciaux.<br/>
+Cliquez ensuite sur le lien dans le mail reçu pour définir votre nouveau mot de passe. Votre mot de passe doit être composé d'un minima de 12 caractères combinant majuscules, minuscules, chiffres et caractères spéciaux.<br/>
 <br/>
 Bonne navigation sur l'ENT 77.<br/>
 {{/activationCode}}
