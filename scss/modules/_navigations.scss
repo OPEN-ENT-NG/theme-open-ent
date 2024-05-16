@@ -107,15 +107,6 @@ header.main {
           height: 25px;
           margin-top: 12px;
         }
-        > a i.help,
-        i.navbar-help {
-          height: 50px;
-          line-height: 50px;
-          &::before {
-            line-height: 47px !important;
-            font-size: 30px;
-          }
-        }
         > a i.mail::before {
           font-size: 26px;
         }

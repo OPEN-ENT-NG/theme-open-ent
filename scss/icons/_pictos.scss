@@ -272,19 +272,6 @@ i.download {
   margin-top: -5px;
 }
 
-nav.horizontal > a {
-  i.help,
-  i.navbar-help {
-    display: block;
-  }
-
-  i.help::before,
-  i.navbar-help::before {
-    font-size: 34px;
-    line-height: 62px;
-  }
-}
-
 i.disconnect-large,
 i.disconnect.cas,
 i.disconnect {
