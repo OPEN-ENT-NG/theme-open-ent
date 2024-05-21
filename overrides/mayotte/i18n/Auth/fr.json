@@ -2,6 +2,7 @@
   "password.errors": "Votre mot de passe personnel doit contenir au moins 6 caractères.",
 	"email.signature": "L'équipe NEO",
 	"loginperseducnat": "Enseignants et personnels de l'Éducation Nationale",
+	"otherperseducnat": "Enseignants et personnels de l'Éducation Nationale",
 	"loginother": "Invités et personnels hors Éducation Nationale",
 	"loginstudent": "Élèves et parents (connexion via NEO)",
 	"relative": "Élèves et parents (connexion via ÉduConnect)",
