@@ -80,6 +80,12 @@
           <span ng-include="template.containers.portal.conversationUnread"></span>
         </li>
         <li class="nav-item">
+          <a href="#" tooltip="navbar.help" pulsar="{ index: 5, i18n: 'portal.pulsar.help', position: 'bottom center'}"
+            class="nav-link" aria-label="navbar.help" ng-if="currentLanguage == 'fr'">
+            <i18n>help.icon</i18n>
+          </a>
+        </li>
+        <li class="nav-item">
           <div class="dropdown">
             <button class="nav-link btn btn-naked d-md-none" type="button" aria-controls="dropdown-navbar"
               aria-expanded="false" aria-label="navbar.open.menu" ng-click="dropdownToggle = !dropdownToggle">
