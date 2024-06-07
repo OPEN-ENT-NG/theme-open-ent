@@ -2,9 +2,10 @@
   "password.errors": "Votre mot de passe personnel doit contenir au moins 6 caractères.",
   "email.signature": "L'équipe NEO",
   "loginstudent": "Élève",
-  "loginrelative":"Représentant légal (Parent)",
-  "loginteacher":"Personnel de l'éducation",
-  "otherteacher":"Personnel de l'éducation",
-  "loginperseducnat":"Personnel de la collectivité",
-  "loginother":"Invité"
+  "loginrelative": "Représentant légal (Parent)",
+  "othereduconnect": "Educonnect",
+  "loginteacher": "Personnel de l'éducation",
+  "otherteacher": "Personnel de l'éducation",
+  "loginperseducnat": "Personnel de la collectivité",
+  "loginother": "Invité"
 }
