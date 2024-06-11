@@ -1,0 +1,17 @@
+{
+	"auth.charter": "/assets/cgu/Charte_ENT-LEIA.pdf",
+  	"password.errors": "Votre mot de passe personnel doit contenir au moins 6 caractères.",
+	"email.signature": "L'équipe ENT",
+	"loginstudent": "Elève",
+	"otherstudent": "Elève",
+	"loginrelative":"Représentant légal",
+	"otherrelative":"Représentant légal",
+	"loginperseducnat":"Personnel Education Nationale",
+	"otherperseducnat":"Personnel Education Nationale",
+	"loginteacher": "Enseignement agricole (élève, parent ou personnel)",
+	"otherteacher": "Enseignement agricole (élève, parent ou personnel)",
+	"loginother":"Personnel de la collectivité et invité",
+	"wayf.logo.partner" : "/assets/themes/leia/img/logo-partenaire.png",
+	"wayf.logo.partner.width" : "300px",
+	"wayf.select.profile" : "Bienvenue dans votre ENT LEIA"
+}
