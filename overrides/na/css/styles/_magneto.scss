@@ -37,7 +37,7 @@ body.magneto {
       background: $primary-lighter;
     }
     &-infos {
-      i.magneto-folder {
+      i.magneto-folder, i.magneto-folder-share {
         color: $primary;
       }
     }
