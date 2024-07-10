@@ -81,7 +81,7 @@
         </li>
         <li class="nav-item">
           <a href="#" tooltip="navbar.help" pulsar="{ index: 5, i18n: 'portal.pulsar.help', position: 'bottom center'}"
-            class="nav-link" aria-label="navbar.help" ng-if="currentLanguage == 'fr'">
+            class="nav-link" aria-label="navbar.help" ng-if="currentLanguage == 'fr' && me.hasWorkflow('org.entcore.portal.controllers.PortalController|oldHelpEnable')">
             <i18n>help.icon</i18n>
           </a>
         </li>
