@@ -17,5 +17,7 @@
 	"email.signature" : "L'équipe de MonLycée.net",
 	"email.login" : "Pour rappel, votre identifiant est ",
 	"password.rules.activation": "Votre mot de passe doit contenir au moins un caractère spécial, une lettre minuscule, une lettre majuscule, un chiffre et avoir une longueur minimale de 12 caractères.",
-  "password.rules.reset": "Votre mot de passe doit contenir au moins un caractère spécial, une lettre minuscule, une lettre majuscule, un chiffre, et avoir une longueur minimale de 12 caractères. Il doit aussi être différent des précédents mots de passe déjà utilisés."
+	"password.rules.reset": "Votre mot de passe doit contenir au moins un caractère spécial, une lettre minuscule, une lettre majuscule, un chiffre, et avoir une longueur minimale de 12 caractères. Il doit aussi être différent des précédents mots de passe déjà utilisés.",
+	"auth.error.blockedProfileType": "En raison du risque élevé de cyberattaque durant la période des Jeux Olympiques, l’accès à la place de services numériques est indisponible du 23/07 au 16/08.", 
+	"auth.error.blockedUser": "En raison du risque élevé de cyberattaque durant la période des Jeux Olympiques, l’accès à la place de services numériques est indisponible du 23/07 au 16/08."
 }
