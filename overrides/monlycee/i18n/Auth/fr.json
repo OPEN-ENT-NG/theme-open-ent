@@ -18,6 +18,6 @@
 	"email.login" : "Pour rappel, votre identifiant est ",
 	"password.rules.activation": "Votre mot de passe doit contenir au moins un caractère spécial, une lettre minuscule, une lettre majuscule, un chiffre et avoir une longueur minimale de 12 caractères.",
 	"password.rules.reset": "Votre mot de passe doit contenir au moins un caractère spécial, une lettre minuscule, une lettre majuscule, un chiffre, et avoir une longueur minimale de 12 caractères. Il doit aussi être différent des précédents mots de passe déjà utilisés.",
-	"auth.error.blockedProfileType": "En raison du risque élevé de cyberattaque durant la période des Jeux Olympiques, l’accès à la place de services numériques est indisponible du 23/07 au 16/08.", 
-	"auth.error.blockedUser": "En raison du risque élevé de cyberattaque durant la période des Jeux Olympiques, l’accès à la place de services numériques est indisponible du 23/07 au 16/08."
+	"auth.error.blockedProfileType": "Afin d’assurer et d’améliorer la qualité de nos services, la place de services numériques est en maintenance du 23 juillet au 19 août matin. Nous nous excusons pour la gêne occasionnée.", 
+	"auth.error.blockedUser": "Afin d’assurer et d’améliorer la qualité de nos services, la place de services numériques est en maintenance du 23 juillet au 19 août matin. Nous nous excusons pour la gêne occasionnée."
 }
