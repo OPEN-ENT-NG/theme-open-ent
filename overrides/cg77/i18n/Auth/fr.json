@@ -18,7 +18,7 @@
 	    "email.regards": "",
 	    "email.reset.infos": "Si vous n'êtes pas à l'origine de cette demande, vous pouvez ignorer cet email.",
 	    "email.reset.pw.infos": "Vous avez demandé la réinitialisation de votre mot de passe pour vous connecter à l’ENT 77.",
-		"email.signature" : "L'équipe ENT 77, l’ENT de Seine et Marne<br/><a href=\"http://ent.seine-et-marne.fr/\">http://ent.seine-et-marne.fr/</a>",
+		"email.signature" : "L'équipe ENT 77, l’ENT de Seine et Marne https://ent.seine-et-marne.fr",
 		"phone.hi": "Bonjour, ",
 		"phone.how.to.reset": "Vous pouvez vous connecter à l'ENT 77 en saisissant votre identifiant et votre nouveau code d'activation",
 		"phone.login": "Voici le rappel de votre identifiant de connexion à l'ENT 77",
