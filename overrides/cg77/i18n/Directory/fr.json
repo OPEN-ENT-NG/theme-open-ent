@@ -23,5 +23,5 @@
   "group.Personnel": "Personnels non enseignants du groupe {0}.",
   "group.class.Personnel": "Personnels non enseignants de la classe {0}.",
   "group.school.Personnel": "Personnels non enseignants de l'{0}.",
-  "email.signature" : "ENT 77, l’ENT de Seine et Marne<br/><a href=\"http://ent.seine-et-marne.fr/\">http://ent.seine-et-marne.fr/</a>"
+  "email.signature" : "ENT 77, l’ENT de Seine et Marne https://ent.seine-et-marne.fr"
 }
