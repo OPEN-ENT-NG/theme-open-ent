@@ -1,0 +1,91 @@
+body.magneto {
+  .boardsContainer-container-body-folder-button {
+    a {
+      border-color: $primary !important;
+    }
+  }
+
+  .boardsContainer-container {
+    .side-nav-mobile-folder-button {
+      a {
+        border-color: $primary !important;
+      }
+    }
+  }
+
+  .search-barDirective {
+    border-color: $primary !important;
+  }
+
+  .folderDirective-tree-nav {
+
+    &-item {
+      &-name {
+        &.selected {
+          background-color: $primary-lighter;
+          color: $primary-light;
+          a {
+            color: $primary-light;
+          }
+        }
+      }
+    }
+  }
+  .boardDirective-list-folder {
+    &.active {
+      border: solid $primary-light !important;
+      background: $primary-lighter;
+    }
+    &-infos {
+      i.magneto-folder {
+        color: $primary;
+      }
+    }
+  }
+  .boardDirective-list-item {
+    &.active {
+      border: solid $primary-light !important;
+      background: $primary-lighter;
+
+      &-image {
+        background: $primary-lighter;
+      }
+    }
+  }
+  .cardDirective-navbar-item{
+    &.selected
+    {
+      color:$primary-light;
+    }
+  }
+
+  .boardDirective-date {
+    background-color: $primary-lighter;
+    color: $primary;
+
+    & i.magneto-check-circle {
+      color: $primary;
+    }
+  }
+
+
+}
+
+switch {
+  .switch {
+    input[type=checkbox]:checked + .tick {
+      background: $primary-light;
+
+      &:before {
+        background: $primary-dark;
+      }
+    }
+    input[type=checkbox]:disabled:checked + .tick {
+      background: $primary-lighter;
+
+      &:before {
+        background: $primary-lighter;
+      }
+    }
+  }
+}
