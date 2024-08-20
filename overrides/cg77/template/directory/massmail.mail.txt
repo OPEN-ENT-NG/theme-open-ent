@@ -16,7 +16,7 @@ Lors de votre première connexion à l'ENT77 – Collèges Connectés, il vous s
 <br/>
 <b>Votre mot de passe doit être composé d'un minima de 12 caractères combinant majuscules, minuscules, chiffres et caractères spéciaux.</b><br/>
 <br/>
-Notez bien ce mot de passe. En cas d'oubli, il vous suffira de cliquer sur "Mot de passe oublié" puis rentrer votre identifiant et un nouveau mot de passe sera envoyé sur votre adresse email personnelle.
+Notez bien ce mot de passe. En cas d'oubli, il vous suffira de cliquer sur "Mot de passe oublié" puis rentrer votre identifiant et un nouveau mot de passe sera envoyé sur votre adresse email personnelle.<br/>
 <br/>
 Bonne navigation sur l'ENT77 – Collèges Connectés.<br/>
 <br/>
