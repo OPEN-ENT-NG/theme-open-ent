@@ -2,8 +2,12 @@
 {{#activationCode}}
 Bonjour,<br/>
 <br/>
-Ceci est un mail généré automatiquement qui contient vos informations de première connexion à l’ENT de la Région Île-de-France.<br/>
-La première connexion s’effectue à l’adresse <a href="https://ent.iledefrance.fr">ent.iledefrance.fr</a>
+Ceci est un mail généré automatiquement qui contient vos informations de première connexion à la
+Place de Services Numériques de la Région Île-de-France.<br/>
+La première connexion s’effectue à l’adresse <a href="https://monlycee.net">https://monlycee.net</a>
+<br/>
+<br/>
+Cliquez sur « Accéder à mon espace ».
 <br/>
 <br/>
 Une première étape indispensable vous permettra de personnaliser vos informations de connexion.<br/>
@@ -16,7 +20,7 @@ Code d’activation : {{activationCode}}<br/>
 Pour sécuriser vos accès, il vous sera demandé de choisir un nouveau mot de passe, d’indiquer votre adresse e-mail personnelle et, si vous le
 souhaitez, d’indiquer un numéro de téléphone portable.<br/>
 <br/>
-L'équipe sur monLycée<span>&#46;</span>net !<br/>
+L'équipe sur MonLycee<span>&#46;</span>net !<br/>
 <br/>
 {{/activationCode}}
 {{! Users that are activated }}
@@ -26,14 +30,16 @@ Bonjour,<br/>
 Ceci est un mail généré automatiquement qui contient vos informations de connexion à l’ENT de la Région Île-de-France.
 <br/>
 <br/>
-Vous possédez déjà un compte sur l’ENT.<br/>
-Votre identifiant de connexion est rappelé ci-contre :  <i>{{login}}</i><br/>
+Vous possédez déjà un compte sur la Place de Services Numériques Monlycee.net.<br/>
+Votre identifiant de connexion est rappelé ici :  <i>{{login}}</i><br/>
+<br/>
+Pour vous connecter, rendez-vous sur Monlycee.net et authentifiez-vous avec votre identifiant et votre mot de passe.
 <br/>
 Si vous ne vous souvenez pas de votre mot de passe, vous pouvez en définir un nouveau en suivant les instructions ci-dessous :<br/>
 <br/>
-Rendez-vous à l’adresse <a href="https://ent.iledefrance.fr">ent.iledefrance.fr</a> et cliquez sur "Besoin d’aide ?".
+Rendez-vous à l’adresse <a href="https://monlycee.net/">monlycee.net</a> et cliquez sur « Accéder à mon espace ».
 <br/>
-Cliquez ensuite sur « Vous avez perdu votre mot de passe », saisissez votre identifiant puis cliquez sur « Envoyer ».<br/>
+Cliquez ensuite sur « Mot de passe oublié ? », saisissez votre identifiant puis cliquez sur « Recevoir un lien ».<br/>
 <br/>
 Un mail sera envoyé à l’adresse que vous avez saisie lors de l’activation de votre compte.<br/>
 <br/>
