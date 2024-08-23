@@ -1,4 +1,10 @@
 {
+  "homeworks": "Libru d'attività",
+  "homeworks.entries.modified": "Aghjurnà u logu di l'attività",
+  "homeworks.share": "Sparte un logu di attività",
+  "logBook.diary": "Libru d'attività",
+  "timeline.homeworks.modified1": "U librettu di attività",
+  "timeline.homeworks.shared": "sparte cun voi u libru di attività",
   "timeline.mail.body.bgcolor": "#f9f9f9",
   "timeline.mail.body.bg": "background-color: #f9f9f9;",
   "timeline.mail.main": "background-color: #fff;",

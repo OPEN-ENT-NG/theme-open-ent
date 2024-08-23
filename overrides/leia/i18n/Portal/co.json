@@ -1,0 +1,22 @@
+{
+  "userBook.mood.angry": "cuncintratu",
+  "userBook.mood.default": "nisciuna",
+  "userBook.mood.dreamy": "narbosu",
+  "userBook.mood.happy": "cumpiitu",
+  "userBook.mood.joker": "ditarminatu",
+  "userBook.mood.love": "ispiratu",
+  "userBook.mood.proud": "sirenu",
+  "userBook.mood.sad": "à l'imbu",
+  "userBook.mood.sick": "impacenti",
+  "userBook.mood.tired": "strissatu",
+  "userBook.mood.worried": "incertu",
+  "smartbanner.name": "NEO Pocket",
+  "smartbanner.description": "A reta educativa chì si mette in a vostra sacchetta !",
+  "smartbanner.action": "Vede",
+  "smartbanner.icon.uri": "/assets/themes/leia/overrides/img/illustrations/neo-pocket.png",
+  "smartbanner.android.store": "Google Play",
+  "smartbanner.android.uri": "https://play.google.com/store/apps/details?id=com.ode.neo",
+  "smartbanner.ios.store": "App Store",
+  "smartbanner.ios.uri": "https://itunes.apple.com/us/app/one-pocket/id1458097439",
+  "disconnected.redirect.url": "https://ent.leia.corsica/auth/saml/wayf"
+}

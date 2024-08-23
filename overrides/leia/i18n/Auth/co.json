@@ -1,0 +1,17 @@
+{
+	"auth.charter": "/assets/cgu/Charte_ENT-LEIA.pdf",
+  	"password.errors": "A vostra password persunale deve cuntene almenu 6 caratteri.",
+	"email.signature": "A squatra ENT",
+	"loginstudent": "Elevu",
+	"otherstudent": "Elevu",
+	"loginrelative":"Rappresentante legale",
+	"otherrelative":"Rappresentante legale",
+	"loginperseducnat":"Staff d'Educazione Naziunale",
+	"otherperseducnat":"Staff d'Educazione Naziunale",
+	"loginteacher": "Educazione agricula (studiente, genitori o persunale)",
+	"otherteacher": "Educazione agricula (studiente, genitori o persunale)",
+	"loginother":"U persunale di a cumunità è invitati",
+	"wayf.logo.partner" : "/assets/themes/leia/img/logo-partenaire.png",
+	"wayf.logo.partner.width" : "300px",
+	"wayf.select.profile" : "Benvenuti à a vostra ENT LEIA"
+}

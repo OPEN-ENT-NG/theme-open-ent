@@ -1,0 +1,22 @@
+{
+  "homeworks.copy": "Copia à i mo quaderni",
+  "homeworks.empty.mine.text": "Cù l'applicazione Activity Book, ùn ci sò più scuse per i ghjovani dimenticati. Scrivite tutte l'attività, sparte cù i zitelli, i genitori è tutti sò à sapè !",
+  "homeworks.empty.mine.title": "Hè ora di creà un ghjurnale di attività digitale. ",
+  "homeworks.empty.shared.text": "Prestu puderete cunsultà tutte l'attività da fà in stu librettu di attività digitale.<br/> Grande, nò?",
+  "homeworks.help.title": "U mo libru di attività hè in evoluzione!",
+  "homeworks.infos": "Notebook <a ng-href=\"/directory/annuaire#/user-view/[[notebook.current.owner.userId]]\">di [[notebook.current.owner.displayName]]</a> . Ultima mudificazione in [[formatInfos(notebook.current.modified.$date)]].",
+  "homeworks.manager": "Gestisce",
+  "homeworks.mine": "I mo libretti di attività",
+  "homeworks.notify.deleted": "U librettu hè statu sguassatu",
+  "homeworks.notify.modified": "U librettu hè statu mudificatu",
+  "homeworks.notify.restored": "U librettu hè statu restauratu",
+  "homeworks.notify.saved": "U librettu hè statu salvatu",
+  "homeworks.notify.shared": "U librettu hè statu spartutu",
+  "homeworks.notify.trashed": "U librettu hè statu messu in a basura",
+  "homeworks.placeholder.title": "Per piacè inserite u titulu di u vostru librettu",
+  "homeworks.shared": "Notebooks spartuti cun mè",
+  "homeworks.title": "Libru d'attività",
+  "pushnotif.homeworks.modified1": "U librettu di attività",
+  "pushnotif.homeworks.shared": "sparte cun voi u libru di attività",
+  "timeline.homeworks.shared": "sparte cun voi u libru di attività"
+}

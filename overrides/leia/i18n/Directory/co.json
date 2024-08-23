@@ -1,0 +1,17 @@
+{
+    "userBook.class.title": "A classa",
+	"userBook.mood.angry": "cuncintratu",
+    "userBook.mood.default": "nisciuna",
+    "userBook.mood.dreamy": "narbosu",
+    "userBook.mood.happy": "cumpiitu",
+    "userBook.mood.joker": "ditarminatu",
+    "userBook.mood.love": "ispiratu",
+    "userBook.mood.proud": "sirenu",
+    "userBook.mood.sad": "à l'imbu",
+    "userBook.mood.sick": "impacenti",
+    "userBook.mood.tired": "strissatu",
+    "userBook.mood.worried": "incertu",
+    "wizard.files.details.option3" : "Sì vo vuleti impurtà utilizatori à parta da l'archivii custituiti à mani o sciuti da un altru lugiziali chè a basa elevi primu gradu, duveti siguità i cunsigni siguenti :<br /><ul><li>Un archiviu devi essa custituitu pà ugni prufilu d'utilizatori (insignanti, elevi, ghjinitori, parsunali).</li><li>I mudeli d'archivii sò dispunibuli via i ligami siguenti :</li><ul><li><a href=\"http://one.opendigitaleducation.com/wp-content/uploads/2016/07/CSV_Enseignants_ID_ONE.csv\" target=\"_blank\">Mudelu archiviu insignanti</a></li><li><a href=\"http://one.opendigitaleducation.com/wp-content/uploads/2016/07/CSV_Eleves_ID_ONE.csv\" target=\"_blank\">Mudellu archivii elevi</a></li><li><a href=\"http://one.opendigitaleducation.com/wp-content/uploads/2016/07/CSV_Parents_ID_ONE.csv\" target=\"_blank\">Mudellu archiviu ghjinitori</a></li><li><a href=\"http://one.opendigitaleducation.com/wp-content/uploads/2016/07/CSV_Personnels_ID_ONE.csv\" target=\"_blank\">Mudellu archiviu parsunali</a></li></ul><li>L'archivii devini essa arrighjistrati à u furmatu .csv (siparatori puntu virgula).</li><li>Pà ugni archiviu, i culonni marcati d'un asteriscu devini ubligatoriamenti essa cumplittati.</li><li>Ugni archiviu cumencia cù una culonna externalID. Permetti di gistiscia i mudificazioni di conti direttamenti in l'archiviu CSV. Sta culonna currispondi à a linea “idintificazioni sterna” nant'à a fiscia di l'utilizatori in a consula d'amministrazioni di u SNT.</li><li>Hè cunsigliata di rinsignà u campu externalID mentri a prima impurtazioni. Pudeti aprudà l'idintificazioni sterni di a voscia scelta, par esempiu annant'à u mudellu “RNE_enseignant_1”, “RNE_enseignant_2”,...</li><li>U campu externalID permetti di ricunnoscia un utilizatori trà dui impurtazioni successivi è di metta à ghjornu i so infurmazioni parsunali.</li><li>L'archiviu di l'elevi devi ubligatoriamenti essa scaricatu nanzi à l'archiviu di i ghjinitori. Par fà chì i ghjinitori sighini ristaccati à l'elevi boni, ci voli d'indicà l'idintificazioni currispundenti à l'elevu(i) in l'archiviu di i ghjinitori.</li></ul>",
+  "password.errors": "Sceglie 6 caratteri minimu.",
+	"email.signature": "A squadra ENT"
+}
