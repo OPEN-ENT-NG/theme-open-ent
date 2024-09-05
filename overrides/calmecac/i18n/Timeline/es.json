@@ -1,7 +1,7 @@
 {
     "timeline.home.url": "{{#host}}/timeline/timeline{{/host}}",
     "timeline.mail.logo.src": "{{#host}}/assets/themes/calmecac2d/img/illustrations/logo.png{{/host}}",
-    "timeline.mail.logo.width":"155",
+    "timeline.mail.logo.width":"138",
     "timeline.mail.logo.height":"54",
     "timeline.mail.accent.bg":"background-color: #FF8500;",
     "timeline.mail.accent.border":"border-color: #FF8500;",

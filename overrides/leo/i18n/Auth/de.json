@@ -1,4 +1,0 @@
-{
-    "password.rules.activation": "Ihr Passwort muss mindestens ein Sonderzeichen, einen Kleinbuchstaben, einen Großbuchstaben enthalten und eine minimale Länge von 6 Zeichen haben.",
-    "password.rules.reset": "Ihr Passwort muss mindestens ein Sonderzeichen, einen Kleinbuchstaben, einen Großbuchstaben enthalten und eine minimale Länge von 6 Zeichen haben. Es muss sich außerdem von den bisher verwendeten Passwörtern unterscheiden."
-}
