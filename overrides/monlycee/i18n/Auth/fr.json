@@ -1,7 +1,7 @@
 {
 	"auth.forgot.header": "Besoin d'aide ?",
-	"password.errors": "Choisissez 12 caractères minimum, en mélangeant les majuscules et les minuscules.",
-	"password.recommandations": " Il est recommandé de mélanger chiffres, lettres, majuscules, minuscules et caractères spéciaux.",
+	"password.errors": "Choisissez un mot de passe différent avec 12 caractères minimum, au moins un caractère spécial, une lettre minuscule, une lettre majuscule et un chiffre.",
+	"password.recommandations": "Il est nécessaire d'avoir 12 caractères minimum, un caractère spécial, une lettre minuscule, une lettre majuscule et un chiffre.",
 	"auth.forgot.text": "Fournissez simplement les informations suivantes et nous vous aiderons à accéder à votre compte.",
 	"auth.lost.password": "Vous avez perdu votre mot de passe ?",
 	"auth.lost.password.text": "Entrez votre identifiant de connexion pour recevoir les instructions pour changer votre mot de passe.",
@@ -11,7 +11,7 @@
 	"auth.back.to.login": "Retour à l'écran d'accueil",
 	"auth.charter": "/assets/cgu/Charte_IDF.pdf",
 	"email.reset.pw.infos": "Ceci est un envoi généré automatiquement. Veuillez ne pas répondre directement à ce message.",
-	"email.click.to.reset" : " Pour procéder à la réinitialisation de votre mot de passe, veuillez vous rendre sur Monlycee.et et cliquez sur « Accéder à mon espace ».",
+	"email.click.to.reset" : " Pour procéder à la réinitialisation de votre mot de passe, veuillez vous rendre sur Monlycee.net et et cliquez sur « Accéder à mon espace ».",
 	"email.reset.infos": " Si vous n'êtes pas à l'origine de cette demande, vous pouvez ignorer cet email. Notez que ceci est un email automatique et qu’aucune réponse ne sera donnée à cette adresse. Vous pouvez à tout moment vous connecter à l’adresse suivante : <a href=' https://monlycee.net'>monlycee.net</a>",
 	"email.regards": "Cordialement,",
 	"email.signature" : "L'équipe de MonLycée.net",
