@@ -17,5 +17,6 @@
   "smartbanner.android.store": "Google Play",
   "smartbanner.android.uri": "https://play.google.com/store/apps/details?id=com.ode.neo",
   "smartbanner.ios.store": "App Store",
-  "smartbanner.ios.uri": "https://itunes.apple.com/us/app/one-pocket/id1458097439"
+  "smartbanner.ios.uri": "https://itunes.apple.com/us/app/one-pocket/id1458097439",
+  "disconnected.redirect.url": "https://www.eduprovence.fr/auth/saml/wayf"
 }
