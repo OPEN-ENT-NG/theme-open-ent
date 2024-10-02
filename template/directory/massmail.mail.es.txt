@@ -4,7 +4,7 @@ Hola,<br/>
 <br/>
 Este mensaje se envía automáticamente con sus informaciones de primera conexión a NEO.<br/>
 <br/>
-Para conectarse, vaya a <a href="https://neoconnect.edifice.io">neoconnect.edifice.io</a>.<br/>
+Para conectarse, vaya a <a href="http://edifice.io/connexion">edifice.io/connexion</a>.<br/>
 <br/>
 Introduzca su nombre de usuario (se debe guardar para poder conectarse ulteriormente) y su código de activación:<br/>
 <br/>
@@ -31,7 +31,7 @@ Su Id. de usuario es: <i>{{login}}</i><br/>
 <br/>
 Si no recuerda su contraseña, puede establecer una nueva siguiendo las siguientes instrucciones:<br/>
 <br/>
-- Vaya a <a href="https://neoconnect.edifice.io">https://neoconnect.edifice.io</a> y haga clic en “Contraseña olvidada”<br/>
+- Vaya a <a href="http://edifice.io/connexion">http://edifice.io/connexion</a> y haga clic en “Contraseña olvidada”<br/>
 <br/>
 - Introduzca su Id. de usuario y haga clic en “Enviar”.<br/>
 <br/>
