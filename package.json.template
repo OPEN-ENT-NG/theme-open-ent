@@ -35,7 +35,7 @@
   "author": "Edifice",
   "license": "%license%",
   "dependencies": {
-    "entcore-css-lib": "npm:ode-csslib@master"
+    "entcore-css-lib": "npm:ode-csslib@%entcoreCSSVersion%"
   },
   "devDependencies": {
     "concurrently": "^5.0.2",
