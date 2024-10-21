@@ -10,5 +10,6 @@
 	"userBook.mood.sick": "impaciente",
 	"userBook.mood.tired": "estresado(a)",
 	"userBook.mood.worried": "preocupado(a)",
-	"email.signature": "El equipo NEO"
+	"email.signature": "El equipo NEO",
+  "classAdmin.template.downloadAppInfo": "o descarga NEO Pocket desde App Store o Google Play."
 }
