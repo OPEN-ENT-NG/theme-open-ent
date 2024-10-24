@@ -3,7 +3,7 @@
 Bonjour,<br/>
 <br/>
 Ceci est un mail généré automatiquement qui contient vos informations de première connexion à la Place de Services Numériques de la Région Île-de-France.<br/>
-La première connexion s’effectue à l’adresse <a href="https://monlycee.net">https://monlycee.net</a>
+La première connexion s’effectue à l’adresse <a href="https://monlycee-99.een.as8677.net">https://monlycee-99.een.as8677.net</a>
 <br/>
 <br/>
 Cliquez sur « Accéder à mon espace ».
@@ -29,14 +29,14 @@ Bonjour,<br/>
 Ceci est un mail généré automatiquement qui contient vos informations de connexion à la Place de Services Numériques de la Région Île-de-France.
 <br/>
 <br/>
-Vous possédez déjà un compte sur la Place de Services Numériques Monlycee.net.<br/>
+Vous possédez déjà un compte sur la Place de Services Numériques monlycee-99.een.as8677.net.<br/>
 Votre identifiant de connexion est rappelé ici :  <i>{{login}}</i><br/>
 <br/>
-Pour vous connecter, rendez-vous sur <a href="https://monlycee.net/">Monlycee.net</a> et authentifiez-vous avec votre identifiant et votre mot de passe.
+Pour vous connecter, rendez-vous sur <a href="https://monlycee-99.een.as8677.net/">monlycee-99.een.as8677.net</a> et authentifiez-vous avec votre identifiant et votre mot de passe.
 <br/>
 Si vous ne vous souvenez pas de votre mot de passe, vous pouvez en définir un nouveau en suivant les instructions ci-dessous :<br/>
 <br/>
-Rendez-vous à l’adresse <a href="https://monlycee.net/">monlycee.net</a> et cliquez sur « Accéder à mon espace ».
+Rendez-vous à l’adresse <a href="https://monlycee-99.een.as8677.net/">monlycee-99.een.as8677.net</a> et cliquez sur « Accéder à mon espace ».
 <br/>
 Cliquez ensuite sur « Mot de passe oublié ? », saisissez votre identifiant puis cliquez sur « Recevoir un lien ».<br/>
 <br/>
