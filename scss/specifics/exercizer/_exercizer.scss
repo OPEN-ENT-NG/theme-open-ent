@@ -21,7 +21,7 @@ body.exercizer {
   @import "./components/bs5-forms";
 
   input[type="checkbox"][id^="ck-no-err-allowed-"],
-  input[type="checkbox"][id^="option-multiple-"]
+  input[type="checkbox"][id^="option-multiple-"],
   input[type="checkbox"][class*="sized"] {
     display: inline-block !important;
     width: 16px;
