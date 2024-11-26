@@ -26,5 +26,6 @@
 	"auth.reset": "Enregistrer",
 	"cancel": "Annuler",
 	"auth.activation.confirm.password": "Confirmation du nouveau mot de passe",
-	"email.signature" : "L'équipe Paris Classe Numérique"
-}
+	"email.signature" : "L'équipe Paris Classe Numérique",
+	"classAdmin.template.downloadAppInfo": "ou téléchargez <strong>Open ENT</strong> depuis l’App Store ou le Google Play"
+ }

@@ -23,5 +23,6 @@
   "group.Personnel": "Personnels non enseignants du groupe {0}.",
   "group.class.Personnel": "Personnels non enseignants de la classe {0}.",
   "group.school.Personnel": "Personnels non enseignants de l'{0}.",
-  "email.signature" : "L'équipe de l’ENT77 – Collèges Connectés</br>votre portail numérique éducatif en Seine-et-Marne</br>https://ent.seine-et-marne.fr"
+  "email.signature" : "L'équipe de l’ENT77 – Collèges Connectés</br>votre portail numérique éducatif en Seine-et-Marne</br>https://ent.seine-et-marne.fr",
+  "classAdmin.template.downloadAppInfo": "ou téléchargez <strong>ENT 77</strong> depuis l’App Store ou le Google Play"
 }
