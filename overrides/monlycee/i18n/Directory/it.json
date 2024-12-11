@@ -1,4 +1,5 @@
 {
 	"auth.charter": "/assets/cgu/Charte_IDF.pdf", 
-    "password.errors": "La password deve essere composta da almeno 12 caratteri e deve necessariamente contenere lettere e numeri."
+    "password.errors": "La password deve essere composta da almeno 12 caratteri e deve necessariamente contenere lettere e numeri.",
+  "classAdmin.template.downloadAppInfo": "o scaricate <strong>Monlycee.net</strong> dall'App Store o da Google Play"
 }

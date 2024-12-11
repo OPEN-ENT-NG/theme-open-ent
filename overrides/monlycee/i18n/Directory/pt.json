@@ -1,4 +1,5 @@
 {
 	"auth.charter": "/assets/cgu/Charte_IDF.pdf", 
-    "password.errors": "Escolha no mínimo 12 caracteres. Letras e números são obrigatórios"
+    "password.errors": "Escolha no mínimo 12 caracteres. Letras e números são obrigatórios",
+  "classAdmin.template.downloadAppInfo": "ou baixe o <strong>Monlycee.net</strong> na App Store ou no Google Play"
 }
