@@ -2,9 +2,9 @@
 {{#activationCode}}
 Bonjour,<br/>
 <br/>
-Ceci est un mail généré automatiquement qui contient vos informations de première connexion à NEO.<br/>
+Ceci est un mail généré automatiquement qui contient vos informations de première connexion à la plate-forme de beta test Edifice.<br/>
 <br/>
-La première connexion à NEO s’effectue sur <a href="https://edifice.io/connexion">edifice.io/connexion</a>.<br/>
+La première connexion s’effectue sur <a href="https://beta-test.edifice.io">https://beta-test.edifice.io</a>.<br/>
 <br/>
 Une première étape indispensable vous permettra de personnaliser vos informations de connexion.<br/>
 <br/>
@@ -17,21 +17,21 @@ Pour sécuriser vos accès, il vous sera demandé de choisir un nouveau de mot d
 <br/>
 Nous vous recommandons de mélanger chiffres, lettres, majuscules, minuscules et caractères spéciaux lors du choix de votre mot de passe personnel.<br/>
 <br/>
-Bonne navigation sur NEO !<br/>
+Merci pour votre contribution au beta-test !<br/>
 <br/>
 {{/activationCode}}
 {{! Users that are activated }}
 {{^activationCode}}
 Bonjour,<br/>
 <br/>
-Ceci est un mail généré automatiquement qui contient vos informations de connexion à NEO.<br/>
+Ceci est un mail généré automatiquement qui contient vos informations de connexion à la plate-forme de beta test Edifice.<br/>
 <br/>
-Vous possédez déjà un compte sur NEO.<br/>
+Vous possédez déjà un compte sur la plate-forme de beta test Edifice.<br/>
 Votre identifiant de connexion est rappelé ci-contre : <i>{{login}}</i><br/>
 <br/>
 Si vous ne vous souvenez pas de votre mot de passe, vous pouvez en définir un nouveau en suivant les instructions ci-dessous :<br/>
 <br/>
-- Rendez-vous à l’adresse <a href="https://edifice.io/connexion">https://edifice.io/connexion</a> et cliquez sur « Mot de passe oublié ».<br/>
+- Rendez-vous à l’adresse <a href="https://beta-test.edifice.io">https://beta-test.edifice.io</a> et cliquez sur « Mot de passe oublié ».<br/>
 <br/>
 - Saisissez votre identifiant puis cliquez sur « Envoyer ».<br/>
 <br/>
@@ -39,6 +39,6 @@ Un mail sera envoyé à l’adresse que vous avez saisi lors de l’activation d
 <br/>
 Nous vous recommandons de mélanger chiffres, lettres, majuscules, minuscules et caractères spéciaux lors du choix de votre mot de passe personnel.<br/>
 <br/>
-Bonne navigation sur NEO !<br/>
+Merci pour votre contribution au beta-test !<br/>
 <br/>
 {{/activationCode}}
