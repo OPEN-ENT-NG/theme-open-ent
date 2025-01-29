@@ -188,8 +188,8 @@ publishNPM () {
 }
 
 archive() {
-  echo "[archive][$OVERRIDE_NAME] Archiving dist folder and conf.j2 file..."
-  tar cfzh ${FINAL_MODNAME}.tar.gz dist/* conf.j2
+  echo "[archive][$OVERRIDE_NAME] Archiving dist folder..."
+  tar cfzh ${FINAL_MODNAME}.tar.gz dist/*
 }
 
 publishNexus () {
