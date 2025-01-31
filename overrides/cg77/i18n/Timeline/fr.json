@@ -1,5 +1,6 @@
 {
     "timeline.home.url": "{{#host}}/timeline/timeline{{/host}}",
+    "timeline.mail.projectName": "ENT77 – Collèges Connectés",
     "timeline.mail.body.bg": "background-color: #f9f9f9;",
     "timeline.mail.body.bgcolor":"#f9f9f9",
     "timeline.mail.main":"background-color: #fff;",
