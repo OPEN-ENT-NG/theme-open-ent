@@ -12,7 +12,7 @@
   "userBook.mood.worried": "incertain(e)",
   "smartbanner.name": "NEO Pocket",
   "smartbanner.action": "Voir",
-  "smartbanner.icon.uri": "/assets/themes/neoconnect/overrides/img/illustrations/neo-pocket.png",
+  "smartbanner.icon.uri": "/assets/themes/neoconnect/img/illustrations/neo-pocket.png",
   "smartbanner.android.store": "Google Play",
   "smartbanner.android.uri": "https://play.google.com/store/apps/details?id=com.ode.neo",
   "smartbanner.ios.store": "App Store",
