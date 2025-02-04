@@ -11,7 +11,7 @@
   "smartbanner.name": "Open ENT",
   "smartbanner.description": "L'essentiel de votre réseau éducatif !",
   "smartbanner.action": "Voir",
-  "smartbanner.icon.uri": "/assets/themes/cg77/overrides/img/illustrations/open-ent-pocket.png",
+  "smartbanner.icon.uri": "/assets/themes/cg77/img/illustrations/open-ent-pocket.png",
   "smartbanner.android.store": "Google Play",
   "smartbanner.android.uri": "https://play.google.com/store/apps/details?id=fr.openent.mobile",
   "smartbanner.ios.store": "App Store",
