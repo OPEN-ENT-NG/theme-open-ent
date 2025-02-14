@@ -130,6 +130,24 @@
       position: absolute;
     }
   }
+  &__relative {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-top: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    color: $grey;
+
+    span {
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    &--empty {
+      color: $red;
+    }
+  }
   &__avatar {
     cursor: pointer;
     width: 60px;
