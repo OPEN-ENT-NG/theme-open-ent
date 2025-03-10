@@ -309,6 +309,10 @@
   &__group + &__group {
     border-top: 1px solid $shadow-light;
   }
+  
+  .iti--container {
+    z-index: 100000;
+  }
 }
 .force-fullwidth {
   width: 100% !important;
