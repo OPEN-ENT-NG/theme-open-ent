@@ -1,230 +1,270 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
 	<title>Guide de prise en main ENT 77</title>
 	<style type="text/css">
-		body{
+		body {
 			font-family: 'Verdana';
 			font-size: 0.9em;
 		}
-		.clear:after{
-			content:'';
-			display:block;
+
+		.clear:after {
+			content: '';
+			display: block;
 			clear: both;
 		}
 
-		span.underline{
+		span.underline {
 			text-decoration: underline;
 		}
 
-		ul li{
+		ul li {
 			list-style: square;
 		}
 
-		.big-space{
+		.big-space {
 			margin-top: 32px;
 			margin-bottom: 32px;
 		}
 
-		div.right{
+		div.right {
 			float: right;
 			text-align: center;
 			margin-left: 30px;
 		}
-		div.right > div {
+
+		div.right>div {
 			margin-bottom: 30px;
 		}
-		div.twocolumns > div{
+
+		div.twocolumns>div {
 			width: 45%;
 			display: inline-block;
 			vertical-align: top;
 		}
-		div.twocolumns.center > div{
+
+		div.twocolumns.center>div {
 			vertical-align: middle;
 		}
-		div.twocolumns > div.text-left{
+
+		div.twocolumns>div.text-left {
 			text-align: left;
 		}
-		div.twocolumns > div.text-right{
+
+		div.twocolumns>div.text-right {
 			text-align: right;
 		}
 
-		div#code{
+		div#code {
 			position: absolute;
 			top: 90px;
 			left: 75px;
 		}
-		img#logo{
+
+		img#logo {
 			width: 120px;
 			float: right;
 			margin-bottom: 20px;
 		}
-		img#compagnon{
+
+		img#compagnon {
 			width: 200px;
 		}
-		img#login{
+
+		img#login {
 			width: 160px;
 		}
-		img#besoinaide{
+
+		img#besoinaide {
 			width: 210px;
 			margin-right: 30px;
 		}
-		img#demandereinitialisation{
+
+		img#demandereinitialisation {
 			width: 210px;
 			margin-left: 30px;
 		}
-		img#reinitialisation{
+
+		img#reinitialisation {
 			width: 210px;
 			margin-right: 30px;
+		}
+
+		.qr {
+			width: 110px;
 		}
 	</style>
 </head>
 
 <body>
-{{#users}}
-{{! Users that are not activated }}
-{{#activationCode}}
-<div{{^end}} style="page-break-after: always"{{/end}}>
-	<div class="clear">
-		<img id="logo" src="logo.png"></img>
-	</div>
-	<h3>
-		<span class="content">À l’attention de <i>{{firstName}} {{lastName}}</i>{{^isInClass}}.{{/isInClass}}</span>
-		{{#child}}
-		<br/>
-		<span class="content">Parent de <i>{{firstName}} {{lastName}}</i> en classe de {{classname}}.</span>
-		{{/child}}
-		{{^child}}
-		{{#isInClass}}
-		<span class="content">en classe(s) de{{^classes}} {{classname}}{{/classes}}{{#classes}} {{.}}{{/classes}}.</span>
-		{{/isInClass}}
-		{{/child}}
-	</h3>
-	<p class="big-space">
-		<span class="underline">Objet</span> : Connexion à l’ENT77 - Collèges Connectés
-	</p>
-	<div class="clear">
-		<div class="right">
-			<div>
-				<img id="compagnon" src="compagnon.png" alt="site compagnon"></img>
+	{{#users}}
+	{{! Users that are not activated }}
+	{{#activationCode}}
+	<div{{^end}} style="page-break-after: always" {{/end}}>
+		<div class="clear">
+			<img id="logo" src="logo.png"></img>
+		</div>
+		<h3>
+			<span class="content">À l’attention de <i>{{firstName}} {{lastName}}</i>{{^isInClass}}.{{/isInClass}}</span>
+			{{#child}}
+			<br />
+			<span class="content">Parent de <i>{{firstName}} {{lastName}}</i> en classe de {{classname}}.</span>
+			{{/child}}
+			{{^child}}
+			{{#isInClass}}
+			<span class="content">en classe(s) de{{^classes}} {{classname}}{{/classes}}{{#classes}}
+				{{.}}{{/classes}}.</span>
+			{{/isInClass}}
+			{{/child}}
+		</h3>
+		<p class="big-space">
+			<span class="underline">Objet</span> : Connexion à l’ENT77 - Collèges Connectés
+		</p>
+		<div class="clear">
+			<div class="right">
+				<div>
+					<img id="compagnon" src="compagnon.png" alt="site compagnon"></img>
+				</div>
+				<div>
+					<img id="login" src="login.png" alt="login"></img>
+				</div>
 			</div>
+
 			<div>
-				<img id="login" src="login.png" alt="login"></img>
+				<p>
+					Pour vous connecter, rendez-vous sur le site <a
+						href="https://ent.seine-et-marne.fr">https://ent.seine-et-marne.fr</a> ou
+					téléchargez l'application mobile <strong>ENT 77:</strong>
+					<br />
+					<img class="qr" src="qr-code.png"></img>
+					<br />et cliquez sur le bouton « Se connecter à l’ENT ».
+				</p>
+				<p>
+					<b>Entrez ensuite vos coordonnées personnelles :</b><br />
+					<br />
+					Identifiant : <b>{{login}}</b><br />
+					Mot de passe : <b>{{activationCode}}</b><br />
+				</p>
+
+				<p class="big-space">
+					Lors de votre première connexion à l'ENT, il vous sera demandé de choisir un nouveau mot de
+					passe.<br />
+					<br />
+					<b>Votre mot de passe doit être composé d'un minima de 12 caractères combinant majuscules,
+						minuscules, chiffres et caractères spéciaux.</b><br />
+					<br />
+					Notez bien ce mot de passe. En cas d'oubli, il vous suffira de cliquer sur "Mot de passe oublié"
+					puis rentrer votre identifiant et un nouveau mot de passe sera envoyé sur votre adresse email
+					personnelle.
+				</p>
 			</div>
 		</div>
-
 		<div>
-			<p>
-				Pour vous connecter, rendez-vous sur le site <a href="https://ent.seine-et-marne.fr">https://ent.seine-et-marne.fr</a> et cliquez sur le bouton « Se connecter à l’ENT ».
-			</p>
-			<p>
-				<b>Entrez ensuite vos coordonnées personnelles :</b><br/>
-				<br/>
-				Identifiant : <b>{{login}}</b><br/>
-				Mot de passe : <b>{{activationCode}}</b><br/>
-			</p>
-
-			<p class="big-space">
-				Lors de votre première connexion à l'ENT, il vous sera demandé de choisir un nouveau mot de passe.<br/>
-				<br/>
-				<b>Votre mot de passe doit être composé d'un minima de 12 caractères combinant majuscules, minuscules, chiffres et caractères spéciaux.</b><br/>
-				<br/>
-				Notez bien ce mot de passe. En cas d'oubli, il vous suffira de cliquer sur "Mot de passe oublié" puis rentrer votre identifiant et un nouveau mot de passe sera envoyé sur votre adresse email personnelle.
-			</p>
+			<h4 style="text-align: right">
+				ENT77 - Collèges Connectés
+			</h4>
 		</div>
-	</div>
-	<div>
-		<h4 style="text-align: right">
-			ENT77 - Collèges Connectés
-		</h4>
-	</div>
-</div>
-{{/activationCode}}
-{{! Users that are activated }}
-{{^activationCode}}
-<div{{^end}} style="page-break-after: always"{{/end}}>
-	<div class="clear">
-		<img id="logo" src="logo.png"></img>
-	</div>
-	<h3>
-		<span class="content">À l’attention de <i>{{firstName}} {{lastName}}</i>{{^isInClass}}.{{/isInClass}}</span>
-		{{#child}}
-		<br/>
-		<span class="content">Parent de <i>{{firstName}} {{lastName}}</i> en classe de {{classname}}.</span>
-		{{/child}}
-		{{^child}}
-		{{#isInClass}}
-		<span class="content">en classe(s) de{{^classes}} {{classname}}{{/classes}}{{#classes}} {{.}}{{/classes}}.</span>
-		{{/isInClass}}
-		{{/child}}
-	</h3>
-	<p class="big-space">
-		<span class="underline">Objet</span> : Connexion l'ENT77 - Collèges Connectés
-	</p>
-	<p>
-		Vous possédez déjà un compte sur l’ENT77 - Collèges Connectés.<br/>
-		Votre identifiant de connexion est rappelé ci-contre : <i><b>{{login}}</b></i>
-	</p>
-
-	<p>
-		Si vous ne vous souvenez pas de votre mot de passe, vous pouvez en définir un nouveau en suivant les instructions ci-dessous.
-	</p>
-
-	<div class="twocolumns center">
-		<div>
-			<p>
-				Rendez-vous sur le site <a href="https://ent.seine-et-marne.fr">https://ent.seine-et-marne.fr</a> et cliquez sur le bouton « Se connecter à l’ENT ».			</p>
 		</div>
-		<div class="text-right">
-			<img id="compagnon" src="compagnon.png" alt="site compagnon"></img>
-		</div>
-	</div>
-	<div class="twocolumns center">
-		<div>
-			<img id="besoinaide" src="Besoin_daide_avec_numero.png" alt="Besoin d'aide"></img>
-		</div>
-		<div>
-			<p>
-				Cliquez sur « Identifiant ou mot de passe oublié ».
-			</p>
-		</div>
-	</div>
-	<div class="twocolumns center">
-		<div>
-			<p>
-				Cliquez ensuite sur « vous avez perdu votre mot de passe », saisissez votre identifiant puis cliquez sur « Envoyer ».<br/>
-				Un mail sera envoyé à l’adresse que vous avez saisie lors de l’activation de votre compte.
-			</p>
-		</div>
-		<div class="text-right">
-			<img id="demandereinitialisation" src="Demande_reinitialisation_avec_numero.png" alt="Demande de réinitialisation"></img>
-		</div>
-	</div>
-	<div class="twocolumns center">
-		<div>
-			<img id="reinitialisation" src="Reinitialisation_coupe.png" alt="Réinitialisation"></img>
-		</div>
-		<div>
-			<p>
-				Cliquez ensuite sur le lien figurant dans le mail reçu pour définir votre nouveau mot de passe.<br/>
-				A partir de cette connexion, vous pourrez accéder aux services utilisés par l’établissement dans l'ENT77 - Collèges Connectés.<br/>
+		{{/activationCode}}
+		{{! Users that are activated }}
+		{{^activationCode}}
+		<div{{^end}} style="page-break-after: always" {{/end}}>
+			<div class="clear">
+				<img id="logo" src="logo.png"></img>
+			</div>
+			<h3>
+				<span class="content">À l’attention de <i>{{firstName}}
+						{{lastName}}</i>{{^isInClass}}.{{/isInClass}}</span>
 				{{#child}}
-				Votre enfant a ses propres identifiants. <br/>
+				<br />
+				<span class="content">Parent de <i>{{firstName}} {{lastName}}</i> en classe de {{classname}}.</span>
 				{{/child}}
-				Nous vous rappelons qu’il est indispensable de conserver vos données confidentielles.
+				{{^child}}
+				{{#isInClass}}
+				<span class="content">en classe(s) de{{^classes}} {{classname}}{{/classes}}{{#classes}}
+					{{.}}{{/classes}}.</span>
+				{{/isInClass}}
+				{{/child}}
+			</h3>
+			<p class="big-space">
+				<span class="underline">Objet</span> : Connexion à l'ENT77 - Collèges Connectés
 			</p>
-		</div>
-	</div>
-	<div>
-		<h4 style="text-align: right">
-			ENT77 - Collèges Connectés
-		</h4>
-	</div>
-</div>
-{{/activationCode}}
-{{/users}}
+			<p>
+				Vous possédez déjà un compte sur l’ENT77 - Collèges Connectés.<br />
+				Votre identifiant de connexion est rappelé ci-contre : <i><b>{{login}}</b></i>
+			</p>
+
+			<p>
+				Si vous ne vous souvenez pas de votre mot de passe, vous pouvez en définir un nouveau en suivant les
+				instructions ci-dessous.
+			</p>
+
+			<div class="twocolumns center">
+				<div>
+					<p>
+						Rendez-vous sur le site <a
+							href="https://ent.seine-et-marne.fr">https://ent.seine-et-marne.fr</a> ou
+						téléchargez l'application mobile <strong>ENT 77:</strong>
+						<br />
+						<img class="qr" src="qr-code.png"></img>
+						<br />et cliquez sur le bouton « Se connecter à l’ENT »
+					</p>
+				</div>
+				<div class="text-right">
+					<img id="compagnon" src="compagnon.png" alt="site compagnon"></img>
+				</div>
+			</div>
+			<div class="twocolumns center">
+				<div>
+					<img id="besoinaide" src="Besoin_daide_avec_numero.png" alt="Besoin d'aide"></img>
+				</div>
+				<div>
+					<p>
+						Cliquez sur « Identifiant ou mot de passe oublié ».
+					</p>
+				</div>
+			</div>
+			<div class="twocolumns center">
+				<div>
+					<p>
+						Cliquez ensuite sur « vous avez perdu votre mot de passe », saisissez votre identifiant puis
+						cliquez sur « Envoyer ».<br />
+						Un mail sera envoyé à l’adresse que vous avez saisie lors de l’activation de votre compte.
+					</p>
+				</div>
+				<div class="text-right">
+					<img id="demandereinitialisation" src="Demande_reinitialisation_avec_numero.png"
+						alt="Demande de réinitialisation"></img>
+				</div>
+			</div>
+			<div class="twocolumns center">
+				<div>
+					<img id="reinitialisation" src="Reinitialisation_coupe.png" alt="Réinitialisation"></img>
+				</div>
+				<div>
+					<p>
+						Cliquez ensuite sur le lien figurant dans le mail reçu pour définir votre nouveau mot de
+						passe.<br />
+						A partir de cette connexion, vous pourrez accéder aux services utilisés par l’établissement dans
+						l'ENT77 - Collèges Connectés.<br />
+						{{#child}}
+						Votre enfant a ses propres identifiants. <br />
+						{{/child}}
+						Nous vous rappelons qu’il est indispensable de conserver vos données confidentielles.
+					</p>
+				</div>
+			</div>
+			<div>
+				<h4 style="text-align: right">
+					ENT77 - Collèges Connectés
+				</h4>
+			</div>
+			</div>
+			{{/activationCode}}
+			{{/users}}
 </body>
 
 </html>
