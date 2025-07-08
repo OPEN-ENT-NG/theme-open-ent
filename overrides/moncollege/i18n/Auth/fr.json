@@ -19,5 +19,13 @@
 	"password.rules.activation": "Votre mot de passe doit contenir au moins un chiffre, une lettre et avoir une longueur minimale de 8 caractères.",
 	"password.rules.reset": "Votre mot de passe doit contenir au moins un chiffre, une lettre et avoir une longueur minimale de 8 caractères. Il doit aussi être différent des précédents mots de passe déjà utilisés.",
 	"label.accept.cgu.5": "et j’ai bien pris connaissance des mentions sur la protection de mes données personnelles.",
-	"terms.revalidate.checkbox": "J'ai lu la charte d'utilisation, les Conditions Générales d'Utilisation et j'ai bien pris connaissance des mentions sur la protection de mes données personnelles."
+	"terms.revalidate.checkbox": "J'ai lu la charte d'utilisation, les Conditions Générales d'Utilisation et j'ai bien pris connaissance des mentions sur la protection de mes données personnelles.",
+	"loginstudent":"Élève",
+	"student":"Élève",
+	"loginteacher":"Personnel Éducation Nationale",
+	"teacher":"Personnel Éducation Nationale",
+	"otherteacher":"Personnel Éducation Nationale",
+	"loginrelative":"Représentant légal",
+	"relative":"Représentant légal",
+	"loginother":"Personnel collectivité et invité"
 }
