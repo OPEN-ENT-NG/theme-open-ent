@@ -1,0 +1,10 @@
+{
+	"auth.charter": "/assets/cgu/Charte_CD84.pdf",
+	"email.signature" : "L'équipe ENT",
+	"password.errors": "Choisissez 6 caractères minimum.",
+	"otherstudent":"Élève",
+	"otherrelative":"Représentant légal (parent)",
+	"otherteacher":"Personnel Éducation Nationale",
+	"loginperseducnat":"Personnel de la collectivité",
+	"loginother":"Invité"
+}

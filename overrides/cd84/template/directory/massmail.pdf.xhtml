@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+	<title>Guide de prise en main ENT</title>
+	<style type="text/css">
+		body{
+			font-family: Calibri, serif;
+			font-size: 94%;
+			line-height: 17px;
+		}
+		header{
+			margin-left: 350px;
+		}
+		ul{
+			padding: 0;
+			margin: 0;
+		}
+
+		ul li{
+			list-style: none;
+		}
+
+		div.twocolumnsUnactivated > div{
+			max-width: 50%;
+			display: inline-block;
+			vertical-align: top;
+		}
+		div.twocolumns > div{
+			max-width: 45%;
+			display: inline-block;
+			vertical-align: top;
+		}
+		p.title{
+			font-size: 22px;
+			color: #005c92;
+		}
+		p.bullet{
+			padding-left: 20px;
+		}
+		img#logo{
+			width: 150px;
+		}
+		img#login{
+			width: 350px;
+			padding-left: 10px;
+		}
+		img#login2, img#login2-1d{
+			width: 300px;
+		}
+		img#demandereinitialisation{
+			width: 300px;
+			padding-right: 30px;
+		}
+		img#login1d{
+			width: 300px;
+			padding-right: 30px;
+		}
+		img#login1d1{
+			width: 320px;
+			margin-right: 10px;
+		}
+		img#login{
+			width: 320px;
+			padding-left: 30px;
+		}
+		img#reinitialisation{
+			width: 300px;
+			padding-left: 30px;
+		}
+		.footer p{
+			text-align: right;
+		}
+		.unActivated{
+			margin-right: 2%;
+		}
+		.activated{
+			margin-right: 1%;
+		}
+	</style>
+</head>
+
+<body>
+{{#users}}
+
+{{! Users that are not activated }}
+{{#activationCode}}
+<div style="page-break-after: always">
+	<header>
+        <img id="logo" src="illustrations/logo-by-neo.png"></img>
+	</header>
+
+	<div>
+		<br/>
+		<br/>
+		<span><b>
+				&Agrave; l&apos;attention de {{firstName}} {{lastName}} {{^isInClass}}.{{/isInClass}} </b></span>
+		{{#child}}
+		<br/>
+		<span><b><mark style="background: yellowgreen">Parent de {{firstName}} {{lastName}} en classe de {{classname}}.</mark></b></span>
+		{{/child}}
+
+		{{^child}}
+		{{#isInClass}}
+		<span class="content"><b>en classe(s) de{{^classes}} {{classname}}{{/classes}}{{#classes}} {{.}}{{/classes}}.</b></span>
+		{{/isInClass}}
+		{{/child}}
+		<br/>
+		<br/>
+		<u>Objet</u> : Connexion &agrave; votre Espace Num&eacute;rique de Travail
+		<br/>
+		<br/>
+	</div>
+	<ul>
+		<li>
+			<div class="twocolumns">
+				<div>
+					<p>
+						Pour vous connecter, rendez-vous sur <br/>
+						<a href="https://www.aucollege84.vaucluse.fr">aucollege84.vaucluse.fr</a>.
+					</p>
+					<p>
+						Entrez ensuite vos coordonn&eacute;es personnelles :
+						<br/>
+						Identifiant : <b>{{login}}</b>
+						<br/>
+						Mot de passe : <b>{{activationCode}}</b>
+					</p>
+				</div>
+				<div>
+					<img src="login.png" alt="login" id="login"></img>
+				</div>
+			</div>
+
+			<div>
+				<div style="text-align: justify;">
+					<p>
+						Lors de votre premi&egrave;re connexion &agrave; l&apos;ENT il vous sera
+						demand&eacute; de choisir un nouveau mot de passe, d&apos;indiquer
+						votre adresse e-mail personnelle et, si vous le souhaitez,
+						de saisir un num&eacute;ro de t&eacute;l&eacute;phone portable.
+					</p>
+					Votre nouveau mot de passe doit contenir 6 caract&egrave;res minimum.
+					<p>
+					</p>
+					<p>
+						Notez bien ce mot de passe. En cas d&apos;oubli, il vous suffira de cliquer
+						sur « mot de passe oubli&eacute; » puis de rentrer votre identifiant. Un nouveau
+						mot de passe vous sera envoy&eacute; sur votre adresse email personnelle.
+					</p>
+					<p>
+						&Agrave; partir de cette connexion, vous pourrez acc&eacute;der &agrave; l&apos;espace num&eacute;rique
+						de travail de votre &eacute;tablissement. Les &eacute;l&egrave;ves ont des identifiants distincts
+						de ceux de leurs parents. Nous vous rappelons qu&apos;il est indispensable de conserver
+						vos donn&eacute;es confidentielles.
+					</p>
+				</div>
+			</div>
+
+		</li>
+	</ul>
+
+	<div class="footer">
+		<p class="unActivated">
+			Bonne navigation !
+		</p>
+	</div>
+</div>
+{{/activationCode}}
+
+
+{{! Users that are activated }}
+{{^activationCode}}
+<div style="page-break-after: always">
+	<header>
+		<img id="logo" src="logo.png"></img>
+	</header>
+
+	<div>
+		<br/>
+		<br/>
+		<span><b>&Agrave;  l&apos;attention de {{firstName}} {{lastName}}  {{^isInClass}}.{{/isInClass}}</b></span>
+		{{#child}}
+		<br/>
+		<span><b><mark style="background: greenyellow">Parent de {{firstName}} {{lastName}} en classe de {{classname}}.</mark></b></span>
+		{{/child}}
+		{{^child}}
+		{{#isInClass}}
+		<span><b>en classe{{^classes}}{{#classname}} {{classname}}{{/classname}}{{/classes}}{{#classes}} {{.}}{{/classes}}.</b></span>
+		{{/isInClass}}
+		{{/child}}
+		<br/>
+		<br/>
+		<u>Objet</u> : Connexion &agrave; votre Espace Num&eacute;rique de Travail
+		<p>
+			Vous poss&eacute;dez d&eacute;j&agrave; un compte sur l&apos;ENT. <br/>
+			Votre identifiant de connexion est rappel&eacute; ci-contre :<mark style="background: yellow"> <b>{{login}}</b></mark>
+		</p>
+
+		<p>
+			Si vous ne vous souvenez pas de votre mot de passe, vous pouvez en d&eacute;finir
+			un nouveau en suivant les instructions ci-dessous.
+		</p>
+
+	</div>
+
+	<p class="title">
+		1. Demande de r&eacute;initialisation de mot de passe
+	</p>
+
+	<ul>
+		<li>
+			<div>
+				<div>
+					<p class="bullet">
+						&bull; Allez sur le site <a href="https://www.aucollege84.vaucluse.fr">aucollege84.vaucluse.fr</a><br/>.
+					</p>
+          <div style="text-align: center">
+					    <img id="login2" src="login_aide.jpg" alt="login2"></img>
+          </div>
+					<p class="bullet">
+						&bull; Cliquez sur « <b>Besoin d&apos;aide</b> » <br/>
+						&bull; Cliquez ensuite sur « <b>Vous avez perdu votre mot de passe ?</b> »
+						Saisissez votre <b>identifiant</b> puis cliquez sur « <b>Envoyer</b> »
+					</p>
+				</div>
+
+			</div>
+			<p>
+				Un mail sera envoy&eacute; &agrave; l&apos;adresse que vous avez saisie lors
+				de l&apos;activation de votre compte.
+			</p>
+
+			<p class="title">
+				2. R&eacute;initialisation de mot de passe
+			</p>
+			<p>
+				Cliquez ensuite sur le lien figurant dans le mail re&ccedil;u pour d&eacute;finir votre nouveau mot de passe. <br/>
+				Ce dernier doit contenir 6 caract&egrave;res minimum.<br/>
+				&Agrave; partir de cette connexion, vous pourrez acc&eacute;der &agrave; l&apos;espace num&eacute;rique de travail de votre &eacute;tablissement.
+				Les &eacute;l&egrave;ves ont des identifiants distincts de ceux de leurs parents.
+			</p>
+			<p>
+				Nous vous rappelons qu&apos;il est indispensable de conserver vos donn&eacute;es confidentielles.
+			</p>
+
+		</li>
+	</ul>
+	<div class="footer">
+		<p class="activated">
+			Bonne navigation !
+		</p>
+	</div>
+</div>
+{{/activationCode}}
+{{/users}}
+</body>
+
+</html>
