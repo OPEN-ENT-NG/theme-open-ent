@@ -18,5 +18,5 @@
   "smartbanner.android.uri": "https://play.google.com/store/apps/details?id=com.ode.neo",
   "smartbanner.ios.store": "App Store",
   "smartbanner.ios.uri": "https://apps.apple.com/fr/app/neo-pocket/id1458097439",
-  "disconnected.redirect.url": "https://www.aucollege84.vaucluse.fr"
+  "disconnected.redirect.url": "https://www.aucollege84.vaucluse.fr/auth/saml/wayf"
 }
