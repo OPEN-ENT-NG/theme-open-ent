@@ -21,6 +21,7 @@ i.bookmark-empty-large::before,
 i.type.bookmark-empty::before,
 i.bookmark-empty::before {
   content: "\e888";
+  color: $green;
 }
 i.suitcase-large,
 i.type.suitcase,
@@ -45,7 +46,7 @@ i.agenda-large::before,
 i.type.agenda::before,
 i.agenda::before {
   content: "\e83c";
-  color: $yellow;
+  color: $green;
 }
 
 i.absences-large,
@@ -57,7 +58,7 @@ i.absences-large::before,
 i.type.absences::before,
 i.absences::before {
   content: "\e80b";
-  color: $red;
+  color: $green;
 }
 
 ///  APPS
@@ -71,7 +72,7 @@ i.cns-large::before,
 i.type.cns::before,
 i.cns::before {
   content: "\e88a";
-  color: $green;
+  color: $pink;
 }
 
 i.chat-large,
@@ -95,7 +96,7 @@ i.pad-large::before,
 i.type.pad::before,
 i.pad::before {
   content: "\e829";
-  color: $cyan;
+  color: $blue;
 }
 
 i.collaborativeeditor-large,
@@ -107,7 +108,7 @@ i.collaborativeeditor-large::before,
 i.type.collaborativeeditor::before,
 i.collaborativeeditor::before {
   content: "\e829";
-  color: $cyan;
+  color: $blue;
 }
 
 i.exercizer-large,
@@ -119,7 +120,7 @@ i.exercizer-large::before,
 i.type.exercizer::before,
 i.exercizer::before {
   content: "\e833";
-  color: $purple;
+  color: $blue;
 }
 
 i.visioconf,
@@ -127,7 +128,7 @@ i.visioconf-large {
   @include fonticon;
   &::before {
     content: "\e957";
-    color: $purple;
+    color: $pink;
   }
 }
 
@@ -157,7 +158,7 @@ i.sharebigfiles-large::before,
 i.type.sharebigfiles::before,
 i.sharebigfiles::before {
   content: "\e8cb";
-  color: $purple;
+  color: $green;
 }
 
 i.workspace-large,
@@ -169,7 +170,7 @@ i.workspace-large::before,
 i.type.workspace::before,
 i.workspace::before {
   content: "\e81b";
-  color: $red;
+  color: $orange;
 }
 
 i.actualites-large,
@@ -181,7 +182,7 @@ i.actualites-large::before,
 i.type.news::before,
 i.actualites::before {
   content: "\e85b";
-  color: $cyan;
+  color: $orange;
 }
 
 i.wiki-large,
@@ -193,7 +194,7 @@ i.wiki-large::before,
 i.type.wiki::before,
 i.wiki::before {
   content: "\e969";
-  color: $purple;
+  color: $blue;
 }
 
 i.support-large,
@@ -205,7 +206,7 @@ i.support-large::before,
 i.type.support::before,
 i.support::before {
   content: "\e835";
-  color: $green;
+  color: $yellow;
 }
 
 i.userbook-large,
@@ -250,7 +251,7 @@ i.notes-large::before,
 i.type.notes::before,
 i.notes::before {
   content: "\e806";
-  color: $red;
+  color: $pink;
 }
 
 i.blog-large,
@@ -262,7 +263,7 @@ i.blog-large::before,
 i.type.blog::before,
 i.blog::before {
   content: "\e809";
-  color: $indigo;
+  color: $orange;
 }
 
 i.mindmap-large,
@@ -274,7 +275,7 @@ i.mindmap-large::before,
 i.type.mindmap::before,
 i.mindmap::before {
   content: "\e859";
-  color: $cyan;
+  color: $blue;
 }
 
 i.rack-large,
@@ -286,7 +287,7 @@ i.rack-large::before,
 i.type.rack::before,
 i.rack::before {
   content: "\e80d";
-  color: $red;
+  color: $green;
 }
 
 i.community-large,
@@ -298,7 +299,7 @@ i.community-large::before,
 i.type.community::before,
 i.community::before {
   content: "\e814";
-  color: $purple;
+  color: $blue;
 }
 
 i.my-network-large,
@@ -320,7 +321,7 @@ i.collaborative-wall-large::before,
 i.type.collaborativewall::before,
 i.collaborative-wall::before {
   content: "\e800";
-  color: $green;
+  color: $blue;
 }
 
 i.pages-large,
@@ -332,7 +333,7 @@ i.pages-large::before,
 i.type.pages::before,
 i.pages::before {
   content: "\e876";
-  color: $red;
+  color: $orange;
 }
 
 i.admin-large,
@@ -354,7 +355,7 @@ i.rbs-large::before,
 i.type.rbs::before,
 i.rbs::before {
   content: "\e80e";
-  color: $pink;
+  color: $green;
 }
 
 i.timelinegenerator-large,
@@ -366,7 +367,7 @@ i.timelinegenerator-large::before,
 i.type.timelinegenerator::before,
 i.timelinegenerator::before {
   content: "\e819";
-  color: $yellow;
+  color: $blue;
 }
 
 i.timeline-large,
@@ -409,7 +410,7 @@ i.calendar-large::before,
 i.type.calendar::before,
 i.calendar::before {
   content: "\e966";
-  color: $yellow;
+  color: $green;
 }
 
 i.forum-large,
@@ -421,7 +422,7 @@ i.forum-large::before,
 i.type.forum::before,
 i.forum::before {
   content: "\e81e";
-  color: $cyan;
+  color: $orange;
 }
 
 i.poll-large,
@@ -433,7 +434,7 @@ i.poll-large::before,
 i.type.poll::before,
 i.poll::before {
   content: "\e832";
-  color: $cyan;
+  color: $green;
 }
 
 i.conversation-large,
@@ -446,7 +447,7 @@ i.conversation-large::before,
 i.type.messagerie::before,
 i.mail::before {
   content: "\e804";
-  color: $yellow;
+  color: $orange;
 }
 
 i.paths-large,
@@ -457,7 +458,7 @@ i.parcours-large {
 i.paths-large::before,
 i.parcours-large::before {
   content: "\e94d";
-  color: $orange;
+  color: $pink;
 }
 //// & also 1D APPS
 
@@ -477,7 +478,7 @@ i.stats-large::before,
 i.type.stats::before,
 i.stats::before {
   content: "\e810";
-  color: $purple;
+  color: $yellow;
 }
 
 i.cahier-textes-large,
@@ -492,18 +493,18 @@ i.cahier-textes-large::before,
 i.type.cahier-textes::before,
 i.cahier-textes::before {
   content: "\e965";
-  color: $green;
+  color: $blue;
 }
 
 i.type.cahier-de-texte::before,
 i.cahier-de-texte::before {
   content: "\e86f";
-  color: $green;
+  color: $blue;
 }
 
 i.cahier-de-texte-large::before {
   content: "\e910";
-  color: $green;
+  color: $blue;
 }
 
 i.type.homeworks {
@@ -529,7 +530,7 @@ i.scrapbook-large::before,
 i.type.scrapbook::before,
 i.scrapbook::before {
   content: "\e8d4";
-  color: $green;
+  color: $blue;
 }
 
 i.scrap-book-large,
@@ -542,7 +543,7 @@ i.scrap-book-large::before,
 i.type.scrap-book::before,
 i.scrap-book::before {
   content: "\e8d4";
-  color: $green;
+  color: $blue;
 }
 
 i.schoolbook-large,
@@ -555,7 +556,7 @@ i.schoolbook-large::before,
 i.type.schoolbook::before,
 i.schoolbook::before {
   content: "\e91e";
-  color: $green;
+  color: $orange;
 }
 
 i.competences-large,
@@ -568,7 +569,7 @@ i.competences-large::before,
 i.type.competences::before,
 i.competences::before {
   content: "\e927";
-  color: $red;
+  color: $green;
 }
 
 i.edt-large,
@@ -581,7 +582,7 @@ i.edt-large::before,
 i.type.edt::before,
 i.edt::before {
   content: "\e964";
-  color: $blue;
+  color: $green;
 }
 
 i.parametrage-large,
@@ -594,7 +595,7 @@ i.parametrage-large::before,
 i.type.parametrage::before,
 i.parametrage::before {
   content: "\e92f";
-  color: $red;
+  color: $yellow;
 }
 
 i.forms-large,
@@ -613,7 +614,7 @@ i.formulaire-large::before,
 i.type.formulaire::before,
 i.formulaire::before {
   content: "\e95c";
-  color: $purple;
+  color: $green;
 }
 
 i.presences-large,
@@ -632,7 +633,7 @@ i.absences-large::before,
 i.type.absences::before,
 i.absences::before {
   content: "\e95d";
-  color: $yellow;
+  color: $green;
 }
 
 i.settings-class-large,
@@ -655,7 +656,7 @@ i.library-large::before,
 i.type.library::before,
 i.library::before {
   content: "\e94c";
-  color: $yellow;
+  color: $purple;
 }
 
 i.web-conference-large,
@@ -668,7 +669,7 @@ i.web-conference-large::before,
 i.type.web-conference::before,
 i.web-conference::before {
   content: "\e957";
-  color: $cyan;
+  color: $orange;
 }
 
 i.website-large,
@@ -681,7 +682,7 @@ i.website-large::before,
 i.type.website::before,
 i.website::before {
   content: "\e90a";
-  color: $cyan;
+  color: $orange;
 }
 
 //// 1D APPS background

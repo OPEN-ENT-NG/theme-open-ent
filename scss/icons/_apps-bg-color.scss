@@ -1,46 +1,133 @@
 .chip.selected,
 .sticker.app,
 .sniplets .sniplet {
-  &.sharebigfiles, &.esidoc, &.pronote, &.cerise, &.scolinfo,
-  &.paraschool, &.kne, &.picardie-cursus, &.award, &.bcdi,
-  &.museefrancaisphoto, &.elyceepicardie, &.planetemetierspicardie, &.educagri, &.exercizer,
-  &.wiki, &.community, &.stats, &.forms, &.formulaire {
+  &.aide-devoirs,
+  &.bookmark-empty,
+  &.sharebigfiles,
+  &.absences,
+  &.competences,
+  &.itopstore,
+  &.presences,
+  &.paraschool,
+  &.award,
+  &.forms,
+  &.calendar,
+  &.directory,
+  &.biblionisep,
+  &.netvibes,
+  &.cidj,
+  &.poll,
+  &.userbook,
+  &.rack,
+  &.formulaire,
+  &.picardieregion,
+  &.homeworks,
+  &.rbs {
+    background: $green;
+  }
+
+  &.pronote,
+  &.kne,
+  &.picardie-cursus,
+  &.library,
+  &.planetemetierspicardie &.bcdi {
     background: $purple;
   }
 
-  &.agenda, &.lesitetv, &.vie-scolaire, &.madmagz, &.monorientationenligne,
-  &.turboself, &.edutheque, &.archive, &.admin, &.timelinegenerator, 
-  &.note, &.calendar, &.messagerie, &.library, &.presences, &.absences {
-    background: $yellow;
-  }
-
-  &.absences, &.canal-numerique, &.admission-post-bac, &.charlemagne, &.suitcase,
-  &.assr, &.glpi, &.chat, &.workspace, &.electron,
-  &.pages, &.matholycee, &.notes, &.rack, &.competences {
+  &.cerise,
+  &.scolinfo {
     background: $red;
   }
 
-  &.edumedia, &.scolarite, &.td-base, &.universalis, &.webclasseur,
-  &.pro-eps, &.onisep, &.banquesavoir, &.ressoucesdepartementale91, &.onisep2,
-  &.cervoprint, &.gepi, &.monstageenligne, &.lesechos, &.europress,
-  &.lemonde, &.connecteurgenerique1, &.connecteurgenerique2, &.pad, &.collaborativeeditor,
-  &.news, &.mindmap, &.forum, &.poll, &.web-conference,
-  &.website {
-    background: $cyan;
+  &.exercizer,
+  &.wiki,
+  &.timelinegenerator,
+  &.webclasseur,
+  &.edumedia,
+  &.pro-eps,
+  &.scrapbook,
+  &.scrap-book,
+  &.collaborative-wall,
+  &.collaborativewall,
+  &.cahier-de-texte,
+  &.pad,
+  &.collaborativeeditor,
+  &.onisep,
+  &.onisep2,
+  &.banquesavoir,
+  &.europress,
+  &.gepi,
+  &.mindmap,
+  &.community {
+    background: $blue;
   }
 
-  &.maxicours, &.unstagepourtous, &.rbs {
+  &.stats,
+  &.agenda,
+  &.support,
+  &.monorientationenligne,
+  &.lesitetv,
+  &.turboself,
+  &.edutheque,
+  &.admin,
+  &.archive,
+  &.timeline,
+  &.vie-scolaire {
+    background: $yellow;
+  }
+
+  &.canal-numerique,
+  &.cns,
+  &.esidoc,
+  &.note,
+  &.notes,
+  &.unstagepourtous,
+  &.madmagz {
     background: $pink;
   }
 
-  &.sacoche, &.blog, &.my-network, &.timeline {
-    background: $indigo;
+  &.messagerie,
+  &.news,
+  &.blog,
+  &.pages,
+  &.forum,
+  &.workspace,
+  &.web-conference,
+  &.schoolbook,
+  &.website {
+    background: $orange;
   }
 
-  &.aide-devoirs, &.bookmark-empty, &.cns, &.cidj, &.itopstore,
-  &.netvibes, &.biblionisep, &.picardieregion, &.support, &.userbook,
-  &.directory, &.collaborative-wall, &.collaborativewall, &.cahier-de-texte, &.homeworks,
-  &.scrapbook, &.scrap-book, &.schoolbook {
-    background: $green;
+  &.admission-post-bac,
+  &.charlemagne,
+  &.suitcase,
+  &.assr,
+  &.glpi,
+  &.chat,
+  &.electron,
+  &.universalis,
+  &.matholycee {
+    background: $red;
+  }
+
+  &.scolarite,
+  &.td-base,
+  &.ressoucesdepartementale91,
+  &.cervoprint,
+  &.monstageenligne,
+  &.lesechos,
+  &.lemonde,
+  &.connecteurgenerique1,
+  &.connecteurgenerique2 {
+    background: $cyan;
+  }
+
+  &.maxicours,
+  &.sacoche,
+  &.my-network,
+  &.museefrancaisphoto,
+  &.elyceepicardie,
+  &.educagri {
+    background: $indigo;
   }
 }
