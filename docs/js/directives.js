@@ -55,7 +55,6 @@ var addDirectives = function (module, done) {
       transclude: true,
       templateUrl: "/public/admin/portal.html",
       compile: function (element, attributes, transclude) {
-        element.append("<xiti></xiti>"); //<- Adds the XiTi directive
         $("[logout]").attr(
           "href",
           "/auth/logout?callback=" + skin.logoutCallback
