@@ -1,4 +1,3 @@
 {
-  "auth": ["forgot-form"],
-  "portal": ["conversation-unread"]
+  "auth": ["forgot-form"]
 }
