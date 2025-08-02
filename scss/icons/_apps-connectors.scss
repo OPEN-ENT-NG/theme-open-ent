@@ -242,11 +242,17 @@ i.paraschool::before {
   color: $purple;
 }
 
+i.viescolaire-large,
+i.type.viescolaire,
+i.viescolaire 
 i.vie-scolaire-large,
 i.type.vie-scolaire,
 i.vie-scolaire {
   @include fonticon;
 }
+i.viescolaire-large::before,
+i.type.viescolaire::before,
+i.viescolaire::before,
 i.vie-scolaire-large::before,
 i.type.vie-scolaire::before,
 i.vie-scolaire::before {
