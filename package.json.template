@@ -1,6 +1,6 @@
 {
   "name": "ode-csslib-openent",
-  "version": "3.3.17-%branch%.%generateVersion%",
+  "version": "3.3.18",
   "description": "Open ENT theme by Edifice",
   "scripts": {
     "override:i18n": "OVERRIDE_SRC=${OVERRIDE_SRC} OVERRIDE_DIST=${OVERRIDE_DIST} node ode-override-plugin.js",
