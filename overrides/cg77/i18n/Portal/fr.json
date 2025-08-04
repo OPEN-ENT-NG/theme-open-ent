@@ -8,12 +8,12 @@
   "support": "Assistance ENT77",
   "oops": "Contenu inaccessible", 
   "e404.page": "La page demandée n’existe pas, a été supprimée ou vous n’avez pas les droits pour y accéder.",
-  "smartbanner.name": "Open ENT",
+  "smartbanner.name": "ENT77",
   "smartbanner.description": "L'essentiel de votre réseau éducatif !",
   "smartbanner.action": "Voir",
-  "smartbanner.icon.uri": "/assets/themes/cg77/img/illustrations/open-ent-pocket.png",
+  "smartbanner.icon.uri": "/assets/themes/cg77/img/illustrations/ent77-pocket.png",
   "smartbanner.android.store": "Google Play",
-  "smartbanner.android.uri": "https://play.google.com/store/apps/details?id=fr.openent.mobile",
+  "smartbanner.android.uri": "https://play.google.com/store/apps/details?id=fr.ent77.mobile",
   "smartbanner.ios.store": "App Store",
-  "smartbanner.ios.uri": "https://apps.apple.com/fr/app/open-ent/id1526672567"
+  "smartbanner.ios.uri": "https://apps.apple.com/fr/app/ent-77/id6547845276"
 }
