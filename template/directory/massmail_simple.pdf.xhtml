@@ -5,60 +5,78 @@
 <head>
     <title>{{#i18n}}directory.admin.massMailing{{/i18n}}</title>
     <style type="text/css">
-    * {
-        box-sizing: border-box;
-    }
-    body {
-        font-family: Arial, sans-serif;
-        color: #555;
-        line-height: 1.4;
-    }
-    @page {
-	    size: A4;
-    }
-    @media print {
-        html, body {
-            width: 210mm;
-            height: 297mm;
+        * {
+            box-sizing: border-box;
         }
-    }
-    p {
-        font-size: 12px;
-        margin: 0;
-    }
-    strong {
-        color: #444;
-    }
-    a {
-        color: #3889c1;
-    }
-    .card {
-        float: left;
-        width: 8cm;
-        min-height: 5.9cm;
-        max-height: 6cm;
-        border: 0.5px dashed #ccc;
-        padding: 15px;
-        margin: 0;
-    }
-    .logo {
-        width: 100px;
-        float: right;
-    }
-    .grade {
-        display: inline-block;
-        font-size: 11px;
-        margin-bottom: 15px;
-        font-style: oblique;
-    }
-    .name {
-        font-size: 16px;
-        margin: 0;
-        line-height: 1.1;
-    }
-    .activated {
-        font-style: oblique;
-    }
+        body {
+            font-family: Arial, sans-serif;
+            color: #555;
+            line-height: 1.4;
+        }
+        @page {
+            size: A4;
+        }
+        @media print {
+            html, body {
+                width: 210mm;
+                height: 297mm;
+            }
+        }
+        p {
+            font-size: 12px;
+            margin: 0;
+        }
+        strong {
+            color: #444;
+        }
+        a {
+            color: #3889c1;
+        }
+        .card {
+            float: left;
+            width: 8cm;
+            min-height: 5.9cm;
+            max-height: 6cm;
+            border: 0.5px dashed #ccc;
+            padding: 15px;
+            margin: 0;
+        }
+        .identity {
+            position: relative;
+        }
+        .logo {
+            width: 100px;
+            position: absolute;
+            right: -6px;
+            top: -6px;
+            z-index: -1;
+        }
+        .grade {
+            display: inline-block;
+            font-size: 11px;
+            line-height: 12px;
+            font-style: oblique;
+        }
+        .relative {
+            height: 48px;
+            overflow: hidden;
+        }
+        .mt-12 {
+            margin-top: 12px;
+        }
+        .name {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.1;
+        }
+        .truncated {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .activated {
+            font-style: oblique;
+        }
     </style>
 </head>
 
@@ -67,21 +85,20 @@
     <div style="page-break-after:always;">
         {{#users}}
         <div class="card">
-            <img class="logo" src="logo.png"></img>
-            <h2 class="name">{{displayName}}</h2>
-            {{^isGuestOrPersonnel}}
-            <strong class="grade">{{#i18n}}{{profile}}{{/i18n}}{{#firstClass}} {{#i18n}}classAdmin.template.class{{/i18n}} <strong>{{.}}</strong>{{#otherClasses}}, <strong>{{.}}</strong>{{/otherClasses}}{{/firstClass}}.</strong>
-            <br />
-            {{/isGuestOrPersonnel}}
-            {{#isGuestOrPersonnel}}
-            <strong class="grade">{{#i18n}}{{profile}}{{/i18n}}</strong>
-            <br />
-            {{/isGuestOrPersonnel}}
+            <div class="identity">
+                <img class="logo" src="logo.png"></img>
+                <h2 class="name truncated">{{displayName}}</h2>
+                {{^isGuestOrPersonnel}}
+                <strong class="grade truncated">{{#i18n}}{{profile}}{{/i18n}}{{#firstClass}} {{#i18n}}classAdmin.template.class{{/i18n}} <strong>{{.}}</strong>{{#otherClasses}}, <strong>{{.}}</strong>{{/otherClasses}}{{/firstClass}}.</strong>
+                {{/isGuestOrPersonnel}}
+                {{#isGuestOrPersonnel}}
+                <strong class="grade truncated">{{#i18n}}{{profile}}{{/i18n}}</strong>
+                {{/isGuestOrPersonnel}}
+            </div>
             {{#firstChild}}
-            <p><strong>{{#i18n}}classAdmin.template.relative{{/i18n}} : </strong><br />{{firstName}} {{lastName}}{{#otherChildren}}, {{firstName}} {{lastName}}{{/otherChildren}}</p>
-            <br />
+            <p class="relative mt-12"><strong>{{#i18n}}classAdmin.template.relative{{/i18n}} : </strong><br />{{firstName}} {{lastName}}{{#otherChildren}}, {{firstName}} {{lastName}}{{/otherChildren}}</p>
             {{/firstChild}}
-            <p><strong>{{#i18n}}classAdmin.template.id{{/i18n}} : </strong>{{login}}</p>
+            <p class="mt-12"><strong>{{#i18n}}classAdmin.template.id{{/i18n}} : </strong>{{login}}</p>
             {{#activationCode}}
             <p><strong>{{#i18n}}classAdmin.template.code{{/i18n}} : </strong>{{activationCode}}</p>
             {{/activationCode}}
@@ -93,8 +110,7 @@
             <p><strong>{{#i18n}}classAdmin.template.reset{{/i18n}} : </strong>{{resetCode}}</p>
             {{/resetCode}}
             {{/activationCode}}
-            <br />
-            <p>
+            <p class="mt-12">
                 <strong>{{#i18n}}classAdmin.template.url{{/i18n}} :</strong><br />
                 <a href="#">{{hostname}}</a><br />
                 {{#i18n}}classAdmin.template.downloadAppInfo{{/i18n}}
