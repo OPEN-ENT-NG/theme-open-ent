@@ -130,7 +130,8 @@
     <br />
     <h2> » 3 pasos para restablecer la contraseña</h2>
     <ol>
-			<li>En caso de olvidar su contraseña, vaya a <a href="{{host}}://{{hostname}}">{{hostname}}</a> y haga clic en « Contraseña olvidada ».</li>
+		<!-- #COCO-3805 We force login URL to edifice.io/connexion -->
+			<li>En caso de olvidar su contraseña, vaya a <a href="http://edifice.io/connexion">edifice.io/connexion</a> y haga clic en « Contraseña olvidada ».</li>
 			<li>Introduzca su nombre de usuario y haga clic en « Enviar ». Una vez activada su cuenta, recibirá un correo electrónico en la dirección que indicó.</li>
 			<li>Abra el correo electrónico y, a continuación, haga clic en el vínculo para indicar su nueva contraseña.</li>
 		</ol>
@@ -138,7 +139,8 @@
     {{#activationCode}}
     <h2> » Instrucciones para mi primera conexión</h2>
     <ol>
-			<li>Para conectarse, vaya a <a href="{{host}}://{{hostname}}">{{hostname}}</a> y haga clic en « Conectarse ».</li>
+		<!-- #COCO-3805 We force login URL to edifice.io/connexion -->
+			<li>Para conectarse, vaya a <a href="http://edifice.io/connexion">edifice.io/connexion</a> y haga clic en « Conectarse ».</li>
 			<li>Introduzca su nombre de usuario (se debe guardar para poder conectarse ulteriormente) y su código de activación:
 				<div class="center">
 					<p class="red">Nombre de usuario: {{login}}</p>

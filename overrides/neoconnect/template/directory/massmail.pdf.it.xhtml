@@ -130,7 +130,8 @@
     <br />
     <h2> » 3 passaggi per reimpostare la password</h2>
     <ol>
-			<li>In caso di password dimenticata, vai su <a href="{{host}}://{{hostname}}">{{hostname}}</a> e clicca su « Password dimenticata ».</li>
+		<!-- #COCO-3805 We force login URL to edifice.io/connexion -->
+			<li>In caso di password dimenticata, vai su <a href="http://edifice.io/connexion">edifice.io/connexion</a> e clicca su « Password dimenticata ».</li>
 			<li>Inserisci il tuo nome utente e clicca su « Invia ». Un'email verrà inviata all'indirizzo indicato durante l'attivazione del tuo account.</li>
 			<li>3. Apri la mail e clicca sul link per impostare la nuova password.</li>
 		</ol>
@@ -138,7 +139,8 @@
     {{#activationCode}}
     <h2> » Cosa fare alla prima connessione</h2>
     <ol>
-			<li>Per connetterti, vai su <a href="{{host}}://{{hostname}}">{{hostname}}</a> e clicca su « Connetti ».</li>
+		<!-- #COCO-3805 We force login URL to edifice.io/connexion -->
+			<li>Per connetterti, vai su <a href="http://edifice.io/connexion">edifice.io/connexion</a> e clicca su « Connetti ».</li>
 			<li>Inserisci il tuo nome utente (da conservare per le future connessioni) e il tuo codice di attivazione:
 				<div class="center">
 					<p class="red">Nome utente: {{login}}</p>

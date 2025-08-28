@@ -130,7 +130,8 @@
     <br />
     <h2> » Resetting your password in three steps</h2>
     <ol>
-			<li>If you forget your password, visit <a href="{{host}}://{{hostname}}">{{hostname}}</a> and click on « Forgotten password ».</li>
+		<!-- #COCO-3805 We force login URL to edifice.io/connexion -->
+			<li>If you forget your password, visit <a href="http://edifice.io/connexion">edifice.io/connexion</a> and click on « Forgotten password ».</li>
 			<li>Enter your username, then click « Send ». An email will be sent to the address you provided when you activated your account.</li>
 			<li>Open the email and click on the link to reset your password.</li>
 		</ol>
@@ -138,7 +139,8 @@
     {{#activationCode}}
     <h2> » Signing in for the first time</h2>
     <ol>
-			<li>To sign in, visit <a href="{{host}}://{{hostname}}">{{hostname}}</a> and click « Sign in ».</li>
+		<!-- #COCO-3805 We force login URL to edifice.io/connexion -->
+			<li>To sign in, visit <a href="http://edifice.io/connexion">edifice.io/connexion</a> and click « Sign in ».</li>
 			<li>Enter your username (and be sure to make note of it so you can sign in again later) and your activation code:
 				<div class="center">
 					<p class="red">Username: {{login}}</p>

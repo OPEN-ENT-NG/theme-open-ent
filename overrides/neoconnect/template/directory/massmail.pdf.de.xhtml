@@ -130,7 +130,8 @@
     <br />
     <h2> » 3 Schritte zum Zurücksetzen meines Passworts</h2>
     <ol>
-			<li>Bei Vergessen des Passworts gehen Sie auf <a href="{{host}}://{{hostname}}">{{hostname}}</a> und klicken Sie auf<br />« Passwort vergessen ».</li>
+		<!-- #COCO-3805 We force login URL to edifice.io/connexion -->
+			<li>Bei Vergessen des Passworts gehen Sie auf <a href="http://edifice.io/connexion">edifice.io/connexion</a> und klicken Sie auf<br />« Passwort vergessen ».</li>
 			<li>Geben Sie Ihren Benutzernamen ein und klicken Sie auf « Senden ». Es wird nun eine E-Mail an die bei der Aktivierung Ihres Kontos angegebene Adresse gesendet.</li>
 			<li>Öffnen Sie die E-Mail und klicken Sie dann auf den Link zur Festlegung Ihres neuen Passworts.</li>
 		</ol>
@@ -138,7 +139,8 @@
     {{#activationCode}}
     <h2> » Anleitung für meine erste Anmeldung</h2>
     <ol>
-			<li>Gehen Sie zur Anmeldung auf <a href="{{host}}://{{hostname}}">{{hostname}}</a> und klicken Sie auf « Login ».</li>
+		<!-- #COCO-3805 We force login URL to edifice.io/connexion -->
+			<li>Gehen Sie zur Anmeldung auf <a href="http://edifice.io/connexion">edifice.io/connexion</a> und klicken Sie auf « Login ».</li>
 			<li>Geben Sie Ihren Benutzernamen (für spätere Anmeldungen aufbewahren) und Ihren Aktivierungscode ein: 
 				<div class="center">
 					<p class="red">Benutzername: {{login}}</p>
