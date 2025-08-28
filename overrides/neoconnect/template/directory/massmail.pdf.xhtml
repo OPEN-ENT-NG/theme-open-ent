@@ -130,7 +130,8 @@
     <br />
     <h2> » 3 étapes pour réinitialiser mon mot de passe</h2>
     <ol>
-			<li>En cas d'oubli de votre mot de passe, rendez-vous sur <a href="{{host}}://{{hostname}}">{{hostname}}</a> et cliquez sur « Mot de passe oublié ».</li>
+		<!-- #COCO-3805 We force login URL to edifice.io/connexion -->
+			<li>En cas d'oubli de votre mot de passe, rendez-vous sur <a href="http://edifice.io/connexion">edifice.io/connexion</a> et cliquez sur « Mot de passe oublié ».</li>
 			<li>Saisissez votre identifiant puis cliquez sur « Envoyer ». Un mail sera envoyé à l'adresse indiquée lors de l'activation de votre compte.</li>
 			<li>Ouvrez le mail et cliquez ensuite sur le lien pour définir votre nouveau mot de passe.</li>
 		</ol>
@@ -138,7 +139,8 @@
     {{#activationCode}}
     <h2> » Mode d'emploi de ma première connexion</h2>
     <ol>
-			<li>Pour se connecter, rendez-vous sur <a href="{{host}}://{{hostname}}">{{hostname}}</a> et cliquez sur « Se connecter ».</li>
+		<!-- #COCO-3805 We force login URL to edifice.io/connexion -->
+			<li>Pour se connecter, rendez-vous sur <a href="http://edifice.io/connexion">edifice.io/connexion</a> et cliquez sur « Se connecter ».</li>
 			<li>Entrez votre identifiant (à conserver pour vous connecter ultérieurement) et votre code d'activation :
 				<div class="center">
             <p class="red">Identifiant : {{login}}</p>
