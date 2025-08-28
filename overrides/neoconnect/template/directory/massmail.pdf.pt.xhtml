@@ -130,7 +130,8 @@
     <br />
     <h2> » 3 etapas para reiniciar minha senha</h2>
     <ol>
-			<li>Caso tenha esquecido sua senha, entre em <a href="{{host}}://{{hostname}}">{{hostname}}</a> e clique em « Senha esquecida ».</li>
+		<!-- #COCO-3805 We force login URL to edifice.io/connexion -->
+			<li>Caso tenha esquecido sua senha, entre em <a href="http://edifice.io/connexion">edifice.io/connexion</a> e clique em « Senha esquecida ».</li>
 			<li>Digite seu login depois clique em « Enviar ». Um e-mail será enviado ao endereço indicado no momento da ativação da sua conta.</li>
 			<li>Abra o e-mail e clique em seguida no link para redefinir a sua senha.</li>
 		</ol>
@@ -138,7 +139,8 @@
     {{#activationCode}}
     <h2> » Instruções para a primeira conexão</h2>
     <ol>
-			<li>Para se conectar, entre em <a href="{{host}}://{{hostname}}">{{hostname}}</a> e clique em « Conectar-se ».</li>
+		<!-- #COCO-3805 We force login URL to edifice.io/connexion -->
+			<li>Para se conectar, entre em <a href="http://edifice.io/connexion">edifice.io/connexion</a> e clique em « Conectar-se ».</li>
 			<li>Digite login (conservar para as próximas conexões) e seu código de ativação:
 				<div class="center">
 					<p class="red">Login:  {{login}}</p>
