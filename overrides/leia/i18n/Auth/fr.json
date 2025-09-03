@@ -1,4 +1,5 @@
 {
+	"auth.title": "Edifice - Connexion ENT Leia Corsica, accès à votre espace scolaire",
 	"auth.charter": "/assets/cgu/Charte_ENT-LEIA.pdf",
   	"password.errors": "Votre mot de passe personnel doit contenir au moins 6 caractères.",
 	"email.signature": "L'équipe ENT",

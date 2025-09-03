@@ -1,4 +1,5 @@
 {
+    "auth.title": "Lycée connecté Inicio de sesión, acceso a su espacio escolar",
     "password.rules.activation": "Su contraseña debe contener al menos una letra mayúscula, una letra minúscula y tener una longitud mínima de 8 caracteres.",
     "password.rules.reset": "Su contraseña debe contener al menos una letra mayúscula, una letra minúscula y tener una longitud mínima de 8 caracteres. También debe ser diferente de las contraseñas utilizadas anteriormente."
 }

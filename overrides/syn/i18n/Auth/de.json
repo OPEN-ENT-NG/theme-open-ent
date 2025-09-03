@@ -1,4 +1,5 @@
 {
+	"auth.title": "Edifice - e-college 78 Anmeldung, Zugriff auf Ihren Schulbereich",
   "password.rules.activation": "Ihr Passwort muss mindestens eine Ziffer, einen Buchstaben enthalten und eine minimale Länge von 8 Zeichen haben.",
   "password.rules.reset": "Ihr Passwort muss mindestens eine Ziffer, einen Buchstaben enthalten und eine minimale Länge von 8 Zeichen haben. Es muss sich außerdem von den bisher verwendeten Passwörtern unterscheiden."
 }

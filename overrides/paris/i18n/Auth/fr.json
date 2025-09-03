@@ -25,7 +25,7 @@
   	"email.reset.pw.infos" : "Ceci est un envoi généré automatiquement. Veuillez ne pas répondre directement à ce message.",
   	"email.reset.id.infos" : "Ceci est un envoi généré automatiquement. Veuillez ne pas répondre directement à ce message. <br /><br /> Voici le récapitulatif des informations personnelles qui vous permettront d'utiliser l'ENT : ",
 	"email.signature" : "L'équipe Paris Classe Numérique",
-	"auth.title" : "Paris Classe Numérique - Authentification",
+	"auth.title" : "Edifice - Connexion ENT Paris Classe Numérique, votre espace scolaire",
 	"phone.hi": "Bonjour, ",
 	"phone.how.to.reset": "Vous pouvez vous connecter à Paris Classe Numérique en saisissant votre identifiant et votre nouveau code d'activation",
 	"phone.login": "Voici le rappel de votre identifiant de connexion à Paris Classe Numérique",

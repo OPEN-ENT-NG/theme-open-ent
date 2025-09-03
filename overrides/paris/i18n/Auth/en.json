@@ -25,7 +25,7 @@
 	"email.reset.pw.infos" : "This is an automatically generated message. Please do not respond directly to this message.",
 	"email.reset.id.infos" : "This is an automatically generated message. Please do not respond directly to this message.<br /><br /> Here is the summary of the personal information that will allow you to use the VLE:",
 	"email.signature" : "The Paris Classe Numérique Team",
-	"auth.title" : "Paris Classe Numérique - Authentication",
+	"auth.title" : "Edifice - Paris Classe Numérique Login, access to your school space",
 	"phone.hi": "Hello, ",
 	"phone.how.to.reset": "You can sign in to Paris Classe Numérique by entering your username and new activation code",
 	"phone.login": "As a reminder, here is your username for Paris Classe Numérique",

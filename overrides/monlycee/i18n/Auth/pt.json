@@ -1,4 +1,5 @@
 {
+    "auth.title": "Monlycee.net Connessione, accesso al tuo spazio scolastico",
     "auth.charter": "/assets/cgu/Charte_IDF.pdf",
     "password.errors": "Escolha no mínimo 12 caracteres. Letras e números são obrigatórios",
     "password.rules.activation": "Sua senha deve conter pelo menos um caractere especial, uma letra minúscula, uma letra maiúscula, um dígito e ter um comprimento mínimo de 12 caracteres.",

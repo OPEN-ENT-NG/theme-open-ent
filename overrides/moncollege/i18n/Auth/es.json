@@ -1,4 +1,5 @@
 {
+    "auth.title": "Edifice - Mon college Essonne Inicio de sesión, acceso a su espacio escolar",
     "password.rules.activation": "Su contraseña debe contener al menos un dígito, una letra y tener una longitud mínima de 8 caracteres.",
     "password.rules.reset": "Su contraseña debe contener al menos un dígito, una letra y tener una longitud mínima de 8 caracteres. También debe ser diferente de las contraseñas utilizadas anteriormente."
 }

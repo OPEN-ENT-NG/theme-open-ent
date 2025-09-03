@@ -1,4 +1,5 @@
 {
+	"auth.title": "Edifice - NEO Anmeldung, Zugriff auf Ihren Schulbereich",
 	"password.errors": "Es müssen mindestens 6 Zeichen enthalten sein.",
 	"email.signature": "Das NEO Team",
 	"password.rules.reset": "Ihr Passwort muss mindestens 6 Zeichen enthalten. Es muss sich außerdem von den bisher verwendeten Passwörtern unterscheiden.",

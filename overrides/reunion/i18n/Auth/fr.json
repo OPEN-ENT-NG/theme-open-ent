@@ -1,4 +1,5 @@
 {
+  "auth.title": "Edifice - Connexion ENT ONE La réunion, accès à votre espace scolaire",
   "email.signature" : "L'équipe One",
   "auth.resetCodeSent": "Un mail vous a été envoyé (ou à votre enseignant si vous êtes un élève), avec les instructions pour changer votre mot de passe.",
   "auth.welcome.p1": "Bienvenue dans ONE, l’espace numérique de votre école.",

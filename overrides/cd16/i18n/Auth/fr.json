@@ -1,5 +1,6 @@
 {
-  "password.errors": "Choisissez 8 caractères minimum, en mélangeant les majuscules et les minuscules.",
+	"auth.title": "Edifice - Connexion Mon ENT16 Charente, accès à votre espace scolaire",
+  	"password.errors": "Choisissez 8 caractères minimum, en mélangeant les majuscules et les minuscules.",
 	"email.signature": "L'équipe ENT",
 	"otherstudent":"Elève",
 	"otherrelative":"Collégiens - collégiennes - responsables légaux",

@@ -1,4 +1,5 @@
 {
+    "auth.title": "Lycée connecté Anmeldung, Zugriff auf Ihren Schulbereich",
     "password.rules.activation": "Ihr Passwort muss mindestens einen Großbuchstaben, einen Kleinbuchstaben enthalten und eine minimale Länge von 8 Zeichen haben.",
     "password.rules.reset": "Ihr Passwort muss mindestens einen Großbuchstaben, einen Kleinbuchstaben enthalten und eine minimale Länge von 8 Zeichen haben. Es muss sich außerdem von den bisher verwendeten Passwörtern unterscheiden."
 }

@@ -1,5 +1,6 @@
 {
 	"auth.charter" : "/assets/cgu/Charte_CD13.pdf",
+	"auth.title": "Edifice - Connexion ENT Eduprovence, accès à votre espace scolaire",
     "password.errors": "Votre mot de passe personnel doit contenir au moins 6 caractères.",
 	"email.signature": "L'équipe ENT",
 	"otherstudent":"Elève",

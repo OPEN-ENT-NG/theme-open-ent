@@ -1,4 +1,5 @@
 {
+	"auth.title": "Connexion ENT Monlycee.net, accès à votre espace scolaire",
 	"auth.forgot.header": "Besoin d'aide ?",
 	"password.errors": "Choisissez un mot de passe différent avec 12 caractères minimum, au moins un caractère spécial, une lettre minuscule, une lettre majuscule et un chiffre.",
 	"password.recommandations": "Il est nécessaire d'avoir 12 caractères minimum, un caractère spécial, une lettre minuscule, une lettre majuscule et un chiffre.",
