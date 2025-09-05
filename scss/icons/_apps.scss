@@ -299,7 +299,7 @@ i.community-large::before,
 i.type.community::before,
 i.community::before {
   content: "\e814";
-  color: $blue;
+  color: $purple;
 }
 
 i.my-network-large,
@@ -783,19 +783,6 @@ i.geogebra::before {
   color: $blue;
 }
 
-
-i.minibadge-large,
-i.type.minibadge,
-i.minibadge {
-  @include fonticon;
-}
-
-i.minibadge-large::before,
-i.type.minibadge::before,
-i.minibadge::before {
-  content: "\e960";
-  color: $green;
-}
 
 //// 1D APPS background
 .apps {
