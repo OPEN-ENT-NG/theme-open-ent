@@ -128,7 +128,7 @@ i.visioconf-large {
   @include fonticon;
   &::before {
     content: "\e957";
-    color: $pink;
+    color: $orange;
   }
 }
 
@@ -603,7 +603,10 @@ i.type.forms,
 i.forms,
 i.formulaire-large,
 i.type.formulaire,
-i.formulaire {
+i.formulaire,
+i.formulaire-public-large,
+i.type.formulaire-public,
+i.formulaire-public {
   @include fonticon;
 }
 
@@ -612,7 +615,10 @@ i.type.forms::before,
 i.forms::before,
 i.formulaire-large::before,
 i.type.formulaire::before,
-i.formulaire::before {
+i.formulaire::before,
+i.formulaire-public-large::before,
+i.type.formulaire-public::before,
+i.formulaire-public::before {
   content: "\e95c";
   color: $green;
 }
@@ -683,6 +689,112 @@ i.type.website::before,
 i.website::before {
   content: "\e90a";
   color: $orange;
+}
+
+i.mediacentre-large,
+i.type.mediacentre,
+i.mediacentre {
+  @include fonticon;
+}
+
+i.mediacentre-large::before,
+i.type.mediacentre::before,
+i.mediacentre::before {
+  content: "\e968";
+  color: $blue;
+}
+
+
+i.appointments-large,
+i.type.appointments,
+i.appointments {
+  @include fonticon;
+}
+
+i.appointments-large::before,
+i.type.appointments::before,
+i.appointments::before {
+  content: "\e96a";
+  color: $green;
+}
+
+i.lool-large,
+i.type.lool,
+i.lool {
+  @include fonticon;
+}
+
+i.lool-large::before,
+i.type.lool::before,
+i.lool::before {
+  content: "\e962";
+  color: $blue;
+}
+
+i.magneto-large,
+i.type.magneto,
+i.magneto {
+  @include fonticon;
+}
+
+i.magneto-large::before,
+i.type.magneto::before,
+i.magneto::before {
+  content: "\e961";
+  color: $blue;
+}
+
+i.communities-large,
+i.type.communities,
+i.magneto {
+  @include fonticon;
+}
+
+i.communities-large::before,
+i.type.communities::before,
+i.communities::before {
+  content: "\e96f";
+  color: $purple;
+}
+
+i.minetest-large,
+i.type.minetest,
+i.minetest {
+  @include fonticon;
+}
+
+i.minetest-large::before,
+i.type.minetest::before,
+i.minetest::before {
+  content: "\e970";
+  color: $blue;
+}
+
+i.geogebra-large,
+i.type.geogebra,
+i.geogebra {
+  @include fonticon;
+}
+
+i.geogebra-large::before,
+i.type.geogebra::before,
+i.geogebra::before {
+  content: "\e971";
+  color: $blue;
+}
+
+
+i.minibadge-large,
+i.type.minibadge,
+i.minibadge {
+  @include fonticon;
+}
+
+i.minibadge-large::before,
+i.type.minibadge::before,
+i.minibadge::before {
+  content: "\e960";
+  color: $green;
 }
 
 //// 1D APPS background

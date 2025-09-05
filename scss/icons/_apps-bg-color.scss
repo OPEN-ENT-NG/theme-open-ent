@@ -30,7 +30,9 @@
   &.kne,
   &.picardie-cursus,
   &.library,
-  &.planetemetierspicardie &.bcdi {
+  &.planetemetierspicardie,
+  &.bcdi,
+  &.communities {
     background: $purple;
   }
 
@@ -58,7 +60,11 @@
   &.europress,
   &.gepi,
   &.mindmap,
-  &.community {
+  &.lool,
+  &.community,
+  &.magneto,
+  &.geogebra,
+  &.minetest {
     background: $blue;
   }
 
