@@ -5,8 +5,8 @@
 	"password.errors": "Choisissez 6 caractères minimum.",
 	"student":"Élève",
 	"otherstudent":"Élève",
-	"relative":"Représentant légal (parent)",
-	"otherrelative":"Représentant légal (parent)",
+	"relative":"Responsable d'élèves",
+	"otherrelative":"Responsable d'élèves",
 	"otherteacher":"Personnel Éducation Nationale",
 	"loginperseducnat":"Personnel de la collectivité",
 	"loginother":"Invité"
