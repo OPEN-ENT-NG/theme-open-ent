@@ -1,0 +1,44 @@
+{{! Users that are not activated }}
+{{#activationCode}}
+Hello,<br/>
+<br/>
+This is an automatically generated email containing your initial login information for NEO.<br/>
+<br/>
+The first login to NEO is done at <a href="https://edifice.io/connexion">edifice.io/connexion</a>.<br/>
+<br/>
+A necessary first step will allow you to personalize your login information.<br/>
+<br/>
+Please have your personal email address and the information below ready:<br/>
+<br/>
+Login: {{login}}<br/>
+Activation Code: {{activationCode}}<br/>
+<br/>
+To secure your access, you will be asked to choose a new password, provide your personal email address, and, if you wish, enter a mobile phone number.<br/>
+<br/>
+We recommend mixing numbers, letters, upper case, lower case, and special characters when choosing your personal password.<br/>
+<br/>
+Happy browsing on NEO!<br/>
+<br/>
+{{/activationCode}}
+{{! Users that are activated }}
+{{^activationCode}}
+Hello,<br/>
+<br/>
+This is an automatically generated email containing your login information for NEO.<br/>
+<br/>
+You already have an account on NEO.<br/>
+Your login ID is recalled here: <i>{{login}}</i><br/>
+<br/>
+If you do not remember your password, you can define a new one by following the instructions below:<br/>
+<br/>
+- Go to <a href="https://edifice.io/connexion">https://edifice.io/connexion</a> and click on "Forgot password".<br/>
+<br/>
+- Enter your login ID, then click "Send".<br/>
+<br/>
+An email will be sent to the address you provided when activating your account. Then click on the hyperlink in the received email to define your new password.<br/>
+<br/>
+We recommend mixing numbers, letters, upper case, lower case, and special characters when choosing your personal password.<br/>
+<br/>
+Happy browsing on NEO!<br/>
+<br/>
+{{/activationCode}}
