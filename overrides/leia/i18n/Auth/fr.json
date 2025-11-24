@@ -14,5 +14,6 @@
 	"loginother":"Personnel de la collectivité et invité",
 	"wayf.logo.partner" : "/assets/themes/leia/img/logo-partenaire.png",
 	"wayf.logo.partner.width" : "300px",
-	"wayf.select.profile" : "Bienvenue dans votre ENT LEIA"
+	"wayf.select.profile" : "Bienvenue dans votre ENT LEIA",
+	"wayf.message" : "<b>La mise en œuvre de l'Espace Numérique de Travail LEIA V4 est cofinancée par l'Union européenne et la Collectivité de Corse</b>"
 }
