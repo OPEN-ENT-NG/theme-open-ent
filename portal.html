@@ -79,6 +79,20 @@
         <li class="nav-item">
           <span ng-include="template.containers.portal.conversationUnread"></span>
         </li>
+
+        <!-- Carbonio preauth link -->
+        <li class="nav-item" ng-if="me.hasWorkflow('org.entcore.auth.controllers.CarbonioPreauthController|preauth')">
+          <a class="nav-link position-relative" href="/auth/carbonio/preauth" i18n-title="navbar.messages"
+            aria-label="navbar.messages">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+              color="#fff">
+              <path
+                d="m.5 21.257 7.46-8.216 4.052 2.403 4.052-2.403 7.46 8.216H.5Zm0-2.738V8.573l5.848 3.531L.5 18.52Zm0-12.084V3.048h23.023v3.387l-11.511 6.847L.5 6.435Zm17.176 5.67 5.848-3.532v9.946l-5.848-6.415Z"
+                fill="currentColor"></path>
+            </svg>
+          </a>
+        </li>
+
         <li class="nav-item">
           <a href="#" tooltip="navbar.help" pulsar="{ index: 5, i18n: 'portal.pulsar.help', position: 'bottom center'}"
             class="nav-link" aria-label="navbar.help" ng-if="currentLanguage == 'fr' && me.hasWorkflow('org.entcore.portal.controllers.PortalController|oldHelpEnable')">
