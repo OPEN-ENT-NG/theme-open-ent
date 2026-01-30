@@ -209,6 +209,18 @@ i.support::before {
   color: $yellow;
 }
 
+i.assistance-tic-large,
+i.type.assistance-tic,
+i.assistance-tic {
+  @include fonticon;
+}
+i.assistance-tic-large::before,
+i.type.assistance-tic::before, 
+i.assistance-tic::before{
+  content: "\e974";
+  color: $yellow;
+}
+
 i.userbook-large,
 i.type.userbook,
 i.userbook,
