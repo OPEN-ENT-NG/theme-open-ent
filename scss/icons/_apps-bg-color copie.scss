@@ -1,0 +1,141 @@
+.chip.selected,
+.sticker.app,
+.sniplets .sniplet {
+  &.aide-devoirs,
+  &.bookmark-empty,
+  &.sharebigfiles,
+  &.absences,
+  &.competences,
+  &.itopstore,
+  &.presences,
+  &.paraschool,
+  &.award,
+  &.forms,
+  &.calendar,
+  &.directory,
+  &.biblionisep,
+  &.netvibes,
+  &.cidj,
+  &.poll,
+  &.userbook,
+  &.rack,
+  &.formulaire,
+  &.picardieregion,
+  &.homeworks,
+  &.rbs {
+    background: $green;
+  }
+
+  &.pronote,
+  &.kne,
+  &.picardie-cursus,
+  &.library,
+  &.planetemetierspicardie,
+  &.bcdi,
+  &.community,
+  &.communities {
+    background: $purple;
+  }
+
+  &.cerise,
+  &.scolinfo {
+    background: $red;
+  }
+
+  &.exercizer,
+  &.wiki,
+  &.timelinegenerator,
+  &.webclasseur,
+  &.edumedia,
+  &.pro-eps,
+  &.scrapbook,
+  &.scrap-book,
+  &.collaborative-wall,
+  &.collaborativewall,
+  &.cahier-de-texte,
+  &.pad,
+  &.collaborativeeditor,
+  &.onisep,
+  &.onisep2,
+  &.banquesavoir,
+  &.europress,
+  &.gepi,
+  &.mindmap,
+  &.lool,
+  &.magneto,
+  &.geogebra,
+  &.minetest {
+    background: $blue;
+  }
+
+  &.stats,
+  &.agenda,
+  &.support,
+  &.assistancetic,
+  &.monorientationenligne,
+  &.lesitetv,
+  &.turboself,
+  &.edutheque,
+  &.admin,
+  &.archive,
+  &.timeline,
+  &.viescolaire,
+  &.vie-scolaire {
+    background: $yellow;
+  }
+
+  &.canal-numerique,
+  &.cns,
+  &.esidoc,
+  &.note,
+  &.notes,
+  &.unstagepourtous,
+  &.madmagz {
+    background: $pink;
+  }
+
+  &.messagerie,
+  &.news,
+  &.blog,
+  &.pages,
+  &.forum,
+  &.workspace,
+  &.web-conference,
+  &.schoolbook,
+  &.website {
+    background: $orange;
+  }
+
+  &.admission-post-bac,
+  &.charlemagne,
+  &.suitcase,
+  &.assr,
+  &.glpi,
+  &.chat,
+  &.electron,
+  &.universalis,
+  &.matholycee {
+    background: $red;
+  }
+
+  &.scolarite,
+  &.td-base,
+  &.ressoucesdepartementale91,
+  &.cervoprint,
+  &.monstageenligne,
+  &.lesechos,
+  &.lemonde,
+  &.connecteurgenerique1,
+  &.connecteurgenerique2 {
+    background: $cyan;
+  }
+
+  &.maxicours,
+  &.sacoche,
+  &.my-network,
+  &.museefrancaisphoto,
+  &.elyceepicardie,
+  &.educagri {
+    background: $indigo;
+  }
+}
