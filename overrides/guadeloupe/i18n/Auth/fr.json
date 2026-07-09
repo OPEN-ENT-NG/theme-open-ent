@@ -1,0 +1,9 @@
+{
+	"auth.title": "Edifice - Connexion Mon ENT Karukera, accès à votre espace scolaire",
+  	"password.errors": "Choisissez 8 caractères minimum, en mélangeant les majuscules et les minuscules.",
+	"email.signature": "L'équipe ENT Karukera",
+	"otherstudent":"Elève",
+	"otherrelative":"Collégiens - collégiennes - responsables légaux",
+	"otherperseducnat":"Personnel Education Nationale",
+	"loginother":"Invités"
+}
