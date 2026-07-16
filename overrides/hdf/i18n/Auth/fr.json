@@ -24,18 +24,5 @@
   "phone.regards": "",
   "phone.signature": "",
   "password.rules.activation": "Votre mot de passe doit contenir au moins un caractère spécial, une lettre minuscule, une lettre majuscule et avoir une longueur minimale de 6 caractères.",
-  "password.rules.reset": "Votre mot de passe doit contenir au moins un caractère spécial, une lettre minuscule, une lettre majuscule et avoir une longueur minimale de 6 caractères. Il doit aussi être différent des précédents mots de passe déjà utilisés.",
-  "wayf.partner.logo.hdf": "/assets/themes/var2d/img/partners/logo-hdf.png",
-  "wayf.partner.logo.aisne": "/assets/themes/var2d/img/partners/logo-aisne.png",
-  "wayf.partner.logo.nord": "/assets/themes/var2d/img/partners/logo-nord.jpg",
-  "wayf.partner.logo.oise": "/assets/themes/var2d/img/partners/logo-oise.jpg",
-  "wayf.partner.logo.pas-de-calais": "/assets/themes/var2d/img/partners/logo-pasdecalais.jpg",
-  "wayf.partner.logo.somme": "/assets/themes/var2d/img/partners/logo-somme.png",
-  "wayf.partner.logo.adica": "/assets/themes/var2d/img/partners/logo-adica.png",
-  "wayf.partner.logo.oise-hd": "/assets/themes/var2d/img/partners/logo-oisehd.jpg",
-  "wayf.partner.logo.fibrenum": "/assets/themes/var2d/img/partners/logo-fibrenum.png",
-  "wayf.partner.logo.somme-numerique": "/assets/themes/var2d/img/partners/logo-somme-numerique.png",
-  "wayf.partner.logo.agricole": "/assets/themes/var2d/img/partners/logo-argicole.png",
-  "wayf.partner.logo.rectorat-hdf": "/assets/themes/var2d/img/partners/logo_RA_HAUTS-DE-FRANCE.png",
-  "wayf.partner.logo.ue": "/assets/themes/var2d/img/partners/logo-ue.jpg"
+  "password.rules.reset": "Votre mot de passe doit contenir au moins un caractère spécial, une lettre minuscule, une lettre majuscule et avoir une longueur minimale de 6 caractères. Il doit aussi être différent des précédents mots de passe déjà utilisés."
 }
