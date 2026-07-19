@@ -138,8 +138,9 @@ build () {
   #copy override theme
   echo "Merge assets from theme...."
   cp -R node_modules/entcore-css-lib/assets/images $OVERRIDE_DIST/
-  cp -R template/* $OVERRIDE_DIST/template/ 
+  cp -R template/* $OVERRIDE_DIST/template/
   cp -R portal.html $OVERRIDE_DIST/
+  [ -f portal-v2.html ] && cp -R portal-v2.html $OVERRIDE_DIST/
   cp -R assets/* $OVERRIDE_DIST/
   #copy override platform
   echo "Merge assets from platform...."
