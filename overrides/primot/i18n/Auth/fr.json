@@ -1,0 +1,14 @@
+{
+	"auth.title": "Edifice - Connexion ENT PrimOT, accès à votre espace scolaire",
+	"email.signature" : "PrimOT",
+	"auth.resetCodeSent": "Un mail vous a été envoyé (ou à votre enseignant si vous êtes un élève), avec les instructions pour changer votre mot de passe.",
+	"password.errors": "Choisissez 6 caractères minimum.",
+	"loginstudent": "Élève",
+	"student": "Élève",
+	"loginrelative": "Représentant légal (Parent)",
+	"relative": "Représentant légal (Parent)",
+	"perseducnat": "Personnel de l'académie",
+	"loginperseducnat": "Personnel de l'académie",
+	"otherperseducnat": "Personnel de l'académie",
+	"loginother": "Personnel de la collectivité ou Invité"
+}
