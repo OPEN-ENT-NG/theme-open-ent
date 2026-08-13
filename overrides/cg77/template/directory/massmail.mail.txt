@@ -3,7 +3,7 @@
 Bonjour,<br/>
 <br/>
 Ceci est un mail généré automatiquement qui contient vos informations de première connexion à l'ENT77 – Collèges Connectés.<br/>
-Rendez-vous sur le site <a href="ent.seine-et-marne.fr">http://ent.seine-et-marne.fr</a> et cliquez sur « Se connecter à l’ENT ».<br/>
+Rendez-vous sur le site <a href="ent.seine-et-marne.fr">http://ent.seine-et-marne.fr</a>, cliquez sur « Se connecter à l’ENT » et sur le profil « Personnel Collectivité et invité ».<br/>
 <br/>
 Une première étape indispensable vous permettra de personnaliser vos informations de connexion.<br/>
 <br/>
@@ -32,7 +32,7 @@ Votre identifiant de connexion est rappelé ci-contre :  <i>{{login}}</i><br/>
 <br/>
 Si vous ne vous souvenez pas de votre mot de passe, vous pouvez en définir un nouveau en suivant les instructions ci-dessous :<br/>
 <br/>
-Rendez-vous sur le site <a href="https://ent.seine-et-marne.fr">https://ent.seine-et-marne.fr</a> et cliquez sur « Se connecter à l’ENT ».<br/>
+Rendez-vous sur le site <a href="https://ent.seine-et-marne.fr">https://ent.seine-et-marne.fr</a>, cliquez sur « Se connecter à l’ENT » et sur le profil « Personnel Collectivité et invité ».<br/>
 <br/>
 Cliquez sur « identifiant ou mot de passe oublié », un mail sera envoyé à l’adresse que vous avez saisie lors de l’activation de votre compte.<br/>
 <br/>
