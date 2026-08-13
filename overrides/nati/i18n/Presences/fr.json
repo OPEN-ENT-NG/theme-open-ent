@@ -1,0 +1,10 @@
+{
+  "presences.reasons.init.1d.0": "A - Maladie de l’enfant",
+  "presences.reasons.init.1d.1": "B - Décès d’un membre de la famille",
+  "presences.reasons.init.1d.2": "C - Maladie transmissible ou contagieuse d’un membre de la famille",
+  "presences.reasons.init.1d.3": "D - Réunion solennelle de famille",
+  "presences.reasons.init.1d.4": "E - Empêchement résultat de la difficulté accidentelle des communications",
+  "presences.reasons.init.1d.5": "F - Absence temporaire des personnes responsables lorsque les enfants les suivent",
+  "presences.reasons.init.1d.6": "Retard de transport",
+  "presences.reasons.init.1d.7": "Panne de réveil"
+}
