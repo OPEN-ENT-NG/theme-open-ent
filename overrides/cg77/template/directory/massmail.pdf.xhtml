@@ -58,6 +58,16 @@
 			text-align: right;
 		}
 
+		div.threecolumns>div {
+			width: 30%;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		div.threecolumns>div.text-right {
+			text-align: right;
+		}
+
 		div#code {
 			position: absolute;
 			top: 90px;
@@ -100,6 +110,10 @@
 		.qr {
 			width: 110px;
 		}
+
+		img.threecolumns-wide {
+			width: 80% !important;
+		}
 	</style>
 </head>
 
@@ -132,12 +146,6 @@
 				<div>
 					<img id="compagnon" src="compagnon.png" alt="site compagnon"></img>
 				</div>
-				<div>
-					<img id="profil" src="profil.png" alt="profil"></img>
-				</div>
-				<div>
-					<img id="login" src="login.png" alt="login"></img>
-				</div>
 			</div>
 
 			<div>
@@ -147,28 +155,39 @@
 					téléchargez l'application mobile <strong>ENT 77:</strong>
 					<br />
 					<img class="qr" src="qr-code.png"></img>
-					<br />cliquez sur le bouton « Se connecter à l’ENT » puis le profil « Personnel Collectivité et invité ».
+					<br />Cliquez sur le bouton « Se connecter à l'ENT » puis le profil « Personnel Collectivité et invité ».
 				</p>
+			</div>
+		</div>
+
+		<div class="threecolumns">
+			<div>
+				<img id="profil" class="threecolumns-wide" src="profil.png" alt="profil"></img>
+			</div>
+			<div>
+				<img id="login" class="threecolumns-wide" src="login.png" alt="login"></img>
+			</div>
+			<div>
 				<p>
-					<b>Entrez ensuite vos coordonnées personnelles :</b><br />
+					<b>Entrez ensuite vos coordonnées personnelles:</b><br />
 					<br />
 					Identifiant : <b>{{login}}</b><br />
 					Mot de passe : <b>{{activationCode}}</b><br />
 				</p>
-
-				<p class="big-space">
-					Lors de votre première connexion à l'ENT, il vous sera demandé de choisir un nouveau mot de
-					passe.<br />
-					<br />
-					<b>Votre mot de passe doit être composé d'un minima de 12 caractères combinant majuscules,
-						minuscules, chiffres et caractères spéciaux.</b><br />
-					<br />
-					Notez bien ce mot de passe. En cas d'oubli, il vous suffira de cliquer sur "Mot de passe oublié"
-					puis rentrer votre identifiant et un nouveau mot de passe sera envoyé sur votre adresse email
-					personnelle.
-				</p>
 			</div>
 		</div>
+
+		<p class="big-space">
+			Lors de votre première connexion à l'ENT, il vous sera demandé de choisir un nouveau mot de
+			passe.<br />
+			<br />
+			<b>Votre mot de passe doit être composé d'un minima de 12 caractères combinant majuscules,
+				minuscules, chiffres et caractères spéciaux.</b><br />
+			<br />
+			Notez bien ce mot de passe. En cas d'oubli, il vous suffira de cliquer sur "Mot de passe oublié"
+			puis rentrer votre identifiant et un nouveau mot de passe sera envoyé sur votre adresse email
+			personnelle.
+		</p>
 		<div>
 			<h4 style="text-align: right">
 				ENT77 - Collèges Connectés
@@ -224,17 +243,16 @@
 					<img id="compagnon" src="compagnon.png" alt="site compagnon"></img>
 				</div>
 			</div>
-			<div class="twocolumns center">
+			<div class="threecolumns">
 				<div>
-					<img id="besoinaide" src="Besoin_daide_avec_numero.png" alt="Besoin d'aide"></img>
+					<img id="profil" class="threecolumns-wide" src="profil.png" alt="profil"></img>
 				</div>
 				<div>
-					<img id="profil" src="profil.png" alt="profil"></img>
+					<img id="besoinaide" class="threecolumns-wide" src="Besoin_daide_avec_numero.png" alt="Besoin d'aide"></img>
 				</div>
 				<div>
 					<p>
-						Cliquez sur le profil « Personnel Collectivité et invité »,
-						Puis sur « Identifiant ou mot de passe oublié ».
+						Cliquez sur le profil « Personnel Collectivité et invité », puis sur « Identifiant ou mot de passe oublié ».
 					</p>
 				</div>
 			</div>
