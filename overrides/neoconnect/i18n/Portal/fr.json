@@ -17,5 +17,9 @@
   "smartbanner.android.store": "Google Play",
   "smartbanner.android.uri": "https://play.google.com/store/apps/details?id=com.ode.neo",
   "smartbanner.ios.store": "App Store",
-  "smartbanner.ios.uri": "https://apps.apple.com/fr/app/neo-pocket/id1458097439"
+  "smartbanner.ios.uri": "https://apps.apple.com/fr/app/neo-pocket/id1458097439",
+  "notifications.unavailable.title": "Non accessible",
+  "notifications.unavailable.body1": "Nous modernisons progressivement votre ENT module par module. Les notifications seront disponibles lorsque cette page aura fait peau neuve.",
+  "notifications.unavailable.body2": "En attendant, pour consulter vos notifications, rendez-vous sur votre page d'accueil.",
+  "notifications.unavailable.cta": "Consulter sur la page d'accueil"
 }
