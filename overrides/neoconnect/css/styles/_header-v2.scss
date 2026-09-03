@@ -1,0 +1,196 @@
+// Header v2 (uiOverrides['layout.header'] = 'v2') — neoconnect only.
+// Layers on top of the shared .header rules (scss/layouts/_header.scss),
+// which stay untouched so every other skin/override keeps the v1 look.
+
+.header-v2 .navbar {
+  background: $white !important;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.06);
+  border-bottom: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(67.55deg, #ffc403, #fc94ff);
+}
+
+// No logo on mobile — the brand link itself is hidden (not just the image)
+// so the nav-icons row can claim the full header width from the left edge.
+.header-v2 .navbar-brand {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .header-v2 .navbar-brand {
+    display: inline-block;
+  }
+
+  .header-v2 .navbar-brand .logo {
+    display: inline-block;
+    height: 20px;
+  }
+}
+
+.header-v2 .navbar .navbar-nav {
+  width: 100%;
+  gap: 0.8rem;
+  justify-content: space-between;
+  margin-right: 0 !important;
+}
+
+@media (min-width: 800px) {
+  .header-v2 .navbar .navbar-nav {
+    width: auto;
+    justify-content: flex-end;
+    margin-right: 0 !important;
+  }
+}
+
+.header-v2 .navbar .nav-link {
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    border-bottom: none;
+    background-color: #f7f7f7;
+  }
+
+  &:active {
+    background-color: #f2f2f2;
+  }
+}
+
+// Popovers are centered by default (top-100 start-50 translate-middle-x) which
+// overflows the viewport when the trigger sits near the right edge of the
+// right-aligned nav — anchor to the trigger's right edge instead.
+.header-v2 .navbar .popover {
+  left: auto;
+  right: 0;
+  transform: none;
+}
+
+// .dropdown-item has no display override outside of the (irrelevant here)
+// mobile .dropdown-menu context, so it falls back to .nav-link's display:block
+// and its icon's display:block, stacking icon/text on separate lines.
+.header-v2 .popover-body .dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-v2 .navbar .nav-link .badge {
+  background-color: #dc0404 !important;
+  border-radius: 50rem;
+  right: -16px;
+}
+
+@media (min-width: 800px) {
+  .header-v2 .navbar .nav-link .badge {
+    right: -12px;
+  }
+}
+
+.header-v2 .avatar {
+  --ode-avatar-size: 24px;
+  --ode-avatar-svg-size: 18px;
+}
+
+@media (min-width: 800px) {
+  .header-v2 .avatar {
+    --ode-avatar-size: 32px;
+    --ode-avatar-svg-size: 24px;
+  }
+}
+
+.header-v2 .notification-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: transparent;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #f7f7f7;
+  }
+
+  &:active {
+    background-color: #f2f2f2;
+  }
+}
+
+.header-v2 .notification-popover {
+  display: block;
+  opacity: 1;
+  width: 320px;
+  max-width: 320px;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.18);
+
+  &::before {
+    content: none;
+  }
+
+  .popover-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+  }
+}
+
+.header-v2 .notification-popover-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.header-v2 .notification-popover-title {
+  flex: 1 0 0;
+  margin: 0;
+  color: #383838;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.header-v2 .notification-popover-illu {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+}
+
+.header-v2 .notification-popover-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #696969;
+  font-size: 16px;
+  line-height: 22px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.header-v2 .notification-popover-actions {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.header-v2 .notification-popover-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #1c1c73;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
