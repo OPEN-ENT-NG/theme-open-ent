@@ -75,16 +75,15 @@
   gap: 8px;
 }
 
+// .nav-link padding is a flat 8px at every breakpoint (see rule above),
+// unlike the shared .header rule it layers on (8px / 16px 8px past 800px),
+// so the badge only needs one top/right pair to sit on the icon's corner —
+// no media query split required here.
 .header-v2 .navbar .nav-link .badge {
   background-color: #dc0404 !important;
   border-radius: 50rem;
-  right: -16px;
-}
-
-@media (min-width: 800px) {
-  .header-v2 .navbar .nav-link .badge {
-    right: -12px;
-  }
+  top: 4px;
+  right: 0;
 }
 
 .header-v2 .avatar {
