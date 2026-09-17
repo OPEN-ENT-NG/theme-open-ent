@@ -76,6 +76,8 @@
         }
 
         .card {
+            display: flex;
+            flex-direction: row;
             float: left;
             width: 8cm;
             min-height: 5.79cm;
@@ -83,48 +85,32 @@
             border: 0.5px dashed #ccc;
             padding: 15px;
             margin: 0;
-            flex-direction: column;
-            position: relative;
             overflow: hidden;
+        }
+
+        /* Text column: always yields to .card-right, never overlaps it */
+        .card-left {
+            flex: 1 1 auto;
+            min-width: 0;
+            overflow: hidden;
+        }
+
+        .card-left p {
+            overflow-wrap: break-word;
+            word-break: break-word;
+        }
+
+        /* Logo/QR column: fixed width, always fully rendered */
+        .card-right {
+            flex: 0 0 90px;
+            width: 90px;
+            margin-left: 10px;
+            text-align: center;
         }
 
         .logo {
             width: 80px;
-            float: right;
-            margin-left: 10px;
-            margin-bottom: 0;
-        }
-
-        /* Target the paragraph containing the "relative" information and otherChildren */
-        .card>p:nth-child(8) {
-            overflow-wrap: break-word;
-            /* Adjust the nth-child if your structure changes */
-            word-break: break-word;
-            /* Ensure long words also break */
-            margin-right: 95px;
-            /* Forcing line breaks within words if needed */
-        }
-
-        /* Create a pseudo-element to act as an exclusion zone for the text */
-        .card::after {
-            content: "";
-            position: absolute;
-            top: 15px;
-            /* Adjust to the top position of your QR code */
-            right: 15px;
-            /* Adjust to the right position of your QR code */
-            width: 90px;
-            /* Adjust to be slightly wider than your QR code */
-            height: 90px;
-            /* Adjust to be slightly taller than your QR code */
-            pointer-events: none;
-            /* Ensure it doesn't interfere with clicks */
-            shape-outside: rectangle(0px, 0px, 90px, 90px);
-            /* Define the exclusion shape */
-            float: right;
-            /* Make it float to influence inline content */
-            margin-left: 10px;
-            /* Add some spacing */
+            margin-bottom: 10px;
         }
 
         .grade {
@@ -138,6 +124,9 @@
             font-size: 16px;
             margin: 0;
             line-height: 1.1;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
 
         .activated {
@@ -149,12 +138,8 @@
         }
 
         .qr-container {
-            margin-top: 20px;
-            /* Push below the floated logo */
-            float: right;
             width: 80px;
             text-align: center;
-            clear: right;
         }
 
         .qr-text {
@@ -169,46 +154,48 @@
     <div style="page-break-after:always;">
         {{#users}}
         <div class="card">
-            <div style="position: relative;">
+            <div class="card-left">
+                <h2 class="name">{{displayName}}</h2>
+                {{^isGuestOrPersonnel}}
+                <strong class="grade">{{#i18n}}{{profile}}{{/i18n}}{{#firstClass}}
+                    {{#i18n}}classAdmin.template.class{{/i18n}} <strong>{{.}}</strong>{{#otherClasses}},
+                    <strong>{{.}}</strong>{{/otherClasses}}{{/firstClass}}.</strong>
+                <br />
+                {{/isGuestOrPersonnel}}
+                {{#isGuestOrPersonnel}}
+                <strong class="grade">{{#i18n}}{{profile}}{{/i18n}}</strong>
+                <br />
+                {{/isGuestOrPersonnel}}
+                {{#firstChild}}
+                <p><strong>{{#i18n}}classAdmin.template.relative{{/i18n}} : </strong><br />{{firstName}}
+                    {{lastName}}</p>
+                <br />
+                {{/firstChild}}
+                <p><strong>{{#i18n}}classAdmin.template.id{{/i18n}} : </strong>{{login}}</p>
+                {{#activationCode}}
+                <p><strong>{{#i18n}}classAdmin.template.code{{/i18n}} : </strong>{{activationCode}}</p>
+                {{/activationCode}}
+                {{^activationCode}}
+                {{^resetCode}}
+                <p class="activated">{{#i18n}}classAdmin.template.activated{{/i18n}}</p>
+                {{/resetCode}}
+                {{#resetCode}}
+                <p><strong>{{#i18n}}classAdmin.template.reset{{/i18n}} : </strong>{{resetCode}}</p>
+                {{/resetCode}}
+                {{/activationCode}}
+                <br />
+                <p>
+                    <strong>{{#i18n}}classAdmin.template.url{{/i18n}} :</strong><br />
+                    <a href="#">{{hostname}}</a><br />
+                </p>
+            </div>
+            <div class="card-right">
                 <img class="logo" src="logo.png"></img>
                 <div class="qr-container">
                     <img class="qr" src="qr-code.png"></img>
                     <p class="qr-text">{{#i18n}}classAdmin.template.downloadAppInfo{{/i18n}}</p>
                 </div>
             </div>
-            <h2 class="name">{{displayName}}</h2>
-            {{^isGuestOrPersonnel}}
-            <strong class="grade">{{#i18n}}{{profile}}{{/i18n}}{{#firstClass}}
-                {{#i18n}}classAdmin.template.class{{/i18n}} <strong>{{.}}</strong>{{#otherClasses}},
-                <strong>{{.}}</strong>{{/otherClasses}}{{/firstClass}}.</strong>
-            <br />
-            {{/isGuestOrPersonnel}}
-            {{#isGuestOrPersonnel}}
-            <strong class="grade">{{#i18n}}{{profile}}{{/i18n}}</strong>
-            <br />
-            {{/isGuestOrPersonnel}}
-            {{#firstChild}}
-            <p><strong>{{#i18n}}classAdmin.template.relative{{/i18n}} : </strong><br />{{firstName}}
-                {{lastName}}</p>
-            <br />
-            {{/firstChild}}
-            <p><strong>{{#i18n}}classAdmin.template.id{{/i18n}} : </strong>{{login}}</p>
-            {{#activationCode}}
-            <p><strong>{{#i18n}}classAdmin.template.code{{/i18n}} : </strong>{{activationCode}}</p>
-            {{/activationCode}}
-            {{^activationCode}}
-            {{^resetCode}}
-            <p class="activated">{{#i18n}}classAdmin.template.activated{{/i18n}}</p>
-            {{/resetCode}}
-            {{#resetCode}}
-            <p><strong>{{#i18n}}classAdmin.template.reset{{/i18n}} : </strong>{{resetCode}}</p>
-            {{/resetCode}}
-            {{/activationCode}}
-            <br />
-            <p>
-                <strong>{{#i18n}}classAdmin.template.url{{/i18n}} :</strong><br />
-                <a href="#">{{hostname}}</a><br />
-            </p>
         </div>
         {{/users}}
         {{^end}}
