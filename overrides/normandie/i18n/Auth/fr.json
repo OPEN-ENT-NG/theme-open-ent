@@ -23,5 +23,14 @@
         "phone.regards": "",
         "phone.signature": "",
   "password.rules.activation": "Votre mot de passe doit contenir au moins un caractère spécial, un chiffre, une lettre minuscule, une lettre majuscule et avoir une longueur minimale de 12 caractères.",
-  "password.rules.reset": "Votre mot de passe doit contenir au moins un caractère spécial, une lettre minuscule, une lettre majuscule, un chiffre et avoir une longueur minimale de 12 caractères. Il doit aussi être différent des précédents mots de passe déjà utilisés."
+  "password.rules.reset": "Votre mot de passe doit contenir au moins un caractère spécial, une lettre minuscule, une lettre majuscule, un chiffre et avoir une longueur minimale de 12 caractères. Il doit aussi être différent des précédents mots de passe déjà utilisés.",
+  "wayf.student.st-pierre-et-miquelon": "Établissement Saint Pierre et Miquelon",
+  "wayf.relative.st-pierre-et-miquelon": "Établissement Saint Pierre et Miquelon",
+  "wayf.student.school.local": "Compte local ENT",
+  "wayf.relative.school.local": "Compte local ENT",
+  "wayf.other": "Personnel collectivité et invité",
+  "wayf.agri": "Enseignement agricole (Élève, parent ou personnel)",
+  "wayf.perseducnat": "Personnel Education Nationale",
+  "wayf.student.educonnect": "Compte EduConnect",
+  "wayf.relative.educonnect": "Compte EduConnect"
 }
