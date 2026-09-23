@@ -25,5 +25,9 @@
   "phone.signature": "",
   "password.rules.activation": "Votre mot de passe doit contenir au moins un caractère spécial, une lettre minuscule, une lettre majuscule et avoir une longueur minimale de 6 caractères.",
   "password.rules.reset": "Votre mot de passe doit contenir au moins un caractère spécial, une lettre minuscule, une lettre majuscule et avoir une longueur minimale de 6 caractères. Il doit aussi être différent des précédents mots de passe déjà utilisés.",
-  "wayf.link.help.url": "https://help.edifice.io/hc/fr/articles/29236384243228-Connexion-%C3%A0-l-ENT-Hauts-de-France"
+  "wayf.link.help.url": "https://help.edifice.io/hc/fr/articles/29236384243228-Connexion-%C3%A0-l-ENT-Hauts-de-France",
+  "wayf.teacher.lille": "Académie de Lille",
+  "wayf.teacher.amiens": "Académie d'Amiens",
+  "wayf.perseducnat.lille": "Académie de Lille",
+  "wayf.perseducnat.amiens": "Académie d'Amiens"
 }
