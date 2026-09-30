@@ -16,5 +16,7 @@
 	"loginother":"Invité",
 	"wayf.logo.partner" : "/assets/themes/cd13/img/logo-partenaire.png",
 	"wayf.logo.partner.width" : "300px",
-	"wayf.select.profile" : "Bienvenue dans votre ENT Espace Collégien de Provence"
+	"wayf.select.profile" : "Bienvenue dans votre ENT Espace Collégien de Provence",
+	"wayf.perseducnat": "Compte EduProvence",
+	"wayf.link.help.url": "https://help.edifice.io/hc/fr/articles/30669671723932-Connexion-%C3%A0-l-ENT-Espace-coll%C3%A9gien-de-Provence-Bouches-du-Rh%C3%B4nes"
 }
