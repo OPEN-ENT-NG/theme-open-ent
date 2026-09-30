@@ -14,5 +14,6 @@
 	"loginother":"Personnel de la collectivité et invité",
 	"wayf.logo.partner" : "/assets/themes/leia/img/logo-partenaire.png",
 	"wayf.logo.partner.width" : "300px",
-	"wayf.select.profile" : "Bienvenue dans votre ENT LEIA"
+	"wayf.select.profile" : "Bienvenue dans votre ENT LEIA",
+	"wayf.link.help.url": "https://help.edifice.io/hc/fr/articles/30669951632924-Connexion-%C3%A0-l-ENT-Leia"
 }
