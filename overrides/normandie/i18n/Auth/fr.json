@@ -29,8 +29,10 @@
   "wayf.student.school.local": "Compte local ENT",
   "wayf.relative.school.local": "Compte local ENT",
   "wayf.other": "Personnel collectivité et invité",
-  "wayf.agri": "Enseignement agricole (Élève, parent ou personnel)",
+  "wayf.agri": "Enseignement agricole (élève, parent ou personnel)",
   "wayf.perseducnat": "Personnel Education Nationale",
+  "wayf.relative": "Responsable légal (parent)",
   "wayf.student.educonnect": "Compte EduConnect",
-  "wayf.relative.educonnect": "Compte EduConnect"
+  "wayf.relative.educonnect": "Compte EduConnect",
+  "wayf.link.help.url": "https://help.edifice.io/hc/fr/articles/30685233818908-Connexion-%C3%A0-l-ENT-L-Educ-de-Normandie"
 }
