@@ -47,6 +47,26 @@ var addDirectives = function (module, done) {
     };
   });
 
+  // Same link as the React header (@edifice.io/react/homepage): open the
+  // customization page, which redirects back to the current page on save.
+  module.directive("customizeLink", function () {
+    return {
+      restrict: "A",
+      link: function (scope, element) {
+        var updateHref = function () {
+          element.attr(
+            "href",
+            "/timeline/customize?callback=" +
+              encodeURIComponent(window.location.pathname + window.location.search)
+          );
+        };
+        updateHref();
+        // The current URL can change after link time (client-side routing).
+        element.on("mousedown focus", updateHref);
+      },
+    };
+  });
+
   module.directive("adminPortal", function ($compile) {
     skin.skin = "admin";
     skin.theme = "/public/admin/default/";
