@@ -14,5 +14,8 @@
   "otherstudent": "Élève du CM2 au lycée",
   "student": "Élève du CM2 au lycée",
   "password.rules.activation": "Votre mot de passe doit contenir au moins 6 caractères.",
-  "password.rules.reset": "Votre mot de passe doit contenir au moins 6 caractères. Il doit aussi être différent des précédents mots de passe déjà utilisés."
+  "password.rules.reset": "Votre mot de passe doit contenir au moins 6 caractères. Il doit aussi être différent des précédents mots de passe déjà utilisés.",
+  "wayf.link.help.url": "https://help.edifice.io/hc/fr/articles/30657884839452-Connexion-%C3%A0-l-ENT-Colibri",
+  "wayf.student.maternelle-cm1": "Maternelle au CM1",
+  "wayf.student.cm2-lycee": "Du CM2 au lycée"
 }
