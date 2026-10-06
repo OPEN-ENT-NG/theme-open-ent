@@ -10,5 +10,6 @@
   "otherteacher":"ENSEIGNANT",
   "loginrelative":"PARENT",
   "otherperseducnat":"PERSONNEL DE L'ACADÉMIE",
-  "loginother":"INVITÉ OU PERSONNEL COMMUNAL"
+  "loginother":"INVITÉ OU PERSONNEL COMMUNAL",
+  "wayf.link.help.url": "https://help.edifice.io/hc/fr/articles/30659204253596-Connexion-%C3%A0-l-ENT-de-la-R%C3%A9union"
 }
