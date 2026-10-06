@@ -28,5 +28,6 @@
 	"otherteacher":"Personnel Éducation Nationale",
 	"loginrelative":"Représentant légal",
 	"relative":"Représentant légal",
-	"loginother":"Personnel collectivité et invité"
+	"loginother":"Personnel collectivité et invité",
+	"wayf.link.help.url": "https://help.edifice.io/hc/fr/articles/30658124709404-Connexion-%C3%A0-l-ENT-MonColl%C3%A8ge"
 }
