@@ -67,6 +67,21 @@ var addDirectives = function (module, done) {
     };
   });
 
+  // Errors stay silent: no badge rather than an error toast on every page.
+  module.directive("carbonioUnread", function () {
+    return {
+      restrict: "A",
+      link: function (scope) {
+        http()
+          .get("/auth/carbonio/unread", {}, { disableNotifications: true })
+          .done(function (data) {
+            scope.nbCarbonioUnread = data.count;
+            scope.$apply("nbCarbonioUnread");
+          });
+      },
+    };
+  });
+
   module.directive("adminPortal", function ($compile) {
     skin.skin = "admin";
     skin.theme = "/public/admin/default/";

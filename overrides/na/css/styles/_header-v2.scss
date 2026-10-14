@@ -76,15 +76,11 @@
 }
 
 .header-v2 .navbar .nav-link .badge {
+  top: 0;
+  right: 0;
+  border: 2px solid #fff;
   background-color: #dc0404 !important;
   border-radius: 50rem;
-  right: -16px;
-}
-
-@media (min-width: 800px) {
-  .header-v2 .navbar .nav-link .badge {
-    right: -12px;
-  }
 }
 
 .header-v2 .avatar {

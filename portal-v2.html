@@ -71,7 +71,7 @@
                 <clipPath id="icon-messages-beta_svg__a"><path fill="#fff" d="M0 0h32v32H0z"></path></clipPath>
               </defs>
             </svg>
-            <span class="badge bg-warning" ng-if="nbNewMessages">[[nbNewMessages]]</span>
+            <span class="badge bg-warning position-absolute" ng-if="nbNewMessages">[[nbNewMessages]]</span>
             <span class="nav-text">
               <i18n>conversation</i18n>
             </span>
@@ -81,7 +81,7 @@
         <!-- Carbonio preauth link -->
         <li class="nav-item" ng-if="me.hasWorkflow('org.entcore.auth.controllers.CarbonioPreauthController|preauth')">
           <a class="nav-link position-relative" href="/auth/carbonio/preauth" i18n-title="conversation" target="_blank"
-            data-testid="header-messagerie-button">
+            data-testid="header-messagerie-button" carbonio-unread>
             <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <g clip-path="url(#icon-messages-beta_svg__a-carbonio)">
                 <path stroke="#E5A800" stroke-miterlimit="10" stroke-width="2.667" d="m5.93 10.246-4.8 3.088v12.267a5.335 5.335 0 0 0 5.334 5.333h24.534v-17.6l-4.689-3.013"></path>
@@ -93,6 +93,7 @@
                 <clipPath id="icon-messages-beta_svg__a-carbonio"><path fill="#fff" d="M0 0h32v32H0z"></path></clipPath>
               </defs>
             </svg>
+            <span class="badge bg-warning position-absolute" ng-if="nbCarbonioUnread">[[nbCarbonioUnread]]</span>
             <span class="nav-text">
               <i18n>conversation</i18n>
             </span>
