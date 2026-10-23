@@ -1,0 +1,265 @@
+// Header v2 (uiOverrides['layout.header'] = 'v2').
+// Layers on top of the shared .header rules (scss/layouts/_header.scss), so it
+// must be imported after them. The look is driven by the variables below:
+// override them in a theme's `_overridable-variables.scss`, or add rules after
+// this file in its `_springboard-overrides.scss`.
+
+$header-v2-bg: $white !default;
+$header-v2-border-gradient: linear-gradient(
+  67.55deg,
+  #ffc403,
+  #fc94ff
+) !default;
+$header-v2-icon-color: #1c1c73 !default;
+$header-v2-hover-bg: #f7f7f7 !default;
+$header-v2-active-bg: #f2f2f2 !default;
+$header-v2-badge-bg: #dc0404 !default;
+// Account popover (Figma EdificeLibrary_Web, node 140:1102): neutral grey
+// icons and text, unlike the coloured navbar icons; destructive row in red.
+$header-v2-popover-text-color: #383838 !default;
+$header-v2-popover-icon-color: #4a4a4a !default;
+$header-v2-popover-danger-color: #dc0404 !default;
+
+.header-v2 .navbar {
+  background: $header-v2-bg;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.06);
+  border-bottom: 2px solid;
+  border-image-slice: 1;
+  border-image-source: $header-v2-border-gradient;
+}
+
+// No logo on mobile — the brand link itself is hidden (not just the image)
+// so the nav-icons row can claim the full header width from the left edge.
+.header-v2 .navbar-brand {
+  display: none;
+  align-items: center;
+  display: flex;
+}
+
+@media (min-width: 800px) {
+  .header-v2 .navbar-brand {
+    display: flex;
+    align-items: center;
+    height: 56px;
+  }
+
+  .header-v2 .navbar-brand .logo {
+    display: inline-block;
+    margin-left: 24px !important;
+    height: 20px;
+  }
+}
+
+.header-v2 .navbar .navbar-nav {
+  width: 100%;
+  gap: 0.8rem;
+  padding-right: 16px;
+  padding-left: 16px;
+  justify-content: space-between;
+  margin-right: 0 !important;
+}
+
+@media (min-width: 800px) {
+  .header-v2 .navbar .navbar-nav {
+    width: auto;
+    justify-content: flex-end;
+    margin-right: 0 !important;
+  }
+}
+
+.header-v2 .navbar {
+  // Nav icons use `currentColor` (same as the React Header).
+  --navbar-nav-link-icon-color: #{$header-v2-icon-color};
+}
+
+.header-v2 .navbar .nav-link {
+  padding: 4px;
+  color: var(--navbar-nav-link-icon-color);
+  border-radius: 8px;
+  // Cancel the transition inherited from the v1 .nav-link.
+  transition: none;
+  // v1 reserves a 3px border-bottom (orange on hover): drop it for good so the
+  // link keeps the same size on hover instead of shrinking by 3px.
+  border-bottom: none;
+
+  &:hover {
+    border-bottom: none;
+    background-color: $header-v2-hover-bg;
+  }
+
+  &:active {
+    background-color: $header-v2-active-bg;
+  }
+}
+
+// Popovers are centered by default (top-100 start-50 translate-middle-x) which
+// overflows the viewport when the trigger sits near the right edge of the
+// right-aligned nav — anchor to the trigger's right edge instead.
+.header-v2 .navbar .popover {
+  left: auto;
+  right: 0;
+  transform: none;
+}
+
+// Account popover: white box listing icon + label rows (Figma node 140:1102).
+// Targeted through the user menu id so the notification popover is left alone.
+.header-v2 #header-user-menu .popover {
+  width: max-content;
+  min-width: 180px;
+  max-width: none;
+  padding: 8px;
+  border: 0;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.18);
+
+  .popover-body {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0;
+  }
+}
+
+// .dropdown-item has no display override outside of the (irrelevant here)
+// mobile .dropdown-menu context, so it falls back to .nav-link's display:block
+// and its icon's display:block, stacking icon/text on separate lines.
+// Uses `.navbar` to win over the navbar `.nav-link` icon colour above.
+.header-v2 .navbar .popover-body .dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  color: $header-v2-popover-text-color;
+  line-height: 24px;
+  white-space: nowrap;
+
+  // 22px popover icons, as opposed to the 24px navbar icons
+  svg {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    color: $header-v2-popover-icon-color;
+  }
+
+  &.dropdown-item--destructive,
+  &.dropdown-item--destructive svg {
+    color: $header-v2-popover-danger-color;
+  }
+}
+
+.header-v2 .navbar .nav-link .badge {
+  top: 0;
+  right: 0;
+  border: 2px solid #fff;
+  background-color: $header-v2-badge-bg !important;
+  border-radius: 50rem;
+}
+
+.header-v2 .avatar {
+  --ode-avatar-size: 24px;
+  --ode-avatar-svg-size: 18px;
+}
+
+@media (min-width: 800px) {
+  .header-v2 .avatar {
+    --ode-avatar-size: 32px;
+    --ode-avatar-svg-size: 24px;
+  }
+}
+
+.header-v2 .notification-button {
+  color: var(--navbar-nav-link-icon-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $header-v2-hover-bg;
+  }
+
+  &:active {
+    background-color: $header-v2-active-bg;
+  }
+}
+
+.header-v2 .notification-popover {
+  display: block;
+  opacity: 1;
+  width: 320px;
+  max-width: 320px;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.18);
+
+  &::before {
+    content: none;
+  }
+
+  .popover-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+  }
+}
+
+.header-v2 .notification-popover-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.header-v2 .notification-popover-title {
+  flex: 1 0 0;
+  margin: 0;
+  color: #383838;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.header-v2 .notification-popover-illu {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+}
+
+.header-v2 .notification-popover-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #696969;
+  font-size: 16px;
+  line-height: 22px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.header-v2 .notification-popover-actions {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.header-v2 .notification-popover-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #1c1c73;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
