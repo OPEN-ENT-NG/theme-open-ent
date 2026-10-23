@@ -12,13 +12,10 @@
 
 // No logo on mobile — the brand link itself is hidden (not just the image)
 // so the nav-icons row can claim the full header width from the left edge.
-.header-v2 .navbar-brand {
-  display: none;
-}
 
 @media (min-width: 800px) {
   .header-v2 .navbar-brand {
-    display: inline-block;
+    display: flex;
   }
 
   .header-v2 .navbar-brand .logo {
