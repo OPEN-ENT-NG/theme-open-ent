@@ -114,8 +114,6 @@ $header-v2-popover-danger-color: #dc0404 !default;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.18);
 
   .popover-body {
-    display: flex;
-    flex-direction: column;
     gap: 4px;
     padding: 0;
   }
