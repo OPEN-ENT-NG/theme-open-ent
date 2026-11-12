@@ -1,0 +1,7 @@
+{
+  "name": "theme-preview",
+  "private": true,
+  "type": "module",
+  "scripts": { "dev": "node dev.mjs" },
+  "dependencies": { "entcore-css-lib": "npm:ode-csslib@develop", "sass": "1.49.9" }
+}
