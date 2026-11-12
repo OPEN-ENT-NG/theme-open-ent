@@ -17,5 +17,9 @@
 	"smartbanner.android.store": "Google Play",
 	"smartbanner.android.uri": "https://play.google.com/store/apps/details?id=com.ode.neo",
 	"smartbanner.ios.store": "App Store",
-	"smartbanner.ios.uri": "https://itunes.apple.com/us/app/one-pocket/id1458097439"
+	"smartbanner.ios.uri": "https://itunes.apple.com/us/app/one-pocket/id1458097439",
+	"bbm.nextcloud": "Documentos sincronizados",
+	"nextcloud": "Documentos sincronizados",
+	"nextcloud.auth.title": "Inicia sesión en Documentos sincronizados",
+	"nextcloud.auth.description": "Acceda a sus Documentos sincronizados para insertarlos aquí. ¿Ya había iniciado sesión anteriormente? Su sesión se ha cerrado por inactividad reciente para proteger sus archivos."
 }

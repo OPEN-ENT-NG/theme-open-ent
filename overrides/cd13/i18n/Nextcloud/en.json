@@ -1,0 +1,6 @@
+{
+  "nextcloud.title": "Synchronized documents",
+  "nextcloud.console.title": "Synchronized documents console",
+  "nextcloud.console.subtitle": "Configure the synchronized documents client settings",
+  "nextcloud.url.connect": "Enter this URL in your synchronization client settings to access the service on all your devices"
+}

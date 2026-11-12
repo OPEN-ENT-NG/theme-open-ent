@@ -1,0 +1,10 @@
+{
+  "rack.copyToNextcloud": "Ajouter aux Documents synchronisés",
+  "rack.modal.addToNextcloud.title": "Ajout aux Documents synchronisés",
+  "rack.modal.addToNextcloud.description": "Sélectionnez ou créez le dossier des Documents synchronisés où vous voulez copier le(s) document(s).",
+  "rack.modal.addToNextcloud.login": "Connectez-vous à vos Documents synchronisés pour y copier les documents de votre casier.",
+  "rack.toast.copyToNextcloudFailed": "Impossible de copier [[count]] document(s) dans les Documents synchronisés.",
+  "rack.toast.copyToNextcloudPartialFailed": "[[succeeded]] document(s) copié(s) dans les Documents synchronisés, [[failed]] échec(s).",
+  "rack.toast.copyToNextcloudSuccess": "Le document a été copié dans les Documents synchronisés.",
+  "rack.toast.copyToNextcloudSuccess_plural": "Les documents ont été copiés dans les Documents synchronisés."
+}

@@ -1,0 +1,7 @@
+{
+  "nextcloud.title": "Synchronisierte Dokumente",
+  "nextcloud.console.title": "Konsole für synchronisierte Dokumente",
+  "nextcloud.console.subtitle": "Konfigurieren Sie die Einstellungen des Clients für synchronisierte Dokumente",
+  "nextcloud.url.connect": "Geben Sie diese URL in der Konfiguration Ihres Synchronisierungsclients an, um auf allen Ihren Geräten auf den Dienst zuzugreifen",
+  "nextcloud.transfer.error": "Bei der Übertragung zu den synchronisierten Dokumenten ist ein Fehler aufgetreten."
+}
