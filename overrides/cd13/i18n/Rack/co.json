@@ -1,0 +1,10 @@
+{
+  "rack.copyToNextcloud": "Aghjunghje à i Documenti sincronizati",
+  "rack.modal.addToNextcloud.title": "Aghjunghje à i Documenti sincronizati",
+  "rack.modal.addToNextcloud.description": "Selezziunate o create u cartulare di i Documenti sincronizati induve vulete copià u(i) documentu(i).",
+  "rack.modal.addToNextcloud.login": "Cunnettatevi à i Documenti sincronizati per copià i ducumenti da u vostru armadiu.",
+  "rack.toast.copyToNextcloudFailed": "Ùn si pò copià [[count]] documentu(i) in i Documenti sincronizati.",
+  "rack.toast.copyToNextcloudPartialFailed": "[[succeeded]] documentu(i) copiatu(i) in i Documenti sincronizati, [[failed]] fallimentu(i).",
+  "rack.toast.copyToNextcloudSuccess": "U documentu hè statu copiatu in i Documenti sincronizati.",
+  "rack.toast.copyToNextcloudSuccess_plural": "I ducumenti sò stati copiati in i Documenti sincronizati."
+}

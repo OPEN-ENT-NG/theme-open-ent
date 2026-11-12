@@ -18,5 +18,9 @@
   "smartbanner.android.uri": "https://play.google.com/store/apps/details?id=com.ode.neo",
   "smartbanner.ios.store": "App Store",
   "smartbanner.ios.uri": "https://itunes.apple.com/us/app/one-pocket/id1458097439",
-  "disconnected.redirect.url": "https://www.eduprovence.fr/auth/saml/wayf"
+  "disconnected.redirect.url": "https://www.eduprovence.fr/auth/saml/wayf",
+  "bbm.nextcloud": "Documents synchronisés",
+  "nextcloud": "Documents synchronisés",
+  "nextcloud.auth.title": "Connectez-vous à vos Documents synchronisés",
+  "nextcloud.auth.description": "Accédez à vos Documents synchronisés pour les insérer ici. Déjà connecté auparavant ? Votre session s’est fermée faute d'utilisation récente, pour protéger vos fichiers."
 }

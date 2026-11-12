@@ -1,0 +1,6 @@
+{
+  "bbm.nextcloud": "Synchronisierte Dokumente",
+  "nextcloud": "Synchronisierte Dokumente",
+  "nextcloud.auth.title": "Bei den synchronisierten Dokumenten anmelden",
+  "nextcloud.auth.description": "Greifen Sie auf Ihre synchronisierten Dokumente zu, um sie hier einzufügen. Waren Sie bereits angemeldet? Ihre Sitzung wurde aufgrund von Inaktivität geschlossen, um Ihre Dateien zu schützen."
+}
