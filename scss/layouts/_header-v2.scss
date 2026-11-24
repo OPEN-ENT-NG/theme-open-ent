@@ -119,6 +119,28 @@ $header-v2-popover-danger-color: #dc0404 !default;
   }
 }
 
+// Below the tablet breakpoint, ode-csslib (mobile/_tablette.scss) pulls the
+// page's `.application-title` out of the flow (position: fixed, white text,
+// z-index 10001) to write it on top of the coloured v1 header band. On the
+// white v2 header it lands over the first nav icons (home, communities) and
+// swallows their clicks: put it back in the page content with normal colours.
+@media screen and (max-width: 800px) {
+  .header-v2 ~ .main .application-title {
+    position: static;
+    z-index: auto;
+    width: auto;
+    margin-top: 0;
+    color: inherit;
+    white-space: normal;
+
+    span,
+    a,
+    a:hover {
+      color: inherit;
+    }
+  }
+}
+
 // Account popover opens on click as well as on hover. On touch devices the
 // emulated :hover is sticky and would fight the click toggle, so hover is
 // ignored there and only the `is-open` state (set by ng-click) applies.
