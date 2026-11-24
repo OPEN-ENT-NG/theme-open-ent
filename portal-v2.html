@@ -170,9 +170,13 @@
           </div>
         </li>
 
-        <li class="nav-item position-relative popover-trigger" id="header-user-menu" aria-haspopup="true" aria-expanded="false"
-          data-testid="header-user-menu-button">
-          <a href="/userbook/mon-compte" i18n-title="navbar.myaccount" class="nav-link" data-testid="header-user-profile-button">
+        <!-- Opens on click (all breakpoints, so it works on touch devices) and on hover (desktop);
+             the trigger never navigates, "Mon compte" is the first entry of the popover. -->
+        <li class="nav-item position-relative popover-trigger" id="header-user-menu" aria-haspopup="true"
+          aria-expanded="{{userMenuOpen ? 'true' : 'false'}}" ng-class="{ 'is-open': userMenuOpen }"
+          ng-mouseleave="userMenuOpen = false" data-testid="header-user-menu-button">
+          <a href="/userbook/mon-compte" i18n-title="navbar.myaccount" class="nav-link" data-testid="header-user-profile-button"
+            ng-click="$event.preventDefault(); userMenuOpen = !userMenuOpen">
             <div class="avatar avatar-sm rounded-circle bg-white">
               <img data-ng-src="[[avatar ? avatar+'?thumbnail=48x48' : '']]" id="my-photo" alt="[[avatar.username]]" />
             </div>
