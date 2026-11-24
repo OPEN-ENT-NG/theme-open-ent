@@ -95,7 +95,7 @@ doInit () {
   fi
 
   echo "[init$1][$OVERRIDE_NAME] Install pnpm dependencies..."
-  docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "pnpm install"
+  docker compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "pnpm install"
 }
 
 init() {
@@ -119,7 +119,7 @@ build () {
   cp -R scss $SCSS_DIR
   cp -R $OVERRIDE_SRC/css/* $SCSS_DIR/
   #build css
-  docker-compose run -e SKIN_DIR=$SKIN_DIR -e SCSS_DIR=$SCSS_DIR -e DIST_DIR=$OVERRIDE_DIST --rm -u "$USER_UID:$GROUP_GID" node sh -c "pnpm run release:prepare"
+  docker compose run -e SKIN_DIR=$SKIN_DIR -e SCSS_DIR=$SCSS_DIR -e DIST_DIR=$OVERRIDE_DIST --rm -u "$USER_UID:$GROUP_GID" node sh -c "pnpm run release:prepare"
   status=$?
   if [ $status != 0 ];
   then
@@ -128,7 +128,7 @@ build () {
 
   for dir in "${dirs[@]}"; do
     tmp=`echo $dir | sed 's/.\/skins\///'`
-    docker-compose run -e SKIN_DIR=$SKIN_DIR -e SCSS_DIR=$SCSS_DIR -e DIST_DIR=$OVERRIDE_DIST -e SKIN=$tmp  --rm -u "$USER_UID:$GROUP_GID" node sh -c "pnpm run sass:build:release"
+    docker compose run -e SKIN_DIR=$SKIN_DIR -e SCSS_DIR=$SCSS_DIR -e DIST_DIR=$OVERRIDE_DIST -e SKIN=$tmp  --rm -u "$USER_UID:$GROUP_GID" node sh -c "pnpm run sass:build:release"
     status=$?
     if [ $status != 0 ];
     then
@@ -147,7 +147,7 @@ build () {
   cp -R $OVERRIDE_SRC/* $OVERRIDE_DIST/
   #override i18n
   echo "Merge i18n from theme and platform..."
-  docker-compose run -e OVERRIDE_SRC=$OVERRIDE_SRC -e OVERRIDE_DIST=$OVERRIDE_DIST --rm -u "$USER_UID:$GROUP_GID" node sh -c "pnpm run override:i18n"
+  docker compose run -e OVERRIDE_SRC=$OVERRIDE_SRC -e OVERRIDE_DIST=$OVERRIDE_DIST --rm -u "$USER_UID:$GROUP_GID" node sh -c "pnpm run override:i18n"
   status=$?
   if [ $status != 0 ];
   then
@@ -160,15 +160,15 @@ build () {
 }
 
 watch () {
-  docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "pnpm run dev:watch"
+  docker compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "pnpm run dev:watch"
 }
 
 lint () {
-  docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "pnpm run dev:lint"
+  docker compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "pnpm run dev:lint"
 }
 
 lint-fix () {
-  docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "pnpm run dev:lint-fix"
+  docker compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "pnpm run dev:lint-fix"
 }
 
 publishNPM () {
@@ -180,7 +180,7 @@ publishNPM () {
     sed -i "0,/ode-csslib-openent/{s|ode-csslib-openent|$FINAL_MODNAME|}" package.json
   fi
 
-  docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "pnpm publish --no-git-checks --tag $LOCAL_BRANCH"
+  docker compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "pnpm publish --no-git-checks --tag $LOCAL_BRANCH"
   status=$?
   if [ $status != 0 ];
   then
