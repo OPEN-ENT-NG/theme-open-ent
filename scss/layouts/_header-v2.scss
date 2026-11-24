@@ -119,6 +119,21 @@ $header-v2-popover-danger-color: #dc0404 !default;
   }
 }
 
+// Account popover opens on click as well as on hover. On touch devices the
+// emulated :hover is sticky and would fight the click toggle, so hover is
+// ignored there and only the `is-open` state (set by ng-click) applies.
+@media (hover: none) {
+  .header-v2 #header-user-menu.popover-trigger:hover .popover {
+    display: none;
+    opacity: 0;
+  }
+}
+
+.header-v2 #header-user-menu.popover-trigger.is-open .popover {
+  display: block;
+  opacity: 1;
+}
+
 // .dropdown-item has no display override outside of the (irrelevant here)
 // mobile .dropdown-menu context, so it falls back to .nav-link's display:block
 // and its icon's display:block, stacking icon/text on separate lines.

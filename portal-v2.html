@@ -133,7 +133,7 @@
 
         <li class="nav-item position-relative" id="header-notifications-menu">
           <button type="button" class="nav-link btn btn-naked notification-button" aria-label="notifications"
-            aria-haspopup="true" aria-expanded="{{notificationsOpen}}" ng-click="notificationsOpen = !notificationsOpen">
+            aria-haspopup="true" aria-expanded="[[notificationsOpen ? 'true' : 'false']]" ng-click="notificationsOpen = !notificationsOpen">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <g>
             <path d="M12.0156 0.5C13.5699 0.500121 14.8476 1.6603 15.0352 3.16309C18.3963 4.35527 20.8074 7.56407 20.8076 11.3311V13.1758H22.4639V20.1865H15.9424C15.6424 22.0648 14.0166 23.4998 12.0537 23.5C10.0906 23.5 8.46401 22.065 8.16406 20.1865H2.04395V13.1758H3.47754V11.3311C3.47773 7.66463 5.76249 4.52882 8.9834 3.26465C9.12479 1.71674 10.4255 0.50006 12.0156 0.5ZM10.2178 20.1865C10.4783 20.9505 11.2013 21.5 12.0537 21.5C12.9058 21.4998 13.6273 20.9502 13.8877 20.1865H10.2178ZM4.04297 15.1768V18.1865H20.4639V15.1768H4.04297ZM12.1426 4.66602C8.466 4.6662 5.47779 7.65449 5.47754 11.3311V13.1758H18.8076V11.3311C18.8074 7.65448 15.8192 4.66618 12.1426 4.66602Z" fill="currentColor"/>
@@ -170,9 +170,13 @@
           </div>
         </li>
 
-        <li class="nav-item position-relative popover-trigger" id="header-user-menu" aria-haspopup="true" aria-expanded="false"
-          data-testid="header-user-menu-button">
-          <a href="/userbook/mon-compte" i18n-title="navbar.myaccount" class="nav-link" data-testid="header-user-profile-button">
+        <!-- Opens on click (all breakpoints, so it works on touch devices) and on hover (desktop);
+             the trigger never navigates, "Mon compte" is the first entry of the popover. -->
+        <li class="nav-item position-relative popover-trigger" id="header-user-menu" aria-haspopup="true"
+          aria-expanded="[[userMenuOpen ? 'true' : 'false']]" ng-class="{ 'is-open': userMenuOpen }"
+          ng-mouseleave="userMenuOpen = false" data-testid="header-user-menu-button">
+          <a href="/userbook/mon-compte" i18n-title="navbar.myaccount" class="nav-link" data-testid="header-user-profile-button"
+            ng-click="$event.preventDefault(); userMenuOpen = !userMenuOpen">
             <div class="avatar avatar-sm rounded-circle bg-white">
               <img data-ng-src="[[avatar ? avatar+'?thumbnail=48x48' : '']]" id="my-photo" alt="[[avatar.username]]" />
             </div>
